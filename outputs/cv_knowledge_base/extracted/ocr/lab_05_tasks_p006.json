@@ -1,0 +1,1437 @@
+﻿{
+    "id":  "lab_05_tasks_p006",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "Task 6 — Segmenting a Region Inside a Medical Image A medical imaging researcher wants to isolate a contiguous region of similar intensity from a brain MRI. The target region is not easily separated from the entire image using a single global threshold because several areas have similar intensities. Instead of classifying every pixel independently, the researcher wants to start from a known location and allow the region to grow through neighbouring pixels that satisfy an intensity condition. Use a brain MRI such as: Your Task Implement region growing. Your 1. 2. 3. 4. 5. program must: Load a grayscale image. Select a seed point. Grow the region from that point. Use an intensity difference threshold neighbouring pixels belong to the region. Produce a binary segmentation mask. to decide whether Parameter Study Repeat the experiment with at least three different region-growing thresholds. Also test at least Required Analysis Explain : Why can changing segmented region? Talha Shahid two different seed locations . the seed point significantly change the final 61 Page",
+    "review_status":  "raw_ocr_unverified",
+    "page":  6,
+    "source_id":  "lab_05_tasks",
+    "lines":  [
+                  {
+                      "text":  "Task 6 — Segmenting a Region Inside a Medical Image",
+                      "words":  [
+                                    {
+                                        "y":  176,
+                                        "height":  20,
+                                        "width":  61,
+                                        "text":  "Task",
+                                        "x":  168
+                                    },
+                                    {
+                                        "y":  177,
+                                        "height":  19,
+                                        "width":  15,
+                                        "text":  "6",
+                                        "x":  244
+                                    },
+                                    {
+                                        "y":  185,
+                                        "height":  4,
+                                        "width":  16,
+                                        "text":  "—",
+                                        "x":  274
+                                    },
+                                    {
+                                        "y":  176,
+                                        "height":  25,
+                                        "width":  149,
+                                        "text":  "Segmenting",
+                                        "x":  305
+                                    },
+                                    {
+                                        "y":  181,
+                                        "height":  15,
+                                        "width":  15,
+                                        "text":  "a",
+                                        "x":  470
+                                    },
+                                    {
+                                        "y":  176,
+                                        "height":  25,
+                                        "width":  89,
+                                        "text":  "Region",
+                                        "x":  501
+                                    },
+                                    {
+                                        "y":  176,
+                                        "height":  20,
+                                        "width":  89,
+                                        "text":  "Inside",
+                                        "x":  607
+                                    },
+                                    {
+                                        "y":  181,
+                                        "height":  15,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  713
+                                    },
+                                    {
+                                        "y":  176,
+                                        "height":  20,
+                                        "width":  104,
+                                        "text":  "Medical",
+                                        "x":  743
+                                    },
+                                    {
+                                        "y":  177,
+                                        "height":  24,
+                                        "width":  72,
+                                        "text":  "Image",
+                                        "x":  865
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "A medical imaging researcher wants to isolate a contiguous region of",
+                      "words":  [
+                                    {
+                                        "y":  233,
+                                        "height":  19,
+                                        "width":  14,
+                                        "text":  "A",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  232,
+                                        "height":  21,
+                                        "width":  103,
+                                        "text":  "medical",
+                                        "x":  200
+                                    },
+                                    {
+                                        "y":  232,
+                                        "height":  25,
+                                        "width":  103,
+                                        "text":  "imaging",
+                                        "x":  323
+                                    },
+                                    {
+                                        "y":  233,
+                                        "height":  20,
+                                        "width":  149,
+                                        "text":  "researcher",
+                                        "x":  443
+                                    },
+                                    {
+                                        "y":  233,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "wants",
+                                        "x":  608
+                                    },
+                                    {
+                                        "y":  233,
+                                        "height":  20,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  700
+                                    },
+                                    {
+                                        "y":  232,
+                                        "height":  21,
+                                        "width":  102,
+                                        "text":  "isolate",
+                                        "x":  748
+                                    },
+                                    {
+                                        "y":  238,
+                                        "height":  15,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  868
+                                    },
+                                    {
+                                        "y":  232,
+                                        "height":  25,
+                                        "width":  148,
+                                        "text":  "contiguous",
+                                        "x":  899
+                                    },
+                                    {
+                                        "y":  232,
+                                        "height":  25,
+                                        "width":  88,
+                                        "text":  "region",
+                                        "x":  1065
+                                    },
+                                    {
+                                        "y":  233,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  1172
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "similar intensity from a brain MRI. The target region is not easily",
+                      "words":  [
+                                    {
+                                        "y":  270,
+                                        "height":  21,
+                                        "width":  104,
+                                        "text":  "similar",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  270,
+                                        "height":  25,
+                                        "width":  133,
+                                        "text":  "intensity",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  271,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "from",
+                                        "x":  445
+                                    },
+                                    {
+                                        "y":  276,
+                                        "height":  15,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  522
+                                    },
+                                    {
+                                        "y":  270,
+                                        "height":  21,
+                                        "width":  72,
+                                        "text":  "brain",
+                                        "x":  555
+                                    },
+                                    {
+                                        "y":  271,
+                                        "height":  19,
+                                        "width":  54,
+                                        "text":  "MRI.",
+                                        "x":  647
+                                    },
+                                    {
+                                        "y":  271,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "The",
+                                        "x":  723
+                                    },
+                                    {
+                                        "y":  272,
+                                        "height":  24,
+                                        "width":  89,
+                                        "text":  "target",
+                                        "x":  786
+                                    },
+                                    {
+                                        "y":  270,
+                                        "height":  26,
+                                        "width":  87,
+                                        "text":  "region",
+                                        "x":  895
+                                    },
+                                    {
+                                        "y":  270,
+                                        "height":  21,
+                                        "width":  26,
+                                        "text":  "is",
+                                        "x":  1003
+                                    },
+                                    {
+                                        "y":  272,
+                                        "height":  18,
+                                        "width":  42,
+                                        "text":  "not",
+                                        "x":  1050
+                                    },
+                                    {
+                                        "y":  270,
+                                        "height":  25,
+                                        "width":  89,
+                                        "text":  "easily",
+                                        "x":  1111
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "separated from the entire image using a single global threshold",
+                      "words":  [
+                                    {
+                                        "y":  309,
+                                        "height":  24,
+                                        "width":  133,
+                                        "text":  "separated",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  309,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "from",
+                                        "x":  330
+                                    },
+                                    {
+                                        "y":  309,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  413
+                                    },
+                                    {
+                                        "y":  308,
+                                        "height":  21,
+                                        "width":  88,
+                                        "text":  "entire",
+                                        "x":  483
+                                    },
+                                    {
+                                        "y":  308,
+                                        "height":  26,
+                                        "width":  72,
+                                        "text":  "image",
+                                        "x":  599
+                                    },
+                                    {
+                                        "y":  308,
+                                        "height":  26,
+                                        "width":  74,
+                                        "text":  "using",
+                                        "x":  698
+                                    },
+                                    {
+                                        "y":  314,
+                                        "height":  15,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  798
+                                    },
+                                    {
+                                        "y":  308,
+                                        "height":  26,
+                                        "width":  88,
+                                        "text":  "single",
+                                        "x":  837
+                                    },
+                                    {
+                                        "y":  309,
+                                        "height":  25,
+                                        "width":  88,
+                                        "text":  "global",
+                                        "x":  951
+                                    },
+                                    {
+                                        "y":  309,
+                                        "height":  20,
+                                        "width":  133,
+                                        "text":  "threshold",
+                                        "x":  1066
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "because several areas have similar intensities.",
+                      "words":  [
+                                    {
+                                        "y":  347,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "because",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  347,
+                                        "height":  19,
+                                        "width":  102,
+                                        "text":  "several",
+                                        "x":  291
+                                    },
+                                    {
+                                        "y":  352,
+                                        "height":  14,
+                                        "width":  72,
+                                        "text":  "areas",
+                                        "x":  411
+                                    },
+                                    {
+                                        "y":  347,
+                                        "height":  19,
+                                        "width":  57,
+                                        "text":  "have",
+                                        "x":  502
+                                    },
+                                    {
+                                        "y":  346,
+                                        "height":  20,
+                                        "width":  104,
+                                        "text":  "similar",
+                                        "x":  577
+                                    },
+                                    {
+                                        "y":  346,
+                                        "height":  20,
+                                        "width":  174,
+                                        "text":  "intensities.",
+                                        "x":  699
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Instead of classifying every pixel independently, the researcher wants",
+                      "words":  [
+                                    {
+                                        "y":  402,
+                                        "height":  20,
+                                        "width":  102,
+                                        "text":  "Instead",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  402,
+                                        "height":  20,
+                                        "width":  29,
+                                        "text":  "of",
+                                        "x":  287
+                                    },
+                                    {
+                                        "y":  401,
+                                        "height":  26,
+                                        "width":  163,
+                                        "text":  "classifying",
+                                        "x":  330
+                                    },
+                                    {
+                                        "y":  407,
+                                        "height":  19,
+                                        "width":  73,
+                                        "text":  "every",
+                                        "x":  507
+                                    },
+                                    {
+                                        "y":  401,
+                                        "height":  25,
+                                        "width":  73,
+                                        "text":  "pixel",
+                                        "x":  595
+                                    },
+                                    {
+                                        "y":  401,
+                                        "height":  25,
+                                        "width":  205,
+                                        "text":  "independently,",
+                                        "x":  683
+                                    },
+                                    {
+                                        "y":  402,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  906
+                                    },
+                                    {
+                                        "y":  402,
+                                        "height":  20,
+                                        "width":  150,
+                                        "text":  "researcher",
+                                        "x":  963
+                                    },
+                                    {
+                                        "y":  402,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "wants",
+                                        "x":  1126
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "to start from a known location and allow the region to grow through",
+                      "words":  [
+                                    {
+                                        "y":  441,
+                                        "height":  19,
+                                        "width":  28,
+                                        "text":  "to",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  441,
+                                        "height":  19,
+                                        "width":  73,
+                                        "text":  "start",
+                                        "x":  217
+                                    },
+                                    {
+                                        "y":  440,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "from",
+                                        "x":  309
+                                    },
+                                    {
+                                        "y":  445,
+                                        "height":  15,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  386
+                                    },
+                                    {
+                                        "y":  440,
+                                        "height":  20,
+                                        "width":  71,
+                                        "text":  "known",
+                                        "x":  419
+                                    },
+                                    {
+                                        "y":  439,
+                                        "height":  21,
+                                        "width":  118,
+                                        "text":  "location",
+                                        "x":  510
+                                    },
+                                    {
+                                        "y":  440,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  647
+                                    },
+                                    {
+                                        "y":  440,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "allow",
+                                        "x":  710
+                                    },
+                                    {
+                                        "y":  440,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  802
+                                    },
+                                    {
+                                        "y":  439,
+                                        "height":  26,
+                                        "width":  87,
+                                        "text":  "region",
+                                        "x":  865
+                                    },
+                                    {
+                                        "y":  441,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  970
+                                    },
+                                    {
+                                        "y":  443,
+                                        "height":  22,
+                                        "width":  59,
+                                        "text":  "grow",
+                                        "x":  1019
+                                    },
+                                    {
+                                        "y":  440,
+                                        "height":  25,
+                                        "width":  104,
+                                        "text":  "through",
+                                        "x":  1095
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "neighbouring pixels that satisfy an intensity condition.",
+                      "words":  [
+                                    {
+                                        "y":  477,
+                                        "height":  26,
+                                        "width":  179,
+                                        "text":  "neighbouring",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  477,
+                                        "height":  25,
+                                        "width":  88,
+                                        "text":  "pixels",
+                                        "x":  366
+                                    },
+                                    {
+                                        "y":  478,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "that",
+                                        "x":  470
+                                    },
+                                    {
+                                        "y":  477,
+                                        "height":  25,
+                                        "width":  104,
+                                        "text":  "satisfy",
+                                        "x":  546
+                                    },
+                                    {
+                                        "y":  483,
+                                        "height":  15,
+                                        "width":  27,
+                                        "text":  "an",
+                                        "x":  668
+                                    },
+                                    {
+                                        "y":  477,
+                                        "height":  25,
+                                        "width":  133,
+                                        "text":  "intensity",
+                                        "x":  714
+                                    },
+                                    {
+                                        "y":  477,
+                                        "height":  21,
+                                        "width":  143,
+                                        "text":  "condition.",
+                                        "x":  865
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Use a brain MRI such as:",
+                      "words":  [
+                                    {
+                                        "y":  535,
+                                        "height":  19,
+                                        "width":  42,
+                                        "text":  "Use",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  539,
+                                        "height":  15,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  230
+                                    },
+                                    {
+                                        "y":  533,
+                                        "height":  21,
+                                        "width":  72,
+                                        "text":  "brain",
+                                        "x":  261
+                                    },
+                                    {
+                                        "y":  535,
+                                        "height":  18,
+                                        "width":  42,
+                                        "text":  "MRI",
+                                        "x":  351
+                                    },
+                                    {
+                                        "y":  534,
+                                        "height":  20,
+                                        "width":  57,
+                                        "text":  "such",
+                                        "x":  411
+                                    },
+                                    {
+                                        "y":  539,
+                                        "height":  15,
+                                        "width":  39,
+                                        "text":  "as:",
+                                        "x":  486
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Your Task",
+                      "words":  [
+                                    {
+                                        "y":  591,
+                                        "height":  19,
+                                        "width":  60,
+                                        "text":  "Your",
+                                        "x":  168
+                                    },
+                                    {
+                                        "y":  590,
+                                        "height":  20,
+                                        "width":  60,
+                                        "text":  "Task",
+                                        "x":  244
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Implement region growing.",
+                      "words":  [
+                                    {
+                                        "y":  646,
+                                        "height":  25,
+                                        "width":  133,
+                                        "text":  "Implement",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  646,
+                                        "height":  25,
+                                        "width":  88,
+                                        "text":  "region",
+                                        "x":  321
+                                    },
+                                    {
+                                        "y":  646,
+                                        "height":  25,
+                                        "width":  114,
+                                        "text":  "growing.",
+                                        "x":  426
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Your",
+                      "words":  [
+                                    {
+                                        "y":  704,
+                                        "height":  18,
+                                        "width":  59,
+                                        "text":  "Your",
+                                        "x":  169
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1.",
+                      "words":  [
+                                    {
+                                        "y":  759,
+                                        "height":  19,
+                                        "width":  23,
+                                        "text":  "1.",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2.",
+                      "words":  [
+                                    {
+                                        "y":  816,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "2.",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3.",
+                      "words":  [
+                                    {
+                                        "y":  872,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "3.",
+                                        "x":  210
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4.",
+                      "words":  [
+                                    {
+                                        "y":  929,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "4.",
+                                        "x":  210
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "5.",
+                      "words":  [
+                                    {
+                                        "y":  1023,
+                                        "height":  20,
+                                        "width":  24,
+                                        "text":  "5.",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "program must:",
+                      "words":  [
+                                    {
+                                        "y":  706,
+                                        "height":  21,
+                                        "width":  103,
+                                        "text":  "program",
+                                        "x":  246
+                                    },
+                                    {
+                                        "y":  704,
+                                        "height":  18,
+                                        "width":  69,
+                                        "text":  "must:",
+                                        "x":  366
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Load a grayscale image.",
+                      "words":  [
+                                    {
+                                        "y":  758,
+                                        "height":  20,
+                                        "width":  56,
+                                        "text":  "Load",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  763,
+                                        "height":  15,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  327
+                                    },
+                                    {
+                                        "y":  758,
+                                        "height":  25,
+                                        "width":  132,
+                                        "text":  "grayscale",
+                                        "x":  358
+                                    },
+                                    {
+                                        "y":  758,
+                                        "height":  25,
+                                        "width":  83,
+                                        "text":  "image.",
+                                        "x":  509
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Select a seed point.",
+                      "words":  [
+                                    {
+                                        "y":  815,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "Select",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  820,
+                                        "height":  15,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  358
+                                    },
+                                    {
+                                        "y":  815,
+                                        "height":  20,
+                                        "width":  57,
+                                        "text":  "seed",
+                                        "x":  388
+                                    },
+                                    {
+                                        "y":  815,
+                                        "height":  25,
+                                        "width":  84,
+                                        "text":  "point.",
+                                        "x":  463
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Grow the region from that point.",
+                      "words":  [
+                                    {
+                                        "y":  872,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "Grow",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  871,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  327
+                                    },
+                                    {
+                                        "y":  871,
+                                        "height":  25,
+                                        "width":  87,
+                                        "text":  "region",
+                                        "x":  388
+                                    },
+                                    {
+                                        "y":  871,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "from",
+                                        "x":  493
+                                    },
+                                    {
+                                        "y":  871,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "that",
+                                        "x":  568
+                                    },
+                                    {
+                                        "y":  871,
+                                        "height":  25,
+                                        "width":  83,
+                                        "text":  "point.",
+                                        "x":  645
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Use an intensity difference threshold",
+                      "words":  [
+                                    {
+                                        "y":  929,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "Use",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  933,
+                                        "height":  15,
+                                        "width":  28,
+                                        "text":  "an",
+                                        "x":  329
+                                    },
+                                    {
+                                        "y":  928,
+                                        "height":  25,
+                                        "width":  132,
+                                        "text":  "intensity",
+                                        "x":  393
+                                    },
+                                    {
+                                        "y":  928,
+                                        "height":  20,
+                                        "width":  150,
+                                        "text":  "difference",
+                                        "x":  559
+                                    },
+                                    {
+                                        "y":  928,
+                                        "height":  20,
+                                        "width":  135,
+                                        "text":  "threshold",
+                                        "x":  742
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "neighbouring pixels belong to the region.",
+                      "words":  [
+                                    {
+                                        "y":  966,
+                                        "height":  25,
+                                        "width":  179,
+                                        "text":  "neighbouring",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  966,
+                                        "height":  25,
+                                        "width":  87,
+                                        "text":  "pixels",
+                                        "x":  449
+                                    },
+                                    {
+                                        "y":  966,
+                                        "height":  25,
+                                        "width":  88,
+                                        "text":  "belong",
+                                        "x":  554
+                                    },
+                                    {
+                                        "y":  967,
+                                        "height":  19,
+                                        "width":  28,
+                                        "text":  "to",
+                                        "x":  659
+                                    },
+                                    {
+                                        "y":  966,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  704
+                                    },
+                                    {
+                                        "y":  966,
+                                        "height":  25,
+                                        "width":  100,
+                                        "text":  "region.",
+                                        "x":  765
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Produce a binary segmentation mask.",
+                      "words":  [
+                                    {
+                                        "y":  1022,
+                                        "height":  20,
+                                        "width":  103,
+                                        "text":  "Produce",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1028,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  373
+                                    },
+                                    {
+                                        "y":  1022,
+                                        "height":  25,
+                                        "width":  86,
+                                        "text":  "binary",
+                                        "x":  404
+                                    },
+                                    {
+                                        "y":  1022,
+                                        "height":  25,
+                                        "width":  179,
+                                        "text":  "segmentation",
+                                        "x":  508
+                                    },
+                                    {
+                                        "y":  1022,
+                                        "height":  20,
+                                        "width":  70,
+                                        "text":  "mask.",
+                                        "x":  704
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "to",
+                      "words":  [
+                                    {
+                                        "y":  929,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  910
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "decide",
+                      "words":  [
+                                    {
+                                        "y":  928,
+                                        "height":  20,
+                                        "width":  89,
+                                        "text":  "decide",
+                                        "x":  973
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "whether",
+                      "words":  [
+                                    {
+                                        "y":  928,
+                                        "height":  20,
+                                        "width":  105,
+                                        "text":  "whether",
+                                        "x":  1096
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Parameter Study",
+                      "words":  [
+                                    {
+                                        "y":  1079,
+                                        "height":  19,
+                                        "width":  134,
+                                        "text":  "Parameter",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1078,
+                                        "height":  25,
+                                        "width":  75,
+                                        "text":  "Study",
+                                        "x":  320
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Repeat the experiment with at least three different region-growing",
+                      "words":  [
+                                    {
+                                        "y":  1135,
+                                        "height":  24,
+                                        "width":  88,
+                                        "text":  "Repeat",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1134,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  279
+                                    },
+                                    {
+                                        "y":  1134,
+                                        "height":  25,
+                                        "width":  148,
+                                        "text":  "experiment",
+                                        "x":  344
+                                    },
+                                    {
+                                        "y":  1134,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "with",
+                                        "x":  514
+                                    },
+                                    {
+                                        "y":  1135,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "at",
+                                        "x":  595
+                                    },
+                                    {
+                                        "y":  1134,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "least",
+                                        "x":  645
+                                    },
+                                    {
+                                        "y":  1134,
+                                        "height":  20,
+                                        "width":  75,
+                                        "text":  "three",
+                                        "x":  739
+                                    },
+                                    {
+                                        "y":  1134,
+                                        "height":  20,
+                                        "width":  133,
+                                        "text":  "different",
+                                        "x":  835
+                                    },
+                                    {
+                                        "y":  1134,
+                                        "height":  25,
+                                        "width":  210,
+                                        "text":  "region-growing",
+                                        "x":  991
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "thresholds.",
+                      "words":  [
+                                    {
+                                        "y":  1172,
+                                        "height":  20,
+                                        "width":  160,
+                                        "text":  "thresholds.",
+                                        "x":  169
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Also test at least",
+                      "words":  [
+                                    {
+                                        "y":  1228,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "Also",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1229,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "test",
+                                        "x":  244
+                                    },
+                                    {
+                                        "y":  1229,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "at",
+                                        "x":  321
+                                    },
+                                    {
+                                        "y":  1228,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "least",
+                                        "x":  366
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Required Analysis",
+                      "words":  [
+                                    {
+                                        "y":  1285,
+                                        "height":  25,
+                                        "width":  118,
+                                        "text":  "Required",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1285,
+                                        "height":  25,
+                                        "width":  120,
+                                        "text":  "Analysis",
+                                        "x":  304
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Explain :",
+                      "words":  [
+                                    {
+                                        "y":  1341,
+                                        "height":  25,
+                                        "width":  102,
+                                        "text":  "Explain",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1346,
+                                        "height":  15,
+                                        "width":  5,
+                                        "text":  ":",
+                                        "x":  279
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Why can changing",
+                      "words":  [
+                                    {
+                                        "y":  1398,
+                                        "height":  23,
+                                        "width":  43,
+                                        "text":  "Why",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1403,
+                                        "height":  14,
+                                        "width":  42,
+                                        "text":  "can",
+                                        "x":  241
+                                    },
+                                    {
+                                        "y":  1398,
+                                        "height":  24,
+                                        "width":  119,
+                                        "text":  "changing",
+                                        "x":  312
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "segmented region?",
+                      "words":  [
+                                    {
+                                        "y":  1435,
+                                        "height":  25,
+                                        "width":  133,
+                                        "text":  "segmented",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1434,
+                                        "height":  26,
+                                        "width":  102,
+                                        "text":  "region?",
+                                        "x":  321
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1821,
+                                        "height":  21,
+                                        "width":  75,
+                                        "text":  "Talha",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1820,
+                                        "height":  23,
+                                        "width":  95,
+                                        "text":  "Shahid",
+                                        "x":  255
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "two different seed locations .",
+                      "words":  [
+                                    {
+                                        "y":  1229,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "two",
+                                        "x":  455
+                                    },
+                                    {
+                                        "y":  1228,
+                                        "height":  20,
+                                        "width":  135,
+                                        "text":  "different",
+                                        "x":  515
+                                    },
+                                    {
+                                        "y":  1228,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "seed",
+                                        "x":  668
+                                    },
+                                    {
+                                        "y":  1228,
+                                        "height":  20,
+                                        "width":  134,
+                                        "text":  "locations",
+                                        "x":  743
+                                    },
+                                    {
+                                        "y":  1244,
+                                        "height":  4,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  884
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "the",
+                      "words":  [
+                                    {
+                                        "y":  1398,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  457
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "seed",
+                      "words":  [
+                                    {
+                                        "y":  1398,
+                                        "height":  19,
+                                        "width":  57,
+                                        "text":  "seed",
+                                        "x":  529
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "point",
+                      "words":  [
+                                    {
+                                        "y":  1397,
+                                        "height":  25,
+                                        "width":  72,
+                                        "text":  "point",
+                                        "x":  616
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "significantly",
+                      "words":  [
+                                    {
+                                        "y":  1397,
+                                        "height":  25,
+                                        "width":  194,
+                                        "text":  "significantly",
+                                        "x":  717
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "change",
+                      "words":  [
+                                    {
+                                        "y":  1398,
+                                        "height":  24,
+                                        "width":  88,
+                                        "text":  "change",
+                                        "x":  939
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "the",
+                      "words":  [
+                                    {
+                                        "y":  1398,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  1055
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "final",
+                      "words":  [
+                                    {
+                                        "y":  1397,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "final",
+                                        "x":  1127
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "61",
+                      "words":  [
+                                    {
+                                        "y":  1821,
+                                        "height":  27,
+                                        "width":  29,
+                                        "text":  "61",
+                                        "x":  1063
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Page",
+                      "words":  [
+                                    {
+                                        "y":  1822,
+                                        "height":  27,
+                                        "width":  86,
+                                        "text":  "Page",
+                                        "x":  1105
+                                    }
+                                ]
+                  }
+              ]
+}

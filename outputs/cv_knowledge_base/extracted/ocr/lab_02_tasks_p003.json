@@ -1,0 +1,1041 @@
+﻿{
+    "id":  "lab_02_tasks_p003",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "Folder Contents \u0026 Dependencies • • Dataset Handling (The 100MB Rule): GitHub has a strict file size limit. Do not attempt to upload the entire IGB+ Stanford EchoNet or Kaggle datasets to your repository . Instead, create a data/ folder inside each task and upload only the specific sample images or short video clips your script actually uses. Relative File Paths: Your Python scripts must use relative paths (e.g., cv2. imread( data/ sample_xray . png ) ) . Do not use absolute local paths (like C: / Users/ Student/ Desktop/ image . png) . Dependency Management: You must include a requirements .txt file in the root directory listing all necessary Python packages (e.g., opencv-python==4.8.@, numpy==1.26.@). This allows the reviewer to instantly rebuild your environment. Talha Shahid 21 Page",
+    "review_status":  "raw_ocr_unverified",
+    "page":  3,
+    "source_id":  "lab_02_tasks",
+    "lines":  [
+                  {
+                      "text":  "Folder Contents \u0026 Dependencies",
+                      "words":  [
+                                    {
+                                        "y":  177,
+                                        "height":  22,
+                                        "width":  96,
+                                        "text":  "Folder",
+                                        "x":  171
+                                    },
+                                    {
+                                        "y":  178,
+                                        "height":  21,
+                                        "width":  130,
+                                        "text":  "Contents",
+                                        "x":  285
+                                    },
+                                    {
+                                        "y":  178,
+                                        "height":  21,
+                                        "width":  16,
+                                        "text":  "\u0026",
+                                        "x":  433
+                                    },
+                                    {
+                                        "y":  177,
+                                        "height":  27,
+                                        "width":  195,
+                                        "text":  "Dependencies",
+                                        "x":  467
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "•",
+                      "words":  [
+                                    {
+                                        "y":  247,
+                                        "height":  9,
+                                        "width":  10,
+                                        "text":  "•",
+                                        "x":  210
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "•",
+                      "words":  [
+                                    {
+                                        "y":  513,
+                                        "height":  9,
+                                        "width":  9,
+                                        "text":  "•",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Dataset Handling (The 100MB Rule): GitHub has a strict file",
+                      "words":  [
+                                    {
+                                        "y":  238,
+                                        "height":  20,
+                                        "width":  112,
+                                        "text":  "Dataset",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  237,
+                                        "height":  27,
+                                        "width":  131,
+                                        "text":  "Handling",
+                                        "x":  382
+                                    },
+                                    {
+                                        "y":  236,
+                                        "height":  26,
+                                        "width":  61,
+                                        "text":  "(The",
+                                        "x":  531
+                                    },
+                                    {
+                                        "y":  238,
+                                        "height":  20,
+                                        "width":  80,
+                                        "text":  "100MB",
+                                        "x":  608
+                                    },
+                                    {
+                                        "y":  236,
+                                        "height":  26,
+                                        "width":  93,
+                                        "text":  "Rule):",
+                                        "x":  704
+                                    },
+                                    {
+                                        "y":  237,
+                                        "height":  22,
+                                        "width":  97,
+                                        "text":  "GitHub",
+                                        "x":  817
+                                    },
+                                    {
+                                        "y":  237,
+                                        "height":  22,
+                                        "width":  46,
+                                        "text":  "has",
+                                        "x":  931
+                                    },
+                                    {
+                                        "y":  243,
+                                        "height":  16,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  994
+                                    },
+                                    {
+                                        "y":  237,
+                                        "height":  22,
+                                        "width":  96,
+                                        "text":  "strict",
+                                        "x":  1025
+                                    },
+                                    {
+                                        "y":  237,
+                                        "height":  22,
+                                        "width":  63,
+                                        "text":  "file",
+                                        "x":  1138
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "size limit.",
+                      "words":  [
+                                    {
+                                        "y":  279,
+                                        "height":  22,
+                                        "width":  63,
+                                        "text":  "size",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  279,
+                                        "height":  21,
+                                        "width":  91,
+                                        "text":  "limit.",
+                                        "x":  346
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Do not attempt to upload the entire IGB+",
+                      "words":  [
+                                    {
+                                        "y":  280,
+                                        "height":  20,
+                                        "width":  31,
+                                        "text":  "Do",
+                                        "x":  472
+                                    },
+                                    {
+                                        "y":  280,
+                                        "height":  20,
+                                        "width":  47,
+                                        "text":  "not",
+                                        "x":  531
+                                    },
+                                    {
+                                        "y":  280,
+                                        "height":  26,
+                                        "width":  112,
+                                        "text":  "attempt",
+                                        "x":  608
+                                    },
+                                    {
+                                        "y":  280,
+                                        "height":  21,
+                                        "width":  31,
+                                        "text":  "to",
+                                        "x":  749
+                                    },
+                                    {
+                                        "y":  279,
+                                        "height":  27,
+                                        "width":  95,
+                                        "text":  "upload",
+                                        "x":  810
+                                    },
+                                    {
+                                        "y":  279,
+                                        "height":  21,
+                                        "width":  47,
+                                        "text":  "the",
+                                        "x":  935
+                                    },
+                                    {
+                                        "y":  279,
+                                        "height":  22,
+                                        "width":  97,
+                                        "text":  "entire",
+                                        "x":  1012
+                                    },
+                                    {
+                                        "y":  280,
+                                        "height":  20,
+                                        "width":  64,
+                                        "text":  "IGB+",
+                                        "x":  1138
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Stanford EchoNet or Kaggle datasets to your repository .",
+                      "words":  [
+                                    {
+                                        "y":  319,
+                                        "height":  22,
+                                        "width":  129,
+                                        "text":  "Stanford",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  319,
+                                        "height":  22,
+                                        "width":  112,
+                                        "text":  "EchoNet",
+                                        "x":  408
+                                    },
+                                    {
+                                        "y":  325,
+                                        "height":  16,
+                                        "width":  31,
+                                        "text":  "or",
+                                        "x":  546
+                                    },
+                                    {
+                                        "y":  319,
+                                        "height":  27,
+                                        "width":  95,
+                                        "text":  "Kaggle",
+                                        "x":  602
+                                    },
+                                    {
+                                        "y":  319,
+                                        "height":  22,
+                                        "width":  129,
+                                        "text":  "datasets",
+                                        "x":  722
+                                    },
+                                    {
+                                        "y":  320,
+                                        "height":  21,
+                                        "width":  32,
+                                        "text":  "to",
+                                        "x":  876
+                                    },
+                                    {
+                                        "y":  325,
+                                        "height":  21,
+                                        "width":  64,
+                                        "text":  "your",
+                                        "x":  933
+                                    },
+                                    {
+                                        "y":  319,
+                                        "height":  27,
+                                        "width":  163,
+                                        "text":  "repository",
+                                        "x":  1022
+                                    },
+                                    {
+                                        "y":  336,
+                                        "height":  5,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  1192
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Instead, create a data/ folder inside each task and upload",
+                      "words":  [
+                                    {
+                                        "y":  361,
+                                        "height":  25,
+                                        "width":  125,
+                                        "text":  "Instead,",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  362,
+                                        "height":  20,
+                                        "width":  96,
+                                        "text":  "create",
+                                        "x":  401
+                                    },
+                                    {
+                                        "y":  367,
+                                        "height":  15,
+                                        "width":  15,
+                                        "text":  "a",
+                                        "x":  515
+                                    },
+                                    {
+                                        "y":  360,
+                                        "height":  26,
+                                        "width":  79,
+                                        "text":  "data/",
+                                        "x":  548
+                                    },
+                                    {
+                                        "y":  361,
+                                        "height":  21,
+                                        "width":  97,
+                                        "text":  "folder",
+                                        "x":  646
+                                    },
+                                    {
+                                        "y":  361,
+                                        "height":  21,
+                                        "width":  95,
+                                        "text":  "inside",
+                                        "x":  762
+                                    },
+                                    {
+                                        "y":  361,
+                                        "height":  21,
+                                        "width":  62,
+                                        "text":  "each",
+                                        "x":  876
+                                    },
+                                    {
+                                        "y":  361,
+                                        "height":  21,
+                                        "width":  65,
+                                        "text":  "task",
+                                        "x":  957
+                                    },
+                                    {
+                                        "y":  361,
+                                        "height":  21,
+                                        "width":  46,
+                                        "text":  "and",
+                                        "x":  1040
+                                    },
+                                    {
+                                        "y":  361,
+                                        "height":  26,
+                                        "width":  95,
+                                        "text":  "upload",
+                                        "x":  1106
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "only the specific sample images or short video clips your",
+                      "words":  [
+                                    {
+                                        "y":  402,
+                                        "height":  27,
+                                        "width":  63,
+                                        "text":  "only",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  402,
+                                        "height":  22,
+                                        "width":  46,
+                                        "text":  "the",
+                                        "x":  337
+                                    },
+                                    {
+                                        "y":  402,
+                                        "height":  27,
+                                        "width":  129,
+                                        "text":  "specific",
+                                        "x":  403
+                                    },
+                                    {
+                                        "y":  402,
+                                        "height":  27,
+                                        "width":  97,
+                                        "text":  "sample",
+                                        "x":  553
+                                    },
+                                    {
+                                        "y":  402,
+                                        "height":  27,
+                                        "width":  94,
+                                        "text":  "images",
+                                        "x":  671
+                                    },
+                                    {
+                                        "y":  408,
+                                        "height":  16,
+                                        "width":  32,
+                                        "text":  "or",
+                                        "x":  786
+                                    },
+                                    {
+                                        "y":  402,
+                                        "height":  22,
+                                        "width":  81,
+                                        "text":  "short",
+                                        "x":  836
+                                    },
+                                    {
+                                        "y":  402,
+                                        "height":  21,
+                                        "width":  80,
+                                        "text":  "video",
+                                        "x":  937
+                                    },
+                                    {
+                                        "y":  402,
+                                        "height":  27,
+                                        "width":  79,
+                                        "text":  "clips",
+                                        "x":  1038
+                                    },
+                                    {
+                                        "y":  408,
+                                        "height":  21,
+                                        "width":  65,
+                                        "text":  "your",
+                                        "x":  1138
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "script actually uses.",
+                      "words":  [
+                                    {
+                                        "y":  443,
+                                        "height":  27,
+                                        "width":  96,
+                                        "text":  "script",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  443,
+                                        "height":  27,
+                                        "width":  130,
+                                        "text":  "actually",
+                                        "x":  368
+                                    },
+                                    {
+                                        "y":  449,
+                                        "height":  16,
+                                        "width":  75,
+                                        "text":  "uses.",
+                                        "x":  517
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Relative File Paths: Your Python scripts must use relative",
+                      "words":  [
+                                    {
+                                        "y":  503,
+                                        "height":  22,
+                                        "width":  129,
+                                        "text":  "Relative",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  503,
+                                        "height":  22,
+                                        "width":  63,
+                                        "text":  "File",
+                                        "x":  401
+                                    },
+                                    {
+                                        "y":  503,
+                                        "height":  22,
+                                        "width":  92,
+                                        "text":  "Paths:",
+                                        "x":  483
+                                    },
+                                    {
+                                        "y":  505,
+                                        "height":  20,
+                                        "width":  65,
+                                        "text":  "Your",
+                                        "x":  596
+                                    },
+                                    {
+                                        "y":  503,
+                                        "height":  27,
+                                        "width":  94,
+                                        "text":  "Python",
+                                        "x":  680
+                                    },
+                                    {
+                                        "y":  503,
+                                        "height":  27,
+                                        "width":  113,
+                                        "text":  "scripts",
+                                        "x":  793
+                                    },
+                                    {
+                                        "y":  505,
+                                        "height":  20,
+                                        "width":  64,
+                                        "text":  "must",
+                                        "x":  924
+                                    },
+                                    {
+                                        "y":  509,
+                                        "height":  16,
+                                        "width":  47,
+                                        "text":  "use",
+                                        "x":  1007
+                                    },
+                                    {
+                                        "y":  503,
+                                        "height":  22,
+                                        "width":  129,
+                                        "text":  "relative",
+                                        "x":  1072
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "paths (e.g.,",
+                      "words":  [
+                                    {
+                                        "y":  545,
+                                        "height":  26,
+                                        "width":  79,
+                                        "text":  "paths",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  544,
+                                        "height":  28,
+                                        "width":  88,
+                                        "text":  "(e.g.,",
+                                        "x":  362
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "cv2. imread( data/ sample_xray . png ) ) .",
+                      "words":  [
+                                    {
+                                        "y":  545,
+                                        "height":  21,
+                                        "width":  59,
+                                        "text":  "cv2.",
+                                        "x":  481
+                                    },
+                                    {
+                                        "y":  544,
+                                        "height":  26,
+                                        "width":  110,
+                                        "text":  "imread(",
+                                        "x":  548
+                                    },
+                                    {
+                                        "y":  544,
+                                        "height":  26,
+                                        "width":  78,
+                                        "text":  "data/",
+                                        "x":  679
+                                    },
+                                    {
+                                        "y":  544,
+                                        "height":  27,
+                                        "width":  179,
+                                        "text":  "sample_xray",
+                                        "x":  761
+                                    },
+                                    {
+                                        "y":  561,
+                                        "height":  5,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  947
+                                    },
+                                    {
+                                        "y":  549,
+                                        "height":  23,
+                                        "width":  46,
+                                        "text":  "png",
+                                        "x":  960
+                                    },
+                                    {
+                                        "y":  544,
+                                        "height":  26,
+                                        "width":  9,
+                                        "text":  ")",
+                                        "x":  1026
+                                    },
+                                    {
+                                        "y":  544,
+                                        "height":  26,
+                                        "width":  8,
+                                        "text":  ")",
+                                        "x":  1043
+                                    },
+                                    {
+                                        "y":  561,
+                                        "height":  5,
+                                        "width":  6,
+                                        "text":  ".",
+                                        "x":  1062
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Do not",
+                      "words":  [
+                                    {
+                                        "y":  546,
+                                        "height":  20,
+                                        "width":  29,
+                                        "text":  "Do",
+                                        "x":  1099
+                                    },
+                                    {
+                                        "y":  546,
+                                        "height":  20,
+                                        "width":  46,
+                                        "text":  "not",
+                                        "x":  1155
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "use",
+                      "words":  [
+                                    {
+                                        "y":  592,
+                                        "height":  16,
+                                        "width":  46,
+                                        "text":  "use",
+                                        "x":  253
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "absolute",
+                      "words":  [
+                                    {
+                                        "y":  586,
+                                        "height":  22,
+                                        "width":  129,
+                                        "text":  "absolute",
+                                        "x":  433
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "local",
+                      "words":  [
+                                    {
+                                        "y":  586,
+                                        "height":  22,
+                                        "width":  79,
+                                        "text":  "local",
+                                        "x":  695
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "paths",
+                      "words":  [
+                                    {
+                                        "y":  586,
+                                        "height":  27,
+                                        "width":  78,
+                                        "text":  "paths",
+                                        "x":  909
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "(like",
+                      "words":  [
+                                    {
+                                        "y":  586,
+                                        "height":  25,
+                                        "width":  76,
+                                        "text":  "(like",
+                                        "x":  1125
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "C: / Users/ Student/ Desktop/ image . png) .",
+                      "words":  [
+                                    {
+                                        "y":  629,
+                                        "height":  20,
+                                        "width":  25,
+                                        "text":  "C:",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  627,
+                                        "height":  25,
+                                        "width":  12,
+                                        "text":  "/",
+                                        "x":  286
+                                    },
+                                    {
+                                        "y":  627,
+                                        "height":  25,
+                                        "width":  94,
+                                        "text":  "Users/",
+                                        "x":  303
+                                    },
+                                    {
+                                        "y":  627,
+                                        "height":  25,
+                                        "width":  128,
+                                        "text":  "Student/",
+                                        "x":  401
+                                    },
+                                    {
+                                        "y":  627,
+                                        "height":  27,
+                                        "width":  127,
+                                        "text":  "Desktop/",
+                                        "x":  534
+                                    },
+                                    {
+                                        "y":  628,
+                                        "height":  26,
+                                        "width":  78,
+                                        "text":  "image",
+                                        "x":  666
+                                    },
+                                    {
+                                        "y":  644,
+                                        "height":  4,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  751
+                                    },
+                                    {
+                                        "y":  627,
+                                        "height":  27,
+                                        "width":  59,
+                                        "text":  "png)",
+                                        "x":  764
+                                    },
+                                    {
+                                        "y":  644,
+                                        "height":  5,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  834
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Dependency Management: You must include a requirements .txt",
+                      "words":  [
+                                    {
+                                        "y":  687,
+                                        "height":  27,
+                                        "width":  163,
+                                        "text":  "Dependency",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  688,
+                                        "height":  26,
+                                        "width":  177,
+                                        "text":  "Management:",
+                                        "x":  432
+                                    },
+                                    {
+                                        "y":  688,
+                                        "height":  21,
+                                        "width":  47,
+                                        "text":  "You",
+                                        "x":  629
+                                    },
+                                    {
+                                        "y":  688,
+                                        "height":  21,
+                                        "width":  64,
+                                        "text":  "must",
+                                        "x":  694
+                                    },
+                                    {
+                                        "y":  687,
+                                        "height":  22,
+                                        "width":  111,
+                                        "text":  "include",
+                                        "x":  778
+                                    },
+                                    {
+                                        "y":  693,
+                                        "height":  16,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  908
+                                    },
+                                    {
+                                        "y":  687,
+                                        "height":  27,
+                                        "width":  195,
+                                        "text":  "requirements",
+                                        "x":  940
+                                    },
+                                    {
+                                        "y":  688,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  ".txt",
+                                        "x":  1143
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "file in the root directory listing all necessary Python",
+                      "words":  [
+                                    {
+                                        "y":  728,
+                                        "height":  22,
+                                        "width":  63,
+                                        "text":  "file",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  728,
+                                        "height":  21,
+                                        "width":  28,
+                                        "text":  "in",
+                                        "x":  342
+                                    },
+                                    {
+                                        "y":  728,
+                                        "height":  22,
+                                        "width":  47,
+                                        "text":  "the",
+                                        "x":  395
+                                    },
+                                    {
+                                        "y":  729,
+                                        "height":  21,
+                                        "width":  63,
+                                        "text":  "root",
+                                        "x":  467
+                                    },
+                                    {
+                                        "y":  728,
+                                        "height":  27,
+                                        "width":  145,
+                                        "text":  "directory",
+                                        "x":  555
+                                    },
+                                    {
+                                        "y":  728,
+                                        "height":  27,
+                                        "width":  113,
+                                        "text":  "listing",
+                                        "x":  725
+                                    },
+                                    {
+                                        "y":  728,
+                                        "height":  22,
+                                        "width":  47,
+                                        "text":  "all",
+                                        "x":  862
+                                    },
+                                    {
+                                        "y":  734,
+                                        "height":  21,
+                                        "width":  146,
+                                        "text":  "necessary",
+                                        "x":  934
+                                    },
+                                    {
+                                        "y":  728,
+                                        "height":  27,
+                                        "width":  95,
+                                        "text":  "Python",
+                                        "x":  1105
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "packages (e.g., opencv-python==4.8.@, numpy==1.26.@). This",
+                      "words":  [
+                                    {
+                                        "y":  770,
+                                        "height":  27,
+                                        "width":  129,
+                                        "text":  "packages",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  769,
+                                        "height":  28,
+                                        "width":  88,
+                                        "text":  "(e.g.,",
+                                        "x":  404
+                                    },
+                                    {
+                                        "y":  770,
+                                        "height":  27,
+                                        "width":  339,
+                                        "text":  "opencv-python==4.8.@,",
+                                        "x":  514
+                                    },
+                                    {
+                                        "y":  769,
+                                        "height":  28,
+                                        "width":  240,
+                                        "text":  "numpy==1.26.@).",
+                                        "x":  876
+                                    },
+                                    {
+                                        "y":  770,
+                                        "height":  21,
+                                        "width":  64,
+                                        "text":  "This",
+                                        "x":  1137
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "allows the reviewer to instantly rebuild your environment.",
+                      "words":  [
+                                    {
+                                        "y":  811,
+                                        "height":  22,
+                                        "width":  96,
+                                        "text":  "allows",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  811,
+                                        "height":  21,
+                                        "width":  48,
+                                        "text":  "the",
+                                        "x":  366
+                                    },
+                                    {
+                                        "y":  811,
+                                        "height":  21,
+                                        "width":  130,
+                                        "text":  "reviewer",
+                                        "x":  433
+                                    },
+                                    {
+                                        "y":  812,
+                                        "height":  20,
+                                        "width":  31,
+                                        "text":  "to",
+                                        "x":  580
+                                    },
+                                    {
+                                        "y":  811,
+                                        "height":  27,
+                                        "width":  144,
+                                        "text":  "instantly",
+                                        "x":  630
+                                    },
+                                    {
+                                        "y":  811,
+                                        "height":  21,
+                                        "width":  113,
+                                        "text":  "rebuild",
+                                        "x":  792
+                                    },
+                                    {
+                                        "y":  817,
+                                        "height":  21,
+                                        "width":  64,
+                                        "text":  "your",
+                                        "x":  924
+                                    },
+                                    {
+                                        "y":  811,
+                                        "height":  21,
+                                        "width":  191,
+                                        "text":  "environment.",
+                                        "x":  1006
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1825,
+                                        "height":  19,
+                                        "width":  69,
+                                        "text":  "Talha",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1823,
+                                        "height":  21,
+                                        "width":  88,
+                                        "text":  "Shahid",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "21",
+                      "words":  [
+                                    {
+                                        "y":  1824,
+                                        "height":  25,
+                                        "width":  28,
+                                        "text":  "21",
+                                        "x":  1073
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Page",
+                      "words":  [
+                                    {
+                                        "y":  1826,
+                                        "height":  24,
+                                        "width":  84,
+                                        "text":  "Page",
+                                        "x":  1112
+                                    }
+                                ]
+                  }
+              ]
+}

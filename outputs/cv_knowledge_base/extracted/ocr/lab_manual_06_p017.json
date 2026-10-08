@@ -1,0 +1,2666 @@
+﻿{
+    "id":  "lab_manual_06_p017",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "National University of Computer \u0026 Emerging Sciences - NUCES - Karachi Department of Artificial Intelligence 4. Introduction to Hough Transformation The Hough Transform is a fundamental technique in computer vision and image processing used to detect simple shapes within an image, most commonly lines and circles. It was first introduced by Paul Hough in 1962 for detecting lines in binary images, and later extended to detect other shapes like circles and ellipses. The Hough Transform is particularly useful when traditional methods like gradient-based edge detection are insufficient for detecting specific shapes. It\u0027s widely employed in various computer vision applications, such as image analysis, object recognition, and feature extraction. The Hough Transform works by transforming the spatial domain of an image into a parameter space, where each pixel in the image corresponds to a curve or a point in this parameter space. The primary purpose of this transformation is to identify patterns that are represented as lines or curves in the parameter space. 4.1 Hough Transform for Line Detection Parametric Representation of Lines: The Hough Transform starts with the parametric representation of lines, where a line in Cartesian coordinates (x, y) is represented as y = mx + b Here, Iml is the slope of the line, and \u0027bl is the y-intercept • Parameter Space: In the Hough Transform, we transform this representation into a parameter space with Iml and lb\u0027 as axes. Each line in the image corresponds to a point in this parameter space. Voting: For each edge pixel (typically obtained from edge detection methods like Canny), we calculate the Iml and \u0027b\u0027 values that could generate the line passing through that pixel. This is essentially a voting process where we increment the corresponding (m, b) cell in the parameter space. Peak Detection: After processing all edge pixels, the parameter space is examined to find peaks. These peaks represent the lines in the image. Back-Transformation: Once the lines are detected in the parameter space, they can be back-transformed into the image space, revealing the position and orientation of the lines. FAST NUCES - Karachi Talha Shahid 17",
+    "review_status":  "raw_ocr_unverified",
+    "page":  17,
+    "source_id":  "lab_manual_06",
+    "lines":  [
+                  {
+                      "text":  "National University of Computer \u0026 Emerging Sciences -",
+                      "words":  [
+                                    {
+                                        "y":  94,
+                                        "height":  23,
+                                        "width":  122,
+                                        "text":  "National",
+                                        "x":  376
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  29,
+                                        "width":  146,
+                                        "text":  "University",
+                                        "x":  507
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  22,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  660
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  28,
+                                        "width":  147,
+                                        "text":  "Computer",
+                                        "x":  696
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  22,
+                                        "width":  21,
+                                        "text":  "\u0026",
+                                        "x":  851
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  28,
+                                        "width":  134,
+                                        "text":  "Emerging",
+                                        "x":  880
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  23,
+                                        "width":  132,
+                                        "text":  "Sciences",
+                                        "x":  1021
+                                    },
+                                    {
+                                        "y":  107,
+                                        "height":  4,
+                                        "width":  10,
+                                        "text":  "-",
+                                        "x":  1162
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "NUCES - Karachi",
+                      "words":  [
+                                    {
+                                        "y":  140,
+                                        "height":  22,
+                                        "width":  103,
+                                        "text":  "NUCES",
+                                        "x":  654
+                                    },
+                                    {
+                                        "y":  152,
+                                        "height":  4,
+                                        "width":  10,
+                                        "text":  "-",
+                                        "x":  765
+                                    },
+                                    {
+                                        "y":  139,
+                                        "height":  23,
+                                        "width":  109,
+                                        "text":  "Karachi",
+                                        "x":  784
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Department of Artificial Intelligence",
+                      "words":  [
+                                    {
+                                        "y":  183,
+                                        "height":  26,
+                                        "width":  143,
+                                        "text":  "Department",
+                                        "x":  555
+                                    },
+                                    {
+                                        "y":  182,
+                                        "height":  22,
+                                        "width":  24,
+                                        "text":  "of",
+                                        "x":  706
+                                    },
+                                    {
+                                        "y":  182,
+                                        "height":  22,
+                                        "width":  100,
+                                        "text":  "Artificial",
+                                        "x":  737
+                                    },
+                                    {
+                                        "y":  182,
+                                        "height":  27,
+                                        "width":  137,
+                                        "text":  "Intelligence",
+                                        "x":  847
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4. Introduction to Hough Transformation",
+                      "words":  [
+                                    {
+                                        "y":  226,
+                                        "height":  27,
+                                        "width":  32,
+                                        "text":  "4.",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  222,
+                                        "height":  31,
+                                        "width":  234,
+                                        "text":  "Introduction",
+                                        "x":  235
+                                    },
+                                    {
+                                        "y":  227,
+                                        "height":  26,
+                                        "width":  37,
+                                        "text":  "to",
+                                        "x":  483
+                                    },
+                                    {
+                                        "y":  224,
+                                        "height":  37,
+                                        "width":  119,
+                                        "text":  "Hough",
+                                        "x":  535
+                                    },
+                                    {
+                                        "y":  222,
+                                        "height":  31,
+                                        "width":  290,
+                                        "text":  "Transformation",
+                                        "x":  668
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The Hough Transform is a fundamental technique in computer vision and",
+                      "words":  [
+                                    {
+                                        "y":  288,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "The",
+                                        "x":  168
+                                    },
+                                    {
+                                        "y":  288,
+                                        "height":  24,
+                                        "width":  73,
+                                        "text":  "Hough",
+                                        "x":  229
+                                    },
+                                    {
+                                        "y":  288,
+                                        "height":  19,
+                                        "width":  135,
+                                        "text":  "Transform",
+                                        "x":  318
+                                    },
+                                    {
+                                        "y":  288,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  469
+                                    },
+                                    {
+                                        "y":  293,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  513
+                                    },
+                                    {
+                                        "y":  288,
+                                        "height":  19,
+                                        "width":  164,
+                                        "text":  "fundamental",
+                                        "x":  542
+                                    },
+                                    {
+                                        "y":  288,
+                                        "height":  24,
+                                        "width":  135,
+                                        "text":  "technique",
+                                        "x":  722
+                                    },
+                                    {
+                                        "y":  288,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "in",
+                                        "x":  874
+                                    },
+                                    {
+                                        "y":  289,
+                                        "height":  23,
+                                        "width":  119,
+                                        "text":  "computer",
+                                        "x":  918
+                                    },
+                                    {
+                                        "y":  288,
+                                        "height":  19,
+                                        "width":  88,
+                                        "text":  "vision",
+                                        "x":  1052
+                                    },
+                                    {
+                                        "y":  288,
+                                        "height":  19,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  1158
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "image processing used to detect simple shapes within an image, most",
+                      "words":  [
+                                    {
+                                        "y":  326,
+                                        "height":  24,
+                                        "width":  73,
+                                        "text":  "image",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  326,
+                                        "height":  24,
+                                        "width":  149,
+                                        "text":  "processing",
+                                        "x":  263
+                                    },
+                                    {
+                                        "y":  326,
+                                        "height":  19,
+                                        "width":  56,
+                                        "text":  "used",
+                                        "x":  431
+                                    },
+                                    {
+                                        "y":  327,
+                                        "height":  18,
+                                        "width":  28,
+                                        "text":  "to",
+                                        "x":  507
+                                    },
+                                    {
+                                        "y":  326,
+                                        "height":  19,
+                                        "width":  89,
+                                        "text":  "detect",
+                                        "x":  555
+                                    },
+                                    {
+                                        "y":  326,
+                                        "height":  24,
+                                        "width":  88,
+                                        "text":  "simple",
+                                        "x":  664
+                                    },
+                                    {
+                                        "y":  326,
+                                        "height":  24,
+                                        "width":  89,
+                                        "text":  "shapes",
+                                        "x":  771
+                                    },
+                                    {
+                                        "y":  326,
+                                        "height":  19,
+                                        "width":  87,
+                                        "text":  "within",
+                                        "x":  879
+                                    },
+                                    {
+                                        "y":  332,
+                                        "height":  13,
+                                        "width":  27,
+                                        "text":  "an",
+                                        "x":  987
+                                    },
+                                    {
+                                        "y":  326,
+                                        "height":  24,
+                                        "width":  84,
+                                        "text":  "image,",
+                                        "x":  1035
+                                    },
+                                    {
+                                        "y":  327,
+                                        "height":  18,
+                                        "width":  58,
+                                        "text":  "most",
+                                        "x":  1142
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "commonly lines and circles. It was first introduced by Paul Hough in",
+                      "words":  [
+                                    {
+                                        "y":  362,
+                                        "height":  25,
+                                        "width":  118,
+                                        "text":  "commonly",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  362,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "lines",
+                                        "x":  306
+                                    },
+                                    {
+                                        "y":  362,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  397
+                                    },
+                                    {
+                                        "y":  362,
+                                        "height":  20,
+                                        "width":  114,
+                                        "text":  "circles.",
+                                        "x":  458
+                                    },
+                                    {
+                                        "y":  363,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "It",
+                                        "x":  595
+                                    },
+                                    {
+                                        "y":  368,
+                                        "height":  14,
+                                        "width":  44,
+                                        "text":  "was",
+                                        "x":  639
+                                    },
+                                    {
+                                        "y":  362,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "first",
+                                        "x":  701
+                                    },
+                                    {
+                                        "y":  362,
+                                        "height":  20,
+                                        "width":  147,
+                                        "text":  "introduced",
+                                        "x":  793
+                                    },
+                                    {
+                                        "y":  362,
+                                        "height":  25,
+                                        "width":  28,
+                                        "text":  "by",
+                                        "x":  959
+                                    },
+                                    {
+                                        "y":  362,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "Paul",
+                                        "x":  1005
+                                    },
+                                    {
+                                        "y":  362,
+                                        "height":  24,
+                                        "width":  73,
+                                        "text":  "Hough",
+                                        "x":  1081
+                                    },
+                                    {
+                                        "y":  362,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "in",
+                                        "x":  1173
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1962 for detecting lines in binary images, and later extended to",
+                      "words":  [
+                                    {
+                                        "y":  401,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "1962",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  400,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "for",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  400,
+                                        "height":  25,
+                                        "width":  134,
+                                        "text":  "detecting",
+                                        "x":  319
+                                    },
+                                    {
+                                        "y":  400,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "lines",
+                                        "x":  476
+                                    },
+                                    {
+                                        "y":  400,
+                                        "height":  20,
+                                        "width":  26,
+                                        "text":  "in",
+                                        "x":  574
+                                    },
+                                    {
+                                        "y":  400,
+                                        "height":  25,
+                                        "width":  88,
+                                        "text":  "binary",
+                                        "x":  626
+                                    },
+                                    {
+                                        "y":  400,
+                                        "height":  25,
+                                        "width":  98,
+                                        "text":  "images,",
+                                        "x":  739
+                                    },
+                                    {
+                                        "y":  400,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  865
+                                    },
+                                    {
+                                        "y":  400,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "later",
+                                        "x":  932
+                                    },
+                                    {
+                                        "y":  400,
+                                        "height":  20,
+                                        "width":  118,
+                                        "text":  "extended",
+                                        "x":  1029
+                                    },
+                                    {
+                                        "y":  401,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  1171
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "detect other shapes like circles and ellipses. The Hough Transform is",
+                      "words":  [
+                                    {
+                                        "y":  438,
+                                        "height":  19,
+                                        "width":  89,
+                                        "text":  "detect",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  438,
+                                        "height":  19,
+                                        "width":  74,
+                                        "text":  "other",
+                                        "x":  274
+                                    },
+                                    {
+                                        "y":  438,
+                                        "height":  24,
+                                        "width":  88,
+                                        "text":  "shapes",
+                                        "x":  364
+                                    },
+                                    {
+                                        "y":  438,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "like",
+                                        "x":  468
+                                    },
+                                    {
+                                        "y":  438,
+                                        "height":  19,
+                                        "width":  104,
+                                        "text":  "circles",
+                                        "x":  543
+                                    },
+                                    {
+                                        "y":  438,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  663
+                                    },
+                                    {
+                                        "y":  438,
+                                        "height":  24,
+                                        "width":  130,
+                                        "text":  "ellipses.",
+                                        "x":  723
+                                    },
+                                    {
+                                        "y":  438,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "The",
+                                        "x":  872
+                                    },
+                                    {
+                                        "y":  438,
+                                        "height":  24,
+                                        "width":  73,
+                                        "text":  "Hough",
+                                        "x":  932
+                                    },
+                                    {
+                                        "y":  438,
+                                        "height":  19,
+                                        "width":  135,
+                                        "text":  "Transform",
+                                        "x":  1021
+                                    },
+                                    {
+                                        "y":  438,
+                                        "height":  19,
+                                        "width":  26,
+                                        "text":  "is",
+                                        "x":  1174
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "particularly useful when traditional methods like gradient-based edge",
+                      "words":  [
+                                    {
+                                        "y":  476,
+                                        "height":  24,
+                                        "width":  178,
+                                        "text":  "particularly",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  476,
+                                        "height":  19,
+                                        "width":  88,
+                                        "text":  "useful",
+                                        "x":  365
+                                    },
+                                    {
+                                        "y":  476,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "when",
+                                        "x":  467
+                                    },
+                                    {
+                                        "y":  476,
+                                        "height":  19,
+                                        "width":  164,
+                                        "text":  "traditional",
+                                        "x":  542
+                                    },
+                                    {
+                                        "y":  476,
+                                        "height":  19,
+                                        "width":  104,
+                                        "text":  "methods",
+                                        "x":  722
+                                    },
+                                    {
+                                        "y":  476,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "like",
+                                        "x":  843
+                                    },
+                                    {
+                                        "y":  476,
+                                        "height":  24,
+                                        "width":  209,
+                                        "text":  "gradient-based",
+                                        "x":  916
+                                    },
+                                    {
+                                        "y":  476,
+                                        "height":  24,
+                                        "width":  58,
+                                        "text":  "edge",
+                                        "x":  1142
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "detection are insufficient for detecting specific shapes. It\u0027s widely",
+                      "words":  [
+                                    {
+                                        "y":  513,
+                                        "height":  19,
+                                        "width":  134,
+                                        "text":  "detection",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  519,
+                                        "height":  13,
+                                        "width":  44,
+                                        "text":  "are",
+                                        "x":  319
+                                    },
+                                    {
+                                        "y":  513,
+                                        "height":  19,
+                                        "width":  177,
+                                        "text":  "insufficient",
+                                        "x":  380
+                                    },
+                                    {
+                                        "y":  513,
+                                        "height":  19,
+                                        "width":  45,
+                                        "text":  "for",
+                                        "x":  573
+                                    },
+                                    {
+                                        "y":  513,
+                                        "height":  24,
+                                        "width":  135,
+                                        "text":  "detecting",
+                                        "x":  633
+                                    },
+                                    {
+                                        "y":  513,
+                                        "height":  24,
+                                        "width":  117,
+                                        "text":  "specific",
+                                        "x":  784
+                                    },
+                                    {
+                                        "y":  513,
+                                        "height":  24,
+                                        "width":  99,
+                                        "text":  "shapes.",
+                                        "x":  918
+                                    },
+                                    {
+                                        "y":  513,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "It\u0027s",
+                                        "x":  1038
+                                    },
+                                    {
+                                        "y":  513,
+                                        "height":  24,
+                                        "width":  90,
+                                        "text":  "widely",
+                                        "x":  1111
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "employed in various computer vision applications, such as image",
+                      "words":  [
+                                    {
+                                        "y":  551,
+                                        "height":  24,
+                                        "width":  119,
+                                        "text":  "employed",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  551,
+                                        "height":  20,
+                                        "width":  26,
+                                        "text":  "in",
+                                        "x":  317
+                                    },
+                                    {
+                                        "y":  551,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "various",
+                                        "x":  371
+                                    },
+                                    {
+                                        "y":  552,
+                                        "height":  23,
+                                        "width":  119,
+                                        "text":  "computer",
+                                        "x":  502
+                                    },
+                                    {
+                                        "y":  551,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "vision",
+                                        "x":  648
+                                    },
+                                    {
+                                        "y":  551,
+                                        "height":  24,
+                                        "width":  190,
+                                        "text":  "applications,",
+                                        "x":  764
+                                    },
+                                    {
+                                        "y":  551,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "such",
+                                        "x":  985
+                                    },
+                                    {
+                                        "y":  557,
+                                        "height":  13,
+                                        "width":  28,
+                                        "text":  "as",
+                                        "x":  1071
+                                    },
+                                    {
+                                        "y":  551,
+                                        "height":  24,
+                                        "width":  72,
+                                        "text":  "image",
+                                        "x":  1128
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "analysis, object recognition, and feature extraction.",
+                      "words":  [
+                                    {
+                                        "y":  589,
+                                        "height":  24,
+                                        "width":  130,
+                                        "text":  "analysis,",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  589,
+                                        "height":  24,
+                                        "width":  88,
+                                        "text":  "object",
+                                        "x":  321
+                                    },
+                                    {
+                                        "y":  589,
+                                        "height":  24,
+                                        "width":  175,
+                                        "text":  "recognition,",
+                                        "x":  426
+                                    },
+                                    {
+                                        "y":  589,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  622
+                                    },
+                                    {
+                                        "y":  589,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "feature",
+                                        "x":  683
+                                    },
+                                    {
+                                        "y":  589,
+                                        "height":  20,
+                                        "width":  159,
+                                        "text":  "extraction.",
+                                        "x":  804
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The Hough Transform works by transforming the spatial domain of an",
+                      "words":  [
+                                    {
+                                        "y":  640,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "The",
+                                        "x":  168
+                                    },
+                                    {
+                                        "y":  640,
+                                        "height":  24,
+                                        "width":  72,
+                                        "text":  "Hough",
+                                        "x":  234
+                                    },
+                                    {
+                                        "y":  640,
+                                        "height":  20,
+                                        "width":  135,
+                                        "text":  "Transform",
+                                        "x":  326
+                                    },
+                                    {
+                                        "y":  640,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "works",
+                                        "x":  481
+                                    },
+                                    {
+                                        "y":  640,
+                                        "height":  24,
+                                        "width":  27,
+                                        "text":  "by",
+                                        "x":  577
+                                    },
+                                    {
+                                        "y":  640,
+                                        "height":  24,
+                                        "width":  181,
+                                        "text":  "transforming",
+                                        "x":  624
+                                    },
+                                    {
+                                        "y":  640,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  825
+                                    },
+                                    {
+                                        "y":  640,
+                                        "height":  24,
+                                        "width":  102,
+                                        "text":  "spatial",
+                                        "x":  890
+                                    },
+                                    {
+                                        "y":  640,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "domain",
+                                        "x":  1013
+                                    },
+                                    {
+                                        "y":  640,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  1123
+                                    },
+                                    {
+                                        "y":  646,
+                                        "height":  14,
+                                        "width":  27,
+                                        "text":  "an",
+                                        "x":  1172
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "image into a parameter space, where each pixel in the image corresponds",
+                      "words":  [
+                                    {
+                                        "y":  678,
+                                        "height":  24,
+                                        "width":  73,
+                                        "text":  "image",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  678,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "into",
+                                        "x":  257
+                                    },
+                                    {
+                                        "y":  684,
+                                        "height":  14,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  328
+                                    },
+                                    {
+                                        "y":  679,
+                                        "height":  23,
+                                        "width":  133,
+                                        "text":  "parameter",
+                                        "x":  356
+                                    },
+                                    {
+                                        "y":  684,
+                                        "height":  18,
+                                        "width":  85,
+                                        "text":  "space,",
+                                        "x":  502
+                                    },
+                                    {
+                                        "y":  678,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "where",
+                                        "x":  604
+                                    },
+                                    {
+                                        "y":  678,
+                                        "height":  20,
+                                        "width":  57,
+                                        "text":  "each",
+                                        "x":  692
+                                    },
+                                    {
+                                        "y":  678,
+                                        "height":  25,
+                                        "width":  73,
+                                        "text":  "pixel",
+                                        "x":  764
+                                    },
+                                    {
+                                        "y":  678,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "in",
+                                        "x":  852
+                                    },
+                                    {
+                                        "y":  678,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  892
+                                    },
+                                    {
+                                        "y":  678,
+                                        "height":  24,
+                                        "width":  73,
+                                        "text":  "image",
+                                        "x":  950
+                                    },
+                                    {
+                                        "y":  678,
+                                        "height":  25,
+                                        "width":  163,
+                                        "text":  "corresponds",
+                                        "x":  1037
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "to a curve or a point in this parameter space. The primary purpose of",
+                      "words":  [
+                                    {
+                                        "y":  715,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  720,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  214
+                                    },
+                                    {
+                                        "y":  720,
+                                        "height":  14,
+                                        "width":  73,
+                                        "text":  "curve",
+                                        "x":  244
+                                    },
+                                    {
+                                        "y":  720,
+                                        "height":  14,
+                                        "width":  29,
+                                        "text":  "or",
+                                        "x":  333
+                                    },
+                                    {
+                                        "y":  720,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  378
+                                    },
+                                    {
+                                        "y":  715,
+                                        "height":  24,
+                                        "width":  72,
+                                        "text":  "point",
+                                        "x":  408
+                                    },
+                                    {
+                                        "y":  715,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "in",
+                                        "x":  497
+                                    },
+                                    {
+                                        "y":  715,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "this",
+                                        "x":  541
+                                    },
+                                    {
+                                        "y":  715,
+                                        "height":  24,
+                                        "width":  134,
+                                        "text":  "parameter",
+                                        "x":  617
+                                    },
+                                    {
+                                        "y":  720,
+                                        "height":  19,
+                                        "width":  84,
+                                        "text":  "space.",
+                                        "x":  768
+                                    },
+                                    {
+                                        "y":  715,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "The",
+                                        "x":  871
+                                    },
+                                    {
+                                        "y":  715,
+                                        "height":  24,
+                                        "width":  103,
+                                        "text":  "primary",
+                                        "x":  932
+                                    },
+                                    {
+                                        "y":  720,
+                                        "height":  19,
+                                        "width":  104,
+                                        "text":  "purpose",
+                                        "x":  1052
+                                    },
+                                    {
+                                        "y":  715,
+                                        "height":  19,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  1172
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "this transformation is to identify patterns that are represented as",
+                      "words":  [
+                                    {
+                                        "y":  753,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "this",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  753,
+                                        "height":  19,
+                                        "width":  208,
+                                        "text":  "transformation",
+                                        "x":  247
+                                    },
+                                    {
+                                        "y":  753,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  476
+                                    },
+                                    {
+                                        "y":  754,
+                                        "height":  18,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  522
+                                    },
+                                    {
+                                        "y":  753,
+                                        "height":  24,
+                                        "width":  119,
+                                        "text":  "identify",
+                                        "x":  571
+                                    },
+                                    {
+                                        "y":  753,
+                                        "height":  24,
+                                        "width":  118,
+                                        "text":  "patterns",
+                                        "x":  710
+                                    },
+                                    {
+                                        "y":  753,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "that",
+                                        "x":  847
+                                    },
+                                    {
+                                        "y":  758,
+                                        "height":  14,
+                                        "width":  43,
+                                        "text":  "are",
+                                        "x":  925
+                                    },
+                                    {
+                                        "y":  753,
+                                        "height":  24,
+                                        "width":  164,
+                                        "text":  "represented",
+                                        "x":  988
+                                    },
+                                    {
+                                        "y":  758,
+                                        "height":  14,
+                                        "width":  28,
+                                        "text":  "as",
+                                        "x":  1172
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "lines or curves in the parameter space.",
+                      "words":  [
+                                    {
+                                        "y":  790,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "lines",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  796,
+                                        "height":  14,
+                                        "width":  29,
+                                        "text":  "or",
+                                        "x":  260
+                                    },
+                                    {
+                                        "y":  796,
+                                        "height":  14,
+                                        "width":  88,
+                                        "text":  "curves",
+                                        "x":  306
+                                    },
+                                    {
+                                        "y":  790,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "in",
+                                        "x":  412
+                                    },
+                                    {
+                                        "y":  790,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  455
+                                    },
+                                    {
+                                        "y":  791,
+                                        "height":  23,
+                                        "width":  134,
+                                        "text":  "parameter",
+                                        "x":  517
+                                    },
+                                    {
+                                        "y":  796,
+                                        "height":  19,
+                                        "width":  84,
+                                        "text":  "space.",
+                                        "x":  668
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4.1 Hough Transform for Line Detection",
+                      "words":  [
+                                    {
+                                        "y":  863,
+                                        "height":  24,
+                                        "width":  45,
+                                        "text":  "4.1",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  862,
+                                        "height":  32,
+                                        "width":  104,
+                                        "text":  "Hough",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  862,
+                                        "height":  25,
+                                        "width":  168,
+                                        "text":  "Transform",
+                                        "x":  368
+                                    },
+                                    {
+                                        "y":  862,
+                                        "height":  25,
+                                        "width":  47,
+                                        "text":  "for",
+                                        "x":  549
+                                    },
+                                    {
+                                        "y":  860,
+                                        "height":  27,
+                                        "width":  66,
+                                        "text":  "Line",
+                                        "x":  609
+                                    },
+                                    {
+                                        "y":  860,
+                                        "height":  27,
+                                        "width":  153,
+                                        "text":  "Detection",
+                                        "x":  688
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Parametric Representation of Lines: The Hough Transform starts with",
+                      "words":  [
+                                    {
+                                        "y":  919,
+                                        "height":  19,
+                                        "width":  148,
+                                        "text":  "Parametric",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  919,
+                                        "height":  24,
+                                        "width":  208,
+                                        "text":  "Representation",
+                                        "x":  339
+                                    },
+                                    {
+                                        "y":  919,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "of",
+                                        "x":  566
+                                    },
+                                    {
+                                        "y":  919,
+                                        "height":  19,
+                                        "width":  85,
+                                        "text":  "Lines:",
+                                        "x":  615
+                                    },
+                                    {
+                                        "y":  919,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "The",
+                                        "x":  723
+                                    },
+                                    {
+                                        "y":  919,
+                                        "height":  24,
+                                        "width":  73,
+                                        "text":  "Hough",
+                                        "x":  787
+                                    },
+                                    {
+                                        "y":  918,
+                                        "height":  20,
+                                        "width":  135,
+                                        "text":  "Transform",
+                                        "x":  879
+                                    },
+                                    {
+                                        "y":  919,
+                                        "height":  19,
+                                        "width":  88,
+                                        "text":  "starts",
+                                        "x":  1034
+                                    },
+                                    {
+                                        "y":  918,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "with",
+                                        "x":  1141
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "the parametric representation of lines, where a line in Cartesian",
+                      "words":  [
+                                    {
+                                        "y":  956,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  956,
+                                        "height":  24,
+                                        "width":  148,
+                                        "text":  "parametric",
+                                        "x":  236
+                                    },
+                                    {
+                                        "y":  956,
+                                        "height":  24,
+                                        "width":  208,
+                                        "text":  "representation",
+                                        "x":  408
+                                    },
+                                    {
+                                        "y":  956,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "of",
+                                        "x":  639
+                                    },
+                                    {
+                                        "y":  956,
+                                        "height":  23,
+                                        "width":  84,
+                                        "text":  "lines,",
+                                        "x":  691
+                                    },
+                                    {
+                                        "y":  956,
+                                        "height":  19,
+                                        "width":  75,
+                                        "text":  "where",
+                                        "x":  801
+                                    },
+                                    {
+                                        "y":  962,
+                                        "height":  13,
+                                        "width":  12,
+                                        "text":  "a",
+                                        "x":  899
+                                    },
+                                    {
+                                        "y":  956,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "line",
+                                        "x":  934
+                                    },
+                                    {
+                                        "y":  956,
+                                        "height":  19,
+                                        "width":  26,
+                                        "text":  "in",
+                                        "x":  1016
+                                    },
+                                    {
+                                        "y":  956,
+                                        "height":  19,
+                                        "width":  134,
+                                        "text":  "Cartesian",
+                                        "x":  1066
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "coordinates (x, y) is represented as",
+                      "words":  [
+                                    {
+                                        "y":  994,
+                                        "height":  20,
+                                        "width":  163,
+                                        "text":  "coordinates",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  993,
+                                        "height":  24,
+                                        "width":  36,
+                                        "text":  "(x,",
+                                        "x":  354
+                                    },
+                                    {
+                                        "y":  993,
+                                        "height":  25,
+                                        "width":  25,
+                                        "text":  "y)",
+                                        "x":  411
+                                    },
+                                    {
+                                        "y":  994,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  456
+                                    },
+                                    {
+                                        "y":  994,
+                                        "height":  24,
+                                        "width":  164,
+                                        "text":  "represented",
+                                        "x":  501
+                                    },
+                                    {
+                                        "y":  1000,
+                                        "height":  14,
+                                        "width":  28,
+                                        "text":  "as",
+                                        "x":  683
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "y = mx + b",
+                      "words":  [
+                                    {
+                                        "y":  1051,
+                                        "height":  17,
+                                        "width":  14,
+                                        "text":  "y",
+                                        "x":  621
+                                    },
+                                    {
+                                        "y":  1052,
+                                        "height":  8,
+                                        "width":  16,
+                                        "text":  "=",
+                                        "x":  644
+                                    },
+                                    {
+                                        "y":  1050,
+                                        "height":  13,
+                                        "width":  35,
+                                        "text":  "mx",
+                                        "x":  668
+                                    },
+                                    {
+                                        "y":  1047,
+                                        "height":  16,
+                                        "width":  16,
+                                        "text":  "+",
+                                        "x":  711
+                                    },
+                                    {
+                                        "y":  1045,
+                                        "height":  18,
+                                        "width":  12,
+                                        "text":  "b",
+                                        "x":  735
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Here, Iml is the slope of the line, and \u0027bl is the y-intercept",
+                      "words":  [
+                                    {
+                                        "y":  1093,
+                                        "height":  22,
+                                        "width":  69,
+                                        "text":  "Here,",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1092,
+                                        "height":  20,
+                                        "width":  33,
+                                        "text":  "Iml",
+                                        "x":  265
+                                    },
+                                    {
+                                        "y":  1092,
+                                        "height":  20,
+                                        "width":  26,
+                                        "text":  "is",
+                                        "x":  322
+                                    },
+                                    {
+                                        "y":  1092,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  365
+                                    },
+                                    {
+                                        "y":  1092,
+                                        "height":  24,
+                                        "width":  72,
+                                        "text":  "slope",
+                                        "x":  427
+                                    },
+                                    {
+                                        "y":  1092,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  516
+                                    },
+                                    {
+                                        "y":  1092,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  561
+                                    },
+                                    {
+                                        "y":  1092,
+                                        "height":  23,
+                                        "width":  70,
+                                        "text":  "line,",
+                                        "x":  622
+                                    },
+                                    {
+                                        "y":  1092,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  713
+                                    },
+                                    {
+                                        "y":  1092,
+                                        "height":  20,
+                                        "width":  34,
+                                        "text":  "\u0027bl",
+                                        "x":  778
+                                    },
+                                    {
+                                        "y":  1092,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  835
+                                    },
+                                    {
+                                        "y":  1092,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  879
+                                    },
+                                    {
+                                        "y":  1092,
+                                        "height":  24,
+                                        "width":  164,
+                                        "text":  "y-intercept",
+                                        "x":  939
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "•",
+                      "words":  [
+                                    {
+                                        "y":  1574,
+                                        "height":  10,
+                                        "width":  9,
+                                        "text":  "•",
+                                        "x":  252
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Parameter Space: In the Hough Transform, we transform this",
+                      "words":  [
+                                    {
+                                        "y":  1145,
+                                        "height":  18,
+                                        "width":  135,
+                                        "text":  "Parameter",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  1145,
+                                        "height":  23,
+                                        "width":  85,
+                                        "text":  "Space:",
+                                        "x":  448
+                                    },
+                                    {
+                                        "y":  1145,
+                                        "height":  18,
+                                        "width":  27,
+                                        "text":  "In",
+                                        "x":  558
+                                    },
+                                    {
+                                        "y":  1144,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  606
+                                    },
+                                    {
+                                        "y":  1144,
+                                        "height":  24,
+                                        "width":  73,
+                                        "text":  "Hough",
+                                        "x":  672
+                                    },
+                                    {
+                                        "y":  1144,
+                                        "height":  23,
+                                        "width":  145,
+                                        "text":  "Transform,",
+                                        "x":  766
+                                    },
+                                    {
+                                        "y":  1150,
+                                        "height":  13,
+                                        "width":  29,
+                                        "text":  "we",
+                                        "x":  936
+                                    },
+                                    {
+                                        "y":  1144,
+                                        "height":  19,
+                                        "width":  135,
+                                        "text":  "transform",
+                                        "x":  985
+                                    },
+                                    {
+                                        "y":  1144,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "this",
+                                        "x":  1141
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "representation into a parameter space with Iml and lb\u0027 as",
+                      "words":  [
+                                    {
+                                        "y":  1179,
+                                        "height":  24,
+                                        "width":  208,
+                                        "text":  "representation",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  1179,
+                                        "height":  20,
+                                        "width":  57,
+                                        "text":  "into",
+                                        "x":  526
+                                    },
+                                    {
+                                        "y":  1185,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  606
+                                    },
+                                    {
+                                        "y":  1180,
+                                        "height":  23,
+                                        "width":  134,
+                                        "text":  "parameter",
+                                        "x":  642
+                                    },
+                                    {
+                                        "y":  1185,
+                                        "height":  18,
+                                        "width":  73,
+                                        "text":  "space",
+                                        "x":  798
+                                    },
+                                    {
+                                        "y":  1179,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "with",
+                                        "x":  893
+                                    },
+                                    {
+                                        "y":  1179,
+                                        "height":  20,
+                                        "width":  34,
+                                        "text":  "Iml",
+                                        "x":  979
+                                    },
+                                    {
+                                        "y":  1179,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  1041
+                                    },
+                                    {
+                                        "y":  1179,
+                                        "height":  20,
+                                        "width":  33,
+                                        "text":  "lb\u0027",
+                                        "x":  1111
+                                    },
+                                    {
+                                        "y":  1185,
+                                        "height":  14,
+                                        "width":  28,
+                                        "text":  "as",
+                                        "x":  1172
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "axes. Each line in the image corresponds to a point in this",
+                      "words":  [
+                                    {
+                                        "y":  1220,
+                                        "height":  14,
+                                        "width":  69,
+                                        "text":  "axes.",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  1215,
+                                        "height":  19,
+                                        "width":  57,
+                                        "text":  "Each",
+                                        "x":  386
+                                    },
+                                    {
+                                        "y":  1214,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "line",
+                                        "x":  462
+                                    },
+                                    {
+                                        "y":  1215,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "in",
+                                        "x":  540
+                                    },
+                                    {
+                                        "y":  1215,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  585
+                                    },
+                                    {
+                                        "y":  1215,
+                                        "height":  24,
+                                        "width":  73,
+                                        "text":  "image",
+                                        "x":  649
+                                    },
+                                    {
+                                        "y":  1215,
+                                        "height":  24,
+                                        "width":  164,
+                                        "text":  "corresponds",
+                                        "x":  741
+                                    },
+                                    {
+                                        "y":  1215,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  922
+                                    },
+                                    {
+                                        "y":  1220,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  970
+                                    },
+                                    {
+                                        "y":  1215,
+                                        "height":  24,
+                                        "width":  72,
+                                        "text":  "point",
+                                        "x":  1003
+                                    },
+                                    {
+                                        "y":  1215,
+                                        "height":  19,
+                                        "width":  26,
+                                        "text":  "in",
+                                        "x":  1096
+                                    },
+                                    {
+                                        "y":  1215,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "this",
+                                        "x":  1141
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "parameter space.",
+                      "words":  [
+                                    {
+                                        "y":  1251,
+                                        "height":  23,
+                                        "width":  134,
+                                        "text":  "parameter",
+                                        "x":  294
+                                    },
+                                    {
+                                        "y":  1255,
+                                        "height":  19,
+                                        "width":  83,
+                                        "text":  "space.",
+                                        "x":  445
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Voting: For each edge pixel (typically obtained from edge",
+                      "words":  [
+                                    {
+                                        "y":  1286,
+                                        "height":  24,
+                                        "width":  101,
+                                        "text":  "Voting:",
+                                        "x":  292
+                                    },
+                                    {
+                                        "y":  1286,
+                                        "height":  19,
+                                        "width":  42,
+                                        "text":  "For",
+                                        "x":  421
+                                    },
+                                    {
+                                        "y":  1286,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "each",
+                                        "x":  485
+                                    },
+                                    {
+                                        "y":  1286,
+                                        "height":  24,
+                                        "width":  59,
+                                        "text":  "edge",
+                                        "x":  567
+                                    },
+                                    {
+                                        "y":  1286,
+                                        "height":  24,
+                                        "width":  72,
+                                        "text":  "pixel",
+                                        "x":  650
+                                    },
+                                    {
+                                        "y":  1285,
+                                        "height":  25,
+                                        "width":  145,
+                                        "text":  "(typically",
+                                        "x":  750
+                                    },
+                                    {
+                                        "y":  1286,
+                                        "height":  19,
+                                        "width":  118,
+                                        "text":  "obtained",
+                                        "x":  918
+                                    },
+                                    {
+                                        "y":  1286,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "from",
+                                        "x":  1060
+                                    },
+                                    {
+                                        "y":  1286,
+                                        "height":  24,
+                                        "width":  58,
+                                        "text":  "edge",
+                                        "x":  1142
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "detection methods like Canny), we calculate the Iml and \u0027b\u0027",
+                      "words":  [
+                                    {
+                                        "y":  1321,
+                                        "height":  19,
+                                        "width":  133,
+                                        "text":  "detection",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  1321,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "methods",
+                                        "x":  446
+                                    },
+                                    {
+                                        "y":  1321,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "like",
+                                        "x":  569
+                                    },
+                                    {
+                                        "y":  1320,
+                                        "height":  25,
+                                        "width":  100,
+                                        "text":  "Canny),",
+                                        "x":  646
+                                    },
+                                    {
+                                        "y":  1327,
+                                        "height":  13,
+                                        "width":  29,
+                                        "text":  "we",
+                                        "x":  768
+                                    },
+                                    {
+                                        "y":  1321,
+                                        "height":  19,
+                                        "width":  133,
+                                        "text":  "calculate",
+                                        "x":  817
+                                    },
+                                    {
+                                        "y":  1321,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  968
+                                    },
+                                    {
+                                        "y":  1321,
+                                        "height":  19,
+                                        "width":  34,
+                                        "text":  "Iml",
+                                        "x":  1036
+                                    },
+                                    {
+                                        "y":  1321,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  1094
+                                    },
+                                    {
+                                        "y":  1321,
+                                        "height":  19,
+                                        "width":  34,
+                                        "text":  "\u0027b\u0027",
+                                        "x":  1161
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "values that could generate the line passing through that",
+                      "words":  [
+                                    {
+                                        "y":  1356,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "values",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  1356,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "that",
+                                        "x":  406
+                                    },
+                                    {
+                                        "y":  1356,
+                                        "height":  20,
+                                        "width":  72,
+                                        "text":  "could",
+                                        "x":  490
+                                    },
+                                    {
+                                        "y":  1357,
+                                        "height":  23,
+                                        "width":  118,
+                                        "text":  "generate",
+                                        "x":  589
+                                    },
+                                    {
+                                        "y":  1356,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  732
+                                    },
+                                    {
+                                        "y":  1356,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "line",
+                                        "x":  801
+                                    },
+                                    {
+                                        "y":  1356,
+                                        "height":  24,
+                                        "width":  103,
+                                        "text":  "passing",
+                                        "x":  885
+                                    },
+                                    {
+                                        "y":  1356,
+                                        "height":  24,
+                                        "width":  104,
+                                        "text":  "through",
+                                        "x":  1012
+                                    },
+                                    {
+                                        "y":  1356,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "that",
+                                        "x":  1141
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "pixel. This is essentially a voting process where we increment",
+                      "words":  [
+                                    {
+                                        "y":  1391,
+                                        "height":  24,
+                                        "width":  84,
+                                        "text":  "pixel.",
+                                        "x":  294
+                                    },
+                                    {
+                                        "y":  1392,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "This",
+                                        "x":  395
+                                    },
+                                    {
+                                        "y":  1392,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  468
+                                    },
+                                    {
+                                        "y":  1392,
+                                        "height":  23,
+                                        "width":  164,
+                                        "text":  "essentially",
+                                        "x":  510
+                                    },
+                                    {
+                                        "y":  1397,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  689
+                                    },
+                                    {
+                                        "y":  1392,
+                                        "height":  23,
+                                        "width":  89,
+                                        "text":  "voting",
+                                        "x":  716
+                                    },
+                                    {
+                                        "y":  1397,
+                                        "height":  18,
+                                        "width":  101,
+                                        "text":  "process",
+                                        "x":  820
+                                    },
+                                    {
+                                        "y":  1392,
+                                        "height":  19,
+                                        "width":  75,
+                                        "text":  "where",
+                                        "x":  935
+                                    },
+                                    {
+                                        "y":  1397,
+                                        "height":  14,
+                                        "width":  29,
+                                        "text":  "we",
+                                        "x":  1023
+                                    },
+                                    {
+                                        "y":  1392,
+                                        "height":  19,
+                                        "width":  133,
+                                        "text":  "increment",
+                                        "x":  1067
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "the corresponding (m, b) cell in the parameter space.",
+                      "words":  [
+                                    {
+                                        "y":  1426,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  292
+                                    },
+                                    {
+                                        "y":  1426,
+                                        "height":  24,
+                                        "width":  194,
+                                        "text":  "corresponding",
+                                        "x":  354
+                                    },
+                                    {
+                                        "y":  1425,
+                                        "height":  24,
+                                        "width":  36,
+                                        "text":  "(m,",
+                                        "x":  568
+                                    },
+                                    {
+                                        "y":  1425,
+                                        "height":  24,
+                                        "width":  24,
+                                        "text":  "b)",
+                                        "x":  625
+                                    },
+                                    {
+                                        "y":  1426,
+                                        "height":  19,
+                                        "width":  57,
+                                        "text":  "cell",
+                                        "x":  671
+                                    },
+                                    {
+                                        "y":  1426,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "in",
+                                        "x":  747
+                                    },
+                                    {
+                                        "y":  1426,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  791
+                                    },
+                                    {
+                                        "y":  1426,
+                                        "height":  24,
+                                        "width":  133,
+                                        "text":  "parameter",
+                                        "x":  853
+                                    },
+                                    {
+                                        "y":  1431,
+                                        "height":  19,
+                                        "width":  84,
+                                        "text":  "space.",
+                                        "x":  1003
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Peak Detection: After processing all edge pixels, the",
+                      "words":  [
+                                    {
+                                        "y":  1462,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "Peak",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  1462,
+                                        "height":  19,
+                                        "width":  145,
+                                        "text":  "Detection:",
+                                        "x":  384
+                                    },
+                                    {
+                                        "y":  1462,
+                                        "height":  19,
+                                        "width":  74,
+                                        "text":  "After",
+                                        "x":  565
+                                    },
+                                    {
+                                        "y":  1462,
+                                        "height":  24,
+                                        "width":  150,
+                                        "text":  "processing",
+                                        "x":  672
+                                    },
+                                    {
+                                        "y":  1462,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "all",
+                                        "x":  854
+                                    },
+                                    {
+                                        "y":  1462,
+                                        "height":  24,
+                                        "width":  59,
+                                        "text":  "edge",
+                                        "x":  929
+                                    },
+                                    {
+                                        "y":  1462,
+                                        "height":  24,
+                                        "width":  99,
+                                        "text":  "pixels,",
+                                        "x":  1021
+                                    },
+                                    {
+                                        "y":  1462,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  1156
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "parameter space is examined to find peaks. These peaks",
+                      "words":  [
+                                    {
+                                        "y":  1498,
+                                        "height":  23,
+                                        "width":  134,
+                                        "text":  "parameter",
+                                        "x":  294
+                                    },
+                                    {
+                                        "y":  1503,
+                                        "height":  18,
+                                        "width":  73,
+                                        "text":  "space",
+                                        "x":  455
+                                    },
+                                    {
+                                        "y":  1497,
+                                        "height":  19,
+                                        "width":  26,
+                                        "text":  "is",
+                                        "x":  559
+                                    },
+                                    {
+                                        "y":  1497,
+                                        "height":  19,
+                                        "width":  118,
+                                        "text":  "examined",
+                                        "x":  615
+                                    },
+                                    {
+                                        "y":  1498,
+                                        "height":  18,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  762
+                                    },
+                                    {
+                                        "y":  1497,
+                                        "height":  19,
+                                        "width":  57,
+                                        "text":  "find",
+                                        "x":  820
+                                    },
+                                    {
+                                        "y":  1497,
+                                        "height":  24,
+                                        "width":  83,
+                                        "text":  "peaks.",
+                                        "x":  908
+                                    },
+                                    {
+                                        "y":  1497,
+                                        "height":  19,
+                                        "width":  75,
+                                        "text":  "These",
+                                        "x":  1023
+                                    },
+                                    {
+                                        "y":  1497,
+                                        "height":  24,
+                                        "width":  73,
+                                        "text":  "peaks",
+                                        "x":  1127
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "represent the lines in the image.",
+                      "words":  [
+                                    {
+                                        "y":  1533,
+                                        "height":  23,
+                                        "width":  134,
+                                        "text":  "represent",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  1532,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "the",
+                                        "x":  444
+                                    },
+                                    {
+                                        "y":  1532,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "lines",
+                                        "x":  504
+                                    },
+                                    {
+                                        "y":  1532,
+                                        "height":  20,
+                                        "width":  26,
+                                        "text":  "in",
+                                        "x":  596
+                                    },
+                                    {
+                                        "y":  1532,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  639
+                                    },
+                                    {
+                                        "y":  1532,
+                                        "height":  24,
+                                        "width":  83,
+                                        "text":  "image.",
+                                        "x":  702
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Back-Transformation: Once the lines are detected in the",
+                      "words":  [
+                                    {
+                                        "y":  1568,
+                                        "height":  19,
+                                        "width":  296,
+                                        "text":  "Back-Transformation:",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  1568,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "Once",
+                                        "x":  621
+                                    },
+                                    {
+                                        "y":  1568,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  707
+                                    },
+                                    {
+                                        "y":  1567,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "lines",
+                                        "x":  780
+                                    },
+                                    {
+                                        "y":  1573,
+                                        "height":  14,
+                                        "width":  42,
+                                        "text":  "are",
+                                        "x":  882
+                                    },
+                                    {
+                                        "y":  1568,
+                                        "height":  19,
+                                        "width":  118,
+                                        "text":  "detected",
+                                        "x":  953
+                                    },
+                                    {
+                                        "y":  1568,
+                                        "height":  19,
+                                        "width":  26,
+                                        "text":  "in",
+                                        "x":  1102
+                                    },
+                                    {
+                                        "y":  1568,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  1157
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "parameter space, they can be back-transformed into the image",
+                      "words":  [
+                                    {
+                                        "y":  1604,
+                                        "height":  23,
+                                        "width":  134,
+                                        "text":  "parameter",
+                                        "x":  294
+                                    },
+                                    {
+                                        "y":  1608,
+                                        "height":  19,
+                                        "width":  83,
+                                        "text":  "space,",
+                                        "x":  445
+                                    },
+                                    {
+                                        "y":  1603,
+                                        "height":  24,
+                                        "width":  59,
+                                        "text":  "they",
+                                        "x":  549
+                                    },
+                                    {
+                                        "y":  1608,
+                                        "height":  14,
+                                        "width":  42,
+                                        "text":  "can",
+                                        "x":  626
+                                    },
+                                    {
+                                        "y":  1603,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "be",
+                                        "x":  688
+                                    },
+                                    {
+                                        "y":  1603,
+                                        "height":  19,
+                                        "width":  238,
+                                        "text":  "back-transformed",
+                                        "x":  733
+                                    },
+                                    {
+                                        "y":  1603,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "into",
+                                        "x":  990
+                                    },
+                                    {
+                                        "y":  1603,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  1065
+                                    },
+                                    {
+                                        "y":  1603,
+                                        "height":  24,
+                                        "width":  72,
+                                        "text":  "image",
+                                        "x":  1128
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "space, revealing the position and orientation of the lines.",
+                      "words":  [
+                                    {
+                                        "y":  1644,
+                                        "height":  18,
+                                        "width":  84,
+                                        "text":  "space,",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  1638,
+                                        "height":  24,
+                                        "width":  134,
+                                        "text":  "revealing",
+                                        "x":  399
+                                    },
+                                    {
+                                        "y":  1638,
+                                        "height":  19,
+                                        "width":  45,
+                                        "text":  "the",
+                                        "x":  548
+                                    },
+                                    {
+                                        "y":  1638,
+                                        "height":  24,
+                                        "width":  117,
+                                        "text":  "position",
+                                        "x":  611
+                                    },
+                                    {
+                                        "y":  1638,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  746
+                                    },
+                                    {
+                                        "y":  1638,
+                                        "height":  19,
+                                        "width":  162,
+                                        "text":  "orientation",
+                                        "x":  807
+                                    },
+                                    {
+                                        "y":  1638,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "of",
+                                        "x":  987
+                                    },
+                                    {
+                                        "y":  1638,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  1032
+                                    },
+                                    {
+                                        "y":  1638,
+                                        "height":  19,
+                                        "width":  84,
+                                        "text":  "lines.",
+                                        "x":  1094
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FAST NUCES -",
+                      "words":  [
+                                    {
+                                        "y":  1822,
+                                        "height":  17,
+                                        "width":  56,
+                                        "text":  "FAST",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1822,
+                                        "height":  17,
+                                        "width":  78,
+                                        "text":  "NUCES",
+                                        "x":  234
+                                    },
+                                    {
+                                        "y":  1830,
+                                        "height":  4,
+                                        "width":  11,
+                                        "text":  "-",
+                                        "x":  320
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Karachi",
+                      "words":  [
+                                    {
+                                        "y":  1820,
+                                        "height":  19,
+                                        "width":  86,
+                                        "text":  "Karachi",
+                                        "x":  340
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1821,
+                                        "height":  18,
+                                        "width":  65,
+                                        "text":  "Talha",
+                                        "x":  607
+                                    },
+                                    {
+                                        "y":  1820,
+                                        "height":  19,
+                                        "width":  80,
+                                        "text":  "Shahid",
+                                        "x":  681
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "17",
+                      "words":  [
+                                    {
+                                        "y":  1822,
+                                        "height":  17,
+                                        "width":  23,
+                                        "text":  "17",
+                                        "x":  1178
+                                    }
+                                ]
+                  }
+              ]
+}

@@ -1,0 +1,1354 @@
+﻿{
+    "id":  "lab_05_tasks_p004",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "Task 4 — Sorting Objects by Color A robotic sorting system receives an image containing objects of different colors. The robot is interested only in one particular colored object and needs a binary mask identifying that object. Intensity alone cannot reliably distinguish the desired object from the background. Your Task Use a color image containing a clearly distinguishable colored object, such as the yellow-car example: Build a color-based segmentation system. Your 1. 2. 3. 4. 5. 6. program must: Load the image in color. Convert it to HSV. Define a lower and upper color range . Generate a binary mask using the color range. Experiment with the lower and upper limits. Extract the selected color from the original image using your mask. Challenge Requirement Create two masks: • A mask that is too restrictive A final mask that captures the desired object more completely Then explain why the restrictive mask fails. The manual specifically presents HSV-based color thresholding using lower and upper bounds. Talha Shahid 4 Page",
+    "review_status":  "raw_ocr_unverified",
+    "page":  4,
+    "source_id":  "lab_05_tasks",
+    "lines":  [
+                  {
+                      "text":  "Task 4 — Sorting Objects by Color",
+                      "words":  [
+                                    {
+                                        "y":  233,
+                                        "height":  19,
+                                        "width":  61,
+                                        "text":  "Task",
+                                        "x":  168
+                                    },
+                                    {
+                                        "y":  233,
+                                        "height":  19,
+                                        "width":  15,
+                                        "text":  "4",
+                                        "x":  244
+                                    },
+                                    {
+                                        "y":  242,
+                                        "height":  4,
+                                        "width":  16,
+                                        "text":  "—",
+                                        "x":  274
+                                    },
+                                    {
+                                        "y":  232,
+                                        "height":  25,
+                                        "width":  105,
+                                        "text":  "Sorting",
+                                        "x":  305
+                                    },
+                                    {
+                                        "y":  232,
+                                        "height":  25,
+                                        "width":  104,
+                                        "text":  "Objects",
+                                        "x":  425
+                                    },
+                                    {
+                                        "y":  233,
+                                        "height":  24,
+                                        "width":  29,
+                                        "text":  "by",
+                                        "x":  546
+                                    },
+                                    {
+                                        "y":  233,
+                                        "height":  19,
+                                        "width":  75,
+                                        "text":  "Color",
+                                        "x":  591
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "A robotic sorting system receives an image containing objects of",
+                      "words":  [
+                                    {
+                                        "y":  289,
+                                        "height":  19,
+                                        "width":  14,
+                                        "text":  "A",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  288,
+                                        "height":  21,
+                                        "width":  103,
+                                        "text":  "robotic",
+                                        "x":  207
+                                    },
+                                    {
+                                        "y":  288,
+                                        "height":  26,
+                                        "width":  104,
+                                        "text":  "sorting",
+                                        "x":  336
+                                    },
+                                    {
+                                        "y":  289,
+                                        "height":  24,
+                                        "width":  89,
+                                        "text":  "system",
+                                        "x":  463
+                                    },
+                                    {
+                                        "y":  288,
+                                        "height":  21,
+                                        "width":  119,
+                                        "text":  "receives",
+                                        "x":  576
+                                    },
+                                    {
+                                        "y":  294,
+                                        "height":  15,
+                                        "width":  28,
+                                        "text":  "an",
+                                        "x":  719
+                                    },
+                                    {
+                                        "y":  288,
+                                        "height":  25,
+                                        "width":  73,
+                                        "text":  "image",
+                                        "x":  773
+                                    },
+                                    {
+                                        "y":  288,
+                                        "height":  26,
+                                        "width":  148,
+                                        "text":  "containing",
+                                        "x":  871
+                                    },
+                                    {
+                                        "y":  288,
+                                        "height":  25,
+                                        "width":  103,
+                                        "text":  "objects",
+                                        "x":  1044
+                                    },
+                                    {
+                                        "y":  289,
+                                        "height":  20,
+                                        "width":  29,
+                                        "text":  "of",
+                                        "x":  1172
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "different colors. The robot is interested only in one particular",
+                      "words":  [
+                                    {
+                                        "y":  326,
+                                        "height":  21,
+                                        "width":  134,
+                                        "text":  "different",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  327,
+                                        "height":  20,
+                                        "width":  99,
+                                        "text":  "colors.",
+                                        "x":  328
+                                    },
+                                    {
+                                        "y":  327,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "The",
+                                        "x":  454
+                                    },
+                                    {
+                                        "y":  327,
+                                        "height":  20,
+                                        "width":  72,
+                                        "text":  "robot",
+                                        "x":  524
+                                    },
+                                    {
+                                        "y":  326,
+                                        "height":  21,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  622
+                                    },
+                                    {
+                                        "y":  326,
+                                        "height":  21,
+                                        "width":  147,
+                                        "text":  "interested",
+                                        "x":  675
+                                    },
+                                    {
+                                        "y":  327,
+                                        "height":  24,
+                                        "width":  58,
+                                        "text":  "only",
+                                        "x":  848
+                                    },
+                                    {
+                                        "y":  326,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "in",
+                                        "x":  931
+                                    },
+                                    {
+                                        "y":  332,
+                                        "height":  15,
+                                        "width":  43,
+                                        "text":  "one",
+                                        "x":  983
+                                    },
+                                    {
+                                        "y":  326,
+                                        "height":  25,
+                                        "width":  149,
+                                        "text":  "particular",
+                                        "x":  1051
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "colored object and needs a binary mask identifying that object.",
+                      "words":  [
+                                    {
+                                        "y":  364,
+                                        "height":  20,
+                                        "width":  102,
+                                        "text":  "colored",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  363,
+                                        "height":  25,
+                                        "width":  89,
+                                        "text":  "object",
+                                        "x":  290
+                                    },
+                                    {
+                                        "y":  364,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  396
+                                    },
+                                    {
+                                        "y":  364,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "needs",
+                                        "x":  456
+                                    },
+                                    {
+                                        "y":  369,
+                                        "height":  15,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  546
+                                    },
+                                    {
+                                        "y":  363,
+                                        "height":  25,
+                                        "width":  88,
+                                        "text":  "binary",
+                                        "x":  577
+                                    },
+                                    {
+                                        "y":  364,
+                                        "height":  20,
+                                        "width":  60,
+                                        "text":  "mask",
+                                        "x":  682
+                                    },
+                                    {
+                                        "y":  363,
+                                        "height":  26,
+                                        "width":  163,
+                                        "text":  "identifying",
+                                        "x":  759
+                                    },
+                                    {
+                                        "y":  364,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "that",
+                                        "x":  938
+                                    },
+                                    {
+                                        "y":  363,
+                                        "height":  25,
+                                        "width":  100,
+                                        "text":  "object.",
+                                        "x":  1015
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Intensity alone cannot reliably distinguish the desired object from",
+                      "words":  [
+                                    {
+                                        "y":  419,
+                                        "height":  25,
+                                        "width":  133,
+                                        "text":  "Intensity",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  420,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "alone",
+                                        "x":  323
+                                    },
+                                    {
+                                        "y":  420,
+                                        "height":  20,
+                                        "width":  86,
+                                        "text":  "cannot",
+                                        "x":  417
+                                    },
+                                    {
+                                        "y":  419,
+                                        "height":  25,
+                                        "width":  119,
+                                        "text":  "reliably",
+                                        "x":  524
+                                    },
+                                    {
+                                        "y":  419,
+                                        "height":  26,
+                                        "width":  163,
+                                        "text":  "distinguish",
+                                        "x":  663
+                                    },
+                                    {
+                                        "y":  420,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  846
+                                    },
+                                    {
+                                        "y":  419,
+                                        "height":  21,
+                                        "width":  103,
+                                        "text":  "desired",
+                                        "x":  909
+                                    },
+                                    {
+                                        "y":  419,
+                                        "height":  25,
+                                        "width":  88,
+                                        "text":  "object",
+                                        "x":  1033
+                                    },
+                                    {
+                                        "y":  420,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "from",
+                                        "x":  1141
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "the background.",
+                      "words":  [
+                                    {
+                                        "y":  458,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  458,
+                                        "height":  25,
+                                        "width":  160,
+                                        "text":  "background.",
+                                        "x":  230
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Your Task",
+                      "words":  [
+                                    {
+                                        "y":  515,
+                                        "height":  19,
+                                        "width":  60,
+                                        "text":  "Your",
+                                        "x":  168
+                                    },
+                                    {
+                                        "y":  514,
+                                        "height":  20,
+                                        "width":  60,
+                                        "text":  "Task",
+                                        "x":  244
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Use a color image containing a clearly distinguishable colored object,",
+                      "words":  [
+                                    {
+                                        "y":  572,
+                                        "height":  19,
+                                        "width":  42,
+                                        "text":  "Use",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  576,
+                                        "height":  15,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  227
+                                    },
+                                    {
+                                        "y":  571,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "color",
+                                        "x":  255
+                                    },
+                                    {
+                                        "y":  571,
+                                        "height":  25,
+                                        "width":  72,
+                                        "text":  "image",
+                                        "x":  344
+                                    },
+                                    {
+                                        "y":  571,
+                                        "height":  25,
+                                        "width":  148,
+                                        "text":  "containing",
+                                        "x":  431
+                                    },
+                                    {
+                                        "y":  576,
+                                        "height":  15,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  593
+                                    },
+                                    {
+                                        "y":  571,
+                                        "height":  25,
+                                        "width":  104,
+                                        "text":  "clearly",
+                                        "x":  621
+                                    },
+                                    {
+                                        "y":  571,
+                                        "height":  25,
+                                        "width":  224,
+                                        "text":  "distinguishable",
+                                        "x":  739
+                                    },
+                                    {
+                                        "y":  571,
+                                        "height":  20,
+                                        "width":  103,
+                                        "text":  "colored",
+                                        "x":  978
+                                    },
+                                    {
+                                        "y":  571,
+                                        "height":  25,
+                                        "width":  100,
+                                        "text":  "object,",
+                                        "x":  1096
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "such as the yellow-car example:",
+                      "words":  [
+                                    {
+                                        "y":  609,
+                                        "height":  20,
+                                        "width":  57,
+                                        "text":  "such",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  614,
+                                        "height":  15,
+                                        "width":  28,
+                                        "text":  "as",
+                                        "x":  245
+                                    },
+                                    {
+                                        "y":  609,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  290
+                                    },
+                                    {
+                                        "y":  609,
+                                        "height":  25,
+                                        "width":  148,
+                                        "text":  "yellow-car",
+                                        "x":  351
+                                    },
+                                    {
+                                        "y":  609,
+                                        "height":  25,
+                                        "width":  115,
+                                        "text":  "example:",
+                                        "x":  516
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Build a color-based segmentation system.",
+                      "words":  [
+                                    {
+                                        "y":  665,
+                                        "height":  20,
+                                        "width":  72,
+                                        "text":  "Build",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  670,
+                                        "height":  15,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  260
+                                    },
+                                    {
+                                        "y":  665,
+                                        "height":  20,
+                                        "width":  164,
+                                        "text":  "color-based",
+                                        "x":  290
+                                    },
+                                    {
+                                        "y":  665,
+                                        "height":  25,
+                                        "width":  179,
+                                        "text":  "segmentation",
+                                        "x":  471
+                                    },
+                                    {
+                                        "y":  666,
+                                        "height":  24,
+                                        "width":  99,
+                                        "text":  "system.",
+                                        "x":  668
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Your",
+                      "words":  [
+                                    {
+                                        "y":  721,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "Your",
+                                        "x":  169
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1.",
+                      "words":  [
+                                    {
+                                        "y":  778,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "1.",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2.",
+                      "words":  [
+                                    {
+                                        "y":  834,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "2.",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3.",
+                      "words":  [
+                                    {
+                                        "y":  891,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "3.",
+                                        "x":  210
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4.",
+                      "words":  [
+                                    {
+                                        "y":  947,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "4.",
+                                        "x":  210
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "5.",
+                      "words":  [
+                                    {
+                                        "y":  1004,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "5.",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "6.",
+                      "words":  [
+                                    {
+                                        "y":  1060,
+                                        "height":  18,
+                                        "width":  24,
+                                        "text":  "6.",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "program must:",
+                      "words":  [
+                                    {
+                                        "y":  724,
+                                        "height":  21,
+                                        "width":  103,
+                                        "text":  "program",
+                                        "x":  246
+                                    },
+                                    {
+                                        "y":  721,
+                                        "height":  19,
+                                        "width":  69,
+                                        "text":  "must:",
+                                        "x":  366
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Load the image in color.",
+                      "words":  [
+                                    {
+                                        "y":  777,
+                                        "height":  20,
+                                        "width":  56,
+                                        "text":  "Load",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  777,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  327
+                                    },
+                                    {
+                                        "y":  777,
+                                        "height":  25,
+                                        "width":  71,
+                                        "text":  "image",
+                                        "x":  389
+                                    },
+                                    {
+                                        "y":  777,
+                                        "height":  20,
+                                        "width":  26,
+                                        "text":  "in",
+                                        "x":  479
+                                    },
+                                    {
+                                        "y":  777,
+                                        "height":  20,
+                                        "width":  84,
+                                        "text":  "color.",
+                                        "x":  523
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Convert it to HSV.",
+                      "words":  [
+                                    {
+                                        "y":  834,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "Convert",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  833,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "it",
+                                        "x":  374
+                                    },
+                                    {
+                                        "y":  834,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  417
+                                    },
+                                    {
+                                        "y":  834,
+                                        "height":  19,
+                                        "width":  55,
+                                        "text":  "HSV.",
+                                        "x":  462
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Define a lower and upper color range .",
+                      "words":  [
+                                    {
+                                        "y":  890,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "Define",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  895,
+                                        "height":  15,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  358
+                                    },
+                                    {
+                                        "y":  890,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "lower",
+                                        "x":  388
+                                    },
+                                    {
+                                        "y":  890,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  478
+                                    },
+                                    {
+                                        "y":  895,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "upper",
+                                        "x":  539
+                                    },
+                                    {
+                                        "y":  890,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "color",
+                                        "x":  629
+                                    },
+                                    {
+                                        "y":  894,
+                                        "height":  21,
+                                        "width":  73,
+                                        "text":  "range",
+                                        "x":  720
+                                    },
+                                    {
+                                        "y":  905,
+                                        "height":  5,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  800
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Generate a binary mask using the color range.",
+                      "words":  [
+                                    {
+                                        "y":  947,
+                                        "height":  19,
+                                        "width":  119,
+                                        "text":  "Generate",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  951,
+                                        "height":  15,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  388
+                                    },
+                                    {
+                                        "y":  946,
+                                        "height":  25,
+                                        "width":  87,
+                                        "text":  "binary",
+                                        "x":  419
+                                    },
+                                    {
+                                        "y":  946,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "mask",
+                                        "x":  523
+                                    },
+                                    {
+                                        "y":  946,
+                                        "height":  25,
+                                        "width":  74,
+                                        "text":  "using",
+                                        "x":  599
+                                    },
+                                    {
+                                        "y":  946,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  689
+                                    },
+                                    {
+                                        "y":  946,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "color",
+                                        "x":  751
+                                    },
+                                    {
+                                        "y":  950,
+                                        "height":  21,
+                                        "width":  84,
+                                        "text":  "range.",
+                                        "x":  841
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Experiment with the lower and upper limits.",
+                      "words":  [
+                                    {
+                                        "y":  1003,
+                                        "height":  25,
+                                        "width":  149,
+                                        "text":  "Experiment",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1003,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "with",
+                                        "x":  417
+                                    },
+                                    {
+                                        "y":  1003,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  492
+                                    },
+                                    {
+                                        "y":  1003,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "lower",
+                                        "x":  553
+                                    },
+                                    {
+                                        "y":  1003,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  644
+                                    },
+                                    {
+                                        "y":  1008,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "upper",
+                                        "x":  705
+                                    },
+                                    {
+                                        "y":  1003,
+                                        "height":  20,
+                                        "width":  99,
+                                        "text":  "limits.",
+                                        "x":  796
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Extract the selected color from the original image using your",
+                      "words":  [
+                                    {
+                                        "y":  1060,
+                                        "height":  18,
+                                        "width":  103,
+                                        "text":  "Extract",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1059,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  375
+                                    },
+                                    {
+                                        "y":  1059,
+                                        "height":  19,
+                                        "width":  117,
+                                        "text":  "selected",
+                                        "x":  440
+                                    },
+                                    {
+                                        "y":  1059,
+                                        "height":  19,
+                                        "width":  73,
+                                        "text":  "color",
+                                        "x":  579
+                                    },
+                                    {
+                                        "y":  1059,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "from",
+                                        "x":  672
+                                    },
+                                    {
+                                        "y":  1059,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  751
+                                    },
+                                    {
+                                        "y":  1059,
+                                        "height":  24,
+                                        "width":  117,
+                                        "text":  "original",
+                                        "x":  815
+                                    },
+                                    {
+                                        "y":  1059,
+                                        "height":  24,
+                                        "width":  73,
+                                        "text":  "image",
+                                        "x":  954
+                                    },
+                                    {
+                                        "y":  1059,
+                                        "height":  24,
+                                        "width":  73,
+                                        "text":  "using",
+                                        "x":  1048
+                                    },
+                                    {
+                                        "y":  1064,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "your",
+                                        "x":  1141
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "mask.",
+                      "words":  [
+                                    {
+                                        "y":  1096,
+                                        "height":  20,
+                                        "width":  69,
+                                        "text":  "mask.",
+                                        "x":  252
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Challenge Requirement",
+                      "words":  [
+                                    {
+                                        "y":  1153,
+                                        "height":  25,
+                                        "width":  134,
+                                        "text":  "Challenge",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1153,
+                                        "height":  24,
+                                        "width":  162,
+                                        "text":  "Requirement",
+                                        "x":  321
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Create two masks:",
+                      "words":  [
+                                    {
+                                        "y":  1210,
+                                        "height":  19,
+                                        "width":  88,
+                                        "text":  "Create",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1210,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "two",
+                                        "x":  275
+                                    },
+                                    {
+                                        "y":  1209,
+                                        "height":  20,
+                                        "width":  85,
+                                        "text":  "masks:",
+                                        "x":  335
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• A mask that is too restrictive",
+                      "words":  [
+                                    {
+                                        "y":  1273,
+                                        "height":  9,
+                                        "width":  9,
+                                        "text":  "•",
+                                        "x":  210
+                                    },
+                                    {
+                                        "y":  1266,
+                                        "height":  18,
+                                        "width":  14,
+                                        "text":  "A",
+                                        "x":  251
+                                    },
+                                    {
+                                        "y":  1265,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "mask",
+                                        "x":  282
+                                    },
+                                    {
+                                        "y":  1265,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "that",
+                                        "x":  357
+                                    },
+                                    {
+                                        "y":  1265,
+                                        "height":  20,
+                                        "width":  26,
+                                        "text":  "is",
+                                        "x":  434
+                                    },
+                                    {
+                                        "y":  1266,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "too",
+                                        "x":  477
+                                    },
+                                    {
+                                        "y":  1264,
+                                        "height":  21,
+                                        "width":  164,
+                                        "text":  "restrictive",
+                                        "x":  538
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "A final mask that captures the desired object more completely",
+                      "words":  [
+                                    {
+                                        "y":  1322,
+                                        "height":  19,
+                                        "width":  14,
+                                        "text":  "A",
+                                        "x":  251
+                                    },
+                                    {
+                                        "y":  1321,
+                                        "height":  21,
+                                        "width":  73,
+                                        "text":  "final",
+                                        "x":  282
+                                    },
+                                    {
+                                        "y":  1322,
+                                        "height":  20,
+                                        "width":  60,
+                                        "text":  "mask",
+                                        "x":  372
+                                    },
+                                    {
+                                        "y":  1322,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "that",
+                                        "x":  448
+                                    },
+                                    {
+                                        "y":  1322,
+                                        "height":  24,
+                                        "width":  117,
+                                        "text":  "captures",
+                                        "x":  524
+                                    },
+                                    {
+                                        "y":  1322,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  659
+                                    },
+                                    {
+                                        "y":  1321,
+                                        "height":  21,
+                                        "width":  103,
+                                        "text":  "desired",
+                                        "x":  720
+                                    },
+                                    {
+                                        "y":  1321,
+                                        "height":  25,
+                                        "width":  87,
+                                        "text":  "object",
+                                        "x":  841
+                                    },
+                                    {
+                                        "y":  1327,
+                                        "height":  15,
+                                        "width":  59,
+                                        "text":  "more",
+                                        "x":  945
+                                    },
+                                    {
+                                        "y":  1322,
+                                        "height":  24,
+                                        "width":  149,
+                                        "text":  "completely",
+                                        "x":  1022
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Then explain why the restrictive mask fails.",
+                      "words":  [
+                                    {
+                                        "y":  1378,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "Then",
+                                        "x":  168
+                                    },
+                                    {
+                                        "y":  1378,
+                                        "height":  25,
+                                        "width":  103,
+                                        "text":  "explain",
+                                        "x":  245
+                                    },
+                                    {
+                                        "y":  1378,
+                                        "height":  25,
+                                        "width":  44,
+                                        "text":  "why",
+                                        "x":  365
+                                    },
+                                    {
+                                        "y":  1378,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "the",
+                                        "x":  426
+                                    },
+                                    {
+                                        "y":  1378,
+                                        "height":  20,
+                                        "width":  164,
+                                        "text":  "restrictive",
+                                        "x":  486
+                                    },
+                                    {
+                                        "y":  1378,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "mask",
+                                        "x":  667
+                                    },
+                                    {
+                                        "y":  1378,
+                                        "height":  20,
+                                        "width":  84,
+                                        "text":  "fails.",
+                                        "x":  744
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The manual specifically presents HSV-based color thresholding using",
+                      "words":  [
+                                    {
+                                        "y":  1433,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "The",
+                                        "x":  168
+                                    },
+                                    {
+                                        "y":  1433,
+                                        "height":  20,
+                                        "width":  89,
+                                        "text":  "manual",
+                                        "x":  232
+                                    },
+                                    {
+                                        "y":  1433,
+                                        "height":  25,
+                                        "width":  178,
+                                        "text":  "specifically",
+                                        "x":  342
+                                    },
+                                    {
+                                        "y":  1434,
+                                        "height":  24,
+                                        "width":  118,
+                                        "text":  "presents",
+                                        "x":  541
+                                    },
+                                    {
+                                        "y":  1433,
+                                        "height":  20,
+                                        "width":  133,
+                                        "text":  "HSV-based",
+                                        "x":  680
+                                    },
+                                    {
+                                        "y":  1433,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "color",
+                                        "x":  835
+                                    },
+                                    {
+                                        "y":  1433,
+                                        "height":  25,
+                                        "width":  181,
+                                        "text":  "thresholding",
+                                        "x":  926
+                                    },
+                                    {
+                                        "y":  1433,
+                                        "height":  25,
+                                        "width":  73,
+                                        "text":  "using",
+                                        "x":  1128
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "lower and upper bounds.",
+                      "words":  [
+                                    {
+                                        "y":  1471,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "lower",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1471,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  260
+                                    },
+                                    {
+                                        "y":  1477,
+                                        "height":  19,
+                                        "width":  74,
+                                        "text":  "upper",
+                                        "x":  321
+                                    },
+                                    {
+                                        "y":  1471,
+                                        "height":  20,
+                                        "width":  98,
+                                        "text":  "bounds.",
+                                        "x":  412
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1821,
+                                        "height":  21,
+                                        "width":  75,
+                                        "text":  "Talha",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1820,
+                                        "height":  23,
+                                        "width":  95,
+                                        "text":  "Shahid",
+                                        "x":  255
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4",
+                      "words":  [
+                                    {
+                                        "y":  1822,
+                                        "height":  20,
+                                        "width":  17,
+                                        "text":  "4",
+                                        "x":  1060
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Page",
+                      "words":  [
+                                    {
+                                        "y":  1822,
+                                        "height":  27,
+                                        "width":  86,
+                                        "text":  "Page",
+                                        "x":  1104
+                                    }
+                                ]
+                  }
+              ]
+}

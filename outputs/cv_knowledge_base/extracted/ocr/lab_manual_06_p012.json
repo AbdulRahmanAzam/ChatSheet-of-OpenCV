@@ -1,0 +1,2532 @@
+﻿{
+    "id":  "lab_manual_06_p012",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "National University of Computer \u0026 Emerging Sciences - NUCES - Karachi Department of Artificial Intelligence 1. GAUSSIAN SMOOTHING Original Image Smoothed Image (Smoothed Image) Input (Smoothed Image) 2. GRADIENT CALCULATION Finding edge magnitude and direction Horizontal Gradient (Ox) \u0027JOO Vertical Grade-nt (Cy) 121 Edge Magnitude \u0026 Direction Edge Magnitude \u0026 Direction Reduces noise to prevent false edges. 3. NON-MAXIMUM SUPPRESSION 4. HYSTERESIS THRESHOLDING Final tracking by linking pixels between thresholds. Initial Edges (Magnitude) Thinned Edges (I-pixel wide! Local Maximum Check (e.g„ along gradent direction) Thinning edges by keeping only the local maxima. THE BLUR Noise Removal \u0026 Preventing False Edges Threshold Zero ( Strong Edge Link weak edges connected to edges Pinal Edge Map DEEP INTUITION OF CANNY EDGE DETECTION THINNING Non-Maximum Suppression: Thick to Thin APPLY CAUSStAN KERNEL 121 242 121 PREVENT •FALSE EDGES Before: Noisy, sharp peaks Find the peak Gradient Suppress Neighbors Thick to Thin After: Smooth gradient ramp 80 150 200 • • ISO 80 THICK EDGE BECOMES THN LINE CONNECTIVITY Hysteresis \u0026 Double Thresholding SOBEL vs CANNY A Direct Comparison Link Strong and Weak STRONG PIXEL Form Complete Edges STRONG EOCE THRESHOLD (T2) WEAK EDCE THRESHOLD (Tl) Discard Noise EDCE PIXELS import import # Read image = WEAK PIXELS KEEP SEQUENCE Weak pixe•b connected to Strong pixels are kept, bridging gaps. cv2 SOBEL INTENSITY CHANCE • Calculation (C. G,) • Identifies Sudden • Susceptible to Noise Thick Edges isolated Weak is discarded matplotlib. pyptot as put image cv2. imread image .jpg # Convert BGR to RGB for Matplotlib FAST NUCES - Karachi Talha Shahid Advanced pipeline CANNY SOPHISTICATED BOUNDARY TRACKINC PIPELINE • Mufti-Stage Process: Noise Reduction (Gaussian) 2. Cakulation s. Non•Maximum Thresholding S. Hysteresis (Edge Tracking) • Robust. Thin, Edges 12",
+    "review_status":  "raw_ocr_unverified",
+    "page":  12,
+    "source_id":  "lab_manual_06",
+    "lines":  [
+                  {
+                      "text":  "National University of Computer \u0026 Emerging Sciences -",
+                      "words":  [
+                                    {
+                                        "y":  94,
+                                        "height":  23,
+                                        "width":  122,
+                                        "text":  "National",
+                                        "x":  376
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  29,
+                                        "width":  146,
+                                        "text":  "University",
+                                        "x":  507
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  22,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  660
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  28,
+                                        "width":  147,
+                                        "text":  "Computer",
+                                        "x":  696
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  22,
+                                        "width":  21,
+                                        "text":  "\u0026",
+                                        "x":  851
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  28,
+                                        "width":  134,
+                                        "text":  "Emerging",
+                                        "x":  880
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  23,
+                                        "width":  132,
+                                        "text":  "Sciences",
+                                        "x":  1021
+                                    },
+                                    {
+                                        "y":  107,
+                                        "height":  4,
+                                        "width":  10,
+                                        "text":  "-",
+                                        "x":  1162
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "NUCES - Karachi",
+                      "words":  [
+                                    {
+                                        "y":  140,
+                                        "height":  22,
+                                        "width":  103,
+                                        "text":  "NUCES",
+                                        "x":  654
+                                    },
+                                    {
+                                        "y":  152,
+                                        "height":  4,
+                                        "width":  10,
+                                        "text":  "-",
+                                        "x":  765
+                                    },
+                                    {
+                                        "y":  139,
+                                        "height":  23,
+                                        "width":  109,
+                                        "text":  "Karachi",
+                                        "x":  784
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Department of Artificial Intelligence",
+                      "words":  [
+                                    {
+                                        "y":  183,
+                                        "height":  26,
+                                        "width":  143,
+                                        "text":  "Department",
+                                        "x":  555
+                                    },
+                                    {
+                                        "y":  182,
+                                        "height":  22,
+                                        "width":  24,
+                                        "text":  "of",
+                                        "x":  706
+                                    },
+                                    {
+                                        "y":  182,
+                                        "height":  22,
+                                        "width":  100,
+                                        "text":  "Artificial",
+                                        "x":  737
+                                    },
+                                    {
+                                        "y":  182,
+                                        "height":  27,
+                                        "width":  137,
+                                        "text":  "Intelligence",
+                                        "x":  847
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1. GAUSSIAN SMOOTHING",
+                      "words":  [
+                                    {
+                                        "y":  311,
+                                        "height":  17,
+                                        "width":  14,
+                                        "text":  "1.",
+                                        "x":  247
+                                    },
+                                    {
+                                        "y":  311,
+                                        "height":  17,
+                                        "width":  110,
+                                        "text":  "GAUSSIAN",
+                                        "x":  267
+                                    },
+                                    {
+                                        "y":  311,
+                                        "height":  17,
+                                        "width":  132,
+                                        "text":  "SMOOTHING",
+                                        "x":  384
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Original Image",
+                      "words":  [
+                                    {
+                                        "y":  517,
+                                        "height":  14,
+                                        "width":  47,
+                                        "text":  "Original",
+                                        "x":  221
+                                    },
+                                    {
+                                        "y":  518,
+                                        "height":  13,
+                                        "width":  38,
+                                        "text":  "Image",
+                                        "x":  273
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Smoothed Image",
+                      "words":  [
+                                    {
+                                        "y":  518,
+                                        "height":  10,
+                                        "width":  62,
+                                        "text":  "Smoothed",
+                                        "x":  431
+                                    },
+                                    {
+                                        "y":  518,
+                                        "height":  13,
+                                        "width":  38,
+                                        "text":  "Image",
+                                        "x":  497
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "(Smoothed Image)",
+                      "words":  [
+                                    {
+                                        "y":  378,
+                                        "height":  13,
+                                        "width":  63,
+                                        "text":  "(Smoothed",
+                                        "x":  633
+                                    },
+                                    {
+                                        "y":  378,
+                                        "height":  13,
+                                        "width":  39,
+                                        "text":  "Image)",
+                                        "x":  700
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Input",
+                      "words":  [
+                                    {
+                                        "y":  528,
+                                        "height":  13,
+                                        "width":  33,
+                                        "text":  "Input",
+                                        "x":  670
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "(Smoothed Image)",
+                      "words":  [
+                                    {
+                                        "y":  542,
+                                        "height":  14,
+                                        "width":  68,
+                                        "text":  "(Smoothed",
+                                        "x":  629
+                                    },
+                                    {
+                                        "y":  542,
+                                        "height":  14,
+                                        "width":  42,
+                                        "text":  "Image)",
+                                        "x":  701
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2. GRADIENT CALCULATION",
+                      "words":  [
+                                    {
+                                        "y":  311,
+                                        "height":  17,
+                                        "width":  18,
+                                        "text":  "2.",
+                                        "x":  747
+                                    },
+                                    {
+                                        "y":  311,
+                                        "height":  17,
+                                        "width":  112,
+                                        "text":  "GRADIENT",
+                                        "x":  772
+                                    },
+                                    {
+                                        "y":  311,
+                                        "height":  17,
+                                        "width":  151,
+                                        "text":  "CALCULATION",
+                                        "x":  890
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Finding edge magnitude and direction",
+                      "words":  [
+                                    {
+                                        "y":  343,
+                                        "height":  13,
+                                        "width":  48,
+                                        "text":  "Finding",
+                                        "x":  768
+                                    },
+                                    {
+                                        "y":  344,
+                                        "height":  13,
+                                        "width":  31,
+                                        "text":  "edge",
+                                        "x":  821
+                                    },
+                                    {
+                                        "y":  343,
+                                        "height":  14,
+                                        "width":  69,
+                                        "text":  "magnitude",
+                                        "x":  858
+                                    },
+                                    {
+                                        "y":  343,
+                                        "height":  11,
+                                        "width":  23,
+                                        "text":  "and",
+                                        "x":  932
+                                    },
+                                    {
+                                        "y":  343,
+                                        "height":  11,
+                                        "width":  56,
+                                        "text":  "direction",
+                                        "x":  960
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Horizontal Gradient (Ox)",
+                      "words":  [
+                                    {
+                                        "y":  367,
+                                        "height":  11,
+                                        "width":  59,
+                                        "text":  "Horizontal",
+                                        "x":  827
+                                    },
+                                    {
+                                        "y":  367,
+                                        "height":  11,
+                                        "width":  49,
+                                        "text":  "Gradient",
+                                        "x":  889
+                                    },
+                                    {
+                                        "y":  367,
+                                        "height":  13,
+                                        "width":  22,
+                                        "text":  "(Ox)",
+                                        "x":  941
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "\u0027JOO",
+                      "words":  [
+                                    {
+                                        "y":  410,
+                                        "height":  10,
+                                        "width":  35,
+                                        "text":  "\u0027JOO",
+                                        "x":  931
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Vertical Grade-nt (Cy)",
+                      "words":  [
+                                    {
+                                        "y":  467,
+                                        "height":  11,
+                                        "width":  44,
+                                        "text":  "Vertical",
+                                        "x":  835
+                                    },
+                                    {
+                                        "y":  467,
+                                        "height":  11,
+                                        "width":  49,
+                                        "text":  "Grade-nt",
+                                        "x":  882
+                                    },
+                                    {
+                                        "y":  467,
+                                        "height":  15,
+                                        "width":  22,
+                                        "text":  "(Cy)",
+                                        "x":  934
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "121",
+                      "words":  [
+                                    {
+                                        "y":  538,
+                                        "height":  8,
+                                        "width":  29,
+                                        "text":  "121",
+                                        "x":  934
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Edge Magnitude",
+                      "words":  [
+                                    {
+                                        "y":  364,
+                                        "height":  14,
+                                        "width":  29,
+                                        "text":  "Edge",
+                                        "x":  1053
+                                    },
+                                    {
+                                        "y":  364,
+                                        "height":  14,
+                                        "width":  62,
+                                        "text":  "Magnitude",
+                                        "x":  1086
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "\u0026 Direction",
+                      "words":  [
+                                    {
+                                        "y":  379,
+                                        "height":  10,
+                                        "width":  7,
+                                        "text":  "\u0026",
+                                        "x":  1069
+                                    },
+                                    {
+                                        "y":  378,
+                                        "height":  11,
+                                        "width":  52,
+                                        "text":  "Direction",
+                                        "x":  1080
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Edge Magnitude",
+                      "words":  [
+                                    {
+                                        "y":  527,
+                                        "height":  14,
+                                        "width":  31,
+                                        "text":  "Edge",
+                                        "x":  1050
+                                    },
+                                    {
+                                        "y":  527,
+                                        "height":  14,
+                                        "width":  67,
+                                        "text":  "Magnitude",
+                                        "x":  1085
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "\u0026 Direction",
+                      "words":  [
+                                    {
+                                        "y":  543,
+                                        "height":  11,
+                                        "width":  9,
+                                        "text":  "\u0026",
+                                        "x":  1066
+                                    },
+                                    {
+                                        "y":  542,
+                                        "height":  12,
+                                        "width":  56,
+                                        "text":  "Direction",
+                                        "x":  1079
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Reduces noise to prevent false edges.",
+                      "words":  [
+                                    {
+                                        "y":  547,
+                                        "height":  13,
+                                        "width":  62,
+                                        "text":  "Reduces",
+                                        "x":  238
+                                    },
+                                    {
+                                        "y":  546,
+                                        "height":  14,
+                                        "width":  39,
+                                        "text":  "noise",
+                                        "x":  304
+                                    },
+                                    {
+                                        "y":  548,
+                                        "height":  12,
+                                        "width":  16,
+                                        "text":  "to",
+                                        "x":  346
+                                    },
+                                    {
+                                        "y":  548,
+                                        "height":  15,
+                                        "width":  56,
+                                        "text":  "prevent",
+                                        "x":  366
+                                    },
+                                    {
+                                        "y":  546,
+                                        "height":  14,
+                                        "width":  34,
+                                        "text":  "false",
+                                        "x":  426
+                                    },
+                                    {
+                                        "y":  547,
+                                        "height":  16,
+                                        "width":  48,
+                                        "text":  "edges.",
+                                        "x":  463
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3. NON-MAXIMUM SUPPRESSION",
+                      "words":  [
+                                    {
+                                        "y":  598,
+                                        "height":  17,
+                                        "width":  17,
+                                        "text":  "3.",
+                                        "x":  246
+                                    },
+                                    {
+                                        "y":  599,
+                                        "height":  16,
+                                        "width":  167,
+                                        "text":  "NON-MAXIMUM",
+                                        "x":  270
+                                    },
+                                    {
+                                        "y":  599,
+                                        "height":  16,
+                                        "width":  152,
+                                        "text":  "SUPPRESSION",
+                                        "x":  445
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4. HYSTERESIS THRESHOLDING",
+                      "words":  [
+                                    {
+                                        "y":  598,
+                                        "height":  17,
+                                        "width":  20,
+                                        "text":  "4.",
+                                        "x":  765
+                                    },
+                                    {
+                                        "y":  599,
+                                        "height":  16,
+                                        "width":  129,
+                                        "text":  "HYSTERESIS",
+                                        "x":  792
+                                    },
+                                    {
+                                        "y":  598,
+                                        "height":  17,
+                                        "width":  172,
+                                        "text":  "THRESHOLDING",
+                                        "x":  927
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Final tracking by linking pixels between thresholds.",
+                      "words":  [
+                                    {
+                                        "y":  631,
+                                        "height":  14,
+                                        "width":  34,
+                                        "text":  "Final",
+                                        "x":  749
+                                    },
+                                    {
+                                        "y":  631,
+                                        "height":  18,
+                                        "width":  61,
+                                        "text":  "tracking",
+                                        "x":  787
+                                    },
+                                    {
+                                        "y":  631,
+                                        "height":  17,
+                                        "width":  18,
+                                        "text":  "by",
+                                        "x":  853
+                                    },
+                                    {
+                                        "y":  631,
+                                        "height":  17,
+                                        "width":  48,
+                                        "text":  "linking",
+                                        "x":  875
+                                    },
+                                    {
+                                        "y":  631,
+                                        "height":  17,
+                                        "width":  42,
+                                        "text":  "pixels",
+                                        "x":  928
+                                    },
+                                    {
+                                        "y":  631,
+                                        "height":  14,
+                                        "width":  63,
+                                        "text":  "between",
+                                        "x":  974
+                                    },
+                                    {
+                                        "y":  631,
+                                        "height":  14,
+                                        "width":  81,
+                                        "text":  "thresholds.",
+                                        "x":  1042
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Initial Edges (Magnitude)",
+                      "words":  [
+                                    {
+                                        "y":  632,
+                                        "height":  11,
+                                        "width":  33,
+                                        "text":  "Initial",
+                                        "x":  347
+                                    },
+                                    {
+                                        "y":  632,
+                                        "height":  14,
+                                        "width":  37,
+                                        "text":  "Edges",
+                                        "x":  384
+                                    },
+                                    {
+                                        "y":  632,
+                                        "height":  14,
+                                        "width":  72,
+                                        "text":  "(Magnitude)",
+                                        "x":  425
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Thinned Edges (I-pixel wide!",
+                      "words":  [
+                                    {
+                                        "y":  661,
+                                        "height":  9,
+                                        "width":  41,
+                                        "text":  "Thinned",
+                                        "x":  511
+                                    },
+                                    {
+                                        "y":  662,
+                                        "height":  11,
+                                        "width":  30,
+                                        "text":  "Edges",
+                                        "x":  556
+                                    },
+                                    {
+                                        "y":  661,
+                                        "height":  11,
+                                        "width":  34,
+                                        "text":  "(I-pixel",
+                                        "x":  590
+                                    },
+                                    {
+                                        "y":  661,
+                                        "height":  9,
+                                        "width":  27,
+                                        "text":  "wide!",
+                                        "x":  628
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Local Maximum Check",
+                      "words":  [
+                                    {
+                                        "y":  752,
+                                        "height":  10,
+                                        "width":  27,
+                                        "text":  "Local",
+                                        "x":  363
+                                    },
+                                    {
+                                        "y":  752,
+                                        "height":  10,
+                                        "width":  52,
+                                        "text":  "Maximum",
+                                        "x":  394
+                                    },
+                                    {
+                                        "y":  752,
+                                        "height":  10,
+                                        "width":  32,
+                                        "text":  "Check",
+                                        "x":  449
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "(e.g„ along gradent",
+                      "words":  [
+                                    {
+                                        "y":  765,
+                                        "height":  12,
+                                        "width":  25,
+                                        "text":  "(e.g„",
+                                        "x":  370
+                                    },
+                                    {
+                                        "y":  765,
+                                        "height":  12,
+                                        "width":  29,
+                                        "text":  "along",
+                                        "x":  398
+                                    },
+                                    {
+                                        "y":  765,
+                                        "height":  12,
+                                        "width":  44,
+                                        "text":  "gradent",
+                                        "x":  430
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "direction)",
+                      "words":  [
+                                    {
+                                        "y":  778,
+                                        "height":  12,
+                                        "width":  50,
+                                        "text":  "direction)",
+                                        "x":  397
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Thinning edges by keeping only the local maxima.",
+                      "words":  [
+                                    {
+                                        "y":  830,
+                                        "height":  15,
+                                        "width":  58,
+                                        "text":  "Thinning",
+                                        "x":  258
+                                    },
+                                    {
+                                        "y":  831,
+                                        "height":  14,
+                                        "width":  39,
+                                        "text":  "edges",
+                                        "x":  321
+                                    },
+                                    {
+                                        "y":  831,
+                                        "height":  14,
+                                        "width":  14,
+                                        "text":  "by",
+                                        "x":  365
+                                    },
+                                    {
+                                        "y":  831,
+                                        "height":  14,
+                                        "width":  52,
+                                        "text":  "keeping",
+                                        "x":  384
+                                    },
+                                    {
+                                        "y":  831,
+                                        "height":  14,
+                                        "width":  26,
+                                        "text":  "only",
+                                        "x":  441
+                                    },
+                                    {
+                                        "y":  831,
+                                        "height":  11,
+                                        "width":  21,
+                                        "text":  "the",
+                                        "x":  472
+                                    },
+                                    {
+                                        "y":  831,
+                                        "height":  11,
+                                        "width":  29,
+                                        "text":  "local",
+                                        "x":  498
+                                    },
+                                    {
+                                        "y":  830,
+                                        "height":  12,
+                                        "width":  55,
+                                        "text":  "maxima.",
+                                        "x":  532
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "THE BLUR",
+                      "words":  [
+                                    {
+                                        "y":  974,
+                                        "height":  12,
+                                        "width":  32,
+                                        "text":  "THE",
+                                        "x":  383
+                                    },
+                                    {
+                                        "y":  974,
+                                        "height":  12,
+                                        "width":  41,
+                                        "text":  "BLUR",
+                                        "x":  421
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Noise Removal \u0026 Preventing False Edges",
+                      "words":  [
+                                    {
+                                        "y":  990,
+                                        "height":  10,
+                                        "width":  32,
+                                        "text":  "Noise",
+                                        "x":  306
+                                    },
+                                    {
+                                        "y":  990,
+                                        "height":  10,
+                                        "width":  49,
+                                        "text":  "Removal",
+                                        "x":  342
+                                    },
+                                    {
+                                        "y":  991,
+                                        "height":  9,
+                                        "width":  7,
+                                        "text":  "\u0026",
+                                        "x":  395
+                                    },
+                                    {
+                                        "y":  990,
+                                        "height":  13,
+                                        "width":  62,
+                                        "text":  "Preventing",
+                                        "x":  406
+                                    },
+                                    {
+                                        "y":  990,
+                                        "height":  10,
+                                        "width":  30,
+                                        "text":  "False",
+                                        "x":  472
+                                    },
+                                    {
+                                        "y":  990,
+                                        "height":  13,
+                                        "width":  34,
+                                        "text":  "Edges",
+                                        "x":  506
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Threshold",
+                      "words":  [
+                                    {
+                                        "y":  741,
+                                        "height":  10,
+                                        "width":  53,
+                                        "text":  "Threshold",
+                                        "x":  741
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Zero (",
+                      "words":  [
+                                    {
+                                        "y":  805,
+                                        "height":  10,
+                                        "width":  24,
+                                        "text":  "Zero",
+                                        "x":  717
+                                    },
+                                    {
+                                        "y":  805,
+                                        "height":  12,
+                                        "width":  3,
+                                        "text":  "(",
+                                        "x":  744
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Strong Edge",
+                      "words":  [
+                                    {
+                                        "y":  680,
+                                        "height":  12,
+                                        "width":  34,
+                                        "text":  "Strong",
+                                        "x":  897
+                                    },
+                                    {
+                                        "y":  680,
+                                        "height":  12,
+                                        "width":  26,
+                                        "text":  "Edge",
+                                        "x":  935
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Link weak",
+                      "words":  [
+                                    {
+                                        "y":  762,
+                                        "height":  11,
+                                        "width":  22,
+                                        "text":  "Link",
+                                        "x":  1093
+                                    },
+                                    {
+                                        "y":  762,
+                                        "height":  11,
+                                        "width":  28,
+                                        "text":  "weak",
+                                        "x":  1118
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "edges connected to",
+                      "words":  [
+                                    {
+                                        "y":  776,
+                                        "height":  12,
+                                        "width":  32,
+                                        "text":  "edges",
+                                        "x":  1041
+                                    },
+                                    {
+                                        "y":  776,
+                                        "height":  10,
+                                        "width":  56,
+                                        "text":  "connected",
+                                        "x":  1076
+                                    },
+                                    {
+                                        "y":  777,
+                                        "height":  9,
+                                        "width":  11,
+                                        "text":  "to",
+                                        "x":  1135
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "edges",
+                      "words":  [
+                                    {
+                                        "y":  789,
+                                        "height":  12,
+                                        "width":  32,
+                                        "text":  "edges",
+                                        "x":  1096
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Pinal Edge Map",
+                      "words":  [
+                                    {
+                                        "y":  831,
+                                        "height":  11,
+                                        "width":  27,
+                                        "text":  "Pinal",
+                                        "x":  1048
+                                    },
+                                    {
+                                        "y":  831,
+                                        "height":  13,
+                                        "width":  30,
+                                        "text":  "Edge",
+                                        "x":  1080
+                                    },
+                                    {
+                                        "y":  832,
+                                        "height":  12,
+                                        "width":  25,
+                                        "text":  "Map",
+                                        "x":  1115
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "DEEP INTUITION OF CANNY EDGE DETECTION",
+                      "words":  [
+                                    {
+                                        "y":  928,
+                                        "height":  20,
+                                        "width":  76,
+                                        "text":  "DEEP",
+                                        "x":  351
+                                    },
+                                    {
+                                        "y":  927,
+                                        "height":  22,
+                                        "width":  145,
+                                        "text":  "INTUITION",
+                                        "x":  438
+                                    },
+                                    {
+                                        "y":  927,
+                                        "height":  22,
+                                        "width":  39,
+                                        "text":  "OF",
+                                        "x":  593
+                                    },
+                                    {
+                                        "y":  927,
+                                        "height":  22,
+                                        "width":  103,
+                                        "text":  "CANNY",
+                                        "x":  641
+                                    },
+                                    {
+                                        "y":  927,
+                                        "height":  21,
+                                        "width":  77,
+                                        "text":  "EDGE",
+                                        "x":  753
+                                    },
+                                    {
+                                        "y":  927,
+                                        "height":  22,
+                                        "width":  163,
+                                        "text":  "DETECTION",
+                                        "x":  840
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "THINNING",
+                      "words":  [
+                                    {
+                                        "y":  974,
+                                        "height":  12,
+                                        "width":  78,
+                                        "text":  "THINNING",
+                                        "x":  885
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Non-Maximum Suppression: Thick to Thin",
+                      "words":  [
+                                    {
+                                        "y":  990,
+                                        "height":  10,
+                                        "width":  86,
+                                        "text":  "Non-Maximum",
+                                        "x":  804
+                                    },
+                                    {
+                                        "y":  990,
+                                        "height":  12,
+                                        "width":  73,
+                                        "text":  "Suppression:",
+                                        "x":  894
+                                    },
+                                    {
+                                        "y":  990,
+                                        "height":  10,
+                                        "width":  31,
+                                        "text":  "Thick",
+                                        "x":  970
+                                    },
+                                    {
+                                        "y":  991,
+                                        "height":  9,
+                                        "width":  11,
+                                        "text":  "to",
+                                        "x":  1005
+                                    },
+                                    {
+                                        "y":  990,
+                                        "height":  10,
+                                        "width":  25,
+                                        "text":  "Thin",
+                                        "x":  1019
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "APPLY CAUSStAN KERNEL",
+                      "words":  [
+                                    {
+                                        "y":  1032,
+                                        "height":  9,
+                                        "width":  34,
+                                        "text":  "APPLY",
+                                        "x":  358
+                                    },
+                                    {
+                                        "y":  1032,
+                                        "height":  9,
+                                        "width":  52,
+                                        "text":  "CAUSStAN",
+                                        "x":  394
+                                    },
+                                    {
+                                        "y":  1032,
+                                        "height":  9,
+                                        "width":  39,
+                                        "text":  "KERNEL",
+                                        "x":  449
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "121",
+                      "words":  [
+                                    {
+                                        "y":  1074,
+                                        "height":  10,
+                                        "width":  37,
+                                        "text":  "121",
+                                        "x":  398
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "242",
+                      "words":  [
+                                    {
+                                        "y":  1089,
+                                        "height":  10,
+                                        "width":  40,
+                                        "text":  "242",
+                                        "x":  397
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "121",
+                      "words":  [
+                                    {
+                                        "y":  1104,
+                                        "height":  11,
+                                        "width":  37,
+                                        "text":  "121",
+                                        "x":  398
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "PREVENT •FALSE EDGES",
+                      "words":  [
+                                    {
+                                        "y":  1155,
+                                        "height":  9,
+                                        "width":  47,
+                                        "text":  "PREVENT",
+                                        "x":  364
+                                    },
+                                    {
+                                        "y":  1155,
+                                        "height":  9,
+                                        "width":  33,
+                                        "text":  "•FALSE",
+                                        "x":  414
+                                    },
+                                    {
+                                        "y":  1155,
+                                        "height":  9,
+                                        "width":  35,
+                                        "text":  "EDGES",
+                                        "x":  451
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Before: Noisy, sharp peaks",
+                      "words":  [
+                                    {
+                                        "y":  1189,
+                                        "height":  9,
+                                        "width":  37,
+                                        "text":  "Before:",
+                                        "x":  215
+                                    },
+                                    {
+                                        "y":  1188,
+                                        "height":  12,
+                                        "width":  30,
+                                        "text":  "Noisy,",
+                                        "x":  255
+                                    },
+                                    {
+                                        "y":  1189,
+                                        "height":  11,
+                                        "width":  29,
+                                        "text":  "sharp",
+                                        "x":  288
+                                    },
+                                    {
+                                        "y":  1188,
+                                        "height":  12,
+                                        "width":  30,
+                                        "text":  "peaks",
+                                        "x":  320
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Find the",
+                      "words":  [
+                                    {
+                                        "y":  1022,
+                                        "height":  11,
+                                        "width":  26,
+                                        "text":  "Find",
+                                        "x":  717
+                                    },
+                                    {
+                                        "y":  1022,
+                                        "height":  11,
+                                        "width":  21,
+                                        "text":  "the",
+                                        "x":  746
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "peak Gradient",
+                      "words":  [
+                                    {
+                                        "y":  1037,
+                                        "height":  11,
+                                        "width":  30,
+                                        "text":  "peak",
+                                        "x":  699
+                                    },
+                                    {
+                                        "y":  1037,
+                                        "height":  11,
+                                        "width":  53,
+                                        "text":  "Gradient",
+                                        "x":  732
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Suppress",
+                      "words":  [
+                                    {
+                                        "y":  1165,
+                                        "height":  12,
+                                        "width":  56,
+                                        "text":  "Suppress",
+                                        "x":  711
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Neighbors",
+                      "words":  [
+                                    {
+                                        "y":  1179,
+                                        "height":  13,
+                                        "width":  63,
+                                        "text":  "Neighbors",
+                                        "x":  708
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Thick to",
+                      "words":  [
+                                    {
+                                        "y":  1164,
+                                        "height":  11,
+                                        "width":  32,
+                                        "text":  "Thick",
+                                        "x":  899
+                                    },
+                                    {
+                                        "y":  1165,
+                                        "height":  10,
+                                        "width":  13,
+                                        "text":  "to",
+                                        "x":  935
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Thin",
+                      "words":  [
+                                    {
+                                        "y":  1179,
+                                        "height":  11,
+                                        "width":  27,
+                                        "text":  "Thin",
+                                        "x":  909
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "After: Smooth gradient ramp",
+                      "words":  [
+                                    {
+                                        "y":  1188,
+                                        "height":  10,
+                                        "width":  29,
+                                        "text":  "After:",
+                                        "x":  492
+                                    },
+                                    {
+                                        "y":  1189,
+                                        "height":  9,
+                                        "width":  40,
+                                        "text":  "Smooth",
+                                        "x":  524
+                                    },
+                                    {
+                                        "y":  1188,
+                                        "height":  12,
+                                        "width":  44,
+                                        "text":  "gradient",
+                                        "x":  567
+                                    },
+                                    {
+                                        "y":  1191,
+                                        "height":  9,
+                                        "width":  27,
+                                        "text":  "ramp",
+                                        "x":  614
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "80 150",
+                      "words":  [
+                                    {
+                                        "y":  1038,
+                                        "height":  11,
+                                        "width":  17,
+                                        "text":  "80",
+                                        "x":  990
+                                    },
+                                    {
+                                        "y":  1038,
+                                        "height":  12,
+                                        "width":  22,
+                                        "text":  "150",
+                                        "x":  1021
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "200",
+                      "words":  [
+                                    {
+                                        "y":  1038,
+                                        "height":  11,
+                                        "width":  25,
+                                        "text":  "200",
+                                        "x":  1053
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• • ISO 80",
+                      "words":  [
+                                    {
+                                        "y":  1041,
+                                        "height":  5,
+                                        "width":  2,
+                                        "text":  "•",
+                                        "x":  1064
+                                    },
+                                    {
+                                        "y":  1041,
+                                        "height":  5,
+                                        "width":  3,
+                                        "text":  "•",
+                                        "x":  1072
+                                    },
+                                    {
+                                        "y":  1038,
+                                        "height":  12,
+                                        "width":  22,
+                                        "text":  "ISO",
+                                        "x":  1087
+                                    },
+                                    {
+                                        "y":  1038,
+                                        "height":  11,
+                                        "width":  18,
+                                        "text":  "80",
+                                        "x":  1123
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "THICK EDGE",
+                      "words":  [
+                                    {
+                                        "y":  1172,
+                                        "height":  9,
+                                        "width":  30,
+                                        "text":  "THICK",
+                                        "x":  1035
+                                    },
+                                    {
+                                        "y":  1173,
+                                        "height":  8,
+                                        "width":  27,
+                                        "text":  "EDGE",
+                                        "x":  1068
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "BECOMES THN LINE",
+                      "words":  [
+                                    {
+                                        "y":  1184,
+                                        "height":  9,
+                                        "width":  50,
+                                        "text":  "BECOMES",
+                                        "x":  1014
+                                    },
+                                    {
+                                        "y":  1184,
+                                        "height":  9,
+                                        "width":  25,
+                                        "text":  "THN",
+                                        "x":  1066
+                                    },
+                                    {
+                                        "y":  1184,
+                                        "height":  9,
+                                        "width":  23,
+                                        "text":  "LINE",
+                                        "x":  1094
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CONNECTIVITY",
+                      "words":  [
+                                    {
+                                        "y":  1224,
+                                        "height":  12,
+                                        "width":  119,
+                                        "text":  "CONNECTIVITY",
+                                        "x":  364
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Hysteresis \u0026 Double Thresholding",
+                      "words":  [
+                                    {
+                                        "y":  1240,
+                                        "height":  13,
+                                        "width":  59,
+                                        "text":  "Hysteresis",
+                                        "x":  326
+                                    },
+                                    {
+                                        "y":  1241,
+                                        "height":  9,
+                                        "width":  7,
+                                        "text":  "\u0026",
+                                        "x":  389
+                                    },
+                                    {
+                                        "y":  1240,
+                                        "height":  10,
+                                        "width":  41,
+                                        "text":  "Double",
+                                        "x":  400
+                                    },
+                                    {
+                                        "y":  1240,
+                                        "height":  13,
+                                        "width":  75,
+                                        "text":  "Thresholding",
+                                        "x":  445
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "SOBEL vs CANNY",
+                      "words":  [
+                                    {
+                                        "y":  1224,
+                                        "height":  13,
+                                        "width":  53,
+                                        "text":  "SOBEL",
+                                        "x":  856
+                                    },
+                                    {
+                                        "y":  1227,
+                                        "height":  9,
+                                        "width":  17,
+                                        "text":  "vs",
+                                        "x":  913
+                                    },
+                                    {
+                                        "y":  1224,
+                                        "height":  12,
+                                        "width":  57,
+                                        "text":  "CANNY",
+                                        "x":  935
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "A Direct Comparison",
+                      "words":  [
+                                    {
+                                        "y":  1241,
+                                        "height":  9,
+                                        "width":  8,
+                                        "text":  "A",
+                                        "x":  865
+                                    },
+                                    {
+                                        "y":  1241,
+                                        "height":  9,
+                                        "width":  33,
+                                        "text":  "Direct",
+                                        "x":  877
+                                    },
+                                    {
+                                        "y":  1240,
+                                        "height":  12,
+                                        "width":  69,
+                                        "text":  "Comparison",
+                                        "x":  914
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Link Strong and Weak",
+                      "words":  [
+                                    {
+                                        "y":  1263,
+                                        "height":  11,
+                                        "width":  24,
+                                        "text":  "Link",
+                                        "x":  207
+                                    },
+                                    {
+                                        "y":  1264,
+                                        "height":  12,
+                                        "width":  39,
+                                        "text":  "Strong",
+                                        "x":  234
+                                    },
+                                    {
+                                        "y":  1264,
+                                        "height":  10,
+                                        "width":  22,
+                                        "text":  "and",
+                                        "x":  276
+                                    },
+                                    {
+                                        "y":  1264,
+                                        "height":  10,
+                                        "width":  33,
+                                        "text":  "Weak",
+                                        "x":  301
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "STRONG PIXEL",
+                      "words":  [
+                                    {
+                                        "y":  1285,
+                                        "height":  10,
+                                        "width":  44,
+                                        "text":  "STRONG",
+                                        "x":  264
+                                    },
+                                    {
+                                        "y":  1285,
+                                        "height":  10,
+                                        "width":  30,
+                                        "text":  "PIXEL",
+                                        "x":  311
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Form Complete Edges",
+                      "words":  [
+                                    {
+                                        "y":  1264,
+                                        "height":  10,
+                                        "width":  30,
+                                        "text":  "Form",
+                                        "x":  370
+                                    },
+                                    {
+                                        "y":  1264,
+                                        "height":  12,
+                                        "width":  55,
+                                        "text":  "Complete",
+                                        "x":  403
+                                    },
+                                    {
+                                        "y":  1264,
+                                        "height":  12,
+                                        "width":  34,
+                                        "text":  "Edges",
+                                        "x":  462
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "STRONG EOCE THRESHOLD (T2)",
+                      "words":  [
+                                    {
+                                        "y":  1287,
+                                        "height":  10,
+                                        "width":  44,
+                                        "text":  "STRONG",
+                                        "x":  387
+                                    },
+                                    {
+                                        "y":  1287,
+                                        "height":  10,
+                                        "width":  27,
+                                        "text":  "EOCE",
+                                        "x":  435
+                                    },
+                                    {
+                                        "y":  1287,
+                                        "height":  10,
+                                        "width":  66,
+                                        "text":  "THRESHOLD",
+                                        "x":  465
+                                    },
+                                    {
+                                        "y":  1287,
+                                        "height":  12,
+                                        "width":  19,
+                                        "text":  "(T2)",
+                                        "x":  534
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "WEAK EDCE THRESHOLD (Tl)",
+                      "words":  [
+                                    {
+                                        "y":  1320,
+                                        "height":  9,
+                                        "width":  34,
+                                        "text":  "WEAK",
+                                        "x":  393
+                                    },
+                                    {
+                                        "y":  1320,
+                                        "height":  9,
+                                        "width":  28,
+                                        "text":  "EDCE",
+                                        "x":  430
+                                    },
+                                    {
+                                        "y":  1320,
+                                        "height":  9,
+                                        "width":  66,
+                                        "text":  "THRESHOLD",
+                                        "x":  460
+                                    },
+                                    {
+                                        "y":  1320,
+                                        "height":  12,
+                                        "width":  18,
+                                        "text":  "(Tl)",
+                                        "x":  529
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Discard Noise",
+                      "words":  [
+                                    {
+                                        "y":  1263,
+                                        "height":  11,
+                                        "width":  43,
+                                        "text":  "Discard",
+                                        "x":  563
+                                    },
+                                    {
+                                        "y":  1264,
+                                        "height":  10,
+                                        "width":  32,
+                                        "text":  "Noise",
+                                        "x":  609
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "EDCE PIXELS",
+                      "words":  [
+                                    {
+                                        "y":  1358,
+                                        "height":  10,
+                                        "width":  28,
+                                        "text":  "EDCE",
+                                        "x":  213
+                                    },
+                                    {
+                                        "y":  1358,
+                                        "height":  10,
+                                        "width":  36,
+                                        "text":  "PIXELS",
+                                        "x":  245
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "import",
+                      "words":  [
+                                    {
+                                        "y":  1534,
+                                        "height":  24,
+                                        "width":  84,
+                                        "text":  "import",
+                                        "x":  183
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "import",
+                      "words":  [
+                                    {
+                                        "y":  1568,
+                                        "height":  23,
+                                        "width":  84,
+                                        "text":  "import",
+                                        "x":  183
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# Read",
+                      "words":  [
+                                    {
+                                        "y":  1633,
+                                        "height":  19,
+                                        "width":  13,
+                                        "text":  "#",
+                                        "x":  182
+                                    },
+                                    {
+                                        "y":  1633,
+                                        "height":  19,
+                                        "width":  54,
+                                        "text":  "Read",
+                                        "x":  212
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "image =",
+                      "words":  [
+                                    {
+                                        "y":  1665,
+                                        "height":  23,
+                                        "width":  69,
+                                        "text":  "image",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  1671,
+                                        "height":  9,
+                                        "width":  12,
+                                        "text":  "=",
+                                        "x":  269
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "WEAK PIXELS",
+                      "words":  [
+                                    {
+                                        "y":  1363,
+                                        "height":  9,
+                                        "width":  33,
+                                        "text":  "WEAK",
+                                        "x":  324
+                                    },
+                                    {
+                                        "y":  1363,
+                                        "height":  9,
+                                        "width":  37,
+                                        "text":  "PIXELS",
+                                        "x":  360
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "KEEP SEQUENCE",
+                      "words":  [
+                                    {
+                                        "y":  1395,
+                                        "height":  9,
+                                        "width":  28,
+                                        "text":  "KEEP",
+                                        "x":  344
+                                    },
+                                    {
+                                        "y":  1395,
+                                        "height":  10,
+                                        "width":  58,
+                                        "text":  "SEQUENCE",
+                                        "x":  375
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Weak pixe•b connected to Strong",
+                      "words":  [
+                                    {
+                                        "y":  1435,
+                                        "height":  10,
+                                        "width":  29,
+                                        "text":  "Weak",
+                                        "x":  298
+                                    },
+                                    {
+                                        "y":  1435,
+                                        "height":  12,
+                                        "width":  29,
+                                        "text":  "pixe•b",
+                                        "x":  330
+                                    },
+                                    {
+                                        "y":  1435,
+                                        "height":  10,
+                                        "width":  55,
+                                        "text":  "connected",
+                                        "x":  362
+                                    },
+                                    {
+                                        "y":  1436,
+                                        "height":  9,
+                                        "width":  10,
+                                        "text":  "to",
+                                        "x":  420
+                                    },
+                                    {
+                                        "y":  1435,
+                                        "height":  12,
+                                        "width":  34,
+                                        "text":  "Strong",
+                                        "x":  433
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "pixels are kept, bridging gaps.",
+                      "words":  [
+                                    {
+                                        "y":  1448,
+                                        "height":  11,
+                                        "width":  29,
+                                        "text":  "pixels",
+                                        "x":  306
+                                    },
+                                    {
+                                        "y":  1450,
+                                        "height":  7,
+                                        "width":  16,
+                                        "text":  "are",
+                                        "x":  338
+                                    },
+                                    {
+                                        "y":  1448,
+                                        "height":  11,
+                                        "width":  26,
+                                        "text":  "kept,",
+                                        "x":  357
+                                    },
+                                    {
+                                        "y":  1448,
+                                        "height":  12,
+                                        "width":  43,
+                                        "text":  "bridging",
+                                        "x":  386
+                                    },
+                                    {
+                                        "y":  1450,
+                                        "height":  10,
+                                        "width":  26,
+                                        "text":  "gaps.",
+                                        "x":  433
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "cv2",
+                      "words":  [
+                                    {
+                                        "y":  1535,
+                                        "height":  19,
+                                        "width":  40,
+                                        "text":  "cv2",
+                                        "x":  284
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "SOBEL INTENSITY CHANCE",
+                      "words":  [
+                                    {
+                                        "y":  1347,
+                                        "height":  9,
+                                        "width":  35,
+                                        "text":  "SOBEL",
+                                        "x":  708
+                                    },
+                                    {
+                                        "y":  1346,
+                                        "height":  10,
+                                        "width":  56,
+                                        "text":  "INTENSITY",
+                                        "x":  756
+                                    },
+                                    {
+                                        "y":  1346,
+                                        "height":  10,
+                                        "width":  46,
+                                        "text":  "CHANCE",
+                                        "x":  815
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• Calculation (C. G,)",
+                      "words":  [
+                                    {
+                                        "y":  1377,
+                                        "height":  5,
+                                        "width":  5,
+                                        "text":  "•",
+                                        "x":  707
+                                    },
+                                    {
+                                        "y":  1374,
+                                        "height":  9,
+                                        "width":  58,
+                                        "text":  "Calculation",
+                                        "x":  794
+                                    },
+                                    {
+                                        "y":  1374,
+                                        "height":  13,
+                                        "width":  17,
+                                        "text":  "(C.",
+                                        "x":  856
+                                    },
+                                    {
+                                        "y":  1374,
+                                        "height":  15,
+                                        "width":  15,
+                                        "text":  "G,)",
+                                        "x":  875
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• Identifies Sudden",
+                      "words":  [
+                                    {
+                                        "y":  1389,
+                                        "height":  6,
+                                        "width":  4,
+                                        "text":  "•",
+                                        "x":  708
+                                    },
+                                    {
+                                        "y":  1387,
+                                        "height":  9,
+                                        "width":  48,
+                                        "text":  "Identifies",
+                                        "x":  717
+                                    },
+                                    {
+                                        "y":  1387,
+                                        "height":  9,
+                                        "width":  39,
+                                        "text":  "Sudden",
+                                        "x":  768
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• Susceptible to Noise",
+                      "words":  [
+                                    {
+                                        "y":  1402,
+                                        "height":  5,
+                                        "width":  6,
+                                        "text":  "•",
+                                        "x":  707
+                                    },
+                                    {
+                                        "y":  1399,
+                                        "height":  11,
+                                        "width":  59,
+                                        "text":  "Susceptible",
+                                        "x":  717
+                                    },
+                                    {
+                                        "y":  1400,
+                                        "height":  9,
+                                        "width":  11,
+                                        "text":  "to",
+                                        "x":  779
+                                    },
+                                    {
+                                        "y":  1399,
+                                        "height":  10,
+                                        "width":  28,
+                                        "text":  "Noise",
+                                        "x":  793
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Thick Edges",
+                      "words":  [
+                                    {
+                                        "y":  1411,
+                                        "height":  9,
+                                        "width":  28,
+                                        "text":  "Thick",
+                                        "x":  716
+                                    },
+                                    {
+                                        "y":  1412,
+                                        "height":  10,
+                                        "width":  31,
+                                        "text":  "Edges",
+                                        "x":  748
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "isolated Weak",
+                      "words":  [
+                                    {
+                                        "y":  1435,
+                                        "height":  10,
+                                        "width":  41,
+                                        "text":  "isolated",
+                                        "x":  551
+                                    },
+                                    {
+                                        "y":  1435,
+                                        "height":  10,
+                                        "width":  29,
+                                        "text":  "Weak",
+                                        "x":  595
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "is discarded",
+                      "words":  [
+                                    {
+                                        "y":  1448,
+                                        "height":  9,
+                                        "width":  7,
+                                        "text":  "is",
+                                        "x":  570
+                                    },
+                                    {
+                                        "y":  1448,
+                                        "height":  9,
+                                        "width":  54,
+                                        "text":  "discarded",
+                                        "x":  580
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "matplotlib. pyptot as put",
+                      "words":  [
+                                    {
+                                        "y":  1568,
+                                        "height":  23,
+                                        "width":  153,
+                                        "text":  "matplotlib.",
+                                        "x":  283
+                                    },
+                                    {
+                                        "y":  1568,
+                                        "height":  23,
+                                        "width":  82,
+                                        "text":  "pyptot",
+                                        "x":  443
+                                    },
+                                    {
+                                        "y":  1572,
+                                        "height":  15,
+                                        "width":  27,
+                                        "text":  "as",
+                                        "x":  542
+                                    },
+                                    {
+                                        "y":  1568,
+                                        "height":  23,
+                                        "width":  41,
+                                        "text":  "put",
+                                        "x":  586
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "image",
+                      "words":  [
+                                    {
+                                        "y":  1633,
+                                        "height":  23,
+                                        "width":  69,
+                                        "text":  "image",
+                                        "x":  284
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "cv2. imread image .jpg",
+                      "words":  [
+                                    {
+                                        "y":  1666,
+                                        "height":  18,
+                                        "width":  51,
+                                        "text":  "cv2.",
+                                        "x":  299
+                                    },
+                                    {
+                                        "y":  1665,
+                                        "height":  19,
+                                        "width":  83,
+                                        "text":  "imread",
+                                        "x":  356
+                                    },
+                                    {
+                                        "y":  1665,
+                                        "height":  23,
+                                        "width":  69,
+                                        "text":  "image",
+                                        "x":  471
+                                    },
+                                    {
+                                        "y":  1665,
+                                        "height":  24,
+                                        "width":  51,
+                                        "text":  ".jpg",
+                                        "x":  546
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# Convert BGR to RGB for Matplotlib",
+                      "words":  [
+                                    {
+                                        "y":  1731,
+                                        "height":  19,
+                                        "width":  13,
+                                        "text":  "#",
+                                        "x":  182
+                                    },
+                                    {
+                                        "y":  1731,
+                                        "height":  19,
+                                        "width":  98,
+                                        "text":  "Convert",
+                                        "x":  212
+                                    },
+                                    {
+                                        "y":  1731,
+                                        "height":  19,
+                                        "width":  40,
+                                        "text":  "BGR",
+                                        "x":  328
+                                    },
+                                    {
+                                        "y":  1731,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "to",
+                                        "x":  384
+                                    },
+                                    {
+                                        "y":  1731,
+                                        "height":  19,
+                                        "width":  39,
+                                        "text":  "RGB",
+                                        "x":  428
+                                    },
+                                    {
+                                        "y":  1731,
+                                        "height":  19,
+                                        "width":  41,
+                                        "text":  "for",
+                                        "x":  485
+                                    },
+                                    {
+                                        "y":  1731,
+                                        "height":  23,
+                                        "width":  141,
+                                        "text":  "Matplotlib",
+                                        "x":  543
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FAST NUCES -",
+                      "words":  [
+                                    {
+                                        "y":  1822,
+                                        "height":  17,
+                                        "width":  56,
+                                        "text":  "FAST",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1822,
+                                        "height":  17,
+                                        "width":  78,
+                                        "text":  "NUCES",
+                                        "x":  234
+                                    },
+                                    {
+                                        "y":  1830,
+                                        "height":  4,
+                                        "width":  11,
+                                        "text":  "-",
+                                        "x":  320
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Karachi",
+                      "words":  [
+                                    {
+                                        "y":  1820,
+                                        "height":  19,
+                                        "width":  86,
+                                        "text":  "Karachi",
+                                        "x":  340
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1821,
+                                        "height":  18,
+                                        "width":  65,
+                                        "text":  "Talha",
+                                        "x":  607
+                                    },
+                                    {
+                                        "y":  1820,
+                                        "height":  19,
+                                        "width":  80,
+                                        "text":  "Shahid",
+                                        "x":  681
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Advanced pipeline",
+                      "words":  [
+                                    {
+                                        "y":  1264,
+                                        "height":  10,
+                                        "width":  58,
+                                        "text":  "Advanced",
+                                        "x":  993
+                                    },
+                                    {
+                                        "y":  1263,
+                                        "height":  13,
+                                        "width":  47,
+                                        "text":  "pipeline",
+                                        "x":  1054
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CANNY SOPHISTICATED",
+                      "words":  [
+                                    {
+                                        "y":  1346,
+                                        "height":  9,
+                                        "width":  39,
+                                        "text":  "CANNY",
+                                        "x":  952
+                                    },
+                                    {
+                                        "y":  1346,
+                                        "height":  10,
+                                        "width":  87,
+                                        "text":  "SOPHISTICATED",
+                                        "x":  1003
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "BOUNDARY TRACKINC PIPELINE",
+                      "words":  [
+                                    {
+                                        "y":  1359,
+                                        "height":  9,
+                                        "width":  62,
+                                        "text":  "BOUNDARY",
+                                        "x":  953
+                                    },
+                                    {
+                                        "y":  1359,
+                                        "height":  9,
+                                        "width":  56,
+                                        "text":  "TRACKINC",
+                                        "x":  1018
+                                    },
+                                    {
+                                        "y":  1359,
+                                        "height":  9,
+                                        "width":  50,
+                                        "text":  "PIPELINE",
+                                        "x":  1077
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• Mufti-Stage Process:",
+                      "words":  [
+                                    {
+                                        "y":  1376,
+                                        "height":  6,
+                                        "width":  5,
+                                        "text":  "•",
+                                        "x":  952
+                                    },
+                                    {
+                                        "y":  1374,
+                                        "height":  11,
+                                        "width":  59,
+                                        "text":  "Mufti-Stage",
+                                        "x":  962
+                                    },
+                                    {
+                                        "y":  1374,
+                                        "height":  9,
+                                        "width":  41,
+                                        "text":  "Process:",
+                                        "x":  1025
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Noise Reduction (Gaussian)",
+                      "words":  [
+                                    {
+                                        "y":  1387,
+                                        "height":  9,
+                                        "width":  28,
+                                        "text":  "Noise",
+                                        "x":  977
+                                    },
+                                    {
+                                        "y":  1387,
+                                        "height":  9,
+                                        "width":  53,
+                                        "text":  "Reduction",
+                                        "x":  1009
+                                    },
+                                    {
+                                        "y":  1386,
+                                        "height":  12,
+                                        "width":  53,
+                                        "text":  "(Gaussian)",
+                                        "x":  1065
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2. Cakulation",
+                      "words":  [
+                                    {
+                                        "y":  1399,
+                                        "height":  10,
+                                        "width":  8,
+                                        "text":  "2.",
+                                        "x":  967
+                                    },
+                                    {
+                                        "y":  1399,
+                                        "height":  9,
+                                        "width":  58,
+                                        "text":  "Cakulation",
+                                        "x":  1026
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "s. Non•Maximum",
+                      "words":  [
+                                    {
+                                        "y":  1412,
+                                        "height":  8,
+                                        "width":  8,
+                                        "text":  "s.",
+                                        "x":  967
+                                    },
+                                    {
+                                        "y":  1412,
+                                        "height":  8,
+                                        "width":  76,
+                                        "text":  "Non•Maximum",
+                                        "x":  979
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Thresholding",
+                      "words":  [
+                                    {
+                                        "y":  1423,
+                                        "height":  12,
+                                        "width":  68,
+                                        "text":  "Thresholding",
+                                        "x":  1019
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "S. Hysteresis (Edge Tracking)",
+                      "words":  [
+                                    {
+                                        "y":  1436,
+                                        "height":  9,
+                                        "width":  8,
+                                        "text":  "S.",
+                                        "x":  967
+                                    },
+                                    {
+                                        "y":  1436,
+                                        "height":  11,
+                                        "width":  52,
+                                        "text":  "Hysteresis",
+                                        "x":  979
+                                    },
+                                    {
+                                        "y":  1436,
+                                        "height":  11,
+                                        "width":  29,
+                                        "text":  "(Edge",
+                                        "x":  1035
+                                    },
+                                    {
+                                        "y":  1436,
+                                        "height":  11,
+                                        "width":  48,
+                                        "text":  "Tracking)",
+                                        "x":  1067
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• Robust. Thin, Edges",
+                      "words":  [
+                                    {
+                                        "y":  1451,
+                                        "height":  5,
+                                        "width":  5,
+                                        "text":  "•",
+                                        "x":  952
+                                    },
+                                    {
+                                        "y":  1449,
+                                        "height":  10,
+                                        "width":  39,
+                                        "text":  "Robust.",
+                                        "x":  962
+                                    },
+                                    {
+                                        "y":  1448,
+                                        "height":  11,
+                                        "width":  25,
+                                        "text":  "Thin,",
+                                        "x":  1003
+                                    },
+                                    {
+                                        "y":  1449,
+                                        "height":  11,
+                                        "width":  32,
+                                        "text":  "Edges",
+                                        "x":  1091
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "12",
+                      "words":  [
+                                    {
+                                        "y":  1822,
+                                        "height":  17,
+                                        "width":  23,
+                                        "text":  "12",
+                                        "x":  1178
+                                    }
+                                ]
+                  }
+              ]
+}

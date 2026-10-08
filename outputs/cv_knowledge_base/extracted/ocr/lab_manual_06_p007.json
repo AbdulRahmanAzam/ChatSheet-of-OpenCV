@@ -1,0 +1,1163 @@
+﻿{
+    "id":  "lab_manual_06_p007",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "National University of Computer \u0026 Emerging Sciences - NUCES - Karachi Department of Artificial Intelligence THE QUESTION THE KERNELS Is the right brighter than the left? (Gx) Vertical Edge 200 , 200 , 200 Is the bottom brighter than the top? (Gy) Kx Kernel Horizontal Change (detects vertical edges) THE MATH MADE VISUAL Large Gx response (760) Calculatim: 1*200)- 1•10) .800.40.760 Uniform Area 50 50 50 50 50 50 50 50 50 Ky Kernel Vertical Change (detects horizontal edges) Zero response (0) Calculation: PSO) -200-200-0 Sobel = A directional difference operation. It measures the intensity gradient to identify where boundaries occur. FAST NUCES - Karachi STEP 1: PREPARATION gray = cv2.cvtC010r(image, cv2. COLOR_BGR2GRAY) Computer vision tasks are often performed on grayscale images to simplify intensity analysis. Talha Shahid 7",
+    "review_status":  "raw_ocr_unverified",
+    "page":  7,
+    "source_id":  "lab_manual_06",
+    "lines":  [
+                  {
+                      "text":  "National University of Computer \u0026 Emerging Sciences -",
+                      "words":  [
+                                    {
+                                        "y":  94,
+                                        "height":  23,
+                                        "width":  122,
+                                        "text":  "National",
+                                        "x":  376
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  29,
+                                        "width":  146,
+                                        "text":  "University",
+                                        "x":  507
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  22,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  660
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  28,
+                                        "width":  147,
+                                        "text":  "Computer",
+                                        "x":  696
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  22,
+                                        "width":  21,
+                                        "text":  "\u0026",
+                                        "x":  851
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  28,
+                                        "width":  134,
+                                        "text":  "Emerging",
+                                        "x":  880
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  23,
+                                        "width":  132,
+                                        "text":  "Sciences",
+                                        "x":  1021
+                                    },
+                                    {
+                                        "y":  107,
+                                        "height":  4,
+                                        "width":  10,
+                                        "text":  "-",
+                                        "x":  1162
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "NUCES - Karachi",
+                      "words":  [
+                                    {
+                                        "y":  140,
+                                        "height":  22,
+                                        "width":  103,
+                                        "text":  "NUCES",
+                                        "x":  654
+                                    },
+                                    {
+                                        "y":  152,
+                                        "height":  4,
+                                        "width":  10,
+                                        "text":  "-",
+                                        "x":  765
+                                    },
+                                    {
+                                        "y":  139,
+                                        "height":  23,
+                                        "width":  109,
+                                        "text":  "Karachi",
+                                        "x":  784
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Department of Artificial Intelligence",
+                      "words":  [
+                                    {
+                                        "y":  183,
+                                        "height":  26,
+                                        "width":  143,
+                                        "text":  "Department",
+                                        "x":  555
+                                    },
+                                    {
+                                        "y":  182,
+                                        "height":  22,
+                                        "width":  24,
+                                        "text":  "of",
+                                        "x":  706
+                                    },
+                                    {
+                                        "y":  182,
+                                        "height":  22,
+                                        "width":  100,
+                                        "text":  "Artificial",
+                                        "x":  737
+                                    },
+                                    {
+                                        "y":  182,
+                                        "height":  27,
+                                        "width":  137,
+                                        "text":  "Intelligence",
+                                        "x":  847
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "THE QUESTION",
+                      "words":  [
+                                    {
+                                        "y":  324,
+                                        "height":  14,
+                                        "width":  34,
+                                        "text":  "THE",
+                                        "x":  387
+                                    },
+                                    {
+                                        "y":  324,
+                                        "height":  15,
+                                        "width":  84,
+                                        "text":  "QUESTION",
+                                        "x":  426
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "THE KERNELS",
+                      "words":  [
+                                    {
+                                        "y":  323,
+                                        "height":  15,
+                                        "width":  34,
+                                        "text":  "THE",
+                                        "x":  863
+                                    },
+                                    {
+                                        "y":  323,
+                                        "height":  15,
+                                        "width":  75,
+                                        "text":  "KERNELS",
+                                        "x":  901
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Is the right",
+                      "words":  [
+                                    {
+                                        "y":  497,
+                                        "height":  13,
+                                        "width":  12,
+                                        "text":  "Is",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  496,
+                                        "height":  14,
+                                        "width":  23,
+                                        "text":  "the",
+                                        "x":  269
+                                    },
+                                    {
+                                        "y":  496,
+                                        "height":  17,
+                                        "width":  32,
+                                        "text":  "right",
+                                        "x":  297
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "brighter than",
+                      "words":  [
+                                    {
+                                        "y":  514,
+                                        "height":  17,
+                                        "width":  56,
+                                        "text":  "brighter",
+                                        "x":  245
+                                    },
+                                    {
+                                        "y":  514,
+                                        "height":  14,
+                                        "width":  32,
+                                        "text":  "than",
+                                        "x":  305
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "the left? (Gx)",
+                      "words":  [
+                                    {
+                                        "y":  532,
+                                        "height":  14,
+                                        "width":  23,
+                                        "text":  "the",
+                                        "x":  244
+                                    },
+                                    {
+                                        "y":  532,
+                                        "height":  14,
+                                        "width":  31,
+                                        "text":  "left?",
+                                        "x":  272
+                                    },
+                                    {
+                                        "y":  532,
+                                        "height":  18,
+                                        "width":  29,
+                                        "text":  "(Gx)",
+                                        "x":  308
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Vertical Edge",
+                      "words":  [
+                                    {
+                                        "y":  649,
+                                        "height":  14,
+                                        "width":  56,
+                                        "text":  "Vertical",
+                                        "x":  304
+                                    },
+                                    {
+                                        "y":  649,
+                                        "height":  17,
+                                        "width":  36,
+                                        "text":  "Edge",
+                                        "x":  365
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "200",
+                      "words":  [
+                                    {
+                                        "y":  687,
+                                        "height":  15,
+                                        "width":  34,
+                                        "text":  "200",
+                                        "x":  404
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  ", 200",
+                      "words":  [
+                                    {
+                                        "y":  734,
+                                        "height":  9,
+                                        "width":  4,
+                                        "text":  ",",
+                                        "x":  379
+                                    },
+                                    {
+                                        "y":  731,
+                                        "height":  15,
+                                        "width":  34,
+                                        "text":  "200",
+                                        "x":  404
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  ", 200",
+                      "words":  [
+                                    {
+                                        "y":  778,
+                                        "height":  9,
+                                        "width":  4,
+                                        "text":  ",",
+                                        "x":  379
+                                    },
+                                    {
+                                        "y":  775,
+                                        "height":  16,
+                                        "width":  34,
+                                        "text":  "200",
+                                        "x":  404
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Is the bottom",
+                      "words":  [
+                                    {
+                                        "y":  497,
+                                        "height":  13,
+                                        "width":  12,
+                                        "text":  "Is",
+                                        "x":  560
+                                    },
+                                    {
+                                        "y":  496,
+                                        "height":  14,
+                                        "width":  23,
+                                        "text":  "the",
+                                        "x":  576
+                                    },
+                                    {
+                                        "y":  496,
+                                        "height":  14,
+                                        "width":  52,
+                                        "text":  "bottom",
+                                        "x":  604
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "brighter than",
+                      "words":  [
+                                    {
+                                        "y":  514,
+                                        "height":  17,
+                                        "width":  56,
+                                        "text":  "brighter",
+                                        "x":  562
+                                    },
+                                    {
+                                        "y":  514,
+                                        "height":  14,
+                                        "width":  32,
+                                        "text":  "than",
+                                        "x":  622
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "the top? (Gy)",
+                      "words":  [
+                                    {
+                                        "y":  532,
+                                        "height":  14,
+                                        "width":  24,
+                                        "text":  "the",
+                                        "x":  561
+                                    },
+                                    {
+                                        "y":  532,
+                                        "height":  18,
+                                        "width":  32,
+                                        "text":  "top?",
+                                        "x":  588
+                                    },
+                                    {
+                                        "y":  531,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "(Gy)",
+                                        "x":  625
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Kx Kernel",
+                      "words":  [
+                                    {
+                                        "y":  362,
+                                        "height":  13,
+                                        "width":  18,
+                                        "text":  "Kx",
+                                        "x":  762
+                                    },
+                                    {
+                                        "y":  361,
+                                        "height":  14,
+                                        "width":  47,
+                                        "text":  "Kernel",
+                                        "x":  784
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Horizontal Change",
+                      "words":  [
+                                    {
+                                        "y":  549,
+                                        "height":  13,
+                                        "width":  70,
+                                        "text":  "Horizontal",
+                                        "x":  733
+                                    },
+                                    {
+                                        "y":  549,
+                                        "height":  16,
+                                        "width":  52,
+                                        "text":  "Change",
+                                        "x":  808
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "(detects vertical edges)",
+                      "words":  [
+                                    {
+                                        "y":  566,
+                                        "height":  15,
+                                        "width":  49,
+                                        "text":  "(detects",
+                                        "x":  726
+                                    },
+                                    {
+                                        "y":  566,
+                                        "height":  12,
+                                        "width":  44,
+                                        "text":  "vertical",
+                                        "x":  778
+                                    },
+                                    {
+                                        "y":  565,
+                                        "height":  16,
+                                        "width":  41,
+                                        "text":  "edges)",
+                                        "x":  826
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "THE MATH MADE VISUAL",
+                      "words":  [
+                                    {
+                                        "y":  617,
+                                        "height":  16,
+                                        "width":  37,
+                                        "text":  "THE",
+                                        "x":  569
+                                    },
+                                    {
+                                        "y":  617,
+                                        "height":  16,
+                                        "width":  53,
+                                        "text":  "MATH",
+                                        "x":  612
+                                    },
+                                    {
+                                        "y":  617,
+                                        "height":  16,
+                                        "width":  53,
+                                        "text":  "MADE",
+                                        "x":  672
+                                    },
+                                    {
+                                        "y":  617,
+                                        "height":  16,
+                                        "width":  67,
+                                        "text":  "VISUAL",
+                                        "x":  730
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Large Gx",
+                      "words":  [
+                                    {
+                                        "y":  695,
+                                        "height":  16,
+                                        "width":  44,
+                                        "text":  "Large",
+                                        "x":  565
+                                    },
+                                    {
+                                        "y":  695,
+                                        "height":  13,
+                                        "width":  21,
+                                        "text":  "Gx",
+                                        "x":  613
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "response",
+                      "words":  [
+                                    {
+                                        "y":  715,
+                                        "height":  14,
+                                        "width":  71,
+                                        "text":  "response",
+                                        "x":  564
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "(760)",
+                      "words":  [
+                                    {
+                                        "y":  730,
+                                        "height":  17,
+                                        "width":  41,
+                                        "text":  "(760)",
+                                        "x":  579
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Calculatim:",
+                      "words":  [
+                                    {
+                                        "y":  752,
+                                        "height":  10,
+                                        "width":  60,
+                                        "text":  "Calculatim:",
+                                        "x":  569
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1*200)-",
+                      "words":  [
+                                    {
+                                        "y":  764,
+                                        "height":  12,
+                                        "width":  40,
+                                        "text":  "1*200)-",
+                                        "x":  625
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1•10)",
+                      "words":  [
+                                    {
+                                        "y":  776,
+                                        "height":  13,
+                                        "width":  28,
+                                        "text":  "1•10)",
+                                        "x":  624
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  ".800.40.760",
+                      "words":  [
+                                    {
+                                        "y":  789,
+                                        "height":  10,
+                                        "width":  81,
+                                        "text":  ".800.40.760",
+                                        "x":  559
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Uniform Area",
+                      "words":  [
+                                    {
+                                        "y":  649,
+                                        "height":  14,
+                                        "width":  58,
+                                        "text":  "Uniform",
+                                        "x":  737
+                                    },
+                                    {
+                                        "y":  650,
+                                        "height":  13,
+                                        "width":  33,
+                                        "text":  "Area",
+                                        "x":  800
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "50 50 50",
+                      "words":  [
+                                    {
+                                        "y":  687,
+                                        "height":  15,
+                                        "width":  23,
+                                        "text":  "50",
+                                        "x":  728
+                                    },
+                                    {
+                                        "y":  687,
+                                        "height":  16,
+                                        "width":  24,
+                                        "text":  "50",
+                                        "x":  773
+                                    },
+                                    {
+                                        "y":  687,
+                                        "height":  16,
+                                        "width":  23,
+                                        "text":  "50",
+                                        "x":  819
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "50 50 50",
+                      "words":  [
+                                    {
+                                        "y":  730,
+                                        "height":  16,
+                                        "width":  23,
+                                        "text":  "50",
+                                        "x":  728
+                                    },
+                                    {
+                                        "y":  730,
+                                        "height":  17,
+                                        "width":  24,
+                                        "text":  "50",
+                                        "x":  773
+                                    },
+                                    {
+                                        "y":  730,
+                                        "height":  16,
+                                        "width":  23,
+                                        "text":  "50",
+                                        "x":  819
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "50 50 50",
+                      "words":  [
+                                    {
+                                        "y":  775,
+                                        "height":  16,
+                                        "width":  23,
+                                        "text":  "50",
+                                        "x":  728
+                                    },
+                                    {
+                                        "y":  775,
+                                        "height":  16,
+                                        "width":  23,
+                                        "text":  "50",
+                                        "x":  774
+                                    },
+                                    {
+                                        "y":  775,
+                                        "height":  16,
+                                        "width":  23,
+                                        "text":  "50",
+                                        "x":  819
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Ky Kernel",
+                      "words":  [
+                                    {
+                                        "y":  362,
+                                        "height":  16,
+                                        "width":  18,
+                                        "text":  "Ky",
+                                        "x":  996
+                                    },
+                                    {
+                                        "y":  361,
+                                        "height":  14,
+                                        "width":  46,
+                                        "text":  "Kernel",
+                                        "x":  1018
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Vertical Change",
+                      "words":  [
+                                    {
+                                        "y":  549,
+                                        "height":  13,
+                                        "width":  52,
+                                        "text":  "Vertical",
+                                        "x":  975
+                                    },
+                                    {
+                                        "y":  549,
+                                        "height":  16,
+                                        "width":  53,
+                                        "text":  "Change",
+                                        "x":  1032
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "(detects horizontal edges)",
+                      "words":  [
+                                    {
+                                        "y":  566,
+                                        "height":  15,
+                                        "width":  50,
+                                        "text":  "(detects",
+                                        "x":  951
+                                    },
+                                    {
+                                        "y":  566,
+                                        "height":  12,
+                                        "width":  60,
+                                        "text":  "horizontal",
+                                        "x":  1004
+                                    },
+                                    {
+                                        "y":  566,
+                                        "height":  15,
+                                        "width":  41,
+                                        "text":  "edges)",
+                                        "x":  1068
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Zero response",
+                      "words":  [
+                                    {
+                                        "y":  712,
+                                        "height":  14,
+                                        "width":  36,
+                                        "text":  "Zero",
+                                        "x":  971
+                                    },
+                                    {
+                                        "y":  715,
+                                        "height":  14,
+                                        "width":  71,
+                                        "text":  "response",
+                                        "x":  1012
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "(0)",
+                      "words":  [
+                                    {
+                                        "y":  730,
+                                        "height":  17,
+                                        "width":  21,
+                                        "text":  "(0)",
+                                        "x":  1017
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Calculation:",
+                      "words":  [
+                                    {
+                                        "y":  752,
+                                        "height":  10,
+                                        "width":  60,
+                                        "text":  "Calculation:",
+                                        "x":  997
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "PSO)",
+                      "words":  [
+                                    {
+                                        "y":  776,
+                                        "height":  13,
+                                        "width":  27,
+                                        "text":  "PSO)",
+                                        "x":  1053
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "-200-200-0",
+                      "words":  [
+                                    {
+                                        "y":  789,
+                                        "height":  10,
+                                        "width":  75,
+                                        "text":  "-200-200-0",
+                                        "x":  990
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Sobel = A directional difference operation. It measures the intensity gradient to identify where boundaries occur.",
+                      "words":  [
+                                    {
+                                        "y":  845,
+                                        "height":  14,
+                                        "width":  42,
+                                        "text":  "Sobel",
+                                        "x":  273
+                                    },
+                                    {
+                                        "y":  850,
+                                        "height":  6,
+                                        "width":  8,
+                                        "text":  "=",
+                                        "x":  320
+                                    },
+                                    {
+                                        "y":  846,
+                                        "height":  13,
+                                        "width":  11,
+                                        "text":  "A",
+                                        "x":  333
+                                    },
+                                    {
+                                        "y":  845,
+                                        "height":  14,
+                                        "width":  76,
+                                        "text":  "directional",
+                                        "x":  348
+                                    },
+                                    {
+                                        "y":  845,
+                                        "height":  14,
+                                        "width":  73,
+                                        "text":  "difference",
+                                        "x":  429
+                                    },
+                                    {
+                                        "y":  846,
+                                        "height":  17,
+                                        "width":  73,
+                                        "text":  "operation.",
+                                        "x":  506
+                                    },
+                                    {
+                                        "y":  846,
+                                        "height":  13,
+                                        "width":  10,
+                                        "text":  "It",
+                                        "x":  584
+                                    },
+                                    {
+                                        "y":  849,
+                                        "height":  10,
+                                        "width":  72,
+                                        "text":  "measures",
+                                        "x":  598
+                                    },
+                                    {
+                                        "y":  845,
+                                        "height":  14,
+                                        "width":  23,
+                                        "text":  "the",
+                                        "x":  674
+                                    },
+                                    {
+                                        "y":  846,
+                                        "height":  17,
+                                        "width":  62,
+                                        "text":  "intensity",
+                                        "x":  702
+                                    },
+                                    {
+                                        "y":  845,
+                                        "height":  18,
+                                        "width":  60,
+                                        "text":  "gradient",
+                                        "x":  768
+                                    },
+                                    {
+                                        "y":  847,
+                                        "height":  12,
+                                        "width":  15,
+                                        "text":  "to",
+                                        "x":  832
+                                    },
+                                    {
+                                        "y":  845,
+                                        "height":  18,
+                                        "width":  55,
+                                        "text":  "identify",
+                                        "x":  852
+                                    },
+                                    {
+                                        "y":  845,
+                                        "height":  14,
+                                        "width":  47,
+                                        "text":  "where",
+                                        "x":  910
+                                    },
+                                    {
+                                        "y":  845,
+                                        "height":  14,
+                                        "width":  85,
+                                        "text":  "boundaries",
+                                        "x":  961
+                                    },
+                                    {
+                                        "y":  849,
+                                        "height":  10,
+                                        "width":  46,
+                                        "text":  "occur.",
+                                        "x":  1050
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FAST NUCES -",
+                      "words":  [
+                                    {
+                                        "y":  1822,
+                                        "height":  17,
+                                        "width":  56,
+                                        "text":  "FAST",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1822,
+                                        "height":  17,
+                                        "width":  78,
+                                        "text":  "NUCES",
+                                        "x":  234
+                                    },
+                                    {
+                                        "y":  1830,
+                                        "height":  4,
+                                        "width":  11,
+                                        "text":  "-",
+                                        "x":  320
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Karachi",
+                      "words":  [
+                                    {
+                                        "y":  1820,
+                                        "height":  19,
+                                        "width":  86,
+                                        "text":  "Karachi",
+                                        "x":  340
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "STEP 1: PREPARATION",
+                      "words":  [
+                                    {
+                                        "y":  1007,
+                                        "height":  36,
+                                        "width":  119,
+                                        "text":  "STEP",
+                                        "x":  427
+                                    },
+                                    {
+                                        "y":  1007,
+                                        "height":  36,
+                                        "width":  34,
+                                        "text":  "1:",
+                                        "x":  560
+                                    },
+                                    {
+                                        "y":  1007,
+                                        "height":  36,
+                                        "width":  329,
+                                        "text":  "PREPARATION",
+                                        "x":  610
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "gray = cv2.cvtC010r(image,",
+                      "words":  [
+                                    {
+                                        "y":  1403,
+                                        "height":  14,
+                                        "width":  41,
+                                        "text":  "gray",
+                                        "x":  701
+                                    },
+                                    {
+                                        "y":  1405,
+                                        "height":  7,
+                                        "width":  9,
+                                        "text":  "=",
+                                        "x":  754
+                                    },
+                                    {
+                                        "y":  1399,
+                                        "height":  18,
+                                        "width":  197,
+                                        "text":  "cv2.cvtC010r(image,",
+                                        "x":  775
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "cv2. COLOR_BGR2GRAY)",
+                      "words":  [
+                                    {
+                                        "y":  1423,
+                                        "height":  14,
+                                        "width":  38,
+                                        "text":  "cv2.",
+                                        "x":  738
+                                    },
+                                    {
+                                        "y":  1422,
+                                        "height":  18,
+                                        "width":  156,
+                                        "text":  "COLOR_BGR2GRAY)",
+                                        "x":  780
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Computer vision tasks are",
+                      "words":  [
+                                    {
+                                        "y":  1487,
+                                        "height":  23,
+                                        "width":  108,
+                                        "text":  "Computer",
+                                        "x":  694
+                                    },
+                                    {
+                                        "y":  1487,
+                                        "height":  19,
+                                        "width":  61,
+                                        "text":  "vision",
+                                        "x":  809
+                                    },
+                                    {
+                                        "y":  1487,
+                                        "height":  19,
+                                        "width":  56,
+                                        "text":  "tasks",
+                                        "x":  878
+                                    },
+                                    {
+                                        "y":  1492,
+                                        "height":  14,
+                                        "width":  33,
+                                        "text":  "are",
+                                        "x":  942
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "often performed on",
+                      "words":  [
+                                    {
+                                        "y":  1513,
+                                        "height":  19,
+                                        "width":  56,
+                                        "text":  "often",
+                                        "x":  694
+                                    },
+                                    {
+                                        "y":  1513,
+                                        "height":  23,
+                                        "width":  112,
+                                        "text":  "performed",
+                                        "x":  758
+                                    },
+                                    {
+                                        "y":  1518,
+                                        "height":  14,
+                                        "width":  25,
+                                        "text":  "on",
+                                        "x":  879
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "grayscale images to",
+                      "words":  [
+                                    {
+                                        "y":  1541,
+                                        "height":  22,
+                                        "width":  107,
+                                        "text":  "grayscale",
+                                        "x":  694
+                                    },
+                                    {
+                                        "y":  1540,
+                                        "height":  23,
+                                        "width":  78,
+                                        "text":  "images",
+                                        "x":  809
+                                    },
+                                    {
+                                        "y":  1542,
+                                        "height":  16,
+                                        "width":  20,
+                                        "text":  "to",
+                                        "x":  894
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "simplify intensity analysis.",
+                      "words":  [
+                                    {
+                                        "y":  1566,
+                                        "height":  23,
+                                        "width":  87,
+                                        "text":  "simplify",
+                                        "x":  694
+                                    },
+                                    {
+                                        "y":  1566,
+                                        "height":  23,
+                                        "width":  96,
+                                        "text":  "intensity",
+                                        "x":  788
+                                    },
+                                    {
+                                        "y":  1566,
+                                        "height":  23,
+                                        "width":  95,
+                                        "text":  "analysis.",
+                                        "x":  890
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1821,
+                                        "height":  18,
+                                        "width":  65,
+                                        "text":  "Talha",
+                                        "x":  607
+                                    },
+                                    {
+                                        "y":  1820,
+                                        "height":  19,
+                                        "width":  80,
+                                        "text":  "Shahid",
+                                        "x":  681
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "7",
+                      "words":  [
+                                    {
+                                        "y":  1822,
+                                        "height":  17,
+                                        "width":  12,
+                                        "text":  "7",
+                                        "x":  1189
+                                    }
+                                ]
+                  }
+              ]
+}

@@ -1,0 +1,1340 @@
+﻿{
+    "id":  "lab_03_manual_p003",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "National University of Computer \u0026 Emerging Sciences - NUCES - Karachi Department of Artificial Intelligence 1. Objectives 1. 2. 3. 4. 5. Explain what a geometric transformation is. Distinguish geometric and photometric transformations. Explain the image coordinate system used in computer vision. Distinguish linear, affine and projective transformations. Explain homogeneous coordinates. 2. What is Geometric Transformation \"A geometric transformation is a mathematical operation that alters the spatial position, orientation, scale, or shape of an object, without changing its under Lying data values\". In simple words, a geometric transformation changes where image information is located . Geometric Transformation (Translation) I(x,y) -\u003e I(x\u0027, y\u0027) Original Translation iiiiiiiiiiiiii I(x,y) Translated A geometric transformation changes where image information is located without altering the underlying data. An image can be viewed as a function where : • • x = horizontal image coordinate y = vertical image coordinate I(x,y) = pixel intensity/ color at that location transformed image FAST NUCES - Karachi Talha Shahid 2",
+    "review_status":  "raw_ocr_unverified",
+    "page":  3,
+    "source_id":  "lab_03_manual",
+    "lines":  [
+                  {
+                      "text":  "National University of Computer \u0026 Emerging Sciences -",
+                      "words":  [
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  123,
+                                        "text":  "National",
+                                        "x":  373
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  30,
+                                        "width":  153,
+                                        "text":  "University",
+                                        "x":  505
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  29,
+                                        "text":  "of",
+                                        "x":  666
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  30,
+                                        "width":  146,
+                                        "text":  "Computer",
+                                        "x":  701
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  23,
+                                        "text":  "\u0026",
+                                        "x":  855
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  30,
+                                        "width":  141,
+                                        "text":  "Emerging",
+                                        "x":  886
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  123,
+                                        "text":  "Sciences",
+                                        "x":  1035
+                                    },
+                                    {
+                                        "y":  106,
+                                        "height":  5,
+                                        "width":  8,
+                                        "text":  "-",
+                                        "x":  1168
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "NUCES - Karachi",
+                      "words":  [
+                                    {
+                                        "y":  138,
+                                        "height":  23,
+                                        "width":  94,
+                                        "text":  "NUCES",
+                                        "x":  657
+                                    },
+                                    {
+                                        "y":  149,
+                                        "height":  5,
+                                        "width":  9,
+                                        "text":  "-",
+                                        "x":  760
+                                    },
+                                    {
+                                        "y":  137,
+                                        "height":  24,
+                                        "width":  114,
+                                        "text":  "Karachi",
+                                        "x":  778
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Department of Artificial Intelligence",
+                      "words":  [
+                                    {
+                                        "y":  179,
+                                        "height":  27,
+                                        "width":  141,
+                                        "text":  "Department",
+                                        "x":  558
+                                    },
+                                    {
+                                        "y":  178,
+                                        "height":  22,
+                                        "width":  25,
+                                        "text":  "of",
+                                        "x":  707
+                                    },
+                                    {
+                                        "y":  178,
+                                        "height":  22,
+                                        "width":  100,
+                                        "text":  "Artificial",
+                                        "x":  738
+                                    },
+                                    {
+                                        "y":  178,
+                                        "height":  28,
+                                        "width":  137,
+                                        "text":  "Intelligence",
+                                        "x":  849
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1. Objectives",
+                      "words":  [
+                                    {
+                                        "y":  222,
+                                        "height":  27,
+                                        "width":  26,
+                                        "text":  "1.",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  219,
+                                        "height":  37,
+                                        "width":  193,
+                                        "text":  "Objectives",
+                                        "x":  224
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1.",
+                      "words":  [
+                                    {
+                                        "y":  286,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "1.",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2.",
+                      "words":  [
+                                    {
+                                        "y":  321,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "2.",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3.",
+                      "words":  [
+                                    {
+                                        "y":  356,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "3.",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4.",
+                      "words":  [
+                                    {
+                                        "y":  391,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "4.",
+                                        "x":  210
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "5.",
+                      "words":  [
+                                    {
+                                        "y":  427,
+                                        "height":  19,
+                                        "width":  23,
+                                        "text":  "5.",
+                                        "x":  212
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Explain what a geometric transformation is.",
+                      "words":  [
+                                    {
+                                        "y":  285,
+                                        "height":  25,
+                                        "width":  102,
+                                        "text":  "Explain",
+                                        "x":  305
+                                    },
+                                    {
+                                        "y":  285,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "what",
+                                        "x":  424
+                                    },
+                                    {
+                                        "y":  291,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  501
+                                    },
+                                    {
+                                        "y":  285,
+                                        "height":  25,
+                                        "width":  133,
+                                        "text":  "geometric",
+                                        "x":  531
+                                    },
+                                    {
+                                        "y":  285,
+                                        "height":  20,
+                                        "width":  208,
+                                        "text":  "transformation",
+                                        "x":  682
+                                    },
+                                    {
+                                        "y":  285,
+                                        "height":  20,
+                                        "width":  38,
+                                        "text":  "is.",
+                                        "x":  909
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Distinguish geometric and photometric transformations.",
+                      "words":  [
+                                    {
+                                        "y":  320,
+                                        "height":  25,
+                                        "width":  162,
+                                        "text":  "Distinguish",
+                                        "x":  305
+                                    },
+                                    {
+                                        "y":  320,
+                                        "height":  25,
+                                        "width":  133,
+                                        "text":  "geometric",
+                                        "x":  486
+                                    },
+                                    {
+                                        "y":  320,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  637
+                                    },
+                                    {
+                                        "y":  320,
+                                        "height":  25,
+                                        "width":  163,
+                                        "text":  "photometric",
+                                        "x":  697
+                                    },
+                                    {
+                                        "y":  320,
+                                        "height":  20,
+                                        "width":  237,
+                                        "text":  "transformations.",
+                                        "x":  877
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Explain the image coordinate system used in computer vision.",
+                      "words":  [
+                                    {
+                                        "y":  355,
+                                        "height":  24,
+                                        "width":  102,
+                                        "text":  "Explain",
+                                        "x":  305
+                                    },
+                                    {
+                                        "y":  355,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  424
+                                    },
+                                    {
+                                        "y":  355,
+                                        "height":  25,
+                                        "width":  72,
+                                        "text":  "image",
+                                        "x":  485
+                                    },
+                                    {
+                                        "y":  355,
+                                        "height":  20,
+                                        "width":  147,
+                                        "text":  "coordinate",
+                                        "x":  574
+                                    },
+                                    {
+                                        "y":  356,
+                                        "height":  23,
+                                        "width":  88,
+                                        "text":  "system",
+                                        "x":  739
+                                    },
+                                    {
+                                        "y":  355,
+                                        "height":  20,
+                                        "width":  57,
+                                        "text":  "used",
+                                        "x":  844
+                                    },
+                                    {
+                                        "y":  355,
+                                        "height":  19,
+                                        "width":  26,
+                                        "text":  "in",
+                                        "x":  919
+                                    },
+                                    {
+                                        "y":  356,
+                                        "height":  23,
+                                        "width":  119,
+                                        "text":  "computer",
+                                        "x":  963
+                                    },
+                                    {
+                                        "y":  355,
+                                        "height":  20,
+                                        "width":  100,
+                                        "text":  "vision.",
+                                        "x":  1098
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Distinguish linear, affine and projective transformations.",
+                      "words":  [
+                                    {
+                                        "y":  390,
+                                        "height":  25,
+                                        "width":  162,
+                                        "text":  "Distinguish",
+                                        "x":  305
+                                    },
+                                    {
+                                        "y":  390,
+                                        "height":  24,
+                                        "width":  99,
+                                        "text":  "linear,",
+                                        "x":  486
+                                    },
+                                    {
+                                        "y":  390,
+                                        "height":  20,
+                                        "width":  87,
+                                        "text":  "affine",
+                                        "x":  607
+                                    },
+                                    {
+                                        "y":  390,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  711
+                                    },
+                                    {
+                                        "y":  390,
+                                        "height":  25,
+                                        "width":  148,
+                                        "text":  "projective",
+                                        "x":  773
+                                    },
+                                    {
+                                        "y":  390,
+                                        "height":  20,
+                                        "width":  237,
+                                        "text":  "transformations.",
+                                        "x":  938
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Explain homogeneous coordinates.",
+                      "words":  [
+                                    {
+                                        "y":  426,
+                                        "height":  24,
+                                        "width":  102,
+                                        "text":  "Explain",
+                                        "x":  305
+                                    },
+                                    {
+                                        "y":  426,
+                                        "height":  25,
+                                        "width":  163,
+                                        "text":  "homogeneous",
+                                        "x":  426
+                                    },
+                                    {
+                                        "y":  426,
+                                        "height":  20,
+                                        "width":  174,
+                                        "text":  "coordinates.",
+                                        "x":  607
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2. What is Geometric Transformation",
+                      "words":  [
+                                    {
+                                        "y":  511,
+                                        "height":  27,
+                                        "width":  27,
+                                        "text":  "2.",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  510,
+                                        "height":  28,
+                                        "width":  98,
+                                        "text":  "What",
+                                        "x":  210
+                                    },
+                                    {
+                                        "y":  508,
+                                        "height":  30,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  322
+                                    },
+                                    {
+                                        "y":  508,
+                                        "height":  30,
+                                        "width":  191,
+                                        "text":  "Geometric",
+                                        "x":  363
+                                    },
+                                    {
+                                        "y":  508,
+                                        "height":  30,
+                                        "width":  289,
+                                        "text":  "Transformation",
+                                        "x":  568
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "\"A geometric transformation is a mathematical operation that alters",
+                      "words":  [
+                                    {
+                                        "y":  574,
+                                        "height":  19,
+                                        "width":  26,
+                                        "text":  "\"A",
+                                        "x":  172
+                                    },
+                                    {
+                                        "y":  573,
+                                        "height":  26,
+                                        "width":  134,
+                                        "text":  "geometric",
+                                        "x":  217
+                                    },
+                                    {
+                                        "y":  573,
+                                        "height":  26,
+                                        "width":  209,
+                                        "text":  "transformation",
+                                        "x":  372
+                                    },
+                                    {
+                                        "y":  573,
+                                        "height":  21,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  602
+                                    },
+                                    {
+                                        "y":  579,
+                                        "height":  15,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  649
+                                    },
+                                    {
+                                        "y":  573,
+                                        "height":  21,
+                                        "width":  179,
+                                        "text":  "mathematical",
+                                        "x":  681
+                                    },
+                                    {
+                                        "y":  573,
+                                        "height":  25,
+                                        "width":  134,
+                                        "text":  "operation",
+                                        "x":  881
+                                    },
+                                    {
+                                        "y":  574,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "that",
+                                        "x":  1035
+                                    },
+                                    {
+                                        "y":  574,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "alters",
+                                        "x":  1113
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "the spatial position, orientation, scale, or shape of an object,",
+                      "words":  [
+                                    {
+                                        "y":  612,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  611,
+                                        "height":  25,
+                                        "width":  104,
+                                        "text":  "spatial",
+                                        "x":  237
+                                    },
+                                    {
+                                        "y":  611,
+                                        "height":  25,
+                                        "width":  131,
+                                        "text":  "position,",
+                                        "x":  365
+                                    },
+                                    {
+                                        "y":  611,
+                                        "height":  24,
+                                        "width":  174,
+                                        "text":  "orientation,",
+                                        "x":  525
+                                    },
+                                    {
+                                        "y":  612,
+                                        "height":  23,
+                                        "width":  84,
+                                        "text":  "scale,",
+                                        "x":  728
+                                    },
+                                    {
+                                        "y":  617,
+                                        "height":  14,
+                                        "width":  29,
+                                        "text":  "or",
+                                        "x":  842
+                                    },
+                                    {
+                                        "y":  612,
+                                        "height":  24,
+                                        "width":  74,
+                                        "text":  "shape",
+                                        "x":  894
+                                    },
+                                    {
+                                        "y":  612,
+                                        "height":  24,
+                                        "width":  31,
+                                        "text":  "of",
+                                        "x":  992
+                                    },
+                                    {
+                                        "y":  617,
+                                        "height":  14,
+                                        "width":  28,
+                                        "text":  "an",
+                                        "x":  1045
+                                    },
+                                    {
+                                        "y":  611,
+                                        "height":  25,
+                                        "width":  99,
+                                        "text":  "object,",
+                                        "x":  1098
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "without changing its under Lying data values\".",
+                      "words":  [
+                                    {
+                                        "y":  648,
+                                        "height":  20,
+                                        "width":  104,
+                                        "text":  "without",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  648,
+                                        "height":  25,
+                                        "width":  119,
+                                        "text":  "changing",
+                                        "x":  291
+                                    },
+                                    {
+                                        "y":  648,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "its",
+                                        "x":  427
+                                    },
+                                    {
+                                        "y":  648,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "under",
+                                        "x":  488
+                                    },
+                                    {
+                                        "y":  648,
+                                        "height":  25,
+                                        "width":  73,
+                                        "text":  "Lying",
+                                        "x":  564
+                                    },
+                                    {
+                                        "y":  648,
+                                        "height":  20,
+                                        "width":  57,
+                                        "text":  "data",
+                                        "x":  654
+                                    },
+                                    {
+                                        "y":  648,
+                                        "height":  20,
+                                        "width":  114,
+                                        "text":  "values\".",
+                                        "x":  729
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "In simple words, a geometric transformation changes where image",
+                      "words":  [
+                                    {
+                                        "y":  725,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "In",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  723,
+                                        "height":  25,
+                                        "width":  88,
+                                        "text":  "simple",
+                                        "x":  226
+                                    },
+                                    {
+                                        "y":  724,
+                                        "height":  23,
+                                        "width":  85,
+                                        "text":  "words,",
+                                        "x":  341
+                                    },
+                                    {
+                                        "y":  730,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  458
+                                    },
+                                    {
+                                        "y":  723,
+                                        "height":  26,
+                                        "width":  133,
+                                        "text":  "geometric",
+                                        "x":  498
+                                    },
+                                    {
+                                        "y":  724,
+                                        "height":  20,
+                                        "width":  209,
+                                        "text":  "transformation",
+                                        "x":  659
+                                    },
+                                    {
+                                        "y":  724,
+                                        "height":  25,
+                                        "width":  103,
+                                        "text":  "changes",
+                                        "x":  896
+                                    },
+                                    {
+                                        "y":  724,
+                                        "height":  20,
+                                        "width":  75,
+                                        "text":  "where",
+                                        "x":  1026
+                                    },
+                                    {
+                                        "y":  723,
+                                        "height":  26,
+                                        "width":  72,
+                                        "text":  "image",
+                                        "x":  1129
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "information is located .",
+                      "words":  [
+                                    {
+                                        "y":  761,
+                                        "height":  20,
+                                        "width":  163,
+                                        "text":  "information",
+                                        "x":  171
+                                    },
+                                    {
+                                        "y":  761,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  352
+                                    },
+                                    {
+                                        "y":  761,
+                                        "height":  20,
+                                        "width":  103,
+                                        "text":  "located",
+                                        "x":  397
+                                    },
+                                    {
+                                        "y":  777,
+                                        "height":  4,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  507
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Geometric Transformation (Translation)",
+                      "words":  [
+                                    {
+                                        "y":  817,
+                                        "height":  22,
+                                        "width":  135,
+                                        "text":  "Geometric",
+                                        "x":  427
+                                    },
+                                    {
+                                        "y":  816,
+                                        "height":  23,
+                                        "width":  202,
+                                        "text":  "Transformation",
+                                        "x":  569
+                                    },
+                                    {
+                                        "y":  816,
+                                        "height":  27,
+                                        "width":  164,
+                                        "text":  "(Translation)",
+                                        "x":  780
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "I(x,y) -\u003e I(x\u0027, y\u0027)",
+                      "words":  [
+                                    {
+                                        "y":  856,
+                                        "height":  23,
+                                        "width":  53,
+                                        "text":  "I(x,y)",
+                                        "x":  607
+                                    },
+                                    {
+                                        "y":  858,
+                                        "height":  13,
+                                        "width":  19,
+                                        "text":  "-\u003e",
+                                        "x":  667
+                                    },
+                                    {
+                                        "y":  856,
+                                        "height":  22,
+                                        "width":  36,
+                                        "text":  "I(x\u0027,",
+                                        "x":  695
+                                    },
+                                    {
+                                        "y":  855,
+                                        "height":  24,
+                                        "width":  26,
+                                        "text":  "y\u0027)",
+                                        "x":  739
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Original",
+                      "words":  [
+                                    {
+                                        "y":  882,
+                                        "height":  18,
+                                        "width":  64,
+                                        "text":  "Original",
+                                        "x":  445
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Translation",
+                      "words":  [
+                                    {
+                                        "y":  957,
+                                        "height":  14,
+                                        "width":  93,
+                                        "text":  "Translation",
+                                        "x":  638
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "iiiiiiiiiiiiii",
+                      "words":  [
+                                    {
+                                        "y":  1042,
+                                        "height":  27,
+                                        "width":  158,
+                                        "text":  "iiiiiiiiiiiiii",
+                                        "x":  398
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "I(x,y)",
+                      "words":  [
+                                    {
+                                        "y":  1079,
+                                        "height":  18,
+                                        "width":  37,
+                                        "text":  "I(x,y)",
+                                        "x":  459
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Translated",
+                      "words":  [
+                                    {
+                                        "y":  882,
+                                        "height":  14,
+                                        "width":  89,
+                                        "text":  "Translated",
+                                        "x":  849
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "A geometric transformation changes where image information is",
+                      "words":  [
+                                    {
+                                        "y":  1127,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "A",
+                                        "x":  414
+                                    },
+                                    {
+                                        "y":  1127,
+                                        "height":  18,
+                                        "width":  85,
+                                        "text":  "geometric",
+                                        "x":  431
+                                    },
+                                    {
+                                        "y":  1127,
+                                        "height":  14,
+                                        "width":  127,
+                                        "text":  "transformation",
+                                        "x":  521
+                                    },
+                                    {
+                                        "y":  1127,
+                                        "height":  18,
+                                        "width":  67,
+                                        "text":  "changes",
+                                        "x":  654
+                                    },
+                                    {
+                                        "y":  1127,
+                                        "height":  14,
+                                        "width":  53,
+                                        "text":  "where",
+                                        "x":  726
+                                    },
+                                    {
+                                        "y":  1127,
+                                        "height":  18,
+                                        "width":  50,
+                                        "text":  "image",
+                                        "x":  785
+                                    },
+                                    {
+                                        "y":  1127,
+                                        "height":  14,
+                                        "width":  98,
+                                        "text":  "information",
+                                        "x":  841
+                                    },
+                                    {
+                                        "y":  1127,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "is",
+                                        "x":  945
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "located without altering the underlying data.",
+                      "words":  [
+                                    {
+                                        "y":  1148,
+                                        "height":  15,
+                                        "width":  60,
+                                        "text":  "located",
+                                        "x":  500
+                                    },
+                                    {
+                                        "y":  1148,
+                                        "height":  15,
+                                        "width":  65,
+                                        "text":  "without",
+                                        "x":  566
+                                    },
+                                    {
+                                        "y":  1148,
+                                        "height":  19,
+                                        "width":  63,
+                                        "text":  "altering",
+                                        "x":  636
+                                    },
+                                    {
+                                        "y":  1148,
+                                        "height":  15,
+                                        "width":  27,
+                                        "text":  "the",
+                                        "x":  704
+                                    },
+                                    {
+                                        "y":  1148,
+                                        "height":  19,
+                                        "width":  89,
+                                        "text":  "underlying",
+                                        "x":  737
+                                    },
+                                    {
+                                        "y":  1148,
+                                        "height":  15,
+                                        "width":  42,
+                                        "text":  "data.",
+                                        "x":  831
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "An image can be viewed as a function",
+                      "words":  [
+                                    {
+                                        "y":  1225,
+                                        "height":  19,
+                                        "width":  28,
+                                        "text":  "An",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1224,
+                                        "height":  25,
+                                        "width":  73,
+                                        "text":  "image",
+                                        "x":  216
+                                    },
+                                    {
+                                        "y":  1230,
+                                        "height":  14,
+                                        "width":  42,
+                                        "text":  "can",
+                                        "x":  307
+                                    },
+                                    {
+                                        "y":  1225,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "be",
+                                        "x":  367
+                                    },
+                                    {
+                                        "y":  1224,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "viewed",
+                                        "x":  412
+                                    },
+                                    {
+                                        "y":  1230,
+                                        "height":  14,
+                                        "width":  27,
+                                        "text":  "as",
+                                        "x":  518
+                                    },
+                                    {
+                                        "y":  1230,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  563
+                                    },
+                                    {
+                                        "y":  1224,
+                                        "height":  20,
+                                        "width":  117,
+                                        "text":  "function",
+                                        "x":  594
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "where :",
+                      "words":  [
+                                    {
+                                        "y":  1374,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "where",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1380,
+                                        "height":  14,
+                                        "width":  4,
+                                        "text":  ":",
+                                        "x":  250
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "•",
+                      "words":  [
+                                    {
+                                        "y":  1420,
+                                        "height":  9,
+                                        "width":  9,
+                                        "text":  "•",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "•",
+                      "words":  [
+                                    {
+                                        "y":  1496,
+                                        "height":  9,
+                                        "width":  9,
+                                        "text":  "•",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x = horizontal image coordinate",
+                      "words":  [
+                                    {
+                                        "y":  1418,
+                                        "height":  14,
+                                        "width":  14,
+                                        "text":  "x",
+                                        "x":  251
+                                    },
+                                    {
+                                        "y":  1419,
+                                        "height":  8,
+                                        "width":  13,
+                                        "text":  "=",
+                                        "x":  282
+                                    },
+                                    {
+                                        "y":  1411,
+                                        "height":  20,
+                                        "width":  148,
+                                        "text":  "horizontal",
+                                        "x":  313
+                                    },
+                                    {
+                                        "y":  1411,
+                                        "height":  25,
+                                        "width":  72,
+                                        "text":  "image",
+                                        "x":  480
+                                    },
+                                    {
+                                        "y":  1411,
+                                        "height":  20,
+                                        "width":  147,
+                                        "text":  "coordinate",
+                                        "x":  570
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "y = vertical image coordinate",
+                      "words":  [
+                                    {
+                                        "y":  1456,
+                                        "height":  19,
+                                        "width":  14,
+                                        "text":  "y",
+                                        "x":  251
+                                    },
+                                    {
+                                        "y":  1457,
+                                        "height":  8,
+                                        "width":  13,
+                                        "text":  "=",
+                                        "x":  282
+                                    },
+                                    {
+                                        "y":  1449,
+                                        "height":  20,
+                                        "width":  119,
+                                        "text":  "vertical",
+                                        "x":  312
+                                    },
+                                    {
+                                        "y":  1449,
+                                        "height":  25,
+                                        "width":  73,
+                                        "text":  "image",
+                                        "x":  449
+                                    },
+                                    {
+                                        "y":  1449,
+                                        "height":  20,
+                                        "width":  147,
+                                        "text":  "coordinate",
+                                        "x":  540
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "I(x,y) =",
+                      "words":  [
+                                    {
+                                        "y":  1489,
+                                        "height":  24,
+                                        "width":  67,
+                                        "text":  "I(x,y)",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1495,
+                                        "height":  8,
+                                        "width":  13,
+                                        "text":  "=",
+                                        "x":  337
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "pixel intensity/ color at that location",
+                      "words":  [
+                                    {
+                                        "y":  1487,
+                                        "height":  25,
+                                        "width":  72,
+                                        "text":  "pixel",
+                                        "x":  368
+                                    },
+                                    {
+                                        "y":  1487,
+                                        "height":  25,
+                                        "width":  147,
+                                        "text":  "intensity/",
+                                        "x":  459
+                                    },
+                                    {
+                                        "y":  1488,
+                                        "height":  19,
+                                        "width":  73,
+                                        "text":  "color",
+                                        "x":  610
+                                    },
+                                    {
+                                        "y":  1488,
+                                        "height":  19,
+                                        "width":  28,
+                                        "text":  "at",
+                                        "x":  699
+                                    },
+                                    {
+                                        "y":  1488,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "that",
+                                        "x":  744
+                                    },
+                                    {
+                                        "y":  1487,
+                                        "height":  20,
+                                        "width":  118,
+                                        "text":  "location",
+                                        "x":  820
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "transformed image",
+                      "words":  [
+                                    {
+                                        "y":  1525,
+                                        "height":  20,
+                                        "width":  164,
+                                        "text":  "transformed",
+                                        "x":  384
+                                    },
+                                    {
+                                        "y":  1525,
+                                        "height":  25,
+                                        "width":  73,
+                                        "text":  "image",
+                                        "x":  567
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FAST NUCES -",
+                      "words":  [
+                                    {
+                                        "y":  1820,
+                                        "height":  19,
+                                        "width":  61,
+                                        "text":  "FAST",
+                                        "x":  171
+                                    },
+                                    {
+                                        "y":  1820,
+                                        "height":  19,
+                                        "width":  85,
+                                        "text":  "NUCES",
+                                        "x":  242
+                                    },
+                                    {
+                                        "y":  1829,
+                                        "height":  4,
+                                        "width":  12,
+                                        "text":  "-",
+                                        "x":  337
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Karachi",
+                      "words":  [
+                                    {
+                                        "y":  1818,
+                                        "height":  21,
+                                        "width":  95,
+                                        "text":  "Karachi",
+                                        "x":  358
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1820,
+                                        "height":  19,
+                                        "width":  71,
+                                        "text":  "Talha",
+                                        "x":  596
+                                    },
+                                    {
+                                        "y":  1818,
+                                        "height":  21,
+                                        "width":  86,
+                                        "text":  "Shahid",
+                                        "x":  677
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2",
+                      "words":  [
+                                    {
+                                        "y":  1820,
+                                        "height":  19,
+                                        "width":  13,
+                                        "text":  "2",
+                                        "x":  1190
+                                    }
+                                ]
+                  }
+              ]
+}

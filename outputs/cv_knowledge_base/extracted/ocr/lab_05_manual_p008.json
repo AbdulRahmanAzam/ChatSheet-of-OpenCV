@@ -1,0 +1,1494 @@
+﻿{
+    "id":  "lab_05_manual_p008",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "National University of Computer \u0026 Emerging Sciences - NUCES - Karachi Department of Artificial Intelligence 2.3 Image Segmentation Techniques Image segmentation is a critical task in computer vision, and various techniques and methodologies are employed to achieve accurate and meaningful segmentations. Here are some common techniques and methodologies used in image segmentation: 2.3.1 Thresholding Methodology: Use Cases: Divides an image into two regions based on pixel intensity values. Pixels above a certain threshold belong to one region, and those below belong to another. Simple and effective for segmenting objects with distinct intensity differences. 2.3.1.1 Global Thresholding Methodology : Use Cases: import cv2 A single global threshold value is applied to the entire image. Effective when there is a clear intensity difference between the objects and background . image = cv2. imread(\u0027 image .jpg\u0027 , cv2. IMREAD_GRAYSCALE) = cv2.thresh01d(image, 128, 255, cv2.THRESH_BINARY) binary _ mask 2.3.1.2 Adaptive Thresholding Methodology : Use Cases: FAST NUCES Uses different threshold values for different regions of the image, which adapt to local variations in intensity. Ideal for images with varying lighting conditions. - Karachi Talha Shahid 7",
+    "review_status":  "raw_ocr_unverified",
+    "page":  8,
+    "source_id":  "lab_05_manual",
+    "lines":  [
+                  {
+                      "text":  "National University of Computer \u0026 Emerging Sciences -",
+                      "words":  [
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  123,
+                                        "text":  "National",
+                                        "x":  372
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  30,
+                                        "width":  153,
+                                        "text":  "University",
+                                        "x":  504
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  31,
+                                        "text":  "of",
+                                        "x":  664
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  30,
+                                        "width":  146,
+                                        "text":  "Computer",
+                                        "x":  701
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  23,
+                                        "width":  23,
+                                        "text":  "\u0026",
+                                        "x":  854
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  30,
+                                        "width":  140,
+                                        "text":  "Emerging",
+                                        "x":  885
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  23,
+                                        "width":  123,
+                                        "text":  "Sciences",
+                                        "x":  1033
+                                    },
+                                    {
+                                        "y":  107,
+                                        "height":  4,
+                                        "width":  9,
+                                        "text":  "-",
+                                        "x":  1166
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "NUCES - Karachi",
+                      "words":  [
+                                    {
+                                        "y":  138,
+                                        "height":  23,
+                                        "width":  96,
+                                        "text":  "NUCES",
+                                        "x":  655
+                                    },
+                                    {
+                                        "y":  150,
+                                        "height":  4,
+                                        "width":  8,
+                                        "text":  "-",
+                                        "x":  760
+                                    },
+                                    {
+                                        "y":  137,
+                                        "height":  24,
+                                        "width":  113,
+                                        "text":  "Karachi",
+                                        "x":  778
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Department of Artificial Intelligence",
+                      "words":  [
+                                    {
+                                        "y":  180,
+                                        "height":  26,
+                                        "width":  142,
+                                        "text":  "Department",
+                                        "x":  556
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  21,
+                                        "width":  25,
+                                        "text":  "of",
+                                        "x":  706
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  21,
+                                        "width":  100,
+                                        "text":  "Artificial",
+                                        "x":  738
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  27,
+                                        "width":  137,
+                                        "text":  "Intelligence",
+                                        "x":  848
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2.3 Image Segmentation Techniques",
+                      "words":  [
+                                    {
+                                        "y":  299,
+                                        "height":  24,
+                                        "width":  43,
+                                        "text":  "2.3",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  299,
+                                        "height":  31,
+                                        "width":  107,
+                                        "text":  "Image",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  296,
+                                        "height":  34,
+                                        "width":  225,
+                                        "text":  "Segmentation",
+                                        "x":  372
+                                    },
+                                    {
+                                        "y":  296,
+                                        "height":  34,
+                                        "width":  184,
+                                        "text":  "Techniques",
+                                        "x":  609
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Image segmentation is a critical task in computer vision, and various",
+                      "words":  [
+                                    {
+                                        "y":  357,
+                                        "height":  23,
+                                        "width":  73,
+                                        "text":  "Image",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  356,
+                                        "height":  24,
+                                        "width":  178,
+                                        "text":  "segmentation",
+                                        "x":  260
+                                    },
+                                    {
+                                        "y":  356,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  455
+                                    },
+                                    {
+                                        "y":  362,
+                                        "height":  13,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  499
+                                    },
+                                    {
+                                        "y":  356,
+                                        "height":  20,
+                                        "width":  119,
+                                        "text":  "critical",
+                                        "x":  528
+                                    },
+                                    {
+                                        "y":  356,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "task",
+                                        "x":  663
+                                    },
+                                    {
+                                        "y":  356,
+                                        "height":  19,
+                                        "width":  26,
+                                        "text":  "in",
+                                        "x":  739
+                                    },
+                                    {
+                                        "y":  357,
+                                        "height":  23,
+                                        "width":  119,
+                                        "text":  "computer",
+                                        "x":  783
+                                    },
+                                    {
+                                        "y":  356,
+                                        "height":  23,
+                                        "width":  99,
+                                        "text":  "vision,",
+                                        "x":  917
+                                    },
+                                    {
+                                        "y":  356,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  1037
+                                    },
+                                    {
+                                        "y":  356,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "various",
+                                        "x":  1097
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "techniques and methodologies are employed to achieve accurate and",
+                      "words":  [
+                                    {
+                                        "y":  393,
+                                        "height":  25,
+                                        "width":  149,
+                                        "text":  "techniques",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  393,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  342
+                                    },
+                                    {
+                                        "y":  393,
+                                        "height":  25,
+                                        "width":  194,
+                                        "text":  "methodologies",
+                                        "x":  408
+                                    },
+                                    {
+                                        "y":  399,
+                                        "height":  14,
+                                        "width":  43,
+                                        "text":  "are",
+                                        "x":  626
+                                    },
+                                    {
+                                        "y":  393,
+                                        "height":  25,
+                                        "width":  119,
+                                        "text":  "employed",
+                                        "x":  693
+                                    },
+                                    {
+                                        "y":  394,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  835
+                                    },
+                                    {
+                                        "y":  393,
+                                        "height":  20,
+                                        "width":  103,
+                                        "text":  "achieve",
+                                        "x":  888
+                                    },
+                                    {
+                                        "y":  394,
+                                        "height":  19,
+                                        "width":  119,
+                                        "text":  "accurate",
+                                        "x":  1014
+                                    },
+                                    {
+                                        "y":  393,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  1157
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "meaningful segmentations.",
+                      "words":  [
+                                    {
+                                        "y":  431,
+                                        "height":  25,
+                                        "width":  149,
+                                        "text":  "meaningful",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  431,
+                                        "height":  25,
+                                        "width":  204,
+                                        "text":  "segmentations.",
+                                        "x":  352
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Here are some common techniques and",
+                      "words":  [
+                                    {
+                                        "y":  432,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "Here",
+                                        "x":  594
+                                    },
+                                    {
+                                        "y":  437,
+                                        "height":  14,
+                                        "width":  43,
+                                        "text":  "are",
+                                        "x":  685
+                                    },
+                                    {
+                                        "y":  437,
+                                        "height":  14,
+                                        "width":  58,
+                                        "text":  "some",
+                                        "x":  762
+                                    },
+                                    {
+                                        "y":  437,
+                                        "height":  14,
+                                        "width":  86,
+                                        "text":  "common",
+                                        "x":  854
+                                    },
+                                    {
+                                        "y":  431,
+                                        "height":  25,
+                                        "width":  149,
+                                        "text":  "techniques",
+                                        "x":  974
+                                    },
+                                    {
+                                        "y":  431,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  1157
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "methodologies used in image segmentation:",
+                      "words":  [
+                                    {
+                                        "y":  469,
+                                        "height":  24,
+                                        "width":  195,
+                                        "text":  "methodologies",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  469,
+                                        "height":  19,
+                                        "width":  57,
+                                        "text":  "used",
+                                        "x":  382
+                                    },
+                                    {
+                                        "y":  469,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "in",
+                                        "x":  456
+                                    },
+                                    {
+                                        "y":  469,
+                                        "height":  24,
+                                        "width":  73,
+                                        "text":  "image",
+                                        "x":  502
+                                    },
+                                    {
+                                        "y":  469,
+                                        "height":  24,
+                                        "width":  190,
+                                        "text":  "segmentation:",
+                                        "x":  592
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2.3.1 Thresholding",
+                      "words":  [
+                                    {
+                                        "y":  582,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "2.3.1",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  580,
+                                        "height":  28,
+                                        "width":  181,
+                                        "text":  "Thresholding",
+                                        "x":  239
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Methodology:",
+                      "words":  [
+                                    {
+                                        "y":  630,
+                                        "height":  24,
+                                        "width":  176,
+                                        "text":  "Methodology:",
+                                        "x":  169
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Use Cases:",
+                      "words":  [
+                                    {
+                                        "y":  819,
+                                        "height":  18,
+                                        "width":  44,
+                                        "text":  "Use",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  819,
+                                        "height":  18,
+                                        "width":  85,
+                                        "text":  "Cases:",
+                                        "x":  230
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Divides an image into two regions based on pixel",
+                      "words":  [
+                                    {
+                                        "y":  630,
+                                        "height":  19,
+                                        "width":  102,
+                                        "text":  "Divides",
+                                        "x":  417
+                                    },
+                                    {
+                                        "y":  635,
+                                        "height":  14,
+                                        "width":  28,
+                                        "text":  "an",
+                                        "x":  544
+                                    },
+                                    {
+                                        "y":  630,
+                                        "height":  24,
+                                        "width":  73,
+                                        "text":  "image",
+                                        "x":  598
+                                    },
+                                    {
+                                        "y":  630,
+                                        "height":  19,
+                                        "width":  57,
+                                        "text":  "into",
+                                        "x":  697
+                                    },
+                                    {
+                                        "y":  631,
+                                        "height":  18,
+                                        "width":  43,
+                                        "text":  "two",
+                                        "x":  779
+                                    },
+                                    {
+                                        "y":  630,
+                                        "height":  24,
+                                        "width":  102,
+                                        "text":  "regions",
+                                        "x":  848
+                                    },
+                                    {
+                                        "y":  630,
+                                        "height":  19,
+                                        "width":  72,
+                                        "text":  "based",
+                                        "x":  976
+                                    },
+                                    {
+                                        "y":  635,
+                                        "height":  14,
+                                        "width":  28,
+                                        "text":  "on",
+                                        "x":  1073
+                                    },
+                                    {
+                                        "y":  630,
+                                        "height":  24,
+                                        "width":  73,
+                                        "text":  "pixel",
+                                        "x":  1127
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "intensity values. Pixels above a certain threshold",
+                      "words":  [
+                                    {
+                                        "y":  668,
+                                        "height":  24,
+                                        "width":  132,
+                                        "text":  "intensity",
+                                        "x":  418
+                                    },
+                                    {
+                                        "y":  668,
+                                        "height":  19,
+                                        "width":  100,
+                                        "text":  "values.",
+                                        "x":  572
+                                    },
+                                    {
+                                        "y":  668,
+                                        "height":  19,
+                                        "width":  88,
+                                        "text":  "Pixels",
+                                        "x":  699
+                                    },
+                                    {
+                                        "y":  668,
+                                        "height":  19,
+                                        "width":  74,
+                                        "text":  "above",
+                                        "x":  809
+                                    },
+                                    {
+                                        "y":  673,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  905
+                                    },
+                                    {
+                                        "y":  668,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "certain",
+                                        "x":  940
+                                    },
+                                    {
+                                        "y":  668,
+                                        "height":  19,
+                                        "width":  134,
+                                        "text":  "threshold",
+                                        "x":  1065
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "belong to one region, and those below belong to",
+                      "words":  [
+                                    {
+                                        "y":  705,
+                                        "height":  24,
+                                        "width":  88,
+                                        "text":  "belong",
+                                        "x":  417
+                                    },
+                                    {
+                                        "y":  706,
+                                        "height":  18,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  530
+                                    },
+                                    {
+                                        "y":  710,
+                                        "height":  14,
+                                        "width":  43,
+                                        "text":  "one",
+                                        "x":  586
+                                    },
+                                    {
+                                        "y":  705,
+                                        "height":  23,
+                                        "width":  100,
+                                        "text":  "region,",
+                                        "x":  656
+                                    },
+                                    {
+                                        "y":  705,
+                                        "height":  19,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  787
+                                    },
+                                    {
+                                        "y":  705,
+                                        "height":  19,
+                                        "width":  73,
+                                        "text":  "those",
+                                        "x":  856
+                                    },
+                                    {
+                                        "y":  705,
+                                        "height":  19,
+                                        "width":  74,
+                                        "text":  "below",
+                                        "x":  957
+                                    },
+                                    {
+                                        "y":  705,
+                                        "height":  24,
+                                        "width":  89,
+                                        "text":  "belong",
+                                        "x":  1057
+                                    },
+                                    {
+                                        "y":  706,
+                                        "height":  18,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  1171
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "another.",
+                      "words":  [
+                                    {
+                                        "y":  742,
+                                        "height":  20,
+                                        "width":  113,
+                                        "text":  "another.",
+                                        "x":  417
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Simple and effective for segmenting objects with",
+                      "words":  [
+                                    {
+                                        "y":  818,
+                                        "height":  24,
+                                        "width":  87,
+                                        "text":  "Simple",
+                                        "x":  417
+                                    },
+                                    {
+                                        "y":  818,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  532
+                                    },
+                                    {
+                                        "y":  818,
+                                        "height":  19,
+                                        "width":  134,
+                                        "text":  "effective",
+                                        "x":  603
+                                    },
+                                    {
+                                        "y":  818,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "for",
+                                        "x":  764
+                                    },
+                                    {
+                                        "y":  818,
+                                        "height":  24,
+                                        "width":  149,
+                                        "text":  "segmenting",
+                                        "x":  835
+                                    },
+                                    {
+                                        "y":  818,
+                                        "height":  24,
+                                        "width":  103,
+                                        "text":  "objects",
+                                        "x":  1011
+                                    },
+                                    {
+                                        "y":  818,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "with",
+                                        "x":  1141
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "distinct intensity differences.",
+                      "words":  [
+                                    {
+                                        "y":  855,
+                                        "height":  20,
+                                        "width":  118,
+                                        "text":  "distinct",
+                                        "x":  417
+                                    },
+                                    {
+                                        "y":  855,
+                                        "height":  25,
+                                        "width":  133,
+                                        "text":  "intensity",
+                                        "x":  553
+                                    },
+                                    {
+                                        "y":  855,
+                                        "height":  20,
+                                        "width":  176,
+                                        "text":  "differences.",
+                                        "x":  703
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2.3.1.1 Global Thresholding",
+                      "words":  [
+                                    {
+                                        "y":  927,
+                                        "height":  20,
+                                        "width":  82,
+                                        "text":  "2.3.1.1",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  926,
+                                        "height":  21,
+                                        "width":  89,
+                                        "text":  "Global",
+                                        "x":  262
+                                    },
+                                    {
+                                        "y":  924,
+                                        "height":  29,
+                                        "width":  180,
+                                        "text":  "Thresholding",
+                                        "x":  362
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Methodology :",
+                      "words":  [
+                                    {
+                                        "y":  975,
+                                        "height":  24,
+                                        "width":  165,
+                                        "text":  "Methodology",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  980,
+                                        "height":  14,
+                                        "width":  6,
+                                        "text":  ":",
+                                        "x":  339
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Use Cases:",
+                      "words":  [
+                                    {
+                                        "y":  1087,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "Use",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1087,
+                                        "height":  19,
+                                        "width":  86,
+                                        "text":  "Cases:",
+                                        "x":  229
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "import cv2",
+                      "words":  [
+                                    {
+                                        "y":  1166,
+                                        "height":  24,
+                                        "width":  88,
+                                        "text":  "import",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1167,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "cv2",
+                                        "x":  276
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "A single global threshold value is applied to the",
+                      "words":  [
+                                    {
+                                        "y":  975,
+                                        "height":  19,
+                                        "width":  15,
+                                        "text":  "A",
+                                        "x":  416
+                                    },
+                                    {
+                                        "y":  975,
+                                        "height":  24,
+                                        "width":  87,
+                                        "text":  "single",
+                                        "x":  453
+                                    },
+                                    {
+                                        "y":  975,
+                                        "height":  24,
+                                        "width":  88,
+                                        "text":  "global",
+                                        "x":  564
+                                    },
+                                    {
+                                        "y":  975,
+                                        "height":  19,
+                                        "width":  134,
+                                        "text":  "threshold",
+                                        "x":  675
+                                    },
+                                    {
+                                        "y":  975,
+                                        "height":  19,
+                                        "width":  73,
+                                        "text":  "value",
+                                        "x":  833
+                                    },
+                                    {
+                                        "y":  975,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  929
+                                    },
+                                    {
+                                        "y":  975,
+                                        "height":  24,
+                                        "width":  103,
+                                        "text":  "applied",
+                                        "x":  979
+                                    },
+                                    {
+                                        "y":  975,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  1105
+                                    },
+                                    {
+                                        "y":  975,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  1156
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "entire image.",
+                      "words":  [
+                                    {
+                                        "y":  1012,
+                                        "height":  20,
+                                        "width":  87,
+                                        "text":  "entire",
+                                        "x":  417
+                                    },
+                                    {
+                                        "y":  1012,
+                                        "height":  24,
+                                        "width":  83,
+                                        "text":  "image.",
+                                        "x":  523
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Effective when there is a clear intensity difference",
+                      "words":  [
+                                    {
+                                        "y":  1087,
+                                        "height":  19,
+                                        "width":  133,
+                                        "text":  "Effective",
+                                        "x":  417
+                                    },
+                                    {
+                                        "y":  1087,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "when",
+                                        "x":  566
+                                    },
+                                    {
+                                        "y":  1087,
+                                        "height":  19,
+                                        "width":  74,
+                                        "text":  "there",
+                                        "x":  642
+                                    },
+                                    {
+                                        "y":  1087,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  735
+                                    },
+                                    {
+                                        "y":  1092,
+                                        "height":  14,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  779
+                                    },
+                                    {
+                                        "y":  1087,
+                                        "height":  19,
+                                        "width":  73,
+                                        "text":  "clear",
+                                        "x":  810
+                                    },
+                                    {
+                                        "y":  1087,
+                                        "height":  24,
+                                        "width":  133,
+                                        "text":  "intensity",
+                                        "x":  901
+                                    },
+                                    {
+                                        "y":  1087,
+                                        "height":  19,
+                                        "width":  149,
+                                        "text":  "difference",
+                                        "x":  1051
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "between the objects and background .",
+                      "words":  [
+                                    {
+                                        "y":  1125,
+                                        "height":  19,
+                                        "width":  102,
+                                        "text":  "between",
+                                        "x":  417
+                                    },
+                                    {
+                                        "y":  1125,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  536
+                                    },
+                                    {
+                                        "y":  1125,
+                                        "height":  24,
+                                        "width":  104,
+                                        "text":  "objects",
+                                        "x":  597
+                                    },
+                                    {
+                                        "y":  1125,
+                                        "height":  19,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  719
+                                    },
+                                    {
+                                        "y":  1125,
+                                        "height":  24,
+                                        "width":  147,
+                                        "text":  "background",
+                                        "x":  780
+                                    },
+                                    {
+                                        "y":  1140,
+                                        "height":  4,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  934
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "image",
+                      "words":  [
+                                    {
+                                        "y":  1241,
+                                        "height":  25,
+                                        "width":  73,
+                                        "text":  "image",
+                                        "x":  170
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "= cv2. imread(\u0027 image .jpg\u0027 ,",
+                      "words":  [
+                                    {
+                                        "y":  1248,
+                                        "height":  9,
+                                        "width":  13,
+                                        "text":  "=",
+                                        "x":  260
+                                    },
+                                    {
+                                        "y":  1242,
+                                        "height":  19,
+                                        "width":  53,
+                                        "text":  "cv2.",
+                                        "x":  291
+                                    },
+                                    {
+                                        "y":  1241,
+                                        "height":  23,
+                                        "width":  111,
+                                        "text":  "imread(\u0027",
+                                        "x":  352
+                                    },
+                                    {
+                                        "y":  1241,
+                                        "height":  25,
+                                        "width":  72,
+                                        "text":  "image",
+                                        "x":  472
+                                    },
+                                    {
+                                        "y":  1241,
+                                        "height":  25,
+                                        "width":  64,
+                                        "text":  ".jpg\u0027",
+                                        "x":  551
+                                    },
+                                    {
+                                        "y":  1257,
+                                        "height":  7,
+                                        "width":  5,
+                                        "text":  ",",
+                                        "x":  626
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "cv2. IMREAD_GRAYSCALE)",
+                      "words":  [
+                                    {
+                                        "y":  1242,
+                                        "height":  19,
+                                        "width":  54,
+                                        "text":  "cv2.",
+                                        "x":  653
+                                    },
+                                    {
+                                        "y":  1241,
+                                        "height":  24,
+                                        "width":  250,
+                                        "text":  "IMREAD_GRAYSCALE)",
+                                        "x":  714
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "= cv2.thresh01d(image, 128, 255, cv2.THRESH_BINARY)",
+                      "words":  [
+                                    {
+                                        "y":  1286,
+                                        "height":  9,
+                                        "width":  13,
+                                        "text":  "=",
+                                        "x":  396
+                                    },
+                                    {
+                                        "y":  1279,
+                                        "height":  25,
+                                        "width":  295,
+                                        "text":  "cv2.thresh01d(image,",
+                                        "x":  427
+                                    },
+                                    {
+                                        "y":  1280,
+                                        "height":  22,
+                                        "width":  55,
+                                        "text":  "128,",
+                                        "x":  743
+                                    },
+                                    {
+                                        "y":  1280,
+                                        "height":  22,
+                                        "width":  54,
+                                        "text":  "255,",
+                                        "x":  819
+                                    },
+                                    {
+                                        "y":  1279,
+                                        "height":  24,
+                                        "width":  266,
+                                        "text":  "cv2.THRESH_BINARY)",
+                                        "x":  895
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "binary _ mask",
+                      "words":  [
+                                    {
+                                        "y":  1280,
+                                        "height":  24,
+                                        "width":  87,
+                                        "text":  "binary",
+                                        "x":  216
+                                    },
+                                    {
+                                        "y":  1300,
+                                        "height":  3,
+                                        "width":  14,
+                                        "text":  "_",
+                                        "x":  305
+                                    },
+                                    {
+                                        "y":  1280,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "mask",
+                                        "x":  320
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2.3.1.2 Adaptive Thresholding",
+                      "words":  [
+                                    {
+                                        "y":  1391,
+                                        "height":  20,
+                                        "width":  83,
+                                        "text":  "2.3.1.2",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1388,
+                                        "height":  28,
+                                        "width":  124,
+                                        "text":  "Adaptive",
+                                        "x":  261
+                                    },
+                                    {
+                                        "y":  1388,
+                                        "height":  28,
+                                        "width":  181,
+                                        "text":  "Thresholding",
+                                        "x":  395
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Methodology :",
+                      "words":  [
+                                    {
+                                        "y":  1438,
+                                        "height":  24,
+                                        "width":  165,
+                                        "text":  "Methodology",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1442,
+                                        "height":  15,
+                                        "width":  6,
+                                        "text":  ":",
+                                        "x":  339
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Use Cases:",
+                      "words":  [
+                                    {
+                                        "y":  1589,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "Use",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1589,
+                                        "height":  19,
+                                        "width":  86,
+                                        "text":  "Cases:",
+                                        "x":  229
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FAST NUCES",
+                      "words":  [
+                                    {
+                                        "y":  1819,
+                                        "height":  19,
+                                        "width":  62,
+                                        "text":  "FAST",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1819,
+                                        "height":  20,
+                                        "width":  85,
+                                        "text":  "NUCES",
+                                        "x":  242
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Uses different threshold values for different regions",
+                      "words":  [
+                                    {
+                                        "y":  1438,
+                                        "height":  19,
+                                        "width":  57,
+                                        "text":  "Uses",
+                                        "x":  417
+                                    },
+                                    {
+                                        "y":  1438,
+                                        "height":  19,
+                                        "width":  134,
+                                        "text":  "different",
+                                        "x":  489
+                                    },
+                                    {
+                                        "y":  1438,
+                                        "height":  19,
+                                        "width":  134,
+                                        "text":  "threshold",
+                                        "x":  637
+                                    },
+                                    {
+                                        "y":  1438,
+                                        "height":  19,
+                                        "width":  89,
+                                        "text":  "values",
+                                        "x":  787
+                                    },
+                                    {
+                                        "y":  1438,
+                                        "height":  19,
+                                        "width":  42,
+                                        "text":  "for",
+                                        "x":  891
+                                    },
+                                    {
+                                        "y":  1438,
+                                        "height":  19,
+                                        "width":  135,
+                                        "text":  "different",
+                                        "x":  947
+                                    },
+                                    {
+                                        "y":  1438,
+                                        "height":  24,
+                                        "width":  103,
+                                        "text":  "regions",
+                                        "x":  1097
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "of the image, which adapt to local variations in",
+                      "words":  [
+                                    {
+                                        "y":  1476,
+                                        "height":  19,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  417
+                                    },
+                                    {
+                                        "y":  1476,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  468
+                                    },
+                                    {
+                                        "y":  1476,
+                                        "height":  24,
+                                        "width":  84,
+                                        "text":  "image,",
+                                        "x":  538
+                                    },
+                                    {
+                                        "y":  1476,
+                                        "height":  19,
+                                        "width":  74,
+                                        "text":  "which",
+                                        "x":  650
+                                    },
+                                    {
+                                        "y":  1476,
+                                        "height":  24,
+                                        "width":  73,
+                                        "text":  "adapt",
+                                        "x":  749
+                                    },
+                                    {
+                                        "y":  1476,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  847
+                                    },
+                                    {
+                                        "y":  1476,
+                                        "height":  19,
+                                        "width":  72,
+                                        "text":  "local",
+                                        "x":  901
+                                    },
+                                    {
+                                        "y":  1476,
+                                        "height":  19,
+                                        "width":  149,
+                                        "text":  "variations",
+                                        "x":  998
+                                    },
+                                    {
+                                        "y":  1476,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "in",
+                                        "x":  1173
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "intensity.",
+                      "words":  [
+                                    {
+                                        "y":  1513,
+                                        "height":  24,
+                                        "width":  143,
+                                        "text":  "intensity.",
+                                        "x":  418
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Ideal for images with varying lighting conditions.",
+                      "words":  [
+                                    {
+                                        "y":  1588,
+                                        "height":  20,
+                                        "width":  72,
+                                        "text":  "Ideal",
+                                        "x":  417
+                                    },
+                                    {
+                                        "y":  1588,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "for",
+                                        "x":  507
+                                    },
+                                    {
+                                        "y":  1588,
+                                        "height":  24,
+                                        "width":  88,
+                                        "text":  "images",
+                                        "x":  568
+                                    },
+                                    {
+                                        "y":  1588,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "with",
+                                        "x":  672
+                                    },
+                                    {
+                                        "y":  1588,
+                                        "height":  24,
+                                        "width":  104,
+                                        "text":  "varying",
+                                        "x":  749
+                                    },
+                                    {
+                                        "y":  1588,
+                                        "height":  25,
+                                        "width":  119,
+                                        "text":  "lighting",
+                                        "x":  870
+                                    },
+                                    {
+                                        "y":  1588,
+                                        "height":  20,
+                                        "width":  160,
+                                        "text":  "conditions.",
+                                        "x":  1006
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Karachi",
+                      "words":  [
+                                    {
+                                        "y":  1828,
+                                        "height":  5,
+                                        "width":  12,
+                                        "text":  "-",
+                                        "x":  336
+                                    },
+                                    {
+                                        "y":  1817,
+                                        "height":  21,
+                                        "width":  94,
+                                        "text":  "Karachi",
+                                        "x":  358
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1819,
+                                        "height":  19,
+                                        "width":  71,
+                                        "text":  "Talha",
+                                        "x":  624
+                                    },
+                                    {
+                                        "y":  1817,
+                                        "height":  21,
+                                        "width":  87,
+                                        "text":  "Shahid",
+                                        "x":  706
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "7",
+                      "words":  [
+                                    {
+                                        "y":  1819,
+                                        "height":  19,
+                                        "width":  13,
+                                        "text":  "7",
+                                        "x":  1188
+                                    }
+                                ]
+                  }
+              ]
+}

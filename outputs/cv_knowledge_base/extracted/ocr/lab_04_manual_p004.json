@@ -1,0 +1,1999 @@
+﻿{
+    "id":  "lab_04_manual_p004",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "National University of Computer \u0026 Emerging Sciences - NUCES - Karachi Department of Artificial Intelligence 1. Objectives 1. 2. 3. 4. 5. 6. Introduction to Feature Extraction Common Feature Extraction Techniques Filtering and Convolution Introduction to Edge Detection Common Edge Detection Techniques Corner Detection \u0026 its Common Techniques 2. Introduction to Feature Extraction Feature extraction is a fundamental technique in computer vision, a field of artificial intelligence that focuses on enabling computers to interpret and understand visual information from the world. In computer vision, feature extraction refers to the process of selecting and transforming relevant information or patterns from raw visual data, such as images 01 videos, to create a more compact and meaningful representation that can be used for various tasks, such as object recognition, image classification, facial recognition, and more. • • Raw Visual Data:Computer vision tasks begin with the acquisition of raw visual data, typically in the form of images or video frames. These data contain a vast amount of information , including pixel values, colors, and textures. Need for Feature Extraction:_Raw visual data is often too complex and high-dimensional for direct analysis and interpretation by algorithms. Feature extraction is essential because it reduces the dimensionality of the data, enhances relevant information, and simplifies the computational requirements of subsequent tasks. Features: Features are distinctive characteristics or attributes extracted from the raw data. These features should capture essential information about the objects, patterns, or structures present in the images while discarding irrelevant details. FAST NUCES - Karachi Talha Shahid 3",
+    "review_status":  "raw_ocr_unverified",
+    "page":  4,
+    "source_id":  "lab_04_manual",
+    "lines":  [
+                  {
+                      "text":  "National University of Computer \u0026 Emerging Sciences -",
+                      "words":  [
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  123,
+                                        "text":  "National",
+                                        "x":  372
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  30,
+                                        "width":  153,
+                                        "text":  "University",
+                                        "x":  504
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  31,
+                                        "text":  "of",
+                                        "x":  664
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  30,
+                                        "width":  146,
+                                        "text":  "Computer",
+                                        "x":  701
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  23,
+                                        "width":  23,
+                                        "text":  "\u0026",
+                                        "x":  854
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  30,
+                                        "width":  140,
+                                        "text":  "Emerging",
+                                        "x":  885
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  23,
+                                        "width":  123,
+                                        "text":  "Sciences",
+                                        "x":  1033
+                                    },
+                                    {
+                                        "y":  107,
+                                        "height":  4,
+                                        "width":  9,
+                                        "text":  "-",
+                                        "x":  1166
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "NUCES - Karachi",
+                      "words":  [
+                                    {
+                                        "y":  138,
+                                        "height":  23,
+                                        "width":  96,
+                                        "text":  "NUCES",
+                                        "x":  655
+                                    },
+                                    {
+                                        "y":  150,
+                                        "height":  4,
+                                        "width":  8,
+                                        "text":  "-",
+                                        "x":  760
+                                    },
+                                    {
+                                        "y":  137,
+                                        "height":  24,
+                                        "width":  113,
+                                        "text":  "Karachi",
+                                        "x":  778
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Department of Artificial Intelligence",
+                      "words":  [
+                                    {
+                                        "y":  179,
+                                        "height":  27,
+                                        "width":  142,
+                                        "text":  "Department",
+                                        "x":  556
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  21,
+                                        "width":  25,
+                                        "text":  "of",
+                                        "x":  706
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  21,
+                                        "width":  100,
+                                        "text":  "Artificial",
+                                        "x":  738
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  27,
+                                        "width":  137,
+                                        "text":  "Intelligence",
+                                        "x":  848
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1. Objectives",
+                      "words":  [
+                                    {
+                                        "y":  222,
+                                        "height":  27,
+                                        "width":  26,
+                                        "text":  "1.",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  218,
+                                        "height":  38,
+                                        "width":  193,
+                                        "text":  "Objectives",
+                                        "x":  223
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1.",
+                      "words":  [
+                                    {
+                                        "y":  285,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "1.",
+                                        "x":  250
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2.",
+                      "words":  [
+                                    {
+                                        "y":  323,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "2.",
+                                        "x":  250
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3.",
+                      "words":  [
+                                    {
+                                        "y":  360,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "3.",
+                                        "x":  250
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4.",
+                      "words":  [
+                                    {
+                                        "y":  398,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "4.",
+                                        "x":  250
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "5.",
+                      "words":  [
+                                    {
+                                        "y":  435,
+                                        "height":  19,
+                                        "width":  23,
+                                        "text":  "5.",
+                                        "x":  251
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "6.",
+                      "words":  [
+                                    {
+                                        "y":  473,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "6.",
+                                        "x":  250
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Introduction to Feature Extraction",
+                      "words":  [
+                                    {
+                                        "y":  284,
+                                        "height":  20,
+                                        "width":  177,
+                                        "text":  "Introduction",
+                                        "x":  292
+                                    },
+                                    {
+                                        "y":  285,
+                                        "height":  19,
+                                        "width":  28,
+                                        "text":  "to",
+                                        "x":  487
+                                    },
+                                    {
+                                        "y":  285,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "Feature",
+                                        "x":  533
+                                    },
+                                    {
+                                        "y":  284,
+                                        "height":  20,
+                                        "width":  148,
+                                        "text":  "Extraction",
+                                        "x":  654
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Common Feature Extraction Techniques",
+                      "words":  [
+                                    {
+                                        "y":  323,
+                                        "height":  19,
+                                        "width":  87,
+                                        "text":  "Common",
+                                        "x":  292
+                                    },
+                                    {
+                                        "y":  323,
+                                        "height":  19,
+                                        "width":  102,
+                                        "text":  "Feature",
+                                        "x":  398
+                                    },
+                                    {
+                                        "y":  322,
+                                        "height":  20,
+                                        "width":  148,
+                                        "text":  "Extraction",
+                                        "x":  518
+                                    },
+                                    {
+                                        "y":  322,
+                                        "height":  25,
+                                        "width":  150,
+                                        "text":  "Techniques",
+                                        "x":  683
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Filtering and Convolution",
+                      "words":  [
+                                    {
+                                        "y":  358,
+                                        "height":  26,
+                                        "width":  134,
+                                        "text":  "Filtering",
+                                        "x":  292
+                                    },
+                                    {
+                                        "y":  359,
+                                        "height":  20,
+                                        "width":  41,
+                                        "text":  "and",
+                                        "x":  443
+                                    },
+                                    {
+                                        "y":  358,
+                                        "height":  21,
+                                        "width":  164,
+                                        "text":  "Convolution",
+                                        "x":  502
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Introduction to Edge Detection",
+                      "words":  [
+                                    {
+                                        "y":  397,
+                                        "height":  20,
+                                        "width":  177,
+                                        "text":  "Introduction",
+                                        "x":  292
+                                    },
+                                    {
+                                        "y":  398,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  486
+                                    },
+                                    {
+                                        "y":  397,
+                                        "height":  25,
+                                        "width":  58,
+                                        "text":  "Edge",
+                                        "x":  533
+                                    },
+                                    {
+                                        "y":  397,
+                                        "height":  20,
+                                        "width":  133,
+                                        "text":  "Detection",
+                                        "x":  609
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Common Edge Detection Techniques",
+                      "words":  [
+                                    {
+                                        "y":  435,
+                                        "height":  19,
+                                        "width":  87,
+                                        "text":  "Common",
+                                        "x":  292
+                                    },
+                                    {
+                                        "y":  434,
+                                        "height":  25,
+                                        "width":  57,
+                                        "text":  "Edge",
+                                        "x":  398
+                                    },
+                                    {
+                                        "y":  434,
+                                        "height":  20,
+                                        "width":  132,
+                                        "text":  "Detection",
+                                        "x":  473
+                                    },
+                                    {
+                                        "y":  434,
+                                        "height":  25,
+                                        "width":  150,
+                                        "text":  "Techniques",
+                                        "x":  622
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Corner Detection \u0026 its Common Techniques",
+                      "words":  [
+                                    {
+                                        "y":  473,
+                                        "height":  19,
+                                        "width":  89,
+                                        "text":  "Corner",
+                                        "x":  292
+                                    },
+                                    {
+                                        "y":  472,
+                                        "height":  20,
+                                        "width":  132,
+                                        "text":  "Detection",
+                                        "x":  398
+                                    },
+                                    {
+                                        "y":  473,
+                                        "height":  19,
+                                        "width":  14,
+                                        "text":  "\u0026",
+                                        "x":  547
+                                    },
+                                    {
+                                        "y":  472,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "its",
+                                        "x":  579
+                                    },
+                                    {
+                                        "y":  473,
+                                        "height":  19,
+                                        "width":  87,
+                                        "text":  "Common",
+                                        "x":  639
+                                    },
+                                    {
+                                        "y":  472,
+                                        "height":  25,
+                                        "width":  150,
+                                        "text":  "Techniques",
+                                        "x":  744
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2. Introduction to Feature Extraction",
+                      "words":  [
+                                    {
+                                        "y":  559,
+                                        "height":  27,
+                                        "width":  27,
+                                        "text":  "2.",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  556,
+                                        "height":  30,
+                                        "width":  234,
+                                        "text":  "Introduction",
+                                        "x":  212
+                                    },
+                                    {
+                                        "y":  561,
+                                        "height":  25,
+                                        "width":  37,
+                                        "text":  "to",
+                                        "x":  459
+                                    },
+                                    {
+                                        "y":  559,
+                                        "height":  27,
+                                        "width":  140,
+                                        "text":  "Feature",
+                                        "x":  512
+                                    },
+                                    {
+                                        "y":  556,
+                                        "height":  30,
+                                        "width":  190,
+                                        "text":  "Extraction",
+                                        "x":  668
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Feature extraction is a fundamental technique in computer vision, a",
+                      "words":  [
+                                    {
+                                        "y":  623,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "Feature",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  622,
+                                        "height":  20,
+                                        "width":  148,
+                                        "text":  "extraction",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  622,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  461
+                                    },
+                                    {
+                                        "y":  628,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  508
+                                    },
+                                    {
+                                        "y":  622,
+                                        "height":  20,
+                                        "width":  164,
+                                        "text":  "fundamental",
+                                        "x":  540
+                                    },
+                                    {
+                                        "y":  622,
+                                        "height":  24,
+                                        "width":  135,
+                                        "text":  "technique",
+                                        "x":  723
+                                    },
+                                    {
+                                        "y":  622,
+                                        "height":  20,
+                                        "width":  26,
+                                        "text":  "in",
+                                        "x":  879
+                                    },
+                                    {
+                                        "y":  623,
+                                        "height":  23,
+                                        "width":  119,
+                                        "text":  "computer",
+                                        "x":  925
+                                    },
+                                    {
+                                        "y":  622,
+                                        "height":  23,
+                                        "width":  100,
+                                        "text":  "vision,",
+                                        "x":  1063
+                                    },
+                                    {
+                                        "y":  628,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  1187
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "field of artificial intelligence that focuses on enabling computers",
+                      "words":  [
+                                    {
+                                        "y":  660,
+                                        "height":  20,
+                                        "width":  72,
+                                        "text":  "field",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  660,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  263
+                                    },
+                                    {
+                                        "y":  660,
+                                        "height":  20,
+                                        "width":  148,
+                                        "text":  "artificial",
+                                        "x":  310
+                                    },
+                                    {
+                                        "y":  660,
+                                        "height":  25,
+                                        "width":  179,
+                                        "text":  "intelligence",
+                                        "x":  479
+                                    },
+                                    {
+                                        "y":  660,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "that",
+                                        "x":  677
+                                    },
+                                    {
+                                        "y":  660,
+                                        "height":  20,
+                                        "width":  103,
+                                        "text":  "focuses",
+                                        "x":  757
+                                    },
+                                    {
+                                        "y":  666,
+                                        "height":  14,
+                                        "width":  27,
+                                        "text":  "on",
+                                        "x":  880
+                                    },
+                                    {
+                                        "y":  660,
+                                        "height":  25,
+                                        "width":  120,
+                                        "text":  "enabling",
+                                        "x":  927
+                                    },
+                                    {
+                                        "y":  661,
+                                        "height":  23,
+                                        "width":  134,
+                                        "text":  "computers",
+                                        "x":  1066
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "to interpret and understand visual information from the world. In",
+                      "words":  [
+                                    {
+                                        "y":  698,
+                                        "height":  18,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  698,
+                                        "height":  23,
+                                        "width":  132,
+                                        "text":  "interpret",
+                                        "x":  222
+                                    },
+                                    {
+                                        "y":  698,
+                                        "height":  18,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  377
+                                    },
+                                    {
+                                        "y":  698,
+                                        "height":  18,
+                                        "width":  147,
+                                        "text":  "understand",
+                                        "x":  444
+                                    },
+                                    {
+                                        "y":  698,
+                                        "height":  18,
+                                        "width":  88,
+                                        "text":  "visual",
+                                        "x":  615
+                                    },
+                                    {
+                                        "y":  698,
+                                        "height":  18,
+                                        "width":  162,
+                                        "text":  "information",
+                                        "x":  728
+                                    },
+                                    {
+                                        "y":  698,
+                                        "height":  18,
+                                        "width":  59,
+                                        "text":  "from",
+                                        "x":  913
+                                    },
+                                    {
+                                        "y":  698,
+                                        "height":  18,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  994
+                                    },
+                                    {
+                                        "y":  698,
+                                        "height":  18,
+                                        "width":  85,
+                                        "text":  "world.",
+                                        "x":  1060
+                                    },
+                                    {
+                                        "y":  698,
+                                        "height":  18,
+                                        "width":  27,
+                                        "text":  "In",
+                                        "x":  1173
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "computer vision, feature extraction refers to the process of selecting",
+                      "words":  [
+                                    {
+                                        "y":  735,
+                                        "height":  24,
+                                        "width":  119,
+                                        "text":  "computer",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  735,
+                                        "height":  23,
+                                        "width":  99,
+                                        "text":  "vision,",
+                                        "x":  303
+                                    },
+                                    {
+                                        "y":  735,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "feature",
+                                        "x":  421
+                                    },
+                                    {
+                                        "y":  735,
+                                        "height":  19,
+                                        "width":  149,
+                                        "text":  "extraction",
+                                        "x":  538
+                                    },
+                                    {
+                                        "y":  735,
+                                        "height":  19,
+                                        "width":  88,
+                                        "text":  "refers",
+                                        "x":  702
+                                    },
+                                    {
+                                        "y":  735,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  804
+                                    },
+                                    {
+                                        "y":  735,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  847
+                                    },
+                                    {
+                                        "y":  740,
+                                        "height":  19,
+                                        "width":  102,
+                                        "text":  "process",
+                                        "x":  906
+                                    },
+                                    {
+                                        "y":  735,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "of",
+                                        "x":  1023
+                                    },
+                                    {
+                                        "y":  735,
+                                        "height":  24,
+                                        "width":  135,
+                                        "text":  "selecting",
+                                        "x":  1066
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "and transforming relevant information or patterns from raw visual",
+                      "words":  [
+                                    {
+                                        "y":  772,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  772,
+                                        "height":  25,
+                                        "width":  180,
+                                        "text":  "transforming",
+                                        "x":  236
+                                    },
+                                    {
+                                        "y":  772,
+                                        "height":  20,
+                                        "width":  118,
+                                        "text":  "relevant",
+                                        "x":  439
+                                    },
+                                    {
+                                        "y":  772,
+                                        "height":  20,
+                                        "width":  163,
+                                        "text":  "information",
+                                        "x":  582
+                                    },
+                                    {
+                                        "y":  778,
+                                        "height":  14,
+                                        "width":  29,
+                                        "text":  "or",
+                                        "x":  769
+                                    },
+                                    {
+                                        "y":  773,
+                                        "height":  24,
+                                        "width":  116,
+                                        "text":  "patterns",
+                                        "x":  822
+                                    },
+                                    {
+                                        "y":  772,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "from",
+                                        "x":  963
+                                    },
+                                    {
+                                        "y":  778,
+                                        "height":  14,
+                                        "width":  44,
+                                        "text":  "raw",
+                                        "x":  1045
+                                    },
+                                    {
+                                        "y":  772,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "visual",
+                                        "x":  1112
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "data, such as images 01 videos, to create a more compact and meaningful",
+                      "words":  [
+                                    {
+                                        "y":  810,
+                                        "height":  23,
+                                        "width":  70,
+                                        "text":  "data,",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  810,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "such",
+                                        "x":  257
+                                    },
+                                    {
+                                        "y":  816,
+                                        "height":  14,
+                                        "width":  28,
+                                        "text":  "as",
+                                        "x":  329
+                                    },
+                                    {
+                                        "y":  810,
+                                        "height":  25,
+                                        "width":  86,
+                                        "text":  "images",
+                                        "x":  372
+                                    },
+                                    {
+                                        "y":  816,
+                                        "height":  14,
+                                        "width":  28,
+                                        "text":  "01",
+                                        "x":  473
+                                    },
+                                    {
+                                        "y":  810,
+                                        "height":  23,
+                                        "width":  100,
+                                        "text":  "videos,",
+                                        "x":  515
+                                    },
+                                    {
+                                        "y":  811,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  632
+                                    },
+                                    {
+                                        "y":  811,
+                                        "height":  19,
+                                        "width":  88,
+                                        "text":  "create",
+                                        "x":  675
+                                    },
+                                    {
+                                        "y":  816,
+                                        "height":  14,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  777
+                                    },
+                                    {
+                                        "y":  816,
+                                        "height":  14,
+                                        "width":  59,
+                                        "text":  "more",
+                                        "x":  804
+                                    },
+                                    {
+                                        "y":  811,
+                                        "height":  24,
+                                        "width":  103,
+                                        "text":  "compact",
+                                        "x":  877
+                                    },
+                                    {
+                                        "y":  810,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  994
+                                    },
+                                    {
+                                        "y":  810,
+                                        "height":  25,
+                                        "width":  149,
+                                        "text":  "meaningful",
+                                        "x":  1051
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "representation that can be used for various tasks, such as object",
+                      "words":  [
+                                    {
+                                        "y":  848,
+                                        "height":  24,
+                                        "width":  208,
+                                        "text":  "representation",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  848,
+                                        "height":  19,
+                                        "width":  57,
+                                        "text":  "that",
+                                        "x":  401
+                                    },
+                                    {
+                                        "y":  853,
+                                        "height":  14,
+                                        "width":  43,
+                                        "text":  "can",
+                                        "x":  481
+                                    },
+                                    {
+                                        "y":  848,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "be",
+                                        "x":  548
+                                    },
+                                    {
+                                        "y":  848,
+                                        "height":  19,
+                                        "width":  57,
+                                        "text":  "used",
+                                        "x":  598
+                                    },
+                                    {
+                                        "y":  848,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "for",
+                                        "x":  678
+                                    },
+                                    {
+                                        "y":  848,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "various",
+                                        "x":  744
+                                    },
+                                    {
+                                        "y":  848,
+                                        "height":  23,
+                                        "width":  85,
+                                        "text":  "tasks,",
+                                        "x":  869
+                                    },
+                                    {
+                                        "y":  848,
+                                        "height":  19,
+                                        "width":  57,
+                                        "text":  "such",
+                                        "x":  981
+                                    },
+                                    {
+                                        "y":  853,
+                                        "height":  14,
+                                        "width":  28,
+                                        "text":  "as",
+                                        "x":  1061
+                                    },
+                                    {
+                                        "y":  848,
+                                        "height":  24,
+                                        "width":  89,
+                                        "text":  "object",
+                                        "x":  1111
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "recognition, image classification, facial recognition, and more.",
+                      "words":  [
+                                    {
+                                        "y":  886,
+                                        "height":  24,
+                                        "width":  174,
+                                        "text":  "recognition,",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  886,
+                                        "height":  24,
+                                        "width":  72,
+                                        "text":  "image",
+                                        "x":  367
+                                    },
+                                    {
+                                        "y":  886,
+                                        "height":  23,
+                                        "width":  220,
+                                        "text":  "classification,",
+                                        "x":  456
+                                    },
+                                    {
+                                        "y":  886,
+                                        "height":  19,
+                                        "width":  88,
+                                        "text":  "facial",
+                                        "x":  698
+                                    },
+                                    {
+                                        "y":  886,
+                                        "height":  24,
+                                        "width":  174,
+                                        "text":  "recognition,",
+                                        "x":  804
+                                    },
+                                    {
+                                        "y":  886,
+                                        "height":  19,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  1000
+                                    },
+                                    {
+                                        "y":  891,
+                                        "height":  14,
+                                        "width":  70,
+                                        "text":  "more.",
+                                        "x":  1060
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "•",
+                      "words":  [
+                                    {
+                                        "y":  1118,
+                                        "height":  10,
+                                        "width":  10,
+                                        "text":  "•",
+                                        "x":  210
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "•",
+                      "words":  [
+                                    {
+                                        "y":  1344,
+                                        "height":  10,
+                                        "width":  10,
+                                        "text":  "•",
+                                        "x":  210
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Raw Visual Data:Computer vision tasks begin with the acquisition",
+                      "words":  [
+                                    {
+                                        "y":  962,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "Raw",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  961,
+                                        "height":  20,
+                                        "width":  90,
+                                        "text":  "Visual",
+                                        "x":  309
+                                    },
+                                    {
+                                        "y":  962,
+                                        "height":  24,
+                                        "width":  194,
+                                        "text":  "Data:Computer",
+                                        "x":  414
+                                    },
+                                    {
+                                        "y":  961,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "vision",
+                                        "x":  623
+                                    },
+                                    {
+                                        "y":  961,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "tasks",
+                                        "x":  726
+                                    },
+                                    {
+                                        "y":  961,
+                                        "height":  25,
+                                        "width":  73,
+                                        "text":  "begin",
+                                        "x":  816
+                                    },
+                                    {
+                                        "y":  961,
+                                        "height":  20,
+                                        "width":  57,
+                                        "text":  "with",
+                                        "x":  904
+                                    },
+                                    {
+                                        "y":  961,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  977
+                                    },
+                                    {
+                                        "y":  961,
+                                        "height":  25,
+                                        "width":  164,
+                                        "text":  "acquisition",
+                                        "x":  1036
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "of raw visual data, typically in the form of images or video",
+                      "words":  [
+                                    {
+                                        "y":  999,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1004,
+                                        "height":  15,
+                                        "width":  44,
+                                        "text":  "raw",
+                                        "x":  301
+                                    },
+                                    {
+                                        "y":  999,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "visual",
+                                        "x":  366
+                                    },
+                                    {
+                                        "y":  999,
+                                        "height":  23,
+                                        "width":  69,
+                                        "text":  "data,",
+                                        "x":  475
+                                    },
+                                    {
+                                        "y":  999,
+                                        "height":  25,
+                                        "width":  135,
+                                        "text":  "typically",
+                                        "x":  569
+                                    },
+                                    {
+                                        "y":  999,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "in",
+                                        "x":  726
+                                    },
+                                    {
+                                        "y":  999,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  774
+                                    },
+                                    {
+                                        "y":  999,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "form",
+                                        "x":  839
+                                    },
+                                    {
+                                        "y":  999,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  918
+                                    },
+                                    {
+                                        "y":  998,
+                                        "height":  26,
+                                        "width":  88,
+                                        "text":  "images",
+                                        "x":  968
+                                    },
+                                    {
+                                        "y":  1004,
+                                        "height":  15,
+                                        "width":  29,
+                                        "text":  "or",
+                                        "x":  1077
+                                    },
+                                    {
+                                        "y":  999,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "video",
+                                        "x":  1127
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "frames. These data contain a vast amount of information ,",
+                      "words":  [
+                                    {
+                                        "y":  1037,
+                                        "height":  20,
+                                        "width":  99,
+                                        "text":  "frames.",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1037,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "These",
+                                        "x":  385
+                                    },
+                                    {
+                                        "y":  1037,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "data",
+                                        "x":  489
+                                    },
+                                    {
+                                        "y":  1037,
+                                        "height":  20,
+                                        "width":  103,
+                                        "text":  "contain",
+                                        "x":  578
+                                    },
+                                    {
+                                        "y":  1042,
+                                        "height":  15,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  712
+                                    },
+                                    {
+                                        "y":  1038,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "vast",
+                                        "x":  755
+                                    },
+                                    {
+                                        "y":  1038,
+                                        "height":  19,
+                                        "width":  87,
+                                        "text":  "amount",
+                                        "x":  844
+                                    },
+                                    {
+                                        "y":  1037,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  962
+                                    },
+                                    {
+                                        "y":  1037,
+                                        "height":  20,
+                                        "width":  162,
+                                        "text":  "information",
+                                        "x":  1022
+                                    },
+                                    {
+                                        "y":  1052,
+                                        "height":  8,
+                                        "width":  5,
+                                        "text":  ",",
+                                        "x":  1191
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "including pixel values, colors, and textures.",
+                      "words":  [
+                                    {
+                                        "y":  1073,
+                                        "height":  25,
+                                        "width":  133,
+                                        "text":  "including",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  1073,
+                                        "height":  25,
+                                        "width":  71,
+                                        "text":  "pixel",
+                                        "x":  404
+                                    },
+                                    {
+                                        "y":  1073,
+                                        "height":  23,
+                                        "width":  99,
+                                        "text":  "values,",
+                                        "x":  493
+                                    },
+                                    {
+                                        "y":  1073,
+                                        "height":  23,
+                                        "width":  100,
+                                        "text":  "colors,",
+                                        "x":  614
+                                    },
+                                    {
+                                        "y":  1073,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  735
+                                    },
+                                    {
+                                        "y":  1074,
+                                        "height":  19,
+                                        "width":  130,
+                                        "text":  "textures.",
+                                        "x":  795
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Need for Feature Extraction:_Raw visual data is often too complex",
+                      "words":  [
+                                    {
+                                        "y":  1111,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "Need",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1111,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "for",
+                                        "x":  324
+                                    },
+                                    {
+                                        "y":  1112,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "Feature",
+                                        "x":  382
+                                    },
+                                    {
+                                        "y":  1111,
+                                        "height":  25,
+                                        "width":  222,
+                                        "text":  "Extraction:_Raw",
+                                        "x":  499
+                                    },
+                                    {
+                                        "y":  1111,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "visual",
+                                        "x":  735
+                                    },
+                                    {
+                                        "y":  1111,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "data",
+                                        "x":  838
+                                    },
+                                    {
+                                        "y":  1111,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  910
+                                    },
+                                    {
+                                        "y":  1111,
+                                        "height":  20,
+                                        "width":  72,
+                                        "text":  "often",
+                                        "x":  952
+                                    },
+                                    {
+                                        "y":  1112,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "too",
+                                        "x":  1038
+                                    },
+                                    {
+                                        "y":  1111,
+                                        "height":  25,
+                                        "width":  103,
+                                        "text":  "complex",
+                                        "x":  1097
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "and high-dimensional for direct analysis and interpretation by",
+                      "words":  [
+                                    {
+                                        "y":  1149,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1148,
+                                        "height":  26,
+                                        "width":  238,
+                                        "text":  "high-dimensional",
+                                        "x":  315
+                                    },
+                                    {
+                                        "y":  1149,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "for",
+                                        "x":  573
+                                    },
+                                    {
+                                        "y":  1149,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "direct",
+                                        "x":  635
+                                    },
+                                    {
+                                        "y":  1149,
+                                        "height":  24,
+                                        "width":  119,
+                                        "text":  "analysis",
+                                        "x":  743
+                                    },
+                                    {
+                                        "y":  1149,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  881
+                                    },
+                                    {
+                                        "y":  1148,
+                                        "height":  26,
+                                        "width":  209,
+                                        "text":  "interpretation",
+                                        "x":  943
+                                    },
+                                    {
+                                        "y":  1149,
+                                        "height":  25,
+                                        "width":  27,
+                                        "text":  "by",
+                                        "x":  1173
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "algorithms. Feature extraction is essential because it reduces",
+                      "words":  [
+                                    {
+                                        "y":  1186,
+                                        "height":  26,
+                                        "width":  160,
+                                        "text":  "algorithms.",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1188,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "Feature",
+                                        "x":  435
+                                    },
+                                    {
+                                        "y":  1186,
+                                        "height":  21,
+                                        "width":  148,
+                                        "text":  "extraction",
+                                        "x":  557
+                                    },
+                                    {
+                                        "y":  1186,
+                                        "height":  21,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  726
+                                    },
+                                    {
+                                        "y":  1186,
+                                        "height":  21,
+                                        "width":  134,
+                                        "text":  "essential",
+                                        "x":  773
+                                    },
+                                    {
+                                        "y":  1187,
+                                        "height":  20,
+                                        "width":  103,
+                                        "text":  "because",
+                                        "x":  926
+                                    },
+                                    {
+                                        "y":  1186,
+                                        "height":  20,
+                                        "width":  26,
+                                        "text":  "it",
+                                        "x":  1050
+                                    },
+                                    {
+                                        "y":  1187,
+                                        "height":  20,
+                                        "width":  104,
+                                        "text":  "reduces",
+                                        "x":  1096
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "the dimensionality of the data, enhances relevant information,",
+                      "words":  [
+                                    {
+                                        "y":  1224,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  251
+                                    },
+                                    {
+                                        "y":  1224,
+                                        "height":  25,
+                                        "width":  209,
+                                        "text":  "dimensionality",
+                                        "x":  314
+                                    },
+                                    {
+                                        "y":  1224,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  542
+                                    },
+                                    {
+                                        "y":  1224,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  589
+                                    },
+                                    {
+                                        "y":  1224,
+                                        "height":  23,
+                                        "width":  69,
+                                        "text":  "data,",
+                                        "x":  652
+                                    },
+                                    {
+                                        "y":  1224,
+                                        "height":  20,
+                                        "width":  119,
+                                        "text":  "enhances",
+                                        "x":  745
+                                    },
+                                    {
+                                        "y":  1224,
+                                        "height":  20,
+                                        "width":  118,
+                                        "text":  "relevant",
+                                        "x":  883
+                                    },
+                                    {
+                                        "y":  1224,
+                                        "height":  23,
+                                        "width":  175,
+                                        "text":  "information,",
+                                        "x":  1021
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "and simplifies the computational requirements of subsequent",
+                      "words":  [
+                                    {
+                                        "y":  1262,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1262,
+                                        "height":  25,
+                                        "width":  147,
+                                        "text":  "simplifies",
+                                        "x":  323
+                                    },
+                                    {
+                                        "y":  1262,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  497
+                                    },
+                                    {
+                                        "y":  1262,
+                                        "height":  25,
+                                        "width":  194,
+                                        "text":  "computational",
+                                        "x":  568
+                                    },
+                                    {
+                                        "y":  1262,
+                                        "height":  25,
+                                        "width":  178,
+                                        "text":  "requirements",
+                                        "x":  790
+                                    },
+                                    {
+                                        "y":  1262,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  996
+                                    },
+                                    {
+                                        "y":  1262,
+                                        "height":  25,
+                                        "width":  149,
+                                        "text":  "subsequent",
+                                        "x":  1051
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "tasks.",
+                      "words":  [
+                                    {
+                                        "y":  1300,
+                                        "height":  20,
+                                        "width":  85,
+                                        "text":  "tasks.",
+                                        "x":  251
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Features: Features are distinctive characteristics or attributes",
+                      "words":  [
+                                    {
+                                        "y":  1338,
+                                        "height":  19,
+                                        "width":  130,
+                                        "text":  "Features:",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1338,
+                                        "height":  19,
+                                        "width":  117,
+                                        "text":  "Features",
+                                        "x":  401
+                                    },
+                                    {
+                                        "y":  1343,
+                                        "height":  15,
+                                        "width":  43,
+                                        "text":  "are",
+                                        "x":  533
+                                    },
+                                    {
+                                        "y":  1337,
+                                        "height":  21,
+                                        "width":  164,
+                                        "text":  "distinctive",
+                                        "x":  591
+                                    },
+                                    {
+                                        "y":  1337,
+                                        "height":  21,
+                                        "width":  223,
+                                        "text":  "characteristics",
+                                        "x":  770
+                                    },
+                                    {
+                                        "y":  1343,
+                                        "height":  14,
+                                        "width":  29,
+                                        "text":  "or",
+                                        "x":  1008
+                                    },
+                                    {
+                                        "y":  1337,
+                                        "height":  20,
+                                        "width":  149,
+                                        "text":  "attributes",
+                                        "x":  1051
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "extracted from the raw data. These features should capture",
+                      "words":  [
+                                    {
+                                        "y":  1376,
+                                        "height":  20,
+                                        "width":  133,
+                                        "text":  "extracted",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1376,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "from",
+                                        "x":  412
+                                    },
+                                    {
+                                        "y":  1376,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  496
+                                    },
+                                    {
+                                        "y":  1381,
+                                        "height":  14,
+                                        "width":  44,
+                                        "text":  "raw",
+                                        "x":  566
+                                    },
+                                    {
+                                        "y":  1376,
+                                        "height":  20,
+                                        "width":  69,
+                                        "text":  "data.",
+                                        "x":  636
+                                    },
+                                    {
+                                        "y":  1376,
+                                        "height":  19,
+                                        "width":  75,
+                                        "text":  "These",
+                                        "x":  735
+                                    },
+                                    {
+                                        "y":  1376,
+                                        "height":  20,
+                                        "width":  118,
+                                        "text":  "features",
+                                        "x":  836
+                                    },
+                                    {
+                                        "y":  1376,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "should",
+                                        "x":  981
+                                    },
+                                    {
+                                        "y":  1376,
+                                        "height":  24,
+                                        "width":  103,
+                                        "text":  "capture",
+                                        "x":  1097
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "essential information about the objects, patterns, or structures",
+                      "words":  [
+                                    {
+                                        "y":  1413,
+                                        "height":  19,
+                                        "width":  133,
+                                        "text":  "essential",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1413,
+                                        "height":  19,
+                                        "width":  161,
+                                        "text":  "information",
+                                        "x":  402
+                                    },
+                                    {
+                                        "y":  1413,
+                                        "height":  19,
+                                        "width":  73,
+                                        "text":  "about",
+                                        "x":  579
+                                    },
+                                    {
+                                        "y":  1413,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  667
+                                    },
+                                    {
+                                        "y":  1413,
+                                        "height":  24,
+                                        "width":  115,
+                                        "text":  "objects,",
+                                        "x":  726
+                                    },
+                                    {
+                                        "y":  1413,
+                                        "height":  24,
+                                        "width":  128,
+                                        "text":  "patterns,",
+                                        "x":  861
+                                    },
+                                    {
+                                        "y":  1417,
+                                        "height":  15,
+                                        "width":  29,
+                                        "text":  "or",
+                                        "x":  1008
+                                    },
+                                    {
+                                        "y":  1413,
+                                        "height":  19,
+                                        "width":  148,
+                                        "text":  "structures",
+                                        "x":  1052
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "present in the images while discarding irrelevant details.",
+                      "words":  [
+                                    {
+                                        "y":  1451,
+                                        "height":  24,
+                                        "width":  103,
+                                        "text":  "present",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1450,
+                                        "height":  19,
+                                        "width":  26,
+                                        "text":  "in",
+                                        "x":  374
+                                    },
+                                    {
+                                        "y":  1450,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  417
+                                    },
+                                    {
+                                        "y":  1449,
+                                        "height":  26,
+                                        "width":  87,
+                                        "text":  "images",
+                                        "x":  479
+                                    },
+                                    {
+                                        "y":  1449,
+                                        "height":  21,
+                                        "width":  74,
+                                        "text":  "while",
+                                        "x":  583
+                                    },
+                                    {
+                                        "y":  1450,
+                                        "height":  25,
+                                        "width":  150,
+                                        "text":  "discarding",
+                                        "x":  674
+                                    },
+                                    {
+                                        "y":  1449,
+                                        "height":  21,
+                                        "width":  147,
+                                        "text":  "irrelevant",
+                                        "x":  842
+                                    },
+                                    {
+                                        "y":  1449,
+                                        "height":  21,
+                                        "width":  115,
+                                        "text":  "details.",
+                                        "x":  1006
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FAST NUCES",
+                      "words":  [
+                                    {
+                                        "y":  1819,
+                                        "height":  19,
+                                        "width":  62,
+                                        "text":  "FAST",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1819,
+                                        "height":  20,
+                                        "width":  85,
+                                        "text":  "NUCES",
+                                        "x":  242
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Karachi",
+                      "words":  [
+                                    {
+                                        "y":  1828,
+                                        "height":  5,
+                                        "width":  12,
+                                        "text":  "-",
+                                        "x":  336
+                                    },
+                                    {
+                                        "y":  1817,
+                                        "height":  21,
+                                        "width":  94,
+                                        "text":  "Karachi",
+                                        "x":  358
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1819,
+                                        "height":  19,
+                                        "width":  72,
+                                        "text":  "Talha",
+                                        "x":  594
+                                    },
+                                    {
+                                        "y":  1817,
+                                        "height":  21,
+                                        "width":  87,
+                                        "text":  "Shahid",
+                                        "x":  676
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "words":  [
+                                    {
+                                        "y":  1819,
+                                        "height":  20,
+                                        "width":  13,
+                                        "text":  "3",
+                                        "x":  1188
+                                    }
+                                ]
+                  }
+              ]
+}

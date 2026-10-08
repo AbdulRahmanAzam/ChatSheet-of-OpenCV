@@ -1,0 +1,1109 @@
+﻿{
+    "id":  "lab_05_manual_p003",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "National University of Computer \u0026 Emerging Sciences - NUCES - Karachi Department of Artificial Intelligence 1. Objectives 1. 2. 3. 4. 5. Introduction to Image Segmentation Techniques/Method010gies of Image Segmentations Region-based segmentation Edge detection segmentation Clustering-based segmentation 2. Image Segmentation Image Segmentation is the process of partitioning an image into distinct, non-overLapping regions or segments, each of which corresponds to a meaningful object or part of the scene. The goat is to separate an image into areas that share similar visual characteristics, such as color, texture, or intensity. INPUT: COMPLEX LANDSCAPE IMAGE .14 PREPROCESSING \u0026 FEATURE EXTRACTION FAST NUCES - Karachi SEGMENTATION ALGORITHM nowm DEEP LEARNING MODEL (CNN) Talha Shahid OUTPUT: SEGMENTED REGION MAP SEGMENT 1: SKY SEGMENT 2: MOUNTAINS EXE.\u0027SHAPE) SEGMENT 3: WATER (SHAREO PATTERN,\u0027 2",
+    "review_status":  "raw_ocr_unverified",
+    "page":  3,
+    "source_id":  "lab_05_manual",
+    "lines":  [
+                  {
+                      "text":  "National University of Computer \u0026 Emerging Sciences -",
+                      "words":  [
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  123,
+                                        "text":  "National",
+                                        "x":  372
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  30,
+                                        "width":  153,
+                                        "text":  "University",
+                                        "x":  504
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  31,
+                                        "text":  "of",
+                                        "x":  664
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  30,
+                                        "width":  146,
+                                        "text":  "Computer",
+                                        "x":  701
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  23,
+                                        "width":  23,
+                                        "text":  "\u0026",
+                                        "x":  854
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  30,
+                                        "width":  140,
+                                        "text":  "Emerging",
+                                        "x":  885
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  23,
+                                        "width":  123,
+                                        "text":  "Sciences",
+                                        "x":  1033
+                                    },
+                                    {
+                                        "y":  107,
+                                        "height":  4,
+                                        "width":  9,
+                                        "text":  "-",
+                                        "x":  1166
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "NUCES - Karachi",
+                      "words":  [
+                                    {
+                                        "y":  138,
+                                        "height":  23,
+                                        "width":  96,
+                                        "text":  "NUCES",
+                                        "x":  655
+                                    },
+                                    {
+                                        "y":  150,
+                                        "height":  4,
+                                        "width":  8,
+                                        "text":  "-",
+                                        "x":  760
+                                    },
+                                    {
+                                        "y":  137,
+                                        "height":  24,
+                                        "width":  113,
+                                        "text":  "Karachi",
+                                        "x":  778
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Department of Artificial Intelligence",
+                      "words":  [
+                                    {
+                                        "y":  180,
+                                        "height":  26,
+                                        "width":  142,
+                                        "text":  "Department",
+                                        "x":  556
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  21,
+                                        "width":  25,
+                                        "text":  "of",
+                                        "x":  706
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  21,
+                                        "width":  100,
+                                        "text":  "Artificial",
+                                        "x":  738
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  27,
+                                        "width":  137,
+                                        "text":  "Intelligence",
+                                        "x":  848
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1. Objectives",
+                      "words":  [
+                                    {
+                                        "y":  222,
+                                        "height":  27,
+                                        "width":  26,
+                                        "text":  "1.",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  218,
+                                        "height":  38,
+                                        "width":  193,
+                                        "text":  "Objectives",
+                                        "x":  223
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1.",
+                      "words":  [
+                                    {
+                                        "y":  285,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "1.",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2.",
+                      "words":  [
+                                    {
+                                        "y":  321,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "2.",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3.",
+                      "words":  [
+                                    {
+                                        "y":  355,
+                                        "height":  20,
+                                        "width":  25,
+                                        "text":  "3.",
+                                        "x":  210
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4.",
+                      "words":  [
+                                    {
+                                        "y":  391,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "4.",
+                                        "x":  210
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "5.",
+                      "words":  [
+                                    {
+                                        "y":  426,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "5.",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Introduction to Image Segmentation",
+                      "words":  [
+                                    {
+                                        "y":  284,
+                                        "height":  20,
+                                        "width":  177,
+                                        "text":  "Introduction",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  285,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  488
+                                    },
+                                    {
+                                        "y":  285,
+                                        "height":  24,
+                                        "width":  72,
+                                        "text":  "Image",
+                                        "x":  535
+                                    },
+                                    {
+                                        "y":  284,
+                                        "height":  25,
+                                        "width":  180,
+                                        "text":  "Segmentation",
+                                        "x":  624
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Techniques/Method010gies of Image Segmentations",
+                      "words":  [
+                                    {
+                                        "y":  320,
+                                        "height":  25,
+                                        "width":  360,
+                                        "text":  "Techniques/Method010gies",
+                                        "x":  292
+                                    },
+                                    {
+                                        "y":  320,
+                                        "height":  20,
+                                        "width":  29,
+                                        "text":  "of",
+                                        "x":  670
+                                    },
+                                    {
+                                        "y":  321,
+                                        "height":  24,
+                                        "width":  73,
+                                        "text":  "Image",
+                                        "x":  716
+                                    },
+                                    {
+                                        "y":  320,
+                                        "height":  25,
+                                        "width":  194,
+                                        "text":  "Segmentations",
+                                        "x":  806
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Region-based segmentation",
+                      "words":  [
+                                    {
+                                        "y":  354,
+                                        "height":  26,
+                                        "width":  176,
+                                        "text":  "Region-based",
+                                        "x":  294
+                                    },
+                                    {
+                                        "y":  354,
+                                        "height":  26,
+                                        "width":  178,
+                                        "text":  "segmentation",
+                                        "x":  489
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Edge detection segmentation",
+                      "words":  [
+                                    {
+                                        "y":  390,
+                                        "height":  25,
+                                        "width":  57,
+                                        "text":  "Edge",
+                                        "x":  294
+                                    },
+                                    {
+                                        "y":  390,
+                                        "height":  20,
+                                        "width":  133,
+                                        "text":  "detection",
+                                        "x":  368
+                                    },
+                                    {
+                                        "y":  390,
+                                        "height":  25,
+                                        "width":  179,
+                                        "text":  "segmentation",
+                                        "x":  519
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Clustering-based segmentation",
+                      "words":  [
+                                    {
+                                        "y":  425,
+                                        "height":  25,
+                                        "width":  238,
+                                        "text":  "Clustering-based",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  425,
+                                        "height":  25,
+                                        "width":  178,
+                                        "text":  "segmentation",
+                                        "x":  550
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2. Image Segmentation",
+                      "words":  [
+                                    {
+                                        "y":  510,
+                                        "height":  27,
+                                        "width":  27,
+                                        "text":  "2.",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  510,
+                                        "height":  35,
+                                        "width":  122,
+                                        "text":  "Image",
+                                        "x":  212
+                                    },
+                                    {
+                                        "y":  507,
+                                        "height":  38,
+                                        "width":  257,
+                                        "text":  "Segmentation",
+                                        "x":  348
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Image Segmentation is the process of partitioning an image into",
+                      "words":  [
+                                    {
+                                        "y":  574,
+                                        "height":  23,
+                                        "width":  74,
+                                        "text":  "Image",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  573,
+                                        "height":  24,
+                                        "width":  180,
+                                        "text":  "Segmentation",
+                                        "x":  268
+                                    },
+                                    {
+                                        "y":  573,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "is",
+                                        "x":  474
+                                    },
+                                    {
+                                        "y":  573,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "the",
+                                        "x":  529
+                                    },
+                                    {
+                                        "y":  579,
+                                        "height":  18,
+                                        "width":  104,
+                                        "text":  "process",
+                                        "x":  597
+                                    },
+                                    {
+                                        "y":  573,
+                                        "height":  24,
+                                        "width":  31,
+                                        "text":  "of",
+                                        "x":  728
+                                    },
+                                    {
+                                        "y":  573,
+                                        "height":  24,
+                                        "width":  180,
+                                        "text":  "partitioning",
+                                        "x":  781
+                                    },
+                                    {
+                                        "y":  579,
+                                        "height":  14,
+                                        "width":  28,
+                                        "text":  "an",
+                                        "x":  987
+                                    },
+                                    {
+                                        "y":  573,
+                                        "height":  24,
+                                        "width":  73,
+                                        "text":  "image",
+                                        "x":  1043
+                                    },
+                                    {
+                                        "y":  573,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "into",
+                                        "x":  1143
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "distinct,",
+                      "words":  [
+                                    {
+                                        "y":  611,
+                                        "height":  22,
+                                        "width":  130,
+                                        "text":  "distinct,",
+                                        "x":  169
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "non-overLapping regions or segments,",
+                      "words":  [
+                                    {
+                                        "y":  611,
+                                        "height":  24,
+                                        "width":  223,
+                                        "text":  "non-overLapping",
+                                        "x":  339
+                                    },
+                                    {
+                                        "y":  611,
+                                        "height":  24,
+                                        "width":  102,
+                                        "text":  "regions",
+                                        "x":  599
+                                    },
+                                    {
+                                        "y":  616,
+                                        "height":  14,
+                                        "width":  30,
+                                        "text":  "or",
+                                        "x":  737
+                                    },
+                                    {
+                                        "y":  611,
+                                        "height":  24,
+                                        "width":  128,
+                                        "text":  "segments,",
+                                        "x":  801
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "each of which",
+                      "words":  [
+                                    {
+                                        "y":  611,
+                                        "height":  19,
+                                        "width":  57,
+                                        "text":  "each",
+                                        "x":  970
+                                    },
+                                    {
+                                        "y":  611,
+                                        "height":  24,
+                                        "width":  31,
+                                        "text":  "of",
+                                        "x":  1063
+                                    },
+                                    {
+                                        "y":  611,
+                                        "height":  19,
+                                        "width":  74,
+                                        "text":  "which",
+                                        "x":  1126
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "corresponds to a meaningful object or part of the scene. The goat is",
+                      "words":  [
+                                    {
+                                        "y":  649,
+                                        "height":  24,
+                                        "width":  163,
+                                        "text":  "corresponds",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  649,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "to",
+                                        "x":  352
+                                    },
+                                    {
+                                        "y":  654,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  397
+                                    },
+                                    {
+                                        "y":  649,
+                                        "height":  24,
+                                        "width":  148,
+                                        "text":  "meaningful",
+                                        "x":  427
+                                    },
+                                    {
+                                        "y":  649,
+                                        "height":  24,
+                                        "width":  89,
+                                        "text":  "object",
+                                        "x":  593
+                                    },
+                                    {
+                                        "y":  654,
+                                        "height":  14,
+                                        "width":  30,
+                                        "text":  "or",
+                                        "x":  700
+                                    },
+                                    {
+                                        "y":  649,
+                                        "height":  24,
+                                        "width":  59,
+                                        "text":  "part",
+                                        "x":  745
+                                    },
+                                    {
+                                        "y":  649,
+                                        "height":  24,
+                                        "width":  31,
+                                        "text":  "of",
+                                        "x":  822
+                                    },
+                                    {
+                                        "y":  649,
+                                        "height":  19,
+                                        "width":  42,
+                                        "text":  "the",
+                                        "x":  869
+                                    },
+                                    {
+                                        "y":  654,
+                                        "height":  14,
+                                        "width":  84,
+                                        "text":  "scene.",
+                                        "x":  928
+                                    },
+                                    {
+                                        "y":  649,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "The",
+                                        "x":  1035
+                                    },
+                                    {
+                                        "y":  649,
+                                        "height":  24,
+                                        "width":  59,
+                                        "text":  "goat",
+                                        "x":  1095
+                                    },
+                                    {
+                                        "y":  649,
+                                        "height":  19,
+                                        "width":  28,
+                                        "text":  "is",
+                                        "x":  1172
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "to separate an image into areas that share similar visual",
+                      "words":  [
+                                    {
+                                        "y":  687,
+                                        "height":  18,
+                                        "width":  28,
+                                        "text":  "to",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  687,
+                                        "height":  22,
+                                        "width":  119,
+                                        "text":  "separate",
+                                        "x":  234
+                                    },
+                                    {
+                                        "y":  691,
+                                        "height":  14,
+                                        "width":  28,
+                                        "text":  "an",
+                                        "x":  389
+                                    },
+                                    {
+                                        "y":  686,
+                                        "height":  23,
+                                        "width":  72,
+                                        "text":  "image",
+                                        "x":  454
+                                    },
+                                    {
+                                        "y":  686,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "into",
+                                        "x":  563
+                                    },
+                                    {
+                                        "y":  691,
+                                        "height":  14,
+                                        "width":  73,
+                                        "text":  "areas",
+                                        "x":  658
+                                    },
+                                    {
+                                        "y":  686,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "that",
+                                        "x":  768
+                                    },
+                                    {
+                                        "y":  686,
+                                        "height":  19,
+                                        "width":  73,
+                                        "text":  "share",
+                                        "x":  862
+                                    },
+                                    {
+                                        "y":  686,
+                                        "height":  19,
+                                        "width":  106,
+                                        "text":  "similar",
+                                        "x":  971
+                                    },
+                                    {
+                                        "y":  686,
+                                        "height":  19,
+                                        "width":  88,
+                                        "text":  "visual",
+                                        "x":  1112
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "characteristics, such as color, texture, or intensity.",
+                      "words":  [
+                                    {
+                                        "y":  723,
+                                        "height":  23,
+                                        "width":  234,
+                                        "text":  "characteristics,",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  723,
+                                        "height":  19,
+                                        "width":  57,
+                                        "text":  "such",
+                                        "x":  426
+                                    },
+                                    {
+                                        "y":  729,
+                                        "height":  13,
+                                        "width":  28,
+                                        "text":  "as",
+                                        "x":  501
+                                    },
+                                    {
+                                        "y":  723,
+                                        "height":  23,
+                                        "width":  85,
+                                        "text":  "color,",
+                                        "x":  546
+                                    },
+                                    {
+                                        "y":  724,
+                                        "height":  22,
+                                        "width":  114,
+                                        "text":  "texture,",
+                                        "x":  653
+                                    },
+                                    {
+                                        "y":  728,
+                                        "height":  14,
+                                        "width":  29,
+                                        "text":  "or",
+                                        "x":  789
+                                    },
+                                    {
+                                        "y":  723,
+                                        "height":  24,
+                                        "width":  143,
+                                        "text":  "intensity.",
+                                        "x":  835
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "INPUT: COMPLEX LANDSCAPE IMAGE",
+                      "words":  [
+                                    {
+                                        "y":  1006,
+                                        "height":  10,
+                                        "width":  35,
+                                        "text":  "INPUT:",
+                                        "x":  179
+                                    },
+                                    {
+                                        "y":  1006,
+                                        "height":  10,
+                                        "width":  51,
+                                        "text":  "COMPLEX",
+                                        "x":  217
+                                    },
+                                    {
+                                        "y":  1006,
+                                        "height":  10,
+                                        "width":  63,
+                                        "text":  "LANDSCAPE",
+                                        "x":  271
+                                    },
+                                    {
+                                        "y":  1006,
+                                        "height":  10,
+                                        "width":  33,
+                                        "text":  "IMAGE",
+                                        "x":  337
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  ".14",
+                      "words":  [
+                                    {
+                                        "y":  1362,
+                                        "height":  10,
+                                        "width":  25,
+                                        "text":  ".14",
+                                        "x":  308
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "PREPROCESSING \u0026",
+                      "words":  [
+                                    {
+                                        "y":  1089,
+                                        "height":  10,
+                                        "width":  87,
+                                        "text":  "PREPROCESSING",
+                                        "x":  469
+                                    },
+                                    {
+                                        "y":  1088,
+                                        "height":  11,
+                                        "width":  7,
+                                        "text":  "\u0026",
+                                        "x":  559
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FEATURE EXTRACTION",
+                      "words":  [
+                                    {
+                                        "y":  1102,
+                                        "height":  10,
+                                        "width":  46,
+                                        "text":  "FEATURE",
+                                        "x":  460
+                                    },
+                                    {
+                                        "y":  1102,
+                                        "height":  10,
+                                        "width":  66,
+                                        "text":  "EXTRACTION",
+                                        "x":  509
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FAST NUCES",
+                      "words":  [
+                                    {
+                                        "y":  1819,
+                                        "height":  19,
+                                        "width":  62,
+                                        "text":  "FAST",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1819,
+                                        "height":  20,
+                                        "width":  85,
+                                        "text":  "NUCES",
+                                        "x":  242
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Karachi",
+                      "words":  [
+                                    {
+                                        "y":  1828,
+                                        "height":  5,
+                                        "width":  12,
+                                        "text":  "-",
+                                        "x":  336
+                                    },
+                                    {
+                                        "y":  1817,
+                                        "height":  21,
+                                        "width":  94,
+                                        "text":  "Karachi",
+                                        "x":  358
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "SEGMENTATION",
+                      "words":  [
+                                    {
+                                        "y":  1113,
+                                        "height":  10,
+                                        "width":  82,
+                                        "text":  "SEGMENTATION",
+                                        "x":  677
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ALGORITHM",
+                      "words":  [
+                                    {
+                                        "y":  1126,
+                                        "height":  9,
+                                        "width":  62,
+                                        "text":  "ALGORITHM",
+                                        "x":  677
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "nowm",
+                      "words":  [
+                                    {
+                                        "y":  1217,
+                                        "height":  8,
+                                        "width":  39,
+                                        "text":  "nowm",
+                                        "x":  647
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "DEEP LEARNING",
+                      "words":  [
+                                    {
+                                        "y":  1295,
+                                        "height":  8,
+                                        "width":  21,
+                                        "text":  "DEEP",
+                                        "x":  671
+                                    },
+                                    {
+                                        "y":  1295,
+                                        "height":  8,
+                                        "width":  41,
+                                        "text":  "LEARNING",
+                                        "x":  694
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "MODEL (CNN)",
+                      "words":  [
+                                    {
+                                        "y":  1305,
+                                        "height":  8,
+                                        "width":  28,
+                                        "text":  "MODEL",
+                                        "x":  676
+                                    },
+                                    {
+                                        "y":  1305,
+                                        "height":  10,
+                                        "width":  23,
+                                        "text":  "(CNN)",
+                                        "x":  707
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1819,
+                                        "height":  19,
+                                        "width":  71,
+                                        "text":  "Talha",
+                                        "x":  624
+                                    },
+                                    {
+                                        "y":  1817,
+                                        "height":  21,
+                                        "width":  87,
+                                        "text":  "Shahid",
+                                        "x":  706
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "OUTPUT: SEGMENTED REGION MAP",
+                      "words":  [
+                                    {
+                                        "y":  1006,
+                                        "height":  10,
+                                        "width":  46,
+                                        "text":  "OUTPUT:",
+                                        "x":  941
+                                    },
+                                    {
+                                        "y":  1006,
+                                        "height":  10,
+                                        "width":  63,
+                                        "text":  "SEGMENTED",
+                                        "x":  990
+                                    },
+                                    {
+                                        "y":  1006,
+                                        "height":  10,
+                                        "width":  39,
+                                        "text":  "REGION",
+                                        "x":  1057
+                                    },
+                                    {
+                                        "y":  1006,
+                                        "height":  10,
+                                        "width":  24,
+                                        "text":  "MAP",
+                                        "x":  1099
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "SEGMENT 1: SKY",
+                      "words":  [
+                                    {
+                                        "y":  1089,
+                                        "height":  11,
+                                        "width":  51,
+                                        "text":  "SEGMENT",
+                                        "x":  1102
+                                    },
+                                    {
+                                        "y":  1090,
+                                        "height":  10,
+                                        "width":  8,
+                                        "text":  "1:",
+                                        "x":  1156
+                                    },
+                                    {
+                                        "y":  1089,
+                                        "height":  11,
+                                        "width":  20,
+                                        "text":  "SKY",
+                                        "x":  1168
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "SEGMENT 2:",
+                      "words":  [
+                                    {
+                                        "y":  1187,
+                                        "height":  10,
+                                        "width":  51,
+                                        "text":  "SEGMENT",
+                                        "x":  1102
+                                    },
+                                    {
+                                        "y":  1187,
+                                        "height":  10,
+                                        "width":  10,
+                                        "text":  "2:",
+                                        "x":  1155
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "MOUNTAINS",
+                      "words":  [
+                                    {
+                                        "y":  1200,
+                                        "height":  10,
+                                        "width":  63,
+                                        "text":  "MOUNTAINS",
+                                        "x":  1102
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "EXE.\u0027SHAPE)",
+                      "words":  [
+                                    {
+                                        "y":  1212,
+                                        "height":  10,
+                                        "width":  54,
+                                        "text":  "EXE.\u0027SHAPE)",
+                                        "x":  1140
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "SEGMENT 3: WATER",
+                      "words":  [
+                                    {
+                                        "y":  1293,
+                                        "height":  10,
+                                        "width":  51,
+                                        "text":  "SEGMENT",
+                                        "x":  1102
+                                    },
+                                    {
+                                        "y":  1293,
+                                        "height":  10,
+                                        "width":  9,
+                                        "text":  "3:",
+                                        "x":  1155
+                                    },
+                                    {
+                                        "y":  1293,
+                                        "height":  11,
+                                        "width":  36,
+                                        "text":  "WATER",
+                                        "x":  1168
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "(SHAREO PATTERN,\u0027",
+                      "words":  [
+                                    {
+                                        "y":  1306,
+                                        "height":  9,
+                                        "width":  35,
+                                        "text":  "(SHAREO",
+                                        "x":  1102
+                                    },
+                                    {
+                                        "y":  1306,
+                                        "height":  8,
+                                        "width":  39,
+                                        "text":  "PATTERN,\u0027",
+                                        "x":  1140
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2",
+                      "words":  [
+                                    {
+                                        "y":  1819,
+                                        "height":  19,
+                                        "width":  13,
+                                        "text":  "2",
+                                        "x":  1188
+                                    }
+                                ]
+                  }
+              ]
+}

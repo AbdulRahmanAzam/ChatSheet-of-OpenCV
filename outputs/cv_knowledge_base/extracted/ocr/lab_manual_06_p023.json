@@ -1,0 +1,983 @@
+﻿{
+    "id":  "lab_manual_06_p023",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "National University of Computer \u0026 Emerging Sciences - NUCES - Karachi Department of Artificial Intelligence # Convert to grayscale cv2. cvtCotor(image, cv2. COLOR_BGR2GRAY) gray = # Create SIFT detector cv2.SIFT_create() sift = # Detect keypoints and compute descriptors = sift.detectAndCompute(gray, keypoints, descriptors None) # Draw keypoints image_keypoints image_rgb, keypoints, None, flags- -cv2 . # Display cv2. drawKeypoints ( ptt. figure ptt.subplot(l, 2, 1) put . imshow (image_rgb) Image\") put . axis (\"off\") ptt.subplot(l, 2, 2) ptt . imshow (image_keypoints) Keypoints\") plt . axis (\"off\") put. put. show() # Print information ten (keypoints)) of keypoints: \" , print(\"Descriptor shape: \" , FAST NUCES - Karachi descriptors. shape) Talha Shahid 23",
+    "review_status":  "raw_ocr_unverified",
+    "page":  23,
+    "source_id":  "lab_manual_06",
+    "lines":  [
+                  {
+                      "text":  "National University of Computer \u0026 Emerging Sciences -",
+                      "words":  [
+                                    {
+                                        "y":  94,
+                                        "height":  23,
+                                        "width":  122,
+                                        "text":  "National",
+                                        "x":  376
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  29,
+                                        "width":  146,
+                                        "text":  "University",
+                                        "x":  507
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  22,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  660
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  28,
+                                        "width":  147,
+                                        "text":  "Computer",
+                                        "x":  696
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  22,
+                                        "width":  21,
+                                        "text":  "\u0026",
+                                        "x":  851
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  28,
+                                        "width":  134,
+                                        "text":  "Emerging",
+                                        "x":  880
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  23,
+                                        "width":  132,
+                                        "text":  "Sciences",
+                                        "x":  1021
+                                    },
+                                    {
+                                        "y":  107,
+                                        "height":  4,
+                                        "width":  10,
+                                        "text":  "-",
+                                        "x":  1162
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "NUCES - Karachi",
+                      "words":  [
+                                    {
+                                        "y":  140,
+                                        "height":  22,
+                                        "width":  103,
+                                        "text":  "NUCES",
+                                        "x":  654
+                                    },
+                                    {
+                                        "y":  152,
+                                        "height":  4,
+                                        "width":  10,
+                                        "text":  "-",
+                                        "x":  765
+                                    },
+                                    {
+                                        "y":  139,
+                                        "height":  23,
+                                        "width":  109,
+                                        "text":  "Karachi",
+                                        "x":  784
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Department of Artificial Intelligence",
+                      "words":  [
+                                    {
+                                        "y":  183,
+                                        "height":  26,
+                                        "width":  143,
+                                        "text":  "Department",
+                                        "x":  555
+                                    },
+                                    {
+                                        "y":  182,
+                                        "height":  22,
+                                        "width":  24,
+                                        "text":  "of",
+                                        "x":  706
+                                    },
+                                    {
+                                        "y":  182,
+                                        "height":  22,
+                                        "width":  100,
+                                        "text":  "Artificial",
+                                        "x":  737
+                                    },
+                                    {
+                                        "y":  182,
+                                        "height":  27,
+                                        "width":  137,
+                                        "text":  "Intelligence",
+                                        "x":  847
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# Convert to grayscale",
+                      "words":  [
+                                    {
+                                        "y":  224,
+                                        "height":  18,
+                                        "width":  13,
+                                        "text":  "#",
+                                        "x":  182
+                                    },
+                                    {
+                                        "y":  224,
+                                        "height":  18,
+                                        "width":  98,
+                                        "text":  "Convert",
+                                        "x":  212
+                                    },
+                                    {
+                                        "y":  224,
+                                        "height":  18,
+                                        "width":  26,
+                                        "text":  "to",
+                                        "x":  327
+                                    },
+                                    {
+                                        "y":  224,
+                                        "height":  22,
+                                        "width":  126,
+                                        "text":  "grayscale",
+                                        "x":  370
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "cv2. cvtCotor(image, cv2. COLOR_BGR2GRAY)",
+                      "words":  [
+                                    {
+                                        "y":  256,
+                                        "height":  19,
+                                        "width":  51,
+                                        "text":  "cv2.",
+                                        "x":  284
+                                    },
+                                    {
+                                        "y":  254,
+                                        "height":  25,
+                                        "width":  209,
+                                        "text":  "cvtCotor(image,",
+                                        "x":  342
+                                    },
+                                    {
+                                        "y":  256,
+                                        "height":  19,
+                                        "width":  51,
+                                        "text":  "cv2.",
+                                        "x":  572
+                                    },
+                                    {
+                                        "y":  254,
+                                        "height":  24,
+                                        "width":  211,
+                                        "text":  "COLOR_BGR2GRAY)",
+                                        "x":  630
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "gray =",
+                      "words":  [
+                                    {
+                                        "y":  260,
+                                        "height":  19,
+                                        "width":  55,
+                                        "text":  "gray",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  262,
+                                        "height":  9,
+                                        "width":  12,
+                                        "text":  "=",
+                                        "x":  255
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# Create SIFT detector",
+                      "words":  [
+                                    {
+                                        "y":  322,
+                                        "height":  19,
+                                        "width":  13,
+                                        "text":  "#",
+                                        "x":  182
+                                    },
+                                    {
+                                        "y":  322,
+                                        "height":  18,
+                                        "width":  83,
+                                        "text":  "Create",
+                                        "x":  212
+                                    },
+                                    {
+                                        "y":  322,
+                                        "height":  18,
+                                        "width":  55,
+                                        "text":  "SIFT",
+                                        "x":  313
+                                    },
+                                    {
+                                        "y":  322,
+                                        "height":  18,
+                                        "width":  112,
+                                        "text":  "detector",
+                                        "x":  385
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "cv2.SIFT_create()",
+                      "words":  [
+                                    {
+                                        "y":  352,
+                                        "height":  23,
+                                        "width":  239,
+                                        "text":  "cv2.SIFT_create()",
+                                        "x":  284
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "sift =",
+                      "words":  [
+                                    {
+                                        "y":  353,
+                                        "height":  19,
+                                        "width":  55,
+                                        "text":  "sift",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  359,
+                                        "height":  9,
+                                        "width":  12,
+                                        "text":  "=",
+                                        "x":  255
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# Detect keypoints and compute descriptors",
+                      "words":  [
+                                    {
+                                        "y":  419,
+                                        "height":  19,
+                                        "width":  13,
+                                        "text":  "#",
+                                        "x":  182
+                                    },
+                                    {
+                                        "y":  419,
+                                        "height":  19,
+                                        "width":  83,
+                                        "text":  "Detect",
+                                        "x":  212
+                                    },
+                                    {
+                                        "y":  418,
+                                        "height":  24,
+                                        "width":  126,
+                                        "text":  "keypoints",
+                                        "x":  313
+                                    },
+                                    {
+                                        "y":  419,
+                                        "height":  19,
+                                        "width":  40,
+                                        "text":  "and",
+                                        "x":  456
+                                    },
+                                    {
+                                        "y":  419,
+                                        "height":  23,
+                                        "width":  98,
+                                        "text":  "compute",
+                                        "x":  514
+                                    },
+                                    {
+                                        "y":  418,
+                                        "height":  24,
+                                        "width":  155,
+                                        "text":  "descriptors",
+                                        "x":  630
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "= sift.detectAndCompute(gray,",
+                      "words":  [
+                                    {
+                                        "y":  457,
+                                        "height":  9,
+                                        "width":  12,
+                                        "text":  "=",
+                                        "x":  514
+                                    },
+                                    {
+                                        "y":  449,
+                                        "height":  25,
+                                        "width":  382,
+                                        "text":  "sift.detectAndCompute(gray,",
+                                        "x":  543
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "keypoints, descriptors",
+                      "words":  [
+                                    {
+                                        "y":  451,
+                                        "height":  23,
+                                        "width":  137,
+                                        "text":  "keypoints,",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  451,
+                                        "height":  23,
+                                        "width":  155,
+                                        "text":  "descriptors",
+                                        "x":  341
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "None)",
+                      "words":  [
+                                    {
+                                        "y":  449,
+                                        "height":  24,
+                                        "width":  66,
+                                        "text":  "None)",
+                                        "x":  947
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# Draw keypoints",
+                      "words":  [
+                                    {
+                                        "y":  517,
+                                        "height":  18,
+                                        "width":  13,
+                                        "text":  "#",
+                                        "x":  182
+                                    },
+                                    {
+                                        "y":  517,
+                                        "height":  18,
+                                        "width":  56,
+                                        "text":  "Draw",
+                                        "x":  212
+                                    },
+                                    {
+                                        "y":  516,
+                                        "height":  23,
+                                        "width":  127,
+                                        "text":  "keypoints",
+                                        "x":  284
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "image_keypoints",
+                      "words":  [
+                                    {
+                                        "y":  549,
+                                        "height":  24,
+                                        "width":  213,
+                                        "text":  "image_keypoints",
+                                        "x":  183
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "image_rgb,",
+                      "words":  [
+                                    {
+                                        "y":  582,
+                                        "height":  23,
+                                        "width":  137,
+                                        "text":  "image_rgb,",
+                                        "x":  241
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "keypoints,",
+                      "words":  [
+                                    {
+                                        "y":  614,
+                                        "height":  23,
+                                        "width":  137,
+                                        "text":  "keypoints,",
+                                        "x":  241
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "None,",
+                      "words":  [
+                                    {
+                                        "y":  647,
+                                        "height":  23,
+                                        "width":  65,
+                                        "text":  "None,",
+                                        "x":  241
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "flags-",
+                      "words":  [
+                                    {
+                                        "y":  680,
+                                        "height":  23,
+                                        "width":  84,
+                                        "text":  "flags-",
+                                        "x":  240
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "-cv2 .",
+                      "words":  [
+                                    {
+                                        "y":  680,
+                                        "height":  19,
+                                        "width":  54,
+                                        "text":  "-cv2",
+                                        "x":  313
+                                    },
+                                    {
+                                        "y":  694,
+                                        "height":  5,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  374
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# Display",
+                      "words":  [
+                                    {
+                                        "y":  777,
+                                        "height":  19,
+                                        "width":  13,
+                                        "text":  "#",
+                                        "x":  182
+                                    },
+                                    {
+                                        "y":  776,
+                                        "height":  24,
+                                        "width":  98,
+                                        "text":  "Display",
+                                        "x":  212
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "cv2. drawKeypoints (",
+                      "words":  [
+                                    {
+                                        "y":  550,
+                                        "height":  18,
+                                        "width":  50,
+                                        "text":  "cv2.",
+                                        "x":  443
+                                    },
+                                    {
+                                        "y":  549,
+                                        "height":  23,
+                                        "width":  185,
+                                        "text":  "drawKeypoints",
+                                        "x":  499
+                                    },
+                                    {
+                                        "y":  547,
+                                        "height":  24,
+                                        "width":  9,
+                                        "text":  "(",
+                                        "x":  690
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ptt. figure",
+                      "words":  [
+                                    {
+                                        "y":  810,
+                                        "height":  23,
+                                        "width":  51,
+                                        "text":  "ptt.",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  810,
+                                        "height":  23,
+                                        "width":  84,
+                                        "text":  "figure",
+                                        "x":  240
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ptt.subplot(l, 2, 1)",
+                      "words":  [
+                                    {
+                                        "y":  873,
+                                        "height":  25,
+                                        "width":  195,
+                                        "text":  "ptt.subplot(l,",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  876,
+                                        "height":  22,
+                                        "width":  22,
+                                        "text":  "2,",
+                                        "x":  399
+                                    },
+                                    {
+                                        "y":  873,
+                                        "height":  24,
+                                        "width":  22,
+                                        "text":  "1)",
+                                        "x":  443
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "put . imshow (image_rgb)",
+                      "words":  [
+                                    {
+                                        "y":  908,
+                                        "height":  23,
+                                        "width":  40,
+                                        "text":  "put",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  922,
+                                        "height":  5,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  230
+                                    },
+                                    {
+                                        "y":  907,
+                                        "height":  20,
+                                        "width":  84,
+                                        "text":  "imshow",
+                                        "x":  241
+                                    },
+                                    {
+                                        "y":  906,
+                                        "height":  25,
+                                        "width":  150,
+                                        "text":  "(image_rgb)",
+                                        "x":  330
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Image\")",
+                      "words":  [
+                                    {
+                                        "y":  939,
+                                        "height":  25,
+                                        "width":  96,
+                                        "text":  "Image\")",
+                                        "x":  470
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "put . axis (\"off\")",
+                      "words":  [
+                                    {
+                                        "y":  974,
+                                        "height":  23,
+                                        "width":  40,
+                                        "text":  "put",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  988,
+                                        "height":  5,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  230
+                                    },
+                                    {
+                                        "y":  973,
+                                        "height":  20,
+                                        "width":  55,
+                                        "text":  "axis",
+                                        "x":  240
+                                    },
+                                    {
+                                        "y":  972,
+                                        "height":  24,
+                                        "width":  93,
+                                        "text":  "(\"off\")",
+                                        "x":  301
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ptt.subplot(l, 2, 2)",
+                      "words":  [
+                                    {
+                                        "y":  1038,
+                                        "height":  24,
+                                        "width":  195,
+                                        "text":  "ptt.subplot(l,",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  1040,
+                                        "height":  22,
+                                        "width":  22,
+                                        "text":  "2,",
+                                        "x":  399
+                                    },
+                                    {
+                                        "y":  1038,
+                                        "height":  22,
+                                        "width":  22,
+                                        "text":  "2)",
+                                        "x":  443
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ptt . imshow (image_keypoints)",
+                      "words":  [
+                                    {
+                                        "y":  1071,
+                                        "height":  23,
+                                        "width":  40,
+                                        "text":  "ptt",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  1085,
+                                        "height":  5,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  230
+                                    },
+                                    {
+                                        "y":  1071,
+                                        "height":  19,
+                                        "width":  84,
+                                        "text":  "imshow",
+                                        "x":  241
+                                    },
+                                    {
+                                        "y":  1069,
+                                        "height":  25,
+                                        "width":  236,
+                                        "text":  "(image_keypoints)",
+                                        "x":  330
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Keypoints\")",
+                      "words":  [
+                                    {
+                                        "y":  1102,
+                                        "height":  25,
+                                        "width":  152,
+                                        "text":  "Keypoints\")",
+                                        "x":  414
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "plt . axis (\"off\")",
+                      "words":  [
+                                    {
+                                        "y":  1136,
+                                        "height":  23,
+                                        "width":  40,
+                                        "text":  "plt",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  1150,
+                                        "height":  5,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  230
+                                    },
+                                    {
+                                        "y":  1136,
+                                        "height":  19,
+                                        "width":  55,
+                                        "text":  "axis",
+                                        "x":  240
+                                    },
+                                    {
+                                        "y":  1134,
+                                        "height":  24,
+                                        "width":  93,
+                                        "text":  "(\"off\")",
+                                        "x":  301
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "put.",
+                      "words":  [
+                                    {
+                                        "y":  1202,
+                                        "height":  23,
+                                        "width":  51,
+                                        "text":  "put.",
+                                        "x":  183
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "put. show()",
+                      "words":  [
+                                    {
+                                        "y":  1235,
+                                        "height":  22,
+                                        "width":  51,
+                                        "text":  "put.",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  1232,
+                                        "height":  24,
+                                        "width":  81,
+                                        "text":  "show()",
+                                        "x":  241
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# Print information",
+                      "words":  [
+                                    {
+                                        "y":  1300,
+                                        "height":  19,
+                                        "width":  13,
+                                        "text":  "#",
+                                        "x":  182
+                                    },
+                                    {
+                                        "y":  1300,
+                                        "height":  19,
+                                        "width":  69,
+                                        "text":  "Print",
+                                        "x":  212
+                                    },
+                                    {
+                                        "y":  1300,
+                                        "height":  19,
+                                        "width":  155,
+                                        "text":  "information",
+                                        "x":  299
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ten (keypoints))",
+                      "words":  [
+                                    {
+                                        "y":  1333,
+                                        "height":  18,
+                                        "width":  41,
+                                        "text":  "ten",
+                                        "x":  614
+                                    },
+                                    {
+                                        "y":  1330,
+                                        "height":  26,
+                                        "width":  166,
+                                        "text":  "(keypoints))",
+                                        "x":  661
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "of keypoints: \" ,",
+                      "words":  [
+                                    {
+                                        "y":  1333,
+                                        "height":  18,
+                                        "width":  26,
+                                        "text":  "of",
+                                        "x":  385
+                                    },
+                                    {
+                                        "y":  1332,
+                                        "height":  24,
+                                        "width":  137,
+                                        "text":  "keypoints:",
+                                        "x":  428
+                                    },
+                                    {
+                                        "y":  1333,
+                                        "height":  8,
+                                        "width":  9,
+                                        "text":  "\"",
+                                        "x":  573
+                                    },
+                                    {
+                                        "y":  1347,
+                                        "height":  9,
+                                        "width":  6,
+                                        "text":  ",",
+                                        "x":  588
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "print(\"Descriptor shape: \" ,",
+                      "words":  [
+                                    {
+                                        "y":  1363,
+                                        "height":  25,
+                                        "width":  243,
+                                        "text":  "print(\"Descriptor",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  1365,
+                                        "height":  23,
+                                        "width":  79,
+                                        "text":  "shape:",
+                                        "x":  443
+                                    },
+                                    {
+                                        "y":  1365,
+                                        "height":  9,
+                                        "width":  8,
+                                        "text":  "\"",
+                                        "x":  530
+                                    },
+                                    {
+                                        "y":  1380,
+                                        "height":  8,
+                                        "width":  6,
+                                        "text":  ",",
+                                        "x":  545
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FAST NUCES -",
+                      "words":  [
+                                    {
+                                        "y":  1822,
+                                        "height":  17,
+                                        "width":  56,
+                                        "text":  "FAST",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1822,
+                                        "height":  17,
+                                        "width":  78,
+                                        "text":  "NUCES",
+                                        "x":  234
+                                    },
+                                    {
+                                        "y":  1830,
+                                        "height":  4,
+                                        "width":  11,
+                                        "text":  "-",
+                                        "x":  320
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Karachi",
+                      "words":  [
+                                    {
+                                        "y":  1820,
+                                        "height":  19,
+                                        "width":  86,
+                                        "text":  "Karachi",
+                                        "x":  340
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "descriptors. shape)",
+                      "words":  [
+                                    {
+                                        "y":  1365,
+                                        "height":  23,
+                                        "width":  167,
+                                        "text":  "descriptors.",
+                                        "x":  572
+                                    },
+                                    {
+                                        "y":  1363,
+                                        "height":  25,
+                                        "width":  82,
+                                        "text":  "shape)",
+                                        "x":  745
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1821,
+                                        "height":  18,
+                                        "width":  65,
+                                        "text":  "Talha",
+                                        "x":  607
+                                    },
+                                    {
+                                        "y":  1820,
+                                        "height":  19,
+                                        "width":  80,
+                                        "text":  "Shahid",
+                                        "x":  681
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "23",
+                      "words":  [
+                                    {
+                                        "y":  1822,
+                                        "height":  17,
+                                        "width":  24,
+                                        "text":  "23",
+                                        "x":  1177
+                                    }
+                                ]
+                  }
+              ]
+}

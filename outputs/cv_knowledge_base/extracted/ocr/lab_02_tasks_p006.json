@@ -1,0 +1,1610 @@
+﻿{
+    "id":  "lab_02_tasks_p006",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "mathematically and visually validate the success fusion . Task 3: Real-Time Echocardiogram Video Analysis The Scenario: of the Moving from static images to dynamic data, your final task involves real-time processing of an Echocardiogram (ultrasound video of a beating heart). Ultrasound footage is notoriously noisy, murky, and low-contrast. You must build a real-time OpenCV pipeline that captures each frame of the .mp4 video, applies your mathematical enhancements , and displays the corrected feed live alongside the raw feed. The Operations: Video Capture Setup: Initialize cv2.VideoCapture() to read from the provided ultrasound .mp4 file rather than a webcam . Real-Time Video Processing Loop: Start a white loop to extract frames continuously. For every individual frame matrix : Apply Histogram Equalization to combat the murky ultrasound contrast. Convert the frame to a colored heatmap (COLORMAP_JET) o to highlight blood flow intensities. Apply a color balance adjustment. Apply a logarithmic transformation to reveal darkest regions of the heart chambers. Apply a power-law transformation to suppress the the blinding white backscatter noise typical of ultrasound probes . Monitoring Array: Concatenate the frames and use cv2. imshow() to display the raw, unedited ultrasound stream side-by-side with the fully enhanced pipeline frames. Talha Shahid 51 Page",
+    "review_status":  "raw_ocr_unverified",
+    "page":  6,
+    "source_id":  "lab_02_tasks",
+    "lines":  [
+                  {
+                      "text":  "mathematically and visually validate the success",
+                      "words":  [
+                                    {
+                                        "y":  177,
+                                        "height":  27,
+                                        "width":  229,
+                                        "text":  "mathematically",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  177,
+                                        "height":  22,
+                                        "width":  46,
+                                        "text":  "and",
+                                        "x":  506
+                                    },
+                                    {
+                                        "y":  177,
+                                        "height":  27,
+                                        "width":  128,
+                                        "text":  "visually",
+                                        "x":  579
+                                    },
+                                    {
+                                        "y":  177,
+                                        "height":  22,
+                                        "width":  129,
+                                        "text":  "validate",
+                                        "x":  733
+                                    },
+                                    {
+                                        "y":  177,
+                                        "height":  22,
+                                        "width":  47,
+                                        "text":  "the",
+                                        "x":  887
+                                    },
+                                    {
+                                        "y":  183,
+                                        "height":  16,
+                                        "width":  113,
+                                        "text":  "success",
+                                        "x":  960
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "fusion .",
+                      "words":  [
+                                    {
+                                        "y":  219,
+                                        "height":  21,
+                                        "width":  95,
+                                        "text":  "fusion",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  236,
+                                        "height":  4,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  356
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Task 3: Real-Time Echocardiogram Video Analysis",
+                      "words":  [
+                                    {
+                                        "y":  303,
+                                        "height":  24,
+                                        "width":  76,
+                                        "text":  "Task",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  304,
+                                        "height":  23,
+                                        "width":  32,
+                                        "text":  "3:",
+                                        "x":  266
+                                    },
+                                    {
+                                        "y":  302,
+                                        "height":  25,
+                                        "width":  170,
+                                        "text":  "Real-Time",
+                                        "x":  325
+                                    },
+                                    {
+                                        "y":  303,
+                                        "height":  30,
+                                        "width":  265,
+                                        "text":  "Echocardiogram",
+                                        "x":  518
+                                    },
+                                    {
+                                        "y":  303,
+                                        "height":  24,
+                                        "width":  95,
+                                        "text":  "Video",
+                                        "x":  804
+                                    },
+                                    {
+                                        "y":  302,
+                                        "height":  31,
+                                        "width":  152,
+                                        "text":  "Analysis",
+                                        "x":  919
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The Scenario:",
+                      "words":  [
+                                    {
+                                        "y":  358,
+                                        "height":  22,
+                                        "width":  48,
+                                        "text":  "The",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  358,
+                                        "height":  22,
+                                        "width":  143,
+                                        "text":  "Scenario:",
+                                        "x":  235
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "of the",
+                      "words":  [
+                                    {
+                                        "y":  177,
+                                        "height":  22,
+                                        "width":  30,
+                                        "text":  "of",
+                                        "x":  1099
+                                    },
+                                    {
+                                        "y":  177,
+                                        "height":  22,
+                                        "width":  48,
+                                        "text":  "the",
+                                        "x":  1153
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Moving from static images to dynamic data, your final task",
+                      "words":  [
+                                    {
+                                        "y":  418,
+                                        "height":  27,
+                                        "width":  97,
+                                        "text":  "Moving",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  418,
+                                        "height":  22,
+                                        "width":  64,
+                                        "text":  "from",
+                                        "x":  294
+                                    },
+                                    {
+                                        "y":  418,
+                                        "height":  22,
+                                        "width":  96,
+                                        "text":  "static",
+                                        "x":  385
+                                    },
+                                    {
+                                        "y":  418,
+                                        "height":  27,
+                                        "width":  95,
+                                        "text":  "images",
+                                        "x":  510
+                                    },
+                                    {
+                                        "y":  419,
+                                        "height":  21,
+                                        "width":  31,
+                                        "text":  "to",
+                                        "x":  632
+                                    },
+                                    {
+                                        "y":  418,
+                                        "height":  27,
+                                        "width":  112,
+                                        "text":  "dynamic",
+                                        "x":  690
+                                    },
+                                    {
+                                        "y":  418,
+                                        "height":  25,
+                                        "width":  76,
+                                        "text":  "data,",
+                                        "x":  831
+                                    },
+                                    {
+                                        "y":  424,
+                                        "height":  21,
+                                        "width":  64,
+                                        "text":  "your",
+                                        "x":  939
+                                    },
+                                    {
+                                        "y":  418,
+                                        "height":  22,
+                                        "width":  79,
+                                        "text":  "final",
+                                        "x":  1030
+                                    },
+                                    {
+                                        "y":  418,
+                                        "height":  22,
+                                        "width":  65,
+                                        "text":  "task",
+                                        "x":  1137
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "involves real-time processing of an Echocardiogram (ultrasound",
+                      "words":  [
+                                    {
+                                        "y":  459,
+                                        "height":  22,
+                                        "width":  128,
+                                        "text":  "involves",
+                                        "x":  171
+                                    },
+                                    {
+                                        "y":  459,
+                                        "height":  22,
+                                        "width":  145,
+                                        "text":  "real-time",
+                                        "x":  321
+                                    },
+                                    {
+                                        "y":  459,
+                                        "height":  27,
+                                        "width":  162,
+                                        "text":  "processing",
+                                        "x":  488
+                                    },
+                                    {
+                                        "y":  459,
+                                        "height":  22,
+                                        "width":  29,
+                                        "text":  "of",
+                                        "x":  671
+                                    },
+                                    {
+                                        "y":  465,
+                                        "height":  16,
+                                        "width":  30,
+                                        "text":  "an",
+                                        "x":  721
+                                    },
+                                    {
+                                        "y":  459,
+                                        "height":  27,
+                                        "width":  229,
+                                        "text":  "Echocardiogram",
+                                        "x":  773
+                                    },
+                                    {
+                                        "y":  458,
+                                        "height":  26,
+                                        "width":  175,
+                                        "text":  "(ultrasound",
+                                        "x":  1026
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "video of a beating heart). Ultrasound footage is notoriously",
+                      "words":  [
+                                    {
+                                        "y":  501,
+                                        "height":  22,
+                                        "width":  80,
+                                        "text":  "video",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  501,
+                                        "height":  22,
+                                        "width":  30,
+                                        "text":  "of",
+                                        "x":  275
+                                    },
+                                    {
+                                        "y":  507,
+                                        "height":  16,
+                                        "width":  15,
+                                        "text":  "a",
+                                        "x":  329
+                                    },
+                                    {
+                                        "y":  501,
+                                        "height":  27,
+                                        "width":  112,
+                                        "text":  "beating",
+                                        "x":  369
+                                    },
+                                    {
+                                        "y":  500,
+                                        "height":  26,
+                                        "width":  108,
+                                        "text":  "heart).",
+                                        "x":  506
+                                    },
+                                    {
+                                        "y":  501,
+                                        "height":  22,
+                                        "width":  161,
+                                        "text":  "Ultrasound",
+                                        "x":  643
+                                    },
+                                    {
+                                        "y":  501,
+                                        "height":  27,
+                                        "width":  113,
+                                        "text":  "footage",
+                                        "x":  829
+                                    },
+                                    {
+                                        "y":  501,
+                                        "height":  22,
+                                        "width":  29,
+                                        "text":  "is",
+                                        "x":  968
+                                    },
+                                    {
+                                        "y":  501,
+                                        "height":  27,
+                                        "width":  178,
+                                        "text":  "notoriously",
+                                        "x":  1023
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "noisy, murky, and low-contrast. You must build a real-time",
+                      "words":  [
+                                    {
+                                        "y":  542,
+                                        "height":  27,
+                                        "width":  91,
+                                        "text":  "noisy,",
+                                        "x":  171
+                                    },
+                                    {
+                                        "y":  542,
+                                        "height":  27,
+                                        "width":  92,
+                                        "text":  "murky,",
+                                        "x":  295
+                                    },
+                                    {
+                                        "y":  542,
+                                        "height":  22,
+                                        "width":  46,
+                                        "text":  "and",
+                                        "x":  420
+                                    },
+                                    {
+                                        "y":  542,
+                                        "height":  22,
+                                        "width":  207,
+                                        "text":  "low-contrast.",
+                                        "x":  496
+                                    },
+                                    {
+                                        "y":  543,
+                                        "height":  21,
+                                        "width":  47,
+                                        "text":  "You",
+                                        "x":  735
+                                    },
+                                    {
+                                        "y":  543,
+                                        "height":  21,
+                                        "width":  64,
+                                        "text":  "must",
+                                        "x":  811
+                                    },
+                                    {
+                                        "y":  542,
+                                        "height":  22,
+                                        "width":  79,
+                                        "text":  "build",
+                                        "x":  904
+                                    },
+                                    {
+                                        "y":  548,
+                                        "height":  16,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  1012
+                                    },
+                                    {
+                                        "y":  542,
+                                        "height":  22,
+                                        "width":  146,
+                                        "text":  "real-time",
+                                        "x":  1055
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "OpenCV pipeline that captures each frame of the .mp4 video,",
+                      "words":  [
+                                    {
+                                        "y":  585,
+                                        "height":  26,
+                                        "width":  97,
+                                        "text":  "OpenCV",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  584,
+                                        "height":  27,
+                                        "width":  129,
+                                        "text":  "pipeline",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  584,
+                                        "height":  21,
+                                        "width":  64,
+                                        "text":  "that",
+                                        "x":  447
+                                    },
+                                    {
+                                        "y":  585,
+                                        "height":  26,
+                                        "width":  129,
+                                        "text":  "captures",
+                                        "x":  537
+                                    },
+                                    {
+                                        "y":  584,
+                                        "height":  21,
+                                        "width":  63,
+                                        "text":  "each",
+                                        "x":  691
+                                    },
+                                    {
+                                        "y":  584,
+                                        "height":  21,
+                                        "width":  79,
+                                        "text":  "frame",
+                                        "x":  781
+                                    },
+                                    {
+                                        "y":  584,
+                                        "height":  21,
+                                        "width":  31,
+                                        "text":  "of",
+                                        "x":  886
+                                    },
+                                    {
+                                        "y":  584,
+                                        "height":  22,
+                                        "width":  48,
+                                        "text":  "the",
+                                        "x":  942
+                                    },
+                                    {
+                                        "y":  585,
+                                        "height":  26,
+                                        "width":  60,
+                                        "text":  ".mp4",
+                                        "x":  1020
+                                    },
+                                    {
+                                        "y":  584,
+                                        "height":  25,
+                                        "width":  93,
+                                        "text":  "video,",
+                                        "x":  1105
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "applies your mathematical enhancements ,",
+                      "words":  [
+                                    {
+                                        "y":  625,
+                                        "height":  26,
+                                        "width":  113,
+                                        "text":  "applies",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  631,
+                                        "height":  20,
+                                        "width":  65,
+                                        "text":  "your",
+                                        "x":  320
+                                    },
+                                    {
+                                        "y":  625,
+                                        "height":  21,
+                                        "width":  195,
+                                        "text":  "mathematical",
+                                        "x":  421
+                                    },
+                                    {
+                                        "y":  625,
+                                        "height":  21,
+                                        "width":  194,
+                                        "text":  "enhancements",
+                                        "x":  654
+                                    },
+                                    {
+                                        "y":  641,
+                                        "height":  9,
+                                        "width":  6,
+                                        "text":  ",",
+                                        "x":  855
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "and displays the",
+                      "words":  [
+                                    {
+                                        "y":  625,
+                                        "height":  21,
+                                        "width":  46,
+                                        "text":  "and",
+                                        "x":  903
+                                    },
+                                    {
+                                        "y":  625,
+                                        "height":  26,
+                                        "width":  130,
+                                        "text":  "displays",
+                                        "x":  987
+                                    },
+                                    {
+                                        "y":  625,
+                                        "height":  21,
+                                        "width":  47,
+                                        "text":  "the",
+                                        "x":  1154
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "corrected feed live alongside the raw feed.",
+                      "words":  [
+                                    {
+                                        "y":  666,
+                                        "height":  21,
+                                        "width":  144,
+                                        "text":  "corrected",
+                                        "x":  171
+                                    },
+                                    {
+                                        "y":  666,
+                                        "height":  21,
+                                        "width":  63,
+                                        "text":  "feed",
+                                        "x":  335
+                                    },
+                                    {
+                                        "y":  666,
+                                        "height":  21,
+                                        "width":  63,
+                                        "text":  "live",
+                                        "x":  418
+                                    },
+                                    {
+                                        "y":  666,
+                                        "height":  27,
+                                        "width":  146,
+                                        "text":  "alongside",
+                                        "x":  500
+                                    },
+                                    {
+                                        "y":  666,
+                                        "height":  21,
+                                        "width":  47,
+                                        "text":  "the",
+                                        "x":  664
+                                    },
+                                    {
+                                        "y":  672,
+                                        "height":  15,
+                                        "width":  48,
+                                        "text":  "raw",
+                                        "x":  730
+                                    },
+                                    {
+                                        "y":  666,
+                                        "height":  21,
+                                        "width":  75,
+                                        "text":  "feed.",
+                                        "x":  797
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The Operations:",
+                      "words":  [
+                                    {
+                                        "y":  726,
+                                        "height":  21,
+                                        "width":  48,
+                                        "text":  "The",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  725,
+                                        "height":  27,
+                                        "width":  176,
+                                        "text":  "Operations:",
+                                        "x":  235
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Video Capture Setup: Initialize cv2.VideoCapture() to read",
+                      "words":  [
+                                    {
+                                        "y":  785,
+                                        "height":  22,
+                                        "width":  82,
+                                        "text":  "Video",
+                                        "x":  251
+                                    },
+                                    {
+                                        "y":  786,
+                                        "height":  26,
+                                        "width":  114,
+                                        "text":  "Capture",
+                                        "x":  358
+                                    },
+                                    {
+                                        "y":  786,
+                                        "height":  26,
+                                        "width":  93,
+                                        "text":  "Setup:",
+                                        "x":  498
+                                    },
+                                    {
+                                        "y":  785,
+                                        "height":  22,
+                                        "width":  161,
+                                        "text":  "Initialize",
+                                        "x":  622
+                                    },
+                                    {
+                                        "y":  787,
+                                        "height":  24,
+                                        "width":  243,
+                                        "text":  "cv2.VideoCapture()",
+                                        "x":  810
+                                    },
+                                    {
+                                        "y":  786,
+                                        "height":  21,
+                                        "width":  31,
+                                        "text":  "to",
+                                        "x":  1081
+                                    },
+                                    {
+                                        "y":  785,
+                                        "height":  22,
+                                        "width":  62,
+                                        "text":  "read",
+                                        "x":  1139
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "from the provided ultrasound .mp4 file rather than a",
+                      "words":  [
+                                    {
+                                        "y":  827,
+                                        "height":  22,
+                                        "width":  63,
+                                        "text":  "from",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  827,
+                                        "height":  22,
+                                        "width":  48,
+                                        "text":  "the",
+                                        "x":  346
+                                    },
+                                    {
+                                        "y":  827,
+                                        "height":  27,
+                                        "width":  128,
+                                        "text":  "provided",
+                                        "x":  425
+                                    },
+                                    {
+                                        "y":  827,
+                                        "height":  22,
+                                        "width":  161,
+                                        "text":  "ultrasound",
+                                        "x":  585
+                                    },
+                                    {
+                                        "y":  828,
+                                        "height":  26,
+                                        "width":  59,
+                                        "text":  ".mp4",
+                                        "x":  782
+                                    },
+                                    {
+                                        "y":  827,
+                                        "height":  22,
+                                        "width":  63,
+                                        "text":  "file",
+                                        "x":  872
+                                    },
+                                    {
+                                        "y":  827,
+                                        "height":  22,
+                                        "width":  97,
+                                        "text":  "rather",
+                                        "x":  966
+                                    },
+                                    {
+                                        "y":  827,
+                                        "height":  22,
+                                        "width":  64,
+                                        "text":  "than",
+                                        "x":  1092
+                                    },
+                                    {
+                                        "y":  833,
+                                        "height":  16,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  1188
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "webcam .",
+                      "words":  [
+                                    {
+                                        "y":  869,
+                                        "height":  21,
+                                        "width":  97,
+                                        "text":  "webcam",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  886,
+                                        "height":  4,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  356
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Real-Time Video Processing Loop: Start a white loop to",
+                      "words":  [
+                                    {
+                                        "y":  928,
+                                        "height":  22,
+                                        "width":  146,
+                                        "text":  "Real-Time",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  928,
+                                        "height":  22,
+                                        "width":  81,
+                                        "text":  "Video",
+                                        "x":  426
+                                    },
+                                    {
+                                        "y":  928,
+                                        "height":  27,
+                                        "width":  163,
+                                        "text":  "Processing",
+                                        "x":  535
+                                    },
+                                    {
+                                        "y":  930,
+                                        "height":  24,
+                                        "width":  75,
+                                        "text":  "Loop:",
+                                        "x":  726
+                                    },
+                                    {
+                                        "y":  929,
+                                        "height":  21,
+                                        "width":  81,
+                                        "text":  "Start",
+                                        "x":  833
+                                    },
+                                    {
+                                        "y":  934,
+                                        "height":  16,
+                                        "width":  15,
+                                        "text":  "a",
+                                        "x":  942
+                                    },
+                                    {
+                                        "y":  931,
+                                        "height":  19,
+                                        "width":  67,
+                                        "text":  "white",
+                                        "x":  984
+                                    },
+                                    {
+                                        "y":  928,
+                                        "height":  26,
+                                        "width":  63,
+                                        "text":  "loop",
+                                        "x":  1080
+                                    },
+                                    {
+                                        "y":  930,
+                                        "height":  20,
+                                        "width":  31,
+                                        "text":  "to",
+                                        "x":  1171
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "extract frames continuously. For every individual frame",
+                      "words":  [
+                                    {
+                                        "y":  970,
+                                        "height":  20,
+                                        "width":  112,
+                                        "text":  "extract",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  969,
+                                        "height":  21,
+                                        "width":  96,
+                                        "text":  "frames",
+                                        "x":  392
+                                    },
+                                    {
+                                        "y":  969,
+                                        "height":  26,
+                                        "width":  206,
+                                        "text":  "continuously.",
+                                        "x":  515
+                                    },
+                                    {
+                                        "y":  970,
+                                        "height":  20,
+                                        "width":  47,
+                                        "text":  "For",
+                                        "x":  753
+                                    },
+                                    {
+                                        "y":  974,
+                                        "height":  21,
+                                        "width":  80,
+                                        "text":  "every",
+                                        "x":  826
+                                    },
+                                    {
+                                        "y":  969,
+                                        "height":  21,
+                                        "width":  160,
+                                        "text":  "individual",
+                                        "x":  934
+                                    },
+                                    {
+                                        "y":  969,
+                                        "height":  21,
+                                        "width":  79,
+                                        "text":  "frame",
+                                        "x":  1122
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "matrix :",
+                      "words":  [
+                                    {
+                                        "y":  1010,
+                                        "height":  22,
+                                        "width":  97,
+                                        "text":  "matrix",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1016,
+                                        "height":  16,
+                                        "width":  5,
+                                        "text":  ":",
+                                        "x":  356
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Apply Histogram Equalization to combat the murky",
+                      "words":  [
+                                    {
+                                        "y":  1070,
+                                        "height":  27,
+                                        "width":  81,
+                                        "text":  "Apply",
+                                        "x":  334
+                                    },
+                                    {
+                                        "y":  1070,
+                                        "height":  27,
+                                        "width":  146,
+                                        "text":  "Histogram",
+                                        "x":  447
+                                    },
+                                    {
+                                        "y":  1070,
+                                        "height":  27,
+                                        "width":  194,
+                                        "text":  "Equalization",
+                                        "x":  625
+                                    },
+                                    {
+                                        "y":  1071,
+                                        "height":  21,
+                                        "width":  31,
+                                        "text":  "to",
+                                        "x":  851
+                                    },
+                                    {
+                                        "y":  1070,
+                                        "height":  22,
+                                        "width":  96,
+                                        "text":  "combat",
+                                        "x":  914
+                                    },
+                                    {
+                                        "y":  1070,
+                                        "height":  22,
+                                        "width":  47,
+                                        "text":  "the",
+                                        "x":  1042
+                                    },
+                                    {
+                                        "y":  1070,
+                                        "height":  27,
+                                        "width":  80,
+                                        "text":  "murky",
+                                        "x":  1121
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ultrasound contrast.",
+                      "words":  [
+                                    {
+                                        "y":  1112,
+                                        "height":  22,
+                                        "width":  161,
+                                        "text":  "ultrasound",
+                                        "x":  336
+                                    },
+                                    {
+                                        "y":  1113,
+                                        "height":  21,
+                                        "width":  141,
+                                        "text":  "contrast.",
+                                        "x":  517
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Convert the frame to a colored heatmap (COLORMAP_JET)",
+                      "words":  [
+                                    {
+                                        "y":  1173,
+                                        "height":  20,
+                                        "width":  112,
+                                        "text":  "Convert",
+                                        "x":  335
+                                    },
+                                    {
+                                        "y":  1172,
+                                        "height":  21,
+                                        "width":  48,
+                                        "text":  "the",
+                                        "x":  470
+                                    },
+                                    {
+                                        "y":  1172,
+                                        "height":  21,
+                                        "width":  80,
+                                        "text":  "frame",
+                                        "x":  541
+                                    },
+                                    {
+                                        "y":  1173,
+                                        "height":  20,
+                                        "width":  31,
+                                        "text":  "to",
+                                        "x":  643
+                                    },
+                                    {
+                                        "y":  1178,
+                                        "height":  15,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  696
+                                    },
+                                    {
+                                        "y":  1172,
+                                        "height":  21,
+                                        "width":  112,
+                                        "text":  "colored",
+                                        "x":  733
+                                    },
+                                    {
+                                        "y":  1172,
+                                        "height":  27,
+                                        "width":  113,
+                                        "text":  "heatmap",
+                                        "x":  870
+                                    },
+                                    {
+                                        "y":  1171,
+                                        "height":  26,
+                                        "width":  189,
+                                        "text":  "(COLORMAP_JET)",
+                                        "x":  1009
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "o",
+                      "words":  [
+                                    {
+                                        "y":  1342,
+                                        "height":  11,
+                                        "width":  11,
+                                        "text":  "o",
+                                        "x":  294
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "to highlight blood flow intensities.",
+                      "words":  [
+                                    {
+                                        "y":  1214,
+                                        "height":  21,
+                                        "width":  31,
+                                        "text":  "to",
+                                        "x":  334
+                                    },
+                                    {
+                                        "y":  1213,
+                                        "height":  27,
+                                        "width":  145,
+                                        "text":  "highlight",
+                                        "x":  385
+                                    },
+                                    {
+                                        "y":  1213,
+                                        "height":  22,
+                                        "width":  78,
+                                        "text":  "blood",
+                                        "x":  550
+                                    },
+                                    {
+                                        "y":  1213,
+                                        "height":  22,
+                                        "width":  63,
+                                        "text":  "flow",
+                                        "x":  649
+                                    },
+                                    {
+                                        "y":  1213,
+                                        "height":  22,
+                                        "width":  190,
+                                        "text":  "intensities.",
+                                        "x":  731
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Apply a color balance adjustment.",
+                      "words":  [
+                                    {
+                                        "y":  1272,
+                                        "height":  26,
+                                        "width":  81,
+                                        "text":  "Apply",
+                                        "x":  334
+                                    },
+                                    {
+                                        "y":  1278,
+                                        "height":  15,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  434
+                                    },
+                                    {
+                                        "y":  1272,
+                                        "height":  21,
+                                        "width":  80,
+                                        "text":  "color",
+                                        "x":  468
+                                    },
+                                    {
+                                        "y":  1272,
+                                        "height":  21,
+                                        "width":  112,
+                                        "text":  "balance",
+                                        "x":  567
+                                    },
+                                    {
+                                        "y":  1272,
+                                        "height":  27,
+                                        "width":  175,
+                                        "text":  "adjustment.",
+                                        "x":  697
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Apply a logarithmic transformation to reveal",
+                      "words":  [
+                                    {
+                                        "y":  1331,
+                                        "height":  27,
+                                        "width":  81,
+                                        "text":  "Apply",
+                                        "x":  334
+                                    },
+                                    {
+                                        "y":  1337,
+                                        "height":  16,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  447
+                                    },
+                                    {
+                                        "y":  1331,
+                                        "height":  28,
+                                        "width":  178,
+                                        "text":  "logarithmic",
+                                        "x":  493
+                                    },
+                                    {
+                                        "y":  1331,
+                                        "height":  22,
+                                        "width":  229,
+                                        "text":  "transformation",
+                                        "x":  702
+                                    },
+                                    {
+                                        "y":  1333,
+                                        "height":  20,
+                                        "width":  31,
+                                        "text":  "to",
+                                        "x":  963
+                                    },
+                                    {
+                                        "y":  1331,
+                                        "height":  22,
+                                        "width":  96,
+                                        "text":  "reveal",
+                                        "x":  1026
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "darkest regions of the heart chambers.",
+                      "words":  [
+                                    {
+                                        "y":  1373,
+                                        "height":  22,
+                                        "width":  112,
+                                        "text":  "darkest",
+                                        "x":  335
+                                    },
+                                    {
+                                        "y":  1373,
+                                        "height":  27,
+                                        "width":  112,
+                                        "text":  "regions",
+                                        "x":  467
+                                    },
+                                    {
+                                        "y":  1373,
+                                        "height":  22,
+                                        "width":  31,
+                                        "text":  "of",
+                                        "x":  599
+                                    },
+                                    {
+                                        "y":  1373,
+                                        "height":  22,
+                                        "width":  47,
+                                        "text":  "the",
+                                        "x":  648
+                                    },
+                                    {
+                                        "y":  1373,
+                                        "height":  22,
+                                        "width":  79,
+                                        "text":  "heart",
+                                        "x":  714
+                                    },
+                                    {
+                                        "y":  1373,
+                                        "height":  22,
+                                        "width":  141,
+                                        "text":  "chambers.",
+                                        "x":  813
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Apply a power-law transformation to suppress",
+                      "words":  [
+                                    {
+                                        "y":  1433,
+                                        "height":  27,
+                                        "width":  81,
+                                        "text":  "Apply",
+                                        "x":  334
+                                    },
+                                    {
+                                        "y":  1439,
+                                        "height":  16,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  447
+                                    },
+                                    {
+                                        "y":  1433,
+                                        "height":  27,
+                                        "width":  146,
+                                        "text":  "power-law",
+                                        "x":  494
+                                    },
+                                    {
+                                        "y":  1433,
+                                        "height":  22,
+                                        "width":  228,
+                                        "text":  "transformation",
+                                        "x":  670
+                                    },
+                                    {
+                                        "y":  1434,
+                                        "height":  21,
+                                        "width":  31,
+                                        "text":  "to",
+                                        "x":  930
+                                    },
+                                    {
+                                        "y":  1439,
+                                        "height":  21,
+                                        "width":  129,
+                                        "text":  "suppress",
+                                        "x":  993
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "the",
+                      "words":  [
+                                    {
+                                        "y":  1331,
+                                        "height":  22,
+                                        "width":  48,
+                                        "text":  "the",
+                                        "x":  1153
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "the",
+                      "words":  [
+                                    {
+                                        "y":  1433,
+                                        "height":  22,
+                                        "width":  47,
+                                        "text":  "the",
+                                        "x":  1154
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "blinding white backscatter noise typical of ultrasound",
+                      "words":  [
+                                    {
+                                        "y":  1475,
+                                        "height":  27,
+                                        "width":  129,
+                                        "text":  "blinding",
+                                        "x":  336
+                                    },
+                                    {
+                                        "y":  1475,
+                                        "height":  22,
+                                        "width":  81,
+                                        "text":  "white",
+                                        "x":  479
+                                    },
+                                    {
+                                        "y":  1475,
+                                        "height":  21,
+                                        "width":  178,
+                                        "text":  "backscatter",
+                                        "x":  576
+                                    },
+                                    {
+                                        "y":  1475,
+                                        "height":  21,
+                                        "width":  79,
+                                        "text":  "noise",
+                                        "x":  770
+                                    },
+                                    {
+                                        "y":  1475,
+                                        "height":  27,
+                                        "width":  113,
+                                        "text":  "typical",
+                                        "x":  864
+                                    },
+                                    {
+                                        "y":  1475,
+                                        "height":  21,
+                                        "width":  31,
+                                        "text":  "of",
+                                        "x":  993
+                                    },
+                                    {
+                                        "y":  1475,
+                                        "height":  21,
+                                        "width":  161,
+                                        "text":  "ultrasound",
+                                        "x":  1040
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "probes .",
+                      "words":  [
+                                    {
+                                        "y":  1516,
+                                        "height":  27,
+                                        "width":  95,
+                                        "text":  "probes",
+                                        "x":  336
+                                    },
+                                    {
+                                        "y":  1533,
+                                        "height":  5,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  438
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Monitoring Array: Concatenate the frames and use",
+                      "words":  [
+                                    {
+                                        "y":  1576,
+                                        "height":  26,
+                                        "width":  164,
+                                        "text":  "Monitoring",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1577,
+                                        "height":  24,
+                                        "width":  94,
+                                        "text":  "Array:",
+                                        "x":  430
+                                    },
+                                    {
+                                        "y":  1577,
+                                        "height":  20,
+                                        "width":  177,
+                                        "text":  "Concatenate",
+                                        "x":  544
+                                    },
+                                    {
+                                        "y":  1576,
+                                        "height":  20,
+                                        "width":  48,
+                                        "text":  "the",
+                                        "x":  737
+                                    },
+                                    {
+                                        "y":  1576,
+                                        "height":  20,
+                                        "width":  95,
+                                        "text":  "frames",
+                                        "x":  801
+                                    },
+                                    {
+                                        "y":  1576,
+                                        "height":  20,
+                                        "width":  46,
+                                        "text":  "and",
+                                        "x":  913
+                                    },
+                                    {
+                                        "y":  1582,
+                                        "height":  14,
+                                        "width":  46,
+                                        "text":  "use",
+                                        "x":  977
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "cv2. imshow()",
+                      "words":  [
+                                    {
+                                        "y":  1579,
+                                        "height":  17,
+                                        "width":  49,
+                                        "text":  "cv2.",
+                                        "x":  1039
+                                    },
+                                    {
+                                        "y":  1577,
+                                        "height":  22,
+                                        "width":  105,
+                                        "text":  "imshow()",
+                                        "x":  1094
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "to display the raw, unedited ultrasound stream side-by-side",
+                      "words":  [
+                                    {
+                                        "y":  1618,
+                                        "height":  20,
+                                        "width":  31,
+                                        "text":  "to",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1616,
+                                        "height":  27,
+                                        "width":  113,
+                                        "text":  "display",
+                                        "x":  299
+                                    },
+                                    {
+                                        "y":  1616,
+                                        "height":  22,
+                                        "width":  48,
+                                        "text":  "the",
+                                        "x":  427
+                                    },
+                                    {
+                                        "y":  1623,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "raw,",
+                                        "x":  491
+                                    },
+                                    {
+                                        "y":  1616,
+                                        "height":  22,
+                                        "width":  127,
+                                        "text":  "unedited",
+                                        "x":  571
+                                    },
+                                    {
+                                        "y":  1616,
+                                        "height":  22,
+                                        "width":  161,
+                                        "text":  "ultrasound",
+                                        "x":  715
+                                    },
+                                    {
+                                        "y":  1618,
+                                        "height":  20,
+                                        "width":  96,
+                                        "text":  "stream",
+                                        "x":  894
+                                    },
+                                    {
+                                        "y":  1616,
+                                        "height":  27,
+                                        "width":  195,
+                                        "text":  "side-by-side",
+                                        "x":  1006
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "with the fully enhanced pipeline frames.",
+                      "words":  [
+                                    {
+                                        "y":  1658,
+                                        "height":  21,
+                                        "width":  63,
+                                        "text":  "with",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1658,
+                                        "height":  22,
+                                        "width":  48,
+                                        "text":  "the",
+                                        "x":  334
+                                    },
+                                    {
+                                        "y":  1658,
+                                        "height":  27,
+                                        "width":  80,
+                                        "text":  "fully",
+                                        "x":  401
+                                    },
+                                    {
+                                        "y":  1658,
+                                        "height":  22,
+                                        "width":  128,
+                                        "text":  "enhanced",
+                                        "x":  500
+                                    },
+                                    {
+                                        "y":  1658,
+                                        "height":  27,
+                                        "width":  128,
+                                        "text":  "pipeline",
+                                        "x":  649
+                                    },
+                                    {
+                                        "y":  1658,
+                                        "height":  22,
+                                        "width":  108,
+                                        "text":  "frames.",
+                                        "x":  797
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1825,
+                                        "height":  19,
+                                        "width":  69,
+                                        "text":  "Talha",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1823,
+                                        "height":  21,
+                                        "width":  88,
+                                        "text":  "Shahid",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "51",
+                      "words":  [
+                                    {
+                                        "y":  1824,
+                                        "height":  25,
+                                        "width":  29,
+                                        "text":  "51",
+                                        "x":  1072
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Page",
+                      "words":  [
+                                    {
+                                        "y":  1826,
+                                        "height":  24,
+                                        "width":  84,
+                                        "text":  "Page",
+                                        "x":  1112
+                                    }
+                                ]
+                  }
+              ]
+}

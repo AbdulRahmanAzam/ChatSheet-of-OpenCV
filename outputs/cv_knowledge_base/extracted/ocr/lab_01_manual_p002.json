@@ -1,0 +1,1563 @@
+﻿{
+    "id":  "lab_01_manual_p002",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "Computer Vision Lab 1. 2. 3. 4. 5. 6. 7. 8. 9. Course Code: A1-4002 Objectives Introduction To Computer Vision Basic Terminology Applications of Computer Vision Essential Libraries for Computer Vision Tabular comparison of the libraries for computer vision: Digital Image Digital Image Processing System Purpose of Image processing Fundamental Steps of Digital Image Processing: 10. IO. 1 Image Acquisition 10.2 Image Enhancement 10.3 Image Restoration 10.4 Color Image Processing 10.5 Wavelets and Multi-Resolution Processing 10. 6 Compression 10. 7 Morphological Processing 10.8 Segmentation 10.9 Representation and Description 10. 10 Object recognition 10. 11 Knowledge Base Basic Image Operations 11. 11. 1 Reading and Displaying an Image 11. 2 Grayscale Image 11.4 Resize Image 11. 5 Image Filtering (Blur) 11.6 Cropping 11.7 Adding Text on Image 11.8 Analyze the Image using Pandas FAST NUCES - Karachi Instructor: Talha Shahid 3 3 3 5 5 5 8 8 9 9 9 10 10 10 10 10 10 10 11 11 11 12 12 13 14 15 16 17 18 1",
+    "review_status":  "raw_ocr_unverified",
+    "page":  2,
+    "source_id":  "lab_01_manual",
+    "lines":  [
+                  {
+                      "text":  "Computer Vision Lab",
+                      "words":  [
+                                    {
+                                        "y":  427,
+                                        "height":  37,
+                                        "width":  194,
+                                        "text":  "Computer",
+                                        "x":  1003
+                                    },
+                                    {
+                                        "y":  424,
+                                        "height":  32,
+                                        "width":  120,
+                                        "text":  "Vision",
+                                        "x":  1210
+                                    },
+                                    {
+                                        "y":  426,
+                                        "height":  30,
+                                        "width":  70,
+                                        "text":  "Lab",
+                                        "x":  1348
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1.",
+                      "words":  [
+                                    {
+                                        "y":  566,
+                                        "height":  27,
+                                        "width":  22,
+                                        "text":  "1.",
+                                        "x":  240
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2.",
+                      "words":  [
+                                    {
+                                        "y":  634,
+                                        "height":  25,
+                                        "width":  25,
+                                        "text":  "2.",
+                                        "x":  238
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3.",
+                      "words":  [
+                                    {
+                                        "y":  701,
+                                        "height":  26,
+                                        "width":  26,
+                                        "text":  "3.",
+                                        "x":  237
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4.",
+                      "words":  [
+                                    {
+                                        "y":  769,
+                                        "height":  26,
+                                        "width":  28,
+                                        "text":  "4.",
+                                        "x":  238
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "5.",
+                      "words":  [
+                                    {
+                                        "y":  836,
+                                        "height":  26,
+                                        "width":  26,
+                                        "text":  "5.",
+                                        "x":  238
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "6.",
+                      "words":  [
+                                    {
+                                        "y":  904,
+                                        "height":  26,
+                                        "width":  26,
+                                        "text":  "6.",
+                                        "x":  238
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "7.",
+                      "words":  [
+                                    {
+                                        "y":  970,
+                                        "height":  27,
+                                        "width":  25,
+                                        "text":  "7.",
+                                        "x":  238
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "8.",
+                      "words":  [
+                                    {
+                                        "y":  1039,
+                                        "height":  26,
+                                        "width":  26,
+                                        "text":  "8.",
+                                        "x":  238
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "9.",
+                      "words":  [
+                                    {
+                                        "y":  1106,
+                                        "height":  26,
+                                        "width":  25,
+                                        "text":  "9.",
+                                        "x":  238
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Course Code: A1-4002",
+                      "words":  [
+                                    {
+                                        "y":  427,
+                                        "height":  29,
+                                        "width":  135,
+                                        "text":  "Course",
+                                        "x":  533
+                                    },
+                                    {
+                                        "y":  426,
+                                        "height":  30,
+                                        "width":  107,
+                                        "text":  "Code:",
+                                        "x":  683
+                                    },
+                                    {
+                                        "y":  427,
+                                        "height":  29,
+                                        "width":  165,
+                                        "text":  "A1-4002",
+                                        "x":  804
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Objectives",
+                      "words":  [
+                                    {
+                                        "y":  563,
+                                        "height":  37,
+                                        "width":  188,
+                                        "text":  "Objectives",
+                                        "x":  274
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Introduction To Computer Vision",
+                      "words":  [
+                                    {
+                                        "y":  631,
+                                        "height":  28,
+                                        "width":  228,
+                                        "text":  "Introduction",
+                                        "x":  277
+                                    },
+                                    {
+                                        "y":  636,
+                                        "height":  23,
+                                        "width":  36,
+                                        "text":  "To",
+                                        "x":  519
+                                    },
+                                    {
+                                        "y":  634,
+                                        "height":  33,
+                                        "width":  179,
+                                        "text":  "Computer",
+                                        "x":  568
+                                    },
+                                    {
+                                        "y":  631,
+                                        "height":  28,
+                                        "width":  110,
+                                        "text":  "Vision",
+                                        "x":  758
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Basic Terminology",
+                      "words":  [
+                                    {
+                                        "y":  697,
+                                        "height":  30,
+                                        "width":  93,
+                                        "text":  "Basic",
+                                        "x":  277
+                                    },
+                                    {
+                                        "y":  697,
+                                        "height":  38,
+                                        "width":  230,
+                                        "text":  "Terminology",
+                                        "x":  383
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Applications of Computer Vision",
+                      "words":  [
+                                    {
+                                        "y":  765,
+                                        "height":  37,
+                                        "width":  225,
+                                        "text":  "Applications",
+                                        "x":  277
+                                    },
+                                    {
+                                        "y":  767,
+                                        "height":  28,
+                                        "width":  37,
+                                        "text":  "of",
+                                        "x":  515
+                                    },
+                                    {
+                                        "y":  768,
+                                        "height":  34,
+                                        "width":  178,
+                                        "text":  "Computer",
+                                        "x":  564
+                                    },
+                                    {
+                                        "y":  765,
+                                        "height":  30,
+                                        "width":  109,
+                                        "text":  "Vision",
+                                        "x":  754
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Essential Libraries for Computer Vision",
+                      "words":  [
+                                    {
+                                        "y":  833,
+                                        "height":  29,
+                                        "width":  157,
+                                        "text":  "Essential",
+                                        "x":  278
+                                    },
+                                    {
+                                        "y":  833,
+                                        "height":  29,
+                                        "width":  159,
+                                        "text":  "Libraries",
+                                        "x":  451
+                                    },
+                                    {
+                                        "y":  835,
+                                        "height":  27,
+                                        "width":  52,
+                                        "text":  "for",
+                                        "x":  623
+                                    },
+                                    {
+                                        "y":  836,
+                                        "height":  34,
+                                        "width":  179,
+                                        "text":  "Computer",
+                                        "x":  688
+                                    },
+                                    {
+                                        "y":  833,
+                                        "height":  29,
+                                        "width":  109,
+                                        "text":  "Vision",
+                                        "x":  878
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Tabular comparison of the libraries for computer vision:",
+                      "words":  [
+                                    {
+                                        "y":  902,
+                                        "height":  28,
+                                        "width":  142,
+                                        "text":  "Tabular",
+                                        "x":  276
+                                    },
+                                    {
+                                        "y":  901,
+                                        "height":  37,
+                                        "width":  211,
+                                        "text":  "comparison",
+                                        "x":  431
+                                    },
+                                    {
+                                        "y":  903,
+                                        "height":  27,
+                                        "width":  37,
+                                        "text":  "of",
+                                        "x":  656
+                                    },
+                                    {
+                                        "y":  903,
+                                        "height":  27,
+                                        "width":  57,
+                                        "text":  "the",
+                                        "x":  704
+                                    },
+                                    {
+                                        "y":  901,
+                                        "height":  29,
+                                        "width":  149,
+                                        "text":  "libraries",
+                                        "x":  775
+                                    },
+                                    {
+                                        "y":  903,
+                                        "height":  27,
+                                        "width":  51,
+                                        "text":  "for",
+                                        "x":  937
+                                    },
+                                    {
+                                        "y":  906,
+                                        "height":  32,
+                                        "width":  174,
+                                        "text":  "computer",
+                                        "x":  1000
+                                    },
+                                    {
+                                        "y":  901,
+                                        "height":  29,
+                                        "width":  115,
+                                        "text":  "vision:",
+                                        "x":  1186
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Digital Image",
+                      "words":  [
+                                    {
+                                        "y":  967,
+                                        "height":  38,
+                                        "width":  119,
+                                        "text":  "Digital",
+                                        "x":  277
+                                    },
+                                    {
+                                        "y":  971,
+                                        "height":  34,
+                                        "width":  119,
+                                        "text":  "Image",
+                                        "x":  411
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Digital Image Processing System",
+                      "words":  [
+                                    {
+                                        "y":  1035,
+                                        "height":  38,
+                                        "width":  118,
+                                        "text":  "Digital",
+                                        "x":  279
+                                    },
+                                    {
+                                        "y":  1039,
+                                        "height":  34,
+                                        "width":  119,
+                                        "text":  "Image",
+                                        "x":  412
+                                    },
+                                    {
+                                        "y":  1035,
+                                        "height":  38,
+                                        "width":  190,
+                                        "text":  "Processing",
+                                        "x":  547
+                                    },
+                                    {
+                                        "y":  1038,
+                                        "height":  35,
+                                        "width":  129,
+                                        "text":  "System",
+                                        "x":  752
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Purpose of Image processing",
+                      "words":  [
+                                    {
+                                        "y":  1106,
+                                        "height":  34,
+                                        "width":  144,
+                                        "text":  "Purpose",
+                                        "x":  278
+                                    },
+                                    {
+                                        "y":  1105,
+                                        "height":  27,
+                                        "width":  37,
+                                        "text":  "of",
+                                        "x":  435
+                                    },
+                                    {
+                                        "y":  1106,
+                                        "height":  34,
+                                        "width":  119,
+                                        "text":  "Image",
+                                        "x":  485
+                                    },
+                                    {
+                                        "y":  1103,
+                                        "height":  37,
+                                        "width":  192,
+                                        "text":  "processing",
+                                        "x":  618
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Fundamental Steps of Digital Image Processing:",
+                      "words":  [
+                                    {
+                                        "y":  1172,
+                                        "height":  28,
+                                        "width":  237,
+                                        "text":  "Fundamental",
+                                        "x":  297
+                                    },
+                                    {
+                                        "y":  1174,
+                                        "height":  34,
+                                        "width":  97,
+                                        "text":  "Steps",
+                                        "x":  548
+                                    },
+                                    {
+                                        "y":  1172,
+                                        "height":  28,
+                                        "width":  37,
+                                        "text":  "of",
+                                        "x":  658
+                                    },
+                                    {
+                                        "y":  1170,
+                                        "height":  38,
+                                        "width":  118,
+                                        "text":  "Digital",
+                                        "x":  708
+                                    },
+                                    {
+                                        "y":  1174,
+                                        "height":  34,
+                                        "width":  119,
+                                        "text":  "Image",
+                                        "x":  842
+                                    },
+                                    {
+                                        "y":  1170,
+                                        "height":  38,
+                                        "width":  202,
+                                        "text":  "Processing:",
+                                        "x":  975
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "10.",
+                      "words":  [
+                                    {
+                                        "y":  1174,
+                                        "height":  26,
+                                        "width":  43,
+                                        "text":  "10.",
+                                        "x":  240
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "IO. 1 Image Acquisition",
+                      "words":  [
+                                    {
+                                        "y":  1241,
+                                        "height":  27,
+                                        "width":  44,
+                                        "text":  "IO.",
+                                        "x":  275
+                                    },
+                                    {
+                                        "y":  1241,
+                                        "height":  26,
+                                        "width":  14,
+                                        "text":  "1",
+                                        "x":  333
+                                    },
+                                    {
+                                        "y":  1241,
+                                        "height":  34,
+                                        "width":  114,
+                                        "text":  "Image",
+                                        "x":  360
+                                    },
+                                    {
+                                        "y":  1239,
+                                        "height":  35,
+                                        "width":  188,
+                                        "text":  "Acquisition",
+                                        "x":  486
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "10.2 Image Enhancement",
+                      "words":  [
+                                    {
+                                        "y":  1308,
+                                        "height":  26,
+                                        "width":  64,
+                                        "text":  "10.2",
+                                        "x":  275
+                                    },
+                                    {
+                                        "y":  1308,
+                                        "height":  34,
+                                        "width":  114,
+                                        "text":  "Image",
+                                        "x":  352
+                                    },
+                                    {
+                                        "y":  1307,
+                                        "height":  27,
+                                        "width":  234,
+                                        "text":  "Enhancement",
+                                        "x":  479
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "10.3 Image Restoration",
+                      "words":  [
+                                    {
+                                        "y":  1376,
+                                        "height":  26,
+                                        "width":  63,
+                                        "text":  "10.3",
+                                        "x":  275
+                                    },
+                                    {
+                                        "y":  1376,
+                                        "height":  34,
+                                        "width":  114,
+                                        "text":  "Image",
+                                        "x":  351
+                                    },
+                                    {
+                                        "y":  1373,
+                                        "height":  29,
+                                        "width":  197,
+                                        "text":  "Restoration",
+                                        "x":  479
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "10.4 Color Image Processing",
+                      "words":  [
+                                    {
+                                        "y":  1443,
+                                        "height":  27,
+                                        "width":  66,
+                                        "text":  "10.4",
+                                        "x":  275
+                                    },
+                                    {
+                                        "y":  1442,
+                                        "height":  28,
+                                        "width":  90,
+                                        "text":  "Color",
+                                        "x":  354
+                                    },
+                                    {
+                                        "y":  1443,
+                                        "height":  35,
+                                        "width":  113,
+                                        "text":  "Image",
+                                        "x":  456
+                                    },
+                                    {
+                                        "y":  1441,
+                                        "height":  37,
+                                        "width":  181,
+                                        "text":  "Processing",
+                                        "x":  584
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "10.5 Wavelets and Multi-Resolution Processing",
+                      "words":  [
+                                    {
+                                        "y":  1511,
+                                        "height":  27,
+                                        "width":  64,
+                                        "text":  "10.5",
+                                        "x":  275
+                                    },
+                                    {
+                                        "y":  1510,
+                                        "height":  28,
+                                        "width":  159,
+                                        "text":  "Wavelets",
+                                        "x":  351
+                                    },
+                                    {
+                                        "y":  1510,
+                                        "height":  28,
+                                        "width":  63,
+                                        "text":  "and",
+                                        "x":  522
+                                    },
+                                    {
+                                        "y":  1509,
+                                        "height":  29,
+                                        "width":  276,
+                                        "text":  "Multi-Resolution",
+                                        "x":  600
+                                    },
+                                    {
+                                        "y":  1509,
+                                        "height":  36,
+                                        "width":  181,
+                                        "text":  "Processing",
+                                        "x":  891
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "10. 6 Compression",
+                      "words":  [
+                                    {
+                                        "y":  1578,
+                                        "height":  26,
+                                        "width":  44,
+                                        "text":  "10.",
+                                        "x":  275
+                                    },
+                                    {
+                                        "y":  1578,
+                                        "height":  26,
+                                        "width":  17,
+                                        "text":  "6",
+                                        "x":  332
+                                    },
+                                    {
+                                        "y":  1576,
+                                        "height":  36,
+                                        "width":  222,
+                                        "text":  "Compression",
+                                        "x":  361
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "10. 7 Morphological Processing",
+                      "words":  [
+                                    {
+                                        "y":  1645,
+                                        "height":  27,
+                                        "width":  44,
+                                        "text":  "10.",
+                                        "x":  275
+                                    },
+                                    {
+                                        "y":  1646,
+                                        "height":  26,
+                                        "width":  17,
+                                        "text":  "7",
+                                        "x":  332
+                                    },
+                                    {
+                                        "y":  1643,
+                                        "height":  37,
+                                        "width":  242,
+                                        "text":  "Morphological",
+                                        "x":  363
+                                    },
+                                    {
+                                        "y":  1643,
+                                        "height":  37,
+                                        "width":  182,
+                                        "text":  "Processing",
+                                        "x":  620
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "10.8 Segmentation",
+                      "words":  [
+                                    {
+                                        "y":  1713,
+                                        "height":  26,
+                                        "width":  63,
+                                        "text":  "10.8",
+                                        "x":  276
+                                    },
+                                    {
+                                        "y":  1711,
+                                        "height":  36,
+                                        "width":  240,
+                                        "text":  "Segmentation",
+                                        "x":  353
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "10.9 Representation and Description",
+                      "words":  [
+                                    {
+                                        "y":  1781,
+                                        "height":  26,
+                                        "width":  64,
+                                        "text":  "10.9",
+                                        "x":  275
+                                    },
+                                    {
+                                        "y":  1778,
+                                        "height":  37,
+                                        "width":  261,
+                                        "text":  "Representation",
+                                        "x":  353
+                                    },
+                                    {
+                                        "y":  1780,
+                                        "height":  27,
+                                        "width":  63,
+                                        "text":  "and",
+                                        "x":  627
+                                    },
+                                    {
+                                        "y":  1778,
+                                        "height":  37,
+                                        "width":  193,
+                                        "text":  "Description",
+                                        "x":  705
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "10. 10 Object recognition",
+                      "words":  [
+                                    {
+                                        "y":  1848,
+                                        "height":  27,
+                                        "width":  44,
+                                        "text":  "10.",
+                                        "x":  275
+                                    },
+                                    {
+                                        "y":  1848,
+                                        "height":  27,
+                                        "width":  36,
+                                        "text":  "10",
+                                        "x":  333
+                                    },
+                                    {
+                                        "y":  1846,
+                                        "height":  35,
+                                        "width":  112,
+                                        "text":  "Object",
+                                        "x":  381
+                                    },
+                                    {
+                                        "y":  1846,
+                                        "height":  37,
+                                        "width":  193,
+                                        "text":  "recognition",
+                                        "x":  506
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "10. 11 Knowledge Base",
+                      "words":  [
+                                    {
+                                        "y":  1915,
+                                        "height":  26,
+                                        "width":  44,
+                                        "text":  "10.",
+                                        "x":  275
+                                    },
+                                    {
+                                        "y":  1915,
+                                        "height":  26,
+                                        "width":  31,
+                                        "text":  "11",
+                                        "x":  333
+                                    },
+                                    {
+                                        "y":  1914,
+                                        "height":  35,
+                                        "width":  191,
+                                        "text":  "Knowledge",
+                                        "x":  379
+                                    },
+                                    {
+                                        "y":  1915,
+                                        "height":  26,
+                                        "width":  81,
+                                        "text":  "Base",
+                                        "x":  583
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Basic Image Operations",
+                      "words":  [
+                                    {
+                                        "y":  1980,
+                                        "height":  29,
+                                        "width":  93,
+                                        "text":  "Basic",
+                                        "x":  294
+                                    },
+                                    {
+                                        "y":  1983,
+                                        "height":  34,
+                                        "width":  120,
+                                        "text":  "Image",
+                                        "x":  401
+                                    },
+                                    {
+                                        "y":  1980,
+                                        "height":  37,
+                                        "width":  200,
+                                        "text":  "Operations",
+                                        "x":  534
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "11.",
+                      "words":  [
+                                    {
+                                        "y":  1983,
+                                        "height":  26,
+                                        "width":  39,
+                                        "text":  "11.",
+                                        "x":  240
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "11. 1 Reading and Displaying an Image",
+                      "words":  [
+                                    {
+                                        "y":  2050,
+                                        "height":  27,
+                                        "width":  40,
+                                        "text":  "11.",
+                                        "x":  275
+                                    },
+                                    {
+                                        "y":  2050,
+                                        "height":  27,
+                                        "width":  14,
+                                        "text":  "1",
+                                        "x":  329
+                                    },
+                                    {
+                                        "y":  2048,
+                                        "height":  37,
+                                        "width":  140,
+                                        "text":  "Reading",
+                                        "x":  357
+                                    },
+                                    {
+                                        "y":  2049,
+                                        "height":  28,
+                                        "width":  63,
+                                        "text":  "and",
+                                        "x":  511
+                                    },
+                                    {
+                                        "y":  2048,
+                                        "height":  37,
+                                        "width":  178,
+                                        "text":  "Displaying",
+                                        "x":  589
+                                    },
+                                    {
+                                        "y":  2057,
+                                        "height":  20,
+                                        "width":  41,
+                                        "text":  "an",
+                                        "x":  780
+                                    },
+                                    {
+                                        "y":  2050,
+                                        "height":  35,
+                                        "width":  113,
+                                        "text":  "Image",
+                                        "x":  835
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "11. 2 Grayscale Image",
+                      "words":  [
+                                    {
+                                        "y":  2118,
+                                        "height":  27,
+                                        "width":  40,
+                                        "text":  "11.",
+                                        "x":  275
+                                    },
+                                    {
+                                        "y":  2118,
+                                        "height":  26,
+                                        "width":  17,
+                                        "text":  "2",
+                                        "x":  328
+                                    },
+                                    {
+                                        "y":  2117,
+                                        "height":  36,
+                                        "width":  172,
+                                        "text":  "Grayscale",
+                                        "x":  357
+                                    },
+                                    {
+                                        "y":  2118,
+                                        "height":  35,
+                                        "width":  113,
+                                        "text":  "Image",
+                                        "x":  542
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "11.4 Resize Image",
+                      "words":  [
+                                    {
+                                        "y":  2186,
+                                        "height":  26,
+                                        "width":  72,
+                                        "text":  "11.4",
+                                        "x":  276
+                                    },
+                                    {
+                                        "y":  2184,
+                                        "height":  28,
+                                        "width":  107,
+                                        "text":  "Resize",
+                                        "x":  362
+                                    },
+                                    {
+                                        "y":  2186,
+                                        "height":  34,
+                                        "width":  113,
+                                        "text":  "Image",
+                                        "x":  482
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "11. 5 Image Filtering (Blur)",
+                      "words":  [
+                                    {
+                                        "y":  2252,
+                                        "height":  27,
+                                        "width":  40,
+                                        "text":  "11.",
+                                        "x":  275
+                                    },
+                                    {
+                                        "y":  2253,
+                                        "height":  26,
+                                        "width":  17,
+                                        "text":  "5",
+                                        "x":  328
+                                    },
+                                    {
+                                        "y":  2253,
+                                        "height":  34,
+                                        "width":  113,
+                                        "text":  "Image",
+                                        "x":  359
+                                    },
+                                    {
+                                        "y":  2250,
+                                        "height":  37,
+                                        "width":  139,
+                                        "text":  "Filtering",
+                                        "x":  486
+                                    },
+                                    {
+                                        "y":  2251,
+                                        "height":  34,
+                                        "width":  93,
+                                        "text":  "(Blur)",
+                                        "x":  638
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "11.6 Cropping",
+                      "words":  [
+                                    {
+                                        "y":  2320,
+                                        "height":  27,
+                                        "width":  60,
+                                        "text":  "11.6",
+                                        "x":  275
+                                    },
+                                    {
+                                        "y":  2318,
+                                        "height":  37,
+                                        "width":  156,
+                                        "text":  "Cropping",
+                                        "x":  348
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "11.7 Adding Text on Image",
+                      "words":  [
+                                    {
+                                        "y":  2388,
+                                        "height":  26,
+                                        "width":  60,
+                                        "text":  "11.7",
+                                        "x":  275
+                                    },
+                                    {
+                                        "y":  2385,
+                                        "height":  37,
+                                        "width":  121,
+                                        "text":  "Adding",
+                                        "x":  347
+                                    },
+                                    {
+                                        "y":  2388,
+                                        "height":  26,
+                                        "width":  74,
+                                        "text":  "Text",
+                                        "x":  481
+                                    },
+                                    {
+                                        "y":  2394,
+                                        "height":  20,
+                                        "width":  40,
+                                        "text":  "on",
+                                        "x":  567
+                                    },
+                                    {
+                                        "y":  2388,
+                                        "height":  34,
+                                        "width":  113,
+                                        "text":  "Image",
+                                        "x":  621
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "11.8 Analyze the Image using Pandas",
+                      "words":  [
+                                    {
+                                        "y":  2456,
+                                        "height":  26,
+                                        "width":  61,
+                                        "text":  "11.8",
+                                        "x":  275
+                                    },
+                                    {
+                                        "y":  2454,
+                                        "height":  36,
+                                        "width":  135,
+                                        "text":  "Analyze",
+                                        "x":  348
+                                    },
+                                    {
+                                        "y":  2454,
+                                        "height":  28,
+                                        "width":  54,
+                                        "text":  "the",
+                                        "x":  495
+                                    },
+                                    {
+                                        "y":  2456,
+                                        "height":  34,
+                                        "width":  113,
+                                        "text":  "Image",
+                                        "x":  562
+                                    },
+                                    {
+                                        "y":  2453,
+                                        "height":  37,
+                                        "width":  89,
+                                        "text":  "using",
+                                        "x":  688
+                                    },
+                                    {
+                                        "y":  2454,
+                                        "height":  28,
+                                        "width":  125,
+                                        "text":  "Pandas",
+                                        "x":  792
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FAST NUCES - Karachi",
+                      "words":  [
+                                    {
+                                        "y":  2536,
+                                        "height":  26,
+                                        "width":  87,
+                                        "text":  "FAST",
+                                        "x":  240
+                                    },
+                                    {
+                                        "y":  2536,
+                                        "height":  26,
+                                        "width":  120,
+                                        "text":  "NUCES",
+                                        "x":  341
+                                    },
+                                    {
+                                        "y":  2548,
+                                        "height":  5,
+                                        "width":  12,
+                                        "text":  "-",
+                                        "x":  474
+                                    },
+                                    {
+                                        "y":  2533,
+                                        "height":  28,
+                                        "width":  133,
+                                        "text":  "Karachi",
+                                        "x":  501
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Instructor: Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  2536,
+                                        "height":  26,
+                                        "width":  183,
+                                        "text":  "Instructor:",
+                                        "x":  808
+                                    },
+                                    {
+                                        "y":  2535,
+                                        "height":  26,
+                                        "width":  100,
+                                        "text":  "Talha",
+                                        "x":  1004
+                                    },
+                                    {
+                                        "y":  2533,
+                                        "height":  28,
+                                        "width":  123,
+                                        "text":  "Shahid",
+                                        "x":  1119
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "words":  [
+                                    {
+                                        "y":  566,
+                                        "height":  27,
+                                        "width":  18,
+                                        "text":  "3",
+                                        "x":  1680
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "words":  [
+                                    {
+                                        "y":  634,
+                                        "height":  26,
+                                        "width":  18,
+                                        "text":  "3",
+                                        "x":  1680
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "words":  [
+                                    {
+                                        "y":  700,
+                                        "height":  28,
+                                        "width":  18,
+                                        "text":  "3",
+                                        "x":  1680
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "5",
+                      "words":  [
+                                    {
+                                        "y":  768,
+                                        "height":  27,
+                                        "width":  18,
+                                        "text":  "5",
+                                        "x":  1680
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "5",
+                      "words":  [
+                                    {
+                                        "y":  836,
+                                        "height":  27,
+                                        "width":  18,
+                                        "text":  "5",
+                                        "x":  1680
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "5",
+                      "words":  [
+                                    {
+                                        "y":  904,
+                                        "height":  27,
+                                        "width":  18,
+                                        "text":  "5",
+                                        "x":  1680
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "8",
+                      "words":  [
+                                    {
+                                        "y":  970,
+                                        "height":  27,
+                                        "width":  18,
+                                        "text":  "8",
+                                        "x":  1680
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "8",
+                      "words":  [
+                                    {
+                                        "y":  1038,
+                                        "height":  27,
+                                        "width":  18,
+                                        "text":  "8",
+                                        "x":  1680
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "9",
+                      "words":  [
+                                    {
+                                        "y":  1105,
+                                        "height":  28,
+                                        "width":  18,
+                                        "text":  "9",
+                                        "x":  1680
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "9",
+                      "words":  [
+                                    {
+                                        "y":  1173,
+                                        "height":  27,
+                                        "width":  18,
+                                        "text":  "9",
+                                        "x":  1680
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "9",
+                      "words":  [
+                                    {
+                                        "y":  1241,
+                                        "height":  27,
+                                        "width":  18,
+                                        "text":  "9",
+                                        "x":  1680
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "10",
+                      "words":  [
+                                    {
+                                        "y":  1307,
+                                        "height":  28,
+                                        "width":  35,
+                                        "text":  "10",
+                                        "x":  1663
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "10",
+                      "words":  [
+                                    {
+                                        "y":  1375,
+                                        "height":  27,
+                                        "width":  35,
+                                        "text":  "10",
+                                        "x":  1663
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "10",
+                      "words":  [
+                                    {
+                                        "y":  1443,
+                                        "height":  27,
+                                        "width":  35,
+                                        "text":  "10",
+                                        "x":  1663
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "10",
+                      "words":  [
+                                    {
+                                        "y":  1511,
+                                        "height":  27,
+                                        "width":  35,
+                                        "text":  "10",
+                                        "x":  1663
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "10",
+                      "words":  [
+                                    {
+                                        "y":  1578,
+                                        "height":  26,
+                                        "width":  35,
+                                        "text":  "10",
+                                        "x":  1663
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "10",
+                      "words":  [
+                                    {
+                                        "y":  1645,
+                                        "height":  27,
+                                        "width":  35,
+                                        "text":  "10",
+                                        "x":  1663
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "10",
+                      "words":  [
+                                    {
+                                        "y":  1712,
+                                        "height":  28,
+                                        "width":  35,
+                                        "text":  "10",
+                                        "x":  1663
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "11",
+                      "words":  [
+                                    {
+                                        "y":  1780,
+                                        "height":  27,
+                                        "width":  30,
+                                        "text":  "11",
+                                        "x":  1663
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "11",
+                      "words":  [
+                                    {
+                                        "y":  1848,
+                                        "height":  27,
+                                        "width":  30,
+                                        "text":  "11",
+                                        "x":  1663
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "11",
+                      "words":  [
+                                    {
+                                        "y":  1915,
+                                        "height":  26,
+                                        "width":  30,
+                                        "text":  "11",
+                                        "x":  1663
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "12",
+                      "words":  [
+                                    {
+                                        "y":  1982,
+                                        "height":  27,
+                                        "width":  35,
+                                        "text":  "12",
+                                        "x":  1663
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "12",
+                      "words":  [
+                                    {
+                                        "y":  2050,
+                                        "height":  27,
+                                        "width":  35,
+                                        "text":  "12",
+                                        "x":  1663
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "13",
+                      "words":  [
+                                    {
+                                        "y":  2118,
+                                        "height":  27,
+                                        "width":  35,
+                                        "text":  "13",
+                                        "x":  1663
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "14",
+                      "words":  [
+                                    {
+                                        "y":  2185,
+                                        "height":  27,
+                                        "width":  35,
+                                        "text":  "14",
+                                        "x":  1663
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "15",
+                      "words":  [
+                                    {
+                                        "y":  2252,
+                                        "height":  27,
+                                        "width":  35,
+                                        "text":  "15",
+                                        "x":  1663
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "16",
+                      "words":  [
+                                    {
+                                        "y":  2320,
+                                        "height":  27,
+                                        "width":  35,
+                                        "text":  "16",
+                                        "x":  1663
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "17",
+                      "words":  [
+                                    {
+                                        "y":  2387,
+                                        "height":  27,
+                                        "width":  35,
+                                        "text":  "17",
+                                        "x":  1663
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "18",
+                      "words":  [
+                                    {
+                                        "y":  2455,
+                                        "height":  27,
+                                        "width":  35,
+                                        "text":  "18",
+                                        "x":  1663
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1",
+                      "words":  [
+                                    {
+                                        "y":  2536,
+                                        "height":  25,
+                                        "width":  14,
+                                        "text":  "1",
+                                        "x":  1685
+                                    }
+                                ]
+                  }
+              ]
+}

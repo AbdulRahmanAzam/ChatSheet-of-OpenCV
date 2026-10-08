@@ -1,0 +1,2000 @@
+﻿{
+    "id":  "lab_02_tasks_p005",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "reducing the harsh contrast of the bones so the soft lung tissue becomes clearer. Task 2: Multi-modal Cardiac Image Fusion The Scenario: You are now a senior perception engineer at a cardiac research institute. Doctors frequently struggle to analyze the heart because CT scans show excellent structural boundaries, but MRI scans are vastly superior at showing soft tissue variations. Your objective is to mathematically fuse perfectly aligned CT and MRI slices of the same heart into a single, unified matrix to provide a comprehensive diagnostic view. The Operations: • • • • • Load Modalities: Load one CT slice and its perfectly corresponding MRI slice from the dataset. Histogram Equalization: Apply equalization to both the CT and MRI matrices independently to maximize their dynamic ranges before blending. Color Mapping and Fusion: Convert the enhanced CT and MRI images into colored heatmaps (e.g. , mapping the MRI to a specific color map). Overlay the matrices to create a unified view. Multi-modal Weighted Fusion: Use cv2.addWeighted() to adjust the alpha and beta blending values. Assign a heavier weight to the CT matrix to preserve the sharp anatomical edges, and a lighter weight to the MRI matrix to highlight the internal tissue variations. Logarithmic and Power-Law Transformations: Pass the final fused matrix through logarithmic and power-law functions to ensure no critical data is crushed into pure black or blown out to pure white during the addition process. Comparative Analysis: Display the standalone CT frame, the standalone MRI frame, and the fused output side-by-side to Talha Shahid 41 Page",
+    "review_status":  "raw_ocr_unverified",
+    "page":  5,
+    "source_id":  "lab_02_tasks",
+    "lines":  [
+                  {
+                      "text":  "reducing the harsh contrast of the bones so the soft lung",
+                      "words":  [
+                                    {
+                                        "y":  177,
+                                        "height":  27,
+                                        "width":  130,
+                                        "text":  "reducing",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  177,
+                                        "height":  22,
+                                        "width":  48,
+                                        "text":  "the",
+                                        "x":  401
+                                    },
+                                    {
+                                        "y":  177,
+                                        "height":  22,
+                                        "width":  78,
+                                        "text":  "harsh",
+                                        "x":  470
+                                    },
+                                    {
+                                        "y":  178,
+                                        "height":  21,
+                                        "width":  128,
+                                        "text":  "contrast",
+                                        "x":  570
+                                    },
+                                    {
+                                        "y":  177,
+                                        "height":  22,
+                                        "width":  31,
+                                        "text":  "of",
+                                        "x":  718
+                                    },
+                                    {
+                                        "y":  177,
+                                        "height":  22,
+                                        "width":  47,
+                                        "text":  "the",
+                                        "x":  768
+                                    },
+                                    {
+                                        "y":  177,
+                                        "height":  22,
+                                        "width":  79,
+                                        "text":  "bones",
+                                        "x":  836
+                                    },
+                                    {
+                                        "y":  183,
+                                        "height":  16,
+                                        "width":  30,
+                                        "text":  "so",
+                                        "x":  936
+                                    },
+                                    {
+                                        "y":  177,
+                                        "height":  22,
+                                        "width":  47,
+                                        "text":  "the",
+                                        "x":  986
+                                    },
+                                    {
+                                        "y":  177,
+                                        "height":  22,
+                                        "width":  63,
+                                        "text":  "soft",
+                                        "x":  1054
+                                    },
+                                    {
+                                        "y":  177,
+                                        "height":  27,
+                                        "width":  63,
+                                        "text":  "lung",
+                                        "x":  1138
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "tissue becomes clearer.",
+                      "words":  [
+                                    {
+                                        "y":  219,
+                                        "height":  21,
+                                        "width":  97,
+                                        "text":  "tissue",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  219,
+                                        "height":  21,
+                                        "width":  112,
+                                        "text":  "becomes",
+                                        "x":  369
+                                    },
+                                    {
+                                        "y":  219,
+                                        "height":  22,
+                                        "width":  124,
+                                        "text":  "clearer.",
+                                        "x":  501
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Task 2: Multi-modal Cardiac Image Fusion",
+                      "words":  [
+                                    {
+                                        "y":  303,
+                                        "height":  24,
+                                        "width":  76,
+                                        "text":  "Task",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  304,
+                                        "height":  23,
+                                        "width":  32,
+                                        "text":  "2:",
+                                        "x":  266
+                                    },
+                                    {
+                                        "y":  302,
+                                        "height":  25,
+                                        "width":  209,
+                                        "text":  "Multi-modal",
+                                        "x":  324
+                                    },
+                                    {
+                                        "y":  303,
+                                        "height":  24,
+                                        "width":  131,
+                                        "text":  "Cardiac",
+                                        "x":  555
+                                    },
+                                    {
+                                        "y":  304,
+                                        "height":  29,
+                                        "width":  93,
+                                        "text":  "Image",
+                                        "x":  709
+                                    },
+                                    {
+                                        "y":  303,
+                                        "height":  24,
+                                        "width":  112,
+                                        "text":  "Fusion",
+                                        "x":  825
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The Scenario:",
+                      "words":  [
+                                    {
+                                        "y":  358,
+                                        "height":  22,
+                                        "width":  48,
+                                        "text":  "The",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  358,
+                                        "height":  22,
+                                        "width":  143,
+                                        "text":  "Scenario:",
+                                        "x":  235
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "You are now a senior perception engineer at a cardiac research",
+                      "words":  [
+                                    {
+                                        "y":  419,
+                                        "height":  21,
+                                        "width":  47,
+                                        "text":  "You",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  424,
+                                        "height":  16,
+                                        "width":  47,
+                                        "text":  "are",
+                                        "x":  237
+                                    },
+                                    {
+                                        "y":  424,
+                                        "height":  16,
+                                        "width":  47,
+                                        "text":  "now",
+                                        "x":  305
+                                    },
+                                    {
+                                        "y":  424,
+                                        "height":  16,
+                                        "width":  15,
+                                        "text":  "a",
+                                        "x":  371
+                                    },
+                                    {
+                                        "y":  418,
+                                        "height":  22,
+                                        "width":  96,
+                                        "text":  "senior",
+                                        "x":  406
+                                    },
+                                    {
+                                        "y":  418,
+                                        "height":  27,
+                                        "width":  160,
+                                        "text":  "perception",
+                                        "x":  523
+                                    },
+                                    {
+                                        "y":  418,
+                                        "height":  27,
+                                        "width":  131,
+                                        "text":  "engineer",
+                                        "x":  703
+                                    },
+                                    {
+                                        "y":  419,
+                                        "height":  21,
+                                        "width":  30,
+                                        "text":  "at",
+                                        "x":  853
+                                    },
+                                    {
+                                        "y":  424,
+                                        "height":  16,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  904
+                                    },
+                                    {
+                                        "y":  418,
+                                        "height":  22,
+                                        "width":  111,
+                                        "text":  "cardiac",
+                                        "x":  939
+                                    },
+                                    {
+                                        "y":  418,
+                                        "height":  22,
+                                        "width":  128,
+                                        "text":  "research",
+                                        "x":  1072
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "institute. Doctors frequently struggle to analyze the heart",
+                      "words":  [
+                                    {
+                                        "y":  459,
+                                        "height":  22,
+                                        "width":  157,
+                                        "text":  "institute.",
+                                        "x":  171
+                                    },
+                                    {
+                                        "y":  460,
+                                        "height":  21,
+                                        "width":  112,
+                                        "text":  "Doctors",
+                                        "x":  361
+                                    },
+                                    {
+                                        "y":  459,
+                                        "height":  27,
+                                        "width":  162,
+                                        "text":  "frequently",
+                                        "x":  501
+                                    },
+                                    {
+                                        "y":  459,
+                                        "height":  27,
+                                        "width":  129,
+                                        "text":  "struggle",
+                                        "x":  691
+                                    },
+                                    {
+                                        "y":  460,
+                                        "height":  21,
+                                        "width":  31,
+                                        "text":  "to",
+                                        "x":  847
+                                    },
+                                    {
+                                        "y":  459,
+                                        "height":  27,
+                                        "width":  113,
+                                        "text":  "analyze",
+                                        "x":  906
+                                    },
+                                    {
+                                        "y":  459,
+                                        "height":  22,
+                                        "width":  48,
+                                        "text":  "the",
+                                        "x":  1046
+                                    },
+                                    {
+                                        "y":  459,
+                                        "height":  22,
+                                        "width":  79,
+                                        "text":  "heart",
+                                        "x":  1122
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "because CT scans show excellent structural boundaries, but MRI",
+                      "words":  [
+                                    {
+                                        "y":  501,
+                                        "height":  22,
+                                        "width":  112,
+                                        "text":  "because",
+                                        "x":  171
+                                    },
+                                    {
+                                        "y":  502,
+                                        "height":  21,
+                                        "width":  31,
+                                        "text":  "CT",
+                                        "x":  304
+                                    },
+                                    {
+                                        "y":  507,
+                                        "height":  16,
+                                        "width":  80,
+                                        "text":  "scans",
+                                        "x":  354
+                                    },
+                                    {
+                                        "y":  501,
+                                        "height":  22,
+                                        "width":  64,
+                                        "text":  "show",
+                                        "x":  455
+                                    },
+                                    {
+                                        "y":  501,
+                                        "height":  22,
+                                        "width":  145,
+                                        "text":  "excellent",
+                                        "x":  538
+                                    },
+                                    {
+                                        "y":  501,
+                                        "height":  22,
+                                        "width":  162,
+                                        "text":  "structural",
+                                        "x":  704
+                                    },
+                                    {
+                                        "y":  501,
+                                        "height":  25,
+                                        "width":  174,
+                                        "text":  "boundaries,",
+                                        "x":  888
+                                    },
+                                    {
+                                        "y":  501,
+                                        "height":  22,
+                                        "width":  46,
+                                        "text":  "but",
+                                        "x":  1087
+                                    },
+                                    {
+                                        "y":  502,
+                                        "height":  20,
+                                        "width":  47,
+                                        "text":  "MRI",
+                                        "x":  1154
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "scans are vastly superior at showing soft tissue variations.",
+                      "words":  [
+                                    {
+                                        "y":  548,
+                                        "height":  16,
+                                        "width":  80,
+                                        "text":  "scans",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  548,
+                                        "height":  16,
+                                        "width":  46,
+                                        "text":  "are",
+                                        "x":  275
+                                    },
+                                    {
+                                        "y":  542,
+                                        "height":  27,
+                                        "width":  96,
+                                        "text":  "vastly",
+                                        "x":  346
+                                    },
+                                    {
+                                        "y":  542,
+                                        "height":  27,
+                                        "width":  130,
+                                        "text":  "superior",
+                                        "x":  467
+                                    },
+                                    {
+                                        "y":  543,
+                                        "height":  21,
+                                        "width":  30,
+                                        "text":  "at",
+                                        "x":  621
+                                    },
+                                    {
+                                        "y":  542,
+                                        "height":  27,
+                                        "width":  113,
+                                        "text":  "showing",
+                                        "x":  676
+                                    },
+                                    {
+                                        "y":  542,
+                                        "height":  22,
+                                        "width":  63,
+                                        "text":  "soft",
+                                        "x":  813
+                                    },
+                                    {
+                                        "y":  542,
+                                        "height":  22,
+                                        "width":  97,
+                                        "text":  "tissue",
+                                        "x":  900
+                                    },
+                                    {
+                                        "y":  542,
+                                        "height":  22,
+                                        "width":  175,
+                                        "text":  "variations.",
+                                        "x":  1022
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Your objective is to mathematically fuse perfectly aligned CT",
+                      "words":  [
+                                    {
+                                        "y":  585,
+                                        "height":  20,
+                                        "width":  65,
+                                        "text":  "Your",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  584,
+                                        "height":  27,
+                                        "width":  146,
+                                        "text":  "objective",
+                                        "x":  256
+                                    },
+                                    {
+                                        "y":  584,
+                                        "height":  22,
+                                        "width":  28,
+                                        "text":  "is",
+                                        "x":  426
+                                    },
+                                    {
+                                        "y":  585,
+                                        "height":  21,
+                                        "width":  31,
+                                        "text":  "to",
+                                        "x":  477
+                                    },
+                                    {
+                                        "y":  584,
+                                        "height":  27,
+                                        "width":  228,
+                                        "text":  "mathematically",
+                                        "x":  530
+                                    },
+                                    {
+                                        "y":  584,
+                                        "height":  22,
+                                        "width":  63,
+                                        "text":  "fuse",
+                                        "x":  781
+                                    },
+                                    {
+                                        "y":  584,
+                                        "height":  27,
+                                        "width":  145,
+                                        "text":  "perfectly",
+                                        "x":  867
+                                    },
+                                    {
+                                        "y":  584,
+                                        "height":  27,
+                                        "width":  112,
+                                        "text":  "aligned",
+                                        "x":  1035
+                                    },
+                                    {
+                                        "y":  584,
+                                        "height":  22,
+                                        "width":  31,
+                                        "text":  "CT",
+                                        "x":  1171
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "and MRI slices of the same heart into a single, unified matrix",
+                      "words":  [
+                                    {
+                                        "y":  625,
+                                        "height":  21,
+                                        "width":  46,
+                                        "text":  "and",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  627,
+                                        "height":  19,
+                                        "width":  47,
+                                        "text":  "MRI",
+                                        "x":  237
+                                    },
+                                    {
+                                        "y":  625,
+                                        "height":  21,
+                                        "width":  96,
+                                        "text":  "slices",
+                                        "x":  304
+                                    },
+                                    {
+                                        "y":  625,
+                                        "height":  21,
+                                        "width":  30,
+                                        "text":  "of",
+                                        "x":  421
+                                    },
+                                    {
+                                        "y":  625,
+                                        "height":  21,
+                                        "width":  48,
+                                        "text":  "the",
+                                        "x":  470
+                                    },
+                                    {
+                                        "y":  631,
+                                        "height":  15,
+                                        "width":  62,
+                                        "text":  "same",
+                                        "x":  539
+                                    },
+                                    {
+                                        "y":  625,
+                                        "height":  21,
+                                        "width":  77,
+                                        "text":  "heart",
+                                        "x":  623
+                                    },
+                                    {
+                                        "y":  625,
+                                        "height":  21,
+                                        "width":  62,
+                                        "text":  "into",
+                                        "x":  722
+                                    },
+                                    {
+                                        "y":  631,
+                                        "height":  15,
+                                        "width":  15,
+                                        "text":  "a",
+                                        "x":  804
+                                    },
+                                    {
+                                        "y":  625,
+                                        "height":  27,
+                                        "width":  108,
+                                        "text":  "single,",
+                                        "x":  839
+                                    },
+                                    {
+                                        "y":  625,
+                                        "height":  21,
+                                        "width":  112,
+                                        "text":  "unified",
+                                        "x":  972
+                                    },
+                                    {
+                                        "y":  625,
+                                        "height":  21,
+                                        "width":  97,
+                                        "text":  "matrix",
+                                        "x":  1104
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "to provide a comprehensive diagnostic view.",
+                      "words":  [
+                                    {
+                                        "y":  667,
+                                        "height":  20,
+                                        "width":  31,
+                                        "text":  "to",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  666,
+                                        "height":  26,
+                                        "width":  112,
+                                        "text":  "provide",
+                                        "x":  220
+                                    },
+                                    {
+                                        "y":  671,
+                                        "height":  16,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  352
+                                    },
+                                    {
+                                        "y":  665,
+                                        "height":  27,
+                                        "width":  211,
+                                        "text":  "comprehensive",
+                                        "x":  385
+                                    },
+                                    {
+                                        "y":  665,
+                                        "height":  28,
+                                        "width":  161,
+                                        "text":  "diagnostic",
+                                        "x":  615
+                                    },
+                                    {
+                                        "y":  666,
+                                        "height":  21,
+                                        "width":  76,
+                                        "text":  "view.",
+                                        "x":  796
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The Operations:",
+                      "words":  [
+                                    {
+                                        "y":  726,
+                                        "height":  21,
+                                        "width":  48,
+                                        "text":  "The",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  725,
+                                        "height":  27,
+                                        "width":  176,
+                                        "text":  "Operations:",
+                                        "x":  235
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "•",
+                      "words":  [
+                                    {
+                                        "y":  795,
+                                        "height":  9,
+                                        "width":  9,
+                                        "text":  "•",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "•",
+                      "words":  [
+                                    {
+                                        "y":  1039,
+                                        "height":  9,
+                                        "width":  9,
+                                        "text":  "•",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "•",
+                      "words":  [
+                                    {
+                                        "y":  1223,
+                                        "height":  9,
+                                        "width":  10,
+                                        "text":  "•",
+                                        "x":  210
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "•",
+                      "words":  [
+                                    {
+                                        "y":  1448,
+                                        "height":  9,
+                                        "width":  9,
+                                        "text":  "•",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "•",
+                      "words":  [
+                                    {
+                                        "y":  1631,
+                                        "height":  9,
+                                        "width":  9,
+                                        "text":  "•",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Load Modalities: Load one CT slice and its perfectly",
+                      "words":  [
+                                    {
+                                        "y":  785,
+                                        "height":  22,
+                                        "width":  63,
+                                        "text":  "Load",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  785,
+                                        "height":  22,
+                                        "width":  176,
+                                        "text":  "Modalities:",
+                                        "x":  346
+                                    },
+                                    {
+                                        "y":  785,
+                                        "height":  22,
+                                        "width":  61,
+                                        "text":  "Load",
+                                        "x":  558
+                                    },
+                                    {
+                                        "y":  791,
+                                        "height":  16,
+                                        "width":  46,
+                                        "text":  "one",
+                                        "x":  651
+                                    },
+                                    {
+                                        "y":  786,
+                                        "height":  21,
+                                        "width":  31,
+                                        "text":  "CT",
+                                        "x":  728
+                                    },
+                                    {
+                                        "y":  785,
+                                        "height":  22,
+                                        "width":  80,
+                                        "text":  "slice",
+                                        "x":  789
+                                    },
+                                    {
+                                        "y":  785,
+                                        "height":  22,
+                                        "width":  46,
+                                        "text":  "and",
+                                        "x":  900
+                                    },
+                                    {
+                                        "y":  785,
+                                        "height":  22,
+                                        "width":  45,
+                                        "text":  "its",
+                                        "x":  979
+                                    },
+                                    {
+                                        "y":  785,
+                                        "height":  27,
+                                        "width":  145,
+                                        "text":  "perfectly",
+                                        "x":  1056
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "corresponding MRI slice from the dataset.",
+                      "words":  [
+                                    {
+                                        "y":  827,
+                                        "height":  27,
+                                        "width":  212,
+                                        "text":  "corresponding",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  828,
+                                        "height":  20,
+                                        "width":  47,
+                                        "text":  "MRI",
+                                        "x":  483
+                                    },
+                                    {
+                                        "y":  827,
+                                        "height":  22,
+                                        "width":  79,
+                                        "text":  "slice",
+                                        "x":  550
+                                    },
+                                    {
+                                        "y":  827,
+                                        "height":  22,
+                                        "width":  62,
+                                        "text":  "from",
+                                        "x":  649
+                                    },
+                                    {
+                                        "y":  827,
+                                        "height":  22,
+                                        "width":  48,
+                                        "text":  "the",
+                                        "x":  729
+                                    },
+                                    {
+                                        "y":  827,
+                                        "height":  22,
+                                        "width":  125,
+                                        "text":  "dataset.",
+                                        "x":  796
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Histogram Equalization: Apply equalization to both the CT",
+                      "words":  [
+                                    {
+                                        "y":  887,
+                                        "height":  27,
+                                        "width":  146,
+                                        "text":  "Histogram",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  887,
+                                        "height":  27,
+                                        "width":  207,
+                                        "text":  "Equalization:",
+                                        "x":  420
+                                    },
+                                    {
+                                        "y":  887,
+                                        "height":  27,
+                                        "width":  80,
+                                        "text":  "Apply",
+                                        "x":  651
+                                    },
+                                    {
+                                        "y":  887,
+                                        "height":  27,
+                                        "width":  195,
+                                        "text":  "equalization",
+                                        "x":  752
+                                    },
+                                    {
+                                        "y":  888,
+                                        "height":  21,
+                                        "width":  31,
+                                        "text":  "to",
+                                        "x":  967
+                                    },
+                                    {
+                                        "y":  887,
+                                        "height":  22,
+                                        "width":  62,
+                                        "text":  "both",
+                                        "x":  1020
+                                    },
+                                    {
+                                        "y":  887,
+                                        "height":  22,
+                                        "width":  47,
+                                        "text":  "the",
+                                        "x":  1103
+                                    },
+                                    {
+                                        "y":  888,
+                                        "height":  21,
+                                        "width":  32,
+                                        "text":  "CT",
+                                        "x":  1171
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "and MRI matrices independently to maximize their dynamic",
+                      "words":  [
+                                    {
+                                        "y":  928,
+                                        "height":  22,
+                                        "width":  46,
+                                        "text":  "and",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  930,
+                                        "height":  20,
+                                        "width":  47,
+                                        "text":  "MRI",
+                                        "x":  322
+                                    },
+                                    {
+                                        "y":  928,
+                                        "height":  22,
+                                        "width":  129,
+                                        "text":  "matrices",
+                                        "x":  392
+                                    },
+                                    {
+                                        "y":  928,
+                                        "height":  26,
+                                        "width":  210,
+                                        "text":  "independently",
+                                        "x":  546
+                                    },
+                                    {
+                                        "y":  930,
+                                        "height":  20,
+                                        "width":  31,
+                                        "text":  "to",
+                                        "x":  778
+                                    },
+                                    {
+                                        "y":  928,
+                                        "height":  22,
+                                        "width":  130,
+                                        "text":  "maximize",
+                                        "x":  832
+                                    },
+                                    {
+                                        "y":  928,
+                                        "height":  22,
+                                        "width":  82,
+                                        "text":  "their",
+                                        "x":  984
+                                    },
+                                    {
+                                        "y":  928,
+                                        "height":  26,
+                                        "width":  112,
+                                        "text":  "dynamic",
+                                        "x":  1088
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ranges before blending.",
+                      "words":  [
+                                    {
+                                        "y":  973,
+                                        "height":  23,
+                                        "width":  96,
+                                        "text":  "ranges",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  969,
+                                        "height":  21,
+                                        "width":  95,
+                                        "text":  "before",
+                                        "x":  369
+                                    },
+                                    {
+                                        "y":  969,
+                                        "height":  27,
+                                        "width":  141,
+                                        "text":  "blending.",
+                                        "x":  484
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Color Mapping and Fusion: Convert the enhanced CT and MRI",
+                      "words":  [
+                                    {
+                                        "y":  1029,
+                                        "height":  22,
+                                        "width":  81,
+                                        "text":  "Color",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1029,
+                                        "height":  27,
+                                        "width":  115,
+                                        "text":  "Mapping",
+                                        "x":  352
+                                    },
+                                    {
+                                        "y":  1029,
+                                        "height":  22,
+                                        "width":  47,
+                                        "text":  "and",
+                                        "x":  486
+                                    },
+                                    {
+                                        "y":  1029,
+                                        "height":  22,
+                                        "width":  109,
+                                        "text":  "Fusion:",
+                                        "x":  554
+                                    },
+                                    {
+                                        "y":  1030,
+                                        "height":  21,
+                                        "width":  113,
+                                        "text":  "Convert",
+                                        "x":  686
+                                    },
+                                    {
+                                        "y":  1029,
+                                        "height":  22,
+                                        "width":  48,
+                                        "text":  "the",
+                                        "x":  818
+                                    },
+                                    {
+                                        "y":  1029,
+                                        "height":  22,
+                                        "width":  128,
+                                        "text":  "enhanced",
+                                        "x":  887
+                                    },
+                                    {
+                                        "y":  1030,
+                                        "height":  21,
+                                        "width":  31,
+                                        "text":  "CT",
+                                        "x":  1037
+                                    },
+                                    {
+                                        "y":  1029,
+                                        "height":  22,
+                                        "width":  47,
+                                        "text":  "and",
+                                        "x":  1087
+                                    },
+                                    {
+                                        "y":  1030,
+                                        "height":  20,
+                                        "width":  46,
+                                        "text":  "MRI",
+                                        "x":  1155
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "images into colored heatmaps (e.g. ,",
+                      "words":  [
+                                    {
+                                        "y":  1070,
+                                        "height":  27,
+                                        "width":  95,
+                                        "text":  "images",
+                                        "x":  254
+                                    },
+                                    {
+                                        "y":  1070,
+                                        "height":  22,
+                                        "width":  62,
+                                        "text":  "into",
+                                        "x":  372
+                                    },
+                                    {
+                                        "y":  1070,
+                                        "height":  22,
+                                        "width":  112,
+                                        "text":  "colored",
+                                        "x":  457
+                                    },
+                                    {
+                                        "y":  1070,
+                                        "height":  27,
+                                        "width":  128,
+                                        "text":  "heatmaps",
+                                        "x":  592
+                                    },
+                                    {
+                                        "y":  1070,
+                                        "height":  27,
+                                        "width":  72,
+                                        "text":  "(e.g.",
+                                        "x":  746
+                                    },
+                                    {
+                                        "y":  1087,
+                                        "height":  8,
+                                        "width":  7,
+                                        "text":  ",",
+                                        "x":  828
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "mapping the MRI to a",
+                      "words":  [
+                                    {
+                                        "y":  1070,
+                                        "height":  27,
+                                        "width":  115,
+                                        "text":  "mapping",
+                                        "x":  860
+                                    },
+                                    {
+                                        "y":  1070,
+                                        "height":  22,
+                                        "width":  48,
+                                        "text":  "the",
+                                        "x":  995
+                                    },
+                                    {
+                                        "y":  1071,
+                                        "height":  20,
+                                        "width":  47,
+                                        "text":  "MRI",
+                                        "x":  1065
+                                    },
+                                    {
+                                        "y":  1071,
+                                        "height":  21,
+                                        "width":  31,
+                                        "text":  "to",
+                                        "x":  1134
+                                    },
+                                    {
+                                        "y":  1076,
+                                        "height":  16,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  1187
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "specific color map). Overlay the matrices to create a",
+                      "words":  [
+                                    {
+                                        "y":  1112,
+                                        "height":  27,
+                                        "width":  128,
+                                        "text":  "specific",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  1112,
+                                        "height":  22,
+                                        "width":  80,
+                                        "text":  "color",
+                                        "x":  411
+                                    },
+                                    {
+                                        "y":  1111,
+                                        "height":  28,
+                                        "width":  76,
+                                        "text":  "map).",
+                                        "x":  519
+                                    },
+                                    {
+                                        "y":  1112,
+                                        "height":  27,
+                                        "width":  112,
+                                        "text":  "Overlay",
+                                        "x":  628
+                                    },
+                                    {
+                                        "y":  1112,
+                                        "height":  22,
+                                        "width":  47,
+                                        "text":  "the",
+                                        "x":  768
+                                    },
+                                    {
+                                        "y":  1112,
+                                        "height":  22,
+                                        "width":  130,
+                                        "text":  "matrices",
+                                        "x":  844
+                                    },
+                                    {
+                                        "y":  1113,
+                                        "height":  21,
+                                        "width":  31,
+                                        "text":  "to",
+                                        "x":  1002
+                                    },
+                                    {
+                                        "y":  1113,
+                                        "height":  21,
+                                        "width":  96,
+                                        "text":  "create",
+                                        "x":  1062
+                                    },
+                                    {
+                                        "y":  1118,
+                                        "height":  16,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  1187
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "unified view.",
+                      "words":  [
+                                    {
+                                        "y":  1153,
+                                        "height":  22,
+                                        "width":  112,
+                                        "text":  "unified",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  1153,
+                                        "height":  22,
+                                        "width":  75,
+                                        "text":  "view.",
+                                        "x":  385
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Multi-modal Weighted Fusion: Use cv2.addWeighted() to adjust",
+                      "words":  [
+                                    {
+                                        "y":  1213,
+                                        "height":  21,
+                                        "width":  179,
+                                        "text":  "Multi-modal",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1213,
+                                        "height":  27,
+                                        "width":  130,
+                                        "text":  "Weighted",
+                                        "x":  451
+                                    },
+                                    {
+                                        "y":  1213,
+                                        "height":  22,
+                                        "width":  108,
+                                        "text":  "Fusion:",
+                                        "x":  602
+                                    },
+                                    {
+                                        "y":  1214,
+                                        "height":  21,
+                                        "width":  46,
+                                        "text":  "Use",
+                                        "x":  735
+                                    },
+                                    {
+                                        "y":  1214,
+                                        "height":  24,
+                                        "width":  229,
+                                        "text":  "cv2.addWeighted()",
+                                        "x":  802
+                                    },
+                                    {
+                                        "y":  1214,
+                                        "height":  21,
+                                        "width":  31,
+                                        "text":  "to",
+                                        "x":  1053
+                                    },
+                                    {
+                                        "y":  1213,
+                                        "height":  27,
+                                        "width":  96,
+                                        "text":  "adjust",
+                                        "x":  1105
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "the alpha and beta blending values. Assign a heavier weight",
+                      "words":  [
+                                    {
+                                        "y":  1255,
+                                        "height":  20,
+                                        "width":  47,
+                                        "text":  "the",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1255,
+                                        "height":  25,
+                                        "width":  80,
+                                        "text":  "alpha",
+                                        "x":  316
+                                    },
+                                    {
+                                        "y":  1255,
+                                        "height":  20,
+                                        "width":  46,
+                                        "text":  "and",
+                                        "x":  413
+                                    },
+                                    {
+                                        "y":  1255,
+                                        "height":  20,
+                                        "width":  63,
+                                        "text":  "beta",
+                                        "x":  477
+                                    },
+                                    {
+                                        "y":  1255,
+                                        "height":  26,
+                                        "width":  128,
+                                        "text":  "blending",
+                                        "x":  557
+                                    },
+                                    {
+                                        "y":  1255,
+                                        "height":  20,
+                                        "width":  109,
+                                        "text":  "values.",
+                                        "x":  701
+                                    },
+                                    {
+                                        "y":  1255,
+                                        "height":  26,
+                                        "width":  97,
+                                        "text":  "Assign",
+                                        "x":  830
+                                    },
+                                    {
+                                        "y":  1260,
+                                        "height":  15,
+                                        "width":  15,
+                                        "text":  "a",
+                                        "x":  944
+                                    },
+                                    {
+                                        "y":  1255,
+                                        "height":  20,
+                                        "width":  113,
+                                        "text":  "heavier",
+                                        "x":  976
+                                    },
+                                    {
+                                        "y":  1255,
+                                        "height":  26,
+                                        "width":  97,
+                                        "text":  "weight",
+                                        "x":  1104
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "to the CT matrix to preserve the sharp anatomical edges,",
+                      "words":  [
+                                    {
+                                        "y":  1296,
+                                        "height":  20,
+                                        "width":  31,
+                                        "text":  "to",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1295,
+                                        "height":  21,
+                                        "width":  48,
+                                        "text":  "the",
+                                        "x":  304
+                                    },
+                                    {
+                                        "y":  1296,
+                                        "height":  20,
+                                        "width":  32,
+                                        "text":  "CT",
+                                        "x":  374
+                                    },
+                                    {
+                                        "y":  1295,
+                                        "height":  21,
+                                        "width":  97,
+                                        "text":  "matrix",
+                                        "x":  426
+                                    },
+                                    {
+                                        "y":  1296,
+                                        "height":  20,
+                                        "width":  32,
+                                        "text":  "to",
+                                        "x":  544
+                                    },
+                                    {
+                                        "y":  1301,
+                                        "height":  21,
+                                        "width":  128,
+                                        "text":  "preserve",
+                                        "x":  598
+                                    },
+                                    {
+                                        "y":  1295,
+                                        "height":  21,
+                                        "width":  48,
+                                        "text":  "the",
+                                        "x":  747
+                                    },
+                                    {
+                                        "y":  1295,
+                                        "height":  27,
+                                        "width":  80,
+                                        "text":  "sharp",
+                                        "x":  818
+                                    },
+                                    {
+                                        "y":  1295,
+                                        "height":  21,
+                                        "width":  162,
+                                        "text":  "anatomical",
+                                        "x":  920
+                                    },
+                                    {
+                                        "y":  1295,
+                                        "height":  27,
+                                        "width":  92,
+                                        "text":  "edges,",
+                                        "x":  1105
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "and a lighter weight to the MRI matrix to highlight the",
+                      "words":  [
+                                    {
+                                        "y":  1336,
+                                        "height":  22,
+                                        "width":  46,
+                                        "text":  "and",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  1342,
+                                        "height":  16,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  323
+                                    },
+                                    {
+                                        "y":  1336,
+                                        "height":  28,
+                                        "width":  113,
+                                        "text":  "lighter",
+                                        "x":  361
+                                    },
+                                    {
+                                        "y":  1336,
+                                        "height":  28,
+                                        "width":  97,
+                                        "text":  "weight",
+                                        "x":  496
+                                    },
+                                    {
+                                        "y":  1338,
+                                        "height":  20,
+                                        "width":  31,
+                                        "text":  "to",
+                                        "x":  616
+                                    },
+                                    {
+                                        "y":  1337,
+                                        "height":  21,
+                                        "width":  46,
+                                        "text":  "the",
+                                        "x":  670
+                                    },
+                                    {
+                                        "y":  1338,
+                                        "height":  20,
+                                        "width":  47,
+                                        "text":  "MRI",
+                                        "x":  740
+                                    },
+                                    {
+                                        "y":  1336,
+                                        "height":  22,
+                                        "width":  97,
+                                        "text":  "matrix",
+                                        "x":  810
+                                    },
+                                    {
+                                        "y":  1338,
+                                        "height":  20,
+                                        "width":  32,
+                                        "text":  "to",
+                                        "x":  929
+                                    },
+                                    {
+                                        "y":  1336,
+                                        "height":  28,
+                                        "width":  145,
+                                        "text":  "highlight",
+                                        "x":  985
+                                    },
+                                    {
+                                        "y":  1337,
+                                        "height":  21,
+                                        "width":  48,
+                                        "text":  "the",
+                                        "x":  1153
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "internal tissue variations.",
+                      "words":  [
+                                    {
+                                        "y":  1378,
+                                        "height":  22,
+                                        "width":  127,
+                                        "text":  "internal",
+                                        "x":  254
+                                    },
+                                    {
+                                        "y":  1378,
+                                        "height":  22,
+                                        "width":  97,
+                                        "text":  "tissue",
+                                        "x":  400
+                                    },
+                                    {
+                                        "y":  1378,
+                                        "height":  22,
+                                        "width":  174,
+                                        "text":  "variations.",
+                                        "x":  516
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Logarithmic and Power-Law Transformations: Pass the final",
+                      "words":  [
+                                    {
+                                        "y":  1438,
+                                        "height":  27,
+                                        "width":  178,
+                                        "text":  "Logarithmic",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  1438,
+                                        "height":  22,
+                                        "width":  47,
+                                        "text":  "and",
+                                        "x":  452
+                                    },
+                                    {
+                                        "y":  1439,
+                                        "height":  21,
+                                        "width":  147,
+                                        "text":  "Power-Law",
+                                        "x":  521
+                                    },
+                                    {
+                                        "y":  1438,
+                                        "height":  22,
+                                        "width":  260,
+                                        "text":  "Transformations:",
+                                        "x":  685
+                                    },
+                                    {
+                                        "y":  1439,
+                                        "height":  21,
+                                        "width":  63,
+                                        "text":  "Pass",
+                                        "x":  970
+                                    },
+                                    {
+                                        "y":  1438,
+                                        "height":  22,
+                                        "width":  48,
+                                        "text":  "the",
+                                        "x":  1053
+                                    },
+                                    {
+                                        "y":  1438,
+                                        "height":  22,
+                                        "width":  79,
+                                        "text":  "final",
+                                        "x":  1122
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "fused matrix through logarithmic and power-law functions",
+                      "words":  [
+                                    {
+                                        "y":  1479,
+                                        "height":  22,
+                                        "width":  79,
+                                        "text":  "fused",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  1479,
+                                        "height":  22,
+                                        "width":  96,
+                                        "text":  "matrix",
+                                        "x":  356
+                                    },
+                                    {
+                                        "y":  1479,
+                                        "height":  27,
+                                        "width":  113,
+                                        "text":  "through",
+                                        "x":  476
+                                    },
+                                    {
+                                        "y":  1479,
+                                        "height":  27,
+                                        "width":  177,
+                                        "text":  "logarithmic",
+                                        "x":  613
+                                    },
+                                    {
+                                        "y":  1479,
+                                        "height":  22,
+                                        "width":  46,
+                                        "text":  "and",
+                                        "x":  815
+                                    },
+                                    {
+                                        "y":  1479,
+                                        "height":  27,
+                                        "width":  147,
+                                        "text":  "power-law",
+                                        "x":  886
+                                    },
+                                    {
+                                        "y":  1479,
+                                        "height":  22,
+                                        "width":  145,
+                                        "text":  "functions",
+                                        "x":  1056
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "to ensure no critical data is crushed into pure black or",
+                      "words":  [
+                                    {
+                                        "y":  1522,
+                                        "height":  21,
+                                        "width":  31,
+                                        "text":  "to",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1527,
+                                        "height":  16,
+                                        "width":  96,
+                                        "text":  "ensure",
+                                        "x":  305
+                                    },
+                                    {
+                                        "y":  1527,
+                                        "height":  16,
+                                        "width":  29,
+                                        "text":  "no",
+                                        "x":  424
+                                    },
+                                    {
+                                        "y":  1521,
+                                        "height":  22,
+                                        "width":  128,
+                                        "text":  "critical",
+                                        "x":  476
+                                    },
+                                    {
+                                        "y":  1521,
+                                        "height":  22,
+                                        "width":  63,
+                                        "text":  "data",
+                                        "x":  626
+                                    },
+                                    {
+                                        "y":  1521,
+                                        "height":  22,
+                                        "width":  29,
+                                        "text":  "is",
+                                        "x":  712
+                                    },
+                                    {
+                                        "y":  1521,
+                                        "height":  22,
+                                        "width":  111,
+                                        "text":  "crushed",
+                                        "x":  764
+                                    },
+                                    {
+                                        "y":  1521,
+                                        "height":  22,
+                                        "width":  62,
+                                        "text":  "into",
+                                        "x":  899
+                                    },
+                                    {
+                                        "y":  1527,
+                                        "height":  21,
+                                        "width":  63,
+                                        "text":  "pure",
+                                        "x":  984
+                                    },
+                                    {
+                                        "y":  1521,
+                                        "height":  22,
+                                        "width":  80,
+                                        "text":  "black",
+                                        "x":  1069
+                                    },
+                                    {
+                                        "y":  1527,
+                                        "height":  16,
+                                        "width":  31,
+                                        "text":  "or",
+                                        "x":  1170
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "blown out to pure white during the addition process.",
+                      "words":  [
+                                    {
+                                        "y":  1562,
+                                        "height":  22,
+                                        "width":  79,
+                                        "text":  "blown",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  1563,
+                                        "height":  21,
+                                        "width":  46,
+                                        "text":  "out",
+                                        "x":  352
+                                    },
+                                    {
+                                        "y":  1563,
+                                        "height":  21,
+                                        "width":  31,
+                                        "text":  "to",
+                                        "x":  417
+                                    },
+                                    {
+                                        "y":  1568,
+                                        "height":  21,
+                                        "width":  62,
+                                        "text":  "pure",
+                                        "x":  468
+                                    },
+                                    {
+                                        "y":  1562,
+                                        "height":  22,
+                                        "width":  80,
+                                        "text":  "white",
+                                        "x":  549
+                                    },
+                                    {
+                                        "y":  1562,
+                                        "height":  27,
+                                        "width":  97,
+                                        "text":  "during",
+                                        "x":  648
+                                    },
+                                    {
+                                        "y":  1562,
+                                        "height":  22,
+                                        "width":  48,
+                                        "text":  "the",
+                                        "x":  762
+                                    },
+                                    {
+                                        "y":  1562,
+                                        "height":  22,
+                                        "width":  129,
+                                        "text":  "addition",
+                                        "x":  829
+                                    },
+                                    {
+                                        "y":  1568,
+                                        "height":  21,
+                                        "width":  124,
+                                        "text":  "process.",
+                                        "x":  979
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Comparative Analysis: Display the standalone CT frame, the",
+                      "words":  [
+                                    {
+                                        "y":  1621,
+                                        "height":  27,
+                                        "width":  180,
+                                        "text":  "Comparative",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1621,
+                                        "height":  27,
+                                        "width":  144,
+                                        "text":  "Analysis:",
+                                        "x":  448
+                                    },
+                                    {
+                                        "y":  1621,
+                                        "height":  27,
+                                        "width":  111,
+                                        "text":  "Display",
+                                        "x":  615
+                                    },
+                                    {
+                                        "y":  1621,
+                                        "height":  22,
+                                        "width":  48,
+                                        "text":  "the",
+                                        "x":  743
+                                    },
+                                    {
+                                        "y":  1621,
+                                        "height":  22,
+                                        "width":  162,
+                                        "text":  "standalone",
+                                        "x":  810
+                                    },
+                                    {
+                                        "y":  1622,
+                                        "height":  21,
+                                        "width":  31,
+                                        "text":  "CT",
+                                        "x":  991
+                                    },
+                                    {
+                                        "y":  1621,
+                                        "height":  25,
+                                        "width":  92,
+                                        "text":  "frame,",
+                                        "x":  1040
+                                    },
+                                    {
+                                        "y":  1621,
+                                        "height":  22,
+                                        "width":  47,
+                                        "text":  "the",
+                                        "x":  1154
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "standalone MRI frame, and the fused output side-by-side to",
+                      "words":  [
+                                    {
+                                        "y":  1663,
+                                        "height":  21,
+                                        "width":  162,
+                                        "text":  "standalone",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  1664,
+                                        "height":  20,
+                                        "width":  46,
+                                        "text":  "MRI",
+                                        "x":  434
+                                    },
+                                    {
+                                        "y":  1663,
+                                        "height":  25,
+                                        "width":  92,
+                                        "text":  "frame,",
+                                        "x":  499
+                                    },
+                                    {
+                                        "y":  1663,
+                                        "height":  21,
+                                        "width":  45,
+                                        "text":  "and",
+                                        "x":  614
+                                    },
+                                    {
+                                        "y":  1663,
+                                        "height":  21,
+                                        "width":  47,
+                                        "text":  "the",
+                                        "x":  678
+                                    },
+                                    {
+                                        "y":  1663,
+                                        "height":  21,
+                                        "width":  78,
+                                        "text":  "fused",
+                                        "x":  744
+                                    },
+                                    {
+                                        "y":  1664,
+                                        "height":  25,
+                                        "width":  96,
+                                        "text":  "output",
+                                        "x":  842
+                                    },
+                                    {
+                                        "y":  1662,
+                                        "height":  27,
+                                        "width":  196,
+                                        "text":  "side-by-side",
+                                        "x":  957
+                                    },
+                                    {
+                                        "y":  1664,
+                                        "height":  20,
+                                        "width":  32,
+                                        "text":  "to",
+                                        "x":  1170
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1825,
+                                        "height":  19,
+                                        "width":  69,
+                                        "text":  "Talha",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1823,
+                                        "height":  21,
+                                        "width":  88,
+                                        "text":  "Shahid",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "41",
+                      "words":  [
+                                    {
+                                        "y":  1824,
+                                        "height":  25,
+                                        "width":  31,
+                                        "text":  "41",
+                                        "x":  1070
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Page",
+                      "words":  [
+                                    {
+                                        "y":  1826,
+                                        "height":  24,
+                                        "width":  84,
+                                        "text":  "Page",
+                                        "x":  1112
+                                    }
+                                ]
+                  }
+              ]
+}

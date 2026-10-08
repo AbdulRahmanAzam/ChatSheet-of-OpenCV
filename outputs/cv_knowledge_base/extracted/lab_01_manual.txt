@@ -1,0 +1,1208 @@
+=== PAGE 1 ===
+Computer
+Vision
+A1-4002
+Lab 01
+Introduction to Computer
+Vision & Computer Vision
+Applications
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+
+=== PAGE 2 ===
+Computer Vision Lab
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+Course Code: A1-4002
+Objectives
+Introduction To Computer Vision
+Basic Terminology
+Applications of Computer Vision
+Essential Libraries for Computer Vision
+Tabular comparison of the libraries for computer vision:
+Digital Image
+Digital Image Processing System
+Purpose of Image processing
+Fundamental Steps of Digital Image Processing:
+10.
+IO. 1 Image Acquisition
+10.2 Image Enhancement
+10.3 Image Restoration
+10.4 Color Image Processing
+10.5 Wavelets and Multi-Resolution Processing
+10. 6 Compression
+10. 7 Morphological Processing
+10.8 Segmentation
+10.9 Representation and Description
+10. 10 Object recognition
+10. 11 Knowledge Base
+Basic Image Operations
+11.
+11. 1 Reading and Displaying an Image
+11. 2 Grayscale Image
+11.4 Resize Image
+11. 5 Image Filtering (Blur)
+11.6 Cropping
+11.7 Adding Text on Image
+11.8 Analyze the Image using Pandas
+FAST NUCES - Karachi
+Instructor: Talha Shahid
+3
+3
+3
+5
+5
+5
+8
+8
+9
+9
+9
+10
+10
+10
+10
+10
+10
+10
+11
+11
+11
+12
+12
+13
+14
+15
+16
+17
+18
+1
+
+=== PAGE 3 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+11.9 Image Thresholding
+11. IO Image Rotation
+11. 11 Image Blending
+11. 12 Histogram Equalization
+FAST NUCES -
+Karachi
+Instructor: Talha Shahid
+19
+20
+21
+22
+2
+
+=== PAGE 4 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+1. Objectives
+1. Introduction to Computer Vision & Computer Vision Applications
+2. Essential Libraries for CV
+3. Digital Image & Image Coordinates
+4. Digital Image Processing System
+5. Image Operations
+2. Introduction to Computer Vision
+Computer vision is a multidisciplinary field of study and technology
+that focuses on enabling computers to interpret,
+analyze,
+and
+understand visual information from the world, much like humans do. It
+involves the development of algorithms, models, and techniques that
+allow computers to extract meaningful information from images or
+videos, and then make decisions or take actions based on that
+information .
+Technically, computer vision involves a range of tasks, including
+image and video processing, feature extraction, pattern recognition,
+object detection, tracking, image segmentation, scene understanding,
+and more. It often utilizes techniques from various domains such as
+machine learning, image processing, artificial intelligence, and
+statistical modeling to interpret visual data and derive useful
+insights or actions from it.
+In essence, computer vision aims to bridge the gap between the visual
+information captured by cameras or sensors and the understanding and
+decision-making capabilities of computers. This technology finds
+applications in various fields, including autonomous vehicles, medical
+imaging, surveillance, robotics, augmented reality, and many others.
+3. Basic Terminology
+1.
+2.
+3.
+4.
+5.
+A 2D array of pixels representing visual information.
+Image :
+Short for "picture element, "
+it Is the smallest unit of
+Pixel :
+an image. Each pixel carries color and intensity information.
+Resolution :
+The dimensions of an image, typically expressed in
+pixels (e.g.,
+Grayscale :
+An image where each pixel represents only intensity,
+typically ranging from
+0 (black) to
+255 (white) .
+Stands for Red ,
+Blue.
+It Is a common color
+RGB•.
+Green ,
+representation where each pixel is composed of values for these
+three
+primary colors.
+FAST NUCES -
+Karachi
+Instructor: Talha Shahid
+3
+
+=== PAGE 5 ===
+6.
+8.
+9.
+10.
+11.
+12.
+13.
+14
+15.
+16.
+17.
+18.
+19.
+20.
+21.
+22.
+23.
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+A distinctive part of an image, used for identifying
+Feature :
+and distinguishing objects.
+Feature Extraction:
+The process of identifying and isolating
+relevant features from an image,
+often using filters or
+algorithms .
+Edge Detection:
+Identifying boundaries or transitions between
+different regions in an image.
+Object Detection :
+Identifying and localizing specific objects
+within an image or video frame.
+Segmentation :
+Dividing an image into meaningful segments
+or regions,
+often used for separating objects from the
+background .
+Image Processing:
+Manipulating and enhancing images to
+improve their quality or extract useful information.
+Convolutional Neural Network (CNN)
+A type of deep learning
+model designed to process grid-structured data, like images.
+convolutional
+layers
+automatically
+learn
+CNNs
+to
+use
+hierarchical features.
+Deep Learning:
+A subset of machine learning that uses
+neural networks with multiple layers to model and solve complex
+tasks .
+maps generated
+by
+applying
+Output
+Feature Map •
+convolutional filters to an image.
+Object Recognition :
+Identifying and classifying objects
+within an image or video.
+Assigning a label or category to an input
+Classification :
+image, such as identifying whether an image contains a cat or a
+dog.
+Image Registration :
+Aligning multiple images of the same
+scene or object to a common coordinate system.
+Optical Flow: Estimating the motion of objects between
+consecutive frames in a video.
+Tracking :
+Following the movement of objects across multiple
+frames in a video.
+A transformation that relates two images of
+Homography :
+the same planar surface.
+Feature Descriptor:
+A compact representation of a feature
+that can be used for matching or recognition.
+Histogram :
+A representation of the distribution of pixel
+intensities in an image.
+SIFT (Scale-Invariant Feature Transform) . An algorithm for
+detecting and describing local features in images.
+FAST NUCES - Karachi
+Instructor: Talha Shahid
+4
+
+=== PAGE 6 ===
+24.
+25.
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+SURF (Speeded-Up Robust Features)
+A feature detection and
+description algorithm similar to SIFT but faster.
+HOG (Histogram of Oriented Gradients) •
+A feature descriptor
+used for object detection and recognition.
+4. Applications of Computer Vision
+1.
+2.
+3.
+4.
+5.
+6.
+Autonomous Vehicles :
+Computer vision enables self-driving cars
+to perceive their environment, recognize obstacles, pedestrians,
+traffic signs, and lane markings, and make real-time driving
+decisions .
+Computer vision assists in medical diagnosis
+Medical Imaging:
+through techniques like image segmentation, tumor detection, and
+anomaly identification in various medical imaging modalities,
+including X-rays, MRI, CT scans, and more.
+Robotics :
+Robots can use computer vision to navigate and interact
+with their surroundings, grasp objects, and perform tasks that
+require visual understanding.
+Object Detection and Recognition:
+Computer vision is used to
+identify and categorize objects within images or videos,
+enabling applications like security surveillance,
+retail
+analytics, and inventory management.
+Facial
+Recognition :
+This
+technology
+is
+employed
+for
+authentication, security, and human-computer interaction, such
+as unlocking devices or verifying identities.
+Augmented Reality (AR) and Virtual Reality (VR) : Computer vision
+enhances AR and VR experiences by overlaying digital content
+onto the real world and enabling interactions with virtual
+environments .
+5. Essential Libraries for Computer Vision
+OpenCV
+Scikit- Image
+Pillow (PIL Fork)
+TorchVision
+TensorFlow
+Keras
+OpenVINO
+PyTorch
+Hugging
+Face
+FAST NUCES -
+Karachi
+Caffe
+Detectron2
+Instructor: Talha Shahid
+5
+
+=== PAGE 7 ===
+National University of Computer & Emerging Sciences - NUCES - Karachi
+Department of Artificial Intelligence
+https : / /www. superannotate . com/blog/computer-vision - libraries
+Reading:
+6. Tabular comparison of the libraries for computer vision:
+Library
+OpenCV
+Scikit-lmage
+Pillow
+TorchVision
+TensorFlow
+Main Focus
+General CV tasks
+Image processing
+Image processing
+CV for PyTorch
+Framework
+Independent
+Independent
+Independent
+pyTorch
+TensorFlow
+Language
+Python
+Python
+Python
+Python
+Python
+Level of
+Abstraction
+High
+Medium
+Low
+High
+High
+Community
+Support
+Strong
+Moderate
+Moderate
+Strong
+Strong
+Integration with Deep
+Learning Frameworks
+Integration via Python
+bindings
+Integration with NumPy,
+Matplotlib
+Basic integration,
+processing
+image
+General ML,
+incl.
+cv
+FAST NUCES -
+Karachi
+Instructor: Talha Shahid
+Native integration with
+pyTorch
+Native integration with
+ensorF10w
+5
+
+=== PAGE 8 ===
+National University of Computer & Emerging Sciences - NUCES - Karachi
+Department of Artificial Intelligence
+now part of
+Keras
+OpenViNO
+PyTorch
+Hugging Face
+Caffe
+Detectron2
+Hugging Face
+High-level neural
+networks
+CV inference
+optimization
+TensorFlow ,
+Theano
+(legacy)
+Intel
+PyTorch
+PyTorch ,
+TensorFlow
+Caffe
+PyTorch
+PyTorch ,
+TensorFlow
+Python
+Python
+Python
+Python
+Python
+Python
+High
+High
+High
+High
+Medium
+High
+High
+Strong (for
+TensorFlow
+backend)
+Moderate
+Strong
+Strong
+Moderate
+Strong
+Strong
+High-level API,
+ensorF10w
+General ML,
+incl.
+cv
+Integration with various
+frameworks
+Native integration
+NLP and CV models
+Deep learning framework
+Object detection
+NLP and CV models
+Pretrained models,
+Focus on CNNs
+NLP focus
+Specialized in object
+detection
+Pretrained models,
+focus
+FAST NUCES -
+Karachi
+Instructor: Talha Shahid
+NLP
+6
+
+=== PAGE 9 ===
+National University of Computer & Emerging Sciences -
+Department of Artificial Intelligence
+NUCES - Karachi
+Caffe
+Detectron2
+Deep learning
+framework
+Object detection
+Caffe
+PyTorch
+Medium
+High
+Moderate
+Strong
+Python
+FAST NUCES -
+Karachi
+Instructor: Talha Shahid
+Focus on CNNs
+Specialized in object
+detection
+7
+
+=== PAGE 10 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+7. Digital Image
+An image may be defined as a two-dimensional function,
+where
+are spatial (plane) coordinates, and the amplitude of
+and
+at
+x
+any pair of coordinates
+is called the intensity or gray level
+of the image at that point. When
+and the amplitude values of f
+are all finite, discrete quantities,
+image .
+1
+2
+3
+M ROWS
+(Height)
+ORIGIN (0,0) [Top-Left cornerl
+1
+2
+INDIVIDUAL PIXEL
+at Coordinate (x, y)
+we call the image a digital
+Y-AXIS
+(Columns)
+end:
+K
+M Total Rows
+N = Total Columns
+x = Row Index (O to M-1)
+y = Column Index (O to N-I)
+f(x, y) = Intensity Function
+_eylLegend;
+M = Total Rows
+N = Total Columns
+x = Row Index (O to M-1)
+y = Column Index (0 to N-1)
+f(x, y) = Intensity Function
+(0,0)
+55 128
+„ 128 128
+128 255
+255 128
+5 128
+. 255
+x-AXIS N COLUMNS
+(Rows)
+(Width)
+1 Coordinate convention used to represent digital images
+f(0, 0)
+f(l, 0)
+- 1,0)
+f(0, 1)
+f(l, 1)
+- 1,1)
+8. Digital Image Processing System
+In computer science, digital image processing uses algorithms to
+perform image processing on digital images to extract some useful
+information. Digital image processing has many advantages as compared
+to analog image processing. Wide range of algorithms can be applied
+to input data which can avoid problems such as noise and signal
+FAST NUCES -
+Karachi
+Instructor: Talha Shahid
+8
+
+=== PAGE 11 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+distortion during processing. As we know, images are defined in two
+dimensions, so DIP can be modeled in multidimensional systems.
+9. Purpose of Image processing
+The main purpose of the DIP is divided into following 5 groups:
+1.
+2.
+3.
+4.
+5.
+Visualization: The objects which are not visible, they are
+observed .
+Image sharpening and restoration .
+It is used for better image
+resolution .
+Image retrieval :
+An image of interest can be seen
+In an image, all the objects are
+Measurement of pattern :
+measured .
+Image Recognition:
+Each object in an image can be distinguished.
+IO. Fundamental Steps of Digital Image Processing:
+Outputs of these steps are generally images.
+Problem
+Domain
+Color Image
+Processing
+L -.1 Image D
+Restoration
+Enhancement
+a Image
+Acquisition
+Wavelets &
+Multiresolution
+Compression
+Processing
+Knowledge Base
+Morphological
+Processing
+Segmentation
+Representation
+& Description
+car
+Recognition
+0
+O
+o
+10. 1 Image Acquisition
+Image acquisition is the first step of the fundamental steps of
+0
+DIP.
+In this stage, an image is given in the digital form. Generally, in
+this stage,
+FAST NUCES -
+pre-processing such as
+Karachi
+scaling is done.
+Instructor: Talha Shahid
+9
+
+=== PAGE 12 ===
+National University of Computer & Emerging Sciences -
+10.2 Image Enhancement
+Image enhancement is the
+this stage details which
+features of an image is
+etc.. •
+10.3 Image Restoration
+Image restoration is the
+improved .
+NUCES - Karachi
+Department of Artificial Intelligence
+simplest and most attractive area of DIP. In
+are not known, or we can say that interesting
+highlighted. Such as brightness, contrast,
+stage in which the appearance of an image is
+10.4 Color Image Processing
+Color image processing is a famous area because it has increased the
+use of digital images on the internet. This includes color modeling,
+processing in a digital domain, etc
+10.5 Wavelets and Multi-ResoIution Processing
+In this stage,
+an image is represented in various degrees of
+resolution. Image is divided into smaller regions for data compression
+and for the pyramidal representation.
+IO. 6 Compression
+Compression is a technique which is used for reducing the requirement
+of storing an image. It is a very important stage because it is very
+necessary to compress data for internet use.
+IO. 7 Morphological Processing
+This stage deals with tools which are used for extracting the
+components of the image, which is useful in the representation and
+description of shape.
+10.8 Segmentation
+In this stage, an image is a partitioned into its objects. Segmentation
+is the most difficult tasks in DIP. It is a process which takes a lot
+of time for the successful solution of imaging problems which requires
+objects to identify individually.
+FAST NUCES -
+Karachi
+Instructor: Talha Shahid
+10
+
+=== PAGE 13 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+10.9 Representation and Description
+Representation and description follow the output of the segmentation
+stage. The output is a raw pixel data which has all points of the
+region itself. To transform the raw data, representation is the only
+solution. Whereas description is used for extracting information Is to
+differentiate one class of objects from another.
+10. IO Object recognition
+In this stage, the label is assigned to the object,
+descriptors .
+10. 11 Knowledge Base
+Knowledge is the last stage in DIP.
+In this
+which is based on
+important
+stage ,
+information of the image is located, which limits the searching
+processes. The knowledge base is very complex when the image database
+has a high-resolution satellite.
+FAST NUCES -
+Karachi
+Instructor: Talha Shahid
+11
+
+=== PAGE 14 ===
+National University of Computer & Emerging Sciences -
+Department of Artificial Intelligence
+NUCES -
+Karachi
+11. Basic Image Operations
+11. 1 Reading and Displaying an Image
+pad=15)
+import cv2
+import matplotlib .pyptot as p tt
+image_path = 'SUkUna . jpeg'
+= cv2.imread(image_path)
+image
+if image is None:
+print ("Error: Image not found. ")
+else :
+# Convert BGR to RGB
+= cv2.cvtCotor(image,
+image_rgb
+ptt.axis('off')
+# Add a titte above the image
+cv2.
+Sukuna' ,
+COLOR_BGR2RGB)
+fontsize=16 ,
+ptt.titte('King of Curses -
+Ryomen
+put .
+put. show()
+color: 'darkred' ,
+King of Curses - Ryomen Sukuna
+cotor format from OpenCV's default BGR (Blue, Green, Red)
+Description :
+FAST NUCES -
+This code Uses OpenCV to
+to the standard RGB (Red,
+closing the window.
+Karachi
+read an image from a file catted 'Sukuna.jpegl .
+It then converts the image's
+Green, Blue) format. Finally, cv2.imshow() displays the converted image in a window, and cv2.waitKey(0) waits for a key press before
+Instructor: Talha Shahid
+12
+
+=== PAGE 15 ===
+National University of Computer & Emerging Sciences -
+NUCES -
+Karachi
+11. 2 Grayscale Image
+import cv2
+import matplotlib .pyptot as p It
+# Read the image
+= cv2.imread('Sukuna.jpegI)
+image
+# Convert to grayscale
+- cv2.cvtCotor(image, cv2.COLOR_BGR2GRAY)
+gray_image -
+# cmap='gray' is required so Matplotlib knows it's a grayscale
+put. cmap=' gray')
+put. titte( 'Grayscale Image')
+ptt.axis(' off') # Hides the x and y axes for a cleaner took
+Department of Artificial Intelligence
+image
+Grayscale Image
+put . show()
+Description :
+FAST NUCES -
+This code uses OpenCV to read an image from a file catted 'Sukuna.jpeg' and converts it to a grayscale format using cv2.cvtCotor(). Because OpenCV's standard
+display window (cv2.imshow) does not work intine within Jupyter Notebooks, the code uses the Matplotlib library to render
+the image directly inside the notebook
+cell. It uses ptt.imshow() with a specific grayscale colormap (cmap='gray') to ensure the image displays correctly without
+false colors, and hides the coordinate
+axes (ptt.axis(l off')) for a cleaner visual presentation.
+Karachi
+Instructor: Talha Shahid
+13
+
+=== PAGE 16 ===
+National University of Computer & Emerging Sciences -
+NUCES -
+Karachi
+Resized Image (768 x 1376)
+11. 4 Resize Image
+import cv2
+import matplotlib.pyptot as plt
+= cv2.imread('Sukuna.jpegI)
+image
+= cv2.cvtC010r(image, cv2.COLOR_BGR2RGB)
+image_rgb
+# Resize the image to 50% of its original size white
+scale _ factor = 0 5
+resized_image = cv2. None,
+# Get the new resolution from the shape of the array
+= resized_image.shape[:2]
+new_height, new_width
+keeping
+(height ,
+Department of Artificial Intelligence
+the aspect ratio
+fy=scale_factor)
+width, channels)
+= image_rgb.shape[:2]
+originat_height, originat_width
+# Print the resolutions directly
+Resolution: {originat_width} x {originat_height}")
+print(f"New Resolution: {new_width} x {new _ height}" )
+# Display the resized image inline using Matplotlib
+put. imshow (resized_image)
+put. Resized Image ( {new_width} x {new_height})
+ptt.axis(' off') # Hides the x and y axes
+put . show()
+Description :
+FAST NUCES -
+This code reads an image, converts it to RGB, and Uses OpenCV's cv2.resize() with a scaling factor to proportionally shrink the image to 50% of its original
+size. After resizing, it extracts the new height and width using the shape attribute of the resulting NumPy array (resized_image.shape[:2]). Finally, it prints
+both the originat and updated resolutions as text, and displays the newly scaled image intine using Matplotlib, including the new dimensions directly in the
+plot's titte.
+Karachi
+Instructor: Talha Shahid
+14
+
+=== PAGE 17 ===
+National University of Computer & Emerging Sciences -
+NUCES -
+Karachi
+Gaussian Blur Applied
+11. 5 Image Filtering (Blur)
+import cv2
+import matplotlib .pyptot as p It
+# Read the image
+= cv2.imread('Sukuna.jpegI)
+image
+# Convert from BGR to RGB for correct color display
+- cv2.cvtCotor(image, cv2.COLOR_BGR2RGB)
+image_rgb -
+# Apply Gaussian blur
+# (5, 5) is the kernel size (must be odd numbers)
+# @ is the standard deviation (O means OpenCV calculates
+= (31, 31), 0)
+blurred_image
+# Display the blurred image intine using Matplotlib
+put . imshow (blurred_image)
+ptt.titte( 'Gaussian Blur Applied')
+plt.axis(' off') # Hides the x and y axes
+it
+Department of Artificial Intelligence
+automatically)
+put . show()
+Description :
+FAST NUCES -
+This code uses OpenCV to read an image and converts it from BGR to RGB so the colors render correctly in Jupyter. It then applies a smoothing effect using
+cv2.GaussianBIur(). This function takes the image, a kernel size of (31, 31) (which defines the grid area—31 pixels wide by 31 pixels tall—used to calculate
+the blur for each pixel, and must be odd numbers), and a standard deviation of 0 (which tells OpenCV to automatically calculate the blur intensity based on the
+kernel size). Finally, the smoothed, blurred image is displayed intine using Matplotlib with the axes hidden.
+Karachi
+Instructor: Talha Shahid
+15
+
+=== PAGE 18 ===
+National University of Computer & Emerging Sciences -
+Department of Artificial Intelligence
+NUCES -
+11.6 Cropping
+import cv2
+import matplotlib.pyptot as p It
+# Read the image
+= cv2.imread('Sukuna.jpegI)
+image
+# Convert from BGR to RGB for correct cotor display
+cv2.cvtCoUor(image, cv2.COLOR_BGR2RGB)
+image_rgb
+# Get the originat image dimensions (height and width)
+Karachi
+Cropped Image (Left Half)
+= image_rgb .
+height, width
+# Calculate the horizontal midpoint
+mid_x = width //
+2
+# Crop the image using NumPy slicing
+# Syntax: image[y_start:y_end, x_start:x_end]
+means att rows (fult height) ,
+:mid_x' means
+= image_rgb[:, :mid_x]
+cropped_image
+# Note: To keep the RIGHT half instead, use:
+image_rgb[:,
+mid_x:]
+# cropped _ image =
+# Display the cropped image intine using Matplotlib
+put .
+put . titte( 'Cropped Image (Left Half) ')
+ptt.axis(' off') # Hides the x and y axes
+columns
+from
+start
+to
+the
+midpoint
+put . show()
+Description :
+FAST NUCES -
+In OpenCV, images are stored as multi-dimensionat NumPy arrays, which means cropping is done using standard Python array slicing (image[y, x]) rather than a
+specific OpenCV function.
+This code first reads the image and converts it to RGB. It then retrieves the total height and width from the array's . shape property. By dividing the width
+by 2 (width // 2), it finds the exact vertical center line of the image. The slicing syntax image_rgb[:, :mid_x] tells the program to take att vertical rows
+(the full height) but only take the horizontal columns from the very left edge up to the calculated midpoint, effectively cutting off the right half of the
+image. Finally, the resulting cropped region is displayed intine using Matplotlib.
+Karachi
+Instructor: Talha Shahid
+16
+
+=== PAGE 19 ===
+National University of Computer & Emerging Sciences -
+Department of Artificial Intelligence
+NUCES -
+Karachi
+11.7 Adding Text on Image
+import cv2
+import matplotlib.pyptot as put
+# Read the image
+image = cv2.imread( 'Sukuna.jpegl)
+# Convert from BGR to RGB for correct color display
+= cv2.cvtCotor(image, cv2.COLOR_BGR2RGB)
+image_rgb
+in
+Matplotlib
+# Add text configuration
+- "Domain Expansion"
+text -
+font
+# Draw the text directly on the originat image
+# Parameters: image, text, bottom-left corner (x,
+# Note: (255, 0, 0) in RGB format makes the text
+cv2.putText(image_rgb, text, (150, 150), font, 5,
+# Display the image intine using Matplotlib
+put .
+plt.axis(' off') # Hides the x and y axes
+y), font,
+Red.
+(255, o,
+fontScate ,
+color,
+thickness
+.)omain Expansio
+so the cotors display accurately in Jupyter Notebooks.
+put . show()
+Description :
+FAST NUCES -
+This code reads an image from a file and converts its color format from OpenCV's default BGR to RGB
+The cv2.putText() function is used to draw the text "Domain Expansion" onto the image. It places the text starting at pixel coordinates (150, 150) using the
+cv2.FONT_HERSHEY_SIMPLEX font style, scaled by a factor of 1.5, colored solid red (255, O, O), with a tine thickness of 2. Finally, Matplotlib is used to
+render the annotated image intine within the notebook cell, hiding the coordinate axes for a clean presentation.
+Karachi
+Instructor: Talha Shahid
+17
+
+=== PAGE 20 ===
+National University of Computer & Emerging Sciences -
+NUCES -
+Karachi
+11.8 Analyze the Image using Pandas
+import cv2
+import pandas as pd
+from IPython.disptay import display
+# Read the image
+= cv2.imread('Sukuna.jpegI)
+image
+# Reshape the 3D image array (Height, Width,
+# into a 2D array (Total Pixels, Channels)
+= image. reshape(-l, 3)
+flattened _ image
+Channels)
+# Convert the 2D array into a Pandas DataFrame
+= pd. DataFrame (flattened_image, columns=
+image_df
+# Display basic statistics
+print ("Basic Statistics of Image Pixel Values:
+# display() works perfectly in Jupyter to show a
+display (image_df. describe() )
+formatted table
+Basic Statistics of Image Pixel Values:
+Description :
+FAST NUCES -
+count
+mean
+std
+min
+25%
+max
+Karachi
+4 .227072e+06
+8.164206e+@1
+5 .890610e+01
+3 .400000e+01
+1.120000e+02
+2.550006e+02
+4 .227072e+36
+7.073189e+31
+6 .180311e+31
+2 . OOOO@Oe+31
+2.550000e+32
+4 .227072e+06
+7 .700986e+01
+7 .652126e+01
+9 .600000e+OO
+1.36000@e+02
+2.55000@e+02
+Department of Artificial Intelligence
+Instructor: Talha Shahid
+18
+
+=== PAGE 21 ===
+National University of Computer & Emerging Sciences -
+NUCES -
+Karachi
+Thresholded Image (Binary)
+11.9 Image Thresholding
+import cv2
+import matplotlib.pyptot as put
+# Read the image
+CV2 . imread( Sukuna.jpeg I)
+image =
+# Convert the image to grayscale
+# Thresholding is typically performed on single-channel
+cv2. cvtCotor (image ,
+cv2 . COLOR_BGR2GRAY)
+gray_image =
+# Apply binary thresholding
+# Parameters: source image, threshold value, max value,
+ret, thresholded_image =
+cv2. 100,
+# Display the thresholded image intine using Matplotlib
+(grayscale)
+Department of Artificial Intelligence
+images
+thresholding technique
+200, cv2.THRESH_BINARY)
+# cmap='gray' is required to display single-channel images correctly
+put . cmap=' gray')
+ptt.title( 'Thresholded Image (Binary)
+put . axis(l off')
+put . show()
+Description :
+FAST NUCES -
+This code Uses OpenCV to read an image and convert it to grayscale. It then applies a binary threshold using cv2.threshotd() to create a high-contrast,
+black-and-white image.
+The threshold function looks at the intensity of every single pixel:
+100: This is the threshold limit. Any pixel with a brightness value strictly greater than 100 will be changed.
+200: This is the maximum value. Pixels that exceed the 100 limit are forced to this value (which represents pure white) .
+cv2.THRESH_BINARY: This tells OpenCV the style of thresholding to Use. Because it is binary, anything that does not exceed the threshold of 100 is forced
+to @ (pure black) .
+The function returns two values: ret (the threshold value that was actually used, which is just 100 here) and thresholded_image (the resulting black-and-white
+image). Finally, Matplotlib is used to display the output directly inside the Jupyter Notebook.
+Karachi
+Instructor: Talha Shahid
+19
+
+=== PAGE 22 ===
+National University of Computer & Emerging Sciences -
+Department of Artificial Intelligence
+NUCES -
+11. 10 Image Rotation
+import cv2
+import matplotlib.pyplot as put
+# Read the image
+= cv2.imread('Sukuna.jpeg')
+image
+# Convert from BGR to RGB for correct color display in Matplotlib
+cv2.cvtC0tor(image, cv2.COLOR_BGR2RGB)
+image_rgb =
+Karachi
+Rotated Image (45 Degrees)
+# Get the image dimensions (height and width)
+= image_rgb.shape[:2]
+height, width
+# Calculate the center point of the image (x,
+= (width /
+2, height / 2)
+center
+# Create the rotation matrix
+y)
+# Parameters: center of rotation, angle in degrees (positive
+cv2.getRotationMatrix2D(center, 45, 1)
+rotation _ matrix =
+# Apply the rotation using an affine transformation
+= counter
+-clockwise) ,
+scale
+height)
+# Parameters: source image, rotation matrix, dimensions of the output image (width,
+cv2.warpAffine(image_rgb, rotation_matrix, (width, height))
+rotated_image =
+# Display the rotated image intine using Matplotlib
+put . imshow (rotated_image)
+put. title( 'Rotated Image (45 Degrees)
+plt.axis(' off') # Hides the x and y axes
+ptt . show()
+Description :
+FAST NUCES -
+This code Uses OpenCV to rotate an image by 45 degrees. After reading the image and converting it to the proper RGB format, it performs the rotation in two
+distinct steps:
+cv2.getRotationMatrix2D(): This function computes a mathematical 2x3 transformation matrix needed to rotate the image. It requires three parameters: the
+exact center pixel coordinates to act as the pivot point (width / 2, height / 2), the angle of rotation in degrees (45 degrees counter-clockwise), and a
+scale factor (1, meaning the image stays its original size) .
+cv2.warpAffine(): This function takes the calculated rotation matrix and actually applies it to the image's pixels, mapping them to their new locations.
+It requires the target dimensions (width, height) so it knows how large of a canvas to draw the newly rotated image on.
+Finally, the newly rotated image is displayed intine using Matplotlib. Note that because the image canvas size remains the same, the corners of the rotated
+image will get cut off, and the empty space left behind wilt be filled with black pixels.
+Karachi
+Instructor: Talha Shahid
+20
+
+=== PAGE 23 ===
+National University of Computer & Emerging Sciences -
+Department of Artificial Intelligence
+NUCES -
+Karachi
+Blended Image (cv2 .add)
+11. 11 Image Blending
+import
+cv2
+import
+matplotlib.pyplot as put
+the two images
+# Read
+imagel = cv2.imread('Sukuna.jpeg')
+= cv2.imread('Gojo.jpeg')
+image2
+# Convert both images from BGR to RGB
+cv2 . cvtColor (imagel,
+imagel_rgb -
+cv2.
+cv2.cvtColor(image2, cv2.
+image2_rgb =
+for correct color
+COLOR_BGR2RGB)
+COLOR_BGR2RGB)
+display
+in
+Matplotlib
+# Ensure both images are the exact same size before combining them
+# Here, we resize imagel to match the width and height of image2
+= image2_rgb.shape[:2]
+target _ height, target_width
+cv2. (target_width, target _ height))
+imagel_resized =
+# Blend the images using OpenCV's addition method
+blended_image cv2.add (imagel_resized, image2_rgb)
+put . imshow (blended_image)
+put. titte( 'Blended Image (cv2.add)
+ptt . axis(' off')
+put . show()
+Description :
+FAST NUCES -
+This code Uses OpenCV to read two separate images and blend them together. Because Matplotlib expects colors in RGB format, both images are first converted
+from OpenCV's default BGR format.
+In order to mathematically combine two images, they must have the exact same pixel dimensions. The code retrieves the height and width of the second image
+and Uses cv2.resize() to force the first image to match those exact dimensions.
+Once the sizes match, the images are combined using cv2.add(). This function performs matrix addition, adding the intensity values of corresponding pixels
+together. A key feature of OpenCV's add() function is that it uses saturation arithmetic—meaning if the sum of two pixel values exceeds the maximum limit of
+255, it caps the result at exactly 255 (pure white) rather than rotting over. Because values are being added together, the resulting blended image witt generally
+took much brighter than either originat image. Finally, the combined image is displayed intine using Matplotlib.
+Karachi
+Instructor: Talha Shahid
+21
+
+=== PAGE 24 ===
+National University of Computer & Emerging Sciences -
+Department of Artificial Intelligence
+NUCES -
+Karachi
+Equalized Image (Enhanced Contrast)
+11. 12 Histogram Equalization
+import cv2
+import matplotlib.pyptot as put
+# Read the image directly in grayscale mode
+single-channel
+# cv2.IMREAD_GRAYSCALE bypasses the need to use cv2.cvtCoIor
+= cv2.imread('Sukuna.jpeg', cv2
+. IMREAD_GRAYSCALE)
+image
+# Apply histogram equalization to improve contrast
+cv2. equatizeHist (image)
+equalized _ image =
+# cmap='gray' is required so Matplotlib renders the
+plt . cmap= gray')
+put . titte( 'Equalized Image (Enhanced Contrast) I)
+put . axis(l off')
+tater
+put . show()
+Description :
+FAST NUCES -
+This code uses OpenCV to enhance the
+contrast of an
+image
+image
+correctly
+using a technique catted histogram equalization.
+First, it reads the image using the cv2.IMREAD_GRAYSCALE flag. Instead of loading the image in color and converting it later, this flag tells OpenCV to toad
+it directly as a single-channel (black-and-white) image right from the start.
+Next, the cv2.equalizeHist() function is applied to the image. This function mathematically analyzes the distribution of pixel brightness values (the histogram).
+If an image is too dark, washed out, or tacks contrast, its pixel values are usually clumped together in a narrow range. Histogram equalization takes those
+clumped pixels and stretches them out across the entire available brightness spectrum (from O to 255). This process naturally darkens the darkest parts and
+tightens the tightest parts, revealing hidden details and significantly improving the overall global contrast of the image. Finally, the enhanced image is
+displayed intine using Matplotlib.
+Karachi
+Instructor: Talha Shahid
+22

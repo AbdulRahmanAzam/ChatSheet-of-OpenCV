@@ -1,0 +1,1281 @@
+﻿{
+    "id":  "lab_manual_06_p020",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "National University of Computer \u0026 Emerging Sciences - NUCES - Karachi Department of Artificial Intelligence 5.3 Orientation Assignment To make the keypoints invariant to rotation, SIFT assigns an orientation to each keypoint based on the dominant gradient direction in its local neighborhood. This results in a canonical orientation for each keypoint. 3. ORIENTATION ASSIGNMENT Concept: \"Invariance to Rotation\" Assigning a canonical orientation allows the descriptor to be relative, ensuring matches even if the image is rotated. Dominant Orientation Dominant Peak Angle: -450 900 Magnitude: High 00 2700 5.4 Keypoint Descriptor Generation Around each keypoint, SIFT constructs a descriptor that characterizes the local image region. The descriptor is created by considering the gradient magnitudes and orientations in a specific pattern of sub- regions surrounding the keypoint. This pattern is divided into smaller bins, and histograms of gradient orientations are computed for each sub-region . FAST NUCES - The concatenated histograms form the keypoint descriptor . Karachi Talha Shahid 20",
+    "review_status":  "raw_ocr_unverified",
+    "page":  20,
+    "source_id":  "lab_manual_06",
+    "lines":  [
+                  {
+                      "text":  "National University of Computer \u0026 Emerging Sciences -",
+                      "words":  [
+                                    {
+                                        "y":  94,
+                                        "height":  23,
+                                        "width":  122,
+                                        "text":  "National",
+                                        "x":  376
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  29,
+                                        "width":  146,
+                                        "text":  "University",
+                                        "x":  507
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  22,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  660
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  28,
+                                        "width":  147,
+                                        "text":  "Computer",
+                                        "x":  696
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  22,
+                                        "width":  21,
+                                        "text":  "\u0026",
+                                        "x":  851
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  28,
+                                        "width":  134,
+                                        "text":  "Emerging",
+                                        "x":  880
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  23,
+                                        "width":  132,
+                                        "text":  "Sciences",
+                                        "x":  1021
+                                    },
+                                    {
+                                        "y":  107,
+                                        "height":  4,
+                                        "width":  10,
+                                        "text":  "-",
+                                        "x":  1162
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "NUCES - Karachi",
+                      "words":  [
+                                    {
+                                        "y":  140,
+                                        "height":  22,
+                                        "width":  103,
+                                        "text":  "NUCES",
+                                        "x":  654
+                                    },
+                                    {
+                                        "y":  152,
+                                        "height":  4,
+                                        "width":  10,
+                                        "text":  "-",
+                                        "x":  765
+                                    },
+                                    {
+                                        "y":  139,
+                                        "height":  23,
+                                        "width":  109,
+                                        "text":  "Karachi",
+                                        "x":  784
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Department of Artificial Intelligence",
+                      "words":  [
+                                    {
+                                        "y":  183,
+                                        "height":  26,
+                                        "width":  143,
+                                        "text":  "Department",
+                                        "x":  555
+                                    },
+                                    {
+                                        "y":  182,
+                                        "height":  22,
+                                        "width":  24,
+                                        "text":  "of",
+                                        "x":  706
+                                    },
+                                    {
+                                        "y":  182,
+                                        "height":  22,
+                                        "width":  100,
+                                        "text":  "Artificial",
+                                        "x":  737
+                                    },
+                                    {
+                                        "y":  182,
+                                        "height":  27,
+                                        "width":  137,
+                                        "text":  "Intelligence",
+                                        "x":  847
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "5.3 Orientation Assignment",
+                      "words":  [
+                                    {
+                                        "y":  224,
+                                        "height":  23,
+                                        "width":  45,
+                                        "text":  "5.3",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  221,
+                                        "height":  26,
+                                        "width":  186,
+                                        "text":  "Orientation",
+                                        "x":  250
+                                    },
+                                    {
+                                        "y":  221,
+                                        "height":  34,
+                                        "width":  188,
+                                        "text":  "Assignment",
+                                        "x":  447
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "To make the keypoints invariant to rotation,",
+                      "words":  [
+                                    {
+                                        "y":  280,
+                                        "height":  18,
+                                        "width":  30,
+                                        "text":  "To",
+                                        "x":  168
+                                    },
+                                    {
+                                        "y":  279,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "make",
+                                        "x":  229
+                                    },
+                                    {
+                                        "y":  279,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  318
+                                    },
+                                    {
+                                        "y":  279,
+                                        "height":  24,
+                                        "width":  132,
+                                        "text":  "keypoints",
+                                        "x":  394
+                                    },
+                                    {
+                                        "y":  279,
+                                        "height":  19,
+                                        "width":  133,
+                                        "text":  "invariant",
+                                        "x":  558
+                                    },
+                                    {
+                                        "y":  280,
+                                        "height":  18,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  722
+                                    },
+                                    {
+                                        "y":  279,
+                                        "height":  23,
+                                        "width":  129,
+                                        "text":  "rotation,",
+                                        "x":  782
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "SIFT assigns an",
+                      "words":  [
+                                    {
+                                        "y":  280,
+                                        "height":  18,
+                                        "width":  60,
+                                        "text":  "SIFT",
+                                        "x":  947
+                                    },
+                                    {
+                                        "y":  279,
+                                        "height":  24,
+                                        "width":  103,
+                                        "text":  "assigns",
+                                        "x":  1037
+                                    },
+                                    {
+                                        "y":  284,
+                                        "height":  14,
+                                        "width":  28,
+                                        "text":  "an",
+                                        "x":  1172
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "orientation to each keypoint based on the dominant gradient direction",
+                      "words":  [
+                                    {
+                                        "y":  317,
+                                        "height":  19,
+                                        "width":  164,
+                                        "text":  "orientation",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  318,
+                                        "height":  18,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  349
+                                    },
+                                    {
+                                        "y":  317,
+                                        "height":  19,
+                                        "width":  57,
+                                        "text":  "each",
+                                        "x":  394
+                                    },
+                                    {
+                                        "y":  317,
+                                        "height":  24,
+                                        "width":  118,
+                                        "text":  "keypoint",
+                                        "x":  468
+                                    },
+                                    {
+                                        "y":  317,
+                                        "height":  19,
+                                        "width":  73,
+                                        "text":  "based",
+                                        "x":  603
+                                    },
+                                    {
+                                        "y":  323,
+                                        "height":  13,
+                                        "width":  28,
+                                        "text":  "on",
+                                        "x":  692
+                                    },
+                                    {
+                                        "y":  317,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  736
+                                    },
+                                    {
+                                        "y":  317,
+                                        "height":  19,
+                                        "width":  118,
+                                        "text":  "dominant",
+                                        "x":  796
+                                    },
+                                    {
+                                        "y":  317,
+                                        "height":  24,
+                                        "width":  119,
+                                        "text":  "gradient",
+                                        "x":  931
+                                    },
+                                    {
+                                        "y":  317,
+                                        "height":  19,
+                                        "width":  134,
+                                        "text":  "direction",
+                                        "x":  1066
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "in its local neighborhood. This results in a canonical orientation",
+                      "words":  [
+                                    {
+                                        "y":  354,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "in",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  354,
+                                        "height":  19,
+                                        "width":  42,
+                                        "text":  "its",
+                                        "x":  220
+                                    },
+                                    {
+                                        "y":  354,
+                                        "height":  19,
+                                        "width":  73,
+                                        "text":  "local",
+                                        "x":  284
+                                    },
+                                    {
+                                        "y":  354,
+                                        "height":  24,
+                                        "width":  188,
+                                        "text":  "neighborhood.",
+                                        "x":  379
+                                    },
+                                    {
+                                        "y":  354,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "This",
+                                        "x":  592
+                                    },
+                                    {
+                                        "y":  354,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "results",
+                                        "x":  673
+                                    },
+                                    {
+                                        "y":  354,
+                                        "height":  19,
+                                        "width":  26,
+                                        "text":  "in",
+                                        "x":  799
+                                    },
+                                    {
+                                        "y":  360,
+                                        "height":  13,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  847
+                                    },
+                                    {
+                                        "y":  354,
+                                        "height":  19,
+                                        "width":  132,
+                                        "text":  "canonical",
+                                        "x":  882
+                                    },
+                                    {
+                                        "y":  354,
+                                        "height":  19,
+                                        "width":  164,
+                                        "text":  "orientation",
+                                        "x":  1036
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "for each keypoint.",
+                      "words":  [
+                                    {
+                                        "y":  391,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "for",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  391,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "each",
+                                        "x":  230
+                                    },
+                                    {
+                                        "y":  391,
+                                        "height":  25,
+                                        "width":  129,
+                                        "text":  "keypoint.",
+                                        "x":  306
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3. ORIENTATION ASSIGNMENT",
+                      "words":  [
+                                    {
+                                        "y":  474,
+                                        "height":  23,
+                                        "width":  25,
+                                        "text":  "3.",
+                                        "x":  372
+                                    },
+                                    {
+                                        "y":  473,
+                                        "height":  24,
+                                        "width":  217,
+                                        "text":  "ORIENTATION",
+                                        "x":  408
+                                    },
+                                    {
+                                        "y":  474,
+                                        "height":  23,
+                                        "width":  215,
+                                        "text":  "ASSIGNMENT",
+                                        "x":  635
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Concept: \"Invariance to Rotation\"",
+                      "words":  [
+                                    {
+                                        "y":  522,
+                                        "height":  17,
+                                        "width":  81,
+                                        "text":  "Concept:",
+                                        "x":  372
+                                    },
+                                    {
+                                        "y":  521,
+                                        "height":  15,
+                                        "width":  104,
+                                        "text":  "\"Invariance",
+                                        "x":  457
+                                    },
+                                    {
+                                        "y":  522,
+                                        "height":  14,
+                                        "width":  19,
+                                        "text":  "to",
+                                        "x":  566
+                                    },
+                                    {
+                                        "y":  521,
+                                        "height":  15,
+                                        "width":  86,
+                                        "text":  "Rotation\"",
+                                        "x":  591
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Assigning a canonical orientation allows the",
+                      "words":  [
+                                    {
+                                        "y":  555,
+                                        "height":  17,
+                                        "width":  82,
+                                        "text":  "Assigning",
+                                        "x":  371
+                                    },
+                                    {
+                                        "y":  559,
+                                        "height":  10,
+                                        "width":  8,
+                                        "text":  "a",
+                                        "x":  458
+                                    },
+                                    {
+                                        "y":  555,
+                                        "height":  14,
+                                        "width":  79,
+                                        "text":  "canonical",
+                                        "x":  472
+                                    },
+                                    {
+                                        "y":  555,
+                                        "height":  14,
+                                        "width":  91,
+                                        "text":  "orientation",
+                                        "x":  556
+                                    },
+                                    {
+                                        "y":  555,
+                                        "height":  14,
+                                        "width":  52,
+                                        "text":  "allows",
+                                        "x":  652
+                                    },
+                                    {
+                                        "y":  555,
+                                        "height":  14,
+                                        "width":  28,
+                                        "text":  "the",
+                                        "x":  708
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "descriptor to be relative, ensuring",
+                      "words":  [
+                                    {
+                                        "y":  575,
+                                        "height":  17,
+                                        "width":  83,
+                                        "text":  "descriptor",
+                                        "x":  372
+                                    },
+                                    {
+                                        "y":  577,
+                                        "height":  12,
+                                        "width":  17,
+                                        "text":  "to",
+                                        "x":  459
+                                    },
+                                    {
+                                        "y":  575,
+                                        "height":  14,
+                                        "width":  20,
+                                        "text":  "be",
+                                        "x":  482
+                                    },
+                                    {
+                                        "y":  575,
+                                        "height":  16,
+                                        "width":  63,
+                                        "text":  "relative,",
+                                        "x":  508
+                                    },
+                                    {
+                                        "y":  575,
+                                        "height":  17,
+                                        "width":  73,
+                                        "text":  "ensuring",
+                                        "x":  576
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "matches even if the image is rotated.",
+                      "words":  [
+                                    {
+                                        "y":  595,
+                                        "height":  14,
+                                        "width":  72,
+                                        "text":  "matches",
+                                        "x":  372
+                                    },
+                                    {
+                                        "y":  599,
+                                        "height":  10,
+                                        "width":  38,
+                                        "text":  "even",
+                                        "x":  448
+                                    },
+                                    {
+                                        "y":  595,
+                                        "height":  14,
+                                        "width":  11,
+                                        "text":  "if",
+                                        "x":  492
+                                    },
+                                    {
+                                        "y":  595,
+                                        "height":  14,
+                                        "width":  28,
+                                        "text":  "the",
+                                        "x":  506
+                                    },
+                                    {
+                                        "y":  595,
+                                        "height":  17,
+                                        "width":  52,
+                                        "text":  "image",
+                                        "x":  539
+                                    },
+                                    {
+                                        "y":  595,
+                                        "height":  14,
+                                        "width":  12,
+                                        "text":  "is",
+                                        "x":  596
+                                    },
+                                    {
+                                        "y":  595,
+                                        "height":  14,
+                                        "width":  64,
+                                        "text":  "rotated.",
+                                        "x":  613
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Dominant",
+                      "words":  [
+                                    {
+                                        "y":  596,
+                                        "height":  16,
+                                        "width":  93,
+                                        "text":  "Dominant",
+                                        "x":  889
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Orientation",
+                      "words":  [
+                                    {
+                                        "y":  619,
+                                        "height":  15,
+                                        "width":  108,
+                                        "text":  "Orientation",
+                                        "x":  888
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Dominant Peak",
+                      "words":  [
+                                    {
+                                        "y":  767,
+                                        "height":  13,
+                                        "width":  73,
+                                        "text":  "Dominant",
+                                        "x":  883
+                                    },
+                                    {
+                                        "y":  767,
+                                        "height":  13,
+                                        "width":  37,
+                                        "text":  "Peak",
+                                        "x":  960
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Angle: -450",
+                      "words":  [
+                                    {
+                                        "y":  785,
+                                        "height":  14,
+                                        "width":  44,
+                                        "text":  "Angle:",
+                                        "x":  882
+                                    },
+                                    {
+                                        "y":  785,
+                                        "height":  12,
+                                        "width":  31,
+                                        "text":  "-450",
+                                        "x":  931
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "900 Magnitude: High",
+                      "words":  [
+                                    {
+                                        "y":  806,
+                                        "height":  11,
+                                        "width":  25,
+                                        "text":  "900",
+                                        "x":  843
+                                    },
+                                    {
+                                        "y":  802,
+                                        "height":  15,
+                                        "width":  79,
+                                        "text":  "Magnitude:",
+                                        "x":  883
+                                    },
+                                    {
+                                        "y":  802,
+                                        "height":  15,
+                                        "width":  33,
+                                        "text":  "High",
+                                        "x":  967
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "00",
+                      "words":  [
+                                    {
+                                        "y":  955,
+                                        "height":  12,
+                                        "width":  15,
+                                        "text":  "00",
+                                        "x":  996
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2700",
+                      "words":  [
+                                    {
+                                        "y":  1104,
+                                        "height":  12,
+                                        "width":  33,
+                                        "text":  "2700",
+                                        "x":  838
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "5.4 Keypoint Descriptor Generation",
+                      "words":  [
+                                    {
+                                        "y":  1216,
+                                        "height":  24,
+                                        "width":  47,
+                                        "text":  "5.4",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1213,
+                                        "height":  34,
+                                        "width":  144,
+                                        "text":  "Keypoint",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1213,
+                                        "height":  33,
+                                        "width":  168,
+                                        "text":  "Descriptor",
+                                        "x":  409
+                                    },
+                                    {
+                                        "y":  1213,
+                                        "height":  27,
+                                        "width":  181,
+                                        "text":  "Generation",
+                                        "x":  588
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Around each keypoint, SIFT constructs a descriptor that characterizes",
+                      "words":  [
+                                    {
+                                        "y":  1271,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "Around",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1271,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "each",
+                                        "x":  274
+                                    },
+                                    {
+                                        "y":  1271,
+                                        "height":  24,
+                                        "width":  128,
+                                        "text":  "keypoint,",
+                                        "x":  350
+                                    },
+                                    {
+                                        "y":  1272,
+                                        "height":  19,
+                                        "width":  60,
+                                        "text":  "SIFT",
+                                        "x":  497
+                                    },
+                                    {
+                                        "y":  1272,
+                                        "height":  19,
+                                        "width":  148,
+                                        "text":  "constructs",
+                                        "x":  573
+                                    },
+                                    {
+                                        "y":  1277,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  738
+                                    },
+                                    {
+                                        "y":  1271,
+                                        "height":  24,
+                                        "width":  149,
+                                        "text":  "descriptor",
+                                        "x":  767
+                                    },
+                                    {
+                                        "y":  1271,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "that",
+                                        "x":  931
+                                    },
+                                    {
+                                        "y":  1271,
+                                        "height":  20,
+                                        "width":  194,
+                                        "text":  "characterizes",
+                                        "x":  1006
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "the local image region. The descriptor is created by considering the",
+                      "words":  [
+                                    {
+                                        "y":  1309,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1309,
+                                        "height":  20,
+                                        "width":  72,
+                                        "text":  "local",
+                                        "x":  231
+                                    },
+                                    {
+                                        "y":  1309,
+                                        "height":  24,
+                                        "width":  72,
+                                        "text":  "image",
+                                        "x":  323
+                                    },
+                                    {
+                                        "y":  1309,
+                                        "height":  24,
+                                        "width":  98,
+                                        "text":  "region.",
+                                        "x":  413
+                                    },
+                                    {
+                                        "y":  1309,
+                                        "height":  20,
+                                        "width":  45,
+                                        "text":  "The",
+                                        "x":  532
+                                    },
+                                    {
+                                        "y":  1309,
+                                        "height":  24,
+                                        "width":  150,
+                                        "text":  "descriptor",
+                                        "x":  594
+                                    },
+                                    {
+                                        "y":  1309,
+                                        "height":  20,
+                                        "width":  26,
+                                        "text":  "is",
+                                        "x":  763
+                                    },
+                                    {
+                                        "y":  1309,
+                                        "height":  20,
+                                        "width":  102,
+                                        "text":  "created",
+                                        "x":  808
+                                    },
+                                    {
+                                        "y":  1309,
+                                        "height":  24,
+                                        "width":  27,
+                                        "text":  "by",
+                                        "x":  929
+                                    },
+                                    {
+                                        "y":  1309,
+                                        "height":  24,
+                                        "width":  164,
+                                        "text":  "considering",
+                                        "x":  975
+                                    },
+                                    {
+                                        "y":  1309,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  1156
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "gradient magnitudes and orientations in a specific pattern of sub-",
+                      "words":  [
+                                    {
+                                        "y":  1347,
+                                        "height":  24,
+                                        "width":  118,
+                                        "text":  "gradient",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1347,
+                                        "height":  24,
+                                        "width":  148,
+                                        "text":  "magnitudes",
+                                        "x":  309
+                                    },
+                                    {
+                                        "y":  1347,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  479
+                                    },
+                                    {
+                                        "y":  1347,
+                                        "height":  20,
+                                        "width":  179,
+                                        "text":  "orientations",
+                                        "x":  544
+                                    },
+                                    {
+                                        "y":  1347,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "in",
+                                        "x":  745
+                                    },
+                                    {
+                                        "y":  1353,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  794
+                                    },
+                                    {
+                                        "y":  1347,
+                                        "height":  24,
+                                        "width":  116,
+                                        "text":  "specific",
+                                        "x":  829
+                                    },
+                                    {
+                                        "y":  1348,
+                                        "height":  23,
+                                        "width":  102,
+                                        "text":  "pattern",
+                                        "x":  968
+                                    },
+                                    {
+                                        "y":  1347,
+                                        "height":  20,
+                                        "width":  29,
+                                        "text":  "of",
+                                        "x":  1092
+                                    },
+                                    {
+                                        "y":  1347,
+                                        "height":  20,
+                                        "width":  56,
+                                        "text":  "sub-",
+                                        "x":  1142
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "regions surrounding the keypoint. This pattern is divided into smaller",
+                      "words":  [
+                                    {
+                                        "y":  1385,
+                                        "height":  24,
+                                        "width":  103,
+                                        "text":  "regions",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1385,
+                                        "height":  24,
+                                        "width":  164,
+                                        "text":  "surrounding",
+                                        "x":  288
+                                    },
+                                    {
+                                        "y":  1385,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  465
+                                    },
+                                    {
+                                        "y":  1385,
+                                        "height":  24,
+                                        "width":  129,
+                                        "text":  "keypoint.",
+                                        "x":  524
+                                    },
+                                    {
+                                        "y":  1385,
+                                        "height":  19,
+                                        "width":  60,
+                                        "text":  "This",
+                                        "x":  670
+                                    },
+                                    {
+                                        "y":  1385,
+                                        "height":  24,
+                                        "width":  102,
+                                        "text":  "pattern",
+                                        "x":  746
+                                    },
+                                    {
+                                        "y":  1385,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  864
+                                    },
+                                    {
+                                        "y":  1385,
+                                        "height":  19,
+                                        "width":  102,
+                                        "text":  "divided",
+                                        "x":  906
+                                    },
+                                    {
+                                        "y":  1385,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "into",
+                                        "x":  1024
+                                    },
+                                    {
+                                        "y":  1385,
+                                        "height":  19,
+                                        "width":  105,
+                                        "text":  "smaller",
+                                        "x":  1096
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "bins, and histograms of gradient orientations are computed for each",
+                      "words":  [
+                                    {
+                                        "y":  1422,
+                                        "height":  23,
+                                        "width":  69,
+                                        "text":  "bins,",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1422,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  262
+                                    },
+                                    {
+                                        "y":  1422,
+                                        "height":  24,
+                                        "width":  147,
+                                        "text":  "histograms",
+                                        "x":  326
+                                    },
+                                    {
+                                        "y":  1422,
+                                        "height":  19,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  493
+                                    },
+                                    {
+                                        "y":  1422,
+                                        "height":  24,
+                                        "width":  119,
+                                        "text":  "gradient",
+                                        "x":  540
+                                    },
+                                    {
+                                        "y":  1422,
+                                        "height":  19,
+                                        "width":  179,
+                                        "text":  "orientations",
+                                        "x":  679
+                                    },
+                                    {
+                                        "y":  1427,
+                                        "height":  14,
+                                        "width":  42,
+                                        "text":  "are",
+                                        "x":  878
+                                    },
+                                    {
+                                        "y":  1422,
+                                        "height":  24,
+                                        "width":  119,
+                                        "text":  "computed",
+                                        "x":  940
+                                    },
+                                    {
+                                        "y":  1422,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "for",
+                                        "x":  1079
+                                    },
+                                    {
+                                        "y":  1422,
+                                        "height":  19,
+                                        "width":  57,
+                                        "text":  "each",
+                                        "x":  1142
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "sub-region .",
+                      "words":  [
+                                    {
+                                        "y":  1459,
+                                        "height":  24,
+                                        "width":  148,
+                                        "text":  "sub-region",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1474,
+                                        "height":  4,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  325
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FAST NUCES -",
+                      "words":  [
+                                    {
+                                        "y":  1822,
+                                        "height":  17,
+                                        "width":  56,
+                                        "text":  "FAST",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1822,
+                                        "height":  17,
+                                        "width":  78,
+                                        "text":  "NUCES",
+                                        "x":  234
+                                    },
+                                    {
+                                        "y":  1830,
+                                        "height":  4,
+                                        "width":  11,
+                                        "text":  "-",
+                                        "x":  320
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The concatenated histograms form the keypoint descriptor .",
+                      "words":  [
+                                    {
+                                        "y":  1459,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "The",
+                                        "x":  348
+                                    },
+                                    {
+                                        "y":  1459,
+                                        "height":  19,
+                                        "width":  177,
+                                        "text":  "concatenated",
+                                        "x":  409
+                                    },
+                                    {
+                                        "y":  1459,
+                                        "height":  24,
+                                        "width":  148,
+                                        "text":  "histograms",
+                                        "x":  604
+                                    },
+                                    {
+                                        "y":  1459,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "form",
+                                        "x":  768
+                                    },
+                                    {
+                                        "y":  1459,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  842
+                                    },
+                                    {
+                                        "y":  1459,
+                                        "height":  24,
+                                        "width":  116,
+                                        "text":  "keypoint",
+                                        "x":  903
+                                    },
+                                    {
+                                        "y":  1459,
+                                        "height":  24,
+                                        "width":  150,
+                                        "text":  "descriptor",
+                                        "x":  1035
+                                    },
+                                    {
+                                        "y":  1474,
+                                        "height":  4,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  1191
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Karachi",
+                      "words":  [
+                                    {
+                                        "y":  1820,
+                                        "height":  19,
+                                        "width":  86,
+                                        "text":  "Karachi",
+                                        "x":  340
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1821,
+                                        "height":  18,
+                                        "width":  65,
+                                        "text":  "Talha",
+                                        "x":  607
+                                    },
+                                    {
+                                        "y":  1820,
+                                        "height":  19,
+                                        "width":  80,
+                                        "text":  "Shahid",
+                                        "x":  681
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "20",
+                      "words":  [
+                                    {
+                                        "y":  1822,
+                                        "height":  17,
+                                        "width":  26,
+                                        "text":  "20",
+                                        "x":  1175
+                                    }
+                                ]
+                  }
+              ]
+}

@@ -1,0 +1,1591 @@
+﻿{
+    "id":  "lab_05_manual_p013",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "National University of Computer \u0026 Emerging Sciences - NUCES - Karachi Department of Artificial Intelligence import cv2 import numpy as np from matplotlib import pyplot as plt # Load the image image = cv2. imread( dog. jpeg\u0027 ) = cv2.cvtC010r(image, cv2.COLOR_BGR2GRAY) gray # Threshold the image to create markers (you can adjust the threshold value) thresh = cv2.thresh01d(gray, O, 255, + cv2. THRESH_OTSU) # Perform morphological operations to remove noise np.ones((5, 5), np.uint8) kernel = opening = cv2.morph010gyEx(thresh, cv2 . MORPH_OPEN, kernel, iterations=2) 4k Create sure background and sure foreground markers sure_bg = cv2.di1ate(opening, kernel, iterations=3) dist_transform = cv2.distanceTransform(opening, cv2 . DIST_L2, = cv2. threshold (dist_transform, 0.2 * sure_fg dist_transform.max(), 255, 0) 5) # Subtract sure foreground from sure background to get unknown region sure_fg = np.uint8(sure_fg) = cv2. sure_fg) unknown # Label markers for watershed algorithm = cv2. markers markers = markers + 1 markers C unknown 255] = @ # Apply watershed algorithm cv2. watershed (image, markers) image [markers == -1] color plt . imshow (image) plt.axis( Ion\u0027) plt. show() = [255, o, 0] # Mark boundaries with red FAST NUCES - Karachi Talha Shahid 12",
+    "review_status":  "raw_ocr_unverified",
+    "page":  13,
+    "source_id":  "lab_05_manual",
+    "lines":  [
+                  {
+                      "text":  "National University of Computer \u0026 Emerging Sciences -",
+                      "words":  [
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  123,
+                                        "text":  "National",
+                                        "x":  372
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  30,
+                                        "width":  153,
+                                        "text":  "University",
+                                        "x":  504
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  31,
+                                        "text":  "of",
+                                        "x":  664
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  30,
+                                        "width":  146,
+                                        "text":  "Computer",
+                                        "x":  701
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  23,
+                                        "width":  23,
+                                        "text":  "\u0026",
+                                        "x":  854
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  30,
+                                        "width":  140,
+                                        "text":  "Emerging",
+                                        "x":  885
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  23,
+                                        "width":  123,
+                                        "text":  "Sciences",
+                                        "x":  1033
+                                    },
+                                    {
+                                        "y":  107,
+                                        "height":  4,
+                                        "width":  9,
+                                        "text":  "-",
+                                        "x":  1166
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "NUCES - Karachi",
+                      "words":  [
+                                    {
+                                        "y":  138,
+                                        "height":  23,
+                                        "width":  96,
+                                        "text":  "NUCES",
+                                        "x":  655
+                                    },
+                                    {
+                                        "y":  150,
+                                        "height":  4,
+                                        "width":  8,
+                                        "text":  "-",
+                                        "x":  760
+                                    },
+                                    {
+                                        "y":  137,
+                                        "height":  24,
+                                        "width":  113,
+                                        "text":  "Karachi",
+                                        "x":  778
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Department of Artificial Intelligence",
+                      "words":  [
+                                    {
+                                        "y":  180,
+                                        "height":  26,
+                                        "width":  142,
+                                        "text":  "Department",
+                                        "x":  556
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  21,
+                                        "width":  25,
+                                        "text":  "of",
+                                        "x":  706
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  21,
+                                        "width":  100,
+                                        "text":  "Artificial",
+                                        "x":  738
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  27,
+                                        "width":  137,
+                                        "text":  "Intelligence",
+                                        "x":  848
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "import cv2",
+                      "words":  [
+                                    {
+                                        "y":  259,
+                                        "height":  24,
+                                        "width":  87,
+                                        "text":  "import",
+                                        "x":  212
+                                    },
+                                    {
+                                        "y":  260,
+                                        "height":  18,
+                                        "width":  43,
+                                        "text":  "cv2",
+                                        "x":  317
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "import numpy as np",
+                      "words":  [
+                                    {
+                                        "y":  292,
+                                        "height":  24,
+                                        "width":  87,
+                                        "text":  "import",
+                                        "x":  212
+                                    },
+                                    {
+                                        "y":  298,
+                                        "height":  18,
+                                        "width":  73,
+                                        "text":  "numpy",
+                                        "x":  317
+                                    },
+                                    {
+                                        "y":  298,
+                                        "height":  13,
+                                        "width":  28,
+                                        "text":  "as",
+                                        "x":  407
+                                    },
+                                    {
+                                        "y":  298,
+                                        "height":  18,
+                                        "width":  27,
+                                        "text":  "np",
+                                        "x":  453
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "from matplotlib import pyplot as plt",
+                      "words":  [
+                                    {
+                                        "y":  325,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "from",
+                                        "x":  211
+                                    },
+                                    {
+                                        "y":  325,
+                                        "height":  24,
+                                        "width":  149,
+                                        "text":  "matplotlib",
+                                        "x":  286
+                                    },
+                                    {
+                                        "y":  325,
+                                        "height":  24,
+                                        "width":  87,
+                                        "text":  "import",
+                                        "x":  453
+                                    },
+                                    {
+                                        "y":  325,
+                                        "height":  24,
+                                        "width":  88,
+                                        "text":  "pyplot",
+                                        "x":  558
+                                    },
+                                    {
+                                        "y":  330,
+                                        "height":  14,
+                                        "width":  28,
+                                        "text":  "as",
+                                        "x":  663
+                                    },
+                                    {
+                                        "y":  325,
+                                        "height":  24,
+                                        "width":  42,
+                                        "text":  "plt",
+                                        "x":  710
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# Load the image",
+                      "words":  [
+                                    {
+                                        "y":  390,
+                                        "height":  19,
+                                        "width":  15,
+                                        "text":  "#",
+                                        "x":  210
+                                    },
+                                    {
+                                        "y":  389,
+                                        "height":  20,
+                                        "width":  56,
+                                        "text":  "Load",
+                                        "x":  242
+                                    },
+                                    {
+                                        "y":  389,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  316
+                                    },
+                                    {
+                                        "y":  389,
+                                        "height":  24,
+                                        "width":  72,
+                                        "text":  "image",
+                                        "x":  378
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "image",
+                      "words":  [
+                                    {
+                                        "y":  422,
+                                        "height":  25,
+                                        "width":  72,
+                                        "text":  "image",
+                                        "x":  212
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "= cv2. imread( dog. jpeg\u0027 )",
+                      "words":  [
+                                    {
+                                        "y":  429,
+                                        "height":  9,
+                                        "width":  13,
+                                        "text":  "=",
+                                        "x":  301
+                                    },
+                                    {
+                                        "y":  423,
+                                        "height":  19,
+                                        "width":  54,
+                                        "text":  "cv2.",
+                                        "x":  332
+                                    },
+                                    {
+                                        "y":  422,
+                                        "height":  23,
+                                        "width":  100,
+                                        "text":  "imread(",
+                                        "x":  393
+                                    },
+                                    {
+                                        "y":  422,
+                                        "height":  25,
+                                        "width":  54,
+                                        "text":  "dog.",
+                                        "x":  512
+                                    },
+                                    {
+                                        "y":  422,
+                                        "height":  25,
+                                        "width":  68,
+                                        "text":  "jpeg\u0027",
+                                        "x":  573
+                                    },
+                                    {
+                                        "y":  422,
+                                        "height":  23,
+                                        "width":  8,
+                                        "text":  ")",
+                                        "x":  650
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "= cv2.cvtC010r(image, cv2.COLOR_BGR2GRAY)",
+                      "words":  [
+                                    {
+                                        "y":  462,
+                                        "height":  8,
+                                        "width":  13,
+                                        "text":  "=",
+                                        "x":  286
+                                    },
+                                    {
+                                        "y":  454,
+                                        "height":  25,
+                                        "width":  280,
+                                        "text":  "cv2.cvtC010r(image,",
+                                        "x":  317
+                                    },
+                                    {
+                                        "y":  454,
+                                        "height":  25,
+                                        "width":  282,
+                                        "text":  "cv2.COLOR_BGR2GRAY)",
+                                        "x":  618
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "gray",
+                      "words":  [
+                                    {
+                                        "y":  458,
+                                        "height":  21,
+                                        "width":  58,
+                                        "text":  "gray",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# Threshold the image to create markers (you can adjust the",
+                      "words":  [
+                                    {
+                                        "y":  521,
+                                        "height":  19,
+                                        "width":  15,
+                                        "text":  "#",
+                                        "x":  210
+                                    },
+                                    {
+                                        "y":  521,
+                                        "height":  19,
+                                        "width":  134,
+                                        "text":  "Threshold",
+                                        "x":  240
+                                    },
+                                    {
+                                        "y":  521,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  391
+                                    },
+                                    {
+                                        "y":  521,
+                                        "height":  24,
+                                        "width":  72,
+                                        "text":  "image",
+                                        "x":  453
+                                    },
+                                    {
+                                        "y":  521,
+                                        "height":  19,
+                                        "width":  28,
+                                        "text":  "to",
+                                        "x":  542
+                                    },
+                                    {
+                                        "y":  521,
+                                        "height":  19,
+                                        "width":  88,
+                                        "text":  "create",
+                                        "x":  588
+                                    },
+                                    {
+                                        "y":  521,
+                                        "height":  19,
+                                        "width":  104,
+                                        "text":  "markers",
+                                        "x":  693
+                                    },
+                                    {
+                                        "y":  520,
+                                        "height":  25,
+                                        "width":  54,
+                                        "text":  "(you",
+                                        "x":  818
+                                    },
+                                    {
+                                        "y":  526,
+                                        "height":  14,
+                                        "width":  41,
+                                        "text":  "can",
+                                        "x":  891
+                                    },
+                                    {
+                                        "y":  521,
+                                        "height":  24,
+                                        "width":  89,
+                                        "text":  "adjust",
+                                        "x":  950
+                                    },
+                                    {
+                                        "y":  521,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  1055
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "threshold value)",
+                      "words":  [
+                                    {
+                                        "y":  554,
+                                        "height":  19,
+                                        "width":  134,
+                                        "text":  "threshold",
+                                        "x":  210
+                                    },
+                                    {
+                                        "y":  553,
+                                        "height":  24,
+                                        "width":  85,
+                                        "text":  "value)",
+                                        "x":  362
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "thresh",
+                      "words":  [
+                                    {
+                                        "y":  586,
+                                        "height":  20,
+                                        "width":  89,
+                                        "text":  "thresh",
+                                        "x":  255
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "= cv2.thresh01d(gray, O, 255, +",
+                      "words":  [
+                                    {
+                                        "y":  593,
+                                        "height":  9,
+                                        "width":  13,
+                                        "text":  "=",
+                                        "x":  362
+                                    },
+                                    {
+                                        "y":  586,
+                                        "height":  25,
+                                        "width":  280,
+                                        "text":  "cv2.thresh01d(gray,",
+                                        "x":  392
+                                    },
+                                    {
+                                        "y":  587,
+                                        "height":  22,
+                                        "width":  24,
+                                        "text":  "O,",
+                                        "x":  694
+                                    },
+                                    {
+                                        "y":  587,
+                                        "height":  22,
+                                        "width":  55,
+                                        "text":  "255,",
+                                        "x":  739
+                                    },
+                                    {
+                                        "y":  591,
+                                        "height":  13,
+                                        "width":  13,
+                                        "text":  "+",
+                                        "x":  1147
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "cv2. THRESH_OTSU)",
+                      "words":  [
+                                    {
+                                        "y":  620,
+                                        "height":  18,
+                                        "width":  54,
+                                        "text":  "cv2.",
+                                        "x":  211
+                                    },
+                                    {
+                                        "y":  618,
+                                        "height":  24,
+                                        "width":  177,
+                                        "text":  "THRESH_OTSU)",
+                                        "x":  270
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# Perform morphological operations to remove noise",
+                      "words":  [
+                                    {
+                                        "y":  685,
+                                        "height":  19,
+                                        "width":  15,
+                                        "text":  "#",
+                                        "x":  210
+                                    },
+                                    {
+                                        "y":  685,
+                                        "height":  19,
+                                        "width":  104,
+                                        "text":  "Perform",
+                                        "x":  241
+                                    },
+                                    {
+                                        "y":  685,
+                                        "height":  23,
+                                        "width":  194,
+                                        "text":  "morphological",
+                                        "x":  361
+                                    },
+                                    {
+                                        "y":  685,
+                                        "height":  23,
+                                        "width":  149,
+                                        "text":  "operations",
+                                        "x":  573
+                                    },
+                                    {
+                                        "y":  685,
+                                        "height":  19,
+                                        "width":  28,
+                                        "text":  "to",
+                                        "x":  739
+                                    },
+                                    {
+                                        "y":  690,
+                                        "height":  14,
+                                        "width":  88,
+                                        "text":  "remove",
+                                        "x":  785
+                                    },
+                                    {
+                                        "y":  685,
+                                        "height":  19,
+                                        "width":  72,
+                                        "text":  "noise",
+                                        "x":  891
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "np.ones((5, 5), np.uint8)",
+                      "words":  [
+                                    {
+                                        "y":  715,
+                                        "height":  25,
+                                        "width":  158,
+                                        "text":  "np.ones((5,",
+                                        "x":  348
+                                    },
+                                    {
+                                        "y":  715,
+                                        "height":  24,
+                                        "width":  38,
+                                        "text":  "5),",
+                                        "x":  528
+                                    },
+                                    {
+                                        "y":  715,
+                                        "height":  25,
+                                        "width":  129,
+                                        "text":  "np.uint8)",
+                                        "x":  589
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "kernel =",
+                      "words":  [
+                                    {
+                                        "y":  716,
+                                        "height":  20,
+                                        "width":  87,
+                                        "text":  "kernel",
+                                        "x":  212
+                                    },
+                                    {
+                                        "y":  723,
+                                        "height":  8,
+                                        "width":  14,
+                                        "text":  "=",
+                                        "x":  316
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "opening = cv2.morph010gyEx(thresh, cv2 . MORPH_OPEN, kernel,",
+                      "words":  [
+                                    {
+                                        "y":  749,
+                                        "height":  25,
+                                        "width":  104,
+                                        "text":  "opening",
+                                        "x":  211
+                                    },
+                                    {
+                                        "y":  756,
+                                        "height":  9,
+                                        "width":  14,
+                                        "text":  "=",
+                                        "x":  331
+                                    },
+                                    {
+                                        "y":  749,
+                                        "height":  25,
+                                        "width":  356,
+                                        "text":  "cv2.morph010gyEx(thresh,",
+                                        "x":  362
+                                    },
+                                    {
+                                        "y":  750,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "cv2",
+                                        "x":  739
+                                    },
+                                    {
+                                        "y":  765,
+                                        "height":  4,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  789
+                                    },
+                                    {
+                                        "y":  750,
+                                        "height":  23,
+                                        "width":  159,
+                                        "text":  "MORPH_OPEN,",
+                                        "x":  800
+                                    },
+                                    {
+                                        "y":  749,
+                                        "height":  23,
+                                        "width":  99,
+                                        "text":  "kernel,",
+                                        "x":  981
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "iterations=2)",
+                      "words":  [
+                                    {
+                                        "y":  781,
+                                        "height":  24,
+                                        "width":  189,
+                                        "text":  "iterations=2)",
+                                        "x":  212
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4k Create sure background and sure foreground markers",
+                      "words":  [
+                                    {
+                                        "y":  848,
+                                        "height":  19,
+                                        "width":  16,
+                                        "text":  "4k",
+                                        "x":  209
+                                    },
+                                    {
+                                        "y":  848,
+                                        "height":  19,
+                                        "width":  89,
+                                        "text":  "Create",
+                                        "x":  241
+                                    },
+                                    {
+                                        "y":  853,
+                                        "height":  14,
+                                        "width":  58,
+                                        "text":  "sure",
+                                        "x":  347
+                                    },
+                                    {
+                                        "y":  848,
+                                        "height":  24,
+                                        "width":  147,
+                                        "text":  "background",
+                                        "x":  423
+                                    },
+                                    {
+                                        "y":  848,
+                                        "height":  19,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  588
+                                    },
+                                    {
+                                        "y":  853,
+                                        "height":  14,
+                                        "width":  58,
+                                        "text":  "sure",
+                                        "x":  649
+                                    },
+                                    {
+                                        "y":  848,
+                                        "height":  24,
+                                        "width":  148,
+                                        "text":  "foreground",
+                                        "x":  724
+                                    },
+                                    {
+                                        "y":  848,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "markers",
+                                        "x":  890
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "sure_bg = cv2.di1ate(opening, kernel, iterations=3)",
+                      "words":  [
+                                    {
+                                        "y":  880,
+                                        "height":  25,
+                                        "width":  104,
+                                        "text":  "sure_bg",
+                                        "x":  211
+                                    },
+                                    {
+                                        "y":  887,
+                                        "height":  9,
+                                        "width":  14,
+                                        "text":  "=",
+                                        "x":  331
+                                    },
+                                    {
+                                        "y":  880,
+                                        "height":  25,
+                                        "width":  280,
+                                        "text":  "cv2.di1ate(opening,",
+                                        "x":  362
+                                    },
+                                    {
+                                        "y":  880,
+                                        "height":  23,
+                                        "width":  98,
+                                        "text":  "kernel,",
+                                        "x":  665
+                                    },
+                                    {
+                                        "y":  880,
+                                        "height":  23,
+                                        "width":  189,
+                                        "text":  "iterations=3)",
+                                        "x":  786
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "dist_transform = cv2.distanceTransform(opening, cv2 . DIST_L2,",
+                      "words":  [
+                                    {
+                                        "y":  914,
+                                        "height":  23,
+                                        "width":  210,
+                                        "text":  "dist_transform",
+                                        "x":  211
+                                    },
+                                    {
+                                        "y":  921,
+                                        "height":  8,
+                                        "width":  14,
+                                        "text":  "=",
+                                        "x":  437
+                                    },
+                                    {
+                                        "y":  913,
+                                        "height":  25,
+                                        "width":  447,
+                                        "text":  "cv2.distanceTransform(opening,",
+                                        "x":  467
+                                    },
+                                    {
+                                        "y":  914,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "cv2",
+                                        "x":  935
+                                    },
+                                    {
+                                        "y":  929,
+                                        "height":  4,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  985
+                                    },
+                                    {
+                                        "y":  914,
+                                        "height":  23,
+                                        "width":  115,
+                                        "text":  "DIST_L2,",
+                                        "x":  996
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "= cv2. threshold (dist_transform, 0.2 *",
+                      "words":  [
+                                    {
+                                        "y":  954,
+                                        "height":  8,
+                                        "width":  13,
+                                        "text":  "=",
+                                        "x":  377
+                                    },
+                                    {
+                                        "y":  948,
+                                        "height":  18,
+                                        "width":  52,
+                                        "text":  "cv2.",
+                                        "x":  408
+                                    },
+                                    {
+                                        "y":  947,
+                                        "height":  19,
+                                        "width":  134,
+                                        "text":  "threshold",
+                                        "x":  466
+                                    },
+                                    {
+                                        "y":  946,
+                                        "height":  25,
+                                        "width":  232,
+                                        "text":  "(dist_transform,",
+                                        "x":  607
+                                    },
+                                    {
+                                        "y":  948,
+                                        "height":  18,
+                                        "width":  44,
+                                        "text":  "0.2",
+                                        "x":  860
+                                    },
+                                    {
+                                        "y":  951,
+                                        "height":  13,
+                                        "width":  13,
+                                        "text":  "*",
+                                        "x":  920
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "sure_fg",
+                      "words":  [
+                                    {
+                                        "y":  947,
+                                        "height":  24,
+                                        "width":  104,
+                                        "text":  "sure_fg",
+                                        "x":  256
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "dist_transform.max(), 255, 0)",
+                      "words":  [
+                                    {
+                                        "y":  979,
+                                        "height":  24,
+                                        "width":  310,
+                                        "text":  "dist_transform.max(),",
+                                        "x":  211
+                                    },
+                                    {
+                                        "y":  980,
+                                        "height":  22,
+                                        "width":  55,
+                                        "text":  "255,",
+                                        "x":  542
+                                    },
+                                    {
+                                        "y":  979,
+                                        "height":  23,
+                                        "width":  25,
+                                        "text":  "0)",
+                                        "x":  618
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "5)",
+                      "words":  [
+                                    {
+                                        "y":  913,
+                                        "height":  24,
+                                        "width":  24,
+                                        "text":  "5)",
+                                        "x":  1132
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# Subtract sure foreground from sure background to get unknown",
+                      "words":  [
+                                    {
+                                        "y":  1046,
+                                        "height":  18,
+                                        "width":  15,
+                                        "text":  "#",
+                                        "x":  210
+                                    },
+                                    {
+                                        "y":  1045,
+                                        "height":  19,
+                                        "width":  118,
+                                        "text":  "Subtract",
+                                        "x":  241
+                                    },
+                                    {
+                                        "y":  1051,
+                                        "height":  13,
+                                        "width":  58,
+                                        "text":  "sure",
+                                        "x":  377
+                                    },
+                                    {
+                                        "y":  1045,
+                                        "height":  24,
+                                        "width":  147,
+                                        "text":  "foreground",
+                                        "x":  453
+                                    },
+                                    {
+                                        "y":  1045,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "from",
+                                        "x":  618
+                                    },
+                                    {
+                                        "y":  1051,
+                                        "height":  13,
+                                        "width":  58,
+                                        "text":  "sure",
+                                        "x":  694
+                                    },
+                                    {
+                                        "y":  1045,
+                                        "height":  24,
+                                        "width":  147,
+                                        "text":  "background",
+                                        "x":  770
+                                    },
+                                    {
+                                        "y":  1046,
+                                        "height":  18,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  934
+                                    },
+                                    {
+                                        "y":  1046,
+                                        "height":  23,
+                                        "width":  43,
+                                        "text":  "get",
+                                        "x":  981
+                                    },
+                                    {
+                                        "y":  1045,
+                                        "height":  19,
+                                        "width":  102,
+                                        "text":  "unknown",
+                                        "x":  1042
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "region",
+                      "words":  [
+                                    {
+                                        "y":  1077,
+                                        "height":  24,
+                                        "width":  87,
+                                        "text":  "region",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "sure_fg",
+                      "words":  [
+                                    {
+                                        "y":  1109,
+                                        "height":  25,
+                                        "width":  104,
+                                        "text":  "sure_fg",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "= np.uint8(sure_fg)",
+                      "words":  [
+                                    {
+                                        "y":  1116,
+                                        "height":  9,
+                                        "width":  14,
+                                        "text":  "=",
+                                        "x":  331
+                                    },
+                                    {
+                                        "y":  1109,
+                                        "height":  25,
+                                        "width":  249,
+                                        "text":  "np.uint8(sure_fg)",
+                                        "x":  363
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "= cv2. sure_fg)",
+                      "words":  [
+                                    {
+                                        "y":  1149,
+                                        "height":  9,
+                                        "width":  14,
+                                        "text":  "=",
+                                        "x":  331
+                                    },
+                                    {
+                                        "y":  1143,
+                                        "height":  19,
+                                        "width":  54,
+                                        "text":  "cv2.",
+                                        "x":  362
+                                    },
+                                    {
+                                        "y":  1142,
+                                        "height":  25,
+                                        "width":  115,
+                                        "text":  "sure_fg)",
+                                        "x":  694
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "unknown",
+                      "words":  [
+                                    {
+                                        "y":  1143,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "unknown",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# Label markers for watershed algorithm",
+                      "words":  [
+                                    {
+                                        "y":  1209,
+                                        "height":  19,
+                                        "width":  15,
+                                        "text":  "#",
+                                        "x":  210
+                                    },
+                                    {
+                                        "y":  1208,
+                                        "height":  20,
+                                        "width":  72,
+                                        "text":  "Label",
+                                        "x":  242
+                                    },
+                                    {
+                                        "y":  1208,
+                                        "height":  20,
+                                        "width":  104,
+                                        "text":  "markers",
+                                        "x":  331
+                                    },
+                                    {
+                                        "y":  1208,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "for",
+                                        "x":  453
+                                    },
+                                    {
+                                        "y":  1208,
+                                        "height":  20,
+                                        "width":  134,
+                                        "text":  "watershed",
+                                        "x":  511
+                                    },
+                                    {
+                                        "y":  1208,
+                                        "height":  24,
+                                        "width":  135,
+                                        "text":  "algorithm",
+                                        "x":  663
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "= cv2.",
+                      "words":  [
+                                    {
+                                        "y":  1248,
+                                        "height":  8,
+                                        "width":  13,
+                                        "text":  "=",
+                                        "x":  377
+                                    },
+                                    {
+                                        "y":  1241,
+                                        "height":  19,
+                                        "width":  52,
+                                        "text":  "cv2.",
+                                        "x":  408
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "markers",
+                      "words":  [
+                                    {
+                                        "y":  1241,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "markers",
+                                        "x":  256
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "markers = markers + 1",
+                      "words":  [
+                                    {
+                                        "y":  1274,
+                                        "height":  19,
+                                        "width":  104,
+                                        "text":  "markers",
+                                        "x":  210
+                                    },
+                                    {
+                                        "y":  1281,
+                                        "height":  8,
+                                        "width":  14,
+                                        "text":  "=",
+                                        "x":  331
+                                    },
+                                    {
+                                        "y":  1274,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "markers",
+                                        "x":  361
+                                    },
+                                    {
+                                        "y":  1278,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "+",
+                                        "x":  482
+                                    },
+                                    {
+                                        "y":  1275,
+                                        "height":  18,
+                                        "width":  14,
+                                        "text":  "1",
+                                        "x":  512
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "markers C unknown",
+                      "words":  [
+                                    {
+                                        "y":  1307,
+                                        "height":  19,
+                                        "width":  104,
+                                        "text":  "markers",
+                                        "x":  210
+                                    },
+                                    {
+                                        "y":  1306,
+                                        "height":  23,
+                                        "width":  8,
+                                        "text":  "C",
+                                        "x":  321
+                                    },
+                                    {
+                                        "y":  1307,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "unknown",
+                                        "x":  332
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "255] = @",
+                      "words":  [
+                                    {
+                                        "y":  1306,
+                                        "height":  23,
+                                        "width":  54,
+                                        "text":  "255]",
+                                        "x":  497
+                                    },
+                                    {
+                                        "y":  1313,
+                                        "height":  9,
+                                        "width":  13,
+                                        "text":  "=",
+                                        "x":  573
+                                    },
+                                    {
+                                        "y":  1307,
+                                        "height":  19,
+                                        "width":  13,
+                                        "text":  "@",
+                                        "x":  603
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# Apply watershed algorithm",
+                      "words":  [
+                                    {
+                                        "y":  1373,
+                                        "height":  19,
+                                        "width":  15,
+                                        "text":  "#",
+                                        "x":  210
+                                    },
+                                    {
+                                        "y":  1372,
+                                        "height":  24,
+                                        "width":  74,
+                                        "text":  "Apply",
+                                        "x":  240
+                                    },
+                                    {
+                                        "y":  1372,
+                                        "height":  20,
+                                        "width":  133,
+                                        "text":  "watershed",
+                                        "x":  330
+                                    },
+                                    {
+                                        "y":  1372,
+                                        "height":  24,
+                                        "width":  134,
+                                        "text":  "algorithm",
+                                        "x":  482
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "cv2. watershed (image, markers)",
+                      "words":  [
+                                    {
+                                        "y":  1406,
+                                        "height":  18,
+                                        "width":  54,
+                                        "text":  "cv2.",
+                                        "x":  211
+                                    },
+                                    {
+                                        "y":  1405,
+                                        "height":  19,
+                                        "width":  134,
+                                        "text":  "watershed",
+                                        "x":  270
+                                    },
+                                    {
+                                        "y":  1405,
+                                        "height":  24,
+                                        "width":  95,
+                                        "text":  "(image,",
+                                        "x":  411
+                                    },
+                                    {
+                                        "y":  1405,
+                                        "height":  22,
+                                        "width":  116,
+                                        "text":  "markers)",
+                                        "x":  527
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "image [markers == -1]",
+                      "words":  [
+                                    {
+                                        "y":  1437,
+                                        "height":  24,
+                                        "width":  72,
+                                        "text":  "image",
+                                        "x":  212
+                                    },
+                                    {
+                                        "y":  1436,
+                                        "height":  24,
+                                        "width":  115,
+                                        "text":  "[markers",
+                                        "x":  290
+                                    },
+                                    {
+                                        "y":  1444,
+                                        "height":  8,
+                                        "width":  29,
+                                        "text":  "==",
+                                        "x":  422
+                                    },
+                                    {
+                                        "y":  1436,
+                                        "height":  24,
+                                        "width":  37,
+                                        "text":  "-1]",
+                                        "x":  469
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "color",
+                      "words":  [
+                                    {
+                                        "y":  1469,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "color",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "plt . imshow (image)",
+                      "words":  [
+                                    {
+                                        "y":  1535,
+                                        "height":  24,
+                                        "width":  43,
+                                        "text":  "plt",
+                                        "x":  211
+                                    },
+                                    {
+                                        "y":  1550,
+                                        "height":  4,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  260
+                                    },
+                                    {
+                                        "y":  1535,
+                                        "height":  19,
+                                        "width":  88,
+                                        "text":  "imshow",
+                                        "x":  272
+                                    },
+                                    {
+                                        "y":  1534,
+                                        "height":  25,
+                                        "width":  95,
+                                        "text":  "(image)",
+                                        "x":  366
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "plt.axis( Ion\u0027)",
+                      "words":  [
+                                    {
+                                        "y":  1568,
+                                        "height":  24,
+                                        "width":  132,
+                                        "text":  "plt.axis(",
+                                        "x":  211
+                                    },
+                                    {
+                                        "y":  1568,
+                                        "height":  23,
+                                        "width":  65,
+                                        "text":  "Ion\u0027)",
+                                        "x":  352
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "plt. show()",
+                      "words":  [
+                                    {
+                                        "y":  1601,
+                                        "height":  24,
+                                        "width":  54,
+                                        "text":  "plt.",
+                                        "x":  211
+                                    },
+                                    {
+                                        "y":  1600,
+                                        "height":  24,
+                                        "width":  84,
+                                        "text":  "show()",
+                                        "x":  272
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "= [255, o,",
+                      "words":  [
+                                    {
+                                        "y":  1444,
+                                        "height":  8,
+                                        "width":  13,
+                                        "text":  "=",
+                                        "x":  527
+                                    },
+                                    {
+                                        "y":  1436,
+                                        "height":  24,
+                                        "width":  65,
+                                        "text":  "[255,",
+                                        "x":  562
+                                    },
+                                    {
+                                        "y":  1438,
+                                        "height":  22,
+                                        "width":  24,
+                                        "text":  "o,",
+                                        "x":  648
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "0] # Mark boundaries with red",
+                      "words":  [
+                                    {
+                                        "y":  1436,
+                                        "height":  24,
+                                        "width":  24,
+                                        "text":  "0]",
+                                        "x":  694
+                                    },
+                                    {
+                                        "y":  1438,
+                                        "height":  18,
+                                        "width":  15,
+                                        "text":  "#",
+                                        "x":  738
+                                    },
+                                    {
+                                        "y":  1437,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "Mark",
+                                        "x":  769
+                                    },
+                                    {
+                                        "y":  1437,
+                                        "height":  19,
+                                        "width":  147,
+                                        "text":  "boundaries",
+                                        "x":  846
+                                    },
+                                    {
+                                        "y":  1437,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "with",
+                                        "x":  1010
+                                    },
+                                    {
+                                        "y":  1437,
+                                        "height":  19,
+                                        "width":  42,
+                                        "text":  "red",
+                                        "x":  1087
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FAST NUCES",
+                      "words":  [
+                                    {
+                                        "y":  1819,
+                                        "height":  19,
+                                        "width":  62,
+                                        "text":  "FAST",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1819,
+                                        "height":  20,
+                                        "width":  85,
+                                        "text":  "NUCES",
+                                        "x":  242
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Karachi",
+                      "words":  [
+                                    {
+                                        "y":  1828,
+                                        "height":  5,
+                                        "width":  12,
+                                        "text":  "-",
+                                        "x":  336
+                                    },
+                                    {
+                                        "y":  1817,
+                                        "height":  21,
+                                        "width":  94,
+                                        "text":  "Karachi",
+                                        "x":  358
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1819,
+                                        "height":  19,
+                                        "width":  71,
+                                        "text":  "Talha",
+                                        "x":  624
+                                    },
+                                    {
+                                        "y":  1817,
+                                        "height":  21,
+                                        "width":  87,
+                                        "text":  "Shahid",
+                                        "x":  706
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "12",
+                      "words":  [
+                                    {
+                                        "y":  1819,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "12",
+                                        "x":  1176
+                                    }
+                                ]
+                  }
+              ]
+}

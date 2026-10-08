@@ -1,0 +1,1043 @@
+﻿{
+    "id":  "lab_05_manual_p002",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "National University of Computer \u0026 Emerging Sciences - NUCES - Karachi Department of Artificial Intelligence Course Code: AI-4002 Computer Vision Lab 1. Objectives ....................................................................................................„...............................................2 2. Image Segmentation .............................................................................„. 2.1 Mathematics Behind Image Segmentation......................... 2.2 Real-Life Examples . Image Segmentation Techniques ................................... 2.3 2.3.1 Thresholding . 2.3.1.1 Global Thresholding . 2.3.1.2 Adaptive Thresholding . 2.3.1.3 Otsu\u0027s Thresholding.. 2.3.1.4 Color-Based Thresholding. 2.3.1.5 Hysteresis Thresholding (Canny Edge Detector):. 2.3.2 Edge Detection.. 2.3.3 Region Growing • • • • • • • • • • • • • • • • • • 9 2.3.4 Watershed Segmentation ................................................................................ 1 1 2.3.5 Clustering-Based Segmentation.. 2.3.6 Deep Learning-Based Segmentation............................................................. 14 2.3.7 Active Contour Models (Snakes)............. 15 FAST NUCES - Karachi Talha Shahid .5 8 .8 9 .9 ... 13 1",
+    "review_status":  "raw_ocr_unverified",
+    "page":  2,
+    "source_id":  "lab_05_manual",
+    "lines":  [
+                  {
+                      "text":  "National University of Computer \u0026 Emerging Sciences -",
+                      "words":  [
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  123,
+                                        "text":  "National",
+                                        "x":  372
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  30,
+                                        "width":  153,
+                                        "text":  "University",
+                                        "x":  504
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  31,
+                                        "text":  "of",
+                                        "x":  664
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  30,
+                                        "width":  146,
+                                        "text":  "Computer",
+                                        "x":  701
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  23,
+                                        "width":  23,
+                                        "text":  "\u0026",
+                                        "x":  854
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  30,
+                                        "width":  140,
+                                        "text":  "Emerging",
+                                        "x":  885
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  23,
+                                        "width":  123,
+                                        "text":  "Sciences",
+                                        "x":  1033
+                                    },
+                                    {
+                                        "y":  107,
+                                        "height":  4,
+                                        "width":  9,
+                                        "text":  "-",
+                                        "x":  1166
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "NUCES - Karachi",
+                      "words":  [
+                                    {
+                                        "y":  138,
+                                        "height":  23,
+                                        "width":  96,
+                                        "text":  "NUCES",
+                                        "x":  655
+                                    },
+                                    {
+                                        "y":  150,
+                                        "height":  4,
+                                        "width":  8,
+                                        "text":  "-",
+                                        "x":  760
+                                    },
+                                    {
+                                        "y":  137,
+                                        "height":  24,
+                                        "width":  113,
+                                        "text":  "Karachi",
+                                        "x":  778
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Department of Artificial Intelligence",
+                      "words":  [
+                                    {
+                                        "y":  180,
+                                        "height":  26,
+                                        "width":  142,
+                                        "text":  "Department",
+                                        "x":  556
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  21,
+                                        "width":  25,
+                                        "text":  "of",
+                                        "x":  706
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  21,
+                                        "width":  100,
+                                        "text":  "Artificial",
+                                        "x":  738
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  27,
+                                        "width":  137,
+                                        "text":  "Intelligence",
+                                        "x":  848
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Course Code: AI-4002 Computer Vision Lab",
+                      "words":  [
+                                    {
+                                        "y":  345,
+                                        "height":  20,
+                                        "width":  94,
+                                        "text":  "Course",
+                                        "x":  377
+                                    },
+                                    {
+                                        "y":  344,
+                                        "height":  21,
+                                        "width":  76,
+                                        "text":  "Code:",
+                                        "x":  482
+                                    },
+                                    {
+                                        "y":  345,
+                                        "height":  19,
+                                        "width":  117,
+                                        "text":  "AI-4002",
+                                        "x":  568
+                                    },
+                                    {
+                                        "y":  345,
+                                        "height":  25,
+                                        "width":  138,
+                                        "text":  "Computer",
+                                        "x":  709
+                                    },
+                                    {
+                                        "y":  343,
+                                        "height":  21,
+                                        "width":  83,
+                                        "text":  "Vision",
+                                        "x":  856
+                                    },
+                                    {
+                                        "y":  344,
+                                        "height":  21,
+                                        "width":  50,
+                                        "text":  "Lab",
+                                        "x":  952
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1. Objectives ....................................................................................................„...............................................2",
+                      "words":  [
+                                    {
+                                        "y":  504,
+                                        "height":  19,
+                                        "width":  16,
+                                        "text":  "1.",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  503,
+                                        "height":  25,
+                                        "width":  127,
+                                        "text":  "Objectives",
+                                        "x":  195
+                                    },
+                                    {
+                                        "y":  504,
+                                        "height":  19,
+                                        "width":  872,
+                                        "text":  "....................................................................................................„...............................................2",
+                                        "x":  328
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2. Image Segmentation .............................................................................„.",
+                      "words":  [
+                                    {
+                                        "y":  552,
+                                        "height":  19,
+                                        "width":  18,
+                                        "text":  "2.",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  552,
+                                        "height":  24,
+                                        "width":  80,
+                                        "text":  "Image",
+                                        "x":  196
+                                    },
+                                    {
+                                        "y":  550,
+                                        "height":  26,
+                                        "width":  168,
+                                        "text":  "Segmentation",
+                                        "x":  286
+                                    },
+                                    {
+                                        "y":  566,
+                                        "height":  5,
+                                        "width":  460,
+                                        "text":  ".............................................................................„.",
+                                        "x":  459
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2.1 Mathematics Behind Image Segmentation.........................",
+                      "words":  [
+                                    {
+                                        "y":  599,
+                                        "height":  19,
+                                        "width":  30,
+                                        "text":  "2.1",
+                                        "x":  195
+                                    },
+                                    {
+                                        "y":  598,
+                                        "height":  20,
+                                        "width":  156,
+                                        "text":  "Mathematics",
+                                        "x":  235
+                                    },
+                                    {
+                                        "y":  598,
+                                        "height":  20,
+                                        "width":  80,
+                                        "text":  "Behind",
+                                        "x":  401
+                                    },
+                                    {
+                                        "y":  600,
+                                        "height":  24,
+                                        "width":  81,
+                                        "text":  "Image",
+                                        "x":  490
+                                    },
+                                    {
+                                        "y":  598,
+                                        "height":  26,
+                                        "width":  349,
+                                        "text":  "Segmentation.........................",
+                                        "x":  580
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2.2 Real-Life Examples .",
+                      "words":  [
+                                    {
+                                        "y":  647,
+                                        "height":  19,
+                                        "width":  31,
+                                        "text":  "2.2",
+                                        "x":  195
+                                    },
+                                    {
+                                        "y":  646,
+                                        "height":  20,
+                                        "width":  109,
+                                        "text":  "Real-Life",
+                                        "x":  236
+                                    },
+                                    {
+                                        "y":  646,
+                                        "height":  25,
+                                        "width":  115,
+                                        "text":  "Examples",
+                                        "x":  354
+                                    },
+                                    {
+                                        "y":  662,
+                                        "height":  4,
+                                        "width":  3,
+                                        "text":  ".",
+                                        "x":  476
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Image Segmentation Techniques ...................................",
+                      "words":  [
+                                    {
+                                        "y":  695,
+                                        "height":  23,
+                                        "width":  81,
+                                        "text":  "Image",
+                                        "x":  279
+                                    },
+                                    {
+                                        "y":  693,
+                                        "height":  26,
+                                        "width":  169,
+                                        "text":  "Segmentation",
+                                        "x":  369
+                                    },
+                                    {
+                                        "y":  693,
+                                        "height":  25,
+                                        "width":  137,
+                                        "text":  "Techniques",
+                                        "x":  547
+                                    },
+                                    {
+                                        "y":  709,
+                                        "height":  4,
+                                        "width":  246,
+                                        "text":  "...................................",
+                                        "x":  691
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2.3",
+                      "words":  [
+                                    {
+                                        "y":  695,
+                                        "height":  18,
+                                        "width":  31,
+                                        "text":  "2.3",
+                                        "x":  195
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2.3.1 Thresholding .",
+                      "words":  [
+                                    {
+                                        "y":  742,
+                                        "height":  19,
+                                        "width":  50,
+                                        "text":  "2.3.1",
+                                        "x":  219
+                                    },
+                                    {
+                                        "y":  740,
+                                        "height":  26,
+                                        "width":  156,
+                                        "text":  "Thresholding",
+                                        "x":  277
+                                    },
+                                    {
+                                        "y":  757,
+                                        "height":  3,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  441
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2.3.1.1 Global Thresholding .",
+                      "words":  [
+                                    {
+                                        "y":  790,
+                                        "height":  19,
+                                        "width":  67,
+                                        "text":  "2.3.1.1",
+                                        "x":  245
+                                    },
+                                    {
+                                        "y":  789,
+                                        "height":  20,
+                                        "width":  78,
+                                        "text":  "Global",
+                                        "x":  321
+                                    },
+                                    {
+                                        "y":  788,
+                                        "height":  26,
+                                        "width":  155,
+                                        "text":  "Thresholding",
+                                        "x":  407
+                                    },
+                                    {
+                                        "y":  805,
+                                        "height":  3,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  569
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2.3.1.2 Adaptive Thresholding .",
+                      "words":  [
+                                    {
+                                        "y":  837,
+                                        "height":  19,
+                                        "width":  69,
+                                        "text":  "2.3.1.2",
+                                        "x":  245
+                                    },
+                                    {
+                                        "y":  836,
+                                        "height":  26,
+                                        "width":  110,
+                                        "text":  "Adaptive",
+                                        "x":  322
+                                    },
+                                    {
+                                        "y":  836,
+                                        "height":  26,
+                                        "width":  154,
+                                        "text":  "Thresholding",
+                                        "x":  441
+                                    },
+                                    {
+                                        "y":  853,
+                                        "height":  3,
+                                        "width":  3,
+                                        "text":  ".",
+                                        "x":  605
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2.3.1.3 Otsu\u0027s Thresholding..",
+                      "words":  [
+                                    {
+                                        "y":  885,
+                                        "height":  19,
+                                        "width":  69,
+                                        "text":  "2.3.1.3",
+                                        "x":  245
+                                    },
+                                    {
+                                        "y":  885,
+                                        "height":  19,
+                                        "width":  73,
+                                        "text":  "Otsu\u0027s",
+                                        "x":  322
+                                    },
+                                    {
+                                        "y":  884,
+                                        "height":  26,
+                                        "width":  170,
+                                        "text":  "Thresholding..",
+                                        "x":  403
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2.3.1.4 Color-Based Thresholding.",
+                      "words":  [
+                                    {
+                                        "y":  933,
+                                        "height":  19,
+                                        "width":  71,
+                                        "text":  "2.3.1.4",
+                                        "x":  245
+                                    },
+                                    {
+                                        "y":  932,
+                                        "height":  20,
+                                        "width":  148,
+                                        "text":  "Color-Based",
+                                        "x":  324
+                                    },
+                                    {
+                                        "y":  932,
+                                        "height":  26,
+                                        "width":  163,
+                                        "text":  "Thresholding.",
+                                        "x":  481
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2.3.1.5 Hysteresis Thresholding (Canny Edge Detector):.",
+                      "words":  [
+                                    {
+                                        "y":  981,
+                                        "height":  19,
+                                        "width":  69,
+                                        "text":  "2.3.1.5",
+                                        "x":  245
+                                    },
+                                    {
+                                        "y":  979,
+                                        "height":  27,
+                                        "width":  124,
+                                        "text":  "Hysteresis",
+                                        "x":  324
+                                    },
+                                    {
+                                        "y":  979,
+                                        "height":  27,
+                                        "width":  156,
+                                        "text":  "Thresholding",
+                                        "x":  455
+                                    },
+                                    {
+                                        "y":  981,
+                                        "height":  25,
+                                        "width":  86,
+                                        "text":  "(Canny",
+                                        "x":  620
+                                    },
+                                    {
+                                        "y":  980,
+                                        "height":  26,
+                                        "width":  61,
+                                        "text":  "Edge",
+                                        "x":  715
+                                    },
+                                    {
+                                        "y":  981,
+                                        "height":  23,
+                                        "width":  130,
+                                        "text":  "Detector):.",
+                                        "x":  785
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2.3.2 Edge Detection..",
+                      "words":  [
+                                    {
+                                        "y":  1029,
+                                        "height":  19,
+                                        "width":  52,
+                                        "text":  "2.3.2",
+                                        "x":  219
+                                    },
+                                    {
+                                        "y":  1028,
+                                        "height":  25,
+                                        "width":  60,
+                                        "text":  "Edge",
+                                        "x":  280
+                                    },
+                                    {
+                                        "y":  1027,
+                                        "height":  21,
+                                        "width":  129,
+                                        "text":  "Detection..",
+                                        "x":  350
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2.3.3 Region Growing • • • • • • • • • • • • • • • • • • 9",
+                      "words":  [
+                                    {
+                                        "y":  1076,
+                                        "height":  19,
+                                        "width":  51,
+                                        "text":  "2.3.3",
+                                        "x":  219
+                                    },
+                                    {
+                                        "y":  1074,
+                                        "height":  26,
+                                        "width":  83,
+                                        "text":  "Region",
+                                        "x":  280
+                                    },
+                                    {
+                                        "y":  1074,
+                                        "height":  26,
+                                        "width":  100,
+                                        "text":  "Growing",
+                                        "x":  372
+                                    },
+                                    {
+                                        "y":  1091,
+                                        "height":  3,
+                                        "width":  3,
+                                        "text":  "•",
+                                        "x":  476
+                                    },
+                                    {
+                                        "y":  1091,
+                                        "height":  3,
+                                        "width":  3,
+                                        "text":  "•",
+                                        "x":  483
+                                    },
+                                    {
+                                        "y":  1091,
+                                        "height":  3,
+                                        "width":  3,
+                                        "text":  "•",
+                                        "x":  512
+                                    },
+                                    {
+                                        "y":  1091,
+                                        "height":  3,
+                                        "width":  3,
+                                        "text":  "•",
+                                        "x":  555
+                                    },
+                                    {
+                                        "y":  1091,
+                                        "height":  3,
+                                        "width":  3,
+                                        "text":  "•",
+                                        "x":  562
+                                    },
+                                    {
+                                        "y":  1091,
+                                        "height":  3,
+                                        "width":  3,
+                                        "text":  "•",
+                                        "x":  605
+                                    },
+                                    {
+                                        "y":  1091,
+                                        "height":  3,
+                                        "width":  3,
+                                        "text":  "•",
+                                        "x":  662
+                                    },
+                                    {
+                                        "y":  1091,
+                                        "height":  3,
+                                        "width":  3,
+                                        "text":  "•",
+                                        "x":  698
+                                    },
+                                    {
+                                        "y":  1091,
+                                        "height":  3,
+                                        "width":  3,
+                                        "text":  "•",
+                                        "x":  741
+                                    },
+                                    {
+                                        "y":  1091,
+                                        "height":  3,
+                                        "width":  3,
+                                        "text":  "•",
+                                        "x":  784
+                                    },
+                                    {
+                                        "y":  1091,
+                                        "height":  3,
+                                        "width":  3,
+                                        "text":  "•",
+                                        "x":  827
+                                    },
+                                    {
+                                        "y":  1091,
+                                        "height":  3,
+                                        "width":  3,
+                                        "text":  "•",
+                                        "x":  834
+                                    },
+                                    {
+                                        "y":  1091,
+                                        "height":  3,
+                                        "width":  3,
+                                        "text":  "•",
+                                        "x":  870
+                                    },
+                                    {
+                                        "y":  1091,
+                                        "height":  3,
+                                        "width":  3,
+                                        "text":  "•",
+                                        "x":  926
+                                    },
+                                    {
+                                        "y":  1091,
+                                        "height":  3,
+                                        "width":  3,
+                                        "text":  "•",
+                                        "x":  969
+                                    },
+                                    {
+                                        "y":  1091,
+                                        "height":  3,
+                                        "width":  3,
+                                        "text":  "•",
+                                        "x":  1012
+                                    },
+                                    {
+                                        "y":  1091,
+                                        "height":  3,
+                                        "width":  3,
+                                        "text":  "•",
+                                        "x":  1048
+                                    },
+                                    {
+                                        "y":  1091,
+                                        "height":  3,
+                                        "width":  3,
+                                        "text":  "•",
+                                        "x":  1055
+                                    },
+                                    {
+                                        "y":  1075,
+                                        "height":  19,
+                                        "width":  13,
+                                        "text":  "9",
+                                        "x":  1187
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2.3.4 Watershed Segmentation ................................................................................ 1 1",
+                      "words":  [
+                                    {
+                                        "y":  1124,
+                                        "height":  19,
+                                        "width":  53,
+                                        "text":  "2.3.4",
+                                        "x":  219
+                                    },
+                                    {
+                                        "y":  1123,
+                                        "height":  20,
+                                        "width":  132,
+                                        "text":  "Watershed",
+                                        "x":  280
+                                    },
+                                    {
+                                        "y":  1123,
+                                        "height":  26,
+                                        "width":  169,
+                                        "text":  "Segmentation",
+                                        "x":  422
+                                    },
+                                    {
+                                        "y":  1139,
+                                        "height":  4,
+                                        "width":  568,
+                                        "text":  "................................................................................",
+                                        "x":  598
+                                    },
+                                    {
+                                        "y":  1123,
+                                        "height":  20,
+                                        "width":  8,
+                                        "text":  "1",
+                                        "x":  1174
+                                    },
+                                    {
+                                        "y":  1123,
+                                        "height":  20,
+                                        "width":  7,
+                                        "text":  "1",
+                                        "x":  1189
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2.3.5 Clustering-Based Segmentation..",
+                      "words":  [
+                                    {
+                                        "y":  1171,
+                                        "height":  19,
+                                        "width":  51,
+                                        "text":  "2.3.5",
+                                        "x":  219
+                                    },
+                                    {
+                                        "y":  1169,
+                                        "height":  26,
+                                        "width":  207,
+                                        "text":  "Clustering-Based",
+                                        "x":  279
+                                    },
+                                    {
+                                        "y":  1169,
+                                        "height":  26,
+                                        "width":  185,
+                                        "text":  "Segmentation..",
+                                        "x":  495
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2.3.6 Deep Learning-Based Segmentation............................................................. 14",
+                      "words":  [
+                                    {
+                                        "y":  1219,
+                                        "height":  19,
+                                        "width":  52,
+                                        "text":  "2.3.6",
+                                        "x":  219
+                                    },
+                                    {
+                                        "y":  1219,
+                                        "height":  24,
+                                        "width":  62,
+                                        "text":  "Deep",
+                                        "x":  280
+                                    },
+                                    {
+                                        "y":  1217,
+                                        "height":  26,
+                                        "width":  191,
+                                        "text":  "Learning-Based",
+                                        "x":  352
+                                    },
+                                    {
+                                        "y":  1217,
+                                        "height":  26,
+                                        "width":  607,
+                                        "text":  "Segmentation.............................................................",
+                                        "x":  552
+                                    },
+                                    {
+                                        "y":  1218,
+                                        "height":  19,
+                                        "width":  26,
+                                        "text":  "14",
+                                        "x":  1174
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2.3.7 Active Contour Models (Snakes).............",
+                      "words":  [
+                                    {
+                                        "y":  1266,
+                                        "height":  19,
+                                        "width":  51,
+                                        "text":  "2.3.7",
+                                        "x":  219
+                                    },
+                                    {
+                                        "y":  1265,
+                                        "height":  20,
+                                        "width":  75,
+                                        "text":  "Active",
+                                        "x":  279
+                                    },
+                                    {
+                                        "y":  1266,
+                                        "height":  19,
+                                        "width":  96,
+                                        "text":  "Contour",
+                                        "x":  363
+                                    },
+                                    {
+                                        "y":  1266,
+                                        "height":  19,
+                                        "width":  84,
+                                        "text":  "Models",
+                                        "x":  468
+                                    },
+                                    {
+                                        "y":  1266,
+                                        "height":  24,
+                                        "width":  199,
+                                        "text":  "(Snakes).............",
+                                        "x":  560
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "15",
+                      "words":  [
+                                    {
+                                        "y":  1266,
+                                        "height":  19,
+                                        "width":  26,
+                                        "text":  "15",
+                                        "x":  1174
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FAST NUCES",
+                      "words":  [
+                                    {
+                                        "y":  1819,
+                                        "height":  19,
+                                        "width":  62,
+                                        "text":  "FAST",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1819,
+                                        "height":  20,
+                                        "width":  85,
+                                        "text":  "NUCES",
+                                        "x":  242
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Karachi",
+                      "words":  [
+                                    {
+                                        "y":  1828,
+                                        "height":  5,
+                                        "width":  12,
+                                        "text":  "-",
+                                        "x":  336
+                                    },
+                                    {
+                                        "y":  1817,
+                                        "height":  21,
+                                        "width":  94,
+                                        "text":  "Karachi",
+                                        "x":  358
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1819,
+                                        "height":  19,
+                                        "width":  72,
+                                        "text":  "Talha",
+                                        "x":  594
+                                    },
+                                    {
+                                        "y":  1817,
+                                        "height":  21,
+                                        "width":  87,
+                                        "text":  "Shahid",
+                                        "x":  676
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  ".5",
+                      "words":  [
+                                    {
+                                        "y":  646,
+                                        "height":  20,
+                                        "width":  24,
+                                        "text":  ".5",
+                                        "x":  1176
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "8",
+                      "words":  [
+                                    {
+                                        "y":  885,
+                                        "height":  19,
+                                        "width":  13,
+                                        "text":  "8",
+                                        "x":  1187
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  ".8",
+                      "words":  [
+                                    {
+                                        "y":  932,
+                                        "height":  20,
+                                        "width":  24,
+                                        "text":  ".8",
+                                        "x":  1176
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "9",
+                      "words":  [
+                                    {
+                                        "y":  980,
+                                        "height":  20,
+                                        "width":  13,
+                                        "text":  "9",
+                                        "x":  1187
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  ".9",
+                      "words":  [
+                                    {
+                                        "y":  1028,
+                                        "height":  20,
+                                        "width":  24,
+                                        "text":  ".9",
+                                        "x":  1176
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "... 13",
+                      "words":  [
+                                    {
+                                        "y":  1186,
+                                        "height":  4,
+                                        "width":  18,
+                                        "text":  "...",
+                                        "x":  1148
+                                    },
+                                    {
+                                        "y":  1170,
+                                        "height":  20,
+                                        "width":  26,
+                                        "text":  "13",
+                                        "x":  1174
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1",
+                      "words":  [
+                                    {
+                                        "y":  1819,
+                                        "height":  19,
+                                        "width":  10,
+                                        "text":  "1",
+                                        "x":  1190
+                                    }
+                                ]
+                  }
+              ]
+}

@@ -1,0 +1,2014 @@
+﻿{
+    "id":  "lab_01_manual_p024",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "National University of Computer \u0026 Emerging Sciences - Department of Artificial Intelligence NUCES - Karachi Equalized Image (Enhanced Contrast) 11. 12 Histogram Equalization import cv2 import matplotlib.pyptot as put # Read the image directly in grayscale mode single-channel # cv2.IMREAD_GRAYSCALE bypasses the need to use cv2.cvtCoIor = cv2.imread(\u0027Sukuna.jpeg\u0027, cv2 . IMREAD_GRAYSCALE) image # Apply histogram equalization to improve contrast cv2. equatizeHist (image) equalized _ image = # cmap=\u0027gray\u0027 is required so Matplotlib renders the plt . cmap= gray\u0027) put . titte( \u0027Equalized Image (Enhanced Contrast) I) put . axis(l off\u0027) tater put . show() Description : FAST NUCES - This code uses OpenCV to enhance the contrast of an image image correctly using a technique catted histogram equalization. First, it reads the image using the cv2.IMREAD_GRAYSCALE flag. Instead of loading the image in color and converting it later, this flag tells OpenCV to toad it directly as a single-channel (black-and-white) image right from the start. Next, the cv2.equalizeHist() function is applied to the image. This function mathematically analyzes the distribution of pixel brightness values (the histogram). If an image is too dark, washed out, or tacks contrast, its pixel values are usually clumped together in a narrow range. Histogram equalization takes those clumped pixels and stretches them out across the entire available brightness spectrum (from O to 255). This process naturally darkens the darkest parts and tightens the tightest parts, revealing hidden details and significantly improving the overall global contrast of the image. Finally, the enhanced image is displayed intine using Matplotlib. Karachi Instructor: Talha Shahid 22",
+    "review_status":  "raw_ocr_unverified",
+    "page":  24,
+    "source_id":  "lab_01_manual",
+    "lines":  [
+                  {
+                      "text":  "National University of Computer \u0026 Emerging Sciences -",
+                      "words":  [
+                                    {
+                                        "y":  126,
+                                        "height":  24,
+                                        "width":  124,
+                                        "text":  "National",
+                                        "x":  845
+                                    },
+                                    {
+                                        "y":  127,
+                                        "height":  29,
+                                        "width":  154,
+                                        "text":  "University",
+                                        "x":  978
+                                    },
+                                    {
+                                        "y":  126,
+                                        "height":  24,
+                                        "width":  30,
+                                        "text":  "of",
+                                        "x":  1139
+                                    },
+                                    {
+                                        "y":  127,
+                                        "height":  29,
+                                        "width":  146,
+                                        "text":  "Computer",
+                                        "x":  1175
+                                    },
+                                    {
+                                        "y":  127,
+                                        "height":  23,
+                                        "width":  23,
+                                        "text":  "\u0026",
+                                        "x":  1329
+                                    },
+                                    {
+                                        "y":  127,
+                                        "height":  29,
+                                        "width":  140,
+                                        "text":  "Emerging",
+                                        "x":  1360
+                                    },
+                                    {
+                                        "y":  127,
+                                        "height":  23,
+                                        "width":  123,
+                                        "text":  "Sciences",
+                                        "x":  1509
+                                    },
+                                    {
+                                        "y":  138,
+                                        "height":  5,
+                                        "width":  9,
+                                        "text":  "-",
+                                        "x":  1641
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Department of Artificial Intelligence",
+                      "words":  [
+                                    {
+                                        "y":  168,
+                                        "height":  26,
+                                        "width":  142,
+                                        "text":  "Department",
+                                        "x":  1155
+                                    },
+                                    {
+                                        "y":  167,
+                                        "height":  22,
+                                        "width":  26,
+                                        "text":  "of",
+                                        "x":  1305
+                                    },
+                                    {
+                                        "y":  167,
+                                        "height":  22,
+                                        "width":  100,
+                                        "text":  "Artificial",
+                                        "x":  1337
+                                    },
+                                    {
+                                        "y":  167,
+                                        "height":  27,
+                                        "width":  137,
+                                        "text":  "Intelligence",
+                                        "x":  1448
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "NUCES -",
+                      "words":  [
+                                    {
+                                        "y":  127,
+                                        "height":  23,
+                                        "width":  95,
+                                        "text":  "NUCES",
+                                        "x":  1659
+                                    },
+                                    {
+                                        "y":  138,
+                                        "height":  5,
+                                        "width":  9,
+                                        "text":  "-",
+                                        "x":  1763
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Karachi",
+                      "words":  [
+                                    {
+                                        "y":  126,
+                                        "height":  24,
+                                        "width":  112,
+                                        "text":  "Karachi",
+                                        "x":  1782
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Equalized Image (Enhanced Contrast)",
+                      "words":  [
+                                    {
+                                        "y":  516,
+                                        "height":  29,
+                                        "width":  134,
+                                        "text":  "Equalized",
+                                        "x":  1822
+                                    },
+                                    {
+                                        "y":  517,
+                                        "height":  27,
+                                        "width":  86,
+                                        "text":  "Image",
+                                        "x":  1968
+                                    },
+                                    {
+                                        "y":  516,
+                                        "height":  25,
+                                        "width":  147,
+                                        "text":  "(Enhanced",
+                                        "x":  2064
+                                    },
+                                    {
+                                        "y":  516,
+                                        "height":  26,
+                                        "width":  129,
+                                        "text":  "Contrast)",
+                                        "x":  2222
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "11. 12 Histogram Equalization",
+                      "words":  [
+                                    {
+                                        "y":  455,
+                                        "height":  20,
+                                        "width":  35,
+                                        "text":  "11.",
+                                        "x":  171
+                                    },
+                                    {
+                                        "y":  455,
+                                        "height":  20,
+                                        "width":  29,
+                                        "text":  "12",
+                                        "x":  217
+                                    },
+                                    {
+                                        "y":  452,
+                                        "height":  29,
+                                        "width":  145,
+                                        "text":  "Histogram",
+                                        "x":  257
+                                    },
+                                    {
+                                        "y":  452,
+                                        "height":  29,
+                                        "width":  173,
+                                        "text":  "Equalization",
+                                        "x":  414
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "import cv2",
+                      "words":  [
+                                    {
+                                        "y":  509,
+                                        "height":  23,
+                                        "width":  78,
+                                        "text":  "import",
+                                        "x":  184
+                                    },
+                                    {
+                                        "y":  510,
+                                        "height":  18,
+                                        "width":  38,
+                                        "text":  "cv2",
+                                        "x":  279
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "import matplotlib.pyptot as put",
+                      "words":  [
+                                    {
+                                        "y":  542,
+                                        "height":  23,
+                                        "width":  79,
+                                        "text":  "import",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  542,
+                                        "height":  23,
+                                        "width":  233,
+                                        "text":  "matplotlib.pyptot",
+                                        "x":  278
+                                    },
+                                    {
+                                        "y":  547,
+                                        "height":  14,
+                                        "width":  25,
+                                        "text":  "as",
+                                        "x":  526
+                                    },
+                                    {
+                                        "y":  543,
+                                        "height":  22,
+                                        "width":  38,
+                                        "text":  "put",
+                                        "x":  568
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# Read the image directly in grayscale mode",
+                      "words":  [
+                                    {
+                                        "y":  609,
+                                        "height":  17,
+                                        "width":  13,
+                                        "text":  "#",
+                                        "x":  182
+                                    },
+                                    {
+                                        "y":  609,
+                                        "height":  17,
+                                        "width":  52,
+                                        "text":  "Read",
+                                        "x":  210
+                                    },
+                                    {
+                                        "y":  609,
+                                        "height":  17,
+                                        "width":  39,
+                                        "text":  "the",
+                                        "x":  278
+                                    },
+                                    {
+                                        "y":  607,
+                                        "height":  23,
+                                        "width":  65,
+                                        "text":  "image",
+                                        "x":  335
+                                    },
+                                    {
+                                        "y":  607,
+                                        "height":  23,
+                                        "width":  107,
+                                        "text":  "directly",
+                                        "x":  417
+                                    },
+                                    {
+                                        "y":  607,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "in",
+                                        "x":  540
+                                    },
+                                    {
+                                        "y":  609,
+                                        "height":  21,
+                                        "width":  121,
+                                        "text":  "grayscale",
+                                        "x":  582
+                                    },
+                                    {
+                                        "y":  609,
+                                        "height":  17,
+                                        "width":  52,
+                                        "text":  "mode",
+                                        "x":  719
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "single-channel",
+                      "words":  [
+                                    {
+                                        "y":  835,
+                                        "height":  23,
+                                        "width":  191,
+                                        "text":  "single-channel",
+                                        "x":  898
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# cv2.IMREAD_GRAYSCALE bypasses the need to use cv2.cvtCoIor",
+                      "words":  [
+                                    {
+                                        "y":  641,
+                                        "height":  17,
+                                        "width":  13,
+                                        "text":  "#",
+                                        "x":  182
+                                    },
+                                    {
+                                        "y":  641,
+                                        "height":  19,
+                                        "width":  273,
+                                        "text":  "cv2.IMREAD_GRAYSCALE",
+                                        "x":  210
+                                    },
+                                    {
+                                        "y":  642,
+                                        "height":  20,
+                                        "width":  106,
+                                        "text":  "bypasses",
+                                        "x":  500
+                                    },
+                                    {
+                                        "y":  642,
+                                        "height":  16,
+                                        "width":  39,
+                                        "text":  "the",
+                                        "x":  622
+                                    },
+                                    {
+                                        "y":  642,
+                                        "height":  16,
+                                        "width":  51,
+                                        "text":  "need",
+                                        "x":  679
+                                    },
+                                    {
+                                        "y":  642,
+                                        "height":  16,
+                                        "width":  25,
+                                        "text":  "to",
+                                        "x":  746
+                                    },
+                                    {
+                                        "y":  644,
+                                        "height":  14,
+                                        "width":  38,
+                                        "text":  "use",
+                                        "x":  789
+                                    },
+                                    {
+                                        "y":  641,
+                                        "height":  17,
+                                        "width":  163,
+                                        "text":  "cv2.cvtCoIor",
+                                        "x":  843
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "= cv2.imread(\u0027Sukuna.jpeg\u0027, cv2",
+                      "words":  [
+                                    {
+                                        "y":  678,
+                                        "height":  9,
+                                        "width":  11,
+                                        "text":  "=",
+                                        "x":  265
+                                    },
+                                    {
+                                        "y":  670,
+                                        "height":  25,
+                                        "width":  338,
+                                        "text":  "cv2.imread(\u0027Sukuna.jpeg\u0027,",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  673,
+                                        "height":  17,
+                                        "width":  39,
+                                        "text":  "cv2",
+                                        "x":  651
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  ". IMREAD_GRAYSCALE)",
+                      "words":  [
+                                    {
+                                        "y":  686,
+                                        "height":  4,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  696
+                                    },
+                                    {
+                                        "y":  670,
+                                        "height":  23,
+                                        "width":  228,
+                                        "text":  "IMREAD_GRAYSCALE)",
+                                        "x":  707
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "image",
+                      "words":  [
+                                    {
+                                        "y":  672,
+                                        "height":  22,
+                                        "width":  65,
+                                        "text":  "image",
+                                        "x":  183
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# Apply histogram equalization to improve contrast",
+                      "words":  [
+                                    {
+                                        "y":  738,
+                                        "height":  18,
+                                        "width":  13,
+                                        "text":  "#",
+                                        "x":  182
+                                    },
+                                    {
+                                        "y":  738,
+                                        "height":  22,
+                                        "width":  67,
+                                        "text":  "Apply",
+                                        "x":  209
+                                    },
+                                    {
+                                        "y":  737,
+                                        "height":  23,
+                                        "width":  121,
+                                        "text":  "histogram",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  737,
+                                        "height":  23,
+                                        "width":  161,
+                                        "text":  "equalization",
+                                        "x":  431
+                                    },
+                                    {
+                                        "y":  739,
+                                        "height":  17,
+                                        "width":  25,
+                                        "text":  "to",
+                                        "x":  609
+                                    },
+                                    {
+                                        "y":  737,
+                                        "height":  23,
+                                        "width":  93,
+                                        "text":  "improve",
+                                        "x":  651
+                                    },
+                                    {
+                                        "y":  739,
+                                        "height":  17,
+                                        "width":  107,
+                                        "text":  "contrast",
+                                        "x":  761
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "cv2. equatizeHist (image)",
+                      "words":  [
+                                    {
+                                        "y":  771,
+                                        "height":  18,
+                                        "width":  49,
+                                        "text":  "cv2.",
+                                        "x":  431
+                                    },
+                                    {
+                                        "y":  770,
+                                        "height":  23,
+                                        "width":  162,
+                                        "text":  "equatizeHist",
+                                        "x":  486
+                                    },
+                                    {
+                                        "y":  769,
+                                        "height":  24,
+                                        "width":  89,
+                                        "text":  "(image)",
+                                        "x":  653
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "equalized _ image =",
+                      "words":  [
+                                    {
+                                        "y":  770,
+                                        "height":  23,
+                                        "width":  120,
+                                        "text":  "equalized",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  789,
+                                        "height":  2,
+                                        "width":  12,
+                                        "text":  "_",
+                                        "x":  306
+                                    },
+                                    {
+                                        "y":  770,
+                                        "height":  23,
+                                        "width":  66,
+                                        "text":  "image",
+                                        "x":  320
+                                    },
+                                    {
+                                        "y":  777,
+                                        "height":  8,
+                                        "width":  11,
+                                        "text":  "=",
+                                        "x":  403
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# cmap=\u0027gray\u0027 is required so Matplotlib renders the",
+                      "words":  [
+                                    {
+                                        "y":  836,
+                                        "height":  18,
+                                        "width":  13,
+                                        "text":  "#",
+                                        "x":  182
+                                    },
+                                    {
+                                        "y":  836,
+                                        "height":  22,
+                                        "width":  145,
+                                        "text":  "cmap=\u0027gray\u0027",
+                                        "x":  210
+                                    },
+                                    {
+                                        "y":  835,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "is",
+                                        "x":  376
+                                    },
+                                    {
+                                        "y":  835,
+                                        "height":  23,
+                                        "width":  105,
+                                        "text":  "required",
+                                        "x":  418
+                                    },
+                                    {
+                                        "y":  840,
+                                        "height":  14,
+                                        "width":  25,
+                                        "text":  "so",
+                                        "x":  540
+                                    },
+                                    {
+                                        "y":  835,
+                                        "height":  23,
+                                        "width":  136,
+                                        "text":  "Matplotlib",
+                                        "x":  581
+                                    },
+                                    {
+                                        "y":  836,
+                                        "height":  18,
+                                        "width":  93,
+                                        "text":  "renders",
+                                        "x":  734
+                                    },
+                                    {
+                                        "y":  836,
+                                        "height":  18,
+                                        "width":  39,
+                                        "text":  "the",
+                                        "x":  842
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "plt . cmap= gray\u0027)",
+                      "words":  [
+                                    {
+                                        "y":  869,
+                                        "height":  22,
+                                        "width":  37,
+                                        "text":  "plt",
+                                        "x":  184
+                                    },
+                                    {
+                                        "y":  882,
+                                        "height":  5,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  227
+                                    },
+                                    {
+                                        "y":  873,
+                                        "height":  18,
+                                        "width":  66,
+                                        "text":  "cmap=",
+                                        "x":  568
+                                    },
+                                    {
+                                        "y":  867,
+                                        "height":  24,
+                                        "width":  77,
+                                        "text":  "gray\u0027)",
+                                        "x":  651
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "put . titte( \u0027Equalized Image (Enhanced Contrast) I)",
+                      "words":  [
+                                    {
+                                        "y":  902,
+                                        "height":  22,
+                                        "width":  37,
+                                        "text":  "put",
+                                        "x":  184
+                                    },
+                                    {
+                                        "y":  915,
+                                        "height":  5,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  227
+                                    },
+                                    {
+                                        "y":  900,
+                                        "height":  22,
+                                        "width":  79,
+                                        "text":  "titte(",
+                                        "x":  237
+                                    },
+                                    {
+                                        "y":  901,
+                                        "height":  23,
+                                        "width":  130,
+                                        "text":  "\u0027Equalized",
+                                        "x":  325
+                                    },
+                                    {
+                                        "y":  902,
+                                        "height":  22,
+                                        "width":  64,
+                                        "text":  "Image",
+                                        "x":  473
+                                    },
+                                    {
+                                        "y":  900,
+                                        "height":  22,
+                                        "width":  119,
+                                        "text":  "(Enhanced",
+                                        "x":  556
+                                    },
+                                    {
+                                        "y":  900,
+                                        "height":  22,
+                                        "width":  119,
+                                        "text":  "Contrast)",
+                                        "x":  692
+                                    },
+                                    {
+                                        "y":  900,
+                                        "height":  22,
+                                        "width":  18,
+                                        "text":  "I)",
+                                        "x":  820
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "put . axis(l off\u0027)",
+                      "words":  [
+                                    {
+                                        "y":  935,
+                                        "height":  21,
+                                        "width":  37,
+                                        "text":  "put",
+                                        "x":  184
+                                    },
+                                    {
+                                        "y":  948,
+                                        "height":  4,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  227
+                                    },
+                                    {
+                                        "y":  932,
+                                        "height":  23,
+                                        "width":  75,
+                                        "text":  "axis(l",
+                                        "x":  238
+                                    },
+                                    {
+                                        "y":  932,
+                                        "height":  23,
+                                        "width":  63,
+                                        "text":  "off\u0027)",
+                                        "x":  321
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "tater",
+                      "words":  [
+                                    {
+                                        "y":  641,
+                                        "height":  17,
+                                        "width":  67,
+                                        "text":  "tater",
+                                        "x":  1022
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "put . show()",
+                      "words":  [
+                                    {
+                                        "y":  967,
+                                        "height":  22,
+                                        "width":  37,
+                                        "text":  "put",
+                                        "x":  184
+                                    },
+                                    {
+                                        "y":  980,
+                                        "height":  5,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  227
+                                    },
+                                    {
+                                        "y":  965,
+                                        "height":  22,
+                                        "width":  77,
+                                        "text":  "show()",
+                                        "x":  238
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Description :",
+                      "words":  [
+                                    {
+                                        "y":  1320,
+                                        "height":  23,
+                                        "width":  148,
+                                        "text":  "Description",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  1325,
+                                        "height":  14,
+                                        "width":  5,
+                                        "text":  ":",
+                                        "x":  337
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FAST NUCES -",
+                      "words":  [
+                                    {
+                                        "y":  1821,
+                                        "height":  19,
+                                        "width":  61,
+                                        "text":  "FAST",
+                                        "x":  171
+                                    },
+                                    {
+                                        "y":  1821,
+                                        "height":  19,
+                                        "width":  84,
+                                        "text":  "NUCES",
+                                        "x":  243
+                                    },
+                                    {
+                                        "y":  1830,
+                                        "height":  4,
+                                        "width":  9,
+                                        "text":  "-",
+                                        "x":  337
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "This code uses OpenCV to enhance the",
+                      "words":  [
+                                    {
+                                        "y":  1185,
+                                        "height":  19,
+                                        "width":  52,
+                                        "text":  "This",
+                                        "x":  389
+                                    },
+                                    {
+                                        "y":  1186,
+                                        "height":  18,
+                                        "width":  52,
+                                        "text":  "code",
+                                        "x":  458
+                                    },
+                                    {
+                                        "y":  1190,
+                                        "height":  14,
+                                        "width":  52,
+                                        "text":  "uses",
+                                        "x":  526
+                                    },
+                                    {
+                                        "y":  1186,
+                                        "height":  22,
+                                        "width":  81,
+                                        "text":  "OpenCV",
+                                        "x":  595
+                                    },
+                                    {
+                                        "y":  1187,
+                                        "height":  17,
+                                        "width":  25,
+                                        "text":  "to",
+                                        "x":  691
+                                    },
+                                    {
+                                        "y":  1186,
+                                        "height":  18,
+                                        "width":  94,
+                                        "text":  "enhance",
+                                        "x":  733
+                                    },
+                                    {
+                                        "y":  1186,
+                                        "height":  18,
+                                        "width":  39,
+                                        "text":  "the",
+                                        "x":  842
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "contrast of an",
+                      "words":  [
+                                    {
+                                        "y":  1187,
+                                        "height":  17,
+                                        "width":  108,
+                                        "text":  "contrast",
+                                        "x":  898
+                                    },
+                                    {
+                                        "y":  1186,
+                                        "height":  18,
+                                        "width":  25,
+                                        "text":  "of",
+                                        "x":  1022
+                                    },
+                                    {
+                                        "y":  1190,
+                                        "height":  14,
+                                        "width":  25,
+                                        "text":  "an",
+                                        "x":  1063
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "image",
+                      "words":  [
+                                    {
+                                        "y":  835,
+                                        "height":  23,
+                                        "width":  64,
+                                        "text":  "image",
+                                        "x":  1106
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "image",
+                      "words":  [
+                                    {
+                                        "y":  1185,
+                                        "height":  23,
+                                        "width":  65,
+                                        "text":  "image",
+                                        "x":  1105
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "correctly",
+                      "words":  [
+                                    {
+                                        "y":  836,
+                                        "height":  22,
+                                        "width":  121,
+                                        "text":  "correctly",
+                                        "x":  1188
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "using a technique catted histogram equalization.",
+                      "words":  [
+                                    {
+                                        "y":  1185,
+                                        "height":  23,
+                                        "width":  66,
+                                        "text":  "using",
+                                        "x":  1187
+                                    },
+                                    {
+                                        "y":  1190,
+                                        "height":  14,
+                                        "width":  11,
+                                        "text":  "a",
+                                        "x":  1269
+                                    },
+                                    {
+                                        "y":  1185,
+                                        "height":  23,
+                                        "width":  123,
+                                        "text":  "technique",
+                                        "x":  1296
+                                    },
+                                    {
+                                        "y":  1186,
+                                        "height":  18,
+                                        "width":  79,
+                                        "text":  "catted",
+                                        "x":  1435
+                                    },
+                                    {
+                                        "y":  1185,
+                                        "height":  23,
+                                        "width":  122,
+                                        "text":  "histogram",
+                                        "x":  1531
+                                    },
+                                    {
+                                        "y":  1185,
+                                        "height":  23,
+                                        "width":  172,
+                                        "text":  "equalization.",
+                                        "x":  1669
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "First, it reads the image using the cv2.IMREAD_GRAYSCALE flag. Instead of loading the image in color and converting it later, this flag tells OpenCV to toad",
+                      "words":  [
+                                    {
+                                        "y":  1246,
+                                        "height":  22,
+                                        "width":  77,
+                                        "text":  "First,",
+                                        "x":  389
+                                    },
+                                    {
+                                        "y":  1246,
+                                        "height":  18,
+                                        "width":  24,
+                                        "text":  "it",
+                                        "x":  486
+                                    },
+                                    {
+                                        "y":  1247,
+                                        "height":  18,
+                                        "width":  65,
+                                        "text":  "reads",
+                                        "x":  527
+                                    },
+                                    {
+                                        "y":  1247,
+                                        "height":  18,
+                                        "width":  40,
+                                        "text":  "the",
+                                        "x":  608
+                                    },
+                                    {
+                                        "y":  1246,
+                                        "height":  22,
+                                        "width":  66,
+                                        "text":  "image",
+                                        "x":  664
+                                    },
+                                    {
+                                        "y":  1246,
+                                        "height":  23,
+                                        "width":  66,
+                                        "text":  "using",
+                                        "x":  747
+                                    },
+                                    {
+                                        "y":  1247,
+                                        "height":  18,
+                                        "width":  38,
+                                        "text":  "the",
+                                        "x":  829
+                                    },
+                                    {
+                                        "y":  1247,
+                                        "height":  20,
+                                        "width":  273,
+                                        "text":  "cv2.IMREAD_GRAYSCALE",
+                                        "x":  884
+                                    },
+                                    {
+                                        "y":  1247,
+                                        "height":  21,
+                                        "width":  63,
+                                        "text":  "flag.",
+                                        "x":  1173
+                                    },
+                                    {
+                                        "y":  1247,
+                                        "height":  18,
+                                        "width":  93,
+                                        "text":  "Instead",
+                                        "x":  1257
+                                    },
+                                    {
+                                        "y":  1247,
+                                        "height":  17,
+                                        "width":  25,
+                                        "text":  "of",
+                                        "x":  1366
+                                    },
+                                    {
+                                        "y":  1246,
+                                        "height":  23,
+                                        "width":  94,
+                                        "text":  "loading",
+                                        "x":  1407
+                                    },
+                                    {
+                                        "y":  1247,
+                                        "height":  18,
+                                        "width":  39,
+                                        "text":  "the",
+                                        "x":  1516
+                                    },
+                                    {
+                                        "y":  1246,
+                                        "height":  23,
+                                        "width":  66,
+                                        "text":  "image",
+                                        "x":  1572
+                                    },
+                                    {
+                                        "y":  1246,
+                                        "height":  18,
+                                        "width":  25,
+                                        "text":  "in",
+                                        "x":  1655
+                                    },
+                                    {
+                                        "y":  1247,
+                                        "height":  18,
+                                        "width":  66,
+                                        "text":  "color",
+                                        "x":  1697
+                                    },
+                                    {
+                                        "y":  1247,
+                                        "height":  18,
+                                        "width":  38,
+                                        "text":  "and",
+                                        "x":  1779
+                                    },
+                                    {
+                                        "y":  1246,
+                                        "height":  23,
+                                        "width":  135,
+                                        "text":  "converting",
+                                        "x":  1834
+                                    },
+                                    {
+                                        "y":  1246,
+                                        "height":  18,
+                                        "width":  25,
+                                        "text":  "it",
+                                        "x":  1985
+                                    },
+                                    {
+                                        "y":  1247,
+                                        "height":  21,
+                                        "width":  77,
+                                        "text":  "later,",
+                                        "x":  2026
+                                    },
+                                    {
+                                        "y":  1246,
+                                        "height":  18,
+                                        "width":  53,
+                                        "text":  "this",
+                                        "x":  2122
+                                    },
+                                    {
+                                        "y":  1247,
+                                        "height":  22,
+                                        "width":  53,
+                                        "text":  "flag",
+                                        "x":  2191
+                                    },
+                                    {
+                                        "y":  1247,
+                                        "height":  18,
+                                        "width":  67,
+                                        "text":  "tells",
+                                        "x":  2260
+                                    },
+                                    {
+                                        "y":  1247,
+                                        "height":  22,
+                                        "width":  79,
+                                        "text":  "OpenCV",
+                                        "x":  2344
+                                    },
+                                    {
+                                        "y":  1247,
+                                        "height":  17,
+                                        "width":  25,
+                                        "text":  "to",
+                                        "x":  2439
+                                    },
+                                    {
+                                        "y":  1247,
+                                        "height":  18,
+                                        "width":  54,
+                                        "text":  "toad",
+                                        "x":  2480
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "it directly as a single-channel (black-and-white) image right from the start.",
+                      "words":  [
+                                    {
+                                        "y":  1276,
+                                        "height":  18,
+                                        "width":  25,
+                                        "text":  "it",
+                                        "x":  389
+                                    },
+                                    {
+                                        "y":  1276,
+                                        "height":  22,
+                                        "width":  107,
+                                        "text":  "directly",
+                                        "x":  430
+                                    },
+                                    {
+                                        "y":  1281,
+                                        "height":  13,
+                                        "width":  25,
+                                        "text":  "as",
+                                        "x":  553
+                                    },
+                                    {
+                                        "y":  1281,
+                                        "height":  13,
+                                        "width":  11,
+                                        "text":  "a",
+                                        "x":  595
+                                    },
+                                    {
+                                        "y":  1276,
+                                        "height":  22,
+                                        "width":  191,
+                                        "text":  "single-channel",
+                                        "x":  623
+                                    },
+                                    {
+                                        "y":  1275,
+                                        "height":  21,
+                                        "width":  228,
+                                        "text":  "(black-and-white)",
+                                        "x":  831
+                                    },
+                                    {
+                                        "y":  1276,
+                                        "height":  22,
+                                        "width":  66,
+                                        "text":  "image",
+                                        "x":  1078
+                                    },
+                                    {
+                                        "y":  1276,
+                                        "height":  22,
+                                        "width":  65,
+                                        "text":  "right",
+                                        "x":  1160
+                                    },
+                                    {
+                                        "y":  1277,
+                                        "height":  17,
+                                        "width":  53,
+                                        "text":  "from",
+                                        "x":  1242
+                                    },
+                                    {
+                                        "y":  1277,
+                                        "height":  17,
+                                        "width":  39,
+                                        "text":  "the",
+                                        "x":  1311
+                                    },
+                                    {
+                                        "y":  1278,
+                                        "height":  16,
+                                        "width":  77,
+                                        "text":  "start.",
+                                        "x":  1366
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Next, the cv2.equalizeHist() function is applied to the image. This function mathematically analyzes the distribution of pixel brightness values (the histogram).",
+                      "words":  [
+                                    {
+                                        "y":  1337,
+                                        "height":  21,
+                                        "width":  62,
+                                        "text":  "Next,",
+                                        "x":  389
+                                    },
+                                    {
+                                        "y":  1337,
+                                        "height":  17,
+                                        "width":  39,
+                                        "text":  "the",
+                                        "x":  469
+                                    },
+                                    {
+                                        "y":  1334,
+                                        "height":  24,
+                                        "width":  243,
+                                        "text":  "cv2.equalizeHist()",
+                                        "x":  522
+                                    },
+                                    {
+                                        "y":  1336,
+                                        "height":  18,
+                                        "width":  107,
+                                        "text":  "function",
+                                        "x":  781
+                                    },
+                                    {
+                                        "y":  1336,
+                                        "height":  18,
+                                        "width":  24,
+                                        "text":  "is",
+                                        "x":  903
+                                    },
+                                    {
+                                        "y":  1336,
+                                        "height":  22,
+                                        "width":  94,
+                                        "text":  "applied",
+                                        "x":  941
+                                    },
+                                    {
+                                        "y":  1337,
+                                        "height":  17,
+                                        "width":  26,
+                                        "text":  "to",
+                                        "x":  1049
+                                    },
+                                    {
+                                        "y":  1337,
+                                        "height":  17,
+                                        "width":  40,
+                                        "text":  "the",
+                                        "x":  1088
+                                    },
+                                    {
+                                        "y":  1336,
+                                        "height":  22,
+                                        "width":  76,
+                                        "text":  "image.",
+                                        "x":  1142
+                                    },
+                                    {
+                                        "y":  1336,
+                                        "height":  18,
+                                        "width":  52,
+                                        "text":  "This",
+                                        "x":  1235
+                                    },
+                                    {
+                                        "y":  1336,
+                                        "height":  18,
+                                        "width":  107,
+                                        "text":  "function",
+                                        "x":  1302
+                                    },
+                                    {
+                                        "y":  1336,
+                                        "height":  22,
+                                        "width":  189,
+                                        "text":  "mathematically",
+                                        "x":  1424
+                                    },
+                                    {
+                                        "y":  1337,
+                                        "height":  21,
+                                        "width":  108,
+                                        "text":  "analyzes",
+                                        "x":  1627
+                                    },
+                                    {
+                                        "y":  1337,
+                                        "height":  17,
+                                        "width":  38,
+                                        "text":  "the",
+                                        "x":  1749
+                                    },
+                                    {
+                                        "y":  1336,
+                                        "height":  18,
+                                        "width":  162,
+                                        "text":  "distribution",
+                                        "x":  1802
+                                    },
+                                    {
+                                        "y":  1337,
+                                        "height":  17,
+                                        "width":  25,
+                                        "text":  "of",
+                                        "x":  1979
+                                    },
+                                    {
+                                        "y":  1336,
+                                        "height":  22,
+                                        "width":  69,
+                                        "text":  "pixel",
+                                        "x":  2017
+                                    },
+                                    {
+                                        "y":  1336,
+                                        "height":  22,
+                                        "width":  133,
+                                        "text":  "brightness",
+                                        "x":  2100
+                                    },
+                                    {
+                                        "y":  1337,
+                                        "height":  17,
+                                        "width":  79,
+                                        "text":  "values",
+                                        "x":  2248
+                                    },
+                                    {
+                                        "y":  1334,
+                                        "height":  23,
+                                        "width":  51,
+                                        "text":  "(the",
+                                        "x":  2344
+                                    },
+                                    {
+                                        "y":  1334,
+                                        "height":  24,
+                                        "width":  145,
+                                        "text":  "histogram).",
+                                        "x":  2409
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "If an image is too dark, washed out, or tacks contrast, its pixel values are usually clumped together in a narrow range. Histogram equalization takes those",
+                      "words":  [
+                                    {
+                                        "y":  1367,
+                                        "height":  18,
+                                        "width":  24,
+                                        "text":  "If",
+                                        "x":  390
+                                    },
+                                    {
+                                        "y":  1371,
+                                        "height":  14,
+                                        "width":  26,
+                                        "text":  "an",
+                                        "x":  431
+                                    },
+                                    {
+                                        "y":  1366,
+                                        "height":  23,
+                                        "width":  65,
+                                        "text":  "image",
+                                        "x":  475
+                                    },
+                                    {
+                                        "y":  1366,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "is",
+                                        "x":  558
+                                    },
+                                    {
+                                        "y":  1368,
+                                        "height":  17,
+                                        "width":  39,
+                                        "text":  "too",
+                                        "x":  600
+                                    },
+                                    {
+                                        "y":  1367,
+                                        "height":  21,
+                                        "width":  63,
+                                        "text":  "dark,",
+                                        "x":  657
+                                    },
+                                    {
+                                        "y":  1367,
+                                        "height":  18,
+                                        "width":  80,
+                                        "text":  "washed",
+                                        "x":  741
+                                    },
+                                    {
+                                        "y":  1368,
+                                        "height":  20,
+                                        "width":  49,
+                                        "text":  "out,",
+                                        "x":  839
+                                    },
+                                    {
+                                        "y":  1371,
+                                        "height":  14,
+                                        "width":  25,
+                                        "text":  "or",
+                                        "x":  909
+                                    },
+                                    {
+                                        "y":  1367,
+                                        "height":  18,
+                                        "width":  67,
+                                        "text":  "tacks",
+                                        "x":  951
+                                    },
+                                    {
+                                        "y":  1368,
+                                        "height":  20,
+                                        "width":  116,
+                                        "text":  "contrast,",
+                                        "x":  1037
+                                    },
+                                    {
+                                        "y":  1366,
+                                        "height":  19,
+                                        "width":  39,
+                                        "text":  "its",
+                                        "x":  1174
+                                    },
+                                    {
+                                        "y":  1366,
+                                        "height":  23,
+                                        "width":  66,
+                                        "text":  "pixel",
+                                        "x":  1232
+                                    },
+                                    {
+                                        "y":  1367,
+                                        "height":  18,
+                                        "width":  80,
+                                        "text":  "values",
+                                        "x":  1315
+                                    },
+                                    {
+                                        "y":  1371,
+                                        "height":  14,
+                                        "width":  39,
+                                        "text":  "are",
+                                        "x":  1413
+                                    },
+                                    {
+                                        "y":  1367,
+                                        "height":  22,
+                                        "width":  95,
+                                        "text":  "usually",
+                                        "x":  1469
+                                    },
+                                    {
+                                        "y":  1367,
+                                        "height":  22,
+                                        "width":  93,
+                                        "text":  "clumped",
+                                        "x":  1582
+                                    },
+                                    {
+                                        "y":  1367,
+                                        "height":  22,
+                                        "width":  109,
+                                        "text":  "together",
+                                        "x":  1692
+                                    },
+                                    {
+                                        "y":  1366,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "in",
+                                        "x":  1819
+                                    },
+                                    {
+                                        "y":  1371,
+                                        "height":  14,
+                                        "width":  11,
+                                        "text":  "a",
+                                        "x":  1862
+                                    },
+                                    {
+                                        "y":  1371,
+                                        "height":  14,
+                                        "width":  81,
+                                        "text":  "narrow",
+                                        "x":  1891
+                                    },
+                                    {
+                                        "y":  1371,
+                                        "height":  18,
+                                        "width":  76,
+                                        "text":  "range.",
+                                        "x":  1990
+                                    },
+                                    {
+                                        "y":  1366,
+                                        "height":  23,
+                                        "width":  121,
+                                        "text":  "Histogram",
+                                        "x":  2087
+                                    },
+                                    {
+                                        "y":  1366,
+                                        "height":  23,
+                                        "width":  162,
+                                        "text":  "equalization",
+                                        "x":  2226
+                                    },
+                                    {
+                                        "y":  1367,
+                                        "height":  18,
+                                        "width":  66,
+                                        "text":  "takes",
+                                        "x":  2406
+                                    },
+                                    {
+                                        "y":  1367,
+                                        "height":  18,
+                                        "width":  67,
+                                        "text":  "those",
+                                        "x":  2489
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "clumped pixels and stretches them out across the entire available brightness spectrum (from O to 255). This process naturally darkens the darkest parts and",
+                      "words":  [
+                                    {
+                                        "y":  1397,
+                                        "height":  22,
+                                        "width":  94,
+                                        "text":  "clumped",
+                                        "x":  389
+                                    },
+                                    {
+                                        "y":  1396,
+                                        "height":  23,
+                                        "width":  78,
+                                        "text":  "pixels",
+                                        "x":  502
+                                    },
+                                    {
+                                        "y":  1397,
+                                        "height":  18,
+                                        "width":  39,
+                                        "text":  "and",
+                                        "x":  598
+                                    },
+                                    {
+                                        "y":  1397,
+                                        "height":  18,
+                                        "width":  121,
+                                        "text":  "stretches",
+                                        "x":  656
+                                    },
+                                    {
+                                        "y":  1397,
+                                        "height":  18,
+                                        "width":  53,
+                                        "text":  "them",
+                                        "x":  794
+                                    },
+                                    {
+                                        "y":  1398,
+                                        "height":  17,
+                                        "width":  38,
+                                        "text":  "out",
+                                        "x":  865
+                                    },
+                                    {
+                                        "y":  1401,
+                                        "height":  14,
+                                        "width":  80,
+                                        "text":  "across",
+                                        "x":  921
+                                    },
+                                    {
+                                        "y":  1397,
+                                        "height":  18,
+                                        "width":  39,
+                                        "text":  "the",
+                                        "x":  1019
+                                    },
+                                    {
+                                        "y":  1396,
+                                        "height":  19,
+                                        "width":  78,
+                                        "text":  "entire",
+                                        "x":  1077
+                                    },
+                                    {
+                                        "y":  1396,
+                                        "height":  19,
+                                        "width":  122,
+                                        "text":  "available",
+                                        "x":  1173
+                                    },
+                                    {
+                                        "y":  1396,
+                                        "height":  23,
+                                        "width":  136,
+                                        "text":  "brightness",
+                                        "x":  1313
+                                    },
+                                    {
+                                        "y":  1398,
+                                        "height":  21,
+                                        "width":  107,
+                                        "text":  "spectrum",
+                                        "x":  1467
+                                    },
+                                    {
+                                        "y":  1395,
+                                        "height":  23,
+                                        "width":  64,
+                                        "text":  "(from",
+                                        "x":  1594
+                                    },
+                                    {
+                                        "y":  1397,
+                                        "height":  18,
+                                        "width":  11,
+                                        "text":  "O",
+                                        "x":  1676
+                                    },
+                                    {
+                                        "y":  1398,
+                                        "height":  17,
+                                        "width":  25,
+                                        "text":  "to",
+                                        "x":  1705
+                                    },
+                                    {
+                                        "y":  1395,
+                                        "height":  23,
+                                        "width":  63,
+                                        "text":  "255).",
+                                        "x":  1748
+                                    },
+                                    {
+                                        "y":  1396,
+                                        "height":  19,
+                                        "width":  52,
+                                        "text":  "This",
+                                        "x":  1832
+                                    },
+                                    {
+                                        "y":  1401,
+                                        "height":  18,
+                                        "width":  93,
+                                        "text":  "process",
+                                        "x":  1903
+                                    },
+                                    {
+                                        "y":  1397,
+                                        "height":  22,
+                                        "width":  121,
+                                        "text":  "naturally",
+                                        "x":  2015
+                                    },
+                                    {
+                                        "y":  1397,
+                                        "height":  18,
+                                        "width":  93,
+                                        "text":  "darkens",
+                                        "x":  2155
+                                    },
+                                    {
+                                        "y":  1397,
+                                        "height":  18,
+                                        "width":  39,
+                                        "text":  "the",
+                                        "x":  2266
+                                    },
+                                    {
+                                        "y":  1397,
+                                        "height":  18,
+                                        "width":  94,
+                                        "text":  "darkest",
+                                        "x":  2323
+                                    },
+                                    {
+                                        "y":  1398,
+                                        "height":  21,
+                                        "width":  65,
+                                        "text":  "parts",
+                                        "x":  2435
+                                    },
+                                    {
+                                        "y":  1397,
+                                        "height":  18,
+                                        "width":  38,
+                                        "text":  "and",
+                                        "x":  2519
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "tightens the tightest parts, revealing hidden details and significantly improving the overall global contrast of the image. Finally, the enhanced image is",
+                      "words":  [
+                                    {
+                                        "y":  1427,
+                                        "height":  22,
+                                        "width":  109,
+                                        "text":  "tightens",
+                                        "x":  388
+                                    },
+                                    {
+                                        "y":  1428,
+                                        "height":  17,
+                                        "width":  40,
+                                        "text":  "the",
+                                        "x":  514
+                                    },
+                                    {
+                                        "y":  1427,
+                                        "height":  22,
+                                        "width":  109,
+                                        "text":  "tightest",
+                                        "x":  571
+                                    },
+                                    {
+                                        "y":  1428,
+                                        "height":  21,
+                                        "width":  77,
+                                        "text":  "parts,",
+                                        "x":  699
+                                    },
+                                    {
+                                        "y":  1427,
+                                        "height":  22,
+                                        "width":  119,
+                                        "text":  "revealing",
+                                        "x":  799
+                                    },
+                                    {
+                                        "y":  1427,
+                                        "height":  19,
+                                        "width":  80,
+                                        "text":  "hidden",
+                                        "x":  938
+                                    },
+                                    {
+                                        "y":  1426,
+                                        "height":  20,
+                                        "width":  94,
+                                        "text":  "details",
+                                        "x":  1037
+                                    },
+                                    {
+                                        "y":  1428,
+                                        "height":  18,
+                                        "width":  38,
+                                        "text":  "and",
+                                        "x":  1149
+                                    },
+                                    {
+                                        "y":  1427,
+                                        "height":  22,
+                                        "width":  176,
+                                        "text":  "significantly",
+                                        "x":  1207
+                                    },
+                                    {
+                                        "y":  1427,
+                                        "height":  22,
+                                        "width":  120,
+                                        "text":  "improving",
+                                        "x":  1402
+                                    },
+                                    {
+                                        "y":  1428,
+                                        "height":  18,
+                                        "width":  39,
+                                        "text":  "the",
+                                        "x":  1541
+                                    },
+                                    {
+                                        "y":  1428,
+                                        "height":  18,
+                                        "width":  94,
+                                        "text":  "overall",
+                                        "x":  1600
+                                    },
+                                    {
+                                        "y":  1428,
+                                        "height":  21,
+                                        "width":  79,
+                                        "text":  "global",
+                                        "x":  1712
+                                    },
+                                    {
+                                        "y":  1428,
+                                        "height":  18,
+                                        "width":  108,
+                                        "text":  "contrast",
+                                        "x":  1810
+                                    },
+                                    {
+                                        "y":  1428,
+                                        "height":  17,
+                                        "width":  25,
+                                        "text":  "of",
+                                        "x":  1937
+                                    },
+                                    {
+                                        "y":  1428,
+                                        "height":  18,
+                                        "width":  39,
+                                        "text":  "the",
+                                        "x":  1980
+                                    },
+                                    {
+                                        "y":  1427,
+                                        "height":  22,
+                                        "width":  76,
+                                        "text":  "image.",
+                                        "x":  2038
+                                    },
+                                    {
+                                        "y":  1427,
+                                        "height":  22,
+                                        "width":  103,
+                                        "text":  "Finally,",
+                                        "x":  2137
+                                    },
+                                    {
+                                        "y":  1428,
+                                        "height":  18,
+                                        "width":  39,
+                                        "text":  "the",
+                                        "x":  2262
+                                    },
+                                    {
+                                        "y":  1428,
+                                        "height":  18,
+                                        "width":  106,
+                                        "text":  "enhanced",
+                                        "x":  2321
+                                    },
+                                    {
+                                        "y":  1427,
+                                        "height":  22,
+                                        "width":  66,
+                                        "text":  "image",
+                                        "x":  2447
+                                    },
+                                    {
+                                        "y":  1427,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "is",
+                                        "x":  2532
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "displayed intine using Matplotlib.",
+                      "words":  [
+                                    {
+                                        "y":  1457,
+                                        "height":  23,
+                                        "width":  121,
+                                        "text":  "displayed",
+                                        "x":  389
+                                    },
+                                    {
+                                        "y":  1457,
+                                        "height":  19,
+                                        "width":  80,
+                                        "text":  "intine",
+                                        "x":  526
+                                    },
+                                    {
+                                        "y":  1457,
+                                        "height":  23,
+                                        "width":  66,
+                                        "text":  "using",
+                                        "x":  623
+                                    },
+                                    {
+                                        "y":  1457,
+                                        "height":  23,
+                                        "width":  145,
+                                        "text":  "Matplotlib.",
+                                        "x":  705
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Karachi",
+                      "words":  [
+                                    {
+                                        "y":  1819,
+                                        "height":  21,
+                                        "width":  94,
+                                        "text":  "Karachi",
+                                        "x":  356
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Instructor: Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1821,
+                                        "height":  19,
+                                        "width":  130,
+                                        "text":  "Instructor:",
+                                        "x":  1254
+                                    },
+                                    {
+                                        "y":  1821,
+                                        "height":  19,
+                                        "width":  72,
+                                        "text":  "Talha",
+                                        "x":  1393
+                                    },
+                                    {
+                                        "y":  1819,
+                                        "height":  21,
+                                        "width":  88,
+                                        "text":  "Shahid",
+                                        "x":  1474
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "22",
+                      "words":  [
+                                    {
+                                        "y":  1821,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "22",
+                                        "x":  2482
+                                    }
+                                ]
+                  }
+              ]
+}

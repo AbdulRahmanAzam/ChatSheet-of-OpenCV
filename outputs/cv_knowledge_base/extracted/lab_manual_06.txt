@@ -1,0 +1,998 @@
+=== PAGE 1 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+Computer
+Vision
+A1-4002
+Lab 05
+Wavelets, Boundary
+Detection, Hough Transform
+& SIFT
+Course Code: AI-4002 Computer Vision Lab
+FAST NUCES - Karachi
+Instructor: Talha Shahid
+1
+
+=== PAGE 2 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+Contents
+1. Objectives
+3
+2. Introduction to Wavelet Transformation .......................................................3
+..............11
+14
+. ....17
+. 17
+............ 18
+............. 19
+. . ..............20
+. . . ..... ................... 21
+............. 22
+2.1
+2.2
+2.3
+2.4
+Continuous Wavelet Transform (CWT)..............................„...............................................3
+Discrete Wavelet Transform (DWT)....................................„...............................................3
+Wavelet Packet Transform (WPT) .......................................„.............................................. 4
+Inverse Wavelet Transform ..........................................
+Boundary Detection............................................................................................5
+3.
+3.1 Sobel Edge Detection ................................................................„...............................................6
+3.2 Canny Edge Detection ..............................................................„.
+Laplacian of Gaussian (LOG) .................................................„....
+3.3
+4. Introduction to Hough Transformation
+4.1 Hough Transform for Line Detection .................................„..................
+4.2 Hough Transform for Circle Detection ..............................„..........
+SIFT Feature Extraction .................................................................................18
+5.
+5.1
+5.2
+5.3
+5.4
+5.5
+5.6
+5.7
+Scale-Space Extrema Detection ..........................................„............................................ 18
+Keypoint Localization .......................................
+Orientation Assignment ...........................................................„............................................ 20
+Keypoint Descriptor Generation..........................................„........ .. .. . .
+Keypoint Match ing .....................................................................„............................................ 21
+Outlier Rejection ................................................................
+Final Matching and Homography Estimation................„.......................
+FAST NUCES -
+Karachi
+Talha Shahid
+2
+
+=== PAGE 3 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+Objectives
+1.
+2.
+1.
+2.
+3.
+4.
+5.
+Wavelet Transformation
+Boundary Detection
+Hough Tlansformation
+Line Detection by Hough Transformation
+SIFT Feature Extraction
+Introduction to Wavelet Transformation
+Wavelet transformation is a mathematical technique used in signal
+processing, data analysis, and image processing. It allows you to
+analyze a signal or image in terms of its frequency components at
+different scales. Wavelet transforms provide a time-frequency analysis
+that is particularly useful for non-stationary signals. There are
+several types of wavelet transforms, with the most common being the
+Continuous Wavelet Transform (CWT) and the Discrete Wavelet Transform
+(DWT) .
+2.1 Continuous Wavelet Transform (CWT)
+Mathematical Function: The CWT involves continuous wavelet functions
+that are dilated and translated across the signal. The wavelet
+function, often denoted as 111 is scaled by different frequencies
+and translated across time .
+Wavelet Families: Different wavelet families can be used, such as the
+Morlet wavelet for analyzing oscillatory components in signals.
+Applications: CWT is useful for analyzing time-frequency properties
+of continuous signals and is commonly used in applications like
+seismic signal analysis and image analysis.
+2.2 Discrete Wavelet Transform (DWT)
+Mathematical Function: The DWT involves discrete wavelet functions
+that are used to transform discrete signal data. The wavelet function
+is scaled and shifted across the signal in a discrete manner.
+Wavelet Families: DWT uses various wavelet families ,
+including
+Daubechies, Haar, and Symlet wavelets.
+Applications: DWT is widely used
+denoising, and feature extraction .
+compression and analysis.
+in image compression ,
+It' s also used in
+FAST NUCES -
+Karachi
+Talha Shahid
+image
+signal
+3
+
+=== PAGE 4 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+2.3 Wavelet Packet Transform (WPT)
+Mathematical Function: Wavelet packet transform is an extension of
+the DWT that allows for more flexible decomposition of signals. It
+decomposes signals into multiple subbands.
+Applications: WPT can be used for analyzing signals with complex
+frequency content and for feature extraction in machine learning.
+2.4 Inverse Wavelet Transform
+Mathematical Function: To reconstruct a signal or image from its
+wavelet coefficients, an inverse wavelet transform is applied. It uses
+the original data along with the transformed coefficients to
+reconstruct the original signal.
+Applications :
+Inverse wavelet transforms are crucial for signal and
+image reconstruction in applications like image compression and de-
+noising.
+FAST NUCES -
+Karachi
+Talha Shahid
+4
+
+=== PAGE 5 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+Original Audio
+1
+-1
+1
+-1
+0.5
+0.0
+25000
+25000
+25000
+50000
+50000
+50000
+75000
+100000
+Noisy Audio
+75000
+100000
+Cleaned Audio
+75000
+100000
+12500C
+12500C
+125000
+150000
+150000
+150000
+175000
+175000
+175000
+3. Boundary Detection
+Boundary detection, often referred to as edge detection ,
+is a
+fundamental concept in computer vision. It plays a crucial role in
+identifying the boundaries of objects within an image. These
+boundaries represent significant changes in intensity or color and
+are essential for various computer vision tasks, such as object
+recognition, image segmentation, and feature extraction .
+Edges in an image are critical because they contain important
+information about the shapes and structures present. By detecting
+edges, computer vision algorithms can focus on these key regions,
+making it easier to analyze and interpret the content of an image.
+FAST NUCES -
+Karachi
+Talha Shahid
+5
+
+=== PAGE 6 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+BOUNDARY DETECTION (EDGE DETECTION)
+it
+E,
+Input: Original Scene (Intensity & Color)
+Output: Edge Map (Significant Changes in Intensity)
+Isolating structural information to simplify image interpretation and feature extraction.
+3.1 Sobel Edge Detection
+Sobel edge detection is a basic gradient-based method. It applies
+convolution with two 3x3 kernels to calculate the gradient in the
+horizontal and vertical directions. The magnitude of the gradient
+represents the strength of the edge, and its direction indicates the
+edge's orientation.
+SOBEL EDGE DETECTION OPERATOR
+INPUT
+FAST NUCES -
+CONVOLUTION KERNELS
+G = GX2 + Gy2
+GRADIENT COMPONENTS
+Karachi
+Gy Output
+Highlighting
+horizontal edges
+Talha Shahid
+FINAL MAGNITUDE
+Final Edge Magnitude (G)
+6
+
+=== PAGE 7 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+THE QUESTION
+THE KERNELS
+Is the right
+brighter than
+the left? (Gx)
+Vertical Edge
+200
+, 200
+, 200
+Is the bottom
+brighter than
+the top? (Gy)
+Kx Kernel
+Horizontal Change
+(detects vertical edges)
+THE MATH MADE VISUAL
+Large Gx
+response
+(760)
+Calculatim:
+1*200)-
+1•10)
+.800.40.760
+Uniform Area
+50 50 50
+50 50 50
+50 50 50
+Ky Kernel
+Vertical Change
+(detects horizontal edges)
+Zero response
+(0)
+Calculation:
+PSO)
+-200-200-0
+Sobel = A directional difference operation. It measures the intensity gradient to identify where boundaries occur.
+FAST NUCES -
+Karachi
+STEP 1: PREPARATION
+gray = cv2.cvtC010r(image,
+cv2. COLOR_BGR2GRAY)
+Computer vision tasks are
+often performed on
+grayscale images to
+simplify intensity analysis.
+Talha Shahid
+7
+
+=== PAGE 8 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+STEP 2: DIRECTIONAL GRADIENTS
+sobel_x = cv2.Sobe1(gray, cv2.CV_64F, 1, 0, ksize=3)
+We use 64-bit floats (CV_64F) to preserve negative values,
+which indicate the direction of intensity change.
+-2
+o
+2
+PIXEL GRID
+(gray image)
+o
+GRADIENT VALUE
+(X-direction or Y-direction)
+STEP 3: GRADIENT MAGNITUDE
+Combining directional changes gives us the
+total edge strength at every pixel.
+FAST NUCES -
+Gx2
+Horizontal
+Changea
+Karachi
+GY2
+Vertical Changea
+Total Gradient
+Magnitude
+G = sqrt(Gx2 + Gy2)
+magnitude = np . + sobe1_y**2)
+Talha Shahid
+8
+
+=== PAGE 9 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+STEP 4: OUTPUT
+The final Edge Magnitude provides a clear
+map of all boundaries within the scene.
+Original
+Sobel Y
+Sobel X
+Magnitude
+import
+import
+import
+# Read
+image -
+cv2
+numpy as np
+matplotlib.pyptot as put
+image
+cv2. imread image. jpeg")
+# Convert BGR to RGB for Matplotlib
+cv2. cvtCotor(image,
+cv2 . COLOR_BGR2RGB)
+image_rgb =
+# Convert to grayscale
+cv2. cvtColor(image,
+gray
+# Sobel in X direction
+cv2 . Sobel (gray ,
+sobel_x =
+FAST NUCES -
+Karachi
+cv2. COLOR_BGR2GRAY)
+ksize=3)
+cv2.CV_64F, 1, O,
+Talha Shahid
+9
+
+=== PAGE 10 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+# Sobel in Y direction
+cv2. Sobel (gray,
+ksize=3)
+sobet_y =
+cv2.CV_64F, @ , 1,
+# Calculate gradient magnitude
+magnitude =
+# Convert magnitude to uint8 for display
+np.uint8(np.ctip(magnitude, 0, 255))
+magnitude =
+# Plot results
+ptt.subplot(2, 2, 1)
+put . imshow (image_rgb)
+Image")
+put . axis ("off")
+put. subplot(2, 2, 2)
+put. cmap="gray")
+ptt.axis("off")
+ptt.subptot(2, 2, 3)
+put .
+put . axis ("off")
+put. subplot(2, 2, 4)
+plt. imshow(magnitude,
+Edge Magnitude")
+put. axis ("off")
+put.
+put . show()
+FAST NUCES -
+Karachi
+Talha Shahid
+10
+
+=== PAGE 11 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+Original Image
+awa
+FRERE HALL
+Sobel Y
+3.2 Canny Edge Detection
+Sobel X
+Sobel Edge Magnitude
+Canny edge detection is a more sophisticated method that consists of
+multiple steps
+• Gaussian smoothing: Reduces noise in the image.
+• Gradient calculation: Calculates the gradient magnitude and
+direction .
+• Non-maximum suppression: Eliminates weak edge pixels.
+• Hysteresis thresholding: Tracks edges by linking strong edge
+pixels .
+The Canny detector is known for its high accuracy and ability to
+detect thin and continuous edges.
+FAST NUCES -
+Karachi
+Talha Shahid
+11
+
+=== PAGE 12 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+1. GAUSSIAN SMOOTHING
+Original Image
+Smoothed Image
+(Smoothed Image)
+Input
+(Smoothed Image)
+2. GRADIENT CALCULATION
+Finding edge magnitude and direction
+Horizontal Gradient (Ox)
+'JOO
+Vertical Grade-nt (Cy)
+121
+Edge Magnitude
+& Direction
+Edge Magnitude
+& Direction
+Reduces noise to prevent false edges.
+3. NON-MAXIMUM SUPPRESSION
+4. HYSTERESIS THRESHOLDING
+Final tracking by linking pixels between thresholds.
+Initial Edges (Magnitude)
+Thinned Edges (I-pixel wide!
+Local Maximum Check
+(e.g„ along gradent
+direction)
+Thinning edges by keeping only the local maxima.
+THE BLUR
+Noise Removal & Preventing False Edges
+Threshold
+Zero (
+Strong Edge
+Link weak
+edges connected to
+edges
+Pinal Edge Map
+DEEP INTUITION OF CANNY EDGE DETECTION
+THINNING
+Non-Maximum Suppression: Thick to Thin
+APPLY CAUSStAN KERNEL
+121
+242
+121
+PREVENT •FALSE EDGES
+Before: Noisy, sharp peaks
+Find the
+peak Gradient
+Suppress
+Neighbors
+Thick to
+Thin
+After: Smooth gradient ramp
+80 150
+200
+• • ISO 80
+THICK EDGE
+BECOMES THN LINE
+CONNECTIVITY
+Hysteresis & Double Thresholding
+SOBEL vs CANNY
+A Direct Comparison
+Link Strong and Weak
+STRONG PIXEL
+Form Complete Edges
+STRONG EOCE THRESHOLD (T2)
+WEAK EDCE THRESHOLD (Tl)
+Discard Noise
+EDCE PIXELS
+import
+import
+# Read
+image =
+WEAK PIXELS
+KEEP SEQUENCE
+Weak pixe•b connected to Strong
+pixels are kept, bridging gaps.
+cv2
+SOBEL INTENSITY CHANCE
+• Calculation (C. G,)
+• Identifies Sudden
+• Susceptible to Noise
+Thick Edges
+isolated Weak
+is discarded
+matplotlib. pyptot as put
+image
+cv2. imread image .jpg
+# Convert BGR to RGB for Matplotlib
+FAST NUCES -
+Karachi
+Talha Shahid
+Advanced pipeline
+CANNY SOPHISTICATED
+BOUNDARY TRACKINC PIPELINE
+• Mufti-Stage Process:
+Noise Reduction (Gaussian)
+2. Cakulation
+s. Non•Maximum
+Thresholding
+S. Hysteresis (Edge Tracking)
+• Robust. Thin, Edges
+12
+
+=== PAGE 13 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+cv2. cvtCotor(image,
+cv2 . COLOR_BGR2RGB)
+image_rgb =
+# Convert image to grayscale
+cv2. cvtCoIor(image,
+cv2. COLOR_BGR2GRAY)
+gray —
+# Apply Gaussian Blur
+cv2.GaussianBtur(gray, (5, 5), 1.4)
+blurred =
+# Apply Canny Edge Detection
+cv2.Canny(
+edges =
+blurred,
+50,
+150
+# Lower threshold
+# Upper threshold
+# Display results
+put. figure
+ptt.subptot(2, 2, 1)
+put. imshow (image_rgb)
+Image")
+put . axis ("off")
+put. subplot(2, 2, 2)
+put. imshow(gray,
+put . titte( "Grayscale " )
+ptt . axis ("off")
+ptt.subptot(2, 2, 3)
+put. imshow(bturred, cmap="gray")
+Blurred")
+ptt.axis("off")
+ptt.subptot(2, 2, 4)
+put. imshow(edges,
+ptt.titte("Canny Edges")
+put. axis ("off")
+ptt.
+put . show()
+FAST NUCES -
+Karachi
+Talha Shahid
+13
+
+=== PAGE 14 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+Original Image
+*IfIVFFIAlhE
+FRERE HALL
+Gaussian Blurred
+FRERE HALL
+3.3 Laplacian of Gaussian (LoG)
+Grayscale
+i Afia • -i
+FRERE HALL
+Canny Edges
+The LOG operator is used to detect edges by first applying a Gaussian
+smoothing filter to the image and then computing the Laplacian of the
+smoothed image. The zero-crossings of the resulting image indicate
+the edges. The LOG operator is effective at detecting edges with
+varying scales.
+FAST NUCES - Karachi
+Talha Shahid
+14
+
+=== PAGE 15 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+FIRST DERIVATIVE (Gradient)
+Canny/S0bel:
+Peak = Edge Strength
+CANNY PIPELINE
+LOG PIPELINE
+FIRST DERIVATIVE (Speed)
+How fast is intensity changing?
+cv2
+numpy as np
+THE SIGNAL
+SECOND DERIVATIVE (Laplacian)
+= Edge Location
+THE PIPELINE
+THE INTUITION
+SECOND DERIVATIVE (Acceleration)
+How quickly is the speed changing?
+import
+import
+import
+# Read
+image =
+matplotlib.pyptot as put
+image
+cv2. imread image .jpg" )
+# Convert BGR to RGB for Matplotlib
+= cv2.cvtCotor(image,
+cv2 . COLOR_BGR2RGB)
+image_rgb
+# Convert to grayscale
+cv2. COLOR_BGR2GRAY)
+cv2. cvtColor(image,
+gray
+# Step 1:
+blurred =
+# Step 2:
+Gaussian Blur
+cv2.GaussianBIur(gray, (5, 5), 1.4)
+Apply Laplacian
+cv2. Laplacian (
+Laplacian =
+blurred,
+cv2. CV_64F
+# Take absolute values for visualization
+cv2. convertScaIeAbs (Laplacian)
+Laplacian_abs
+# Display results
+put. subplot(2, 2, 1)
+FAST NUCES -
+Karachi
+Talha Shahid
+15
+
+=== PAGE 16 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+put . imshow(image_rgb)
+Image")
+ptt . axis ("off")
+ptt.subptot(2, 2, 2)
+put. imshow(gray,
+put . title( "Grayscale " )
+ptt.axis("off")
+ptt.subplot(2, 2, 3)
+put. imshow(blurred,
+Blurred")
+put . axis ("off")
+ptt.subptot(2, 2, 4)
+put .
+of Gaussian (LOG)
+put. axis ("off")
+put.
+put . show()
+Original Image
+FRERE HALL
+Gaussian Blurred
+FRERE HALL
+FAST NUCES -
+Karachi
+Grayscale
+afa
+i
+FRERE HALL
+Laplacian of Gaussian (LOG)
+_IIiIi41anXL!IiII_
+Talha Shahid
+16
+
+=== PAGE 17 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+4. Introduction to Hough Transformation
+The Hough Transform is a fundamental technique in computer vision and
+image processing used to detect simple shapes within an image, most
+commonly lines and circles. It was first introduced by Paul Hough in
+1962 for detecting lines in binary images, and later extended to
+detect other shapes like circles and ellipses. The Hough Transform is
+particularly useful when traditional methods like gradient-based edge
+detection are insufficient for detecting specific shapes. It's widely
+employed in various computer vision applications, such as image
+analysis, object recognition, and feature extraction.
+The Hough Transform works by transforming the spatial domain of an
+image into a parameter space, where each pixel in the image corresponds
+to a curve or a point in this parameter space. The primary purpose of
+this transformation is to identify patterns that are represented as
+lines or curves in the parameter space.
+4.1 Hough Transform for Line Detection
+Parametric Representation of Lines: The Hough Transform starts with
+the parametric representation of lines, where a line in Cartesian
+coordinates (x, y) is represented as
+y = mx + b
+Here, Iml is the slope of the line, and 'bl is the y-intercept
+•
+Parameter Space: In the Hough Transform, we transform this
+representation into a parameter space with Iml and lb' as
+axes. Each line in the image corresponds to a point in this
+parameter space.
+Voting: For each edge pixel (typically obtained from edge
+detection methods like Canny), we calculate the Iml and 'b'
+values that could generate the line passing through that
+pixel. This is essentially a voting process where we increment
+the corresponding (m, b) cell in the parameter space.
+Peak Detection: After processing all edge pixels, the
+parameter space is examined to find peaks. These peaks
+represent the lines in the image.
+Back-Transformation: Once the lines are detected in the
+parameter space, they can be back-transformed into the image
+space, revealing the position and orientation of the lines.
+FAST NUCES -
+Karachi
+Talha Shahid
+17
+
+=== PAGE 18 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+4.2 Hough Transform for Circle Detection
+Parametric Representation of Circles:
+a circle in Cartesian coordinates (x,
+Here, (a, b) represents the center
+In the case of circle detection,
+y) is represented as
+2
+of the circle, and 'r' is its
+radius.
+•
+•
+•
+•
+Parameter Space: The parameter space for circle detection has
+three dimensions, corresponding to I a, '
+and Ir.'
+Voting: Similar to line detection, we vote for potential
+circle centers (a, b) and radii (1) based on edge pixel
+information in the image.
+Peak Detection: After processing all edge pixels, peaks in
+the parameter space correspond to potential circle centers
+and radii.
+Back-Transformation: Detected circles in the parameter space
+can be back-transformed into the image space, revealing the
+position and size of the circles.
+5. SIFT Feature Extraction
+SIFT (Scale-Invariant Feature Transform) is a powerful computer vision
+technique used for feature extraction and matching in images. It is
+particularly useful for tasks such as object recognition, image
+stitching, and tracking.
+5.1 Scale-Space Extrema Detection
+SIFT starts by detecting keypoint candidates at multiple scales within
+the image. This is achieved by applying a Difference of Gaussians
+(DOG) operator to identify local extrema in the scale space. The DOG
+is calculated by subtracting two Gaussian-blurred versions of the
+image.
+FAST NUCES -
+Karachi
+Talha Shahid
+18
+
+=== PAGE 19 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+1. SCALE-SPACE EXTREMA DETECTION
+Searching across multiple scales ensures we find
+features whether they are large or small.
+DOG = L(x, y, ko)
+- L(x, y, o)
+Original Image
+5.2 Keypoint Localization
+DOG Layer 4
+= 05-04)
+DoG Layer 3
+(Da = 04 - 03)
+DOG Layer 2
+(D2 = 03 - 02)
+DoG Layer 1
+(DI = 02-01)
+For each candidate keypoint, SIFT refines the location by fitting a
+3D quadratic function to the nearby data points in the scale space.
+This step helps to accurately localize the keypoints.
+2. KEYPOINT LOCALIZATION
+Concept: The 26-Neighbor Check
+FAST NUCES -
+Layer Above
+(Scale 0+1)
+Middle Layer
+(Scale o)
+Layer Below
+(Scale 0-1)
+Karachi
+A keypoint must be a local
+maximum or minimum compared to
+its neighbors in space and scale.
+9 Neighbors in
+Layer Above
+Neighbors
+in Same Layer
+Keypoint
+Candidate
+Total Neighbors:
+08+0+9=0
+9 Neighbors
+Ain Layer Below = 26 Neighbors
+Objective: Compare
+intensity with all 26
+surrounding pixels
+to confirm as local
+extremum.
+Talha Shahid
+19
+
+=== PAGE 20 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+5.3 Orientation Assignment
+To make the keypoints invariant to rotation,
+SIFT assigns an
+orientation to each keypoint based on the dominant gradient direction
+in its local neighborhood. This results in a canonical orientation
+for each keypoint.
+3. ORIENTATION ASSIGNMENT
+Concept: "Invariance to Rotation"
+Assigning a canonical orientation allows the
+descriptor to be relative, ensuring
+matches even if the image is rotated.
+Dominant
+Orientation
+Dominant Peak
+Angle: -450
+900 Magnitude: High
+00
+2700
+5.4 Keypoint Descriptor Generation
+Around each keypoint, SIFT constructs a descriptor that characterizes
+the local image region. The descriptor is created by considering the
+gradient magnitudes and orientations in a specific pattern of sub-
+regions surrounding the keypoint. This pattern is divided into smaller
+bins, and histograms of gradient orientations are computed for each
+sub-region .
+FAST NUCES -
+The concatenated histograms form the keypoint descriptor .
+Karachi
+Talha Shahid
+20
+
+=== PAGE 21 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+4. DESCRIPTOR GENERATION
+128 Numbers
+This 120-dimensional
+vector describes the
+local gradient structure,
+making it unique and
+robust to light changes.
+5.5 Keypoint Matching
+Once the descriptors are computed for keypoints in multiple images,
+these descriptors can be used to match keypoints between images. A
+common technique for matching involves calculating the Euclidean
+distance 01 other similarity measures between the descriptors of
+keypoints in different images .
+5.6 Outlier Rejection
+Keypoint matches may contain some outliers due to variations in
+lighting, viewpoint changes, 01 noise. Techniques like RANSAC (Random
+Sample Consensus) can be employed to robustly estimate transformation
+models (e. g
+outliers.
+FAST NUCES -
+affine or perspective transformations) and reject
+Karachi
+Talha Shahid
+21
+
+=== PAGE 22 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+5. MATCHING & OUTLIER REJECTION
+Concept: Euclidean Distance + RANSAC
+IMAGE A
+OUTLIER
+(CROSSING LINE)
+n
+01'
+01
+OUTLIER
+(CROSSING LINE)
+(INLIERS)
+CORRECT MATCHES
+(INLIERS)
+RANSAC
+x
+GEOMETRICALLY
+IMAGE B
+OUTLIER
+(CROSSING LINE)
+gggB
+CONSISTENT MATCHES
+Explanation: Descriptors are matched by similarity (e.g., Euclidean Distance),
+and RANSAC ensures only geometric consistent matches are kept.
+5.7 Final Matching and Homography Estimation
+After outlier rejection, the remaining keypoint matches are used to
+estimate the transformation (homography) between the images. This
+transformation can be used for image stitching, object recognition,
+01 other applications .
+import cv2
+import matplotlib. pyptot as put
+# Read image
+cv2. imread image .jpg " )
+image =
+# Convert BGR to RGB for Matplotlib
+image_rgb -
+FAST NUCES -
+cv2. cvtCotor(image,
+cv2 . COLOR_BGR2RGB)
+Karachi
+Talha Shahid
+22
+
+=== PAGE 23 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+# Convert to grayscale
+cv2. cvtCotor(image, cv2. COLOR_BGR2GRAY)
+gray =
+# Create SIFT detector
+cv2.SIFT_create()
+sift =
+# Detect keypoints and compute descriptors
+= sift.detectAndCompute(gray,
+keypoints, descriptors
+None)
+# Draw keypoints
+image_keypoints
+image_rgb,
+keypoints,
+None,
+flags-
+-cv2 .
+# Display
+cv2. drawKeypoints (
+ptt. figure
+ptt.subplot(l, 2, 1)
+put . imshow (image_rgb)
+Image")
+put . axis ("off")
+ptt.subplot(l, 2, 2)
+ptt . imshow (image_keypoints)
+Keypoints")
+plt . axis ("off")
+put.
+put. show()
+# Print information
+ten (keypoints))
+of keypoints: " ,
+print("Descriptor shape: " ,
+FAST NUCES -
+Karachi
+descriptors. shape)
+Talha Shahid
+23
+
+=== PAGE 24 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+Original Image
+unu
+FRERE HALL
+KARACHI. PAKISTAN
+HISTORICAL
+Karachi
+SIFT Keypoints
+FAST NUCES -
+Talha Shahid
+24

@@ -1,0 +1,1135 @@
+=== PAGE 1 ===
+Computer
+Lab 04
+Vision
+Feature Extraction
+A1-4002
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+
+=== PAGE 2 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+Computer Vision Lab
+Course Code: A1-4002
+1. Objectives ....................................................................................................„...............................................3
+2. Introduction to Feature Extraction .................................................„...............................................3
+2.1 Features:............................................................................................................
+2.1.1 Types of Features: ............................................................................................... 4
+2.1.2 Feature Extraction Techniques: ..... ..........................................
+2.1.4 Applications........................................................................................................ 4
+3. Histogram-Based Methods..................................................................„....... .. ..
+3.1 HOG (Histogram of Oriented Gradients) .
+3.1.1 Explanation: ..... ..... ..... ...................................................
+3.1.2 Working Mechanism
+3.2 Local Binary Pattern (LBP)
+3.2.1 Explanation: .................................................................................
+3.2.2 Working Mechanism 7
+3.3 Histogram of Color: ..... ...................................
+3.3.1 Explanation: .
+3.3.2 Working Mechanism:........................................................................................... 8
+3.4 Histogram of Edge Directions (HED) .
+3.4.1 Explanation......................................................................
+3.4.2 Working Mechanism .
+5.5 The Histogram of Intensity Gradients (HIG)........................................................ 10
+3.5.1 Explanation.
+3.5.2 Working Mechanism: .
+10
+3.6 Texture energy and contrast histograms ..... ..... ..... ..... ......................................... 12
+13
+3.6.1 Explanation...........
+3.6.2 Working Mechanism .
+4. Filtering & Convolution .........................................................................„............................................ 15
+Talha Shahid
+FAST NUCES
+- Karachi
+5
+5
+6
+.8
+.8
+8
+10
+12
+1
+
+=== PAGE 3 ===
+. 15
+4.2 Convolution: ........................................
+.15
+4.2.1 Convolution Types:.......................................................................
+4.2.1.1 Standard Convolution:................................
+16
+4.2.1.2 Valid Convolution (No Padding)...
+17
+4.2.1.3 Same Convolution (Zero Padding)............................................................ 17
+4.2.1.4 Valid Convolution with Strides .
+5. Edge Detection & its Common Techniques..................................„.................
+5.1 Common Edge Detection Techniques ..
+19
+5.2 The Canny Edge Detector .................................................
+.. 20
+5.2.1 Key Steps in the Canny Edge Detection Algorithm .
+21
+5.2.1.1 Gaussian Smoothing:.
+.. 21
+5.2.1.2 Gradient Calculation:...........................................
+5.2.1.3 Non-Maximum Suppression: ..... ..... ............................................................ 21
+5.2.1.4 Edge Tracking by Hysteresis: ....................................
+21
+5.2.1.5 Parameters in the Canny Edge Detector: ................................................. 22
+2
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+4.1 Filtering: .
+16
+. — 18
+............. 18
+21
+FAST NUCES
+- Karachi
+Talha Shahid
+
+=== PAGE 4 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+1. Objectives
+1.
+2.
+3.
+4.
+5.
+6.
+Introduction to Feature Extraction
+Common Feature Extraction Techniques
+Filtering and Convolution
+Introduction to Edge Detection
+Common Edge Detection Techniques
+Corner Detection & its Common Techniques
+2. Introduction to Feature Extraction
+Feature extraction is a fundamental technique in computer vision, a
+field of artificial intelligence that focuses on enabling computers
+to interpret and understand visual information from the world. In
+computer vision, feature extraction refers to the process of selecting
+and transforming relevant information or patterns from raw visual
+data, such as images 01 videos, to create a more compact and meaningful
+representation that can be used for various tasks, such as object
+recognition, image classification, facial recognition, and more.
+•
+•
+Raw Visual Data:Computer vision tasks begin with the acquisition
+of raw visual data, typically in the form of images or video
+frames. These data contain a vast amount of information ,
+including pixel values, colors, and textures.
+Need for Feature Extraction:_Raw visual data is often too complex
+and high-dimensional for direct analysis and interpretation by
+algorithms. Feature extraction is essential because it reduces
+the dimensionality of the data, enhances relevant information,
+and simplifies the computational requirements of subsequent
+tasks.
+Features: Features are distinctive characteristics or attributes
+extracted from the raw data. These features should capture
+essential information about the objects, patterns, or structures
+present in the images while discarding irrelevant details.
+FAST NUCES
+- Karachi
+Talha Shahid
+3
+
+=== PAGE 5 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+2.1 Features:
+2.1.1 Types of Features:
+Local Features: These are extracted from specific regions of an
+image, such as keypoints,
+corners, or small patches.
+Local
+features are often used for tasks like image matching and object
+detection .
+Global Features: These are computed over the entire image and
+capture information about its overall characteristics. Examples
+include color histograms ,
+texture descriptors ,
+and image
+moments .
+2.1.2 Feature Extraction Techniques:
+Histograms of color or texture
+Histogram-based methods :
+distributions can capture statistical information about the
+image.
+Filter- based methods :
+Filters like Gabor filters or Haar
+wavelets can be applied to identify edges, textures, or specific
+patterns .
+Deep Learning Features: Convolutional Neural Networks (CNNs)
+have revolutionized feature extraction in computer vision .
+Features are learned directly from the data through the network's
+layers, and these learned representations are often highly
+effective for various tasks.
+2.1.4 Applications
+Object Recognition: Features help identify and classify objects
+within images or video frames.
+Face Recognition: Extracting facial features like eyes, nose,
+and mouth for identity verification.
+Gesture Recognition: Capturing hand or body movements for human-
+computer interaction.
+Medical Imaging: Identifying anomalies or patterns in medical
+images like X-rays or MRIs.
+Autonomous Vehicles :
+Extracting features from sensor data to
+detect obstacles and navigate.
+Challenges :
+Feature extraction can be challenging due to
+variations in lighting, scale, orientation, and noise in real
+world
+FAST NUCES
+data. Choosing appropriate feature extraction techniques
+- Karachi
+Talha Shahid
+4
+
+=== PAGE 6 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+and parameters is critical for successful computer vision
+applications.
+Feature Matching and Learning: Extracted features are often used
+in combination with matching or learning algorithms to perform
+tasks like object recognition or image classification.
+3. Histogram-Based Methods
+3.1 HOG (Histogram of Oriented Gradients)
+Histogram of Oriented Gradients (HOG) is a widely used feature
+extraction technique in computer vision and image processing. It
+is particularly useful for obj ect detection and pedestrian
+detection tasks. HOG works by capturing information about the
+local gradient or edge patterns in an image .
+3.1.1 Explanation:
+HOG focuses on capturing information about the distribution of
+gradient directions in an image.
+It divides the image into small cells, calculates the gradient
+magnitude and orientation for each pixel within these cells, and
+then creates histograms of gradient orientations for these
+cells.
+These histograms are then concatenated to form a feature vector
+that represents the image.
+3.1.2 Working Mechanism
+•
+Image Preprocessing: Convert the input image to grayscale.
+This simplifies the calculation of gradients.
+Gradient Computation: Calculate the gradient magnitude and
+orientation for each pixel in the image. Typically, the
+Sobel operator is used for this purpose.
+Cell Division: Divide the image into small cells (e.g., 8x8
+pixels) that do not overlap.
+Histograms of Oriented Gradients: For each cell, create a
+histogram of gradient orientations .
+The histogram bins represent different orientation ranges
+degrees, degrees, etc.) .
+The histogram values correspond to the frequency of
+gradient orientations in that cell.
+FAST NUCES - Karachi
+Talha Shahid
+5
+
+=== PAGE 7 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+• Block Normalization: Group neighboring cells into blocks
+2x2 cells) .
+Normalize the histograms within each
+block to reduce the effects of lighting variations.
+• Feature Vector: Concatenate all the normalized histograms
+from the blocks to form the final HOG feature vector.
+from skimage.feature import hog
+from skimage import exposure
+import cv2
+import matplotlib.pyplot as put
+# Read an image (grayscale)
+= cv2.imread('image.jpg' ,
+cv2 . IMREAD_GRAYSCALE)
+image
+# Compute HOG features
+= hog (image, 8),
+features, hog _ image
+2), visualize=True)
+# Rescale the HOG image for better visualization
+= exposure. rescale _
+hog _ image _ rescaled
+10))
+# Plot the HOG image and its corresponding feature vector
+put . subplot (121)
+put. imshow(image, cmap=plt. cm. gray)
+put. title( ' Original Image')
+ptt . subplot (122)
+plt.imshow(hog_image_rescaled, cmap=plt.cm.gray)
+put. titte( 'HOG Features')
+put . show()
+# Print the HOG feature vector
+print("HOG Feature Vector:
+print (features)
+3.2 Local Binary Pattern (LBP)
+in_range=(@,
+Local Binary Pattern (LBP) is a texture feature extraction technique
+commonly used in computer vision and image analysis. LBP captures
+local patterns by comparing the intensity of a pixel with its
+neighboring pixels .
+It is
+particularly useful for texture
+classification and face recognition .
+FAST NUCES
+- Karachi
+Talha Shahid
+6
+
+=== PAGE 8 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+3.2.1 Explanation:
+•
+•
+LBP operates on grayscale images.
+It defines a circular neighborhood around each pixel and
+encodes the local texture pattern based on the intensity
+comparisons within this neighborhood.
+For each pixel in the image, LBP computes a binary pattern
+by comparing the pixel Is intensity with its neighbors. The
+result is a binary number.
+These binary patterns are collected to form a histogram
+that represents the texture pattern distribution in the
+image .
+The histogram of LBP patterns serves as a feature vector
+for texture analysis .
+3.2.2 Working Mechanism
+1.
+2.
+3.
+4.
+5.
+6.
+Image Preprocessing: Convert the input image to grayscale if it
+is not already.
+Local Neighborhood Definition: Select a circular neighborhood of
+a certain radius around each pixel. The neighborhood is defined
+by its radius and the number of neighboring pixels.
+Intensity Comparison:
+For each pixel in the neighborhood ,
+compare its intensity with the center pixel Is intensity. If the
+neighbor's intensity is greater or equal, assign it a value of
+1; otherwise, assign @.
+Pattern Formation: Concatenate the binary values from the
+comparisons to form an LBP pattern.
+Histogram Calculation: Count the occurrences of each LBP pattern
+in the entire image to create an LBP histogram.
+Feature Vector: The LBP histogram serves as the feature vector
+for the image, which can be used for further analysis or
+classification.
+from skimage import feature
+import cv2
+import numpy as np
+import matplotlib.pyplot as put
+# Read an image (grayscale)
+= cv2.imread( ' image .jpg' ,
+cv2. IMREAD_GRAYSCALE)
+image
+# Compute LBP features
+radius = 1 # Radius of the circular neighborhood
+n _ points = 8 * radius # Number of neighboring pixels to consider
+FAST NUCES
+- Karachi
+Talha Shahid
+7
+
+=== PAGE 9 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+tbp_image
+= feature. n _ points, radius,
+method: ' uniform' )
+# Calculate the LBP histogram
+_ = np. ravel(), bins=np.arange(@,
+hist,
+n_points + 3), n _ points + 2))
+# Normalize the histogram
+hist =
+hist (hist.sum() + le-6)
+# Display the LBP image and histogram
+put. figure 6))
+put. subplot (121)
+cmap=' gray')
+plt.title(' LBP Image')
+put . subplot (122)
+n_points + 2), hist)
+ptt.titte(' LBP Histogram')
+plt.xlabel('LBP Patterns')
+put . y tabet( ' Frequency
+ptt . show()
+# Print the LBP feature vector
+print ("LBP Feature Vector: ")
+print(hist)
+3.3 Histogram of Color:
+3.3.1 Explanation:
+Captures the distribution of color intensities in an image.
+3.3.2 Working Mechanism:
+Divides the color space into bins (e.g. ,
+the number of pixels in each bin.
+3.4 Histogram of Edge Directions (HED)
+3.4.1 Explanation
+RGB or HSV) and counts
+Histogram of Edge Directions (HED) is a feature extraction
+technique that captures the distribution of edge orientations in
+an image. It provides valuable information about the dominant
+edge directions, which can be useful for tasks such as texture
+analysis, object recognition, and image segmentation. Below ,
+FAST NUCES
+- Karachi
+Talha Shahid
+8
+
+=== PAGE 10 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+I III explain the working mechanism of HED and provide a Python
+code example using the OpenCV library.
+3.4.2 Working Mechanism
+1.
+2.
+3.
+4.
+5.
+6.
+Image Preprocessing:
+Convert the input image to grayscale if it is not already in
+grayscale .
+Optionally, you can apply Gaussian smoothing to the image to
+reduce noise and enhance the edge detection.
+Edge Detection:
+Apply an edge detection algorithm to the pre-processed image .
+Common edge detection methods include the Canny edge detector,
+Sobel operator, or Scharr operator.
+The result is an edge map, where pixels with strong edges are
+highlighted .
+Orientation Calculation:
+For each pixel in the edge map, calculate the orientation (angle)
+of the gradient at that pixel. This can be done using the
+arctangent function.
+Orientation Binning:
+Divide the range of orientations into bins (e.g. ,
+360 degrees
+divided into 8 bins for octagonal directions) .
+Assign each pixel Is orientation to one of the bins based on its
+angle.
+Histogram Formation:
+Count the number of pixels in each orientation bin.
+The resulting histogram represents the distribution of edge
+directions in the image.
+Feature Vector:
+The histogram of edge directions serves as the feature vector
+for the image.
+import
+cv2
+import
+numpy as np
+import
+matplotlib.pyptot as put
+an image (grayscale)
+# Read
+image = cv2.imread('image.jpg' ,
+cv2 . IMREAD_GRAYSCALE)
+# Apply Gaussian smoothing to reduce noise (optional)
+image _ smoothed = cv2.GaussianBtur(image, (5, 5), O)
+# Apply Canny edge detection
+FAST NUCES - Karachi
+Talha Shahid
+9
+
+=== PAGE 11 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+= cv2.Canny(image_smoothed,
+edges
+gradient direction (orientation)
+# Calculate
+= cv2 . Sobel (image _ smoothed, cv2.CV_64F, 1, @ , ksize=3)
+gradient_x
+= cv2 . Sobel (image _ smoothed, cv2.CV_64F, @ , I, ksize=3)
+gradient_y
+gradient_magnitude = np.sqrt(gradient_x**2 +
+= gradient_x) * 180 / np.pi
+gradient _ orientation
+# Create a histogram of edge directions
+hist, bin_edges = np.histogram(gradient_orientation, bins=8,
+360))
+# Display the edge map and the histogram
+put. figure 6))
+put . subplot (121)
+ptt.imshow(edges, cmap='gray')
+ptt.titte('Edge Map')
+put . subplot (122)
+hist, width=45, align: ' center')
+plt.title('Histogram of Edge Directions')
+plt.xtabet(' Edge Direction (degrees) ' )
+ptt. ytabet( ' Frequency' )
+plt.xticks(range(@, 36@, 45))
+put . show()
+# Print the HED feature vector (histogram)
+print ("Histogram of Edge Directions (HED) Feature Vector:
+print(hist)
+3.5 The Histogram of Intensity Gradients (HIG)
+3.5.1 Explanation
+The Histogram of Intensity Gradients (HIG)
+is a feature
+extraction technique used in computer vision and image
+processing. It captures information about the distribution of
+intensity gradients in an image, which can be valuable for
+various tasks such as object recognition, texture analysis, and
+image classification .
+3.5.2 Working Mechanism:
+1. Image Preprocessing:
+• Convert the input image to grayscale if it is not already.
+• Optionally, apply any necessary preprocessing steps like
+resizing, smoothing, or contrast enhancement.
+FAST NUCES
+- Karachi
+Talha Shahid
+10
+
+=== PAGE 12 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+Gradient Calculation:
+2.
+3.
+4.
+5.
+6.
+•
+Compute the gradient of the image using techniques like
+the Sobel operator, Scharr operator, or any other gradient
+calculation method.
+The gradient represents how the pixel intensities change
+across the image and is computed separately for both the
+horizontal (dx) and vertical (dy) directions.
+Gradient Magnitude and Orientation:
+• Calculate the magnitude and orientation of the gradient
+at each pixel using the following formulas:
+Magnitude (G): G
+= sqrt (dx2 + dy2)
+• Orientation (e): 9 =
+atan2(dy, dx)
+Histogram Construction:
+• Divide the range of gradient orientations (typically @ to
+360 degrees) into bins.
+• For each pixel, determine its gradient orientation and
+increment the corresponding bin in the histogram.
+• You can use a fixed number of bins or adaptively select
+the number of bins based on the image content.
+Feature Extraction:
+•
+•
+•
+The histogram constructed in the previous step represents
+the distribution of gradient orientations in the image.
+Optionally, normalize the histogram to make it scale-
+invariant.
+The resulting histogram serves as the feature vector,
+capturing information about the intensity gradients in the
+image .
+Feature Vector:
+The computed HIG histogram is a feature vector that can be used
+for various computer vision tasks, such as image classification
+or object detection.
+import cv2
+import numpy as np
+import matplotlib.pyptot as ptt
+# Read an image (grayscale)
+= cv2.imread( ' image .jpg' ,
+cv2. IMREAD_GRAYSCALE)
+image
+# Compute the gradient using the Sobel operator
+FAST NUCES - Karachi
+Talha Shahid
+11
+
+=== PAGE 13 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+dx = cv2.Sobet(image, cv2.CV_64F, 1, @ , ksize=3)
+dy = cv2.SobeI(image, cv2.CV_64F, @, I, ksize=3)
+# Calculate the magnitude and orientation of the gradient
+= np.sqrt(dx**2 +
+magnitude
+orientation = np.arctan2(dy, dx) * (180 / np.pi) # Convert radians
+to degrees
+# Create a histogram of gradient orientations
+= np.histogram(orientation, bins=9, 180))
+histogram, bins
+# Normalize the histogram (optional)
+= histogram / histogram.sum()
+histogram
+# Display the histogram
+histogram, width=2@)
+of Intensity Gradients (HIG)
+Orientation (degrees)
+put . ylabel ( "Frequency")
+put. show()
+# YOU can use the computed histogram as a feature vector for your
+application .
+3.6 Texture energy and contrast histograms
+3.6.1 Explanation
+Texture energy and contrast histograms are two features commonly
+used in texture analysis. They provide information about the
+variation and contrast of textures within an image .
+Texture Energy:
+•
+Texture energy measures the uniformity or smoothness of
+a texture within an image.
+It is calculated as the sum of squared pixel intensities
+within a local neighborhood.
+Higher energy values indicate a more complex and less
+uniform texture.
+Texture Contrast:
+•
+•
+FAST NUCES
+Texture contrast quantifies the variation in pixel
+intensities within a local neighborhood.
+It is computed as the standard deviation of pixel
+intensities in the neighborhood.
+Higher contrast values indicate a greater variation in
+texture.
+- Karachi
+Talha Shahid
+12
+
+=== PAGE 14 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+3.6.2 Working Mechanism
+Image Preprocessing:
+Texture
+•
+•
+Texture
+•
+Texture
+•
+Convert the input image to grayscale if it is not already.
+Optionally, apply any necessary preprocessing steps like
+resizing, smoothing, or contrast enhancement.
+Analysis :
+Define a local neighborhood or window size to analyze texture
+locally. Common sizes are 3x3 or 5x5.
+For each pixel in the image, extract the pixel values within
+the defined neighborhood.
+Energy Calculation :
+Compute the texture energy by summing the squared pixel values
+within the neighborhood:
+Texture Energy (E) =
+i(pixel values)2
+Contrast Calculation:
+Calculate the texture contrast as the standard deviation of
+pixel values within the neighborhood:
+Texture Contrast (C) = v (Var(pixel values))
+Histogram Construction:
+•
+Feature
+import
+import
+import
+# Read
+image
+Create histograms for texture energy and contrast separately.
+Divide the range of values into bins for both histograms.
+Count the number of pixels with energy or contrast values
+falling into each bin.
+Extraction :
+The constructed histograms serve as feature vectors.
+These histograms capture information about the distribution
+of texture energy and contrast in the image.
+These features can be used for texture classification ,
+segmentation, or other texture-related tasks.
+cv2
+numpy as np
+matplotlib.pyplot as put
+an image (grayscale)
+= cv2.imread( ' image .jpg' ,
+# Define the neighborhood size
+neighborhood_size = 3
+# Calculate texture energy and
+= cv2.fiIter2D(image
+energy
+cv2. IMREAD_GRAYSCALE)
+3x3 window)
+contrast using OpenCV fitter2D
+-1, np.ones((neighborhood_size,
+2,
+neighborhood_size)))
+FAST NUCES - Karachi
+Talha Shahid
+13
+
+=== PAGE 15 ===
+contrast
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+= cv2.fitter2D(image,
+-1, np.ones((neighborhood_size,
+neighborhood_size)))
+# Compute histograms for texture energy and contrast
+= np.histogram(energy, bins-256, range=(@,
+energy _ histogram, energy _ bins
+energy . max()))
+contrast _ histogram, contrast _ bins = np.histogram(contrast, bins=256,
+range=(@, contrast.max()))
+# Normalize histograms (optional)
+energy _ histogram = energy _ histogram / energy _ histogram. sum()
+= contrast_histogram / contrast _ histogram. sum()
+contrast_histogram
+# Display the histograms
+put . 4))
+put. subplot(l, 2, 1)
+put . plot : -I], energy _ histogram,
+put. Energy Histogram")
+put
+put. )
+put. subplot(l, 2, 2)
+cotor=
+put . plot : -I], contrast _ histogram,
+put . Contrast Histogram")
+put . xtabet ( "Contrast " )
+put . ylabet ( "Frequency" )
+put.
+put . show()
+color:
+# YOU can use the computed histograms as feature vectors for texture
+analysis .
+Task: Texture Analysis for Material Classification (Give Code and
+Description)
+You are working on a project that involves classifying different
+materials in images, such as wood, metal, and fabric. The goal is to
+extract texture features from these materials for classification
+purposes .
+Describe at least two texture feature extraction techniques you
+would use in this project. Explain how each technique works and
+provide examples of the types of textures they are suitable for.
+Discuss the advantages and limitations of the selected texture
+feature extraction techniques in the context of material
+classification
+FAST NUCES
+- Karachi
+Talha Shahid
+14
+
+=== PAGE 16 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+4. Filtering & Convolution
+Filtering and convolution are fundamental operations in image
+processing and computer vision. They are used for various tasks,
+including noise reduction, edge detection, feature extraction, and
+image enhancement .
+4.1 Filtering:
+•
+Filtering in image processing involves applying a filter or
+kernel to an input image.
+A filter is a small matrix of numbers that is convolved with
+the image to modify the pixel values.
+Each element of the filter represents a weighted contribution
+to the new pixel value.
+Filtering operations can enhance or suppress certain image
+features .
+4.2 Convolution:
+Convolution is the mathematical operation used to apply a
+filter to an image.
+It involves sliding the filter over the image, element-wise
+multiplying the filter and the corresponding image region,
+and summing the results.
+Convolution is expressed as the dot product between the filter
+and the image region.
+It is performed for every pixel in the image, resulting in a
+new image called the output or convolved image.
+Box Blur
+A simple blurring technique that replaces each pixel with the average of
+its neighboring pixels within a square kernel.
+Useful for noise reduction and smoothing.
+import cv2
+import numpy as np
+# Read an image
+= cv2.imread( 'image .jpg
+image
+# Define a box blur
+= np.ones((3,
+kernel
+# Apply convolution
+blurred _ image
+= cv2.
+FAST NUCES
+- Karachi
+kernel
+3), dtype=np.ftoat32) / 9
+fitter2D(image,
+-1, kernel)
+Talha Shahid
+15
+
+=== PAGE 17 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+Gaussian Blur
+Blurring technique using a Gaussian-shaped kernel.
+It provides smoother results compared to box blur and is often used for
+noise reduction.
+# Define a Gaussian blur kernel
+kernet_size -
+sigma
+= 1.0
+kernel = sigma)
+= cv2.fitter2D(image,
+-I, kernel)
+gaussian _ blur
+Edge Detection (e.g., Sobel and Scharr)
+Detects edges in the image by emphasizing rapid changes in pixel values.
+Sobel and Scharr operators are commonly used for edge detection.
+# Sobel edge detection
+sobel_x = cv2.Sobel(image, cv2.CV_64F, 1, @, ksize=3)
+- cv2.Sobet(image, cv2.CV_64F, O, I, ksize=3)
+sobel_y —
+# Scharr edge detection
+= cv2.Scharr(image, cv2.CV_64F, I, @)
+scharr_x
+= cv2.Scharr(image, cv2.CV_64F, @ , 1)
+scharr_y
+Embossing
+Creates a 3D effect by emphasizing the differences in neighboring pixel
+values.
+It can be used for artistic or stylized image effects.
+# Define an emboss kernel
+kernel =
+[O, 1, 2]], dtype=np.fIoat32)
+= cv2.fiIter2D(image,
+-1, kernel)
+embossed _ image
+4.2.1 Convolution Types:
+Convolution operations are fundamental in image processing and
+computer vision. They involve applying a filter (also known as a
+kernel) to an input image to modify or enhance certain feature.
+4.2.1.1 Standard Convolution:
+•
+Standard convolution, also known as full convolution, is the
+most common type.
+It processes each pixel in the input image by centering the
+kernel over it and performing element-wise multiplication and
+summation .
+The result is placed in the corresponding pixel of the output
+image .
+import cv2
+import numpy as np
+# Read an image
+FAST NUCES
+- Karachi
+Talha Shahid
+16
+
+=== PAGE 18 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+cv2 . imread( ' image .jpg
+cv2 . IMREAD_GRAYSCALE)
+image =
+# Define a kernel (3x3 example)
+kernel -
+-2],
+-I]], dtype=np.ftoat32)
+# Apply standard convolution
+= cv2.fiIter2D(image,
+-1, kernel)
+result
+4.2.1.2 Valid Convolution (No Padding)
+Valid convolution, also known as no-padding convolution, only
+processes pixels where the kernel fully overlaps with the input
+image.
+It produces an output image with smaller dimensions than the
+input image
+import cv2
+import numpy as np
+# Read an image
+= cv2.imread('image.jpg' ,
+cv2 . IMREAD_GRAYSCALE)
+image
+# Define a kernel (3x3 example)
+kernel = @ ,
+-1]], dtype=np.fIoat32)
+# Apply valid convolution (no padding)
+= cv2.filter2D(image,
+result
+-1, kernel,
+4.2.1.3 Same Convolution (Zero Padding)
+Same convolution adds zero-padding to the input image to ensure
+that the output image has the same dimensions as the input.
+It is often used to prevent information loss near the image
+boundaries .
+import cv2
+import numpy as np
+# Read an image
+= cv2.imread('image.jpg' ,
+cv2 . IMREAD_GRAYSCALE)
+image
+# Define a kernel (3x3
+kernel =
+FAST NUCES
+- Karachi
+example)
+-1],
+-1]], dtype=np.fIoat32)
+Talha Shahid
+17
+
+=== PAGE 19 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+# Apply same convolution (zero padding)
+= cv2.fitter2D(image,
+result
+-1, kernel,
+4.2.1.4 Valid Convolution with Strides
+Valid convolution with strides processes pixels where the kernel
+fully overlaps with the input image, but it skips some pixels
+based on the specified stride .
+It produces an output image with smaller dimensions than the
+input, determined by the stride.
+import cv2
+import numpy as np
+# Read an image
+= cv2.imread('image.jpg' ,
+cv2 . IMREAD_GRAYSCALE)
+image
+# Define a kernel (3x3 example)
+kernel = @ ,
+-1]], dtype=np.fIoat32)
+# Apply valid convolution with a stride of 2
+= cv2.filter2D(image,
+-1, kernel, strides=(2,
+result
+borderType=cv2. BORDER_CONSTANT)
+2),
+5. Edge Detection & its Common Techniques
+Edge detection is a fundamental technique in image processing and
+computer vision used to identify boundaries within an image. These
+boundaries are often transitions from one object or region to another,
+representing important information about the image's structure. Edges
+can correspond to changes in color, intensity, or texture and play a
+crucial role in various computer vision applications, such as object
+detection, image segmentation, and feature extraction .
+Edge detection is a critical preprocessing step for further analysis
+of images, as it reduces the amount of data while highlighting
+essential features. Several edge detection techniques exist, each with
+its strengths and weaknesses, making them suitable for different
+scenarios .
+FAST NUCES
+- Karachi
+Talha Shahid
+18
+
+=== PAGE 20 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+5.1 Common Edge Detection Techniques
+•
+•
+•
+•
+Gradient-Based Edge Detection:
+Gradient-based methods identify edges by calculating the
+gradient (rate of change) of pixel intensities in the
+image.
+Common gradient-based operators include the Sobel,
+Prewitt, and Scharr operators .
+The gradient direction and magnitude help locate edges,
+and edges typically OCCUI where the gradient magnitude
+is high.
+Canny Edge Detector:
+The Canny edge detector is a multi-stage algorithm known
+for its accuracy and noise reduction capabilities.
+• It involves Gaussian smoothing to reduce noise, gradient
+calculation, non-maximum suppression to thin edges, and
+edge tracking by hysteresis to detect continuous edges.
+Laplacian of Gaussian (LOG) :
+The LOG operator combines Gaussian smoothing and
+Laplacian edge detection.
+It enhances edges by highlighting zero-crossings in the
+second derivative of the image.
+Sobel and Scharr Operators:
+Sobel and Scharr operators are gradient-based edge
+detectors used for approximating the gradient of the
+image.
+• They are simple to implement and can be applied in both
+horizontal and vertical directions.
+Prewitt Operator:
+The Prewitt operator is another gradient-based method
+used to detect edges.
+It convolves the image with 3x3 kernels to compute
+gradients in horizontal and vertical directions.
+FAST NUCES
+- Karachi
+Talha Shahid
+19
+
+=== PAGE 21 ===
+•
+•
+import
+import
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+Marr-Hildreth Edge Detector (LOG of Gaussian) :
+The Marr-Hildreth edge detector uses the LOG operator
+after Gaussian smoothing.
+It emphasizes zero-crossings to locate edges.
+Sobel-Feldman Operator:
+The Sobel-Feldman operator is a variation of the Sobel
+operator, emphasizing diagonal edges in addition to
+horizontal and vertical edges.
+Edge Detection with Convolutional Neural Networks (CNNs) :
+Modern approaches use deep learning techniques,
+particularly CNNs, for edge detection .
+CNN-based models can learn complex edge patterns and
+adapt to various image domains .
+cv2
+numpy as np
+# Read an image in grayscale
+= cv2. imread(' image .jpg' ,
+cv2 . IMREAD_GRAYSCALE)
+image
+# Apply Sobel operator to calculate gradients
+= cv2.Sobet(image, cv2.CV_64F, 1, @, ksize=3)
+gradient_x
+Gradient in the x-direction
+gradient_y cv2.Sobet(image, cv2.CV_64F, @ , 1, ksize=3)
+Gradient in the y-direction
+# Calculate the gradient magnitude and direction
+gradient _ magnitude
+= np.arctan2(gradient_y, gradient_x)
+gradient _ direction
+# Optionally, you can apply a threshold to identify edges
+threshold = 100
+(gradient_magnitude > threshold) . astype(np.uint8) * 255
+edges =
+# Display the original image and detected edges
+cv2. imshow( 'Original Image' ,
+image)
+cv2. imshow( 'Detected Edges' ,
+edges)
+cv2 . waitKey (O)
+cv2 . destroyAttWindows ( )
+5.2 The Canny Edge Detector
+The Canny Edge Detector is a popular and widely used edge detection
+technique in image processing and computer vision. Developed by John
+F. Canny in 1986, this technique is known for its accuracy in detecting
+edges while suppressing noise. It involves a multi-stage process that
+aims to find the edges in an image.
+FAST NUCES - Karachi
+Talha Shahid
+20
+
+=== PAGE 22 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+5.2.1 Key Steps in the Canny Edge Detection Algorithm
+5.2.1.1 Gaussian Smoothing:
+• The first step is to apply Gaussian smoothing to the input image.
+This step reduces noise in the image, making it less sensitive
+to small variations in pixel intensity.
+• A Gaussian kernel is convolved with the image, effectively
+blurring it.
+5.2.1.2 Gradient Calculation:
+•
+•
+The next step calculates the gradient of the smoothed image. It
+finds the rate of change of pixel intensities in both the
+horizontal (x) and vertical (y) directions.
+Two 3x3 convolution kernels (Sobel operators) are applied to
+compute the gradient in the x and y directions.
+The gradient magnitude and direction are then calculated for
+each pixel.
+5.2.1.3 Non-Maximum Suppression:
+• In this step, the algorithm looks for local maxima in the
+gradient magnitude.
+For each pixel, it checks if the gradient magnitude is the
+maximum among its neighbors in the direction of the gradient.
+• This process thins the edges, retaining only the most prominent
+ones.
+5.2.1.4 Edge Tracking by Hysteresis:
+•
+•
+The final step aims to link the remaining edge segments into
+continuous lines or curves.
+Two threshold values, a high threshold (T _ high) and a low
+threshold (T _ low), are used.
+Pixels with gradient magnitudes above T_high are considered
+strong edge points and are definitely part of the edges.
+Pixels with gradient magnitudes between T _ low and T _ high are
+considered weak edge points.
+Weak edge points are connected to strong edge points if they are
+adjacent and form continuous edges.
+The result is a binary edge map with strong and weak edges.
+FAST NUCES
+- Karachi
+Talha Shahid
+21
+
+=== PAGE 23 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+5.2.1.5 Parameters in the Canny Edge Detector:
+•
+Gaussian Kernel Size (o): The size of the Gaussian filter kernel
+used for smoothing. A larger o results in a smoother image but
+may lead to loss of fine details.
+High Threshold (T _ high): The threshold above which a pixel is
+considered a strong edge point.
+Low Threshold (T _ Iow): The threshold below which a pixel is
+rejected as a non-edge point.
+The choice of threshold values is crucial and affects the trade-
+off between edge detection sensitivity and noise suppression. It
+often requires experimentation and domain knowledge.
+import cv2
+# Read an image in grayscale
+= cv2.imread('image.jpg' ,
+cv2 . IMREAD_GRAYSCALE)
+image
+# Apply Canny edge detection
+edges = cv2.Canny(image,
+threshold values as needed
+# Display the edge map
+cv2.imshow('Canny Edges' ,
+edges)
+cv2.waitKey(@)
+cv2. destroyAItWindovus ( )
+# Adjust
+FAST NUCES
+- Karachi
+Talha Shahid
+22

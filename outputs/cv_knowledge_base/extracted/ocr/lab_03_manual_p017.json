@@ -1,0 +1,1722 @@
+﻿{
+    "id":  "lab_03_manual_p017",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "National University of Computer \u0026 Emerging Sciences - NUCES - Karachi Department of Artificial Intelligence 6.1.1.4 The solution: Homogenous Coordinates Homogeneous coordinates bypass the origin limitation by adding a temporary, dummy \"1\" to standard 2D coordinates, turning (x, y) into (x, y, 1). This mathematical trick allows computers to perform translations using only matrix multiplication, completely eliminating the need for a separate vector addition step. The Problem with Vector Addition The standard affine equation is p\u0027 = Ap + b This forces the computer to perform a matrix multiplication (Ap) for scaling or rotating, stop that process, and then perform a separate vector addition (+b) to slide the object. Graphics processors (GPUs) are deeply optimized to execute continuous, uninterrupted chains of matrix multiplications. Breaking that hardware pipeline to switch to vector addition creates a massive computational bottleneck when calculating millions of coordinate points per second. The Matrix Multiplication Solution By upgrading the math to a 3 x 3 matrix, we can fold the translation values tx and ty directly into the rightmost column: 10 tx X 01 tyy 0011 When the computer executes this multiplication, the row-by-column math forces the \"1\" in the coordinate vector to multiply against the tx and ty in the matrix. These cleanly outputs the exact translation equations algebraically : FAST NUCES - Karachi Talha Shahid 16",
+    "review_status":  "raw_ocr_unverified",
+    "page":  17,
+    "source_id":  "lab_03_manual",
+    "lines":  [
+                  {
+                      "text":  "National University of Computer \u0026 Emerging Sciences -",
+                      "words":  [
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  123,
+                                        "text":  "National",
+                                        "x":  373
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  30,
+                                        "width":  153,
+                                        "text":  "University",
+                                        "x":  505
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  29,
+                                        "text":  "of",
+                                        "x":  666
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  30,
+                                        "width":  146,
+                                        "text":  "Computer",
+                                        "x":  701
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  23,
+                                        "text":  "\u0026",
+                                        "x":  855
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  30,
+                                        "width":  141,
+                                        "text":  "Emerging",
+                                        "x":  886
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  123,
+                                        "text":  "Sciences",
+                                        "x":  1035
+                                    },
+                                    {
+                                        "y":  106,
+                                        "height":  5,
+                                        "width":  8,
+                                        "text":  "-",
+                                        "x":  1168
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "NUCES - Karachi",
+                      "words":  [
+                                    {
+                                        "y":  138,
+                                        "height":  23,
+                                        "width":  94,
+                                        "text":  "NUCES",
+                                        "x":  657
+                                    },
+                                    {
+                                        "y":  149,
+                                        "height":  5,
+                                        "width":  9,
+                                        "text":  "-",
+                                        "x":  760
+                                    },
+                                    {
+                                        "y":  137,
+                                        "height":  24,
+                                        "width":  114,
+                                        "text":  "Karachi",
+                                        "x":  778
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Department of Artificial Intelligence",
+                      "words":  [
+                                    {
+                                        "y":  179,
+                                        "height":  27,
+                                        "width":  141,
+                                        "text":  "Department",
+                                        "x":  558
+                                    },
+                                    {
+                                        "y":  178,
+                                        "height":  22,
+                                        "width":  25,
+                                        "text":  "of",
+                                        "x":  707
+                                    },
+                                    {
+                                        "y":  178,
+                                        "height":  22,
+                                        "width":  100,
+                                        "text":  "Artificial",
+                                        "x":  738
+                                    },
+                                    {
+                                        "y":  178,
+                                        "height":  28,
+                                        "width":  137,
+                                        "text":  "Intelligence",
+                                        "x":  849
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "6.1.1.4 The solution: Homogenous Coordinates",
+                      "words":  [
+                                    {
+                                        "y":  290,
+                                        "height":  20,
+                                        "width":  86,
+                                        "text":  "6.1.1.4",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  289,
+                                        "height":  21,
+                                        "width":  50,
+                                        "text":  "The",
+                                        "x":  265
+                                    },
+                                    {
+                                        "y":  287,
+                                        "height":  23,
+                                        "width":  117,
+                                        "text":  "solution:",
+                                        "x":  325
+                                    },
+                                    {
+                                        "y":  290,
+                                        "height":  26,
+                                        "width":  182,
+                                        "text":  "Homogenous",
+                                        "x":  454
+                                    },
+                                    {
+                                        "y":  287,
+                                        "height":  23,
+                                        "width":  168,
+                                        "text":  "Coordinates",
+                                        "x":  646
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Homogeneous coordinates bypass the origin limitation by adding a",
+                      "words":  [
+                                    {
+                                        "y":  374,
+                                        "height":  24,
+                                        "width":  164,
+                                        "text":  "Homogeneous",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  373,
+                                        "height":  20,
+                                        "width":  163,
+                                        "text":  "coordinates",
+                                        "x":  360
+                                    },
+                                    {
+                                        "y":  374,
+                                        "height":  24,
+                                        "width":  88,
+                                        "text":  "bypass",
+                                        "x":  550
+                                    },
+                                    {
+                                        "y":  374,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  663
+                                    },
+                                    {
+                                        "y":  373,
+                                        "height":  25,
+                                        "width":  88,
+                                        "text":  "origin",
+                                        "x":  731
+                                    },
+                                    {
+                                        "y":  373,
+                                        "height":  20,
+                                        "width":  148,
+                                        "text":  "limitation",
+                                        "x":  846
+                                    },
+                                    {
+                                        "y":  374,
+                                        "height":  24,
+                                        "width":  27,
+                                        "text":  "by",
+                                        "x":  1021
+                                    },
+                                    {
+                                        "y":  373,
+                                        "height":  25,
+                                        "width":  89,
+                                        "text":  "adding",
+                                        "x":  1074
+                                    },
+                                    {
+                                        "y":  379,
+                                        "height":  14,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  1188
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "temporary, dummy \"1\" to standard 2D coordinates, turning (x, y) into",
+                      "words":  [
+                                    {
+                                        "y":  412,
+                                        "height":  24,
+                                        "width":  146,
+                                        "text":  "temporary,",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  412,
+                                        "height":  24,
+                                        "width":  73,
+                                        "text":  "dummy",
+                                        "x":  337
+                                    },
+                                    {
+                                        "y":  412,
+                                        "height":  19,
+                                        "width":  38,
+                                        "text":  "\"1\"",
+                                        "x":  431
+                                    },
+                                    {
+                                        "y":  412,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  488
+                                    },
+                                    {
+                                        "y":  412,
+                                        "height":  19,
+                                        "width":  117,
+                                        "text":  "standard",
+                                        "x":  536
+                                    },
+                                    {
+                                        "y":  412,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "2D",
+                                        "x":  672
+                                    },
+                                    {
+                                        "y":  411,
+                                        "height":  24,
+                                        "width":  176,
+                                        "text":  "coordinates,",
+                                        "x":  717
+                                    },
+                                    {
+                                        "y":  411,
+                                        "height":  25,
+                                        "width":  105,
+                                        "text":  "turning",
+                                        "x":  914
+                                    },
+                                    {
+                                        "y":  411,
+                                        "height":  24,
+                                        "width":  36,
+                                        "text":  "(x,",
+                                        "x":  1039
+                                    },
+                                    {
+                                        "y":  411,
+                                        "height":  25,
+                                        "width":  25,
+                                        "text":  "y)",
+                                        "x":  1097
+                                    },
+                                    {
+                                        "y":  411,
+                                        "height":  20,
+                                        "width":  57,
+                                        "text":  "into",
+                                        "x":  1144
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "(x, y, 1). This mathematical trick allows computers to perform",
+                      "words":  [
+                                    {
+                                        "y":  449,
+                                        "height":  24,
+                                        "width":  35,
+                                        "text":  "(x,",
+                                        "x":  174
+                                    },
+                                    {
+                                        "y":  455,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "y,",
+                                        "x":  241
+                                    },
+                                    {
+                                        "y":  449,
+                                        "height":  24,
+                                        "width":  39,
+                                        "text":  "1).",
+                                        "x":  297
+                                    },
+                                    {
+                                        "y":  449,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "This",
+                                        "x":  367
+                                    },
+                                    {
+                                        "y":  449,
+                                        "height":  20,
+                                        "width":  180,
+                                        "text":  "mathematical",
+                                        "x":  454
+                                    },
+                                    {
+                                        "y":  449,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "trick",
+                                        "x":  661
+                                    },
+                                    {
+                                        "y":  450,
+                                        "height":  19,
+                                        "width":  88,
+                                        "text":  "allows",
+                                        "x":  763
+                                    },
+                                    {
+                                        "y":  450,
+                                        "height":  24,
+                                        "width":  133,
+                                        "text":  "computers",
+                                        "x":  880
+                                    },
+                                    {
+                                        "y":  450,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  1041
+                                    },
+                                    {
+                                        "y":  450,
+                                        "height":  24,
+                                        "width":  103,
+                                        "text":  "perform",
+                                        "x":  1099
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "translations using only matrix multiplication, completely eliminating",
+                      "words":  [
+                                    {
+                                        "y":  486,
+                                        "height":  21,
+                                        "width":  180,
+                                        "text":  "translations",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  486,
+                                        "height":  25,
+                                        "width":  73,
+                                        "text":  "using",
+                                        "x":  366
+                                    },
+                                    {
+                                        "y":  487,
+                                        "height":  25,
+                                        "width":  58,
+                                        "text":  "only",
+                                        "x":  454
+                                    },
+                                    {
+                                        "y":  486,
+                                        "height":  21,
+                                        "width":  88,
+                                        "text":  "matrix",
+                                        "x":  528
+                                    },
+                                    {
+                                        "y":  486,
+                                        "height":  25,
+                                        "width":  220,
+                                        "text":  "multiplication,",
+                                        "x":  632
+                                    },
+                                    {
+                                        "y":  487,
+                                        "height":  25,
+                                        "width":  148,
+                                        "text":  "completely",
+                                        "x":  873
+                                    },
+                                    {
+                                        "y":  486,
+                                        "height":  25,
+                                        "width":  165,
+                                        "text":  "eliminating",
+                                        "x":  1037
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "the need for a separate vector addition step.",
+                      "words":  [
+                                    {
+                                        "y":  525,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  525,
+                                        "height":  20,
+                                        "width":  57,
+                                        "text":  "need",
+                                        "x":  231
+                                    },
+                                    {
+                                        "y":  525,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "for",
+                                        "x":  306
+                                    },
+                                    {
+                                        "y":  531,
+                                        "height":  14,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  366
+                                    },
+                                    {
+                                        "y":  526,
+                                        "height":  24,
+                                        "width":  118,
+                                        "text":  "separate",
+                                        "x":  397
+                                    },
+                                    {
+                                        "y":  526,
+                                        "height":  19,
+                                        "width":  89,
+                                        "text":  "vector",
+                                        "x":  533
+                                    },
+                                    {
+                                        "y":  525,
+                                        "height":  20,
+                                        "width":  117,
+                                        "text":  "addition",
+                                        "x":  639
+                                    },
+                                    {
+                                        "y":  526,
+                                        "height":  24,
+                                        "width":  69,
+                                        "text":  "step.",
+                                        "x":  774
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The Problem with Vector Addition",
+                      "words":  [
+                                    {
+                                        "y":  601,
+                                        "height":  19,
+                                        "width":  45,
+                                        "text":  "The",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  601,
+                                        "height":  19,
+                                        "width":  104,
+                                        "text":  "Problem",
+                                        "x":  231
+                                    },
+                                    {
+                                        "y":  600,
+                                        "height":  20,
+                                        "width":  60,
+                                        "text":  "with",
+                                        "x":  350
+                                    },
+                                    {
+                                        "y":  601,
+                                        "height":  19,
+                                        "width":  90,
+                                        "text":  "Vector",
+                                        "x":  426
+                                    },
+                                    {
+                                        "y":  600,
+                                        "height":  20,
+                                        "width":  120,
+                                        "text":  "Addition",
+                                        "x":  532
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The standard affine equation is",
+                      "words":  [
+                                    {
+                                        "y":  675,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "The",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  675,
+                                        "height":  19,
+                                        "width":  117,
+                                        "text":  "standard",
+                                        "x":  231
+                                    },
+                                    {
+                                        "y":  674,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "affine",
+                                        "x":  367
+                                    },
+                                    {
+                                        "y":  674,
+                                        "height":  25,
+                                        "width":  119,
+                                        "text":  "equation",
+                                        "x":  472
+                                    },
+                                    {
+                                        "y":  674,
+                                        "height":  20,
+                                        "width":  26,
+                                        "text":  "is",
+                                        "x":  610
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "p\u0027 = Ap + b",
+                      "words":  [
+                                    {
+                                        "y":  748,
+                                        "height":  28,
+                                        "width":  22,
+                                        "text":  "p\u0027",
+                                        "x":  616
+                                    },
+                                    {
+                                        "y":  758,
+                                        "height":  8,
+                                        "width":  17,
+                                        "text":  "=",
+                                        "x":  648
+                                    },
+                                    {
+                                        "y":  751,
+                                        "height":  25,
+                                        "width":  31,
+                                        "text":  "Ap",
+                                        "x":  674
+                                    },
+                                    {
+                                        "y":  753,
+                                        "height":  18,
+                                        "width":  18,
+                                        "text":  "+",
+                                        "x":  714
+                                    },
+                                    {
+                                        "y":  750,
+                                        "height":  21,
+                                        "width":  13,
+                                        "text":  "b",
+                                        "x":  740
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "This forces the computer to perform a matrix multiplication (Ap) for",
+                      "words":  [
+                                    {
+                                        "y":  825,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "This",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  826,
+                                        "height":  19,
+                                        "width":  88,
+                                        "text":  "forces",
+                                        "x":  246
+                                    },
+                                    {
+                                        "y":  826,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  352
+                                    },
+                                    {
+                                        "y":  826,
+                                        "height":  24,
+                                        "width":  119,
+                                        "text":  "computer",
+                                        "x":  414
+                                    },
+                                    {
+                                        "y":  826,
+                                        "height":  19,
+                                        "width":  28,
+                                        "text":  "to",
+                                        "x":  550
+                                    },
+                                    {
+                                        "y":  826,
+                                        "height":  24,
+                                        "width":  102,
+                                        "text":  "perform",
+                                        "x":  597
+                                    },
+                                    {
+                                        "y":  831,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  717
+                                    },
+                                    {
+                                        "y":  825,
+                                        "height":  20,
+                                        "width":  89,
+                                        "text":  "matrix",
+                                        "x":  747
+                                    },
+                                    {
+                                        "y":  825,
+                                        "height":  25,
+                                        "width":  210,
+                                        "text":  "multiplication",
+                                        "x":  854
+                                    },
+                                    {
+                                        "y":  825,
+                                        "height":  25,
+                                        "width":  51,
+                                        "text":  "(Ap)",
+                                        "x":  1086
+                                    },
+                                    {
+                                        "y":  826,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "for",
+                                        "x":  1158
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "scaling or rotating, stop that process, and then perform a separate",
+                      "words":  [
+                                    {
+                                        "y":  862,
+                                        "height":  25,
+                                        "width":  104,
+                                        "text":  "scaling",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  869,
+                                        "height":  13,
+                                        "width":  29,
+                                        "text":  "or",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  862,
+                                        "height":  25,
+                                        "width":  129,
+                                        "text":  "rotating,",
+                                        "x":  341
+                                    },
+                                    {
+                                        "y":  864,
+                                        "height":  23,
+                                        "width":  58,
+                                        "text":  "stop",
+                                        "x":  494
+                                    },
+                                    {
+                                        "y":  863,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "that",
+                                        "x":  571
+                                    },
+                                    {
+                                        "y":  869,
+                                        "height":  18,
+                                        "width":  113,
+                                        "text":  "process,",
+                                        "x":  650
+                                    },
+                                    {
+                                        "y":  863,
+                                        "height":  19,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  787
+                                    },
+                                    {
+                                        "y":  863,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "then",
+                                        "x":  849
+                                    },
+                                    {
+                                        "y":  863,
+                                        "height":  24,
+                                        "width":  103,
+                                        "text":  "perform",
+                                        "x":  928
+                                    },
+                                    {
+                                        "y":  869,
+                                        "height":  13,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  1050
+                                    },
+                                    {
+                                        "y":  864,
+                                        "height":  23,
+                                        "width":  119,
+                                        "text":  "separate",
+                                        "x":  1083
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "vector addition (+b) to slide the object. Graphics processors (GPUs)",
+                      "words":  [
+                                    {
+                                        "y":  902,
+                                        "height":  18,
+                                        "width":  89,
+                                        "text":  "vector",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  900,
+                                        "height":  20,
+                                        "width":  119,
+                                        "text":  "addition",
+                                        "x":  276
+                                    },
+                                    {
+                                        "y":  900,
+                                        "height":  24,
+                                        "width":  51,
+                                        "text":  "(+b)",
+                                        "x":  417
+                                    },
+                                    {
+                                        "y":  902,
+                                        "height":  18,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  489
+                                    },
+                                    {
+                                        "y":  900,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "slide",
+                                        "x":  536
+                                    },
+                                    {
+                                        "y":  901,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  626
+                                    },
+                                    {
+                                        "y":  900,
+                                        "height":  25,
+                                        "width":  100,
+                                        "text":  "object.",
+                                        "x":  687
+                                    },
+                                    {
+                                        "y":  900,
+                                        "height":  25,
+                                        "width":  119,
+                                        "text":  "Graphics",
+                                        "x":  808
+                                    },
+                                    {
+                                        "y":  907,
+                                        "height":  18,
+                                        "width":  149,
+                                        "text":  "processors",
+                                        "x":  946
+                                    },
+                                    {
+                                        "y":  900,
+                                        "height":  24,
+                                        "width":  81,
+                                        "text":  "(GPUs)",
+                                        "x":  1117
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "are deeply optimized to execute continuous, uninterrupted chains of",
+                      "words":  [
+                                    {
+                                        "y":  945,
+                                        "height":  12,
+                                        "width":  43,
+                                        "text":  "are",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  939,
+                                        "height":  23,
+                                        "width":  89,
+                                        "text":  "deeply",
+                                        "x":  230
+                                    },
+                                    {
+                                        "y":  938,
+                                        "height":  24,
+                                        "width":  133,
+                                        "text":  "optimized",
+                                        "x":  336
+                                    },
+                                    {
+                                        "y":  940,
+                                        "height":  17,
+                                        "width":  28,
+                                        "text":  "to",
+                                        "x":  487
+                                    },
+                                    {
+                                        "y":  940,
+                                        "height":  18,
+                                        "width":  103,
+                                        "text":  "execute",
+                                        "x":  533
+                                    },
+                                    {
+                                        "y":  938,
+                                        "height":  23,
+                                        "width":  159,
+                                        "text":  "continuous,",
+                                        "x":  654
+                                    },
+                                    {
+                                        "y":  938,
+                                        "height":  24,
+                                        "width":  194,
+                                        "text":  "uninterrupted",
+                                        "x":  835
+                                    },
+                                    {
+                                        "y":  938,
+                                        "height":  19,
+                                        "width":  88,
+                                        "text":  "chains",
+                                        "x":  1047
+                                    },
+                                    {
+                                        "y":  939,
+                                        "height":  19,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  1153
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "matrix multiplications. Breaking that hardware pipeline to switch to",
+                      "words":  [
+                                    {
+                                        "y":  975,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "matrix",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  975,
+                                        "height":  25,
+                                        "width":  236,
+                                        "text":  "multiplications.",
+                                        "x":  276
+                                    },
+                                    {
+                                        "y":  975,
+                                        "height":  25,
+                                        "width":  119,
+                                        "text":  "Breaking",
+                                        "x":  535
+                                    },
+                                    {
+                                        "y":  976,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "that",
+                                        "x":  671
+                                    },
+                                    {
+                                        "y":  975,
+                                        "height":  20,
+                                        "width":  119,
+                                        "text":  "hardware",
+                                        "x":  747
+                                    },
+                                    {
+                                        "y":  975,
+                                        "height":  25,
+                                        "width":  118,
+                                        "text":  "pipeline",
+                                        "x":  885
+                                    },
+                                    {
+                                        "y":  976,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  1020
+                                    },
+                                    {
+                                        "y":  975,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "switch",
+                                        "x":  1067
+                                    },
+                                    {
+                                        "y":  976,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  1173
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "vector addition creates a massive computational bottleneck when",
+                      "words":  [
+                                    {
+                                        "y":  1014,
+                                        "height":  19,
+                                        "width":  89,
+                                        "text":  "vector",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1013,
+                                        "height":  20,
+                                        "width":  118,
+                                        "text":  "addition",
+                                        "x":  287
+                                    },
+                                    {
+                                        "y":  1014,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "creates",
+                                        "x":  436
+                                    },
+                                    {
+                                        "y":  1019,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  568
+                                    },
+                                    {
+                                        "y":  1013,
+                                        "height":  20,
+                                        "width":  103,
+                                        "text":  "massive",
+                                        "x":  609
+                                    },
+                                    {
+                                        "y":  1013,
+                                        "height":  25,
+                                        "width":  194,
+                                        "text":  "computational",
+                                        "x":  742
+                                    },
+                                    {
+                                        "y":  1013,
+                                        "height":  20,
+                                        "width":  149,
+                                        "text":  "bottleneck",
+                                        "x":  966
+                                    },
+                                    {
+                                        "y":  1013,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "when",
+                                        "x":  1143
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "calculating millions of coordinate points per second.",
+                      "words":  [
+                                    {
+                                        "y":  1050,
+                                        "height":  25,
+                                        "width":  164,
+                                        "text":  "calculating",
+                                        "x":  171
+                                    },
+                                    {
+                                        "y":  1050,
+                                        "height":  20,
+                                        "width":  119,
+                                        "text":  "millions",
+                                        "x":  351
+                                    },
+                                    {
+                                        "y":  1051,
+                                        "height":  19,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  488
+                                    },
+                                    {
+                                        "y":  1050,
+                                        "height":  20,
+                                        "width":  149,
+                                        "text":  "coordinate",
+                                        "x":  533
+                                    },
+                                    {
+                                        "y":  1050,
+                                        "height":  25,
+                                        "width":  88,
+                                        "text":  "points",
+                                        "x":  699
+                                    },
+                                    {
+                                        "y":  1056,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "per",
+                                        "x":  805
+                                    },
+                                    {
+                                        "y":  1051,
+                                        "height":  19,
+                                        "width":  100,
+                                        "text":  "second.",
+                                        "x":  865
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The Matrix Multiplication Solution",
+                      "words":  [
+                                    {
+                                        "y":  1126,
+                                        "height":  20,
+                                        "width":  45,
+                                        "text":  "The",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1126,
+                                        "height":  20,
+                                        "width":  90,
+                                        "text":  "Matrix",
+                                        "x":  230
+                                    },
+                                    {
+                                        "y":  1126,
+                                        "height":  25,
+                                        "width":  210,
+                                        "text":  "Multiplication",
+                                        "x":  336
+                                    },
+                                    {
+                                        "y":  1126,
+                                        "height":  20,
+                                        "width":  119,
+                                        "text":  "Solution",
+                                        "x":  563
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "By upgrading the math to a 3 x 3 matrix, we can fold the translation",
+                      "words":  [
+                                    {
+                                        "y":  1203,
+                                        "height":  24,
+                                        "width":  27,
+                                        "text":  "By",
+                                        "x":  171
+                                    },
+                                    {
+                                        "y":  1202,
+                                        "height":  25,
+                                        "width":  134,
+                                        "text":  "upgrading",
+                                        "x":  216
+                                    },
+                                    {
+                                        "y":  1202,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  366
+                                    },
+                                    {
+                                        "y":  1202,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "math",
+                                        "x":  428
+                                    },
+                                    {
+                                        "y":  1203,
+                                        "height":  19,
+                                        "width":  28,
+                                        "text":  "to",
+                                        "x":  504
+                                    },
+                                    {
+                                        "y":  1208,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  550
+                                    },
+                                    {
+                                        "y":  1203,
+                                        "height":  19,
+                                        "width":  12,
+                                        "text":  "3",
+                                        "x":  581
+                                    },
+                                    {
+                                        "y":  1208,
+                                        "height":  14,
+                                        "width":  12,
+                                        "text":  "x",
+                                        "x":  612
+                                    },
+                                    {
+                                        "y":  1203,
+                                        "height":  19,
+                                        "width":  12,
+                                        "text":  "3",
+                                        "x":  642
+                                    },
+                                    {
+                                        "y":  1202,
+                                        "height":  23,
+                                        "width":  100,
+                                        "text":  "matrix,",
+                                        "x":  672
+                                    },
+                                    {
+                                        "y":  1208,
+                                        "height":  14,
+                                        "width":  29,
+                                        "text":  "we",
+                                        "x":  793
+                                    },
+                                    {
+                                        "y":  1208,
+                                        "height":  14,
+                                        "width":  42,
+                                        "text":  "can",
+                                        "x":  840
+                                    },
+                                    {
+                                        "y":  1202,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "fold",
+                                        "x":  900
+                                    },
+                                    {
+                                        "y":  1202,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  976
+                                    },
+                                    {
+                                        "y":  1202,
+                                        "height":  20,
+                                        "width":  164,
+                                        "text":  "translation",
+                                        "x":  1037
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "values tx and ty directly into the rightmost column:",
+                      "words":  [
+                                    {
+                                        "y":  1240,
+                                        "height":  19,
+                                        "width":  88,
+                                        "text":  "values",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1243,
+                                        "height":  22,
+                                        "width":  19,
+                                        "text":  "tx",
+                                        "x":  276
+                                    },
+                                    {
+                                        "y":  1240,
+                                        "height":  19,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  313
+                                    },
+                                    {
+                                        "y":  1243,
+                                        "height":  25,
+                                        "width":  20,
+                                        "text":  "ty",
+                                        "x":  373
+                                    },
+                                    {
+                                        "y":  1239,
+                                        "height":  25,
+                                        "width":  119,
+                                        "text":  "directly",
+                                        "x":  411
+                                    },
+                                    {
+                                        "y":  1239,
+                                        "height":  20,
+                                        "width":  57,
+                                        "text":  "into",
+                                        "x":  548
+                                    },
+                                    {
+                                        "y":  1240,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  622
+                                    },
+                                    {
+                                        "y":  1239,
+                                        "height":  25,
+                                        "width":  133,
+                                        "text":  "rightmost",
+                                        "x":  683
+                                    },
+                                    {
+                                        "y":  1240,
+                                        "height":  19,
+                                        "width":  99,
+                                        "text":  "column:",
+                                        "x":  834
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "10 tx X",
+                      "words":  [
+                                    {
+                                        "y":  1312,
+                                        "height":  19,
+                                        "width":  50,
+                                        "text":  "10",
+                                        "x":  618
+                                    },
+                                    {
+                                        "y":  1315,
+                                        "height":  20,
+                                        "width":  20,
+                                        "text":  "tx",
+                                        "x":  695
+                                    },
+                                    {
+                                        "y":  1317,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "X",
+                                        "x":  741
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "01 tyy",
+                      "words":  [
+                                    {
+                                        "y":  1343,
+                                        "height":  18,
+                                        "width":  50,
+                                        "text":  "01",
+                                        "x":  618
+                                    },
+                                    {
+                                        "y":  1345,
+                                        "height":  24,
+                                        "width":  60,
+                                        "text":  "tyy",
+                                        "x":  695
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "0011",
+                      "words":  [
+                                    {
+                                        "y":  1372,
+                                        "height":  23,
+                                        "width":  135,
+                                        "text":  "0011",
+                                        "x":  618
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "When the computer executes this multiplication, the row-by-column math",
+                      "words":  [
+                                    {
+                                        "y":  1444,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "When",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1444,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  242
+                                    },
+                                    {
+                                        "y":  1444,
+                                        "height":  24,
+                                        "width":  120,
+                                        "text":  "computer",
+                                        "x":  300
+                                    },
+                                    {
+                                        "y":  1444,
+                                        "height":  19,
+                                        "width":  119,
+                                        "text":  "executes",
+                                        "x":  433
+                                    },
+                                    {
+                                        "y":  1443,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "this",
+                                        "x":  566
+                                    },
+                                    {
+                                        "y":  1443,
+                                        "height":  25,
+                                        "width":  221,
+                                        "text":  "multiplication,",
+                                        "x":  638
+                                    },
+                                    {
+                                        "y":  1444,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  877
+                                    },
+                                    {
+                                        "y":  1444,
+                                        "height":  24,
+                                        "width":  194,
+                                        "text":  "row-by-column",
+                                        "x":  935
+                                    },
+                                    {
+                                        "y":  1444,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "math",
+                                        "x":  1143
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "forces the \"1\" in the coordinate vector to multiply against the tx and",
+                      "words":  [
+                                    {
+                                        "y":  1481,
+                                        "height":  19,
+                                        "width":  88,
+                                        "text":  "forces",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1481,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  274
+                                    },
+                                    {
+                                        "y":  1481,
+                                        "height":  19,
+                                        "width":  38,
+                                        "text":  "\"1\"",
+                                        "x":  336
+                                    },
+                                    {
+                                        "y":  1480,
+                                        "height":  20,
+                                        "width":  26,
+                                        "text":  "in",
+                                        "x":  394
+                                    },
+                                    {
+                                        "y":  1481,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  436
+                                    },
+                                    {
+                                        "y":  1480,
+                                        "height":  20,
+                                        "width":  149,
+                                        "text":  "coordinate",
+                                        "x":  496
+                                    },
+                                    {
+                                        "y":  1482,
+                                        "height":  18,
+                                        "width":  88,
+                                        "text":  "vector",
+                                        "x":  661
+                                    },
+                                    {
+                                        "y":  1482,
+                                        "height":  18,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  764
+                                    },
+                                    {
+                                        "y":  1480,
+                                        "height":  25,
+                                        "width":  120,
+                                        "text":  "multiply",
+                                        "x":  808
+                                    },
+                                    {
+                                        "y":  1480,
+                                        "height":  25,
+                                        "width":  103,
+                                        "text":  "against",
+                                        "x":  944
+                                    },
+                                    {
+                                        "y":  1481,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  1063
+                                    },
+                                    {
+                                        "y":  1485,
+                                        "height":  21,
+                                        "width":  19,
+                                        "text":  "tx",
+                                        "x":  1123
+                                    },
+                                    {
+                                        "y":  1481,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  1158
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ty in the matrix. These cleanly outputs the exact translation equations",
+                      "words":  [
+                                    {
+                                        "y":  1523,
+                                        "height":  24,
+                                        "width":  20,
+                                        "text":  "ty",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1518,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "in",
+                                        "x":  205
+                                    },
+                                    {
+                                        "y":  1519,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  246
+                                    },
+                                    {
+                                        "y":  1518,
+                                        "height":  20,
+                                        "width":  100,
+                                        "text":  "matrix.",
+                                        "x":  303
+                                    },
+                                    {
+                                        "y":  1519,
+                                        "height":  19,
+                                        "width":  75,
+                                        "text":  "These",
+                                        "x":  420
+                                    },
+                                    {
+                                        "y":  1519,
+                                        "height":  24,
+                                        "width":  103,
+                                        "text":  "cleanly",
+                                        "x":  510
+                                    },
+                                    {
+                                        "y":  1520,
+                                        "height":  23,
+                                        "width":  102,
+                                        "text":  "outputs",
+                                        "x":  627
+                                    },
+                                    {
+                                        "y":  1519,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  743
+                                    },
+                                    {
+                                        "y":  1520,
+                                        "height":  18,
+                                        "width":  74,
+                                        "text":  "exact",
+                                        "x":  801
+                                    },
+                                    {
+                                        "y":  1518,
+                                        "height":  20,
+                                        "width":  165,
+                                        "text":  "translation",
+                                        "x":  888
+                                    },
+                                    {
+                                        "y":  1518,
+                                        "height":  25,
+                                        "width":  133,
+                                        "text":  "equations",
+                                        "x":  1068
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "algebraically :",
+                      "words":  [
+                                    {
+                                        "y":  1558,
+                                        "height":  25,
+                                        "width":  194,
+                                        "text":  "algebraically",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1564,
+                                        "height":  14,
+                                        "width":  4,
+                                        "text":  ":",
+                                        "x":  371
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FAST NUCES -",
+                      "words":  [
+                                    {
+                                        "y":  1820,
+                                        "height":  19,
+                                        "width":  61,
+                                        "text":  "FAST",
+                                        "x":  171
+                                    },
+                                    {
+                                        "y":  1820,
+                                        "height":  19,
+                                        "width":  85,
+                                        "text":  "NUCES",
+                                        "x":  242
+                                    },
+                                    {
+                                        "y":  1829,
+                                        "height":  4,
+                                        "width":  12,
+                                        "text":  "-",
+                                        "x":  337
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Karachi",
+                      "words":  [
+                                    {
+                                        "y":  1818,
+                                        "height":  21,
+                                        "width":  95,
+                                        "text":  "Karachi",
+                                        "x":  358
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1820,
+                                        "height":  19,
+                                        "width":  71,
+                                        "text":  "Talha",
+                                        "x":  596
+                                    },
+                                    {
+                                        "y":  1818,
+                                        "height":  21,
+                                        "width":  86,
+                                        "text":  "Shahid",
+                                        "x":  677
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "16",
+                      "words":  [
+                                    {
+                                        "y":  1820,
+                                        "height":  19,
+                                        "width":  26,
+                                        "text":  "16",
+                                        "x":  1177
+                                    }
+                                ]
+                  }
+              ]
+}

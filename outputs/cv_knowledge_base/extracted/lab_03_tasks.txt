@@ -1,0 +1,104 @@
+=== PAGE 1 ===
+Task 9: The Stadium Panorama (Projective
+- Homography)
+•
+Scenario: You have two photos from two different cameras covering
+a football field. They share a small overlapping area in the
+middle .
+Task: Select 4 matching points found in both images. Calculate
+the Homography matrix to mathematically project the second
+camera's view into the first camera's space, stitching them
+together into a seamless panorama.
+Task 10: The Master Forger (Full Hierarchy Challenge)
+•
+Scenario: You need to digitally insert a flat image of a painting
+into an empty, heavily angled picture frame hanging on a museum
+wall .
+Task: Traverse the entire hierarchy. Use a Linear Scale to shrink
+the painting, a Rigid Transformation to move it near the frame,
+and finally a Projective Transformation to warp the painting's
+4 corners precisely into the 3D perspective of the angled frame .
+Talha Shahid
+31 Page
+
+=== PAGE 2 ===
+Task 5: The Robot 's Assembly Line (Rigid Transformation)
+•
+Scenario: A robotic arm needs to pick up a microchip on a
+conveyor belt. The chip is rotated sideways and slightly off-
+center.
+Task: A Rigid Transformation preserves the exact shape of an
+object. Combine your Rotation and Translation matrices into a
+single 3x3 matrix. Apply it simultaneously to align the chip
+perfectly with the robot's gripper.
+Task 6: The Architect's Blueprint (Similarity Transformation)
+•
+Scenario: You imported a house blueprint into your software, but
+it is too small, rotated randomly, and placed in the wrong
+corner.
+Task: A Similarity Transformation preserves angles but changes
+size. Combine Scale, Rotation, and Translation into one single
+3x3 matrix operation to fix the blueprint in one mathematical
+step.
+Task 7: The Glitched Image (General Affine Transformation)
+•
+•
+Scenario: A corrupted data transmission resulted in a photograph
+being squished, slanted, rotated, and moved all at once.
+Task: You are given the starting and ending coordinates of three
+distinct landmarks in the photo. Solve a system of linear
+equations using these 3 points to find the 6 unknown values of
+a general Affine matrix, then fix the image.
+Task 8: The Sidewalk Illusion (Projective
+- Perspective)
+•
+Scenario: You took a photo of 3D chalk art on a sidewalk, but
+because you were standing in front of it, the far edge looks
+smaller than the close edge.
+Task: Pick 4 corners of the art that should mathematically form
+a perfect square. Build a perspective transformation matrix to
+warp the image, creating a top-down "birds-eye" view.
+Talha Shahid
+21 Page
+
+=== PAGE 3 ===
+Lab 03 Tasks
+Task 1: The Tiny Fingerprint (Linear
+- Scale)
+•
+Scenario: You are a detective analyzing a digital fingerprint
+from a crime scene, but it is too small to read.
+Task: Write a script to manually build a 2x2 scaling matrix.
+Enlarge the fingerprint by on the x-axis and on the
+y-axis. Calculate how to keep the fingerprint perfectly centered
+on the screen after it grows.
+Task 2: The Dizzy Satellite (Linear
+- Rotation)
+•
+Scenario: A weather satellite bumped into space debris and took
+photos of a city rotated at a steep 45-degree angle.
+Task: Formulate a 2x2 rotation matrix using sine and cosine
+functions. Spin the image back to true north. Manually calculate
+the new image dimensions so the corners of the city do not get
+chopped off during the spin.
+Task 3: The Fast Train Barcode (Linear -
+Shear)
+•
+•
+Scenario: A scanner took a photo of a barcode on a fast-moving
+train, causing the image to look slanted to the right.
+Task: Construct a 2x2 shear matrix to
+" push "
+the pixels
+horizontally. Shift the slanted lines back into a perfect
+rectangle so the barcode can be read correctly .
+Task 4: The Hidden Treasure Map (Affine - Translation)
+•
+Scenario: A digital map is misaligned. The "X marks the spot"
+is hidden off the screen, exactly 15@ pixels to the left and 80
+pixels up.
+Task: Upgrade your matrices from 2x2 to 3x3 to allow for
+movement. Create a translation matrix and apply it to shift every
+pixel, sliding the map safely back into the visible frame.
+Talha Shahid
+II Page

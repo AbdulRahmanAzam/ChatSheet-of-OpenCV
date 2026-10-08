@@ -1,0 +1,1569 @@
+﻿{
+    "id":  "lab_05_tasks_p001",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "Lab 05 Tasks General Requirements For every task: Use Python, OpenCV and NumPy. Display the original image and segmentation result . Do not use a prebuilt segmentation library or deep-learning segmentation model . Record the parameters you selected and briefly justify them. Save the final output of every task. Task 1 — Automated Inspection of a Document Under Uneven Lighting You are developing an automated document-scanning system for a university archive. A document was photographed using a mobile phone, but the lighting is not uniform: one side of the page is brighter than the other. The system must separate the printed text from the background . A single global threshold may produce missing characters in dark areas or unwanted regions in bright areas . Your Task Given the document image: Perform the following: 1. 2. 3. 4. 5. 6. Load the image in grayscale. Apply global thresholding using threshold values . Compare the resulting binary masks. at least three different Apply adaptive thresholding to the same image. Compare the adaptive result against your best result. global -threshold Identify which regions of the document cause global thresholding to fail. Talha Shahid II Page",
+    "review_status":  "raw_ocr_unverified",
+    "page":  1,
+    "source_id":  "lab_05_tasks",
+    "lines":  [
+                  {
+                      "text":  "Lab 05 Tasks",
+                      "words":  [
+                                    {
+                                        "y":  181,
+                                        "height":  35,
+                                        "width":  82,
+                                        "text":  "Lab",
+                                        "x":  536
+                                    },
+                                    {
+                                        "y":  182,
+                                        "height":  34,
+                                        "width":  55,
+                                        "text":  "05",
+                                        "x":  636
+                                    },
+                                    {
+                                        "y":  181,
+                                        "height":  35,
+                                        "width":  127,
+                                        "text":  "Tasks",
+                                        "x":  709
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "General Requirements",
+                      "words":  [
+                                    {
+                                        "y":  261,
+                                        "height":  20,
+                                        "width":  104,
+                                        "text":  "General",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  261,
+                                        "height":  25,
+                                        "width":  178,
+                                        "text":  "Requirements",
+                                        "x":  290
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "For every task:",
+                      "words":  [
+                                    {
+                                        "y":  318,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "For",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  322,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "every",
+                                        "x":  230
+                                    },
+                                    {
+                                        "y":  317,
+                                        "height":  20,
+                                        "width":  70,
+                                        "text":  "task:",
+                                        "x":  320
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Use Python, OpenCV and NumPy.",
+                      "words":  [
+                                    {
+                                        "y":  373,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "Use",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  373,
+                                        "height":  24,
+                                        "width":  100,
+                                        "text":  "Python,",
+                                        "x":  313
+                                    },
+                                    {
+                                        "y":  373,
+                                        "height":  24,
+                                        "width":  90,
+                                        "text":  "OpenCV",
+                                        "x":  432
+                                    },
+                                    {
+                                        "y":  373,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "and",
+                                        "x":  538
+                                    },
+                                    {
+                                        "y":  374,
+                                        "height":  23,
+                                        "width":  84,
+                                        "text":  "NumPy.",
+                                        "x":  599
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Display the original image and segmentation result .",
+                      "words":  [
+                                    {
+                                        "y":  428,
+                                        "height":  25,
+                                        "width":  103,
+                                        "text":  "Display",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  429,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  372
+                                    },
+                                    {
+                                        "y":  428,
+                                        "height":  26,
+                                        "width":  118,
+                                        "text":  "original",
+                                        "x":  433
+                                    },
+                                    {
+                                        "y":  428,
+                                        "height":  25,
+                                        "width":  73,
+                                        "text":  "image",
+                                        "x":  569
+                                    },
+                                    {
+                                        "y":  429,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "and",
+                                        "x":  659
+                                    },
+                                    {
+                                        "y":  428,
+                                        "height":  26,
+                                        "width":  179,
+                                        "text":  "segmentation",
+                                        "x":  720
+                                    },
+                                    {
+                                        "y":  429,
+                                        "height":  19,
+                                        "width":  88,
+                                        "text":  "result",
+                                        "x":  916
+                                    },
+                                    {
+                                        "y":  444,
+                                        "height":  4,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  1011
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Do not use a prebuilt segmentation library or deep-learning",
+                      "words":  [
+                                    {
+                                        "y":  486,
+                                        "height":  19,
+                                        "width":  28,
+                                        "text":  "Do",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  486,
+                                        "height":  19,
+                                        "width":  42,
+                                        "text":  "not",
+                                        "x":  305
+                                    },
+                                    {
+                                        "y":  491,
+                                        "height":  14,
+                                        "width":  42,
+                                        "text":  "use",
+                                        "x":  373
+                                    },
+                                    {
+                                        "y":  491,
+                                        "height":  14,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  440
+                                    },
+                                    {
+                                        "y":  485,
+                                        "height":  25,
+                                        "width":  118,
+                                        "text":  "prebuilt",
+                                        "x":  478
+                                    },
+                                    {
+                                        "y":  485,
+                                        "height":  25,
+                                        "width":  179,
+                                        "text":  "segmentation",
+                                        "x":  621
+                                    },
+                                    {
+                                        "y":  485,
+                                        "height":  25,
+                                        "width":  103,
+                                        "text":  "library",
+                                        "x":  825
+                                    },
+                                    {
+                                        "y":  491,
+                                        "height":  14,
+                                        "width":  29,
+                                        "text":  "or",
+                                        "x":  952
+                                    },
+                                    {
+                                        "y":  485,
+                                        "height":  25,
+                                        "width":  196,
+                                        "text":  "deep-learning",
+                                        "x":  1005
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "segmentation model .",
+                      "words":  [
+                                    {
+                                        "y":  523,
+                                        "height":  25,
+                                        "width":  178,
+                                        "text":  "segmentation",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  523,
+                                        "height":  20,
+                                        "width":  72,
+                                        "text":  "model",
+                                        "x":  448
+                                    },
+                                    {
+                                        "y":  539,
+                                        "height":  4,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  527
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Record the parameters you selected and briefly justify them.",
+                      "words":  [
+                                    {
+                                        "y":  579,
+                                        "height":  20,
+                                        "width":  87,
+                                        "text":  "Record",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  579,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  357
+                                    },
+                                    {
+                                        "y":  580,
+                                        "height":  24,
+                                        "width":  147,
+                                        "text":  "parameters",
+                                        "x":  419
+                                    },
+                                    {
+                                        "y":  585,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "you",
+                                        "x":  583
+                                    },
+                                    {
+                                        "y":  579,
+                                        "height":  20,
+                                        "width":  117,
+                                        "text":  "selected",
+                                        "x":  645
+                                    },
+                                    {
+                                        "y":  579,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  780
+                                    },
+                                    {
+                                        "y":  579,
+                                        "height":  25,
+                                        "width":  102,
+                                        "text":  "briefly",
+                                        "x":  842
+                                    },
+                                    {
+                                        "y":  579,
+                                        "height":  25,
+                                        "width":  103,
+                                        "text":  "justify",
+                                        "x":  962
+                                    },
+                                    {
+                                        "y":  579,
+                                        "height":  20,
+                                        "width":  70,
+                                        "text":  "them.",
+                                        "x":  1082
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Save the final output of every task.",
+                      "words":  [
+                                    {
+                                        "y":  637,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "Save",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  636,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  327
+                                    },
+                                    {
+                                        "y":  636,
+                                        "height":  20,
+                                        "width":  72,
+                                        "text":  "final",
+                                        "x":  388
+                                    },
+                                    {
+                                        "y":  637,
+                                        "height":  24,
+                                        "width":  88,
+                                        "text":  "output",
+                                        "x":  478
+                                    },
+                                    {
+                                        "y":  636,
+                                        "height":  20,
+                                        "width":  29,
+                                        "text":  "of",
+                                        "x":  583
+                                    },
+                                    {
+                                        "y":  641,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "every",
+                                        "x":  629
+                                    },
+                                    {
+                                        "y":  636,
+                                        "height":  20,
+                                        "width":  70,
+                                        "text":  "task.",
+                                        "x":  719
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Task 1 — Automated Inspection of a Document Under Uneven Lighting",
+                      "words":  [
+                                    {
+                                        "y":  748,
+                                        "height":  20,
+                                        "width":  61,
+                                        "text":  "Task",
+                                        "x":  168
+                                    },
+                                    {
+                                        "y":  749,
+                                        "height":  18,
+                                        "width":  14,
+                                        "text":  "1",
+                                        "x":  245
+                                    },
+                                    {
+                                        "y":  757,
+                                        "height":  4,
+                                        "width":  16,
+                                        "text":  "—",
+                                        "x":  274
+                                    },
+                                    {
+                                        "y":  748,
+                                        "height":  20,
+                                        "width":  135,
+                                        "text":  "Automated",
+                                        "x":  304
+                                    },
+                                    {
+                                        "y":  747,
+                                        "height":  26,
+                                        "width":  149,
+                                        "text":  "Inspection",
+                                        "x":  456
+                                    },
+                                    {
+                                        "y":  748,
+                                        "height":  20,
+                                        "width":  29,
+                                        "text":  "of",
+                                        "x":  622
+                                    },
+                                    {
+                                        "y":  753,
+                                        "height":  15,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  667
+                                    },
+                                    {
+                                        "y":  749,
+                                        "height":  19,
+                                        "width":  118,
+                                        "text":  "Document",
+                                        "x":  698
+                                    },
+                                    {
+                                        "y":  748,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "Under",
+                                        "x":  834
+                                    },
+                                    {
+                                        "y":  749,
+                                        "height":  19,
+                                        "width":  89,
+                                        "text":  "Uneven",
+                                        "x":  924
+                                    },
+                                    {
+                                        "y":  747,
+                                        "height":  26,
+                                        "width":  120,
+                                        "text":  "Lighting",
+                                        "x":  1030
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "You are developing an automated document-scanning system for a",
+                      "words":  [
+                                    {
+                                        "y":  805,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "You",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  809,
+                                        "height":  15,
+                                        "width":  43,
+                                        "text":  "are",
+                                        "x":  242
+                                    },
+                                    {
+                                        "y":  804,
+                                        "height":  25,
+                                        "width":  149,
+                                        "text":  "developing",
+                                        "x":  314
+                                    },
+                                    {
+                                        "y":  809,
+                                        "height":  15,
+                                        "width":  27,
+                                        "text":  "an",
+                                        "x":  492
+                                    },
+                                    {
+                                        "y":  804,
+                                        "height":  20,
+                                        "width":  134,
+                                        "text":  "automated",
+                                        "x":  549
+                                    },
+                                    {
+                                        "y":  804,
+                                        "height":  25,
+                                        "width":  255,
+                                        "text":  "document-scanning",
+                                        "x":  713
+                                    },
+                                    {
+                                        "y":  805,
+                                        "height":  24,
+                                        "width":  89,
+                                        "text":  "system",
+                                        "x":  997
+                                    },
+                                    {
+                                        "y":  804,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "for",
+                                        "x":  1115
+                                    },
+                                    {
+                                        "y":  809,
+                                        "height":  15,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  1187
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "university archive. A document was photographed using a mobile phone,",
+                      "words":  [
+                                    {
+                                        "y":  842,
+                                        "height":  25,
+                                        "width":  148,
+                                        "text":  "university",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  842,
+                                        "height":  20,
+                                        "width":  114,
+                                        "text":  "archive.",
+                                        "x":  335
+                                    },
+                                    {
+                                        "y":  843,
+                                        "height":  19,
+                                        "width":  14,
+                                        "text":  "A",
+                                        "x":  468
+                                    },
+                                    {
+                                        "y":  842,
+                                        "height":  20,
+                                        "width":  119,
+                                        "text":  "document",
+                                        "x":  497
+                                    },
+                                    {
+                                        "y":  847,
+                                        "height":  15,
+                                        "width":  44,
+                                        "text":  "was",
+                                        "x":  632
+                                    },
+                                    {
+                                        "y":  842,
+                                        "height":  25,
+                                        "width":  179,
+                                        "text":  "photographed",
+                                        "x":  693
+                                    },
+                                    {
+                                        "y":  842,
+                                        "height":  25,
+                                        "width":  72,
+                                        "text":  "using",
+                                        "x":  889
+                                    },
+                                    {
+                                        "y":  847,
+                                        "height":  15,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  977
+                                    },
+                                    {
+                                        "y":  842,
+                                        "height":  20,
+                                        "width":  89,
+                                        "text":  "mobile",
+                                        "x":  1006
+                                    },
+                                    {
+                                        "y":  842,
+                                        "height":  25,
+                                        "width":  84,
+                                        "text":  "phone,",
+                                        "x":  1112
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "but the lighting is not uniform: one side of the page is brighter than",
+                      "words":  [
+                                    {
+                                        "y":  880,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "but",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  880,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  227
+                                    },
+                                    {
+                                        "y":  880,
+                                        "height":  25,
+                                        "width":  119,
+                                        "text":  "lighting",
+                                        "x":  287
+                                    },
+                                    {
+                                        "y":  880,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  421
+                                    },
+                                    {
+                                        "y":  881,
+                                        "height":  19,
+                                        "width":  42,
+                                        "text":  "not",
+                                        "x":  464
+                                    },
+                                    {
+                                        "y":  880,
+                                        "height":  20,
+                                        "width":  114,
+                                        "text":  "uniform:",
+                                        "x":  522
+                                    },
+                                    {
+                                        "y":  885,
+                                        "height":  15,
+                                        "width":  43,
+                                        "text":  "one",
+                                        "x":  656
+                                    },
+                                    {
+                                        "y":  880,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "side",
+                                        "x":  715
+                                    },
+                                    {
+                                        "y":  880,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  789
+                                    },
+                                    {
+                                        "y":  880,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  832
+                                    },
+                                    {
+                                        "y":  884,
+                                        "height":  21,
+                                        "width":  56,
+                                        "text":  "page",
+                                        "x":  892
+                                    },
+                                    {
+                                        "y":  880,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  965
+                                    },
+                                    {
+                                        "y":  880,
+                                        "height":  25,
+                                        "width":  119,
+                                        "text":  "brighter",
+                                        "x":  1008
+                                    },
+                                    {
+                                        "y":  880,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "than",
+                                        "x":  1141
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "the other. The system must separate the printed text from the",
+                      "words":  [
+                                    {
+                                        "y":  918,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  918,
+                                        "height":  20,
+                                        "width":  85,
+                                        "text":  "other.",
+                                        "x":  241
+                                    },
+                                    {
+                                        "y":  918,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "The",
+                                        "x":  357
+                                    },
+                                    {
+                                        "y":  919,
+                                        "height":  24,
+                                        "width":  87,
+                                        "text":  "system",
+                                        "x":  430
+                                    },
+                                    {
+                                        "y":  919,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "must",
+                                        "x":  546
+                                    },
+                                    {
+                                        "y":  919,
+                                        "height":  24,
+                                        "width":  118,
+                                        "text":  "separate",
+                                        "x":  633
+                                    },
+                                    {
+                                        "y":  918,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  779
+                                    },
+                                    {
+                                        "y":  918,
+                                        "height":  25,
+                                        "width":  102,
+                                        "text":  "printed",
+                                        "x":  852
+                                    },
+                                    {
+                                        "y":  919,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "text",
+                                        "x":  983
+                                    },
+                                    {
+                                        "y":  918,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "from",
+                                        "x":  1071
+                                    },
+                                    {
+                                        "y":  918,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  1157
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "background .",
+                      "words":  [
+                                    {
+                                        "y":  957,
+                                        "height":  25,
+                                        "width":  148,
+                                        "text":  "background",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  972,
+                                        "height":  4,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  325
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "A single global threshold may produce missing characters in dark areas",
+                      "words":  [
+                                    {
+                                        "y":  1014,
+                                        "height":  18,
+                                        "width":  14,
+                                        "text":  "A",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1012,
+                                        "height":  26,
+                                        "width":  88,
+                                        "text":  "single",
+                                        "x":  198
+                                    },
+                                    {
+                                        "y":  1013,
+                                        "height":  25,
+                                        "width":  87,
+                                        "text":  "global",
+                                        "x":  301
+                                    },
+                                    {
+                                        "y":  1013,
+                                        "height":  20,
+                                        "width":  133,
+                                        "text":  "threshold",
+                                        "x":  403
+                                    },
+                                    {
+                                        "y":  1018,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "may",
+                                        "x":  551
+                                    },
+                                    {
+                                        "y":  1013,
+                                        "height":  25,
+                                        "width":  103,
+                                        "text":  "produce",
+                                        "x":  610
+                                    },
+                                    {
+                                        "y":  1012,
+                                        "height":  26,
+                                        "width":  105,
+                                        "text":  "missing",
+                                        "x":  728
+                                    },
+                                    {
+                                        "y":  1013,
+                                        "height":  20,
+                                        "width":  147,
+                                        "text":  "characters",
+                                        "x":  848
+                                    },
+                                    {
+                                        "y":  1012,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "in",
+                                        "x":  1011
+                                    },
+                                    {
+                                        "y":  1013,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "dark",
+                                        "x":  1053
+                                    },
+                                    {
+                                        "y":  1018,
+                                        "height":  15,
+                                        "width":  73,
+                                        "text":  "areas",
+                                        "x":  1127
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "or unwanted regions in bright areas .",
+                      "words":  [
+                                    {
+                                        "y":  1056,
+                                        "height":  14,
+                                        "width":  29,
+                                        "text":  "or",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1051,
+                                        "height":  19,
+                                        "width":  118,
+                                        "text":  "unwanted",
+                                        "x":  215
+                                    },
+                                    {
+                                        "y":  1050,
+                                        "height":  25,
+                                        "width":  103,
+                                        "text":  "regions",
+                                        "x":  351
+                                    },
+                                    {
+                                        "y":  1051,
+                                        "height":  18,
+                                        "width":  26,
+                                        "text":  "in",
+                                        "x":  472
+                                    },
+                                    {
+                                        "y":  1050,
+                                        "height":  25,
+                                        "width":  88,
+                                        "text":  "bright",
+                                        "x":  517
+                                    },
+                                    {
+                                        "y":  1056,
+                                        "height":  14,
+                                        "width":  73,
+                                        "text":  "areas",
+                                        "x":  622
+                                    },
+                                    {
+                                        "y":  1065,
+                                        "height":  5,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  702
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Your Task",
+                      "words":  [
+                                    {
+                                        "y":  1107,
+                                        "height":  19,
+                                        "width":  60,
+                                        "text":  "Your",
+                                        "x":  168
+                                    },
+                                    {
+                                        "y":  1107,
+                                        "height":  19,
+                                        "width":  60,
+                                        "text":  "Task",
+                                        "x":  244
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Given the document image:",
+                      "words":  [
+                                    {
+                                        "y":  1162,
+                                        "height":  21,
+                                        "width":  73,
+                                        "text":  "Given",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1163,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  259
+                                    },
+                                    {
+                                        "y":  1163,
+                                        "height":  19,
+                                        "width":  118,
+                                        "text":  "document",
+                                        "x":  321
+                                    },
+                                    {
+                                        "y":  1162,
+                                        "height":  25,
+                                        "width":  84,
+                                        "text":  "image:",
+                                        "x":  456
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Perform the following:",
+                      "words":  [
+                                    {
+                                        "y":  1219,
+                                        "height":  20,
+                                        "width":  103,
+                                        "text":  "Perform",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1219,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  290
+                                    },
+                                    {
+                                        "y":  1218,
+                                        "height":  25,
+                                        "width":  144,
+                                        "text":  "following:",
+                                        "x":  351
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1.",
+                      "words":  [
+                                    {
+                                        "y":  1276,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "1.",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2.",
+                      "words":  [
+                                    {
+                                        "y":  1333,
+                                        "height":  19,
+                                        "width":  23,
+                                        "text":  "2.",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3.",
+                      "words":  [
+                                    {
+                                        "y":  1426,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "3.",
+                                        "x":  210
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4.",
+                      "words":  [
+                                    {
+                                        "y":  1482,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "4.",
+                                        "x":  210
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "5.",
+                      "words":  [
+                                    {
+                                        "y":  1539,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "5.",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "6.",
+                      "words":  [
+                                    {
+                                        "y":  1633,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "6.",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Load the image in grayscale.",
+                      "words":  [
+                                    {
+                                        "y":  1275,
+                                        "height":  20,
+                                        "width":  56,
+                                        "text":  "Load",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  1275,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  327
+                                    },
+                                    {
+                                        "y":  1275,
+                                        "height":  25,
+                                        "width":  71,
+                                        "text":  "image",
+                                        "x":  389
+                                    },
+                                    {
+                                        "y":  1275,
+                                        "height":  20,
+                                        "width":  26,
+                                        "text":  "in",
+                                        "x":  479
+                                    },
+                                    {
+                                        "y":  1275,
+                                        "height":  25,
+                                        "width":  145,
+                                        "text":  "grayscale.",
+                                        "x":  523
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Apply global thresholding using",
+                      "words":  [
+                                    {
+                                        "y":  1332,
+                                        "height":  25,
+                                        "width":  74,
+                                        "text":  "Apply",
+                                        "x":  251
+                                    },
+                                    {
+                                        "y":  1332,
+                                        "height":  25,
+                                        "width":  89,
+                                        "text":  "global",
+                                        "x":  357
+                                    },
+                                    {
+                                        "y":  1332,
+                                        "height":  25,
+                                        "width":  182,
+                                        "text":  "thresholding",
+                                        "x":  476
+                                    },
+                                    {
+                                        "y":  1332,
+                                        "height":  25,
+                                        "width":  73,
+                                        "text":  "using",
+                                        "x":  690
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "threshold values .",
+                      "words":  [
+                                    {
+                                        "y":  1370,
+                                        "height":  20,
+                                        "width":  135,
+                                        "text":  "threshold",
+                                        "x":  251
+                                    },
+                                    {
+                                        "y":  1370,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "values",
+                                        "x":  402
+                                    },
+                                    {
+                                        "y":  1385,
+                                        "height":  5,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  497
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Compare the resulting binary masks.",
+                      "words":  [
+                                    {
+                                        "y":  1426,
+                                        "height":  24,
+                                        "width":  103,
+                                        "text":  "Compare",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1425,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  372
+                                    },
+                                    {
+                                        "y":  1425,
+                                        "height":  25,
+                                        "width":  134,
+                                        "text":  "resulting",
+                                        "x":  433
+                                    },
+                                    {
+                                        "y":  1425,
+                                        "height":  25,
+                                        "width":  88,
+                                        "text":  "binary",
+                                        "x":  584
+                                    },
+                                    {
+                                        "y":  1425,
+                                        "height":  20,
+                                        "width":  85,
+                                        "text":  "masks.",
+                                        "x":  689
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "at",
+                      "words":  [
+                                    {
+                                        "y":  1333,
+                                        "height":  19,
+                                        "width":  28,
+                                        "text":  "at",
+                                        "x":  795
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "least",
+                      "words":  [
+                                    {
+                                        "y":  1332,
+                                        "height":  20,
+                                        "width":  72,
+                                        "text":  "least",
+                                        "x":  856
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "three",
+                      "words":  [
+                                    {
+                                        "y":  1332,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "three",
+                                        "x":  960
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "different",
+                      "words":  [
+                                    {
+                                        "y":  1332,
+                                        "height":  20,
+                                        "width":  134,
+                                        "text":  "different",
+                                        "x":  1066
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Apply adaptive thresholding to the same image.",
+                      "words":  [
+                                    {
+                                        "y":  1481,
+                                        "height":  25,
+                                        "width":  74,
+                                        "text":  "Apply",
+                                        "x":  251
+                                    },
+                                    {
+                                        "y":  1481,
+                                        "height":  24,
+                                        "width":  119,
+                                        "text":  "adaptive",
+                                        "x":  342
+                                    },
+                                    {
+                                        "y":  1481,
+                                        "height":  25,
+                                        "width":  181,
+                                        "text":  "thresholding",
+                                        "x":  477
+                                    },
+                                    {
+                                        "y":  1482,
+                                        "height":  19,
+                                        "width":  28,
+                                        "text":  "to",
+                                        "x":  674
+                                    },
+                                    {
+                                        "y":  1481,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  719
+                                    },
+                                    {
+                                        "y":  1486,
+                                        "height":  15,
+                                        "width":  58,
+                                        "text":  "same",
+                                        "x":  781
+                                    },
+                                    {
+                                        "y":  1481,
+                                        "height":  25,
+                                        "width":  83,
+                                        "text":  "image.",
+                                        "x":  857
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Compare the adaptive result against your best",
+                      "words":  [
+                                    {
+                                        "y":  1538,
+                                        "height":  24,
+                                        "width":  103,
+                                        "text":  "Compare",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1538,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  374
+                                    },
+                                    {
+                                        "y":  1537,
+                                        "height":  25,
+                                        "width":  118,
+                                        "text":  "adaptive",
+                                        "x":  437
+                                    },
+                                    {
+                                        "y":  1538,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "result",
+                                        "x":  575
+                                    },
+                                    {
+                                        "y":  1537,
+                                        "height":  26,
+                                        "width":  104,
+                                        "text":  "against",
+                                        "x":  682
+                                    },
+                                    {
+                                        "y":  1543,
+                                        "height":  19,
+                                        "width":  60,
+                                        "text":  "your",
+                                        "x":  805
+                                    },
+                                    {
+                                        "y":  1538,
+                                        "height":  20,
+                                        "width":  56,
+                                        "text":  "best",
+                                        "x":  884
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "result.",
+                      "words":  [
+                                    {
+                                        "y":  1576,
+                                        "height":  20,
+                                        "width":  99,
+                                        "text":  "result.",
+                                        "x":  252
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "global -threshold",
+                      "words":  [
+                                    {
+                                        "y":  1538,
+                                        "height":  25,
+                                        "width":  88,
+                                        "text":  "global",
+                                        "x":  960
+                                    },
+                                    {
+                                        "y":  1538,
+                                        "height":  20,
+                                        "width":  147,
+                                        "text":  "-threshold",
+                                        "x":  1053
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Identify which regions of the document cause global thresholding",
+                      "words":  [
+                                    {
+                                        "y":  1631,
+                                        "height":  25,
+                                        "width":  119,
+                                        "text":  "Identify",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1631,
+                                        "height":  21,
+                                        "width":  73,
+                                        "text":  "which",
+                                        "x":  385
+                                    },
+                                    {
+                                        "y":  1631,
+                                        "height":  26,
+                                        "width":  103,
+                                        "text":  "regions",
+                                        "x":  474
+                                    },
+                                    {
+                                        "y":  1632,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  593
+                                    },
+                                    {
+                                        "y":  1632,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  635
+                                    },
+                                    {
+                                        "y":  1632,
+                                        "height":  20,
+                                        "width":  118,
+                                        "text":  "document",
+                                        "x":  695
+                                    },
+                                    {
+                                        "y":  1637,
+                                        "height":  15,
+                                        "width":  73,
+                                        "text":  "cause",
+                                        "x":  829
+                                    },
+                                    {
+                                        "y":  1632,
+                                        "height":  25,
+                                        "width":  88,
+                                        "text":  "global",
+                                        "x":  917
+                                    },
+                                    {
+                                        "y":  1631,
+                                        "height":  26,
+                                        "width":  181,
+                                        "text":  "thresholding",
+                                        "x":  1020
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "to fail.",
+                      "words":  [
+                                    {
+                                        "y":  1671,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  251
+                                    },
+                                    {
+                                        "y":  1669,
+                                        "height":  21,
+                                        "width":  69,
+                                        "text":  "fail.",
+                                        "x":  297
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1821,
+                                        "height":  21,
+                                        "width":  75,
+                                        "text":  "Talha",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1820,
+                                        "height":  23,
+                                        "width":  95,
+                                        "text":  "Shahid",
+                                        "x":  255
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "II",
+                      "words":  [
+                                    {
+                                        "y":  1821,
+                                        "height":  27,
+                                        "width":  28,
+                                        "text":  "II",
+                                        "x":  1064
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Page",
+                      "words":  [
+                                    {
+                                        "y":  1822,
+                                        "height":  27,
+                                        "width":  86,
+                                        "text":  "Page",
+                                        "x":  1105
+                                    }
+                                ]
+                  }
+              ]
+}

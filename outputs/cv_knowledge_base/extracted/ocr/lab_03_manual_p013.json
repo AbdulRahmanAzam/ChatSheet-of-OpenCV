@@ -1,0 +1,1948 @@
+﻿{
+    "id":  "lab_03_manual_p013",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "National University of Computer \u0026 Emerging Sciences - NUCES - Karachi Department of Artificial Intelligence The uniform light angles of the original grid are skewed, warping the coordinate system and stretching the original squares into tilted parallelograms . Core Properties Preserved Despite the structural distortion of the grid, the affine transformation strictly enforces two fundamental mathematical rules: • • Collinearity: Points A , and CI remain positioned on a perfectly straight, continuous line. While the line itself has changed its angle, it does not curve , bend , or break . Furthermore, the ratio of the distances between these points (A 1B\u0027 relative to B\u0027CI) remains mathematically identical to the original ratio of AB to BC. Parallelism: The grid lines that were parallel in the original space stretch and tilt uniformly together. Lines that never intersected in the original Cartesian grid remain strictly parallel and will never intersect in the transformed coordinate space. 6.1.1 Linear Transformation A linear transformation is the foundational subset of an affine transformation that relies strictly on matrix multiplication, meaning it can warp, scale, and rotate space, but it is mathematically tethered to the origin point . Note: A linear transformation translation vector. is affine transformation without a 6.1.1.1 The Mathematical Foundation A linear transformation operates by multiplying a coordinate vector p by a 2 x 2 transformation matrix A: p\u0027 = Ap Expanded into its full matrix form, it looks like this: FAST NUCES - Karachi Talha Shahid 12",
+    "review_status":  "raw_ocr_unverified",
+    "page":  13,
+    "source_id":  "lab_03_manual",
+    "lines":  [
+                  {
+                      "text":  "National University of Computer \u0026 Emerging Sciences -",
+                      "words":  [
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  123,
+                                        "text":  "National",
+                                        "x":  373
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  30,
+                                        "width":  153,
+                                        "text":  "University",
+                                        "x":  505
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  29,
+                                        "text":  "of",
+                                        "x":  666
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  30,
+                                        "width":  146,
+                                        "text":  "Computer",
+                                        "x":  701
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  23,
+                                        "text":  "\u0026",
+                                        "x":  855
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  30,
+                                        "width":  141,
+                                        "text":  "Emerging",
+                                        "x":  886
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  123,
+                                        "text":  "Sciences",
+                                        "x":  1035
+                                    },
+                                    {
+                                        "y":  106,
+                                        "height":  5,
+                                        "width":  8,
+                                        "text":  "-",
+                                        "x":  1168
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "NUCES - Karachi",
+                      "words":  [
+                                    {
+                                        "y":  138,
+                                        "height":  23,
+                                        "width":  94,
+                                        "text":  "NUCES",
+                                        "x":  657
+                                    },
+                                    {
+                                        "y":  149,
+                                        "height":  5,
+                                        "width":  9,
+                                        "text":  "-",
+                                        "x":  760
+                                    },
+                                    {
+                                        "y":  137,
+                                        "height":  24,
+                                        "width":  114,
+                                        "text":  "Karachi",
+                                        "x":  778
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Department of Artificial Intelligence",
+                      "words":  [
+                                    {
+                                        "y":  179,
+                                        "height":  27,
+                                        "width":  141,
+                                        "text":  "Department",
+                                        "x":  558
+                                    },
+                                    {
+                                        "y":  178,
+                                        "height":  22,
+                                        "width":  25,
+                                        "text":  "of",
+                                        "x":  707
+                                    },
+                                    {
+                                        "y":  178,
+                                        "height":  22,
+                                        "width":  100,
+                                        "text":  "Artificial",
+                                        "x":  738
+                                    },
+                                    {
+                                        "y":  178,
+                                        "height":  28,
+                                        "width":  137,
+                                        "text":  "Intelligence",
+                                        "x":  849
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The uniform light angles of the original grid are skewed, warping",
+                      "words":  [
+                                    {
+                                        "y":  294,
+                                        "height":  20,
+                                        "width":  45,
+                                        "text":  "The",
+                                        "x":  251
+                                    },
+                                    {
+                                        "y":  294,
+                                        "height":  20,
+                                        "width":  103,
+                                        "text":  "uniform",
+                                        "x":  311
+                                    },
+                                    {
+                                        "y":  294,
+                                        "height":  24,
+                                        "width":  73,
+                                        "text":  "light",
+                                        "x":  428
+                                    },
+                                    {
+                                        "y":  294,
+                                        "height":  24,
+                                        "width":  87,
+                                        "text":  "angles",
+                                        "x":  516
+                                    },
+                                    {
+                                        "y":  294,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  618
+                                    },
+                                    {
+                                        "y":  294,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  660
+                                    },
+                                    {
+                                        "y":  294,
+                                        "height":  24,
+                                        "width":  118,
+                                        "text":  "original",
+                                        "x":  717
+                                    },
+                                    {
+                                        "y":  294,
+                                        "height":  24,
+                                        "width":  58,
+                                        "text":  "grid",
+                                        "x":  850
+                                    },
+                                    {
+                                        "y":  300,
+                                        "height":  14,
+                                        "width":  43,
+                                        "text":  "are",
+                                        "x":  923
+                                    },
+                                    {
+                                        "y":  294,
+                                        "height":  23,
+                                        "width":  99,
+                                        "text":  "skewed,",
+                                        "x":  981
+                                    },
+                                    {
+                                        "y":  294,
+                                        "height":  24,
+                                        "width":  106,
+                                        "text":  "warping",
+                                        "x":  1097
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "the coordinate system and stretching the original squares into",
+                      "words":  [
+                                    {
+                                        "y":  331,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  330,
+                                        "height":  20,
+                                        "width":  149,
+                                        "text":  "coordinate",
+                                        "x":  315
+                                    },
+                                    {
+                                        "y":  331,
+                                        "height":  24,
+                                        "width":  89,
+                                        "text":  "system",
+                                        "x":  483
+                                    },
+                                    {
+                                        "y":  331,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  590
+                                    },
+                                    {
+                                        "y":  330,
+                                        "height":  25,
+                                        "width":  148,
+                                        "text":  "stretching",
+                                        "x":  653
+                                    },
+                                    {
+                                        "y":  331,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  819
+                                    },
+                                    {
+                                        "y":  330,
+                                        "height":  25,
+                                        "width":  119,
+                                        "text":  "original",
+                                        "x":  882
+                                    },
+                                    {
+                                        "y":  336,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "squares",
+                                        "x":  1021
+                                    },
+                                    {
+                                        "y":  330,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "into",
+                                        "x":  1144
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "tilted parallelograms .",
+                      "words":  [
+                                    {
+                                        "y":  368,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "tilted",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  369,
+                                        "height":  24,
+                                        "width":  208,
+                                        "text":  "parallelograms",
+                                        "x":  359
+                                    },
+                                    {
+                                        "y":  384,
+                                        "height":  4,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  574
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Core Properties Preserved Despite the structural distortion of the",
+                      "words":  [
+                                    {
+                                        "y":  445,
+                                        "height":  18,
+                                        "width":  60,
+                                        "text":  "Core",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  444,
+                                        "height":  24,
+                                        "width":  149,
+                                        "text":  "Properties",
+                                        "x":  250
+                                    },
+                                    {
+                                        "y":  444,
+                                        "height":  20,
+                                        "width":  134,
+                                        "text":  "Preserved",
+                                        "x":  421
+                                    },
+                                    {
+                                        "y":  444,
+                                        "height":  24,
+                                        "width":  103,
+                                        "text":  "Despite",
+                                        "x":  577
+                                    },
+                                    {
+                                        "y":  444,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  700
+                                    },
+                                    {
+                                        "y":  444,
+                                        "height":  20,
+                                        "width":  148,
+                                        "text":  "structural",
+                                        "x":  767
+                                    },
+                                    {
+                                        "y":  443,
+                                        "height":  21,
+                                        "width":  149,
+                                        "text":  "distortion",
+                                        "x":  937
+                                    },
+                                    {
+                                        "y":  444,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  1109
+                                    },
+                                    {
+                                        "y":  444,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  1158
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "grid, the affine transformation strictly enforces two fundamental",
+                      "words":  [
+                                    {
+                                        "y":  482,
+                                        "height":  24,
+                                        "width":  69,
+                                        "text":  "grid,",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  482,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  267
+                                    },
+                                    {
+                                        "y":  481,
+                                        "height":  21,
+                                        "width":  88,
+                                        "text":  "affine",
+                                        "x":  336
+                                    },
+                                    {
+                                        "y":  481,
+                                        "height":  21,
+                                        "width":  210,
+                                        "text":  "transformation",
+                                        "x":  448
+                                    },
+                                    {
+                                        "y":  481,
+                                        "height":  26,
+                                        "width":  119,
+                                        "text":  "strictly",
+                                        "x":  683
+                                    },
+                                    {
+                                        "y":  482,
+                                        "height":  20,
+                                        "width":  119,
+                                        "text":  "enforces",
+                                        "x":  826
+                                    },
+                                    {
+                                        "y":  483,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "two",
+                                        "x":  969
+                                    },
+                                    {
+                                        "y":  482,
+                                        "height":  20,
+                                        "width":  163,
+                                        "text":  "fundamental",
+                                        "x":  1038
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "mathematical rules:",
+                      "words":  [
+                                    {
+                                        "y":  519,
+                                        "height":  20,
+                                        "width":  179,
+                                        "text":  "mathematical",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  519,
+                                        "height":  20,
+                                        "width":  84,
+                                        "text":  "rules:",
+                                        "x":  367
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "•",
+                      "words":  [
+                                    {
+                                        "y":  603,
+                                        "height":  9,
+                                        "width":  9,
+                                        "text":  "•",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "•",
+                      "words":  [
+                                    {
+                                        "y":  866,
+                                        "height":  9,
+                                        "width":  9,
+                                        "text":  "•",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Collinearity: Points A ,",
+                      "words":  [
+                                    {
+                                        "y":  594,
+                                        "height":  25,
+                                        "width":  191,
+                                        "text":  "Collinearity:",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  594,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "Points",
+                                        "x":  473
+                                    },
+                                    {
+                                        "y":  595,
+                                        "height":  19,
+                                        "width":  14,
+                                        "text":  "A",
+                                        "x":  586
+                                    },
+                                    {
+                                        "y":  610,
+                                        "height":  8,
+                                        "width":  6,
+                                        "text":  ",",
+                                        "x":  620
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "and CI remain positioned on a",
+                      "words":  [
+                                    {
+                                        "y":  595,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  723
+                                    },
+                                    {
+                                        "y":  595,
+                                        "height":  19,
+                                        "width":  23,
+                                        "text":  "CI",
+                                        "x":  792
+                                    },
+                                    {
+                                        "y":  594,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "remain",
+                                        "x":  846
+                                    },
+                                    {
+                                        "y":  594,
+                                        "height":  25,
+                                        "width":  148,
+                                        "text":  "positioned",
+                                        "x":  961
+                                    },
+                                    {
+                                        "y":  600,
+                                        "height":  14,
+                                        "width":  27,
+                                        "text":  "on",
+                                        "x":  1135
+                                    },
+                                    {
+                                        "y":  600,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  1189
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "perfectly straight, continuous line. While the line itself has",
+                      "words":  [
+                                    {
+                                        "y":  633,
+                                        "height":  23,
+                                        "width":  133,
+                                        "text":  "perfectly",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  632,
+                                        "height":  24,
+                                        "width":  129,
+                                        "text":  "straight,",
+                                        "x":  404
+                                    },
+                                    {
+                                        "y":  632,
+                                        "height":  19,
+                                        "width":  148,
+                                        "text":  "continuous",
+                                        "x":  555
+                                    },
+                                    {
+                                        "y":  632,
+                                        "height":  19,
+                                        "width":  69,
+                                        "text":  "line.",
+                                        "x":  721
+                                    },
+                                    {
+                                        "y":  632,
+                                        "height":  19,
+                                        "width":  75,
+                                        "text":  "While",
+                                        "x":  810
+                                    },
+                                    {
+                                        "y":  633,
+                                        "height":  18,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  901
+                                    },
+                                    {
+                                        "y":  632,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "line",
+                                        "x":  963
+                                    },
+                                    {
+                                        "y":  632,
+                                        "height":  19,
+                                        "width":  88,
+                                        "text":  "itself",
+                                        "x":  1039
+                                    },
+                                    {
+                                        "y":  633,
+                                        "height":  18,
+                                        "width":  42,
+                                        "text":  "has",
+                                        "x":  1145
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "changed its angle,",
+                      "words":  [
+                                    {
+                                        "y":  670,
+                                        "height":  24,
+                                        "width":  102,
+                                        "text":  "changed",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  669,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "its",
+                                        "x":  391
+                                    },
+                                    {
+                                        "y":  670,
+                                        "height":  24,
+                                        "width":  85,
+                                        "text":  "angle,",
+                                        "x":  467
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "it does not curve ,",
+                      "words":  [
+                                    {
+                                        "y":  669,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "it",
+                                        "x":  591
+                                    },
+                                    {
+                                        "y":  670,
+                                        "height":  19,
+                                        "width":  57,
+                                        "text":  "does",
+                                        "x":  652
+                                    },
+                                    {
+                                        "y":  671,
+                                        "height":  18,
+                                        "width":  43,
+                                        "text":  "not",
+                                        "x":  744
+                                    },
+                                    {
+                                        "y":  676,
+                                        "height":  13,
+                                        "width":  73,
+                                        "text":  "curve",
+                                        "x":  821
+                                    },
+                                    {
+                                        "y":  685,
+                                        "height":  8,
+                                        "width":  5,
+                                        "text":  ",",
+                                        "x":  900
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "bend ,",
+                      "words":  [
+                                    {
+                                        "y":  670,
+                                        "height":  19,
+                                        "width":  57,
+                                        "text":  "bend",
+                                        "x":  944
+                                    },
+                                    {
+                                        "y":  685,
+                                        "height":  8,
+                                        "width":  5,
+                                        "text":  ",",
+                                        "x":  1008
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "or break .",
+                      "words":  [
+                                    {
+                                        "y":  675,
+                                        "height":  14,
+                                        "width":  28,
+                                        "text":  "or",
+                                        "x":  1051
+                                    },
+                                    {
+                                        "y":  670,
+                                        "height":  19,
+                                        "width":  73,
+                                        "text":  "break",
+                                        "x":  1114
+                                    },
+                                    {
+                                        "y":  685,
+                                        "height":  4,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  1193
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Furthermore, the ratio of the distances between these points",
+                      "words":  [
+                                    {
+                                        "y":  707,
+                                        "height":  23,
+                                        "width":  175,
+                                        "text":  "Furthermore,",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  707,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  454
+                                    },
+                                    {
+                                        "y":  707,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "ratio",
+                                        "x":  521
+                                    },
+                                    {
+                                        "y":  707,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  617
+                                    },
+                                    {
+                                        "y":  707,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  667
+                                    },
+                                    {
+                                        "y":  707,
+                                        "height":  20,
+                                        "width":  134,
+                                        "text":  "distances",
+                                        "x":  732
+                                    },
+                                    {
+                                        "y":  707,
+                                        "height":  20,
+                                        "width":  103,
+                                        "text":  "between",
+                                        "x":  890
+                                    },
+                                    {
+                                        "y":  707,
+                                        "height":  20,
+                                        "width":  75,
+                                        "text":  "these",
+                                        "x":  1015
+                                    },
+                                    {
+                                        "y":  707,
+                                        "height":  25,
+                                        "width":  88,
+                                        "text":  "points",
+                                        "x":  1113
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "(A 1B\u0027 relative to B\u0027CI) remains mathematically identical to the",
+                      "words":  [
+                                    {
+                                        "y":  745,
+                                        "height":  23,
+                                        "width":  25,
+                                        "text":  "(A",
+                                        "x":  256
+                                    },
+                                    {
+                                        "y":  745,
+                                        "height":  20,
+                                        "width":  33,
+                                        "text":  "1B\u0027",
+                                        "x":  288
+                                    },
+                                    {
+                                        "y":  745,
+                                        "height":  20,
+                                        "width":  119,
+                                        "text":  "relative",
+                                        "x":  343
+                                    },
+                                    {
+                                        "y":  746,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  478
+                                    },
+                                    {
+                                        "y":  745,
+                                        "height":  23,
+                                        "width":  69,
+                                        "text":  "B\u0027CI)",
+                                        "x":  525
+                                    },
+                                    {
+                                        "y":  745,
+                                        "height":  20,
+                                        "width":  102,
+                                        "text":  "remains",
+                                        "x":  615
+                                    },
+                                    {
+                                        "y":  745,
+                                        "height":  25,
+                                        "width":  211,
+                                        "text":  "mathematically",
+                                        "x":  734
+                                    },
+                                    {
+                                        "y":  745,
+                                        "height":  20,
+                                        "width":  133,
+                                        "text":  "identical",
+                                        "x":  963
+                                    },
+                                    {
+                                        "y":  746,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  1113
+                                    },
+                                    {
+                                        "y":  745,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  1158
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "original ratio of AB to BC.",
+                      "words":  [
+                                    {
+                                        "y":  782,
+                                        "height":  25,
+                                        "width":  118,
+                                        "text":  "original",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  782,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "ratio",
+                                        "x":  389
+                                    },
+                                    {
+                                        "y":  783,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "of",
+                                        "x":  479
+                                    },
+                                    {
+                                        "y":  783,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "AB",
+                                        "x":  524
+                                    },
+                                    {
+                                        "y":  783,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  569
+                                    },
+                                    {
+                                        "y":  783,
+                                        "height":  19,
+                                        "width":  38,
+                                        "text":  "BC.",
+                                        "x":  616
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Parallelism: The grid lines that were parallel in the original",
+                      "words":  [
+                                    {
+                                        "y":  857,
+                                        "height":  20,
+                                        "width":  175,
+                                        "text":  "Parallelism:",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  858,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "The",
+                                        "x":  450
+                                    },
+                                    {
+                                        "y":  857,
+                                        "height":  25,
+                                        "width":  57,
+                                        "text":  "grid",
+                                        "x":  513
+                                    },
+                                    {
+                                        "y":  857,
+                                        "height":  21,
+                                        "width":  73,
+                                        "text":  "lines",
+                                        "x":  590
+                                    },
+                                    {
+                                        "y":  858,
+                                        "height":  20,
+                                        "width":  57,
+                                        "text":  "that",
+                                        "x":  682
+                                    },
+                                    {
+                                        "y":  864,
+                                        "height":  13,
+                                        "width":  59,
+                                        "text":  "were",
+                                        "x":  758
+                                    },
+                                    {
+                                        "y":  858,
+                                        "height":  24,
+                                        "width":  118,
+                                        "text":  "parallel",
+                                        "x":  836
+                                    },
+                                    {
+                                        "y":  857,
+                                        "height":  21,
+                                        "width":  26,
+                                        "text":  "in",
+                                        "x":  975
+                                    },
+                                    {
+                                        "y":  858,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  1020
+                                    },
+                                    {
+                                        "y":  857,
+                                        "height":  25,
+                                        "width":  118,
+                                        "text":  "original",
+                                        "x":  1083
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "space stretch and tilt uniformly together. Lines that never",
+                      "words":  [
+                                    {
+                                        "y":  902,
+                                        "height":  18,
+                                        "width":  73,
+                                        "text":  "space",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  896,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "stretch",
+                                        "x":  351
+                                    },
+                                    {
+                                        "y":  896,
+                                        "height":  19,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  479
+                                    },
+                                    {
+                                        "y":  895,
+                                        "height":  21,
+                                        "width":  59,
+                                        "text":  "tilt",
+                                        "x":  546
+                                    },
+                                    {
+                                        "y":  895,
+                                        "height":  25,
+                                        "width":  132,
+                                        "text":  "uniformly",
+                                        "x":  631
+                                    },
+                                    {
+                                        "y":  896,
+                                        "height":  24,
+                                        "width":  131,
+                                        "text":  "together.",
+                                        "x":  787
+                                    },
+                                    {
+                                        "y":  895,
+                                        "height":  21,
+                                        "width":  72,
+                                        "text":  "Lines",
+                                        "x":  948
+                                    },
+                                    {
+                                        "y":  896,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "that",
+                                        "x":  1044
+                                    },
+                                    {
+                                        "y":  902,
+                                        "height":  13,
+                                        "width":  73,
+                                        "text":  "never",
+                                        "x":  1129
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "intersected in the original Cartesian grid remain strictly",
+                      "words":  [
+                                    {
+                                        "y":  933,
+                                        "height":  21,
+                                        "width":  163,
+                                        "text":  "intersected",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  933,
+                                        "height":  21,
+                                        "width":  26,
+                                        "text":  "in",
+                                        "x":  446
+                                    },
+                                    {
+                                        "y":  934,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  500
+                                    },
+                                    {
+                                        "y":  933,
+                                        "height":  24,
+                                        "width":  117,
+                                        "text":  "original",
+                                        "x":  572
+                                    },
+                                    {
+                                        "y":  933,
+                                        "height":  21,
+                                        "width":  133,
+                                        "text":  "Cartesian",
+                                        "x":  718
+                                    },
+                                    {
+                                        "y":  933,
+                                        "height":  24,
+                                        "width":  57,
+                                        "text":  "grid",
+                                        "x":  880
+                                    },
+                                    {
+                                        "y":  933,
+                                        "height":  21,
+                                        "width":  88,
+                                        "text":  "remain",
+                                        "x":  966
+                                    },
+                                    {
+                                        "y":  933,
+                                        "height":  25,
+                                        "width":  118,
+                                        "text":  "strictly",
+                                        "x":  1083
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "parallel and will never intersect in the transformed coordinate",
+                      "words":  [
+                                    {
+                                        "y":  970,
+                                        "height":  25,
+                                        "width":  118,
+                                        "text":  "parallel",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  970,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  388
+                                    },
+                                    {
+                                        "y":  970,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "will",
+                                        "x":  448
+                                    },
+                                    {
+                                        "y":  976,
+                                        "height":  14,
+                                        "width":  73,
+                                        "text":  "never",
+                                        "x":  525
+                                    },
+                                    {
+                                        "y":  970,
+                                        "height":  20,
+                                        "width":  132,
+                                        "text":  "intersect",
+                                        "x":  616
+                                    },
+                                    {
+                                        "y":  970,
+                                        "height":  20,
+                                        "width":  26,
+                                        "text":  "in",
+                                        "x":  766
+                                    },
+                                    {
+                                        "y":  970,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  810
+                                    },
+                                    {
+                                        "y":  970,
+                                        "height":  20,
+                                        "width":  164,
+                                        "text":  "transformed",
+                                        "x":  870
+                                    },
+                                    {
+                                        "y":  970,
+                                        "height":  20,
+                                        "width":  149,
+                                        "text":  "coordinate",
+                                        "x":  1053
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "space.",
+                      "words":  [
+                                    {
+                                        "y":  1014,
+                                        "height":  19,
+                                        "width":  84,
+                                        "text":  "space.",
+                                        "x":  253
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "6.1.1 Linear Transformation",
+                      "words":  [
+                                    {
+                                        "y":  1084,
+                                        "height":  20,
+                                        "width":  60,
+                                        "text":  "6.1.1",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1081,
+                                        "height":  23,
+                                        "width":  87,
+                                        "text":  "Linear",
+                                        "x":  241
+                                    },
+                                    {
+                                        "y":  1081,
+                                        "height":  23,
+                                        "width":  218,
+                                        "text":  "Transformation",
+                                        "x":  338
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "A linear transformation is the foundational subset of an affine",
+                      "words":  [
+                                    {
+                                        "y":  1170,
+                                        "height":  19,
+                                        "width":  15,
+                                        "text":  "A",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1169,
+                                        "height":  20,
+                                        "width":  90,
+                                        "text":  "linear",
+                                        "x":  209
+                                    },
+                                    {
+                                        "y":  1169,
+                                        "height":  20,
+                                        "width":  209,
+                                        "text":  "transformation",
+                                        "x":  324
+                                    },
+                                    {
+                                        "y":  1169,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  561
+                                    },
+                                    {
+                                        "y":  1169,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  614
+                                    },
+                                    {
+                                        "y":  1169,
+                                        "height":  20,
+                                        "width":  179,
+                                        "text":  "foundational",
+                                        "x":  683
+                                    },
+                                    {
+                                        "y":  1169,
+                                        "height":  20,
+                                        "width":  89,
+                                        "text":  "subset",
+                                        "x":  889
+                                    },
+                                    {
+                                        "y":  1169,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  1004
+                                    },
+                                    {
+                                        "y":  1175,
+                                        "height":  14,
+                                        "width":  27,
+                                        "text":  "an",
+                                        "x":  1059
+                                    },
+                                    {
+                                        "y":  1169,
+                                        "height":  20,
+                                        "width":  89,
+                                        "text":  "affine",
+                                        "x":  1113
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "transformation that relies strictly on matrix multiplication, meaning",
+                      "words":  [
+                                    {
+                                        "y":  1207,
+                                        "height":  20,
+                                        "width":  210,
+                                        "text":  "transformation",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1207,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "that",
+                                        "x":  395
+                                    },
+                                    {
+                                        "y":  1207,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "relies",
+                                        "x":  470
+                                    },
+                                    {
+                                        "y":  1207,
+                                        "height":  25,
+                                        "width":  118,
+                                        "text":  "strictly",
+                                        "x":  574
+                                    },
+                                    {
+                                        "y":  1213,
+                                        "height":  14,
+                                        "width":  27,
+                                        "text":  "on",
+                                        "x":  708
+                                    },
+                                    {
+                                        "y":  1207,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "matrix",
+                                        "x":  752
+                                    },
+                                    {
+                                        "y":  1207,
+                                        "height":  25,
+                                        "width":  222,
+                                        "text":  "multiplication,",
+                                        "x":  856
+                                    },
+                                    {
+                                        "y":  1207,
+                                        "height":  25,
+                                        "width":  105,
+                                        "text":  "meaning",
+                                        "x":  1097
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "it can warp, scale, and rotate space, but it is mathematically tethered",
+                      "words":  [
+                                    {
+                                        "y":  1245,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "it",
+                                        "x":  171
+                                    },
+                                    {
+                                        "y":  1251,
+                                        "height":  14,
+                                        "width":  42,
+                                        "text":  "can",
+                                        "x":  212
+                                    },
+                                    {
+                                        "y":  1251,
+                                        "height":  19,
+                                        "width":  70,
+                                        "text":  "warp,",
+                                        "x":  268
+                                    },
+                                    {
+                                        "y":  1245,
+                                        "height":  23,
+                                        "width":  84,
+                                        "text":  "scale,",
+                                        "x":  356
+                                    },
+                                    {
+                                        "y":  1245,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  458
+                                    },
+                                    {
+                                        "y":  1246,
+                                        "height":  19,
+                                        "width":  89,
+                                        "text":  "rotate",
+                                        "x":  515
+                                    },
+                                    {
+                                        "y":  1251,
+                                        "height":  19,
+                                        "width":  83,
+                                        "text":  "space,",
+                                        "x":  618
+                                    },
+                                    {
+                                        "y":  1245,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "but",
+                                        "x":  720
+                                    },
+                                    {
+                                        "y":  1245,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "it",
+                                        "x":  777
+                                    },
+                                    {
+                                        "y":  1245,
+                                        "height":  20,
+                                        "width":  26,
+                                        "text":  "is",
+                                        "x":  819
+                                    },
+                                    {
+                                        "y":  1245,
+                                        "height":  25,
+                                        "width":  211,
+                                        "text":  "mathematically",
+                                        "x":  859
+                                    },
+                                    {
+                                        "y":  1245,
+                                        "height":  20,
+                                        "width":  119,
+                                        "text":  "tethered",
+                                        "x":  1083
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "to the origin point .",
+                      "words":  [
+                                    {
+                                        "y":  1282,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1282,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  215
+                                    },
+                                    {
+                                        "y":  1281,
+                                        "height":  25,
+                                        "width":  88,
+                                        "text":  "origin",
+                                        "x":  276
+                                    },
+                                    {
+                                        "y":  1281,
+                                        "height":  25,
+                                        "width":  73,
+                                        "text":  "point",
+                                        "x":  382
+                                    },
+                                    {
+                                        "y":  1297,
+                                        "height":  4,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  552
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Note: A linear transformation",
+                      "words":  [
+                                    {
+                                        "y":  1358,
+                                        "height":  18,
+                                        "width":  69,
+                                        "text":  "Note:",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1358,
+                                        "height":  18,
+                                        "width":  14,
+                                        "text":  "A",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1356,
+                                        "height":  20,
+                                        "width":  89,
+                                        "text":  "linear",
+                                        "x":  294
+                                    },
+                                    {
+                                        "y":  1356,
+                                        "height":  20,
+                                        "width":  210,
+                                        "text":  "transformation",
+                                        "x":  409
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "translation vector.",
+                      "words":  [
+                                    {
+                                        "y":  1394,
+                                        "height":  20,
+                                        "width":  164,
+                                        "text":  "translation",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1396,
+                                        "height":  18,
+                                        "width":  99,
+                                        "text":  "vector.",
+                                        "x":  434
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "is",
+                      "words":  [
+                                    {
+                                        "y":  1356,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  648
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "affine",
+                      "words":  [
+                                    {
+                                        "y":  1356,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "affine",
+                                        "x":  703
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "transformation",
+                      "words":  [
+                                    {
+                                        "y":  1356,
+                                        "height":  20,
+                                        "width":  210,
+                                        "text":  "transformation",
+                                        "x":  818
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "without",
+                      "words":  [
+                                    {
+                                        "y":  1356,
+                                        "height":  20,
+                                        "width":  104,
+                                        "text":  "without",
+                                        "x":  1056
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "a",
+                      "words":  [
+                                    {
+                                        "y":  1363,
+                                        "height":  13,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  1189
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "6.1.1.1 The Mathematical Foundation",
+                      "words":  [
+                                    {
+                                        "y":  1466,
+                                        "height":  20,
+                                        "width":  82,
+                                        "text":  "6.1.1.1",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1465,
+                                        "height":  21,
+                                        "width":  50,
+                                        "text":  "The",
+                                        "x":  262
+                                    },
+                                    {
+                                        "y":  1463,
+                                        "height":  23,
+                                        "width":  188,
+                                        "text":  "Mathematical",
+                                        "x":  324
+                                    },
+                                    {
+                                        "y":  1463,
+                                        "height":  23,
+                                        "width":  157,
+                                        "text":  "Foundation",
+                                        "x":  525
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "A linear transformation operates by multiplying a coordinate vector p",
+                      "words":  [
+                                    {
+                                        "y":  1552,
+                                        "height":  19,
+                                        "width":  15,
+                                        "text":  "A",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1551,
+                                        "height":  20,
+                                        "width":  89,
+                                        "text":  "linear",
+                                        "x":  199
+                                    },
+                                    {
+                                        "y":  1551,
+                                        "height":  20,
+                                        "width":  210,
+                                        "text":  "transformation",
+                                        "x":  303
+                                    },
+                                    {
+                                        "y":  1552,
+                                        "height":  24,
+                                        "width":  118,
+                                        "text":  "operates",
+                                        "x":  530
+                                    },
+                                    {
+                                        "y":  1551,
+                                        "height":  25,
+                                        "width":  27,
+                                        "text":  "by",
+                                        "x":  665
+                                    },
+                                    {
+                                        "y":  1551,
+                                        "height":  25,
+                                        "width":  165,
+                                        "text":  "multiplying",
+                                        "x":  708
+                                    },
+                                    {
+                                        "y":  1557,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  889
+                                    },
+                                    {
+                                        "y":  1551,
+                                        "height":  20,
+                                        "width":  149,
+                                        "text":  "coordinate",
+                                        "x":  919
+                                    },
+                                    {
+                                        "y":  1552,
+                                        "height":  19,
+                                        "width":  89,
+                                        "text":  "vector",
+                                        "x":  1084
+                                    },
+                                    {
+                                        "y":  1557,
+                                        "height":  19,
+                                        "width":  13,
+                                        "text":  "p",
+                                        "x":  1189
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "by a 2 x 2 transformation matrix A:",
+                      "words":  [
+                                    {
+                                        "y":  1589,
+                                        "height":  24,
+                                        "width":  27,
+                                        "text":  "by",
+                                        "x":  171
+                                    },
+                                    {
+                                        "y":  1594,
+                                        "height":  14,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  215
+                                    },
+                                    {
+                                        "y":  1590,
+                                        "height":  18,
+                                        "width":  12,
+                                        "text":  "2",
+                                        "x":  246
+                                    },
+                                    {
+                                        "y":  1594,
+                                        "height":  14,
+                                        "width":  12,
+                                        "text":  "x",
+                                        "x":  276
+                                    },
+                                    {
+                                        "y":  1590,
+                                        "height":  18,
+                                        "width":  13,
+                                        "text":  "2",
+                                        "x":  306
+                                    },
+                                    {
+                                        "y":  1589,
+                                        "height":  19,
+                                        "width":  210,
+                                        "text":  "transformation",
+                                        "x":  335
+                                    },
+                                    {
+                                        "y":  1589,
+                                        "height":  19,
+                                        "width":  88,
+                                        "text":  "matrix",
+                                        "x":  563
+                                    },
+                                    {
+                                        "y":  1590,
+                                        "height":  18,
+                                        "width":  23,
+                                        "text":  "A:",
+                                        "x":  669
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "p\u0027 = Ap",
+                      "words":  [
+                                    {
+                                        "y":  1661,
+                                        "height":  26,
+                                        "width":  21,
+                                        "text":  "p\u0027",
+                                        "x":  643
+                                    },
+                                    {
+                                        "y":  1670,
+                                        "height":  8,
+                                        "width":  15,
+                                        "text":  "=",
+                                        "x":  674
+                                    },
+                                    {
+                                        "y":  1663,
+                                        "height":  24,
+                                        "width":  29,
+                                        "text":  "Ap",
+                                        "x":  697
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Expanded into its full matrix form, it looks like this:",
+                      "words":  [
+                                    {
+                                        "y":  1735,
+                                        "height":  25,
+                                        "width":  117,
+                                        "text":  "Expanded",
+                                        "x":  171
+                                    },
+                                    {
+                                        "y":  1735,
+                                        "height":  20,
+                                        "width":  57,
+                                        "text":  "into",
+                                        "x":  307
+                                    },
+                                    {
+                                        "y":  1735,
+                                        "height":  20,
+                                        "width":  41,
+                                        "text":  "its",
+                                        "x":  383
+                                    },
+                                    {
+                                        "y":  1735,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "full",
+                                        "x":  442
+                                    },
+                                    {
+                                        "y":  1735,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "matrix",
+                                        "x":  518
+                                    },
+                                    {
+                                        "y":  1735,
+                                        "height":  24,
+                                        "width":  68,
+                                        "text":  "form,",
+                                        "x":  624
+                                    },
+                                    {
+                                        "y":  1735,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "it",
+                                        "x":  714
+                                    },
+                                    {
+                                        "y":  1735,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "looks",
+                                        "x":  759
+                                    },
+                                    {
+                                        "y":  1735,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "like",
+                                        "x":  850
+                                    },
+                                    {
+                                        "y":  1735,
+                                        "height":  20,
+                                        "width":  70,
+                                        "text":  "this:",
+                                        "x":  925
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FAST NUCES - Karachi",
+                      "words":  [
+                                    {
+                                        "y":  1820,
+                                        "height":  19,
+                                        "width":  61,
+                                        "text":  "FAST",
+                                        "x":  171
+                                    },
+                                    {
+                                        "y":  1820,
+                                        "height":  19,
+                                        "width":  85,
+                                        "text":  "NUCES",
+                                        "x":  242
+                                    },
+                                    {
+                                        "y":  1829,
+                                        "height":  4,
+                                        "width":  12,
+                                        "text":  "-",
+                                        "x":  337
+                                    },
+                                    {
+                                        "y":  1818,
+                                        "height":  21,
+                                        "width":  95,
+                                        "text":  "Karachi",
+                                        "x":  358
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1820,
+                                        "height":  19,
+                                        "width":  71,
+                                        "text":  "Talha",
+                                        "x":  596
+                                    },
+                                    {
+                                        "y":  1818,
+                                        "height":  21,
+                                        "width":  86,
+                                        "text":  "Shahid",
+                                        "x":  677
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "12",
+                      "words":  [
+                                    {
+                                        "y":  1820,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "12",
+                                        "x":  1178
+                                    }
+                                ]
+                  }
+              ]
+}

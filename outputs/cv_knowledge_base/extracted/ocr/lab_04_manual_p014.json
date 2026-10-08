@@ -1,0 +1,2153 @@
+﻿{
+    "id":  "lab_04_manual_p014",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "National University of Computer \u0026 Emerging Sciences - NUCES - Karachi Department of Artificial Intelligence 3.6.2 Working Mechanism Image Preprocessing: Texture • • Texture • Texture • Convert the input image to grayscale if it is not already. Optionally, apply any necessary preprocessing steps like resizing, smoothing, or contrast enhancement. Analysis : Define a local neighborhood or window size to analyze texture locally. Common sizes are 3x3 or 5x5. For each pixel in the image, extract the pixel values within the defined neighborhood. Energy Calculation : Compute the texture energy by summing the squared pixel values within the neighborhood: Texture Energy (E) = i(pixel values)2 Contrast Calculation: Calculate the texture contrast as the standard deviation of pixel values within the neighborhood: Texture Contrast (C) = v (Var(pixel values)) Histogram Construction: • Feature import import import # Read image Create histograms for texture energy and contrast separately. Divide the range of values into bins for both histograms. Count the number of pixels with energy or contrast values falling into each bin. Extraction : The constructed histograms serve as feature vectors. These histograms capture information about the distribution of texture energy and contrast in the image. These features can be used for texture classification , segmentation, or other texture-related tasks. cv2 numpy as np matplotlib.pyplot as put an image (grayscale) = cv2.imread( \u0027 image .jpg\u0027 , # Define the neighborhood size neighborhood_size = 3 # Calculate texture energy and = cv2.fiIter2D(image energy cv2. IMREAD_GRAYSCALE) 3x3 window) contrast using OpenCV fitter2D -1, np.ones((neighborhood_size, 2, neighborhood_size))) FAST NUCES - Karachi Talha Shahid 13",
+    "review_status":  "raw_ocr_unverified",
+    "page":  14,
+    "source_id":  "lab_04_manual",
+    "lines":  [
+                  {
+                      "text":  "National University of Computer \u0026 Emerging Sciences -",
+                      "words":  [
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  123,
+                                        "text":  "National",
+                                        "x":  372
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  30,
+                                        "width":  153,
+                                        "text":  "University",
+                                        "x":  504
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  31,
+                                        "text":  "of",
+                                        "x":  664
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  30,
+                                        "width":  146,
+                                        "text":  "Computer",
+                                        "x":  701
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  23,
+                                        "width":  23,
+                                        "text":  "\u0026",
+                                        "x":  854
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  30,
+                                        "width":  140,
+                                        "text":  "Emerging",
+                                        "x":  885
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  23,
+                                        "width":  123,
+                                        "text":  "Sciences",
+                                        "x":  1033
+                                    },
+                                    {
+                                        "y":  107,
+                                        "height":  4,
+                                        "width":  9,
+                                        "text":  "-",
+                                        "x":  1166
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "NUCES - Karachi",
+                      "words":  [
+                                    {
+                                        "y":  138,
+                                        "height":  23,
+                                        "width":  96,
+                                        "text":  "NUCES",
+                                        "x":  655
+                                    },
+                                    {
+                                        "y":  150,
+                                        "height":  4,
+                                        "width":  8,
+                                        "text":  "-",
+                                        "x":  760
+                                    },
+                                    {
+                                        "y":  137,
+                                        "height":  24,
+                                        "width":  113,
+                                        "text":  "Karachi",
+                                        "x":  778
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Department of Artificial Intelligence",
+                      "words":  [
+                                    {
+                                        "y":  179,
+                                        "height":  27,
+                                        "width":  142,
+                                        "text":  "Department",
+                                        "x":  556
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  21,
+                                        "width":  25,
+                                        "text":  "of",
+                                        "x":  706
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  21,
+                                        "width":  100,
+                                        "text":  "Artificial",
+                                        "x":  738
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  27,
+                                        "width":  137,
+                                        "text":  "Intelligence",
+                                        "x":  848
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3.6.2 Working Mechanism",
+                      "words":  [
+                                    {
+                                        "y":  219,
+                                        "height":  21,
+                                        "width":  61,
+                                        "text":  "3.6.2",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  217,
+                                        "height":  29,
+                                        "width":  117,
+                                        "text":  "Working",
+                                        "x":  239
+                                    },
+                                    {
+                                        "y":  217,
+                                        "height":  23,
+                                        "width":  152,
+                                        "text":  "Mechanism",
+                                        "x":  369
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Image Preprocessing:",
+                      "words":  [
+                                    {
+                                        "y":  301,
+                                        "height":  24,
+                                        "width":  73,
+                                        "text":  "Image",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  301,
+                                        "height":  24,
+                                        "width":  204,
+                                        "text":  "Preprocessing:",
+                                        "x":  261
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Texture",
+                      "words":  [
+                                    {
+                                        "y":  489,
+                                        "height":  19,
+                                        "width":  106,
+                                        "text":  "Texture",
+                                        "x":  168
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "•",
+                      "words":  [
+                                    {
+                                        "y":  533,
+                                        "height":  10,
+                                        "width":  9,
+                                        "text":  "•",
+                                        "x":  252
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "•",
+                      "words":  [
+                                    {
+                                        "y":  608,
+                                        "height":  10,
+                                        "width":  9,
+                                        "text":  "•",
+                                        "x":  252
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Texture",
+                      "words":  [
+                                    {
+                                        "y":  678,
+                                        "height":  19,
+                                        "width":  105,
+                                        "text":  "Texture",
+                                        "x":  168
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "•",
+                      "words":  [
+                                    {
+                                        "y":  721,
+                                        "height":  10,
+                                        "width":  9,
+                                        "text":  "•",
+                                        "x":  252
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Texture",
+                      "words":  [
+                                    {
+                                        "y":  828,
+                                        "height":  19,
+                                        "width":  106,
+                                        "text":  "Texture",
+                                        "x":  168
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "•",
+                      "words":  [
+                                    {
+                                        "y":  948,
+                                        "height":  10,
+                                        "width":  9,
+                                        "text":  "•",
+                                        "x":  252
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Convert the input image to grayscale if it is not already.",
+                      "words":  [
+                                    {
+                                        "y":  338,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "Convert",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  338,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  413
+                                    },
+                                    {
+                                        "y":  337,
+                                        "height":  24,
+                                        "width":  73,
+                                        "text":  "input",
+                                        "x":  474
+                                    },
+                                    {
+                                        "y":  337,
+                                        "height":  25,
+                                        "width":  73,
+                                        "text":  "image",
+                                        "x":  565
+                                    },
+                                    {
+                                        "y":  339,
+                                        "height":  18,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  654
+                                    },
+                                    {
+                                        "y":  338,
+                                        "height":  24,
+                                        "width":  134,
+                                        "text":  "grayscale",
+                                        "x":  701
+                                    },
+                                    {
+                                        "y":  337,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "if",
+                                        "x":  853
+                                    },
+                                    {
+                                        "y":  337,
+                                        "height":  19,
+                                        "width":  26,
+                                        "text":  "it",
+                                        "x":  898
+                                    },
+                                    {
+                                        "y":  337,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  943
+                                    },
+                                    {
+                                        "y":  339,
+                                        "height":  18,
+                                        "width":  42,
+                                        "text":  "not",
+                                        "x":  988
+                                    },
+                                    {
+                                        "y":  338,
+                                        "height":  23,
+                                        "width":  115,
+                                        "text":  "already.",
+                                        "x":  1048
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Optionally, apply any necessary preprocessing steps like",
+                      "words":  [
+                                    {
+                                        "y":  374,
+                                        "height":  26,
+                                        "width":  160,
+                                        "text":  "Optionally,",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  375,
+                                        "height":  24,
+                                        "width":  73,
+                                        "text":  "apply",
+                                        "x":  484
+                                    },
+                                    {
+                                        "y":  380,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "any",
+                                        "x":  585
+                                    },
+                                    {
+                                        "y":  380,
+                                        "height":  19,
+                                        "width":  134,
+                                        "text":  "necessary",
+                                        "x":  657
+                                    },
+                                    {
+                                        "y":  374,
+                                        "height":  26,
+                                        "width":  194,
+                                        "text":  "preprocessing",
+                                        "x":  819
+                                    },
+                                    {
+                                        "y":  376,
+                                        "height":  23,
+                                        "width":  72,
+                                        "text":  "steps",
+                                        "x":  1041
+                                    },
+                                    {
+                                        "y":  374,
+                                        "height":  21,
+                                        "width":  58,
+                                        "text":  "like",
+                                        "x":  1142
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "resizing, smoothing, or contrast enhancement.",
+                      "words":  [
+                                    {
+                                        "y":  412,
+                                        "height":  25,
+                                        "width":  130,
+                                        "text":  "resizing,",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  412,
+                                        "height":  25,
+                                        "width":  144,
+                                        "text":  "smoothing,",
+                                        "x":  444
+                                    },
+                                    {
+                                        "y":  417,
+                                        "height":  15,
+                                        "width":  28,
+                                        "text":  "or",
+                                        "x":  610
+                                    },
+                                    {
+                                        "y":  413,
+                                        "height":  19,
+                                        "width":  118,
+                                        "text":  "contrast",
+                                        "x":  656
+                                    },
+                                    {
+                                        "y":  412,
+                                        "height":  20,
+                                        "width":  175,
+                                        "text":  "enhancement.",
+                                        "x":  791
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Analysis :",
+                      "words":  [
+                                    {
+                                        "y":  488,
+                                        "height":  24,
+                                        "width":  120,
+                                        "text":  "Analysis",
+                                        "x":  289
+                                    },
+                                    {
+                                        "y":  493,
+                                        "height":  15,
+                                        "width":  6,
+                                        "text":  ":",
+                                        "x":  415
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Define a local neighborhood or window size to analyze texture",
+                      "words":  [
+                                    {
+                                        "y":  526,
+                                        "height":  20,
+                                        "width":  87,
+                                        "text":  "Define",
+                                        "x":  294
+                                    },
+                                    {
+                                        "y":  531,
+                                        "height":  15,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  397
+                                    },
+                                    {
+                                        "y":  526,
+                                        "height":  20,
+                                        "width":  72,
+                                        "text":  "local",
+                                        "x":  427
+                                    },
+                                    {
+                                        "y":  526,
+                                        "height":  25,
+                                        "width":  179,
+                                        "text":  "neighborhood",
+                                        "x":  515
+                                    },
+                                    {
+                                        "y":  531,
+                                        "height":  15,
+                                        "width":  29,
+                                        "text":  "or",
+                                        "x":  710
+                                    },
+                                    {
+                                        "y":  526,
+                                        "height":  20,
+                                        "width":  91,
+                                        "text":  "window",
+                                        "x":  753
+                                    },
+                                    {
+                                        "y":  526,
+                                        "height":  20,
+                                        "width":  57,
+                                        "text":  "size",
+                                        "x":  859
+                                    },
+                                    {
+                                        "y":  527,
+                                        "height":  19,
+                                        "width":  28,
+                                        "text":  "to",
+                                        "x":  932
+                                    },
+                                    {
+                                        "y":  526,
+                                        "height":  25,
+                                        "width":  104,
+                                        "text":  "analyze",
+                                        "x":  976
+                                    },
+                                    {
+                                        "y":  527,
+                                        "height":  19,
+                                        "width":  104,
+                                        "text":  "texture",
+                                        "x":  1096
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "locally. Common sizes are 3x3 or 5x5.",
+                      "words":  [
+                                    {
+                                        "y":  563,
+                                        "height":  25,
+                                        "width":  115,
+                                        "text":  "locally.",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  564,
+                                        "height":  19,
+                                        "width":  87,
+                                        "text":  "Common",
+                                        "x":  429
+                                    },
+                                    {
+                                        "y":  563,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "sizes",
+                                        "x":  534
+                                    },
+                                    {
+                                        "y":  569,
+                                        "height":  14,
+                                        "width":  43,
+                                        "text":  "are",
+                                        "x":  625
+                                    },
+                                    {
+                                        "y":  564,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "3x3",
+                                        "x":  685
+                                    },
+                                    {
+                                        "y":  569,
+                                        "height":  14,
+                                        "width":  29,
+                                        "text":  "or",
+                                        "x":  746
+                                    },
+                                    {
+                                        "y":  564,
+                                        "height":  19,
+                                        "width":  54,
+                                        "text":  "5x5.",
+                                        "x":  792
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "For each pixel in the image, extract the pixel values within",
+                      "words":  [
+                                    {
+                                        "y":  602,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "For",
+                                        "x":  294
+                                    },
+                                    {
+                                        "y":  601,
+                                        "height":  21,
+                                        "width":  57,
+                                        "text":  "each",
+                                        "x":  354
+                                    },
+                                    {
+                                        "y":  601,
+                                        "height":  25,
+                                        "width":  72,
+                                        "text":  "pixel",
+                                        "x":  430
+                                    },
+                                    {
+                                        "y":  601,
+                                        "height":  20,
+                                        "width":  26,
+                                        "text":  "in",
+                                        "x":  521
+                                    },
+                                    {
+                                        "y":  601,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  565
+                                    },
+                                    {
+                                        "y":  601,
+                                        "height":  25,
+                                        "width":  84,
+                                        "text":  "image,",
+                                        "x":  627
+                                    },
+                                    {
+                                        "y":  602,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "extract",
+                                        "x":  733
+                                    },
+                                    {
+                                        "y":  601,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  853
+                                    },
+                                    {
+                                        "y":  601,
+                                        "height":  25,
+                                        "width":  73,
+                                        "text":  "pixel",
+                                        "x":  914
+                                    },
+                                    {
+                                        "y":  601,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "values",
+                                        "x":  1005
+                                    },
+                                    {
+                                        "y":  601,
+                                        "height":  20,
+                                        "width":  89,
+                                        "text":  "within",
+                                        "x":  1110
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "the defined neighborhood.",
+                      "words":  [
+                                    {
+                                        "y":  639,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  292
+                                    },
+                                    {
+                                        "y":  639,
+                                        "height":  20,
+                                        "width":  102,
+                                        "text":  "defined",
+                                        "x":  353
+                                    },
+                                    {
+                                        "y":  638,
+                                        "height":  26,
+                                        "width":  190,
+                                        "text":  "neighborhood.",
+                                        "x":  474
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Energy Calculation :",
+                      "words":  [
+                                    {
+                                        "y":  678,
+                                        "height":  24,
+                                        "width":  88,
+                                        "text":  "Energy",
+                                        "x":  291
+                                    },
+                                    {
+                                        "y":  678,
+                                        "height":  19,
+                                        "width":  163,
+                                        "text":  "Calculation",
+                                        "x":  396
+                                    },
+                                    {
+                                        "y":  682,
+                                        "height":  15,
+                                        "width":  6,
+                                        "text":  ":",
+                                        "x":  565
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Compute the texture energy by summing the squared pixel values",
+                      "words":  [
+                                    {
+                                        "y":  715,
+                                        "height":  23,
+                                        "width":  104,
+                                        "text":  "Compute",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  714,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  410
+                                    },
+                                    {
+                                        "y":  715,
+                                        "height":  19,
+                                        "width":  104,
+                                        "text":  "texture",
+                                        "x":  467
+                                    },
+                                    {
+                                        "y":  718,
+                                        "height":  21,
+                                        "width":  88,
+                                        "text":  "energy",
+                                        "x":  586
+                                    },
+                                    {
+                                        "y":  714,
+                                        "height":  25,
+                                        "width":  28,
+                                        "text":  "by",
+                                        "x":  689
+                                    },
+                                    {
+                                        "y":  713,
+                                        "height":  26,
+                                        "width":  104,
+                                        "text":  "summing",
+                                        "x":  731
+                                    },
+                                    {
+                                        "y":  714,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  848
+                                    },
+                                    {
+                                        "y":  714,
+                                        "height":  25,
+                                        "width":  101,
+                                        "text":  "squared",
+                                        "x":  907
+                                    },
+                                    {
+                                        "y":  714,
+                                        "height":  25,
+                                        "width":  73,
+                                        "text":  "pixel",
+                                        "x":  1024
+                                    },
+                                    {
+                                        "y":  714,
+                                        "height":  20,
+                                        "width":  89,
+                                        "text":  "values",
+                                        "x":  1111
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "within the neighborhood:",
+                      "words":  [
+                                    {
+                                        "y":  752,
+                                        "height":  20,
+                                        "width":  89,
+                                        "text":  "within",
+                                        "x":  292
+                                    },
+                                    {
+                                        "y":  752,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  398
+                                    },
+                                    {
+                                        "y":  752,
+                                        "height":  25,
+                                        "width":  190,
+                                        "text":  "neighborhood:",
+                                        "x":  459
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Texture Energy (E) =",
+                      "words":  [
+                                    {
+                                        "y":  790,
+                                        "height":  19,
+                                        "width":  105,
+                                        "text":  "Texture",
+                                        "x":  292
+                                    },
+                                    {
+                                        "y":  790,
+                                        "height":  24,
+                                        "width":  86,
+                                        "text":  "Energy",
+                                        "x":  415
+                                    },
+                                    {
+                                        "y":  789,
+                                        "height":  23,
+                                        "width":  36,
+                                        "text":  "(E)",
+                                        "x":  522
+                                    },
+                                    {
+                                        "y":  797,
+                                        "height":  8,
+                                        "width":  14,
+                                        "text":  "=",
+                                        "x":  579
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "i(pixel values)2",
+                      "words":  [
+                                    {
+                                        "y":  789,
+                                        "height":  25,
+                                        "width":  104,
+                                        "text":  "i(pixel",
+                                        "x":  609
+                                    },
+                                    {
+                                        "y":  789,
+                                        "height":  24,
+                                        "width":  113,
+                                        "text":  "values)2",
+                                        "x":  731
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Contrast Calculation:",
+                      "words":  [
+                                    {
+                                        "y":  828,
+                                        "height":  19,
+                                        "width":  119,
+                                        "text":  "Contrast",
+                                        "x":  290
+                                    },
+                                    {
+                                        "y":  828,
+                                        "height":  19,
+                                        "width":  175,
+                                        "text":  "Calculation:",
+                                        "x":  426
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Calculate the texture contrast as the standard deviation of",
+                      "words":  [
+                                    {
+                                        "y":  866,
+                                        "height":  20,
+                                        "width":  134,
+                                        "text":  "Calculate",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  866,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "the",
+                                        "x":  446
+                                    },
+                                    {
+                                        "y":  867,
+                                        "height":  19,
+                                        "width":  105,
+                                        "text":  "texture",
+                                        "x":  507
+                                    },
+                                    {
+                                        "y":  867,
+                                        "height":  19,
+                                        "width":  118,
+                                        "text":  "contrast",
+                                        "x":  632
+                                    },
+                                    {
+                                        "y":  871,
+                                        "height":  15,
+                                        "width":  28,
+                                        "text":  "as",
+                                        "x":  770
+                                    },
+                                    {
+                                        "y":  866,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  817
+                                    },
+                                    {
+                                        "y":  866,
+                                        "height":  20,
+                                        "width":  117,
+                                        "text":  "standard",
+                                        "x":  881
+                                    },
+                                    {
+                                        "y":  865,
+                                        "height":  21,
+                                        "width":  134,
+                                        "text":  "deviation",
+                                        "x":  1018
+                                    },
+                                    {
+                                        "y":  866,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  1172
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "pixel values within the neighborhood:",
+                      "words":  [
+                                    {
+                                        "y":  904,
+                                        "height":  25,
+                                        "width":  72,
+                                        "text":  "pixel",
+                                        "x":  294
+                                    },
+                                    {
+                                        "y":  904,
+                                        "height":  20,
+                                        "width":  87,
+                                        "text":  "values",
+                                        "x":  384
+                                    },
+                                    {
+                                        "y":  904,
+                                        "height":  19,
+                                        "width":  89,
+                                        "text":  "within",
+                                        "x":  488
+                                    },
+                                    {
+                                        "y":  904,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  594
+                                    },
+                                    {
+                                        "y":  904,
+                                        "height":  25,
+                                        "width":  190,
+                                        "text":  "neighborhood:",
+                                        "x":  656
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Texture Contrast (C) = v (Var(pixel values))",
+                      "words":  [
+                                    {
+                                        "y":  942,
+                                        "height":  19,
+                                        "width":  105,
+                                        "text":  "Texture",
+                                        "x":  292
+                                    },
+                                    {
+                                        "y":  942,
+                                        "height":  19,
+                                        "width":  118,
+                                        "text":  "Contrast",
+                                        "x":  414
+                                    },
+                                    {
+                                        "y":  941,
+                                        "height":  23,
+                                        "width":  36,
+                                        "text":  "(C)",
+                                        "x":  553
+                                    },
+                                    {
+                                        "y":  949,
+                                        "height":  8,
+                                        "width":  14,
+                                        "text":  "=",
+                                        "x":  609
+                                    },
+                                    {
+                                        "y":  942,
+                                        "height":  19,
+                                        "width":  15,
+                                        "text":  "v",
+                                        "x":  639
+                                    },
+                                    {
+                                        "y":  941,
+                                        "height":  25,
+                                        "width":  145,
+                                        "text":  "(Var(pixel",
+                                        "x":  659
+                                    },
+                                    {
+                                        "y":  941,
+                                        "height":  23,
+                                        "width":  114,
+                                        "text":  "values))",
+                                        "x":  822
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Histogram Construction:",
+                      "words":  [
+                                    {
+                                        "y":  980,
+                                        "height":  24,
+                                        "width":  135,
+                                        "text":  "Histogram",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  980,
+                                        "height":  19,
+                                        "width":  190,
+                                        "text":  "Construction:",
+                                        "x":  320
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "•",
+                      "words":  [
+                                    {
+                                        "y":  1061,
+                                        "height":  10,
+                                        "width":  9,
+                                        "text":  "•",
+                                        "x":  252
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Feature",
+                      "words":  [
+                                    {
+                                        "y":  1168,
+                                        "height":  19,
+                                        "width":  104,
+                                        "text":  "Feature",
+                                        "x":  170
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "import",
+                      "words":  [
+                                    {
+                                        "y":  1393,
+                                        "height":  21,
+                                        "width":  79,
+                                        "text":  "import",
+                                        "x":  199
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "import",
+                      "words":  [
+                                    {
+                                        "y":  1421,
+                                        "height":  22,
+                                        "width":  79,
+                                        "text":  "import",
+                                        "x":  199
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "import",
+                      "words":  [
+                                    {
+                                        "y":  1449,
+                                        "height":  22,
+                                        "width":  79,
+                                        "text":  "import",
+                                        "x":  199
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# Read",
+                      "words":  [
+                                    {
+                                        "y":  1507,
+                                        "height":  18,
+                                        "width":  13,
+                                        "text":  "#",
+                                        "x":  197
+                                    },
+                                    {
+                                        "y":  1507,
+                                        "height":  18,
+                                        "width":  52,
+                                        "text":  "Read",
+                                        "x":  226
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "image",
+                      "words":  [
+                                    {
+                                        "y":  1535,
+                                        "height":  22,
+                                        "width":  65,
+                                        "text":  "image",
+                                        "x":  199
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Create histograms for texture energy and contrast separately.",
+                      "words":  [
+                                    {
+                                        "y":  1018,
+                                        "height":  20,
+                                        "width":  89,
+                                        "text":  "Create",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  1017,
+                                        "height":  26,
+                                        "width":  147,
+                                        "text":  "histograms",
+                                        "x":  398
+                                    },
+                                    {
+                                        "y":  1018,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "for",
+                                        "x":  561
+                                    },
+                                    {
+                                        "y":  1018,
+                                        "height":  20,
+                                        "width":  104,
+                                        "text":  "texture",
+                                        "x":  619
+                                    },
+                                    {
+                                        "y":  1021,
+                                        "height":  22,
+                                        "width":  89,
+                                        "text":  "energy",
+                                        "x":  739
+                                    },
+                                    {
+                                        "y":  1018,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  843
+                                    },
+                                    {
+                                        "y":  1018,
+                                        "height":  20,
+                                        "width":  117,
+                                        "text":  "contrast",
+                                        "x":  903
+                                    },
+                                    {
+                                        "y":  1018,
+                                        "height":  24,
+                                        "width":  160,
+                                        "text":  "separately.",
+                                        "x":  1036
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Divide the range of values into bins for both histograms.",
+                      "words":  [
+                                    {
+                                        "y":  1055,
+                                        "height":  19,
+                                        "width":  87,
+                                        "text":  "Divide",
+                                        "x":  294
+                                    },
+                                    {
+                                        "y":  1055,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  398
+                                    },
+                                    {
+                                        "y":  1059,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "range",
+                                        "x":  458
+                                    },
+                                    {
+                                        "y":  1055,
+                                        "height":  19,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  549
+                                    },
+                                    {
+                                        "y":  1055,
+                                        "height":  19,
+                                        "width":  88,
+                                        "text":  "values",
+                                        "x":  595
+                                    },
+                                    {
+                                        "y":  1055,
+                                        "height":  19,
+                                        "width":  57,
+                                        "text":  "into",
+                                        "x":  702
+                                    },
+                                    {
+                                        "y":  1055,
+                                        "height":  19,
+                                        "width":  57,
+                                        "text":  "bins",
+                                        "x":  777
+                                    },
+                                    {
+                                        "y":  1055,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "for",
+                                        "x":  852
+                                    },
+                                    {
+                                        "y":  1055,
+                                        "height":  19,
+                                        "width":  57,
+                                        "text":  "both",
+                                        "x":  912
+                                    },
+                                    {
+                                        "y":  1055,
+                                        "height":  24,
+                                        "width":  159,
+                                        "text":  "histograms.",
+                                        "x":  988
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Count the number of pixels with energy or contrast values",
+                      "words":  [
+                                    {
+                                        "y":  1093,
+                                        "height":  19,
+                                        "width":  73,
+                                        "text":  "Count",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  1092,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  388
+                                    },
+                                    {
+                                        "y":  1092,
+                                        "height":  20,
+                                        "width":  89,
+                                        "text":  "number",
+                                        "x":  455
+                                    },
+                                    {
+                                        "y":  1092,
+                                        "height":  20,
+                                        "width":  29,
+                                        "text":  "of",
+                                        "x":  565
+                                    },
+                                    {
+                                        "y":  1092,
+                                        "height":  25,
+                                        "width":  88,
+                                        "text":  "pixels",
+                                        "x":  617
+                                    },
+                                    {
+                                        "y":  1092,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "with",
+                                        "x":  727
+                                    },
+                                    {
+                                        "y":  1096,
+                                        "height":  21,
+                                        "width":  88,
+                                        "text":  "energy",
+                                        "x":  809
+                                    },
+                                    {
+                                        "y":  1097,
+                                        "height":  15,
+                                        "width":  29,
+                                        "text":  "or",
+                                        "x":  919
+                                    },
+                                    {
+                                        "y":  1093,
+                                        "height":  19,
+                                        "width":  119,
+                                        "text":  "contrast",
+                                        "x":  970
+                                    },
+                                    {
+                                        "y":  1092,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "values",
+                                        "x":  1112
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "falling into each bin.",
+                      "words":  [
+                                    {
+                                        "y":  1129,
+                                        "height":  25,
+                                        "width":  104,
+                                        "text":  "falling",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  1129,
+                                        "height":  20,
+                                        "width":  56,
+                                        "text":  "into",
+                                        "x":  415
+                                    },
+                                    {
+                                        "y":  1129,
+                                        "height":  20,
+                                        "width":  57,
+                                        "text":  "each",
+                                        "x":  489
+                                    },
+                                    {
+                                        "y":  1129,
+                                        "height":  20,
+                                        "width":  53,
+                                        "text":  "bin.",
+                                        "x":  565
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Extraction :",
+                      "words":  [
+                                    {
+                                        "y":  1168,
+                                        "height":  19,
+                                        "width":  148,
+                                        "text":  "Extraction",
+                                        "x":  291
+                                    },
+                                    {
+                                        "y":  1172,
+                                        "height":  15,
+                                        "width":  6,
+                                        "text":  ":",
+                                        "x":  445
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The constructed histograms serve as feature vectors.",
+                      "words":  [
+                                    {
+                                        "y":  1205,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "The",
+                                        "x":  292
+                                    },
+                                    {
+                                        "y":  1205,
+                                        "height":  20,
+                                        "width":  162,
+                                        "text":  "constructed",
+                                        "x":  354
+                                    },
+                                    {
+                                        "y":  1205,
+                                        "height":  25,
+                                        "width":  148,
+                                        "text":  "histograms",
+                                        "x":  535
+                                    },
+                                    {
+                                        "y":  1211,
+                                        "height":  14,
+                                        "width":  73,
+                                        "text":  "serve",
+                                        "x":  701
+                                    },
+                                    {
+                                        "y":  1211,
+                                        "height":  14,
+                                        "width":  28,
+                                        "text":  "as",
+                                        "x":  791
+                                    },
+                                    {
+                                        "y":  1205,
+                                        "height":  20,
+                                        "width":  103,
+                                        "text":  "feature",
+                                        "x":  837
+                                    },
+                                    {
+                                        "y":  1206,
+                                        "height":  19,
+                                        "width":  115,
+                                        "text":  "vectors.",
+                                        "x":  957
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "These histograms capture information about the distribution",
+                      "words":  [
+                                    {
+                                        "y":  1243,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "These",
+                                        "x":  292
+                                    },
+                                    {
+                                        "y":  1242,
+                                        "height":  26,
+                                        "width":  147,
+                                        "text":  "histograms",
+                                        "x":  388
+                                    },
+                                    {
+                                        "y":  1244,
+                                        "height":  23,
+                                        "width":  104,
+                                        "text":  "capture",
+                                        "x":  555
+                                    },
+                                    {
+                                        "y":  1242,
+                                        "height":  21,
+                                        "width":  163,
+                                        "text":  "information",
+                                        "x":  680
+                                    },
+                                    {
+                                        "y":  1243,
+                                        "height":  20,
+                                        "width":  72,
+                                        "text":  "about",
+                                        "x":  864
+                                    },
+                                    {
+                                        "y":  1243,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  956
+                                    },
+                                    {
+                                        "y":  1242,
+                                        "height":  21,
+                                        "width":  179,
+                                        "text":  "distribution",
+                                        "x":  1020
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "of texture energy and contrast in the image.",
+                      "words":  [
+                                    {
+                                        "y":  1281,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  1282,
+                                        "height":  19,
+                                        "width":  104,
+                                        "text":  "texture",
+                                        "x":  338
+                                    },
+                                    {
+                                        "y":  1285,
+                                        "height":  21,
+                                        "width":  89,
+                                        "text":  "energy",
+                                        "x":  458
+                                    },
+                                    {
+                                        "y":  1281,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  564
+                                    },
+                                    {
+                                        "y":  1282,
+                                        "height":  19,
+                                        "width":  119,
+                                        "text":  "contrast",
+                                        "x":  625
+                                    },
+                                    {
+                                        "y":  1280,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "in",
+                                        "x":  762
+                                    },
+                                    {
+                                        "y":  1281,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  806
+                                    },
+                                    {
+                                        "y":  1280,
+                                        "height":  26,
+                                        "width":  83,
+                                        "text":  "image.",
+                                        "x":  868
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "These features can be used for texture classification ,",
+                      "words":  [
+                                    {
+                                        "y":  1318,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "These",
+                                        "x":  292
+                                    },
+                                    {
+                                        "y":  1318,
+                                        "height":  20,
+                                        "width":  118,
+                                        "text":  "features",
+                                        "x":  397
+                                    },
+                                    {
+                                        "y":  1323,
+                                        "height":  15,
+                                        "width":  42,
+                                        "text":  "can",
+                                        "x":  546
+                                    },
+                                    {
+                                        "y":  1318,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "be",
+                                        "x":  620
+                                    },
+                                    {
+                                        "y":  1318,
+                                        "height":  20,
+                                        "width":  57,
+                                        "text":  "used",
+                                        "x":  679
+                                    },
+                                    {
+                                        "y":  1318,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "for",
+                                        "x":  768
+                                    },
+                                    {
+                                        "y":  1319,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "texture",
+                                        "x":  841
+                                    },
+                                    {
+                                        "y":  1318,
+                                        "height":  20,
+                                        "width":  209,
+                                        "text":  "classification",
+                                        "x":  975
+                                    },
+                                    {
+                                        "y":  1333,
+                                        "height":  8,
+                                        "width":  5,
+                                        "text":  ",",
+                                        "x":  1191
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "segmentation, or other texture-related tasks.",
+                      "words":  [
+                                    {
+                                        "y":  1356,
+                                        "height":  25,
+                                        "width":  188,
+                                        "text":  "segmentation,",
+                                        "x":  294
+                                    },
+                                    {
+                                        "y":  1361,
+                                        "height":  15,
+                                        "width":  28,
+                                        "text":  "or",
+                                        "x":  504
+                                    },
+                                    {
+                                        "y":  1356,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "other",
+                                        "x":  549
+                                    },
+                                    {
+                                        "y":  1356,
+                                        "height":  20,
+                                        "width":  225,
+                                        "text":  "texture-related",
+                                        "x":  639
+                                    },
+                                    {
+                                        "y":  1356,
+                                        "height":  20,
+                                        "width":  84,
+                                        "text":  "tasks.",
+                                        "x":  882
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "cv2",
+                      "words":  [
+                                    {
+                                        "y":  1394,
+                                        "height":  18,
+                                        "width":  39,
+                                        "text":  "cv2",
+                                        "x":  294
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "numpy as np",
+                      "words":  [
+                                    {
+                                        "y":  1425,
+                                        "height":  18,
+                                        "width":  67,
+                                        "text":  "numpy",
+                                        "x":  294
+                                    },
+                                    {
+                                        "y":  1425,
+                                        "height":  14,
+                                        "width":  25,
+                                        "text":  "as",
+                                        "x":  376
+                                    },
+                                    {
+                                        "y":  1425,
+                                        "height":  18,
+                                        "width":  25,
+                                        "text":  "np",
+                                        "x":  418
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "matplotlib.pyplot as put",
+                      "words":  [
+                                    {
+                                        "y":  1449,
+                                        "height":  22,
+                                        "width":  230,
+                                        "text":  "matplotlib.pyplot",
+                                        "x":  294
+                                    },
+                                    {
+                                        "y":  1454,
+                                        "height":  14,
+                                        "width":  26,
+                                        "text":  "as",
+                                        "x":  540
+                                    },
+                                    {
+                                        "y":  1450,
+                                        "height":  21,
+                                        "width":  39,
+                                        "text":  "put",
+                                        "x":  582
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "an image (grayscale)",
+                      "words":  [
+                                    {
+                                        "y":  1511,
+                                        "height":  14,
+                                        "width":  25,
+                                        "text":  "an",
+                                        "x":  294
+                                    },
+                                    {
+                                        "y":  1506,
+                                        "height":  23,
+                                        "width":  65,
+                                        "text":  "image",
+                                        "x":  336
+                                    },
+                                    {
+                                        "y":  1505,
+                                        "height":  24,
+                                        "width":  143,
+                                        "text":  "(grayscale)",
+                                        "x":  420
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "= cv2.imread( \u0027 image .jpg\u0027 ,",
+                      "words":  [
+                                    {
+                                        "y":  1541,
+                                        "height":  9,
+                                        "width":  11,
+                                        "text":  "=",
+                                        "x":  281
+                                    },
+                                    {
+                                        "y":  1534,
+                                        "height":  22,
+                                        "width":  146,
+                                        "text":  "cv2.imread(",
+                                        "x":  308
+                                    },
+                                    {
+                                        "y":  1536,
+                                        "height":  7,
+                                        "width":  3,
+                                        "text":  "\u0027",
+                                        "x":  462
+                                    },
+                                    {
+                                        "y":  1535,
+                                        "height":  22,
+                                        "width":  66,
+                                        "text":  "image",
+                                        "x":  472
+                                    },
+                                    {
+                                        "y":  1535,
+                                        "height":  22,
+                                        "width":  59,
+                                        "text":  ".jpg\u0027",
+                                        "x":  544
+                                    },
+                                    {
+                                        "y":  1549,
+                                        "height":  8,
+                                        "width":  5,
+                                        "text":  ",",
+                                        "x":  612
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# Define the neighborhood size",
+                      "words":  [
+                                    {
+                                        "y":  1592,
+                                        "height":  18,
+                                        "width":  13,
+                                        "text":  "#",
+                                        "x":  197
+                                    },
+                                    {
+                                        "y":  1592,
+                                        "height":  18,
+                                        "width":  79,
+                                        "text":  "Define",
+                                        "x":  226
+                                    },
+                                    {
+                                        "y":  1592,
+                                        "height":  18,
+                                        "width":  39,
+                                        "text":  "the",
+                                        "x":  321
+                                    },
+                                    {
+                                        "y":  1592,
+                                        "height":  22,
+                                        "width":  161,
+                                        "text":  "neighborhood",
+                                        "x":  377
+                                    },
+                                    {
+                                        "y":  1592,
+                                        "height":  18,
+                                        "width":  52,
+                                        "text":  "size",
+                                        "x":  555
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "neighborhood_size = 3",
+                      "words":  [
+                                    {
+                                        "y":  1620,
+                                        "height":  22,
+                                        "width":  231,
+                                        "text":  "neighborhood_size",
+                                        "x":  198
+                                    },
+                                    {
+                                        "y":  1626,
+                                        "height":  9,
+                                        "width":  10,
+                                        "text":  "=",
+                                        "x":  445
+                                    },
+                                    {
+                                        "y":  1621,
+                                        "height":  18,
+                                        "width":  11,
+                                        "text":  "3",
+                                        "x":  472
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# Calculate texture energy and",
+                      "words":  [
+                                    {
+                                        "y":  1677,
+                                        "height":  18,
+                                        "width":  13,
+                                        "text":  "#",
+                                        "x":  197
+                                    },
+                                    {
+                                        "y":  1677,
+                                        "height":  18,
+                                        "width":  121,
+                                        "text":  "Calculate",
+                                        "x":  226
+                                    },
+                                    {
+                                        "y":  1677,
+                                        "height":  18,
+                                        "width":  93,
+                                        "text":  "texture",
+                                        "x":  362
+                                    },
+                                    {
+                                        "y":  1681,
+                                        "height":  18,
+                                        "width":  80,
+                                        "text":  "energy",
+                                        "x":  472
+                                    },
+                                    {
+                                        "y":  1677,
+                                        "height":  18,
+                                        "width":  39,
+                                        "text":  "and",
+                                        "x":  568
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "= cv2.fiIter2D(image",
+                      "words":  [
+                                    {
+                                        "y":  1711,
+                                        "height":  9,
+                                        "width":  12,
+                                        "text":  "=",
+                                        "x":  294
+                                    },
+                                    {
+                                        "y":  1703,
+                                        "height":  24,
+                                        "width":  244,
+                                        "text":  "cv2.fiIter2D(image",
+                                        "x":  322
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "energy",
+                      "words":  [
+                                    {
+                                        "y":  1709,
+                                        "height":  18,
+                                        "width":  80,
+                                        "text":  "energy",
+                                        "x":  198
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "cv2. IMREAD_GRAYSCALE)",
+                      "words":  [
+                                    {
+                                        "y":  1536,
+                                        "height":  17,
+                                        "width":  49,
+                                        "text":  "cv2.",
+                                        "x":  637
+                                    },
+                                    {
+                                        "y":  1533,
+                                        "height":  23,
+                                        "width":  227,
+                                        "text":  "IMREAD_GRAYSCALE)",
+                                        "x":  693
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3x3 window)",
+                      "words":  [
+                                    {
+                                        "y":  1592,
+                                        "height":  18,
+                                        "width":  39,
+                                        "text":  "3x3",
+                                        "x":  720
+                                    },
+                                    {
+                                        "y":  1590,
+                                        "height":  22,
+                                        "width":  92,
+                                        "text":  "window)",
+                                        "x":  774
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "contrast using OpenCV fitter2D",
+                      "words":  [
+                                    {
+                                        "y":  1677,
+                                        "height":  18,
+                                        "width":  108,
+                                        "text":  "contrast",
+                                        "x":  623
+                                    },
+                                    {
+                                        "y":  1677,
+                                        "height":  22,
+                                        "width":  65,
+                                        "text":  "using",
+                                        "x":  748
+                                    },
+                                    {
+                                        "y":  1677,
+                                        "height":  22,
+                                        "width":  79,
+                                        "text":  "OpenCV",
+                                        "x":  830
+                                    },
+                                    {
+                                        "y":  1677,
+                                        "height":  18,
+                                        "width":  108,
+                                        "text":  "fitter2D",
+                                        "x":  925
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "-1, np.ones((neighborhood_size,",
+                      "words":  [
+                                    {
+                                        "y":  1706,
+                                        "height":  21,
+                                        "width":  35,
+                                        "text":  "-1,",
+                                        "x":  665
+                                    },
+                                    {
+                                        "y":  1703,
+                                        "height":  24,
+                                        "width":  364,
+                                        "text":  "np.ones((neighborhood_size,",
+                                        "x":  720
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2,",
+                      "words":  [
+                                    {
+                                        "y":  1706,
+                                        "height":  21,
+                                        "width":  22,
+                                        "text":  "2,",
+                                        "x":  623
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "neighborhood_size)))",
+                      "words":  [
+                                    {
+                                        "y":  1732,
+                                        "height":  23,
+                                        "width":  269,
+                                        "text":  "neighborhood_size)))",
+                                        "x":  198
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FAST NUCES - Karachi",
+                      "words":  [
+                                    {
+                                        "y":  1819,
+                                        "height":  19,
+                                        "width":  62,
+                                        "text":  "FAST",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1819,
+                                        "height":  20,
+                                        "width":  85,
+                                        "text":  "NUCES",
+                                        "x":  242
+                                    },
+                                    {
+                                        "y":  1828,
+                                        "height":  5,
+                                        "width":  12,
+                                        "text":  "-",
+                                        "x":  336
+                                    },
+                                    {
+                                        "y":  1817,
+                                        "height":  21,
+                                        "width":  94,
+                                        "text":  "Karachi",
+                                        "x":  358
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1819,
+                                        "height":  19,
+                                        "width":  72,
+                                        "text":  "Talha",
+                                        "x":  594
+                                    },
+                                    {
+                                        "y":  1817,
+                                        "height":  21,
+                                        "width":  87,
+                                        "text":  "Shahid",
+                                        "x":  676
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "13",
+                      "words":  [
+                                    {
+                                        "y":  1819,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "13",
+                                        "x":  1176
+                                    }
+                                ]
+                  }
+              ]
+}

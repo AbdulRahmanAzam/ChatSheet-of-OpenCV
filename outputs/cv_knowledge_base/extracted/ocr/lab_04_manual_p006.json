@@ -1,0 +1,2068 @@
+﻿{
+    "id":  "lab_04_manual_p006",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "National University of Computer \u0026 Emerging Sciences - NUCES - Karachi Department of Artificial Intelligence and parameters is critical for successful computer vision applications. Feature Matching and Learning: Extracted features are often used in combination with matching or learning algorithms to perform tasks like object recognition or image classification. 3. Histogram-Based Methods 3.1 HOG (Histogram of Oriented Gradients) Histogram of Oriented Gradients (HOG) is a widely used feature extraction technique in computer vision and image processing. It is particularly useful for obj ect detection and pedestrian detection tasks. HOG works by capturing information about the local gradient or edge patterns in an image . 3.1.1 Explanation: HOG focuses on capturing information about the distribution of gradient directions in an image. It divides the image into small cells, calculates the gradient magnitude and orientation for each pixel within these cells, and then creates histograms of gradient orientations for these cells. These histograms are then concatenated to form a feature vector that represents the image. 3.1.2 Working Mechanism • Image Preprocessing: Convert the input image to grayscale. This simplifies the calculation of gradients. Gradient Computation: Calculate the gradient magnitude and orientation for each pixel in the image. Typically, the Sobel operator is used for this purpose. Cell Division: Divide the image into small cells (e.g., 8x8 pixels) that do not overlap. Histograms of Oriented Gradients: For each cell, create a histogram of gradient orientations . The histogram bins represent different orientation ranges degrees, degrees, etc.) . The histogram values correspond to the frequency of gradient orientations in that cell. FAST NUCES - Karachi Talha Shahid 5",
+    "review_status":  "raw_ocr_unverified",
+    "page":  6,
+    "source_id":  "lab_04_manual",
+    "lines":  [
+                  {
+                      "text":  "National University of Computer \u0026 Emerging Sciences -",
+                      "words":  [
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  123,
+                                        "text":  "National",
+                                        "x":  372
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  30,
+                                        "width":  153,
+                                        "text":  "University",
+                                        "x":  504
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  31,
+                                        "text":  "of",
+                                        "x":  664
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  30,
+                                        "width":  146,
+                                        "text":  "Computer",
+                                        "x":  701
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  23,
+                                        "width":  23,
+                                        "text":  "\u0026",
+                                        "x":  854
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  30,
+                                        "width":  140,
+                                        "text":  "Emerging",
+                                        "x":  885
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  23,
+                                        "width":  123,
+                                        "text":  "Sciences",
+                                        "x":  1033
+                                    },
+                                    {
+                                        "y":  107,
+                                        "height":  4,
+                                        "width":  9,
+                                        "text":  "-",
+                                        "x":  1166
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "NUCES - Karachi",
+                      "words":  [
+                                    {
+                                        "y":  138,
+                                        "height":  23,
+                                        "width":  96,
+                                        "text":  "NUCES",
+                                        "x":  655
+                                    },
+                                    {
+                                        "y":  150,
+                                        "height":  4,
+                                        "width":  8,
+                                        "text":  "-",
+                                        "x":  760
+                                    },
+                                    {
+                                        "y":  137,
+                                        "height":  24,
+                                        "width":  113,
+                                        "text":  "Karachi",
+                                        "x":  778
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Department of Artificial Intelligence",
+                      "words":  [
+                                    {
+                                        "y":  179,
+                                        "height":  27,
+                                        "width":  142,
+                                        "text":  "Department",
+                                        "x":  556
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  21,
+                                        "width":  25,
+                                        "text":  "of",
+                                        "x":  706
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  21,
+                                        "width":  100,
+                                        "text":  "Artificial",
+                                        "x":  738
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  27,
+                                        "width":  137,
+                                        "text":  "Intelligence",
+                                        "x":  848
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "and parameters is critical for successful computer vision",
+                      "words":  [
+                                    {
+                                        "y":  218,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  219,
+                                        "height":  23,
+                                        "width":  147,
+                                        "text":  "parameters",
+                                        "x":  326
+                                    },
+                                    {
+                                        "y":  218,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  504
+                                    },
+                                    {
+                                        "y":  218,
+                                        "height":  20,
+                                        "width":  118,
+                                        "text":  "critical",
+                                        "x":  562
+                                    },
+                                    {
+                                        "y":  218,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "for",
+                                        "x":  711
+                                    },
+                                    {
+                                        "y":  218,
+                                        "height":  20,
+                                        "width":  147,
+                                        "text":  "successful",
+                                        "x":  785
+                                    },
+                                    {
+                                        "y":  219,
+                                        "height":  23,
+                                        "width":  119,
+                                        "text":  "computer",
+                                        "x":  963
+                                    },
+                                    {
+                                        "y":  218,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "vision",
+                                        "x":  1112
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "applications.",
+                      "words":  [
+                                    {
+                                        "y":  256,
+                                        "height":  24,
+                                        "width":  190,
+                                        "text":  "applications.",
+                                        "x":  252
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Feature Matching and Learning: Extracted features are often used",
+                      "words":  [
+                                    {
+                                        "y":  332,
+                                        "height":  19,
+                                        "width":  104,
+                                        "text":  "Feature",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  331,
+                                        "height":  24,
+                                        "width":  120,
+                                        "text":  "Matching",
+                                        "x":  370
+                                    },
+                                    {
+                                        "y":  332,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  504
+                                    },
+                                    {
+                                        "y":  331,
+                                        "height":  24,
+                                        "width":  130,
+                                        "text":  "Learning:",
+                                        "x":  563
+                                    },
+                                    {
+                                        "y":  332,
+                                        "height":  19,
+                                        "width":  133,
+                                        "text":  "Extracted",
+                                        "x":  712
+                                    },
+                                    {
+                                        "y":  332,
+                                        "height":  19,
+                                        "width":  118,
+                                        "text":  "features",
+                                        "x":  861
+                                    },
+                                    {
+                                        "y":  337,
+                                        "height":  14,
+                                        "width":  43,
+                                        "text":  "are",
+                                        "x":  995
+                                    },
+                                    {
+                                        "y":  332,
+                                        "height":  19,
+                                        "width":  73,
+                                        "text":  "often",
+                                        "x":  1053
+                                    },
+                                    {
+                                        "y":  332,
+                                        "height":  19,
+                                        "width":  57,
+                                        "text":  "used",
+                                        "x":  1143
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "in combination with matching or learning algorithms to perform",
+                      "words":  [
+                                    {
+                                        "y":  368,
+                                        "height":  19,
+                                        "width":  26,
+                                        "text":  "in",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  368,
+                                        "height":  19,
+                                        "width":  162,
+                                        "text":  "combination",
+                                        "x":  299
+                                    },
+                                    {
+                                        "y":  368,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "with",
+                                        "x":  480
+                                    },
+                                    {
+                                        "y":  368,
+                                        "height":  24,
+                                        "width":  120,
+                                        "text":  "matching",
+                                        "x":  558
+                                    },
+                                    {
+                                        "y":  373,
+                                        "height":  14,
+                                        "width":  30,
+                                        "text":  "or",
+                                        "x":  696
+                                    },
+                                    {
+                                        "y":  368,
+                                        "height":  24,
+                                        "width":  119,
+                                        "text":  "learning",
+                                        "x":  744
+                                    },
+                                    {
+                                        "y":  368,
+                                        "height":  24,
+                                        "width":  148,
+                                        "text":  "algorithms",
+                                        "x":  882
+                                    },
+                                    {
+                                        "y":  369,
+                                        "height":  18,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  1048
+                                    },
+                                    {
+                                        "y":  368,
+                                        "height":  24,
+                                        "width":  104,
+                                        "text":  "perform",
+                                        "x":  1097
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "tasks like object recognition or image classification.",
+                      "words":  [
+                                    {
+                                        "y":  406,
+                                        "height":  19,
+                                        "width":  74,
+                                        "text":  "tasks",
+                                        "x":  251
+                                    },
+                                    {
+                                        "y":  406,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "like",
+                                        "x":  343
+                                    },
+                                    {
+                                        "y":  406,
+                                        "height":  24,
+                                        "width":  88,
+                                        "text":  "object",
+                                        "x":  418
+                                    },
+                                    {
+                                        "y":  406,
+                                        "height":  24,
+                                        "width":  164,
+                                        "text":  "recognition",
+                                        "x":  523
+                                    },
+                                    {
+                                        "y":  411,
+                                        "height":  14,
+                                        "width":  28,
+                                        "text":  "or",
+                                        "x":  705
+                                    },
+                                    {
+                                        "y":  406,
+                                        "height":  24,
+                                        "width":  73,
+                                        "text":  "image",
+                                        "x":  751
+                                    },
+                                    {
+                                        "y":  406,
+                                        "height":  19,
+                                        "width":  219,
+                                        "text":  "classification.",
+                                        "x":  842
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3. Histogram-Based Methods",
+                      "words":  [
+                                    {
+                                        "y":  493,
+                                        "height":  27,
+                                        "width":  29,
+                                        "text":  "3.",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  490,
+                                        "height":  38,
+                                        "width":  321,
+                                        "text":  "Histogram-Based",
+                                        "x":  214
+                                    },
+                                    {
+                                        "y":  492,
+                                        "height":  28,
+                                        "width":  154,
+                                        "text":  "Methods",
+                                        "x":  551
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3.1 HOG (Histogram of Oriented Gradients)",
+                      "words":  [
+                                    {
+                                        "y":  586,
+                                        "height":  23,
+                                        "width":  43,
+                                        "text":  "3.1",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  586,
+                                        "height":  23,
+                                        "width":  73,
+                                        "text":  "HOG",
+                                        "x":  226
+                                    },
+                                    {
+                                        "y":  583,
+                                        "height":  33,
+                                        "width":  181,
+                                        "text":  "(Histogram",
+                                        "x":  311
+                                    },
+                                    {
+                                        "y":  585,
+                                        "height":  24,
+                                        "width":  33,
+                                        "text":  "of",
+                                        "x":  505
+                                    },
+                                    {
+                                        "y":  583,
+                                        "height":  26,
+                                        "width":  140,
+                                        "text":  "Oriented",
+                                        "x":  549
+                                    },
+                                    {
+                                        "y":  583,
+                                        "height":  32,
+                                        "width":  170,
+                                        "text":  "Gradients)",
+                                        "x":  702
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Histogram of Oriented Gradients (HOG) is a widely used feature",
+                      "words":  [
+                                    {
+                                        "y":  643,
+                                        "height":  26,
+                                        "width":  134,
+                                        "text":  "Histogram",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  644,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  405
+                                    },
+                                    {
+                                        "y":  643,
+                                        "height":  21,
+                                        "width":  117,
+                                        "text":  "Oriented",
+                                        "x":  451
+                                    },
+                                    {
+                                        "y":  643,
+                                        "height":  21,
+                                        "width":  134,
+                                        "text":  "Gradients",
+                                        "x":  588
+                                    },
+                                    {
+                                        "y":  643,
+                                        "height":  24,
+                                        "width":  66,
+                                        "text":  "(HOG)",
+                                        "x":  745
+                                    },
+                                    {
+                                        "y":  643,
+                                        "height":  21,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  834
+                                    },
+                                    {
+                                        "y":  649,
+                                        "height":  15,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  881
+                                    },
+                                    {
+                                        "y":  643,
+                                        "height":  25,
+                                        "width":  89,
+                                        "text":  "widely",
+                                        "x":  911
+                                    },
+                                    {
+                                        "y":  644,
+                                        "height":  20,
+                                        "width":  57,
+                                        "text":  "used",
+                                        "x":  1020
+                                    },
+                                    {
+                                        "y":  644,
+                                        "height":  20,
+                                        "width":  104,
+                                        "text":  "feature",
+                                        "x":  1096
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "extraction technique in computer vision and image processing. It",
+                      "words":  [
+                                    {
+                                        "y":  679,
+                                        "height":  20,
+                                        "width":  148,
+                                        "text":  "extraction",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  679,
+                                        "height":  25,
+                                        "width":  134,
+                                        "text":  "technique",
+                                        "x":  415
+                                    },
+                                    {
+                                        "y":  679,
+                                        "height":  19,
+                                        "width":  26,
+                                        "text":  "in",
+                                        "x":  566
+                                    },
+                                    {
+                                        "y":  680,
+                                        "height":  23,
+                                        "width":  119,
+                                        "text":  "computer",
+                                        "x":  609
+                                    },
+                                    {
+                                        "y":  679,
+                                        "height":  20,
+                                        "width":  87,
+                                        "text":  "vision",
+                                        "x":  743
+                                    },
+                                    {
+                                        "y":  679,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  846
+                                    },
+                                    {
+                                        "y":  679,
+                                        "height":  25,
+                                        "width":  71,
+                                        "text":  "image",
+                                        "x":  906
+                                    },
+                                    {
+                                        "y":  679,
+                                        "height":  25,
+                                        "width":  160,
+                                        "text":  "processing.",
+                                        "x":  993
+                                    },
+                                    {
+                                        "y":  680,
+                                        "height":  18,
+                                        "width":  28,
+                                        "text":  "It",
+                                        "x":  1172
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "is particularly useful for obj ect detection and pedestrian",
+                      "words":  [
+                                    {
+                                        "y":  713,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  713,
+                                        "height":  25,
+                                        "width":  177,
+                                        "text":  "particularly",
+                                        "x":  309
+                                    },
+                                    {
+                                        "y":  713,
+                                        "height":  20,
+                                        "width":  87,
+                                        "text":  "useful",
+                                        "x":  515
+                                    },
+                                    {
+                                        "y":  713,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "for",
+                                        "x":  631
+                                    },
+                                    {
+                                        "y":  713,
+                                        "height":  25,
+                                        "width":  41,
+                                        "text":  "obj",
+                                        "x":  702
+                                    },
+                                    {
+                                        "y":  714,
+                                        "height":  19,
+                                        "width":  42,
+                                        "text":  "ect",
+                                        "x":  748
+                                    },
+                                    {
+                                        "y":  713,
+                                        "height":  20,
+                                        "width":  133,
+                                        "text":  "detection",
+                                        "x":  818
+                                    },
+                                    {
+                                        "y":  713,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  980
+                                    },
+                                    {
+                                        "y":  713,
+                                        "height":  25,
+                                        "width":  147,
+                                        "text":  "pedestrian",
+                                        "x":  1052
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "detection tasks. HOG works by capturing information about the",
+                      "words":  [
+                                    {
+                                        "y":  748,
+                                        "height":  21,
+                                        "width":  133,
+                                        "text":  "detection",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  749,
+                                        "height":  20,
+                                        "width":  84,
+                                        "text":  "tasks.",
+                                        "x":  406
+                                    },
+                                    {
+                                        "y":  749,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "HOG",
+                                        "x":  515
+                                    },
+                                    {
+                                        "y":  749,
+                                        "height":  20,
+                                        "width":  75,
+                                        "text":  "works",
+                                        "x":  578
+                                    },
+                                    {
+                                        "y":  749,
+                                        "height":  24,
+                                        "width":  28,
+                                        "text":  "by",
+                                        "x":  674
+                                    },
+                                    {
+                                        "y":  748,
+                                        "height":  26,
+                                        "width":  135,
+                                        "text":  "capturing",
+                                        "x":  723
+                                    },
+                                    {
+                                        "y":  748,
+                                        "height":  21,
+                                        "width":  162,
+                                        "text":  "information",
+                                        "x":  879
+                                    },
+                                    {
+                                        "y":  749,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "about",
+                                        "x":  1062
+                                    },
+                                    {
+                                        "y":  749,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  1156
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "local gradient or edge patterns in an image .",
+                      "words":  [
+                                    {
+                                        "y":  784,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "local",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  784,
+                                        "height":  25,
+                                        "width":  117,
+                                        "text":  "gradient",
+                                        "x":  343
+                                    },
+                                    {
+                                        "y":  789,
+                                        "height":  15,
+                                        "width":  28,
+                                        "text":  "or",
+                                        "x":  478
+                                    },
+                                    {
+                                        "y":  784,
+                                        "height":  25,
+                                        "width":  58,
+                                        "text":  "edge",
+                                        "x":  523
+                                    },
+                                    {
+                                        "y":  785,
+                                        "height":  24,
+                                        "width":  118,
+                                        "text":  "patterns",
+                                        "x":  599
+                                    },
+                                    {
+                                        "y":  784,
+                                        "height":  19,
+                                        "width":  26,
+                                        "text":  "in",
+                                        "x":  736
+                                    },
+                                    {
+                                        "y":  789,
+                                        "height":  15,
+                                        "width":  28,
+                                        "text":  "an",
+                                        "x":  780
+                                    },
+                                    {
+                                        "y":  784,
+                                        "height":  25,
+                                        "width":  72,
+                                        "text":  "image",
+                                        "x":  827
+                                    },
+                                    {
+                                        "y":  799,
+                                        "height":  5,
+                                        "width":  3,
+                                        "text":  ".",
+                                        "x":  906
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3.1.1 Explanation:",
+                      "words":  [
+                                    {
+                                        "y":  857,
+                                        "height":  21,
+                                        "width":  60,
+                                        "text":  "3.1.1",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  855,
+                                        "height":  29,
+                                        "width":  174,
+                                        "text":  "Explanation:",
+                                        "x":  240
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "HOG focuses on capturing information about the distribution of",
+                      "words":  [
+                                    {
+                                        "y":  906,
+                                        "height":  19,
+                                        "width":  42,
+                                        "text":  "HOG",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  905,
+                                        "height":  20,
+                                        "width":  103,
+                                        "text":  "focuses",
+                                        "x":  314
+                                    },
+                                    {
+                                        "y":  910,
+                                        "height":  15,
+                                        "width":  27,
+                                        "text":  "on",
+                                        "x":  436
+                                    },
+                                    {
+                                        "y":  905,
+                                        "height":  25,
+                                        "width":  135,
+                                        "text":  "capturing",
+                                        "x":  483
+                                    },
+                                    {
+                                        "y":  905,
+                                        "height":  20,
+                                        "width":  163,
+                                        "text":  "information",
+                                        "x":  637
+                                    },
+                                    {
+                                        "y":  905,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "about",
+                                        "x":  819
+                                    },
+                                    {
+                                        "y":  905,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  910
+                                    },
+                                    {
+                                        "y":  905,
+                                        "height":  20,
+                                        "width":  179,
+                                        "text":  "distribution",
+                                        "x":  973
+                                    },
+                                    {
+                                        "y":  905,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  1172
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "gradient directions in an image.",
+                      "words":  [
+                                    {
+                                        "y":  940,
+                                        "height":  26,
+                                        "width":  118,
+                                        "text":  "gradient",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  940,
+                                        "height":  21,
+                                        "width":  148,
+                                        "text":  "directions",
+                                        "x":  388
+                                    },
+                                    {
+                                        "y":  940,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "in",
+                                        "x":  554
+                                    },
+                                    {
+                                        "y":  946,
+                                        "height":  15,
+                                        "width":  27,
+                                        "text":  "an",
+                                        "x":  599
+                                    },
+                                    {
+                                        "y":  940,
+                                        "height":  26,
+                                        "width":  83,
+                                        "text":  "image.",
+                                        "x":  645
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "It divides the image into small cells, calculates the gradient",
+                      "words":  [
+                                    {
+                                        "y":  977,
+                                        "height":  19,
+                                        "width":  28,
+                                        "text":  "It",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  976,
+                                        "height":  20,
+                                        "width":  103,
+                                        "text":  "divides",
+                                        "x":  299
+                                    },
+                                    {
+                                        "y":  976,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "the",
+                                        "x":  421
+                                    },
+                                    {
+                                        "y":  976,
+                                        "height":  25,
+                                        "width":  73,
+                                        "text":  "image",
+                                        "x":  483
+                                    },
+                                    {
+                                        "y":  976,
+                                        "height":  20,
+                                        "width":  57,
+                                        "text":  "into",
+                                        "x":  576
+                                    },
+                                    {
+                                        "y":  976,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "small",
+                                        "x":  652
+                                    },
+                                    {
+                                        "y":  976,
+                                        "height":  23,
+                                        "width":  84,
+                                        "text":  "cells,",
+                                        "x":  745
+                                    },
+                                    {
+                                        "y":  976,
+                                        "height":  20,
+                                        "width":  148,
+                                        "text":  "calculates",
+                                        "x":  852
+                                    },
+                                    {
+                                        "y":  976,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  1019
+                                    },
+                                    {
+                                        "y":  976,
+                                        "height":  25,
+                                        "width":  119,
+                                        "text":  "gradient",
+                                        "x":  1081
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "magnitude and orientation for each pixel within these cells, and",
+                      "words":  [
+                                    {
+                                        "y":  1012,
+                                        "height":  25,
+                                        "width":  134,
+                                        "text":  "magnitude",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1012,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  401
+                                    },
+                                    {
+                                        "y":  1012,
+                                        "height":  20,
+                                        "width":  164,
+                                        "text":  "orientation",
+                                        "x":  459
+                                    },
+                                    {
+                                        "y":  1012,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "for",
+                                        "x":  639
+                                    },
+                                    {
+                                        "y":  1012,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "each",
+                                        "x":  697
+                                    },
+                                    {
+                                        "y":  1012,
+                                        "height":  25,
+                                        "width":  73,
+                                        "text":  "pixel",
+                                        "x":  772
+                                    },
+                                    {
+                                        "y":  1012,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "within",
+                                        "x":  859
+                                    },
+                                    {
+                                        "y":  1012,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "these",
+                                        "x":  963
+                                    },
+                                    {
+                                        "y":  1012,
+                                        "height":  23,
+                                        "width":  84,
+                                        "text":  "cells,",
+                                        "x":  1053
+                                    },
+                                    {
+                                        "y":  1012,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  1156
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "then creates histograms of gradient orientations for these",
+                      "words":  [
+                                    {
+                                        "y":  1047,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "then",
+                                        "x":  251
+                                    },
+                                    {
+                                        "y":  1048,
+                                        "height":  18,
+                                        "width":  102,
+                                        "text":  "creates",
+                                        "x":  339
+                                    },
+                                    {
+                                        "y":  1047,
+                                        "height":  24,
+                                        "width":  148,
+                                        "text":  "histograms",
+                                        "x":  470
+                                    },
+                                    {
+                                        "y":  1047,
+                                        "height":  19,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  646
+                                    },
+                                    {
+                                        "y":  1047,
+                                        "height":  24,
+                                        "width":  118,
+                                        "text":  "gradient",
+                                        "x":  702
+                                    },
+                                    {
+                                        "y":  1047,
+                                        "height":  19,
+                                        "width":  178,
+                                        "text":  "orientations",
+                                        "x":  849
+                                    },
+                                    {
+                                        "y":  1047,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "for",
+                                        "x":  1055
+                                    },
+                                    {
+                                        "y":  1047,
+                                        "height":  19,
+                                        "width":  74,
+                                        "text":  "these",
+                                        "x":  1126
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "cells.",
+                      "words":  [
+                                    {
+                                        "y":  1082,
+                                        "height":  20,
+                                        "width":  84,
+                                        "text":  "cells.",
+                                        "x":  252
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "These histograms are then concatenated to form a feature vector",
+                      "words":  [
+                                    {
+                                        "y":  1117,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "These",
+                                        "x":  251
+                                    },
+                                    {
+                                        "y":  1117,
+                                        "height":  25,
+                                        "width":  147,
+                                        "text":  "histograms",
+                                        "x":  343
+                                    },
+                                    {
+                                        "y":  1122,
+                                        "height":  15,
+                                        "width":  43,
+                                        "text":  "are",
+                                        "x":  508
+                                    },
+                                    {
+                                        "y":  1117,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "then",
+                                        "x":  568
+                                    },
+                                    {
+                                        "y":  1117,
+                                        "height":  20,
+                                        "width":  178,
+                                        "text":  "concatenated",
+                                        "x":  644
+                                    },
+                                    {
+                                        "y":  1118,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  840
+                                    },
+                                    {
+                                        "y":  1117,
+                                        "height":  20,
+                                        "width":  57,
+                                        "text":  "form",
+                                        "x":  886
+                                    },
+                                    {
+                                        "y":  1122,
+                                        "height":  15,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  960
+                                    },
+                                    {
+                                        "y":  1117,
+                                        "height":  20,
+                                        "width":  103,
+                                        "text":  "feature",
+                                        "x":  991
+                                    },
+                                    {
+                                        "y":  1118,
+                                        "height":  19,
+                                        "width":  89,
+                                        "text":  "vector",
+                                        "x":  1112
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "that represents the image.",
+                      "words":  [
+                                    {
+                                        "y":  1152,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "that",
+                                        "x":  251
+                                    },
+                                    {
+                                        "y":  1153,
+                                        "height":  24,
+                                        "width":  147,
+                                        "text":  "represents",
+                                        "x":  328
+                                    },
+                                    {
+                                        "y":  1152,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  492
+                                    },
+                                    {
+                                        "y":  1152,
+                                        "height":  25,
+                                        "width":  84,
+                                        "text":  "image.",
+                                        "x":  554
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3.1.2 Working Mechanism",
+                      "words":  [
+                                    {
+                                        "y":  1225,
+                                        "height":  21,
+                                        "width":  60,
+                                        "text":  "3.1.2",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1223,
+                                        "height":  29,
+                                        "width":  118,
+                                        "text":  "Working",
+                                        "x":  238
+                                    },
+                                    {
+                                        "y":  1223,
+                                        "height":  23,
+                                        "width":  153,
+                                        "text":  "Mechanism",
+                                        "x":  368
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "•",
+                      "words":  [
+                                    {
+                                        "y":  1280,
+                                        "height":  10,
+                                        "width":  9,
+                                        "text":  "•",
+                                        "x":  283
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Image Preprocessing: Convert the input image to grayscale.",
+                      "words":  [
+                                    {
+                                        "y":  1274,
+                                        "height":  24,
+                                        "width":  74,
+                                        "text":  "Image",
+                                        "x":  324
+                                    },
+                                    {
+                                        "y":  1273,
+                                        "height":  25,
+                                        "width":  205,
+                                        "text":  "Preprocessing:",
+                                        "x":  415
+                                    },
+                                    {
+                                        "y":  1274,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "Convert",
+                                        "x":  642
+                                    },
+                                    {
+                                        "y":  1273,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  762
+                                    },
+                                    {
+                                        "y":  1273,
+                                        "height":  25,
+                                        "width":  72,
+                                        "text":  "input",
+                                        "x":  825
+                                    },
+                                    {
+                                        "y":  1273,
+                                        "height":  25,
+                                        "width":  72,
+                                        "text":  "image",
+                                        "x":  915
+                                    },
+                                    {
+                                        "y":  1274,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  1004
+                                    },
+                                    {
+                                        "y":  1273,
+                                        "height":  25,
+                                        "width":  145,
+                                        "text":  "grayscale.",
+                                        "x":  1051
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "This simplifies the calculation of gradients.",
+                      "words":  [
+                                    {
+                                        "y":  1310,
+                                        "height":  21,
+                                        "width":  59,
+                                        "text":  "This",
+                                        "x":  323
+                                    },
+                                    {
+                                        "y":  1310,
+                                        "height":  25,
+                                        "width":  147,
+                                        "text":  "simplifies",
+                                        "x":  400
+                                    },
+                                    {
+                                        "y":  1311,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  564
+                                    },
+                                    {
+                                        "y":  1310,
+                                        "height":  21,
+                                        "width":  163,
+                                        "text":  "calculation",
+                                        "x":  626
+                                    },
+                                    {
+                                        "y":  1311,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "of",
+                                        "x":  807
+                                    },
+                                    {
+                                        "y":  1310,
+                                        "height":  26,
+                                        "width":  144,
+                                        "text":  "gradients.",
+                                        "x":  853
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Gradient Computation: Calculate the gradient magnitude and",
+                      "words":  [
+                                    {
+                                        "y":  1348,
+                                        "height":  20,
+                                        "width":  120,
+                                        "text":  "Gradient",
+                                        "x":  323
+                                    },
+                                    {
+                                        "y":  1348,
+                                        "height":  25,
+                                        "width":  177,
+                                        "text":  "Computation:",
+                                        "x":  459
+                                    },
+                                    {
+                                        "y":  1349,
+                                        "height":  20,
+                                        "width":  134,
+                                        "text":  "Calculate",
+                                        "x":  657
+                                    },
+                                    {
+                                        "y":  1349,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  808
+                                    },
+                                    {
+                                        "y":  1348,
+                                        "height":  26,
+                                        "width":  117,
+                                        "text":  "gradient",
+                                        "x":  870
+                                    },
+                                    {
+                                        "y":  1348,
+                                        "height":  26,
+                                        "width":  134,
+                                        "text":  "magnitude",
+                                        "x":  1005
+                                    },
+                                    {
+                                        "y":  1349,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  1156
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "orientation for each pixel in the image. Typically, the",
+                      "words":  [
+                                    {
+                                        "y":  1385,
+                                        "height":  21,
+                                        "width":  163,
+                                        "text":  "orientation",
+                                        "x":  324
+                                    },
+                                    {
+                                        "y":  1386,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "for",
+                                        "x":  511
+                                    },
+                                    {
+                                        "y":  1386,
+                                        "height":  20,
+                                        "width":  57,
+                                        "text":  "each",
+                                        "x":  577
+                                    },
+                                    {
+                                        "y":  1386,
+                                        "height":  25,
+                                        "width":  73,
+                                        "text":  "pixel",
+                                        "x":  659
+                                    },
+                                    {
+                                        "y":  1385,
+                                        "height":  20,
+                                        "width":  26,
+                                        "text":  "in",
+                                        "x":  757
+                                    },
+                                    {
+                                        "y":  1386,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  806
+                                    },
+                                    {
+                                        "y":  1386,
+                                        "height":  25,
+                                        "width":  83,
+                                        "text":  "image.",
+                                        "x":  874
+                                    },
+                                    {
+                                        "y":  1386,
+                                        "height":  25,
+                                        "width":  146,
+                                        "text":  "Typically,",
+                                        "x":  983
+                                    },
+                                    {
+                                        "y":  1386,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  1156
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Sobel operator is used for this purpose.",
+                      "words":  [
+                                    {
+                                        "y":  1423,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "Sobel",
+                                        "x":  324
+                                    },
+                                    {
+                                        "y":  1424,
+                                        "height":  23,
+                                        "width":  118,
+                                        "text":  "operator",
+                                        "x":  415
+                                    },
+                                    {
+                                        "y":  1423,
+                                        "height":  20,
+                                        "width":  26,
+                                        "text":  "is",
+                                        "x":  551
+                                    },
+                                    {
+                                        "y":  1423,
+                                        "height":  20,
+                                        "width":  57,
+                                        "text":  "used",
+                                        "x":  596
+                                    },
+                                    {
+                                        "y":  1423,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "for",
+                                        "x":  671
+                                    },
+                                    {
+                                        "y":  1423,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "this",
+                                        "x":  731
+                                    },
+                                    {
+                                        "y":  1428,
+                                        "height":  20,
+                                        "width":  113,
+                                        "text":  "purpose.",
+                                        "x":  808
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Cell Division: Divide the image into small cells (e.g., 8x8",
+                      "words":  [
+                                    {
+                                        "y":  1461,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "Cell",
+                                        "x":  324
+                                    },
+                                    {
+                                        "y":  1461,
+                                        "height":  20,
+                                        "width":  130,
+                                        "text":  "Division:",
+                                        "x":  398
+                                    },
+                                    {
+                                        "y":  1461,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "Divide",
+                                        "x":  548
+                                    },
+                                    {
+                                        "y":  1461,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  651
+                                    },
+                                    {
+                                        "y":  1461,
+                                        "height":  25,
+                                        "width":  72,
+                                        "text":  "image",
+                                        "x":  712
+                                    },
+                                    {
+                                        "y":  1461,
+                                        "height":  20,
+                                        "width":  57,
+                                        "text":  "into",
+                                        "x":  802
+                                    },
+                                    {
+                                        "y":  1461,
+                                        "height":  20,
+                                        "width":  72,
+                                        "text":  "small",
+                                        "x":  875
+                                    },
+                                    {
+                                        "y":  1461,
+                                        "height":  20,
+                                        "width":  72,
+                                        "text":  "cells",
+                                        "x":  964
+                                    },
+                                    {
+                                        "y":  1460,
+                                        "height":  26,
+                                        "width":  81,
+                                        "text":  "(e.g.,",
+                                        "x":  1056
+                                    },
+                                    {
+                                        "y":  1462,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "8x8",
+                                        "x":  1157
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "pixels) that do not overlap.",
+                      "words":  [
+                                    {
+                                        "y":  1498,
+                                        "height":  25,
+                                        "width":  99,
+                                        "text":  "pixels)",
+                                        "x":  325
+                                    },
+                                    {
+                                        "y":  1498,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "that",
+                                        "x":  444
+                                    },
+                                    {
+                                        "y":  1498,
+                                        "height":  20,
+                                        "width":  29,
+                                        "text":  "do",
+                                        "x":  519
+                                    },
+                                    {
+                                        "y":  1499,
+                                        "height":  19,
+                                        "width":  42,
+                                        "text":  "not",
+                                        "x":  566
+                                    },
+                                    {
+                                        "y":  1498,
+                                        "height":  25,
+                                        "width":  115,
+                                        "text":  "overlap.",
+                                        "x":  626
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Histograms of Oriented Gradients: For each cell, create a",
+                      "words":  [
+                                    {
+                                        "y":  1536,
+                                        "height":  25,
+                                        "width":  148,
+                                        "text":  "Histograms",
+                                        "x":  324
+                                    },
+                                    {
+                                        "y":  1536,
+                                        "height":  20,
+                                        "width":  29,
+                                        "text":  "of",
+                                        "x":  491
+                                    },
+                                    {
+                                        "y":  1536,
+                                        "height":  20,
+                                        "width":  120,
+                                        "text":  "Oriented",
+                                        "x":  538
+                                    },
+                                    {
+                                        "y":  1536,
+                                        "height":  20,
+                                        "width":  147,
+                                        "text":  "Gradients:",
+                                        "x":  677
+                                    },
+                                    {
+                                        "y":  1537,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "For",
+                                        "x":  847
+                                    },
+                                    {
+                                        "y":  1536,
+                                        "height":  20,
+                                        "width":  57,
+                                        "text":  "each",
+                                        "x":  909
+                                    },
+                                    {
+                                        "y":  1536,
+                                        "height":  23,
+                                        "width":  69,
+                                        "text":  "cell,",
+                                        "x":  987
+                                    },
+                                    {
+                                        "y":  1537,
+                                        "height":  19,
+                                        "width":  88,
+                                        "text":  "create",
+                                        "x":  1080
+                                    },
+                                    {
+                                        "y":  1541,
+                                        "height":  15,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  1188
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "histogram of gradient orientations .",
+                      "words":  [
+                                    {
+                                        "y":  1573,
+                                        "height":  26,
+                                        "width":  132,
+                                        "text":  "histogram",
+                                        "x":  325
+                                    },
+                                    {
+                                        "y":  1574,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  474
+                                    },
+                                    {
+                                        "y":  1573,
+                                        "height":  26,
+                                        "width":  118,
+                                        "text":  "gradient",
+                                        "x":  520
+                                    },
+                                    {
+                                        "y":  1573,
+                                        "height":  21,
+                                        "width":  179,
+                                        "text":  "orientations",
+                                        "x":  656
+                                    },
+                                    {
+                                        "y":  1589,
+                                        "height":  5,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  842
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The histogram bins represent different orientation ranges",
+                      "words":  [
+                                    {
+                                        "y":  1612,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "The",
+                                        "x":  333
+                                    },
+                                    {
+                                        "y":  1611,
+                                        "height":  26,
+                                        "width":  132,
+                                        "text":  "histogram",
+                                        "x":  397
+                                    },
+                                    {
+                                        "y":  1611,
+                                        "height":  21,
+                                        "width":  57,
+                                        "text":  "bins",
+                                        "x":  548
+                                    },
+                                    {
+                                        "y":  1613,
+                                        "height":  23,
+                                        "width":  133,
+                                        "text":  "represent",
+                                        "x":  625
+                                    },
+                                    {
+                                        "y":  1611,
+                                        "height":  21,
+                                        "width":  133,
+                                        "text":  "different",
+                                        "x":  777
+                                    },
+                                    {
+                                        "y":  1611,
+                                        "height":  21,
+                                        "width":  163,
+                                        "text":  "orientation",
+                                        "x":  929
+                                    },
+                                    {
+                                        "y":  1615,
+                                        "height":  22,
+                                        "width":  88,
+                                        "text":  "ranges",
+                                        "x":  1112
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "degrees, degrees, etc.) .",
+                      "words":  [
+                                    {
+                                        "y":  1647,
+                                        "height":  25,
+                                        "width":  115,
+                                        "text":  "degrees,",
+                                        "x":  515
+                                    },
+                                    {
+                                        "y":  1647,
+                                        "height":  25,
+                                        "width":  115,
+                                        "text":  "degrees,",
+                                        "x":  742
+                                    },
+                                    {
+                                        "y":  1646,
+                                        "height":  24,
+                                        "width":  69,
+                                        "text":  "etc.)",
+                                        "x":  878
+                                    },
+                                    {
+                                        "y":  1662,
+                                        "height":  5,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  957
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The histogram values correspond to the frequency of",
+                      "words":  [
+                                    {
+                                        "y":  1682,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "The",
+                                        "x":  333
+                                    },
+                                    {
+                                        "y":  1682,
+                                        "height":  25,
+                                        "width":  132,
+                                        "text":  "histogram",
+                                        "x":  410
+                                    },
+                                    {
+                                        "y":  1682,
+                                        "height":  20,
+                                        "width":  89,
+                                        "text":  "values",
+                                        "x":  573
+                                    },
+                                    {
+                                        "y":  1682,
+                                        "height":  25,
+                                        "width":  149,
+                                        "text":  "correspond",
+                                        "x":  693
+                                    },
+                                    {
+                                        "y":  1683,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  873
+                                    },
+                                    {
+                                        "y":  1682,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  931
+                                    },
+                                    {
+                                        "y":  1682,
+                                        "height":  25,
+                                        "width":  134,
+                                        "text":  "frequency",
+                                        "x":  1007
+                                    },
+                                    {
+                                        "y":  1682,
+                                        "height":  20,
+                                        "width":  29,
+                                        "text":  "of",
+                                        "x":  1172
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "gradient orientations in that cell.",
+                      "words":  [
+                                    {
+                                        "y":  1718,
+                                        "height":  25,
+                                        "width":  119,
+                                        "text":  "gradient",
+                                        "x":  334
+                                    },
+                                    {
+                                        "y":  1718,
+                                        "height":  20,
+                                        "width":  179,
+                                        "text":  "orientations",
+                                        "x":  469
+                                    },
+                                    {
+                                        "y":  1718,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "in",
+                                        "x":  667
+                                    },
+                                    {
+                                        "y":  1718,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "that",
+                                        "x":  711
+                                    },
+                                    {
+                                        "y":  1718,
+                                        "height":  20,
+                                        "width":  68,
+                                        "text":  "cell.",
+                                        "x":  788
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FAST NUCES - Karachi",
+                      "words":  [
+                                    {
+                                        "y":  1819,
+                                        "height":  19,
+                                        "width":  62,
+                                        "text":  "FAST",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1819,
+                                        "height":  20,
+                                        "width":  85,
+                                        "text":  "NUCES",
+                                        "x":  242
+                                    },
+                                    {
+                                        "y":  1828,
+                                        "height":  5,
+                                        "width":  12,
+                                        "text":  "-",
+                                        "x":  336
+                                    },
+                                    {
+                                        "y":  1817,
+                                        "height":  21,
+                                        "width":  94,
+                                        "text":  "Karachi",
+                                        "x":  358
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1819,
+                                        "height":  19,
+                                        "width":  72,
+                                        "text":  "Talha",
+                                        "x":  594
+                                    },
+                                    {
+                                        "y":  1817,
+                                        "height":  21,
+                                        "width":  87,
+                                        "text":  "Shahid",
+                                        "x":  676
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "5",
+                      "words":  [
+                                    {
+                                        "y":  1819,
+                                        "height":  20,
+                                        "width":  12,
+                                        "text":  "5",
+                                        "x":  1188
+                                    }
+                                ]
+                  }
+              ]
+}

@@ -1,0 +1,136 @@
+{
+  "status": "passed",
+  "topics": 21,
+  "failed": 0,
+  "opencv": "4.13.0",
+  "numpy": "2.5.3",
+  "data": "Synthetic image only; checks confirm snippets run and produce sane output, not real-data accuracy.",
+  "results": [
+    {
+      "topic": "fourier",
+      "executed": true,
+      "check": "low_u8.shape == g.shape and np.abs(high).mean() > 0",
+      "passed": true
+    },
+    {
+      "topic": "pyramids",
+      "executed": true,
+      "check": "len(levels) == 4 and np.array_equal(rebuilt, g)",
+      "passed": true
+    },
+    {
+      "topic": "template",
+      "executed": true,
+      "check": "max_val > 0.99 and top_left == (20, 100)",
+      "passed": true
+    },
+    {
+      "topic": "corners",
+      "executed": true,
+      "check": "pts is not None and len(pts) > 0",
+      "passed": true
+    },
+    {
+      "topic": "feature_detectors",
+      "executed": true,
+      "check": "len(kp_fast) > 0 and des_a is not None",
+      "passed": true
+    },
+    {
+      "topic": "flann",
+      "executed": true,
+      "check": "len(good) > 5",
+      "passed": true
+    },
+    {
+      "topic": "shape",
+      "executed": true,
+      "check": "len(contours) > 0 and hu.shape == (7,)",
+      "passed": true
+    },
+    {
+      "topic": "channels",
+      "executed": true,
+      "check": "brighter.mean() >= g.mean() and padded.shape[0] == image.shape[0] + 20",
+      "passed": true
+    },
+    {
+      "topic": "sharpening",
+      "executed": true,
+      "check": "sharp.shape == image.shape",
+      "passed": true
+    },
+    {
+      "topic": "noise",
+      "executed": true,
+      "check": "cv.PSNR(g, nlm) > cv.PSNR(g, noisy)",
+      "passed": true
+    },
+    {
+      "topic": "grabcut",
+      "executed": true,
+      "check": "fg.max() == 255",
+      "passed": true
+    },
+    {
+      "topic": "inpaint",
+      "executed": true,
+      "check": "np.abs(restored.astype(int) - image.astype(int))[defect > 0].mean() < np.abs(damaged.astype(int) - image.astype(int))[defect > 0].mean()",
+      "passed": true
+    },
+    {
+      "topic": "cascades",
+      "executed": true,
+      "check": "not face.empty()",
+      "passed": true
+    },
+    {
+      "topic": "background",
+      "executed": true,
+      "check": "fgmask[40:60, 40:60].mean() > 200 and motion.max() == 255",
+      "passed": true
+    },
+    {
+      "topic": "optical_flow",
+      "executed": true,
+      "check": "len(good_new) > 0 and abs(float(np.median((good_new - good_old)[:, 0])) - 3) < 0.5 and flow.shape == g.shape + (2,)",
+      "passed": true
+    },
+    {
+      "topic": "meanshift",
+      "executed": true,
+      "check": "back.shape == g.shape and -1 <= similarity <= 1",
+      "passed": true
+    },
+    {
+      "topic": "color_spaces",
+      "executed": true,
+      "check": "dist.shape == g.shape and enhanced.shape == image.shape",
+      "passed": true
+    },
+    {
+      "topic": "skeleton",
+      "executed": true,
+      "check": "0 < cv.countNonZero(skel) < cv.countNonZero(bw)",
+      "passed": true
+    },
+    {
+      "topic": "stereo",
+      "executed": true,
+      "check": "valid.any()",
+      "passed": true
+    },
+    {
+      "topic": "dnn",
+      "executed": true,
+      "check": "blob.dtype == np.float32",
+      "passed": true
+    },
+    {
+      "topic": "plotting",
+      "executed": true,
+      "check": "os.path.exists('stages.png')",
+      "passed": true
+    }
+  ]
+}

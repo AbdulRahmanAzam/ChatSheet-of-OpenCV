@@ -1,0 +1,1346 @@
+﻿{
+    "id":  "lab_01_manual_p020",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "National University of Computer \u0026 Emerging Sciences - NUCES - Karachi 11.8 Analyze the Image using Pandas import cv2 import pandas as pd from IPython.disptay import display # Read the image = cv2.imread(\u0027Sukuna.jpegI) image # Reshape the 3D image array (Height, Width, # into a 2D array (Total Pixels, Channels) = image. reshape(-l, 3) flattened _ image Channels) # Convert the 2D array into a Pandas DataFrame = pd. DataFrame (flattened_image, columns= image_df # Display basic statistics print (\"Basic Statistics of Image Pixel Values: # display() works perfectly in Jupyter to show a display (image_df. describe() ) formatted table Basic Statistics of Image Pixel Values: Description : FAST NUCES - count mean std min 25% max Karachi 4 .227072e+06 8.164206e+@1 5 .890610e+01 3 .400000e+01 1.120000e+02 2.550006e+02 4 .227072e+36 7.073189e+31 6 .180311e+31 2 . OOOO@Oe+31 2.550000e+32 4 .227072e+06 7 .700986e+01 7 .652126e+01 9 .600000e+OO 1.36000@e+02 2.55000@e+02 Department of Artificial Intelligence Instructor: Talha Shahid 18",
+    "review_status":  "raw_ocr_unverified",
+    "page":  20,
+    "source_id":  "lab_01_manual",
+    "lines":  [
+                  {
+                      "text":  "National University of Computer \u0026 Emerging Sciences -",
+                      "words":  [
+                                    {
+                                        "y":  126,
+                                        "height":  24,
+                                        "width":  124,
+                                        "text":  "National",
+                                        "x":  845
+                                    },
+                                    {
+                                        "y":  127,
+                                        "height":  29,
+                                        "width":  153,
+                                        "text":  "University",
+                                        "x":  978
+                                    },
+                                    {
+                                        "y":  126,
+                                        "height":  24,
+                                        "width":  30,
+                                        "text":  "of",
+                                        "x":  1139
+                                    },
+                                    {
+                                        "y":  127,
+                                        "height":  29,
+                                        "width":  146,
+                                        "text":  "Computer",
+                                        "x":  1175
+                                    },
+                                    {
+                                        "y":  127,
+                                        "height":  23,
+                                        "width":  23,
+                                        "text":  "\u0026",
+                                        "x":  1329
+                                    },
+                                    {
+                                        "y":  127,
+                                        "height":  29,
+                                        "width":  140,
+                                        "text":  "Emerging",
+                                        "x":  1360
+                                    },
+                                    {
+                                        "y":  127,
+                                        "height":  23,
+                                        "width":  123,
+                                        "text":  "Sciences",
+                                        "x":  1509
+                                    },
+                                    {
+                                        "y":  138,
+                                        "height":  5,
+                                        "width":  9,
+                                        "text":  "-",
+                                        "x":  1641
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "NUCES -",
+                      "words":  [
+                                    {
+                                        "y":  127,
+                                        "height":  23,
+                                        "width":  95,
+                                        "text":  "NUCES",
+                                        "x":  1659
+                                    },
+                                    {
+                                        "y":  138,
+                                        "height":  5,
+                                        "width":  9,
+                                        "text":  "-",
+                                        "x":  1763
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Karachi",
+                      "words":  [
+                                    {
+                                        "y":  126,
+                                        "height":  24,
+                                        "width":  112,
+                                        "text":  "Karachi",
+                                        "x":  1782
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "11.8 Analyze the Image using Pandas",
+                      "words":  [
+                                    {
+                                        "y":  363,
+                                        "height":  21,
+                                        "width":  51,
+                                        "text":  "11.8",
+                                        "x":  171
+                                    },
+                                    {
+                                        "y":  363,
+                                        "height":  27,
+                                        "width":  111,
+                                        "text":  "Analyze",
+                                        "x":  232
+                                    },
+                                    {
+                                        "y":  363,
+                                        "height":  21,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  353
+                                    },
+                                    {
+                                        "y":  364,
+                                        "height":  26,
+                                        "width":  92,
+                                        "text":  "Image",
+                                        "x":  408
+                                    },
+                                    {
+                                        "y":  361,
+                                        "height":  29,
+                                        "width":  72,
+                                        "text":  "using",
+                                        "x":  511
+                                    },
+                                    {
+                                        "y":  363,
+                                        "height":  21,
+                                        "width":  101,
+                                        "text":  "Pandas",
+                                        "x":  596
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "import cv2",
+                      "words":  [
+                                    {
+                                        "y":  418,
+                                        "height":  23,
+                                        "width":  78,
+                                        "text":  "import",
+                                        "x":  184
+                                    },
+                                    {
+                                        "y":  419,
+                                        "height":  18,
+                                        "width":  38,
+                                        "text":  "cv2",
+                                        "x":  279
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "import pandas as pd",
+                      "words":  [
+                                    {
+                                        "y":  451,
+                                        "height":  22,
+                                        "width":  78,
+                                        "text":  "import",
+                                        "x":  184
+                                    },
+                                    {
+                                        "y":  452,
+                                        "height":  21,
+                                        "width":  80,
+                                        "text":  "pandas",
+                                        "x":  279
+                                    },
+                                    {
+                                        "y":  456,
+                                        "height":  13,
+                                        "width":  25,
+                                        "text":  "as",
+                                        "x":  375
+                                    },
+                                    {
+                                        "y":  452,
+                                        "height":  21,
+                                        "width":  25,
+                                        "text":  "pd",
+                                        "x":  417
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "from IPython.disptay import display",
+                      "words":  [
+                                    {
+                                        "y":  484,
+                                        "height":  18,
+                                        "width":  52,
+                                        "text":  "from",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  483,
+                                        "height":  23,
+                                        "width":  204,
+                                        "text":  "IPython.disptay",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  483,
+                                        "height":  23,
+                                        "width":  79,
+                                        "text":  "import",
+                                        "x":  472
+                                    },
+                                    {
+                                        "y":  483,
+                                        "height":  23,
+                                        "width":  94,
+                                        "text":  "display",
+                                        "x":  568
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# Read the image",
+                      "words":  [
+                                    {
+                                        "y":  550,
+                                        "height":  17,
+                                        "width":  13,
+                                        "text":  "#",
+                                        "x":  182
+                                    },
+                                    {
+                                        "y":  550,
+                                        "height":  17,
+                                        "width":  52,
+                                        "text":  "Read",
+                                        "x":  210
+                                    },
+                                    {
+                                        "y":  550,
+                                        "height":  17,
+                                        "width":  39,
+                                        "text":  "the",
+                                        "x":  278
+                                    },
+                                    {
+                                        "y":  549,
+                                        "height":  22,
+                                        "width":  65,
+                                        "text":  "image",
+                                        "x":  335
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "= cv2.imread(\u0027Sukuna.jpegI)",
+                      "words":  [
+                                    {
+                                        "y":  588,
+                                        "height":  8,
+                                        "width":  11,
+                                        "text":  "=",
+                                        "x":  265
+                                    },
+                                    {
+                                        "y":  580,
+                                        "height":  24,
+                                        "width":  339,
+                                        "text":  "cv2.imread(\u0027Sukuna.jpegI)",
+                                        "x":  293
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "image",
+                      "words":  [
+                                    {
+                                        "y":  581,
+                                        "height":  23,
+                                        "width":  64,
+                                        "text":  "image",
+                                        "x":  184
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# Reshape the 3D image array (Height, Width,",
+                      "words":  [
+                                    {
+                                        "y":  647,
+                                        "height":  18,
+                                        "width":  13,
+                                        "text":  "#",
+                                        "x":  182
+                                    },
+                                    {
+                                        "y":  647,
+                                        "height":  22,
+                                        "width":  93,
+                                        "text":  "Reshape",
+                                        "x":  210
+                                    },
+                                    {
+                                        "y":  647,
+                                        "height":  18,
+                                        "width":  40,
+                                        "text":  "the",
+                                        "x":  319
+                                    },
+                                    {
+                                        "y":  647,
+                                        "height":  18,
+                                        "width":  25,
+                                        "text":  "3D",
+                                        "x":  375
+                                    },
+                                    {
+                                        "y":  646,
+                                        "height":  23,
+                                        "width":  66,
+                                        "text":  "image",
+                                        "x":  417
+                                    },
+                                    {
+                                        "y":  651,
+                                        "height":  18,
+                                        "width":  66,
+                                        "text":  "array",
+                                        "x":  499
+                                    },
+                                    {
+                                        "y":  645,
+                                        "height":  24,
+                                        "width":  102,
+                                        "text":  "(Height,",
+                                        "x":  584
+                                    },
+                                    {
+                                        "y":  646,
+                                        "height":  22,
+                                        "width":  78,
+                                        "text":  "Width,",
+                                        "x":  705
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# into a 2D array (Total Pixels, Channels)",
+                      "words":  [
+                                    {
+                                        "y":  680,
+                                        "height":  17,
+                                        "width":  13,
+                                        "text":  "#",
+                                        "x":  182
+                                    },
+                                    {
+                                        "y":  679,
+                                        "height":  18,
+                                        "width":  52,
+                                        "text":  "into",
+                                        "x":  210
+                                    },
+                                    {
+                                        "y":  684,
+                                        "height":  13,
+                                        "width":  11,
+                                        "text":  "a",
+                                        "x":  279
+                                    },
+                                    {
+                                        "y":  679,
+                                        "height":  18,
+                                        "width":  25,
+                                        "text":  "2D",
+                                        "x":  306
+                                    },
+                                    {
+                                        "y":  684,
+                                        "height":  17,
+                                        "width":  66,
+                                        "text":  "array",
+                                        "x":  348
+                                    },
+                                    {
+                                        "y":  677,
+                                        "height":  23,
+                                        "width":  78,
+                                        "text":  "(Total",
+                                        "x":  433
+                                    },
+                                    {
+                                        "y":  679,
+                                        "height":  22,
+                                        "width":  90,
+                                        "text":  "Pixels,",
+                                        "x":  527
+                                    },
+                                    {
+                                        "y":  677,
+                                        "height":  23,
+                                        "width":  118,
+                                        "text":  "Channels)",
+                                        "x":  637
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "= image. reshape(-l, 3)",
+                      "words":  [
+                                    {
+                                        "y":  718,
+                                        "height":  8,
+                                        "width":  11,
+                                        "text":  "=",
+                                        "x":  403
+                                    },
+                                    {
+                                        "y":  712,
+                                        "height":  22,
+                                        "width":  77,
+                                        "text":  "image.",
+                                        "x":  431
+                                    },
+                                    {
+                                        "y":  710,
+                                        "height":  24,
+                                        "width":  144,
+                                        "text":  "reshape(-l,",
+                                        "x":  514
+                                    },
+                                    {
+                                        "y":  710,
+                                        "height":  23,
+                                        "width":  22,
+                                        "text":  "3)",
+                                        "x":  679
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "flattened _ image",
+                      "words":  [
+                                    {
+                                        "y":  713,
+                                        "height":  17,
+                                        "width":  120,
+                                        "text":  "flattened",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  730,
+                                        "height":  2,
+                                        "width":  12,
+                                        "text":  "_",
+                                        "x":  306
+                                    },
+                                    {
+                                        "y":  712,
+                                        "height":  22,
+                                        "width":  66,
+                                        "text":  "image",
+                                        "x":  320
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Channels)",
+                      "words":  [
+                                    {
+                                        "y":  645,
+                                        "height":  22,
+                                        "width":  117,
+                                        "text":  "Channels)",
+                                        "x":  803
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# Convert the 2D array into a Pandas DataFrame",
+                      "words":  [
+                                    {
+                                        "y":  778,
+                                        "height":  18,
+                                        "width":  13,
+                                        "text":  "#",
+                                        "x":  182
+                                    },
+                                    {
+                                        "y":  778,
+                                        "height":  18,
+                                        "width":  93,
+                                        "text":  "Convert",
+                                        "x":  210
+                                    },
+                                    {
+                                        "y":  778,
+                                        "height":  18,
+                                        "width":  40,
+                                        "text":  "the",
+                                        "x":  319
+                                    },
+                                    {
+                                        "y":  778,
+                                        "height":  18,
+                                        "width":  24,
+                                        "text":  "2D",
+                                        "x":  376
+                                    },
+                                    {
+                                        "y":  782,
+                                        "height":  18,
+                                        "width":  66,
+                                        "text":  "array",
+                                        "x":  417
+                                    },
+                                    {
+                                        "y":  777,
+                                        "height":  19,
+                                        "width":  51,
+                                        "text":  "into",
+                                        "x":  500
+                                    },
+                                    {
+                                        "y":  782,
+                                        "height":  14,
+                                        "width":  11,
+                                        "text":  "a",
+                                        "x":  567
+                                    },
+                                    {
+                                        "y":  778,
+                                        "height":  18,
+                                        "width":  79,
+                                        "text":  "Pandas",
+                                        "x":  596
+                                    },
+                                    {
+                                        "y":  778,
+                                        "height":  18,
+                                        "width":  121,
+                                        "text":  "DataFrame",
+                                        "x":  692
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "= pd. DataFrame (flattened_image, columns=",
+                      "words":  [
+                                    {
+                                        "y":  816,
+                                        "height":  8,
+                                        "width":  11,
+                                        "text":  "=",
+                                        "x":  306
+                                    },
+                                    {
+                                        "y":  810,
+                                        "height":  22,
+                                        "width":  34,
+                                        "text":  "pd.",
+                                        "x":  335
+                                    },
+                                    {
+                                        "y":  810,
+                                        "height":  18,
+                                        "width":  120,
+                                        "text":  "DataFrame",
+                                        "x":  376
+                                    },
+                                    {
+                                        "y":  808,
+                                        "height":  24,
+                                        "width":  224,
+                                        "text":  "(flattened_image,",
+                                        "x":  503
+                                    },
+                                    {
+                                        "y":  810,
+                                        "height":  18,
+                                        "width":  106,
+                                        "text":  "columns=",
+                                        "x":  748
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "image_df",
+                      "words":  [
+                                    {
+                                        "y":  810,
+                                        "height":  22,
+                                        "width":  106,
+                                        "text":  "image_df",
+                                        "x":  184
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# Display basic statistics",
+                      "words":  [
+                                    {
+                                        "y":  876,
+                                        "height":  18,
+                                        "width":  13,
+                                        "text":  "#",
+                                        "x":  182
+                                    },
+                                    {
+                                        "y":  875,
+                                        "height":  23,
+                                        "width":  94,
+                                        "text":  "Display",
+                                        "x":  210
+                                    },
+                                    {
+                                        "y":  875,
+                                        "height":  19,
+                                        "width":  66,
+                                        "text":  "basic",
+                                        "x":  320
+                                    },
+                                    {
+                                        "y":  875,
+                                        "height":  19,
+                                        "width":  134,
+                                        "text":  "statistics",
+                                        "x":  403
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "print (\"Basic Statistics of Image Pixel Values:",
+                      "words":  [
+                                    {
+                                        "y":  908,
+                                        "height":  22,
+                                        "width":  64,
+                                        "text":  "print",
+                                        "x":  184
+                                    },
+                                    {
+                                        "y":  907,
+                                        "height":  22,
+                                        "width":  91,
+                                        "text":  "(\"Basic",
+                                        "x":  254
+                                    },
+                                    {
+                                        "y":  908,
+                                        "height":  19,
+                                        "width":  135,
+                                        "text":  "Statistics",
+                                        "x":  362
+                                    },
+                                    {
+                                        "y":  909,
+                                        "height":  18,
+                                        "width":  25,
+                                        "text":  "of",
+                                        "x":  513
+                                    },
+                                    {
+                                        "y":  909,
+                                        "height":  21,
+                                        "width":  65,
+                                        "text":  "Image",
+                                        "x":  555
+                                    },
+                                    {
+                                        "y":  908,
+                                        "height":  19,
+                                        "width":  67,
+                                        "text":  "Pixel",
+                                        "x":  637
+                                    },
+                                    {
+                                        "y":  909,
+                                        "height":  18,
+                                        "width":  91,
+                                        "text":  "Values:",
+                                        "x":  719
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# display() works perfectly in Jupyter to show a",
+                      "words":  [
+                                    {
+                                        "y":  941,
+                                        "height":  18,
+                                        "width":  13,
+                                        "text":  "#",
+                                        "x":  182
+                                    },
+                                    {
+                                        "y":  939,
+                                        "height":  24,
+                                        "width":  118,
+                                        "text":  "display()",
+                                        "x":  210
+                                    },
+                                    {
+                                        "y":  942,
+                                        "height":  17,
+                                        "width":  67,
+                                        "text":  "works",
+                                        "x":  347
+                                    },
+                                    {
+                                        "y":  942,
+                                        "height":  21,
+                                        "width":  120,
+                                        "text":  "perfectly",
+                                        "x":  431
+                                    },
+                                    {
+                                        "y":  940,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "in",
+                                        "x":  568
+                                    },
+                                    {
+                                        "y":  942,
+                                        "height":  21,
+                                        "width":  94,
+                                        "text":  "Jupyter",
+                                        "x":  609
+                                    },
+                                    {
+                                        "y":  942,
+                                        "height":  17,
+                                        "width":  25,
+                                        "text":  "to",
+                                        "x":  719
+                                    },
+                                    {
+                                        "y":  942,
+                                        "height":  17,
+                                        "width":  53,
+                                        "text":  "show",
+                                        "x":  761
+                                    },
+                                    {
+                                        "y":  945,
+                                        "height":  14,
+                                        "width":  10,
+                                        "text":  "a",
+                                        "x":  830
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "display (image_df. describe() )",
+                      "words":  [
+                                    {
+                                        "y":  973,
+                                        "height":  23,
+                                        "width":  93,
+                                        "text":  "display",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  972,
+                                        "height":  24,
+                                        "width":  129,
+                                        "text":  "(image_df.",
+                                        "x":  281
+                                    },
+                                    {
+                                        "y":  972,
+                                        "height":  22,
+                                        "width":  132,
+                                        "text":  "describe()",
+                                        "x":  417
+                                    },
+                                    {
+                                        "y":  972,
+                                        "height":  22,
+                                        "width":  7,
+                                        "text":  ")",
+                                        "x":  555
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "formatted table",
+                      "words":  [
+                                    {
+                                        "y":  942,
+                                        "height":  17,
+                                        "width":  121,
+                                        "text":  "formatted",
+                                        "x":  857
+                                    },
+                                    {
+                                        "y":  942,
+                                        "height":  17,
+                                        "width":  67,
+                                        "text":  "table",
+                                        "x":  994
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Basic Statistics of Image Pixel Values:",
+                      "words":  [
+                                    {
+                                        "y":  1135,
+                                        "height":  19,
+                                        "width":  66,
+                                        "text":  "Basic",
+                                        "x":  389
+                                    },
+                                    {
+                                        "y":  1135,
+                                        "height":  19,
+                                        "width":  134,
+                                        "text":  "Statistics",
+                                        "x":  472
+                                    },
+                                    {
+                                        "y":  1136,
+                                        "height":  18,
+                                        "width":  25,
+                                        "text":  "of",
+                                        "x":  623
+                                    },
+                                    {
+                                        "y":  1136,
+                                        "height":  22,
+                                        "width":  65,
+                                        "text":  "Image",
+                                        "x":  665
+                                    },
+                                    {
+                                        "y":  1135,
+                                        "height":  19,
+                                        "width":  67,
+                                        "text":  "Pixel",
+                                        "x":  747
+                                    },
+                                    {
+                                        "y":  1136,
+                                        "height":  18,
+                                        "width":  90,
+                                        "text":  "Values:",
+                                        "x":  829
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Description :",
+                      "words":  [
+                                    {
+                                        "y":  1341,
+                                        "height":  23,
+                                        "width":  148,
+                                        "text":  "Description",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  1346,
+                                        "height":  14,
+                                        "width":  6,
+                                        "text":  ":",
+                                        "x":  337
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FAST NUCES -",
+                      "words":  [
+                                    {
+                                        "y":  1821,
+                                        "height":  19,
+                                        "width":  61,
+                                        "text":  "FAST",
+                                        "x":  171
+                                    },
+                                    {
+                                        "y":  1821,
+                                        "height":  19,
+                                        "width":  84,
+                                        "text":  "NUCES",
+                                        "x":  243
+                                    },
+                                    {
+                                        "y":  1830,
+                                        "height":  4,
+                                        "width":  9,
+                                        "text":  "-",
+                                        "x":  337
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "count",
+                      "words":  [
+                                    {
+                                        "y":  1222,
+                                        "height":  17,
+                                        "width":  66,
+                                        "text":  "count",
+                                        "x":  404
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "mean",
+                      "words":  [
+                                    {
+                                        "y":  1271,
+                                        "height":  14,
+                                        "width":  53,
+                                        "text":  "mean",
+                                        "x":  403
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "std",
+                      "words":  [
+                                    {
+                                        "y":  1312,
+                                        "height":  17,
+                                        "width":  38,
+                                        "text":  "std",
+                                        "x":  404
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "min",
+                      "words":  [
+                                    {
+                                        "y":  1356,
+                                        "height":  19,
+                                        "width":  39,
+                                        "text":  "min",
+                                        "x":  403
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "25%",
+                      "words":  [
+                                    {
+                                        "y":  1403,
+                                        "height":  18,
+                                        "width":  40,
+                                        "text":  "25%",
+                                        "x":  404
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "max",
+                      "words":  [
+                                    {
+                                        "y":  1545,
+                                        "height":  13,
+                                        "width":  40,
+                                        "text":  "max",
+                                        "x":  403
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Karachi",
+                      "words":  [
+                                    {
+                                        "y":  1819,
+                                        "height":  21,
+                                        "width":  94,
+                                        "text":  "Karachi",
+                                        "x":  356
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4 .227072e+06",
+                      "words":  [
+                                    {
+                                        "y":  1221,
+                                        "height":  18,
+                                        "width":  10,
+                                        "text":  "4",
+                                        "x":  500
+                                    },
+                                    {
+                                        "y":  1221,
+                                        "height":  18,
+                                        "width":  145,
+                                        "text":  ".227072e+06",
+                                        "x":  517
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "8.164206e+@1",
+                      "words":  [
+                                    {
+                                        "y":  1267,
+                                        "height":  18,
+                                        "width":  162,
+                                        "text":  "8.164206e+@1",
+                                        "x":  500
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "5 .890610e+01",
+                      "words":  [
+                                    {
+                                        "y":  1312,
+                                        "height":  17,
+                                        "width":  11,
+                                        "text":  "5",
+                                        "x":  500
+                                    },
+                                    {
+                                        "y":  1312,
+                                        "height":  17,
+                                        "width":  145,
+                                        "text":  ".890610e+01",
+                                        "x":  517
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3 .400000e+01",
+                      "words":  [
+                                    {
+                                        "y":  1403,
+                                        "height":  18,
+                                        "width":  11,
+                                        "text":  "3",
+                                        "x":  500
+                                    },
+                                    {
+                                        "y":  1403,
+                                        "height":  18,
+                                        "width":  145,
+                                        "text":  ".400000e+01",
+                                        "x":  517
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1.120000e+02",
+                      "words":  [
+                                    {
+                                        "y":  1495,
+                                        "height":  18,
+                                        "width":  162,
+                                        "text":  "1.120000e+02",
+                                        "x":  500
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2.550006e+02",
+                      "words":  [
+                                    {
+                                        "y":  1540,
+                                        "height":  18,
+                                        "width":  162,
+                                        "text":  "2.550006e+02",
+                                        "x":  500
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4 .227072e+36",
+                      "words":  [
+                                    {
+                                        "y":  1221,
+                                        "height":  18,
+                                        "width":  11,
+                                        "text":  "4",
+                                        "x":  692
+                                    },
+                                    {
+                                        "y":  1221,
+                                        "height":  18,
+                                        "width":  145,
+                                        "text":  ".227072e+36",
+                                        "x":  710
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "7.073189e+31",
+                      "words":  [
+                                    {
+                                        "y":  1267,
+                                        "height":  18,
+                                        "width":  162,
+                                        "text":  "7.073189e+31",
+                                        "x":  693
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "6 .180311e+31",
+                      "words":  [
+                                    {
+                                        "y":  1312,
+                                        "height":  17,
+                                        "width":  12,
+                                        "text":  "6",
+                                        "x":  692
+                                    },
+                                    {
+                                        "y":  1312,
+                                        "height":  17,
+                                        "width":  145,
+                                        "text":  ".180311e+31",
+                                        "x":  710
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2 . OOOO@Oe+31",
+                      "words":  [
+                                    {
+                                        "y":  1403,
+                                        "height":  18,
+                                        "width":  11,
+                                        "text":  "2",
+                                        "x":  693
+                                    },
+                                    {
+                                        "y":  1417,
+                                        "height":  4,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  710
+                                    },
+                                    {
+                                        "y":  1403,
+                                        "height":  18,
+                                        "width":  135,
+                                        "text":  "OOOO@Oe+31",
+                                        "x":  720
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2.550000e+32",
+                      "words":  [
+                                    {
+                                        "y":  1540,
+                                        "height":  18,
+                                        "width":  161,
+                                        "text":  "2.550000e+32",
+                                        "x":  693
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4 .227072e+06",
+                      "words":  [
+                                    {
+                                        "y":  1221,
+                                        "height":  18,
+                                        "width":  10,
+                                        "text":  "4",
+                                        "x":  885
+                                    },
+                                    {
+                                        "y":  1221,
+                                        "height":  18,
+                                        "width":  146,
+                                        "text":  ".227072e+06",
+                                        "x":  902
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "7 .700986e+01",
+                      "words":  [
+                                    {
+                                        "y":  1267,
+                                        "height":  17,
+                                        "width":  11,
+                                        "text":  "7",
+                                        "x":  885
+                                    },
+                                    {
+                                        "y":  1267,
+                                        "height":  18,
+                                        "width":  146,
+                                        "text":  ".700986e+01",
+                                        "x":  902
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "7 .652126e+01",
+                      "words":  [
+                                    {
+                                        "y":  1312,
+                                        "height":  17,
+                                        "width":  11,
+                                        "text":  "7",
+                                        "x":  885
+                                    },
+                                    {
+                                        "y":  1312,
+                                        "height":  17,
+                                        "width":  146,
+                                        "text":  ".652126e+01",
+                                        "x":  902
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "9 .600000e+OO",
+                      "words":  [
+                                    {
+                                        "y":  1403,
+                                        "height":  18,
+                                        "width":  11,
+                                        "text":  "9",
+                                        "x":  885
+                                    },
+                                    {
+                                        "y":  1403,
+                                        "height":  18,
+                                        "width":  146,
+                                        "text":  ".600000e+OO",
+                                        "x":  902
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1.36000@e+02",
+                      "words":  [
+                                    {
+                                        "y":  1495,
+                                        "height":  18,
+                                        "width":  163,
+                                        "text":  "1.36000@e+02",
+                                        "x":  885
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2.55000@e+02",
+                      "words":  [
+                                    {
+                                        "y":  1540,
+                                        "height":  18,
+                                        "width":  163,
+                                        "text":  "2.55000@e+02",
+                                        "x":  885
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Department of Artificial Intelligence",
+                      "words":  [
+                                    {
+                                        "y":  168,
+                                        "height":  26,
+                                        "width":  142,
+                                        "text":  "Department",
+                                        "x":  1155
+                                    },
+                                    {
+                                        "y":  167,
+                                        "height":  22,
+                                        "width":  26,
+                                        "text":  "of",
+                                        "x":  1305
+                                    },
+                                    {
+                                        "y":  167,
+                                        "height":  22,
+                                        "width":  100,
+                                        "text":  "Artificial",
+                                        "x":  1337
+                                    },
+                                    {
+                                        "y":  167,
+                                        "height":  27,
+                                        "width":  137,
+                                        "text":  "Intelligence",
+                                        "x":  1448
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Instructor: Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1821,
+                                        "height":  19,
+                                        "width":  130,
+                                        "text":  "Instructor:",
+                                        "x":  1254
+                                    },
+                                    {
+                                        "y":  1821,
+                                        "height":  19,
+                                        "width":  72,
+                                        "text":  "Talha",
+                                        "x":  1393
+                                    },
+                                    {
+                                        "y":  1819,
+                                        "height":  21,
+                                        "width":  88,
+                                        "text":  "Shahid",
+                                        "x":  1474
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "18",
+                      "words":  [
+                                    {
+                                        "y":  1821,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "18",
+                                        "x":  2483
+                                    }
+                                ]
+                  }
+              ]
+}

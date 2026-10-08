@@ -1,0 +1,2127 @@
+﻿{
+    "id":  "lab_01_manual_p021",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "National University of Computer \u0026 Emerging Sciences - NUCES - Karachi Thresholded Image (Binary) 11.9 Image Thresholding import cv2 import matplotlib.pyptot as put # Read the image CV2 . imread( Sukuna.jpeg I) image = # Convert the image to grayscale # Thresholding is typically performed on single-channel cv2. cvtCotor (image , cv2 . COLOR_BGR2GRAY) gray_image = # Apply binary thresholding # Parameters: source image, threshold value, max value, ret, thresholded_image = cv2. 100, # Display the thresholded image intine using Matplotlib (grayscale) Department of Artificial Intelligence images thresholding technique 200, cv2.THRESH_BINARY) # cmap=\u0027gray\u0027 is required to display single-channel images correctly put . cmap=\u0027 gray\u0027) ptt.title( \u0027Thresholded Image (Binary) put . axis(l off\u0027) put . show() Description : FAST NUCES - This code Uses OpenCV to read an image and convert it to grayscale. It then applies a binary threshold using cv2.threshotd() to create a high-contrast, black-and-white image. The threshold function looks at the intensity of every single pixel: 100: This is the threshold limit. Any pixel with a brightness value strictly greater than 100 will be changed. 200: This is the maximum value. Pixels that exceed the 100 limit are forced to this value (which represents pure white) . cv2.THRESH_BINARY: This tells OpenCV the style of thresholding to Use. Because it is binary, anything that does not exceed the threshold of 100 is forced to @ (pure black) . The function returns two values: ret (the threshold value that was actually used, which is just 100 here) and thresholded_image (the resulting black-and-white image). Finally, Matplotlib is used to display the output directly inside the Jupyter Notebook. Karachi Instructor: Talha Shahid 19",
+    "review_status":  "raw_ocr_unverified",
+    "page":  21,
+    "source_id":  "lab_01_manual",
+    "lines":  [
+                  {
+                      "text":  "National University of Computer \u0026 Emerging Sciences -",
+                      "words":  [
+                                    {
+                                        "y":  126,
+                                        "height":  24,
+                                        "width":  124,
+                                        "text":  "National",
+                                        "x":  845
+                                    },
+                                    {
+                                        "y":  127,
+                                        "height":  29,
+                                        "width":  153,
+                                        "text":  "University",
+                                        "x":  978
+                                    },
+                                    {
+                                        "y":  126,
+                                        "height":  24,
+                                        "width":  30,
+                                        "text":  "of",
+                                        "x":  1139
+                                    },
+                                    {
+                                        "y":  127,
+                                        "height":  29,
+                                        "width":  146,
+                                        "text":  "Computer",
+                                        "x":  1175
+                                    },
+                                    {
+                                        "y":  127,
+                                        "height":  23,
+                                        "width":  23,
+                                        "text":  "\u0026",
+                                        "x":  1329
+                                    },
+                                    {
+                                        "y":  127,
+                                        "height":  29,
+                                        "width":  140,
+                                        "text":  "Emerging",
+                                        "x":  1360
+                                    },
+                                    {
+                                        "y":  127,
+                                        "height":  23,
+                                        "width":  123,
+                                        "text":  "Sciences",
+                                        "x":  1509
+                                    },
+                                    {
+                                        "y":  138,
+                                        "height":  5,
+                                        "width":  9,
+                                        "text":  "-",
+                                        "x":  1641
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "NUCES -",
+                      "words":  [
+                                    {
+                                        "y":  127,
+                                        "height":  23,
+                                        "width":  95,
+                                        "text":  "NUCES",
+                                        "x":  1659
+                                    },
+                                    {
+                                        "y":  138,
+                                        "height":  5,
+                                        "width":  9,
+                                        "text":  "-",
+                                        "x":  1763
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Karachi",
+                      "words":  [
+                                    {
+                                        "y":  126,
+                                        "height":  24,
+                                        "width":  112,
+                                        "text":  "Karachi",
+                                        "x":  1782
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Thresholded Image (Binary)",
+                      "words":  [
+                                    {
+                                        "y":  455,
+                                        "height":  23,
+                                        "width":  172,
+                                        "text":  "Thresholded",
+                                        "x":  1891
+                                    },
+                                    {
+                                        "y":  456,
+                                        "height":  28,
+                                        "width":  85,
+                                        "text":  "Image",
+                                        "x":  2075
+                                    },
+                                    {
+                                        "y":  455,
+                                        "height":  29,
+                                        "width":  110,
+                                        "text":  "(Binary)",
+                                        "x":  2171
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "11.9 Image Thresholding",
+                      "words":  [
+                                    {
+                                        "y":  390,
+                                        "height":  20,
+                                        "width":  51,
+                                        "text":  "11.9",
+                                        "x":  171
+                                    },
+                                    {
+                                        "y":  390,
+                                        "height":  26,
+                                        "width":  92,
+                                        "text":  "Image",
+                                        "x":  233
+                                    },
+                                    {
+                                        "y":  387,
+                                        "height":  29,
+                                        "width":  181,
+                                        "text":  "Thresholding",
+                                        "x":  335
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "import cv2",
+                      "words":  [
+                                    {
+                                        "y":  444,
+                                        "height":  23,
+                                        "width":  78,
+                                        "text":  "import",
+                                        "x":  184
+                                    },
+                                    {
+                                        "y":  445,
+                                        "height":  18,
+                                        "width":  38,
+                                        "text":  "cv2",
+                                        "x":  279
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "import matplotlib.pyptot as put",
+                      "words":  [
+                                    {
+                                        "y":  477,
+                                        "height":  23,
+                                        "width":  78,
+                                        "text":  "import",
+                                        "x":  184
+                                    },
+                                    {
+                                        "y":  477,
+                                        "height":  23,
+                                        "width":  233,
+                                        "text":  "matplotlib.pyptot",
+                                        "x":  278
+                                    },
+                                    {
+                                        "y":  482,
+                                        "height":  14,
+                                        "width":  25,
+                                        "text":  "as",
+                                        "x":  526
+                                    },
+                                    {
+                                        "y":  478,
+                                        "height":  22,
+                                        "width":  38,
+                                        "text":  "put",
+                                        "x":  568
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# Read the image",
+                      "words":  [
+                                    {
+                                        "y":  544,
+                                        "height":  17,
+                                        "width":  13,
+                                        "text":  "#",
+                                        "x":  182
+                                    },
+                                    {
+                                        "y":  544,
+                                        "height":  17,
+                                        "width":  52,
+                                        "text":  "Read",
+                                        "x":  210
+                                    },
+                                    {
+                                        "y":  544,
+                                        "height":  17,
+                                        "width":  39,
+                                        "text":  "the",
+                                        "x":  278
+                                    },
+                                    {
+                                        "y":  543,
+                                        "height":  22,
+                                        "width":  65,
+                                        "text":  "image",
+                                        "x":  335
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CV2 . imread( Sukuna.jpeg I)",
+                      "words":  [
+                                    {
+                                        "y":  576,
+                                        "height":  18,
+                                        "width":  39,
+                                        "text":  "CV2",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  590,
+                                        "height":  4,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  338
+                                    },
+                                    {
+                                        "y":  574,
+                                        "height":  22,
+                                        "width":  93,
+                                        "text":  "imread(",
+                                        "x":  348
+                                    },
+                                    {
+                                        "y":  575,
+                                        "height":  23,
+                                        "width":  148,
+                                        "text":  "Sukuna.jpeg",
+                                        "x":  458
+                                    },
+                                    {
+                                        "y":  574,
+                                        "height":  22,
+                                        "width":  19,
+                                        "text":  "I)",
+                                        "x":  613
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "image =",
+                      "words":  [
+                                    {
+                                        "y":  575,
+                                        "height":  23,
+                                        "width":  65,
+                                        "text":  "image",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  582,
+                                        "height":  8,
+                                        "width":  11,
+                                        "text":  "=",
+                                        "x":  265
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# Convert the image to grayscale",
+                      "words":  [
+                                    {
+                                        "y":  642,
+                                        "height":  16,
+                                        "width":  13,
+                                        "text":  "#",
+                                        "x":  182
+                                    },
+                                    {
+                                        "y":  641,
+                                        "height":  17,
+                                        "width":  93,
+                                        "text":  "Convert",
+                                        "x":  210
+                                    },
+                                    {
+                                        "y":  642,
+                                        "height":  16,
+                                        "width":  40,
+                                        "text":  "the",
+                                        "x":  319
+                                    },
+                                    {
+                                        "y":  641,
+                                        "height":  21,
+                                        "width":  66,
+                                        "text":  "image",
+                                        "x":  376
+                                    },
+                                    {
+                                        "y":  642,
+                                        "height":  16,
+                                        "width":  25,
+                                        "text":  "to",
+                                        "x":  458
+                                    },
+                                    {
+                                        "y":  642,
+                                        "height":  20,
+                                        "width":  120,
+                                        "text":  "grayscale",
+                                        "x":  500
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# Thresholding is typically performed on single-channel",
+                      "words":  [
+                                    {
+                                        "y":  673,
+                                        "height":  18,
+                                        "width":  13,
+                                        "text":  "#",
+                                        "x":  182
+                                    },
+                                    {
+                                        "y":  672,
+                                        "height":  23,
+                                        "width":  163,
+                                        "text":  "Thresholding",
+                                        "x":  209
+                                    },
+                                    {
+                                        "y":  672,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "is",
+                                        "x":  389
+                                    },
+                                    {
+                                        "y":  672,
+                                        "height":  23,
+                                        "width":  121,
+                                        "text":  "typically",
+                                        "x":  430
+                                    },
+                                    {
+                                        "y":  673,
+                                        "height":  22,
+                                        "width":  121,
+                                        "text":  "performed",
+                                        "x":  568
+                                    },
+                                    {
+                                        "y":  677,
+                                        "height":  14,
+                                        "width":  24,
+                                        "text":  "on",
+                                        "x":  706
+                                    },
+                                    {
+                                        "y":  672,
+                                        "height":  23,
+                                        "width":  191,
+                                        "text":  "single-channel",
+                                        "x":  747
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "cv2. cvtCotor (image ,",
+                      "words":  [
+                                    {
+                                        "y":  706,
+                                        "height":  18,
+                                        "width":  49,
+                                        "text":  "cv2.",
+                                        "x":  362
+                                    },
+                                    {
+                                        "y":  706,
+                                        "height":  18,
+                                        "width":  107,
+                                        "text":  "cvtCotor",
+                                        "x":  417
+                                    },
+                                    {
+                                        "y":  704,
+                                        "height":  24,
+                                        "width":  77,
+                                        "text":  "(image",
+                                        "x":  529
+                                    },
+                                    {
+                                        "y":  719,
+                                        "height":  8,
+                                        "width":  4,
+                                        "text":  ",",
+                                        "x":  613
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "cv2 . COLOR_BGR2GRAY)",
+                      "words":  [
+                                    {
+                                        "y":  706,
+                                        "height":  18,
+                                        "width":  38,
+                                        "text":  "cv2",
+                                        "x":  637
+                                    },
+                                    {
+                                        "y":  719,
+                                        "height":  5,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  682
+                                    },
+                                    {
+                                        "y":  704,
+                                        "height":  22,
+                                        "width":  201,
+                                        "text":  "COLOR_BGR2GRAY)",
+                                        "x":  692
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "gray_image =",
+                      "words":  [
+                                    {
+                                        "y":  705,
+                                        "height":  23,
+                                        "width":  134,
+                                        "text":  "gray_image",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  711,
+                                        "height":  9,
+                                        "width":  11,
+                                        "text":  "=",
+                                        "x":  334
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# Apply binary thresholding",
+                      "words":  [
+                                    {
+                                        "y":  771,
+                                        "height":  18,
+                                        "width":  13,
+                                        "text":  "#",
+                                        "x":  182
+                                    },
+                                    {
+                                        "y":  771,
+                                        "height":  22,
+                                        "width":  67,
+                                        "text":  "Apply",
+                                        "x":  209
+                                    },
+                                    {
+                                        "y":  771,
+                                        "height":  22,
+                                        "width":  80,
+                                        "text":  "binary",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  770,
+                                        "height":  23,
+                                        "width":  162,
+                                        "text":  "thresholding",
+                                        "x":  389
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# Parameters: source image, threshold value, max value,",
+                      "words":  [
+                                    {
+                                        "y":  804,
+                                        "height":  18,
+                                        "width":  13,
+                                        "text":  "#",
+                                        "x":  182
+                                    },
+                                    {
+                                        "y":  804,
+                                        "height":  18,
+                                        "width":  146,
+                                        "text":  "Parameters:",
+                                        "x":  210
+                                    },
+                                    {
+                                        "y":  808,
+                                        "height":  14,
+                                        "width":  79,
+                                        "text":  "source",
+                                        "x":  376
+                                    },
+                                    {
+                                        "y":  803,
+                                        "height":  23,
+                                        "width":  76,
+                                        "text":  "image,",
+                                        "x":  472
+                                    },
+                                    {
+                                        "y":  804,
+                                        "height":  18,
+                                        "width":  122,
+                                        "text":  "threshold",
+                                        "x":  567
+                                    },
+                                    {
+                                        "y":  804,
+                                        "height":  21,
+                                        "width":  78,
+                                        "text":  "value,",
+                                        "x":  705
+                                    },
+                                    {
+                                        "y":  808,
+                                        "height":  14,
+                                        "width":  38,
+                                        "text":  "max",
+                                        "x":  802
+                                    },
+                                    {
+                                        "y":  804,
+                                        "height":  21,
+                                        "width":  76,
+                                        "text":  "value,",
+                                        "x":  857
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ret, thresholded_image =",
+                      "words":  [
+                                    {
+                                        "y":  838,
+                                        "height":  20,
+                                        "width":  47,
+                                        "text":  "ret,",
+                                        "x":  184
+                                    },
+                                    {
+                                        "y":  836,
+                                        "height":  23,
+                                        "width":  232,
+                                        "text":  "thresholded_image",
+                                        "x":  251
+                                    },
+                                    {
+                                        "y":  842,
+                                        "height":  9,
+                                        "width":  11,
+                                        "text":  "=",
+                                        "x":  500
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "cv2. 100,",
+                      "words":  [
+                                    {
+                                        "y":  837,
+                                        "height":  18,
+                                        "width":  48,
+                                        "text":  "cv2.",
+                                        "x":  527
+                                    },
+                                    {
+                                        "y":  837,
+                                        "height":  21,
+                                        "width":  49,
+                                        "text":  "100,",
+                                        "x":  885
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# Display the thresholded image intine using Matplotlib",
+                      "words":  [
+                                    {
+                                        "y":  902,
+                                        "height":  18,
+                                        "width":  13,
+                                        "text":  "#",
+                                        "x":  182
+                                    },
+                                    {
+                                        "y":  901,
+                                        "height":  23,
+                                        "width":  94,
+                                        "text":  "Display",
+                                        "x":  210
+                                    },
+                                    {
+                                        "y":  902,
+                                        "height":  18,
+                                        "width":  40,
+                                        "text":  "the",
+                                        "x":  319
+                                    },
+                                    {
+                                        "y":  902,
+                                        "height":  18,
+                                        "width":  148,
+                                        "text":  "thresholded",
+                                        "x":  375
+                                    },
+                                    {
+                                        "y":  901,
+                                        "height":  23,
+                                        "width":  66,
+                                        "text":  "image",
+                                        "x":  540
+                                    },
+                                    {
+                                        "y":  901,
+                                        "height":  19,
+                                        "width":  80,
+                                        "text":  "intine",
+                                        "x":  623
+                                    },
+                                    {
+                                        "y":  901,
+                                        "height":  23,
+                                        "width":  66,
+                                        "text":  "using",
+                                        "x":  720
+                                    },
+                                    {
+                                        "y":  901,
+                                        "height":  23,
+                                        "width":  134,
+                                        "text":  "Matplotlib",
+                                        "x":  802
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "(grayscale)",
+                      "words":  [
+                                    {
+                                        "y":  671,
+                                        "height":  24,
+                                        "width":  144,
+                                        "text":  "(grayscale)",
+                                        "x":  956
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Department of Artificial Intelligence",
+                      "words":  [
+                                    {
+                                        "y":  168,
+                                        "height":  26,
+                                        "width":  142,
+                                        "text":  "Department",
+                                        "x":  1155
+                                    },
+                                    {
+                                        "y":  167,
+                                        "height":  22,
+                                        "width":  26,
+                                        "text":  "of",
+                                        "x":  1305
+                                    },
+                                    {
+                                        "y":  167,
+                                        "height":  22,
+                                        "width":  100,
+                                        "text":  "Artificial",
+                                        "x":  1337
+                                    },
+                                    {
+                                        "y":  167,
+                                        "height":  27,
+                                        "width":  137,
+                                        "text":  "Intelligence",
+                                        "x":  1448
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "images",
+                      "words":  [
+                                    {
+                                        "y":  672,
+                                        "height":  23,
+                                        "width":  79,
+                                        "text":  "images",
+                                        "x":  1119
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "thresholding technique",
+                      "words":  [
+                                    {
+                                        "y":  803,
+                                        "height":  23,
+                                        "width":  163,
+                                        "text":  "thresholding",
+                                        "x":  953
+                                    },
+                                    {
+                                        "y":  803,
+                                        "height":  23,
+                                        "width":  121,
+                                        "text":  "technique",
+                                        "x":  1132
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "200, cv2.THRESH_BINARY)",
+                      "words":  [
+                                    {
+                                        "y":  837,
+                                        "height":  21,
+                                        "width":  48,
+                                        "text":  "200,",
+                                        "x":  954
+                                    },
+                                    {
+                                        "y":  835,
+                                        "height":  22,
+                                        "width":  241,
+                                        "text":  "cv2.THRESH_BINARY)",
+                                        "x":  1023
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# cmap=\u0027gray\u0027 is required to display single-channel images correctly",
+                      "words":  [
+                                    {
+                                        "y":  935,
+                                        "height":  18,
+                                        "width":  13,
+                                        "text":  "#",
+                                        "x":  182
+                                    },
+                                    {
+                                        "y":  935,
+                                        "height":  22,
+                                        "width":  145,
+                                        "text":  "cmap=\u0027gray\u0027",
+                                        "x":  210
+                                    },
+                                    {
+                                        "y":  934,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "is",
+                                        "x":  376
+                                    },
+                                    {
+                                        "y":  934,
+                                        "height":  23,
+                                        "width":  105,
+                                        "text":  "required",
+                                        "x":  418
+                                    },
+                                    {
+                                        "y":  936,
+                                        "height":  17,
+                                        "width":  25,
+                                        "text":  "to",
+                                        "x":  540
+                                    },
+                                    {
+                                        "y":  934,
+                                        "height":  23,
+                                        "width":  93,
+                                        "text":  "display",
+                                        "x":  582
+                                    },
+                                    {
+                                        "y":  934,
+                                        "height":  23,
+                                        "width":  190,
+                                        "text":  "single-channel",
+                                        "x":  692
+                                    },
+                                    {
+                                        "y":  934,
+                                        "height":  23,
+                                        "width":  80,
+                                        "text":  "images",
+                                        "x":  898
+                                    },
+                                    {
+                                        "y":  935,
+                                        "height":  22,
+                                        "width":  122,
+                                        "text":  "correctly",
+                                        "x":  995
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "put . cmap=\u0027 gray\u0027)",
+                      "words":  [
+                                    {
+                                        "y":  968,
+                                        "height":  21,
+                                        "width":  37,
+                                        "text":  "put",
+                                        "x":  184
+                                    },
+                                    {
+                                        "y":  981,
+                                        "height":  4,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  227
+                                    },
+                                    {
+                                        "y":  968,
+                                        "height":  21,
+                                        "width":  75,
+                                        "text":  "cmap=\u0027",
+                                        "x":  596
+                                    },
+                                    {
+                                        "y":  965,
+                                        "height":  24,
+                                        "width":  77,
+                                        "text":  "gray\u0027)",
+                                        "x":  679
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ptt.title( \u0027Thresholded Image (Binary)",
+                      "words":  [
+                                    {
+                                        "y":  998,
+                                        "height":  24,
+                                        "width":  132,
+                                        "text":  "ptt.title(",
+                                        "x":  184
+                                    },
+                                    {
+                                        "y":  1000,
+                                        "height":  18,
+                                        "width":  158,
+                                        "text":  "\u0027Thresholded",
+                                        "x":  325
+                                    },
+                                    {
+                                        "y":  1001,
+                                        "height":  21,
+                                        "width":  64,
+                                        "text":  "Image",
+                                        "x":  501
+                                    },
+                                    {
+                                        "y":  998,
+                                        "height":  24,
+                                        "width":  103,
+                                        "text":  "(Binary)",
+                                        "x":  584
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "put . axis(l off\u0027)",
+                      "words":  [
+                                    {
+                                        "y":  1033,
+                                        "height":  22,
+                                        "width":  37,
+                                        "text":  "put",
+                                        "x":  184
+                                    },
+                                    {
+                                        "y":  1046,
+                                        "height":  5,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  227
+                                    },
+                                    {
+                                        "y":  1031,
+                                        "height":  22,
+                                        "width":  75,
+                                        "text":  "axis(l",
+                                        "x":  238
+                                    },
+                                    {
+                                        "y":  1031,
+                                        "height":  22,
+                                        "width":  63,
+                                        "text":  "off\u0027)",
+                                        "x":  321
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "put . show()",
+                      "words":  [
+                                    {
+                                        "y":  1066,
+                                        "height":  21,
+                                        "width":  37,
+                                        "text":  "put",
+                                        "x":  184
+                                    },
+                                    {
+                                        "y":  1079,
+                                        "height":  5,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  227
+                                    },
+                                    {
+                                        "y":  1064,
+                                        "height":  22,
+                                        "width":  77,
+                                        "text":  "show()",
+                                        "x":  238
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Description :",
+                      "words":  [
+                                    {
+                                        "y":  1325,
+                                        "height":  23,
+                                        "width":  148,
+                                        "text":  "Description",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  1330,
+                                        "height":  14,
+                                        "width":  6,
+                                        "text":  ":",
+                                        "x":  337
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FAST NUCES -",
+                      "words":  [
+                                    {
+                                        "y":  1821,
+                                        "height":  19,
+                                        "width":  61,
+                                        "text":  "FAST",
+                                        "x":  171
+                                    },
+                                    {
+                                        "y":  1821,
+                                        "height":  19,
+                                        "width":  84,
+                                        "text":  "NUCES",
+                                        "x":  243
+                                    },
+                                    {
+                                        "y":  1830,
+                                        "height":  4,
+                                        "width":  9,
+                                        "text":  "-",
+                                        "x":  337
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "This code Uses OpenCV to read an image and convert it to grayscale. It then applies a binary threshold using cv2.threshotd() to create a high-contrast,",
+                      "words":  [
+                                    {
+                                        "y":  1129,
+                                        "height":  19,
+                                        "width":  52,
+                                        "text":  "This",
+                                        "x":  389
+                                    },
+                                    {
+                                        "y":  1130,
+                                        "height":  18,
+                                        "width":  52,
+                                        "text":  "code",
+                                        "x":  458
+                                    },
+                                    {
+                                        "y":  1134,
+                                        "height":  14,
+                                        "width":  52,
+                                        "text":  "Uses",
+                                        "x":  526
+                                    },
+                                    {
+                                        "y":  1130,
+                                        "height":  22,
+                                        "width":  81,
+                                        "text":  "OpenCV",
+                                        "x":  595
+                                    },
+                                    {
+                                        "y":  1131,
+                                        "height":  17,
+                                        "width":  25,
+                                        "text":  "to",
+                                        "x":  691
+                                    },
+                                    {
+                                        "y":  1130,
+                                        "height":  18,
+                                        "width":  51,
+                                        "text":  "read",
+                                        "x":  734
+                                    },
+                                    {
+                                        "y":  1134,
+                                        "height":  14,
+                                        "width":  25,
+                                        "text":  "an",
+                                        "x":  802
+                                    },
+                                    {
+                                        "y":  1129,
+                                        "height":  23,
+                                        "width":  66,
+                                        "text":  "image",
+                                        "x":  843
+                                    },
+                                    {
+                                        "y":  1130,
+                                        "height":  18,
+                                        "width":  39,
+                                        "text":  "and",
+                                        "x":  925
+                                    },
+                                    {
+                                        "y":  1131,
+                                        "height":  17,
+                                        "width":  94,
+                                        "text":  "convert",
+                                        "x":  981
+                                    },
+                                    {
+                                        "y":  1129,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "it",
+                                        "x":  1091
+                                    },
+                                    {
+                                        "y":  1131,
+                                        "height":  17,
+                                        "width":  25,
+                                        "text":  "to",
+                                        "x":  1131
+                                    },
+                                    {
+                                        "y":  1130,
+                                        "height":  22,
+                                        "width":  132,
+                                        "text":  "grayscale.",
+                                        "x":  1173
+                                    },
+                                    {
+                                        "y":  1130,
+                                        "height":  18,
+                                        "width":  24,
+                                        "text":  "It",
+                                        "x":  1326
+                                    },
+                                    {
+                                        "y":  1130,
+                                        "height":  18,
+                                        "width":  54,
+                                        "text":  "then",
+                                        "x":  1365
+                                    },
+                                    {
+                                        "y":  1129,
+                                        "height":  23,
+                                        "width":  93,
+                                        "text":  "applies",
+                                        "x":  1435
+                                    },
+                                    {
+                                        "y":  1134,
+                                        "height":  14,
+                                        "width":  11,
+                                        "text":  "a",
+                                        "x":  1544
+                                    },
+                                    {
+                                        "y":  1129,
+                                        "height":  23,
+                                        "width":  81,
+                                        "text":  "binary",
+                                        "x":  1572
+                                    },
+                                    {
+                                        "y":  1130,
+                                        "height":  18,
+                                        "width":  120,
+                                        "text":  "threshold",
+                                        "x":  1669
+                                    },
+                                    {
+                                        "y":  1129,
+                                        "height":  23,
+                                        "width":  66,
+                                        "text":  "using",
+                                        "x":  1806
+                                    },
+                                    {
+                                        "y":  1128,
+                                        "height":  22,
+                                        "width":  202,
+                                        "text":  "cv2.threshotd()",
+                                        "x":  1889
+                                    },
+                                    {
+                                        "y":  1131,
+                                        "height":  17,
+                                        "width":  26,
+                                        "text":  "to",
+                                        "x":  2108
+                                    },
+                                    {
+                                        "y":  1131,
+                                        "height":  17,
+                                        "width":  80,
+                                        "text":  "create",
+                                        "x":  2150
+                                    },
+                                    {
+                                        "y":  1134,
+                                        "height":  14,
+                                        "width":  11,
+                                        "text":  "a",
+                                        "x":  2247
+                                    },
+                                    {
+                                        "y":  1129,
+                                        "height":  23,
+                                        "width":  186,
+                                        "text":  "high-contrast,",
+                                        "x":  2275
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "black-and-white image.",
+                      "words":  [
+                                    {
+                                        "y":  1159,
+                                        "height":  19,
+                                        "width":  203,
+                                        "text":  "black-and-white",
+                                        "x":  389
+                                    },
+                                    {
+                                        "y":  1159,
+                                        "height":  23,
+                                        "width":  77,
+                                        "text":  "image.",
+                                        "x":  609
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The threshold function looks at the intensity of every single pixel:",
+                      "words":  [
+                                    {
+                                        "y":  1221,
+                                        "height":  18,
+                                        "width":  38,
+                                        "text":  "The",
+                                        "x":  389
+                                    },
+                                    {
+                                        "y":  1221,
+                                        "height":  18,
+                                        "width":  122,
+                                        "text":  "threshold",
+                                        "x":  443
+                                    },
+                                    {
+                                        "y":  1220,
+                                        "height":  19,
+                                        "width":  108,
+                                        "text":  "function",
+                                        "x":  581
+                                    },
+                                    {
+                                        "y":  1221,
+                                        "height":  18,
+                                        "width":  68,
+                                        "text":  "looks",
+                                        "x":  704
+                                    },
+                                    {
+                                        "y":  1221,
+                                        "height":  18,
+                                        "width":  25,
+                                        "text":  "at",
+                                        "x":  788
+                                    },
+                                    {
+                                        "y":  1221,
+                                        "height":  18,
+                                        "width":  38,
+                                        "text":  "the",
+                                        "x":  829
+                                    },
+                                    {
+                                        "y":  1220,
+                                        "height":  23,
+                                        "width":  122,
+                                        "text":  "intensity",
+                                        "x":  884
+                                    },
+                                    {
+                                        "y":  1221,
+                                        "height":  18,
+                                        "width":  25,
+                                        "text":  "of",
+                                        "x":  1022
+                                    },
+                                    {
+                                        "y":  1225,
+                                        "height":  18,
+                                        "width":  66,
+                                        "text":  "every",
+                                        "x":  1064
+                                    },
+                                    {
+                                        "y":  1220,
+                                        "height":  23,
+                                        "width":  78,
+                                        "text":  "single",
+                                        "x":  1147
+                                    },
+                                    {
+                                        "y":  1220,
+                                        "height":  23,
+                                        "width":  77,
+                                        "text":  "pixel:",
+                                        "x":  1242
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "100: This is the threshold limit. Any pixel with a brightness value strictly greater than 100 will be changed.",
+                      "words":  [
+                                    {
+                                        "y":  1281,
+                                        "height":  17,
+                                        "width":  49,
+                                        "text":  "100:",
+                                        "x":  444
+                                    },
+                                    {
+                                        "y":  1280,
+                                        "height":  18,
+                                        "width":  52,
+                                        "text":  "This",
+                                        "x":  513
+                                    },
+                                    {
+                                        "y":  1280,
+                                        "height":  18,
+                                        "width":  25,
+                                        "text":  "is",
+                                        "x":  581
+                                    },
+                                    {
+                                        "y":  1281,
+                                        "height":  17,
+                                        "width":  39,
+                                        "text":  "the",
+                                        "x":  622
+                                    },
+                                    {
+                                        "y":  1281,
+                                        "height":  17,
+                                        "width":  122,
+                                        "text":  "threshold",
+                                        "x":  677
+                                    },
+                                    {
+                                        "y":  1280,
+                                        "height":  18,
+                                        "width":  77,
+                                        "text":  "limit.",
+                                        "x":  815
+                                    },
+                                    {
+                                        "y":  1281,
+                                        "height":  21,
+                                        "width":  40,
+                                        "text":  "Any",
+                                        "x":  911
+                                    },
+                                    {
+                                        "y":  1280,
+                                        "height":  22,
+                                        "width":  67,
+                                        "text":  "pixel",
+                                        "x":  967
+                                    },
+                                    {
+                                        "y":  1280,
+                                        "height":  18,
+                                        "width":  54,
+                                        "text":  "with",
+                                        "x":  1048
+                                    },
+                                    {
+                                        "y":  1285,
+                                        "height":  13,
+                                        "width":  11,
+                                        "text":  "a",
+                                        "x":  1118
+                                    },
+                                    {
+                                        "y":  1280,
+                                        "height":  22,
+                                        "width":  133,
+                                        "text":  "brightness",
+                                        "x":  1147
+                                    },
+                                    {
+                                        "y":  1281,
+                                        "height":  17,
+                                        "width":  66,
+                                        "text":  "value",
+                                        "x":  1297
+                                    },
+                                    {
+                                        "y":  1280,
+                                        "height":  22,
+                                        "width":  107,
+                                        "text":  "strictly",
+                                        "x":  1380
+                                    },
+                                    {
+                                        "y":  1282,
+                                        "height":  20,
+                                        "width":  94,
+                                        "text":  "greater",
+                                        "x":  1504
+                                    },
+                                    {
+                                        "y":  1281,
+                                        "height":  17,
+                                        "width":  53,
+                                        "text":  "than",
+                                        "x":  1613
+                                    },
+                                    {
+                                        "y":  1281,
+                                        "height":  17,
+                                        "width":  38,
+                                        "text":  "100",
+                                        "x":  1683
+                                    },
+                                    {
+                                        "y":  1280,
+                                        "height":  18,
+                                        "width":  53,
+                                        "text":  "will",
+                                        "x":  1737
+                                    },
+                                    {
+                                        "y":  1281,
+                                        "height":  17,
+                                        "width":  25,
+                                        "text":  "be",
+                                        "x":  1806
+                                    },
+                                    {
+                                        "y":  1281,
+                                        "height":  21,
+                                        "width":  104,
+                                        "text":  "changed.",
+                                        "x":  1848
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "200: This is the maximum value. Pixels that exceed the 100 limit are forced to this value (which represents pure white) .",
+                      "words":  [
+                                    {
+                                        "y":  1341,
+                                        "height":  18,
+                                        "width":  49,
+                                        "text":  "200:",
+                                        "x":  444
+                                    },
+                                    {
+                                        "y":  1340,
+                                        "height":  19,
+                                        "width":  52,
+                                        "text":  "This",
+                                        "x":  513
+                                    },
+                                    {
+                                        "y":  1340,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "is",
+                                        "x":  581
+                                    },
+                                    {
+                                        "y":  1341,
+                                        "height":  18,
+                                        "width":  39,
+                                        "text":  "the",
+                                        "x":  622
+                                    },
+                                    {
+                                        "y":  1340,
+                                        "height":  19,
+                                        "width":  95,
+                                        "text":  "maximum",
+                                        "x":  677
+                                    },
+                                    {
+                                        "y":  1341,
+                                        "height":  18,
+                                        "width":  76,
+                                        "text":  "value.",
+                                        "x":  788
+                                    },
+                                    {
+                                        "y":  1340,
+                                        "height":  19,
+                                        "width":  79,
+                                        "text":  "Pixels",
+                                        "x":  885
+                                    },
+                                    {
+                                        "y":  1341,
+                                        "height":  18,
+                                        "width":  53,
+                                        "text":  "that",
+                                        "x":  980
+                                    },
+                                    {
+                                        "y":  1341,
+                                        "height":  18,
+                                        "width":  79,
+                                        "text":  "exceed",
+                                        "x":  1050
+                                    },
+                                    {
+                                        "y":  1341,
+                                        "height":  18,
+                                        "width":  38,
+                                        "text":  "the",
+                                        "x":  1146
+                                    },
+                                    {
+                                        "y":  1341,
+                                        "height":  18,
+                                        "width":  38,
+                                        "text":  "100",
+                                        "x":  1201
+                                    },
+                                    {
+                                        "y":  1340,
+                                        "height":  19,
+                                        "width":  67,
+                                        "text":  "limit",
+                                        "x":  1255
+                                    },
+                                    {
+                                        "y":  1345,
+                                        "height":  14,
+                                        "width":  39,
+                                        "text":  "are",
+                                        "x":  1338
+                                    },
+                                    {
+                                        "y":  1341,
+                                        "height":  18,
+                                        "width":  79,
+                                        "text":  "forced",
+                                        "x":  1394
+                                    },
+                                    {
+                                        "y":  1342,
+                                        "height":  17,
+                                        "width":  25,
+                                        "text":  "to",
+                                        "x":  1489
+                                    },
+                                    {
+                                        "y":  1340,
+                                        "height":  19,
+                                        "width":  54,
+                                        "text":  "this",
+                                        "x":  1530
+                                    },
+                                    {
+                                        "y":  1341,
+                                        "height":  18,
+                                        "width":  66,
+                                        "text":  "value",
+                                        "x":  1600
+                                    },
+                                    {
+                                        "y":  1339,
+                                        "height":  22,
+                                        "width":  78,
+                                        "text":  "(which",
+                                        "x":  1685
+                                    },
+                                    {
+                                        "y":  1342,
+                                        "height":  21,
+                                        "width":  133,
+                                        "text":  "represents",
+                                        "x":  1780
+                                    },
+                                    {
+                                        "y":  1345,
+                                        "height":  18,
+                                        "width":  52,
+                                        "text":  "pure",
+                                        "x":  1931
+                                    },
+                                    {
+                                        "y":  1339,
+                                        "height":  22,
+                                        "width":  78,
+                                        "text":  "white)",
+                                        "x":  1999
+                                    },
+                                    {
+                                        "y":  1354,
+                                        "height":  5,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  2086
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "cv2.THRESH_BINARY: This tells OpenCV the style of thresholding to Use. Because it is binary, anything that does not exceed the threshold of 100 is forced",
+                      "words":  [
+                                    {
+                                        "y":  1401,
+                                        "height":  21,
+                                        "width":  242,
+                                        "text":  "cv2.THRESH_BINARY:",
+                                        "x":  444
+                                    },
+                                    {
+                                        "y":  1401,
+                                        "height":  19,
+                                        "width":  53,
+                                        "text":  "This",
+                                        "x":  705
+                                    },
+                                    {
+                                        "y":  1402,
+                                        "height":  18,
+                                        "width":  66,
+                                        "text":  "tells",
+                                        "x":  774
+                                    },
+                                    {
+                                        "y":  1401,
+                                        "height":  22,
+                                        "width":  81,
+                                        "text":  "OpenCV",
+                                        "x":  856
+                                    },
+                                    {
+                                        "y":  1402,
+                                        "height":  18,
+                                        "width":  40,
+                                        "text":  "the",
+                                        "x":  952
+                                    },
+                                    {
+                                        "y":  1402,
+                                        "height":  21,
+                                        "width":  66,
+                                        "text":  "style",
+                                        "x":  1009
+                                    },
+                                    {
+                                        "y":  1402,
+                                        "height":  18,
+                                        "width":  25,
+                                        "text":  "of",
+                                        "x":  1091
+                                    },
+                                    {
+                                        "y":  1401,
+                                        "height":  22,
+                                        "width":  162,
+                                        "text":  "thresholding",
+                                        "x":  1132
+                                    },
+                                    {
+                                        "y":  1402,
+                                        "height":  18,
+                                        "width":  26,
+                                        "text":  "to",
+                                        "x":  1310
+                                    },
+                                    {
+                                        "y":  1406,
+                                        "height":  14,
+                                        "width":  48,
+                                        "text":  "Use.",
+                                        "x":  1353
+                                    },
+                                    {
+                                        "y":  1402,
+                                        "height":  18,
+                                        "width":  92,
+                                        "text":  "Because",
+                                        "x":  1422
+                                    },
+                                    {
+                                        "y":  1401,
+                                        "height":  18,
+                                        "width":  25,
+                                        "text":  "it",
+                                        "x":  1531
+                                    },
+                                    {
+                                        "y":  1401,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "is",
+                                        "x":  1572
+                                    },
+                                    {
+                                        "y":  1401,
+                                        "height":  22,
+                                        "width":  90,
+                                        "text":  "binary,",
+                                        "x":  1614
+                                    },
+                                    {
+                                        "y":  1401,
+                                        "height":  22,
+                                        "width":  106,
+                                        "text":  "anything",
+                                        "x":  1724
+                                    },
+                                    {
+                                        "y":  1402,
+                                        "height":  18,
+                                        "width":  53,
+                                        "text":  "that",
+                                        "x":  1847
+                                    },
+                                    {
+                                        "y":  1402,
+                                        "height":  18,
+                                        "width":  53,
+                                        "text":  "does",
+                                        "x":  1916
+                                    },
+                                    {
+                                        "y":  1402,
+                                        "height":  18,
+                                        "width":  38,
+                                        "text":  "not",
+                                        "x":  1986
+                                    },
+                                    {
+                                        "y":  1402,
+                                        "height":  18,
+                                        "width":  79,
+                                        "text":  "exceed",
+                                        "x":  2041
+                                    },
+                                    {
+                                        "y":  1402,
+                                        "height":  18,
+                                        "width":  39,
+                                        "text":  "the",
+                                        "x":  2136
+                                    },
+                                    {
+                                        "y":  1402,
+                                        "height":  18,
+                                        "width":  122,
+                                        "text":  "threshold",
+                                        "x":  2191
+                                    },
+                                    {
+                                        "y":  1402,
+                                        "height":  18,
+                                        "width":  25,
+                                        "text":  "of",
+                                        "x":  2330
+                                    },
+                                    {
+                                        "y":  1402,
+                                        "height":  18,
+                                        "width":  39,
+                                        "text":  "100",
+                                        "x":  2371
+                                    },
+                                    {
+                                        "y":  1401,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "is",
+                                        "x":  2426
+                                    },
+                                    {
+                                        "y":  1402,
+                                        "height":  18,
+                                        "width":  81,
+                                        "text":  "forced",
+                                        "x":  2466
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "to @ (pure black) .",
+                      "words":  [
+                                    {
+                                        "y":  1433,
+                                        "height":  17,
+                                        "width":  26,
+                                        "text":  "to",
+                                        "x":  388
+                                    },
+                                    {
+                                        "y":  1432,
+                                        "height":  18,
+                                        "width":  11,
+                                        "text":  "@",
+                                        "x":  430
+                                    },
+                                    {
+                                        "y":  1430,
+                                        "height":  24,
+                                        "width":  62,
+                                        "text":  "(pure",
+                                        "x":  461
+                                    },
+                                    {
+                                        "y":  1430,
+                                        "height":  22,
+                                        "width":  77,
+                                        "text":  "black)",
+                                        "x":  540
+                                    },
+                                    {
+                                        "y":  1445,
+                                        "height":  5,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  626
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The function returns two values: ret (the threshold value that was actually used, which is just 100 here) and thresholded_image (the resulting black-and-white",
+                      "words":  [
+                                    {
+                                        "y":  1493,
+                                        "height":  17,
+                                        "width":  38,
+                                        "text":  "The",
+                                        "x":  389
+                                    },
+                                    {
+                                        "y":  1492,
+                                        "height":  18,
+                                        "width":  107,
+                                        "text":  "function",
+                                        "x":  443
+                                    },
+                                    {
+                                        "y":  1493,
+                                        "height":  17,
+                                        "width":  93,
+                                        "text":  "returns",
+                                        "x":  568
+                                    },
+                                    {
+                                        "y":  1493,
+                                        "height":  17,
+                                        "width":  39,
+                                        "text":  "two",
+                                        "x":  676
+                                    },
+                                    {
+                                        "y":  1493,
+                                        "height":  18,
+                                        "width":  91,
+                                        "text":  "values:",
+                                        "x":  732
+                                    },
+                                    {
+                                        "y":  1493,
+                                        "height":  17,
+                                        "width":  38,
+                                        "text":  "ret",
+                                        "x":  842
+                                    },
+                                    {
+                                        "y":  1490,
+                                        "height":  23,
+                                        "width":  51,
+                                        "text":  "(the",
+                                        "x":  898
+                                    },
+                                    {
+                                        "y":  1493,
+                                        "height":  17,
+                                        "width":  121,
+                                        "text":  "threshold",
+                                        "x":  965
+                                    },
+                                    {
+                                        "y":  1493,
+                                        "height":  17,
+                                        "width":  65,
+                                        "text":  "value",
+                                        "x":  1103
+                                    },
+                                    {
+                                        "y":  1493,
+                                        "height":  17,
+                                        "width":  53,
+                                        "text":  "that",
+                                        "x":  1184
+                                    },
+                                    {
+                                        "y":  1497,
+                                        "height":  13,
+                                        "width":  40,
+                                        "text":  "was",
+                                        "x":  1252
+                                    },
+                                    {
+                                        "y":  1493,
+                                        "height":  21,
+                                        "width":  108,
+                                        "text":  "actually",
+                                        "x":  1308
+                                    },
+                                    {
+                                        "y":  1493,
+                                        "height":  21,
+                                        "width":  62,
+                                        "text":  "used,",
+                                        "x":  1432
+                                    },
+                                    {
+                                        "y":  1492,
+                                        "height":  18,
+                                        "width":  67,
+                                        "text":  "which",
+                                        "x":  1513
+                                    },
+                                    {
+                                        "y":  1492,
+                                        "height":  18,
+                                        "width":  24,
+                                        "text":  "is",
+                                        "x":  1597
+                                    },
+                                    {
+                                        "y":  1492,
+                                        "height":  23,
+                                        "width":  52,
+                                        "text":  "just",
+                                        "x":  1638
+                                    },
+                                    {
+                                        "y":  1492,
+                                        "height":  18,
+                                        "width":  39,
+                                        "text":  "100",
+                                        "x":  1707
+                                    },
+                                    {
+                                        "y":  1490,
+                                        "height":  23,
+                                        "width":  63,
+                                        "text":  "here)",
+                                        "x":  1763
+                                    },
+                                    {
+                                        "y":  1493,
+                                        "height":  18,
+                                        "width":  39,
+                                        "text":  "and",
+                                        "x":  1844
+                                    },
+                                    {
+                                        "y":  1492,
+                                        "height":  22,
+                                        "width":  231,
+                                        "text":  "thresholded_image",
+                                        "x":  1899
+                                    },
+                                    {
+                                        "y":  1490,
+                                        "height":  23,
+                                        "width":  50,
+                                        "text":  "(the",
+                                        "x":  2149
+                                    },
+                                    {
+                                        "y":  1492,
+                                        "height":  22,
+                                        "width":  121,
+                                        "text":  "resulting",
+                                        "x":  2216
+                                    },
+                                    {
+                                        "y":  1492,
+                                        "height":  18,
+                                        "width":  204,
+                                        "text":  "black-and-white",
+                                        "x":  2353
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "image). Finally, Matplotlib is used to display the output directly inside the Jupyter Notebook.",
+                      "words":  [
+                                    {
+                                        "y":  1521,
+                                        "height":  24,
+                                        "width":  91,
+                                        "text":  "image).",
+                                        "x":  389
+                                    },
+                                    {
+                                        "y":  1522,
+                                        "height":  23,
+                                        "width":  103,
+                                        "text":  "Finally,",
+                                        "x":  500
+                                    },
+                                    {
+                                        "y":  1522,
+                                        "height":  23,
+                                        "width":  135,
+                                        "text":  "Matplotlib",
+                                        "x":  623
+                                    },
+                                    {
+                                        "y":  1522,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "is",
+                                        "x":  775
+                                    },
+                                    {
+                                        "y":  1523,
+                                        "height":  18,
+                                        "width":  51,
+                                        "text":  "used",
+                                        "x":  816
+                                    },
+                                    {
+                                        "y":  1524,
+                                        "height":  17,
+                                        "width":  25,
+                                        "text":  "to",
+                                        "x":  884
+                                    },
+                                    {
+                                        "y":  1522,
+                                        "height":  23,
+                                        "width":  94,
+                                        "text":  "display",
+                                        "x":  926
+                                    },
+                                    {
+                                        "y":  1523,
+                                        "height":  18,
+                                        "width":  40,
+                                        "text":  "the",
+                                        "x":  1035
+                                    },
+                                    {
+                                        "y":  1523,
+                                        "height":  22,
+                                        "width":  79,
+                                        "text":  "output",
+                                        "x":  1091
+                                    },
+                                    {
+                                        "y":  1522,
+                                        "height":  23,
+                                        "width":  108,
+                                        "text":  "directly",
+                                        "x":  1187
+                                    },
+                                    {
+                                        "y":  1522,
+                                        "height":  19,
+                                        "width":  80,
+                                        "text":  "inside",
+                                        "x":  1311
+                                    },
+                                    {
+                                        "y":  1523,
+                                        "height":  18,
+                                        "width":  39,
+                                        "text":  "the",
+                                        "x":  1407
+                                    },
+                                    {
+                                        "y":  1523,
+                                        "height":  22,
+                                        "width":  94,
+                                        "text":  "Jupyter",
+                                        "x":  1462
+                                    },
+                                    {
+                                        "y":  1523,
+                                        "height":  18,
+                                        "width":  119,
+                                        "text":  "Notebook.",
+                                        "x":  1572
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Karachi",
+                      "words":  [
+                                    {
+                                        "y":  1819,
+                                        "height":  21,
+                                        "width":  94,
+                                        "text":  "Karachi",
+                                        "x":  356
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Instructor: Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1821,
+                                        "height":  19,
+                                        "width":  130,
+                                        "text":  "Instructor:",
+                                        "x":  1254
+                                    },
+                                    {
+                                        "y":  1821,
+                                        "height":  19,
+                                        "width":  72,
+                                        "text":  "Talha",
+                                        "x":  1393
+                                    },
+                                    {
+                                        "y":  1819,
+                                        "height":  21,
+                                        "width":  88,
+                                        "text":  "Shahid",
+                                        "x":  1474
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "19",
+                      "words":  [
+                                    {
+                                        "y":  1821,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "19",
+                                        "x":  2483
+                                    }
+                                ]
+                  }
+              ]
+}

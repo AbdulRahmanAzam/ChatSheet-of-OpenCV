@@ -1,0 +1,1546 @@
+﻿{
+    "id":  "lab_manual_06_p019",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "National University of Computer \u0026 Emerging Sciences - NUCES - Karachi Department of Artificial Intelligence 1. SCALE-SPACE EXTREMA DETECTION Searching across multiple scales ensures we find features whether they are large or small. DOG = L(x, y, ko) - L(x, y, o) Original Image 5.2 Keypoint Localization DOG Layer 4 = 05-04) DoG Layer 3 (Da = 04 - 03) DOG Layer 2 (D2 = 03 - 02) DoG Layer 1 (DI = 02-01) For each candidate keypoint, SIFT refines the location by fitting a 3D quadratic function to the nearby data points in the scale space. This step helps to accurately localize the keypoints. 2. KEYPOINT LOCALIZATION Concept: The 26-Neighbor Check FAST NUCES - Layer Above (Scale 0+1) Middle Layer (Scale o) Layer Below (Scale 0-1) Karachi A keypoint must be a local maximum or minimum compared to its neighbors in space and scale. 9 Neighbors in Layer Above Neighbors in Same Layer Keypoint Candidate Total Neighbors: 08+0+9=0 9 Neighbors Ain Layer Below = 26 Neighbors Objective: Compare intensity with all 26 surrounding pixels to confirm as local extremum. Talha Shahid 19",
+    "review_status":  "raw_ocr_unverified",
+    "page":  19,
+    "source_id":  "lab_manual_06",
+    "lines":  [
+                  {
+                      "text":  "National University of Computer \u0026 Emerging Sciences -",
+                      "words":  [
+                                    {
+                                        "y":  94,
+                                        "height":  23,
+                                        "width":  122,
+                                        "text":  "National",
+                                        "x":  376
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  29,
+                                        "width":  146,
+                                        "text":  "University",
+                                        "x":  507
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  22,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  660
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  28,
+                                        "width":  147,
+                                        "text":  "Computer",
+                                        "x":  696
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  22,
+                                        "width":  21,
+                                        "text":  "\u0026",
+                                        "x":  851
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  28,
+                                        "width":  134,
+                                        "text":  "Emerging",
+                                        "x":  880
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  23,
+                                        "width":  132,
+                                        "text":  "Sciences",
+                                        "x":  1021
+                                    },
+                                    {
+                                        "y":  107,
+                                        "height":  4,
+                                        "width":  10,
+                                        "text":  "-",
+                                        "x":  1162
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "NUCES - Karachi",
+                      "words":  [
+                                    {
+                                        "y":  140,
+                                        "height":  22,
+                                        "width":  103,
+                                        "text":  "NUCES",
+                                        "x":  654
+                                    },
+                                    {
+                                        "y":  152,
+                                        "height":  4,
+                                        "width":  10,
+                                        "text":  "-",
+                                        "x":  765
+                                    },
+                                    {
+                                        "y":  139,
+                                        "height":  23,
+                                        "width":  109,
+                                        "text":  "Karachi",
+                                        "x":  784
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Department of Artificial Intelligence",
+                      "words":  [
+                                    {
+                                        "y":  183,
+                                        "height":  26,
+                                        "width":  143,
+                                        "text":  "Department",
+                                        "x":  555
+                                    },
+                                    {
+                                        "y":  182,
+                                        "height":  22,
+                                        "width":  24,
+                                        "text":  "of",
+                                        "x":  706
+                                    },
+                                    {
+                                        "y":  182,
+                                        "height":  22,
+                                        "width":  100,
+                                        "text":  "Artificial",
+                                        "x":  737
+                                    },
+                                    {
+                                        "y":  182,
+                                        "height":  27,
+                                        "width":  137,
+                                        "text":  "Intelligence",
+                                        "x":  847
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1. SCALE-SPACE EXTREMA DETECTION",
+                      "words":  [
+                                    {
+                                        "y":  260,
+                                        "height":  23,
+                                        "width":  22,
+                                        "text":  "1.",
+                                        "x":  404
+                                    },
+                                    {
+                                        "y":  260,
+                                        "height":  23,
+                                        "width":  190,
+                                        "text":  "SCALE-SPACE",
+                                        "x":  435
+                                    },
+                                    {
+                                        "y":  260,
+                                        "height":  23,
+                                        "width":  134,
+                                        "text":  "EXTREMA",
+                                        "x":  634
+                                    },
+                                    {
+                                        "y":  260,
+                                        "height":  23,
+                                        "width":  153,
+                                        "text":  "DETECTION",
+                                        "x":  777
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Searching across multiple scales ensures we find",
+                      "words":  [
+                                    {
+                                        "y":  300,
+                                        "height":  22,
+                                        "width":  93,
+                                        "text":  "Searching",
+                                        "x":  426
+                                    },
+                                    {
+                                        "y":  305,
+                                        "height":  13,
+                                        "width":  63,
+                                        "text":  "across",
+                                        "x":  525
+                                    },
+                                    {
+                                        "y":  300,
+                                        "height":  22,
+                                        "width":  75,
+                                        "text":  "multiple",
+                                        "x":  594
+                                    },
+                                    {
+                                        "y":  300,
+                                        "height":  18,
+                                        "width":  60,
+                                        "text":  "scales",
+                                        "x":  675
+                                    },
+                                    {
+                                        "y":  305,
+                                        "height":  13,
+                                        "width":  75,
+                                        "text":  "ensures",
+                                        "x":  741
+                                    },
+                                    {
+                                        "y":  305,
+                                        "height":  13,
+                                        "width":  28,
+                                        "text":  "we",
+                                        "x":  821
+                                    },
+                                    {
+                                        "y":  300,
+                                        "height":  18,
+                                        "width":  35,
+                                        "text":  "find",
+                                        "x":  854
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "features whether they are large or small.",
+                      "words":  [
+                                    {
+                                        "y":  325,
+                                        "height":  17,
+                                        "width":  76,
+                                        "text":  "features",
+                                        "x":  428
+                                    },
+                                    {
+                                        "y":  325,
+                                        "height":  17,
+                                        "width":  76,
+                                        "text":  "whether",
+                                        "x":  510
+                                    },
+                                    {
+                                        "y":  325,
+                                        "height":  22,
+                                        "width":  40,
+                                        "text":  "they",
+                                        "x":  591
+                                    },
+                                    {
+                                        "y":  329,
+                                        "height":  13,
+                                        "width":  29,
+                                        "text":  "are",
+                                        "x":  637
+                                    },
+                                    {
+                                        "y":  325,
+                                        "height":  22,
+                                        "width":  45,
+                                        "text":  "large",
+                                        "x":  673
+                                    },
+                                    {
+                                        "y":  329,
+                                        "height":  13,
+                                        "width":  19,
+                                        "text":  "or",
+                                        "x":  724
+                                    },
+                                    {
+                                        "y":  325,
+                                        "height":  17,
+                                        "width":  55,
+                                        "text":  "small.",
+                                        "x":  749
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "DOG = L(x, y, ko)",
+                      "words":  [
+                                    {
+                                        "y":  379,
+                                        "height":  19,
+                                        "width":  41,
+                                        "text":  "DOG",
+                                        "x":  397
+                                    },
+                                    {
+                                        "y":  385,
+                                        "height":  9,
+                                        "width":  10,
+                                        "text":  "=",
+                                        "x":  445
+                                    },
+                                    {
+                                        "y":  378,
+                                        "height":  25,
+                                        "width":  35,
+                                        "text":  "L(x,",
+                                        "x":  463
+                                    },
+                                    {
+                                        "y":  384,
+                                        "height":  19,
+                                        "width":  14,
+                                        "text":  "y,",
+                                        "x":  505
+                                    },
+                                    {
+                                        "y":  378,
+                                        "height":  25,
+                                        "width":  32,
+                                        "text":  "ko)",
+                                        "x":  526
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- L(x, y, o)",
+                      "words":  [
+                                    {
+                                        "y":  423,
+                                        "height":  4,
+                                        "width":  11,
+                                        "text":  "-",
+                                        "x":  444
+                                    },
+                                    {
+                                        "y":  415,
+                                        "height":  24,
+                                        "width":  35,
+                                        "text":  "L(x,",
+                                        "x":  463
+                                    },
+                                    {
+                                        "y":  421,
+                                        "height":  19,
+                                        "width":  14,
+                                        "text":  "y,",
+                                        "x":  505
+                                    },
+                                    {
+                                        "y":  414,
+                                        "height":  26,
+                                        "width":  20,
+                                        "text":  "o)",
+                                        "x":  526
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Original Image",
+                      "words":  [
+                                    {
+                                        "y":  769,
+                                        "height":  18,
+                                        "width":  56,
+                                        "text":  "Original",
+                                        "x":  420
+                                    },
+                                    {
+                                        "y":  770,
+                                        "height":  17,
+                                        "width":  46,
+                                        "text":  "Image",
+                                        "x":  482
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "5.2 Keypoint Localization",
+                      "words":  [
+                                    {
+                                        "y":  943,
+                                        "height":  24,
+                                        "width":  44,
+                                        "text":  "5.2",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  941,
+                                        "height":  34,
+                                        "width":  144,
+                                        "text":  "Keypoint",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  941,
+                                        "height":  26,
+                                        "width":  197,
+                                        "text":  "Localization",
+                                        "x":  409
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "DOG Layer 4",
+                      "words":  [
+                                    {
+                                        "y":  426,
+                                        "height":  14,
+                                        "width":  31,
+                                        "text":  "DOG",
+                                        "x":  851
+                                    },
+                                    {
+                                        "y":  426,
+                                        "height":  17,
+                                        "width":  39,
+                                        "text":  "Layer",
+                                        "x":  888
+                                    },
+                                    {
+                                        "y":  426,
+                                        "height":  14,
+                                        "width":  10,
+                                        "text":  "4",
+                                        "x":  931
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "= 05-04)",
+                      "words":  [
+                                    {
+                                        "y":  450,
+                                        "height":  7,
+                                        "width":  9,
+                                        "text":  "=",
+                                        "x":  877
+                                    },
+                                    {
+                                        "y":  445,
+                                        "height":  19,
+                                        "width":  51,
+                                        "text":  "05-04)",
+                                        "x":  890
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "DoG Layer 3",
+                      "words":  [
+                                    {
+                                        "y":  540,
+                                        "height":  14,
+                                        "width":  31,
+                                        "text":  "DoG",
+                                        "x":  851
+                                    },
+                                    {
+                                        "y":  540,
+                                        "height":  17,
+                                        "width":  39,
+                                        "text":  "Layer",
+                                        "x":  888
+                                    },
+                                    {
+                                        "y":  540,
+                                        "height":  14,
+                                        "width":  9,
+                                        "text":  "3",
+                                        "x":  931
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "(Da = 04 - 03)",
+                      "words":  [
+                                    {
+                                        "y":  559,
+                                        "height":  19,
+                                        "width":  23,
+                                        "text":  "(Da",
+                                        "x":  850
+                                    },
+                                    {
+                                        "y":  564,
+                                        "height":  6,
+                                        "width":  9,
+                                        "text":  "=",
+                                        "x":  877
+                                    },
+                                    {
+                                        "y":  563,
+                                        "height":  15,
+                                        "width":  16,
+                                        "text":  "04",
+                                        "x":  891
+                                    },
+                                    {
+                                        "y":  566,
+                                        "height":  3,
+                                        "width":  5,
+                                        "text":  "-",
+                                        "x":  910
+                                    },
+                                    {
+                                        "y":  559,
+                                        "height":  19,
+                                        "width":  22,
+                                        "text":  "03)",
+                                        "x":  919
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "DOG Layer 2",
+                      "words":  [
+                                    {
+                                        "y":  654,
+                                        "height":  14,
+                                        "width":  31,
+                                        "text":  "DOG",
+                                        "x":  851
+                                    },
+                                    {
+                                        "y":  654,
+                                        "height":  18,
+                                        "width":  40,
+                                        "text":  "Layer",
+                                        "x":  887
+                                    },
+                                    {
+                                        "y":  654,
+                                        "height":  14,
+                                        "width":  9,
+                                        "text":  "2",
+                                        "x":  931
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "(D2 = 03 - 02)",
+                      "words":  [
+                                    {
+                                        "y":  673,
+                                        "height":  19,
+                                        "width":  23,
+                                        "text":  "(D2",
+                                        "x":  850
+                                    },
+                                    {
+                                        "y":  678,
+                                        "height":  7,
+                                        "width":  9,
+                                        "text":  "=",
+                                        "x":  877
+                                    },
+                                    {
+                                        "y":  677,
+                                        "height":  15,
+                                        "width":  15,
+                                        "text":  "03",
+                                        "x":  891
+                                    },
+                                    {
+                                        "y":  680,
+                                        "height":  3,
+                                        "width":  5,
+                                        "text":  "-",
+                                        "x":  910
+                                    },
+                                    {
+                                        "y":  673,
+                                        "height":  19,
+                                        "width":  21,
+                                        "text":  "02)",
+                                        "x":  920
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "DoG Layer 1",
+                      "words":  [
+                                    {
+                                        "y":  767,
+                                        "height":  14,
+                                        "width":  31,
+                                        "text":  "DoG",
+                                        "x":  851
+                                    },
+                                    {
+                                        "y":  767,
+                                        "height":  17,
+                                        "width":  40,
+                                        "text":  "Layer",
+                                        "x":  887
+                                    },
+                                    {
+                                        "y":  767,
+                                        "height":  14,
+                                        "width":  6,
+                                        "text":  "1",
+                                        "x":  932
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "(DI = 02-01)",
+                      "words":  [
+                                    {
+                                        "y":  785,
+                                        "height":  20,
+                                        "width":  21,
+                                        "text":  "(DI",
+                                        "x":  850
+                                    },
+                                    {
+                                        "y":  790,
+                                        "height":  7,
+                                        "width":  8,
+                                        "text":  "=",
+                                        "x":  878
+                                    },
+                                    {
+                                        "y":  785,
+                                        "height":  20,
+                                        "width":  50,
+                                        "text":  "02-01)",
+                                        "x":  891
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "For each candidate keypoint, SIFT refines the location by fitting a",
+                      "words":  [
+                                    {
+                                        "y":  1000,
+                                        "height":  18,
+                                        "width":  43,
+                                        "text":  "For",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  999,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "each",
+                                        "x":  232
+                                    },
+                                    {
+                                        "y":  999,
+                                        "height":  19,
+                                        "width":  134,
+                                        "text":  "candidate",
+                                        "x":  310
+                                    },
+                                    {
+                                        "y":  999,
+                                        "height":  24,
+                                        "width":  129,
+                                        "text":  "keypoint,",
+                                        "x":  463
+                                    },
+                                    {
+                                        "y":  1000,
+                                        "height":  18,
+                                        "width":  60,
+                                        "text":  "SIFT",
+                                        "x":  615
+                                    },
+                                    {
+                                        "y":  999,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "refines",
+                                        "x":  694
+                                    },
+                                    {
+                                        "y":  999,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  816
+                                    },
+                                    {
+                                        "y":  999,
+                                        "height":  19,
+                                        "width":  117,
+                                        "text":  "location",
+                                        "x":  880
+                                    },
+                                    {
+                                        "y":  999,
+                                        "height":  24,
+                                        "width":  28,
+                                        "text":  "by",
+                                        "x":  1017
+                                    },
+                                    {
+                                        "y":  999,
+                                        "height":  24,
+                                        "width":  105,
+                                        "text":  "fitting",
+                                        "x":  1064
+                                    },
+                                    {
+                                        "y":  1004,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  1188
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3D quadratic function to the nearby data points in the scale space.",
+                      "words":  [
+                                    {
+                                        "y":  1037,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "3D",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1036,
+                                        "height":  24,
+                                        "width":  134,
+                                        "text":  "quadratic",
+                                        "x":  216
+                                    },
+                                    {
+                                        "y":  1036,
+                                        "height":  20,
+                                        "width":  117,
+                                        "text":  "function",
+                                        "x":  370
+                                    },
+                                    {
+                                        "y":  1037,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  506
+                                    },
+                                    {
+                                        "y":  1036,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  553
+                                    },
+                                    {
+                                        "y":  1036,
+                                        "height":  24,
+                                        "width":  87,
+                                        "text":  "nearby",
+                                        "x":  618
+                                    },
+                                    {
+                                        "y":  1036,
+                                        "height":  20,
+                                        "width":  60,
+                                        "text":  "data",
+                                        "x":  724
+                                    },
+                                    {
+                                        "y":  1036,
+                                        "height":  24,
+                                        "width":  88,
+                                        "text":  "points",
+                                        "x":  803
+                                    },
+                                    {
+                                        "y":  1036,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "in",
+                                        "x":  910
+                                    },
+                                    {
+                                        "y":  1036,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  956
+                                    },
+                                    {
+                                        "y":  1036,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "scale",
+                                        "x":  1019
+                                    },
+                                    {
+                                        "y":  1042,
+                                        "height":  18,
+                                        "width":  84,
+                                        "text":  "space.",
+                                        "x":  1112
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "This step helps to accurately localize the keypoints.",
+                      "words":  [
+                                    {
+                                        "y":  1073,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "This",
+                                        "x":  168
+                                    },
+                                    {
+                                        "y":  1074,
+                                        "height":  24,
+                                        "width":  58,
+                                        "text":  "step",
+                                        "x":  245
+                                    },
+                                    {
+                                        "y":  1073,
+                                        "height":  25,
+                                        "width":  73,
+                                        "text":  "helps",
+                                        "x":  321
+                                    },
+                                    {
+                                        "y":  1074,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  410
+                                    },
+                                    {
+                                        "y":  1073,
+                                        "height":  25,
+                                        "width":  149,
+                                        "text":  "accurately",
+                                        "x":  456
+                                    },
+                                    {
+                                        "y":  1073,
+                                        "height":  20,
+                                        "width":  118,
+                                        "text":  "localize",
+                                        "x":  623
+                                    },
+                                    {
+                                        "y":  1073,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  758
+                                    },
+                                    {
+                                        "y":  1073,
+                                        "height":  25,
+                                        "width":  143,
+                                        "text":  "keypoints.",
+                                        "x":  820
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2. KEYPOINT LOCALIZATION",
+                      "words":  [
+                                    {
+                                        "y":  1134,
+                                        "height":  23,
+                                        "width":  24,
+                                        "text":  "2.",
+                                        "x":  386
+                                    },
+                                    {
+                                        "y":  1134,
+                                        "height":  23,
+                                        "width":  151,
+                                        "text":  "KEYPOINT",
+                                        "x":  421
+                                    },
+                                    {
+                                        "y":  1134,
+                                        "height":  23,
+                                        "width":  219,
+                                        "text":  "LOCALIZATION",
+                                        "x":  582
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Concept: The 26-Neighbor Check",
+                      "words":  [
+                                    {
+                                        "y":  1182,
+                                        "height":  21,
+                                        "width":  89,
+                                        "text":  "Concept:",
+                                        "x":  386
+                                    },
+                                    {
+                                        "y":  1181,
+                                        "height":  17,
+                                        "width":  38,
+                                        "text":  "The",
+                                        "x":  481
+                                    },
+                                    {
+                                        "y":  1180,
+                                        "height":  23,
+                                        "width":  126,
+                                        "text":  "26-Neighbor",
+                                        "x":  525
+                                    },
+                                    {
+                                        "y":  1181,
+                                        "height":  17,
+                                        "width":  64,
+                                        "text":  "Check",
+                                        "x":  657
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FAST NUCES -",
+                      "words":  [
+                                    {
+                                        "y":  1822,
+                                        "height":  17,
+                                        "width":  56,
+                                        "text":  "FAST",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1822,
+                                        "height":  17,
+                                        "width":  78,
+                                        "text":  "NUCES",
+                                        "x":  234
+                                    },
+                                    {
+                                        "y":  1830,
+                                        "height":  4,
+                                        "width":  11,
+                                        "text":  "-",
+                                        "x":  320
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Layer Above",
+                      "words":  [
+                                    {
+                                        "y":  1260,
+                                        "height":  16,
+                                        "width":  40,
+                                        "text":  "Layer",
+                                        "x":  386
+                                    },
+                                    {
+                                        "y":  1260,
+                                        "height":  13,
+                                        "width":  45,
+                                        "text":  "Above",
+                                        "x":  430
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "(Scale 0+1)",
+                      "words":  [
+                                    {
+                                        "y":  1277,
+                                        "height":  16,
+                                        "width":  44,
+                                        "text":  "(Scale",
+                                        "x":  386
+                                    },
+                                    {
+                                        "y":  1277,
+                                        "height":  15,
+                                        "width":  29,
+                                        "text":  "0+1)",
+                                        "x":  434
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Middle Layer",
+                      "words":  [
+                                    {
+                                        "y":  1411,
+                                        "height":  13,
+                                        "width":  49,
+                                        "text":  "Middle",
+                                        "x":  386
+                                    },
+                                    {
+                                        "y":  1412,
+                                        "height":  15,
+                                        "width":  38,
+                                        "text":  "Layer",
+                                        "x":  440
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "(Scale o)",
+                      "words":  [
+                                    {
+                                        "y":  1427,
+                                        "height":  16,
+                                        "width":  43,
+                                        "text":  "(Scale",
+                                        "x":  386
+                                    },
+                                    {
+                                        "y":  1427,
+                                        "height":  16,
+                                        "width":  15,
+                                        "text":  "o)",
+                                        "x":  434
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Layer Below",
+                      "words":  [
+                                    {
+                                        "y":  1549,
+                                        "height":  15,
+                                        "width":  40,
+                                        "text":  "Layer",
+                                        "x":  386
+                                    },
+                                    {
+                                        "y":  1548,
+                                        "height":  13,
+                                        "width":  44,
+                                        "text":  "Below",
+                                        "x":  430
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "(Scale 0-1)",
+                      "words":  [
+                                    {
+                                        "y":  1565,
+                                        "height":  16,
+                                        "width":  44,
+                                        "text":  "(Scale",
+                                        "x":  386
+                                    },
+                                    {
+                                        "y":  1565,
+                                        "height":  15,
+                                        "width":  26,
+                                        "text":  "0-1)",
+                                        "x":  434
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Karachi",
+                      "words":  [
+                                    {
+                                        "y":  1820,
+                                        "height":  19,
+                                        "width":  86,
+                                        "text":  "Karachi",
+                                        "x":  340
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "A keypoint must be a local",
+                      "words":  [
+                                    {
+                                        "y":  1214,
+                                        "height":  12,
+                                        "width":  11,
+                                        "text":  "A",
+                                        "x":  795
+                                    },
+                                    {
+                                        "y":  1213,
+                                        "height":  16,
+                                        "width":  62,
+                                        "text":  "keypoint",
+                                        "x":  810
+                                    },
+                                    {
+                                        "y":  1215,
+                                        "height":  11,
+                                        "width":  35,
+                                        "text":  "must",
+                                        "x":  877
+                                    },
+                                    {
+                                        "y":  1213,
+                                        "height":  13,
+                                        "width":  18,
+                                        "text":  "be",
+                                        "x":  916
+                                    },
+                                    {
+                                        "y":  1216,
+                                        "height":  10,
+                                        "width":  8,
+                                        "text":  "a",
+                                        "x":  938
+                                    },
+                                    {
+                                        "y":  1213,
+                                        "height":  13,
+                                        "width":  32,
+                                        "text":  "local",
+                                        "x":  951
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "maximum or minimum compared to",
+                      "words":  [
+                                    {
+                                        "y":  1230,
+                                        "height":  13,
+                                        "width":  73,
+                                        "text":  "maximum",
+                                        "x":  723
+                                    },
+                                    {
+                                        "y":  1233,
+                                        "height":  10,
+                                        "width":  15,
+                                        "text":  "or",
+                                        "x":  800
+                                    },
+                                    {
+                                        "y":  1230,
+                                        "height":  13,
+                                        "width":  68,
+                                        "text":  "minimum",
+                                        "x":  820
+                                    },
+                                    {
+                                        "y":  1230,
+                                        "height":  15,
+                                        "width":  71,
+                                        "text":  "compared",
+                                        "x":  893
+                                    },
+                                    {
+                                        "y":  1232,
+                                        "height":  11,
+                                        "width":  14,
+                                        "text":  "to",
+                                        "x":  969
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "its neighbors in space and scale.",
+                      "words":  [
+                                    {
+                                        "y":  1246,
+                                        "height":  13,
+                                        "width":  17,
+                                        "text":  "its",
+                                        "x":  754
+                                    },
+                                    {
+                                        "y":  1246,
+                                        "height":  16,
+                                        "width":  72,
+                                        "text":  "neighbors",
+                                        "x":  775
+                                    },
+                                    {
+                                        "y":  1246,
+                                        "height":  13,
+                                        "width":  13,
+                                        "text":  "in",
+                                        "x":  851
+                                    },
+                                    {
+                                        "y":  1250,
+                                        "height":  12,
+                                        "width":  41,
+                                        "text":  "space",
+                                        "x":  868
+                                    },
+                                    {
+                                        "y":  1247,
+                                        "height":  12,
+                                        "width":  26,
+                                        "text":  "and",
+                                        "x":  913
+                                    },
+                                    {
+                                        "y":  1247,
+                                        "height":  12,
+                                        "width":  39,
+                                        "text":  "scale.",
+                                        "x":  944
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "9 Neighbors in",
+                      "words":  [
+                                    {
+                                        "y":  1359,
+                                        "height":  13,
+                                        "width":  9,
+                                        "text":  "9",
+                                        "x":  831
+                                    },
+                                    {
+                                        "y":  1358,
+                                        "height":  16,
+                                        "width":  73,
+                                        "text":  "Neighbors",
+                                        "x":  845
+                                    },
+                                    {
+                                        "y":  1358,
+                                        "height":  14,
+                                        "width":  14,
+                                        "text":  "in",
+                                        "x":  922
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Layer Above",
+                      "words":  [
+                                    {
+                                        "y":  1376,
+                                        "height":  15,
+                                        "width":  40,
+                                        "text":  "Layer",
+                                        "x":  839
+                                    },
+                                    {
+                                        "y":  1375,
+                                        "height":  13,
+                                        "width":  46,
+                                        "text":  "Above",
+                                        "x":  882
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Neighbors",
+                      "words":  [
+                                    {
+                                        "y":  1405,
+                                        "height":  16,
+                                        "width":  75,
+                                        "text":  "Neighbors",
+                                        "x":  782
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "in Same Layer",
+                      "words":  [
+                                    {
+                                        "y":  1421,
+                                        "height":  13,
+                                        "width":  13,
+                                        "text":  "in",
+                                        "x":  770
+                                    },
+                                    {
+                                        "y":  1422,
+                                        "height":  12,
+                                        "width":  40,
+                                        "text":  "Same",
+                                        "x":  788
+                                    },
+                                    {
+                                        "y":  1422,
+                                        "height":  15,
+                                        "width":  39,
+                                        "text":  "Layer",
+                                        "x":  833
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Keypoint",
+                      "words":  [
+                                    {
+                                        "y":  1489,
+                                        "height":  16,
+                                        "width":  64,
+                                        "text":  "Keypoint",
+                                        "x":  706
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Candidate",
+                      "words":  [
+                                    {
+                                        "y":  1505,
+                                        "height":  13,
+                                        "width":  74,
+                                        "text":  "Candidate",
+                                        "x":  701
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Total Neighbors:",
+                      "words":  [
+                                    {
+                                        "y":  1510,
+                                        "height":  14,
+                                        "width":  35,
+                                        "text":  "Total",
+                                        "x":  861
+                                    },
+                                    {
+                                        "y":  1510,
+                                        "height":  17,
+                                        "width":  78,
+                                        "text":  "Neighbors:",
+                                        "x":  901
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "08+0+9=0",
+                      "words":  [
+                                    {
+                                        "y":  1530,
+                                        "height":  18,
+                                        "width":  121,
+                                        "text":  "08+0+9=0",
+                                        "x":  860
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "9 Neighbors",
+                      "words":  [
+                                    {
+                                        "y":  1536,
+                                        "height":  13,
+                                        "width":  9,
+                                        "text":  "9",
+                                        "x":  740
+                                    },
+                                    {
+                                        "y":  1535,
+                                        "height":  17,
+                                        "width":  75,
+                                        "text":  "Neighbors",
+                                        "x":  754
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Ain Layer Below = 26 Neighbors",
+                      "words":  [
+                                    {
+                                        "y":  1552,
+                                        "height":  13,
+                                        "width":  27,
+                                        "text":  "Ain",
+                                        "x":  726
+                                    },
+                                    {
+                                        "y":  1553,
+                                        "height":  15,
+                                        "width":  39,
+                                        "text":  "Layer",
+                                        "x":  759
+                                    },
+                                    {
+                                        "y":  1553,
+                                        "height":  12,
+                                        "width":  45,
+                                        "text":  "Below",
+                                        "x":  802
+                                    },
+                                    {
+                                        "y":  1557,
+                                        "height":  7,
+                                        "width":  8,
+                                        "text":  "=",
+                                        "x":  865
+                                    },
+                                    {
+                                        "y":  1554,
+                                        "height":  13,
+                                        "width":  17,
+                                        "text":  "26",
+                                        "x":  878
+                                    },
+                                    {
+                                        "y":  1553,
+                                        "height":  17,
+                                        "width":  74,
+                                        "text":  "Neighbors",
+                                        "x":  900
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Objective: Compare",
+                      "words":  [
+                                    {
+                                        "y":  1653,
+                                        "height":  16,
+                                        "width":  73,
+                                        "text":  "Objective:",
+                                        "x":  841
+                                    },
+                                    {
+                                        "y":  1653,
+                                        "height":  16,
+                                        "width":  66,
+                                        "text":  "Compare",
+                                        "x":  918
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "intensity with all 26",
+                      "words":  [
+                                    {
+                                        "y":  1669,
+                                        "height":  16,
+                                        "width":  63,
+                                        "text":  "intensity",
+                                        "x":  843
+                                    },
+                                    {
+                                        "y":  1669,
+                                        "height":  13,
+                                        "width":  32,
+                                        "text":  "with",
+                                        "x":  909
+                                    },
+                                    {
+                                        "y":  1670,
+                                        "height":  12,
+                                        "width":  17,
+                                        "text":  "all",
+                                        "x":  945
+                                    },
+                                    {
+                                        "y":  1670,
+                                        "height":  12,
+                                        "width":  17,
+                                        "text":  "26",
+                                        "x":  966
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "surrounding pixels",
+                      "words":  [
+                                    {
+                                        "y":  1686,
+                                        "height":  16,
+                                        "width":  89,
+                                        "text":  "surrounding",
+                                        "x":  845
+                                    },
+                                    {
+                                        "y":  1686,
+                                        "height":  16,
+                                        "width":  42,
+                                        "text":  "pixels",
+                                        "x":  939
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "to confirm as local",
+                      "words":  [
+                                    {
+                                        "y":  1704,
+                                        "height":  11,
+                                        "width":  15,
+                                        "text":  "to",
+                                        "x":  846
+                                    },
+                                    {
+                                        "y":  1702,
+                                        "height":  13,
+                                        "width":  56,
+                                        "text":  "confirm",
+                                        "x":  865
+                                    },
+                                    {
+                                        "y":  1706,
+                                        "height":  9,
+                                        "width":  16,
+                                        "text":  "as",
+                                        "x":  925
+                                    },
+                                    {
+                                        "y":  1702,
+                                        "height":  13,
+                                        "width":  33,
+                                        "text":  "local",
+                                        "x":  946
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "extremum.",
+                      "words":  [
+                                    {
+                                        "y":  1720,
+                                        "height":  12,
+                                        "width":  79,
+                                        "text":  "extremum.",
+                                        "x":  873
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1821,
+                                        "height":  18,
+                                        "width":  65,
+                                        "text":  "Talha",
+                                        "x":  607
+                                    },
+                                    {
+                                        "y":  1820,
+                                        "height":  19,
+                                        "width":  80,
+                                        "text":  "Shahid",
+                                        "x":  681
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "19",
+                      "words":  [
+                                    {
+                                        "y":  1822,
+                                        "height":  17,
+                                        "width":  23,
+                                        "text":  "19",
+                                        "x":  1178
+                                    }
+                                ]
+                  }
+              ]
+}

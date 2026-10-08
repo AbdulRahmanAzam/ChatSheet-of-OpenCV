@@ -1,0 +1,1898 @@
+﻿{
+    "id":  "lab_04_manual_p011",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "National University of Computer \u0026 Emerging Sciences - NUCES - Karachi Department of Artificial Intelligence = cv2.Canny(image_smoothed, edges gradient direction (orientation) # Calculate = cv2 . Sobel (image _ smoothed, cv2.CV_64F, 1, @ , ksize=3) gradient_x = cv2 . Sobel (image _ smoothed, cv2.CV_64F, @ , I, ksize=3) gradient_y gradient_magnitude = np.sqrt(gradient_x**2 + = gradient_x) * 180 / np.pi gradient _ orientation # Create a histogram of edge directions hist, bin_edges = np.histogram(gradient_orientation, bins=8, 360)) # Display the edge map and the histogram put. figure 6)) put . subplot (121) ptt.imshow(edges, cmap=\u0027gray\u0027) ptt.titte(\u0027Edge Map\u0027) put . subplot (122) hist, width=45, align: \u0027 center\u0027) plt.title(\u0027Histogram of Edge Directions\u0027) plt.xtabet(\u0027 Edge Direction (degrees) \u0027 ) ptt. ytabet( \u0027 Frequency\u0027 ) plt.xticks(range(@, 36@, 45)) put . show() # Print the HED feature vector (histogram) print (\"Histogram of Edge Directions (HED) Feature Vector: print(hist) 3.5 The Histogram of Intensity Gradients (HIG) 3.5.1 Explanation The Histogram of Intensity Gradients (HIG) is a feature extraction technique used in computer vision and image processing. It captures information about the distribution of intensity gradients in an image, which can be valuable for various tasks such as object recognition, texture analysis, and image classification . 3.5.2 Working Mechanism: 1. Image Preprocessing: • Convert the input image to grayscale if it is not already. • Optionally, apply any necessary preprocessing steps like resizing, smoothing, or contrast enhancement. FAST NUCES - Karachi Talha Shahid 10",
+    "review_status":  "raw_ocr_unverified",
+    "page":  11,
+    "source_id":  "lab_04_manual",
+    "lines":  [
+                  {
+                      "text":  "National University of Computer \u0026 Emerging Sciences -",
+                      "words":  [
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  123,
+                                        "text":  "National",
+                                        "x":  372
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  30,
+                                        "width":  153,
+                                        "text":  "University",
+                                        "x":  504
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  31,
+                                        "text":  "of",
+                                        "x":  664
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  30,
+                                        "width":  146,
+                                        "text":  "Computer",
+                                        "x":  701
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  23,
+                                        "width":  23,
+                                        "text":  "\u0026",
+                                        "x":  854
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  30,
+                                        "width":  140,
+                                        "text":  "Emerging",
+                                        "x":  885
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  23,
+                                        "width":  123,
+                                        "text":  "Sciences",
+                                        "x":  1033
+                                    },
+                                    {
+                                        "y":  107,
+                                        "height":  4,
+                                        "width":  9,
+                                        "text":  "-",
+                                        "x":  1166
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "NUCES - Karachi",
+                      "words":  [
+                                    {
+                                        "y":  138,
+                                        "height":  23,
+                                        "width":  96,
+                                        "text":  "NUCES",
+                                        "x":  655
+                                    },
+                                    {
+                                        "y":  150,
+                                        "height":  4,
+                                        "width":  8,
+                                        "text":  "-",
+                                        "x":  760
+                                    },
+                                    {
+                                        "y":  137,
+                                        "height":  24,
+                                        "width":  113,
+                                        "text":  "Karachi",
+                                        "x":  778
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Department of Artificial Intelligence",
+                      "words":  [
+                                    {
+                                        "y":  179,
+                                        "height":  27,
+                                        "width":  142,
+                                        "text":  "Department",
+                                        "x":  556
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  21,
+                                        "width":  25,
+                                        "text":  "of",
+                                        "x":  706
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  21,
+                                        "width":  100,
+                                        "text":  "Artificial",
+                                        "x":  738
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  27,
+                                        "width":  137,
+                                        "text":  "Intelligence",
+                                        "x":  848
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "= cv2.Canny(image_smoothed,",
+                      "words":  [
+                                    {
+                                        "y":  223,
+                                        "height":  9,
+                                        "width":  11,
+                                        "text":  "=",
+                                        "x":  265
+                                    },
+                                    {
+                                        "y":  216,
+                                        "height":  24,
+                                        "width":  337,
+                                        "text":  "cv2.Canny(image_smoothed,",
+                                        "x":  292
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "edges",
+                      "words":  [
+                                    {
+                                        "y":  218,
+                                        "height":  21,
+                                        "width":  65,
+                                        "text":  "edges",
+                                        "x":  183
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "gradient direction (orientation)",
+                      "words":  [
+                                    {
+                                        "y":  274,
+                                        "height":  22,
+                                        "width":  107,
+                                        "text":  "gradient",
+                                        "x":  347
+                                    },
+                                    {
+                                        "y":  274,
+                                        "height":  18,
+                                        "width":  121,
+                                        "text":  "direction",
+                                        "x":  470
+                                    },
+                                    {
+                                        "y":  272,
+                                        "height":  23,
+                                        "width":  172,
+                                        "text":  "(orientation)",
+                                        "x":  610
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# Calculate",
+                      "words":  [
+                                    {
+                                        "y":  275,
+                                        "height":  17,
+                                        "width":  13,
+                                        "text":  "#",
+                                        "x":  181
+                                    },
+                                    {
+                                        "y":  275,
+                                        "height":  18,
+                                        "width":  121,
+                                        "text":  "Calculate",
+                                        "x":  210
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "= cv2 . Sobel (image _ smoothed, cv2.CV_64F, 1, @ , ksize=3)",
+                      "words":  [
+                                    {
+                                        "y":  308,
+                                        "height":  9,
+                                        "width":  11,
+                                        "text":  "=",
+                                        "x":  334
+                                    },
+                                    {
+                                        "y":  303,
+                                        "height":  18,
+                                        "width":  38,
+                                        "text":  "cv2",
+                                        "x":  361
+                                    },
+                                    {
+                                        "y":  316,
+                                        "height":  5,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  406
+                                    },
+                                    {
+                                        "y":  303,
+                                        "height":  18,
+                                        "width":  66,
+                                        "text":  "Sobel",
+                                        "x":  416
+                                    },
+                                    {
+                                        "y":  301,
+                                        "height":  23,
+                                        "width":  78,
+                                        "text":  "(image",
+                                        "x":  486
+                                    },
+                                    {
+                                        "y":  320,
+                                        "height":  3,
+                                        "width":  12,
+                                        "text":  "_",
+                                        "x":  566
+                                    },
+                                    {
+                                        "y":  303,
+                                        "height":  21,
+                                        "width":  118,
+                                        "text":  "smoothed,",
+                                        "x":  580
+                                    },
+                                    {
+                                        "y":  303,
+                                        "height":  21,
+                                        "width":  145,
+                                        "text":  "cv2.CV_64F,",
+                                        "x":  718
+                                    },
+                                    {
+                                        "y":  303,
+                                        "height":  21,
+                                        "width":  21,
+                                        "text":  "1,",
+                                        "x":  883
+                                    },
+                                    {
+                                        "y":  303,
+                                        "height":  18,
+                                        "width":  11,
+                                        "text":  "@",
+                                        "x":  923
+                                    },
+                                    {
+                                        "y":  316,
+                                        "height":  8,
+                                        "width":  6,
+                                        "text":  ",",
+                                        "x":  939
+                                    },
+                                    {
+                                        "y":  301,
+                                        "height":  22,
+                                        "width":  105,
+                                        "text":  "ksize=3)",
+                                        "x":  965
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "gradient_x",
+                      "words":  [
+                                    {
+                                        "y":  302,
+                                        "height":  22,
+                                        "width":  136,
+                                        "text":  "gradient_x",
+                                        "x":  182
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "= cv2 . Sobel (image _ smoothed, cv2.CV_64F, @ , I, ksize=3)",
+                      "words":  [
+                                    {
+                                        "y":  337,
+                                        "height":  8,
+                                        "width":  11,
+                                        "text":  "=",
+                                        "x":  334
+                                    },
+                                    {
+                                        "y":  332,
+                                        "height":  17,
+                                        "width":  38,
+                                        "text":  "cv2",
+                                        "x":  361
+                                    },
+                                    {
+                                        "y":  344,
+                                        "height":  5,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  406
+                                    },
+                                    {
+                                        "y":  331,
+                                        "height":  18,
+                                        "width":  66,
+                                        "text":  "Sobel",
+                                        "x":  416
+                                    },
+                                    {
+                                        "y":  329,
+                                        "height":  24,
+                                        "width":  78,
+                                        "text":  "(image",
+                                        "x":  486
+                                    },
+                                    {
+                                        "y":  349,
+                                        "height":  2,
+                                        "width":  12,
+                                        "text":  "_",
+                                        "x":  566
+                                    },
+                                    {
+                                        "y":  332,
+                                        "height":  21,
+                                        "width":  118,
+                                        "text":  "smoothed,",
+                                        "x":  580
+                                    },
+                                    {
+                                        "y":  331,
+                                        "height":  22,
+                                        "width":  145,
+                                        "text":  "cv2.CV_64F,",
+                                        "x":  718
+                                    },
+                                    {
+                                        "y":  331,
+                                        "height":  18,
+                                        "width":  11,
+                                        "text":  "@",
+                                        "x":  883
+                                    },
+                                    {
+                                        "y":  345,
+                                        "height":  8,
+                                        "width":  5,
+                                        "text":  ",",
+                                        "x":  899
+                                    },
+                                    {
+                                        "y":  332,
+                                        "height":  21,
+                                        "width":  22,
+                                        "text":  "I,",
+                                        "x":  923
+                                    },
+                                    {
+                                        "y":  329,
+                                        "height":  23,
+                                        "width":  105,
+                                        "text":  "ksize=3)",
+                                        "x":  965
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "gradient_y",
+                      "words":  [
+                                    {
+                                        "y":  331,
+                                        "height":  22,
+                                        "width":  136,
+                                        "text":  "gradient_y",
+                                        "x":  182
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "gradient_magnitude = np.sqrt(gradient_x**2 +",
+                      "words":  [
+                                    {
+                                        "y":  358,
+                                        "height":  22,
+                                        "width":  245,
+                                        "text":  "gradient_magnitude",
+                                        "x":  182
+                                    },
+                                    {
+                                        "y":  364,
+                                        "height":  9,
+                                        "width":  11,
+                                        "text":  "=",
+                                        "x":  443
+                                    },
+                                    {
+                                        "y":  356,
+                                        "height":  24,
+                                        "width":  286,
+                                        "text":  "np.sqrt(gradient_x**2",
+                                        "x":  470
+                                    },
+                                    {
+                                        "y":  362,
+                                        "height":  12,
+                                        "width":  11,
+                                        "text":  "+",
+                                        "x":  773
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "= gradient_x) * 180 / np.pi",
+                      "words":  [
+                                    {
+                                        "y":  392,
+                                        "height":  9,
+                                        "width":  11,
+                                        "text":  "=",
+                                        "x":  470
+                                    },
+                                    {
+                                        "y":  385,
+                                        "height":  24,
+                                        "width":  145,
+                                        "text":  "gradient_x)",
+                                        "x":  814
+                                    },
+                                    {
+                                        "y":  390,
+                                        "height":  12,
+                                        "width":  12,
+                                        "text":  "*",
+                                        "x":  978
+                                    },
+                                    {
+                                        "y":  387,
+                                        "height":  18,
+                                        "width":  39,
+                                        "text":  "180",
+                                        "x":  1006
+                                    },
+                                    {
+                                        "y":  384,
+                                        "height":  23,
+                                        "width":  11,
+                                        "text":  "/",
+                                        "x":  1061
+                                    },
+                                    {
+                                        "y":  386,
+                                        "height":  23,
+                                        "width":  66,
+                                        "text":  "np.pi",
+                                        "x":  1089
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "gradient _ orientation",
+                      "words":  [
+                                    {
+                                        "y":  386,
+                                        "height":  23,
+                                        "width":  108,
+                                        "text":  "gradient",
+                                        "x":  182
+                                    },
+                                    {
+                                        "y":  404,
+                                        "height":  3,
+                                        "width":  12,
+                                        "text":  "_",
+                                        "x":  292
+                                    },
+                                    {
+                                        "y":  386,
+                                        "height":  19,
+                                        "width":  148,
+                                        "text":  "orientation",
+                                        "x":  306
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# Create a histogram of edge directions",
+                      "words":  [
+                                    {
+                                        "y":  444,
+                                        "height":  17,
+                                        "width":  13,
+                                        "text":  "#",
+                                        "x":  181
+                                    },
+                                    {
+                                        "y":  444,
+                                        "height":  18,
+                                        "width":  80,
+                                        "text":  "Create",
+                                        "x":  210
+                                    },
+                                    {
+                                        "y":  447,
+                                        "height":  15,
+                                        "width":  11,
+                                        "text":  "a",
+                                        "x":  306
+                                    },
+                                    {
+                                        "y":  443,
+                                        "height":  22,
+                                        "width":  120,
+                                        "text":  "histogram",
+                                        "x":  334
+                                    },
+                                    {
+                                        "y":  444,
+                                        "height":  18,
+                                        "width":  25,
+                                        "text":  "of",
+                                        "x":  470
+                                    },
+                                    {
+                                        "y":  444,
+                                        "height":  21,
+                                        "width":  53,
+                                        "text":  "edge",
+                                        "x":  511
+                                    },
+                                    {
+                                        "y":  443,
+                                        "height":  19,
+                                        "width":  135,
+                                        "text":  "directions",
+                                        "x":  580
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "hist, bin_edges = np.histogram(gradient_orientation, bins=8,",
+                      "words":  [
+                                    {
+                                        "y":  472,
+                                        "height":  22,
+                                        "width":  62,
+                                        "text":  "hist,",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  472,
+                                        "height":  22,
+                                        "width":  121,
+                                        "text":  "bin_edges",
+                                        "x":  265
+                                    },
+                                    {
+                                        "y":  478,
+                                        "height":  9,
+                                        "width":  11,
+                                        "text":  "=",
+                                        "x":  402
+                                    },
+                                    {
+                                        "y":  470,
+                                        "height":  24,
+                                        "width":  460,
+                                        "text":  "np.histogram(gradient_orientation,",
+                                        "x":  430
+                                    },
+                                    {
+                                        "y":  472,
+                                        "height":  22,
+                                        "width":  91,
+                                        "text":  "bins=8,",
+                                        "x":  909
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "360))",
+                      "words":  [
+                                    {
+                                        "y":  499,
+                                        "height":  22,
+                                        "width":  64,
+                                        "text":  "360))",
+                                        "x":  182
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# Display the edge map and the histogram",
+                      "words":  [
+                                    {
+                                        "y":  558,
+                                        "height":  17,
+                                        "width":  13,
+                                        "text":  "#",
+                                        "x":  181
+                                    },
+                                    {
+                                        "y":  557,
+                                        "height":  22,
+                                        "width":  94,
+                                        "text":  "Display",
+                                        "x":  210
+                                    },
+                                    {
+                                        "y":  558,
+                                        "height":  18,
+                                        "width":  39,
+                                        "text":  "the",
+                                        "x":  319
+                                    },
+                                    {
+                                        "y":  558,
+                                        "height":  21,
+                                        "width":  52,
+                                        "text":  "edge",
+                                        "x":  375
+                                    },
+                                    {
+                                        "y":  562,
+                                        "height":  17,
+                                        "width":  38,
+                                        "text":  "map",
+                                        "x":  443
+                                    },
+                                    {
+                                        "y":  558,
+                                        "height":  18,
+                                        "width":  39,
+                                        "text":  "and",
+                                        "x":  497
+                                    },
+                                    {
+                                        "y":  558,
+                                        "height":  18,
+                                        "width":  39,
+                                        "text":  "the",
+                                        "x":  552
+                                    },
+                                    {
+                                        "y":  557,
+                                        "height":  22,
+                                        "width":  121,
+                                        "text":  "histogram",
+                                        "x":  608
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "put. figure 6))",
+                      "words":  [
+                                    {
+                                        "y":  586,
+                                        "height":  22,
+                                        "width":  49,
+                                        "text":  "put.",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  586,
+                                        "height":  22,
+                                        "width":  80,
+                                        "text":  "figure",
+                                        "x":  237
+                                    },
+                                    {
+                                        "y":  584,
+                                        "height":  22,
+                                        "width":  37,
+                                        "text":  "6))",
+                                        "x":  511
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "put . subplot (121)",
+                      "words":  [
+                                    {
+                                        "y":  615,
+                                        "height":  21,
+                                        "width":  38,
+                                        "text":  "put",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  627,
+                                        "height":  5,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  227
+                                    },
+                                    {
+                                        "y":  615,
+                                        "height":  21,
+                                        "width":  93,
+                                        "text":  "subplot",
+                                        "x":  238
+                                    },
+                                    {
+                                        "y":  612,
+                                        "height":  23,
+                                        "width":  61,
+                                        "text":  "(121)",
+                                        "x":  336
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ptt.imshow(edges, cmap=\u0027gray\u0027)",
+                      "words":  [
+                                    {
+                                        "y":  641,
+                                        "height":  23,
+                                        "width":  227,
+                                        "text":  "ptt.imshow(edges,",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  640,
+                                        "height":  24,
+                                        "width":  159,
+                                        "text":  "cmap=\u0027gray\u0027)",
+                                        "x":  430
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ptt.titte(\u0027Edge Map\u0027)",
+                      "words":  [
+                                    {
+                                        "y":  669,
+                                        "height":  24,
+                                        "width":  203,
+                                        "text":  "ptt.titte(\u0027Edge",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  669,
+                                        "height":  24,
+                                        "width":  63,
+                                        "text":  "Map\u0027)",
+                                        "x":  402
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "put . subplot (122)",
+                      "words":  [
+                                    {
+                                        "y":  728,
+                                        "height":  21,
+                                        "width":  38,
+                                        "text":  "put",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  741,
+                                        "height":  4,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  227
+                                    },
+                                    {
+                                        "y":  728,
+                                        "height":  21,
+                                        "width":  93,
+                                        "text":  "subplot",
+                                        "x":  238
+                                    },
+                                    {
+                                        "y":  725,
+                                        "height":  23,
+                                        "width":  61,
+                                        "text":  "(122)",
+                                        "x":  336
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "hist, width=45, align: \u0027 center\u0027)",
+                      "words":  [
+                                    {
+                                        "y":  755,
+                                        "height":  22,
+                                        "width":  62,
+                                        "text":  "hist,",
+                                        "x":  512
+                                    },
+                                    {
+                                        "y":  755,
+                                        "height":  23,
+                                        "width":  119,
+                                        "text":  "width=45,",
+                                        "x":  593
+                                    },
+                                    {
+                                        "y":  755,
+                                        "height":  23,
+                                        "width":  80,
+                                        "text":  "align:",
+                                        "x":  731
+                                    },
+                                    {
+                                        "y":  756,
+                                        "height":  8,
+                                        "width":  3,
+                                        "text":  "\u0027",
+                                        "x":  818
+                                    },
+                                    {
+                                        "y":  754,
+                                        "height":  22,
+                                        "width":  104,
+                                        "text":  "center\u0027)",
+                                        "x":  828
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "plt.title(\u0027Histogram of Edge Directions\u0027)",
+                      "words":  [
+                                    {
+                                        "y":  782,
+                                        "height":  24,
+                                        "width":  271,
+                                        "text":  "plt.title(\u0027Histogram",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  785,
+                                        "height":  17,
+                                        "width":  25,
+                                        "text":  "of",
+                                        "x":  470
+                                    },
+                                    {
+                                        "y":  785,
+                                        "height":  21,
+                                        "width":  52,
+                                        "text":  "Edge",
+                                        "x":  512
+                                    },
+                                    {
+                                        "y":  782,
+                                        "height":  23,
+                                        "width":  160,
+                                        "text":  "Directions\u0027)",
+                                        "x":  580
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "plt.xtabet(\u0027 Edge Direction (degrees) \u0027 )",
+                      "words":  [
+                                    {
+                                        "y":  810,
+                                        "height":  25,
+                                        "width":  158,
+                                        "text":  "plt.xtabet(\u0027",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  813,
+                                        "height":  21,
+                                        "width":  51,
+                                        "text":  "Edge",
+                                        "x":  348
+                                    },
+                                    {
+                                        "y":  812,
+                                        "height":  19,
+                                        "width":  120,
+                                        "text":  "Direction",
+                                        "x":  416
+                                    },
+                                    {
+                                        "y":  811,
+                                        "height":  24,
+                                        "width":  117,
+                                        "text":  "(degrees)",
+                                        "x":  555
+                                    },
+                                    {
+                                        "y":  813,
+                                        "height":  8,
+                                        "width":  3,
+                                        "text":  "\u0027",
+                                        "x":  680
+                                    },
+                                    {
+                                        "y":  811,
+                                        "height":  22,
+                                        "width":  8,
+                                        "text":  ")",
+                                        "x":  691
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ptt. ytabet( \u0027 Frequency\u0027 )",
+                      "words":  [
+                                    {
+                                        "y":  841,
+                                        "height":  22,
+                                        "width":  49,
+                                        "text":  "ptt.",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  839,
+                                        "height":  24,
+                                        "width":  93,
+                                        "text":  "ytabet(",
+                                        "x":  237
+                                    },
+                                    {
+                                        "y":  841,
+                                        "height":  8,
+                                        "width":  4,
+                                        "text":  "\u0027",
+                                        "x":  337
+                                    },
+                                    {
+                                        "y":  841,
+                                        "height":  22,
+                                        "width":  129,
+                                        "text":  "Frequency\u0027",
+                                        "x":  348
+                                    },
+                                    {
+                                        "y":  839,
+                                        "height":  23,
+                                        "width":  7,
+                                        "text":  ")",
+                                        "x":  485
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "plt.xticks(range(@, 36@, 45))",
+                      "words":  [
+                                    {
+                                        "y":  867,
+                                        "height":  24,
+                                        "width":  254,
+                                        "text":  "plt.xticks(range(@,",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  870,
+                                        "height":  21,
+                                        "width":  49,
+                                        "text":  "36@,",
+                                        "x":  456
+                                    },
+                                    {
+                                        "y":  867,
+                                        "height":  23,
+                                        "width":  50,
+                                        "text":  "45))",
+                                        "x":  525
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "put . show()",
+                      "words":  [
+                                    {
+                                        "y":  899,
+                                        "height":  21,
+                                        "width":  38,
+                                        "text":  "put",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  912,
+                                        "height":  5,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  227
+                                    },
+                                    {
+                                        "y":  896,
+                                        "height":  23,
+                                        "width":  77,
+                                        "text":  "show()",
+                                        "x":  238
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# Print the HED feature vector (histogram)",
+                      "words":  [
+                                    {
+                                        "y":  956,
+                                        "height":  17,
+                                        "width":  13,
+                                        "text":  "#",
+                                        "x":  181
+                                    },
+                                    {
+                                        "y":  955,
+                                        "height":  18,
+                                        "width":  66,
+                                        "text":  "Print",
+                                        "x":  210
+                                    },
+                                    {
+                                        "y":  956,
+                                        "height":  18,
+                                        "width":  39,
+                                        "text":  "the",
+                                        "x":  292
+                                    },
+                                    {
+                                        "y":  956,
+                                        "height":  17,
+                                        "width":  38,
+                                        "text":  "HED",
+                                        "x":  348
+                                    },
+                                    {
+                                        "y":  956,
+                                        "height":  18,
+                                        "width":  93,
+                                        "text":  "feature",
+                                        "x":  402
+                                    },
+                                    {
+                                        "y":  956,
+                                        "height":  18,
+                                        "width":  81,
+                                        "text":  "vector",
+                                        "x":  511
+                                    },
+                                    {
+                                        "y":  953,
+                                        "height":  24,
+                                        "width":  144,
+                                        "text":  "(histogram)",
+                                        "x":  610
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "print (\"Histogram of Edge Directions (HED) Feature Vector:",
+                      "words":  [
+                                    {
+                                        "y":  984,
+                                        "height":  22,
+                                        "width":  66,
+                                        "text":  "print",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  982,
+                                        "height":  24,
+                                        "width":  146,
+                                        "text":  "(\"Histogram",
+                                        "x":  254
+                                    },
+                                    {
+                                        "y":  984,
+                                        "height":  18,
+                                        "width":  25,
+                                        "text":  "of",
+                                        "x":  416
+                                    },
+                                    {
+                                        "y":  984,
+                                        "height":  22,
+                                        "width":  53,
+                                        "text":  "Edge",
+                                        "x":  456
+                                    },
+                                    {
+                                        "y":  984,
+                                        "height":  18,
+                                        "width":  135,
+                                        "text":  "Directions",
+                                        "x":  525
+                                    },
+                                    {
+                                        "y":  982,
+                                        "height":  22,
+                                        "width":  61,
+                                        "text":  "(HED)",
+                                        "x":  679
+                                    },
+                                    {
+                                        "y":  984,
+                                        "height":  18,
+                                        "width":  94,
+                                        "text":  "Feature",
+                                        "x":  759
+                                    },
+                                    {
+                                        "y":  984,
+                                        "height":  18,
+                                        "width":  91,
+                                        "text":  "Vector:",
+                                        "x":  868
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "print(hist)",
+                      "words":  [
+                                    {
+                                        "y":  1010,
+                                        "height":  24,
+                                        "width":  145,
+                                        "text":  "print(hist)",
+                                        "x":  183
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3.5 The Histogram of Intensity Gradients (HIG)",
+                      "words":  [
+                                    {
+                                        "y":  1120,
+                                        "height":  24,
+                                        "width":  44,
+                                        "text":  "3.5",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1119,
+                                        "height":  25,
+                                        "width":  58,
+                                        "text":  "The",
+                                        "x":  226
+                                    },
+                                    {
+                                        "y":  1117,
+                                        "height":  34,
+                                        "width":  167,
+                                        "text":  "Histogram",
+                                        "x":  298
+                                    },
+                                    {
+                                        "y":  1119,
+                                        "height":  24,
+                                        "width":  33,
+                                        "text":  "of",
+                                        "x":  478
+                                    },
+                                    {
+                                        "y":  1117,
+                                        "height":  34,
+                                        "width":  147,
+                                        "text":  "Intensity",
+                                        "x":  522
+                                    },
+                                    {
+                                        "y":  1117,
+                                        "height":  26,
+                                        "width":  158,
+                                        "text":  "Gradients",
+                                        "x":  681
+                                    },
+                                    {
+                                        "y":  1120,
+                                        "height":  29,
+                                        "width":  90,
+                                        "text":  "(HIG)",
+                                        "x":  851
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3.5.1 Explanation",
+                      "words":  [
+                                    {
+                                        "y":  1201,
+                                        "height":  21,
+                                        "width":  60,
+                                        "text":  "3.5.1",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1199,
+                                        "height":  28,
+                                        "width":  166,
+                                        "text":  "Explanation",
+                                        "x":  241
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The Histogram of Intensity Gradients (HIG)",
+                      "words":  [
+                                    {
+                                        "y":  1249,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "The",
+                                        "x":  251
+                                    },
+                                    {
+                                        "y":  1249,
+                                        "height":  24,
+                                        "width":  132,
+                                        "text":  "Histogram",
+                                        "x":  328
+                                    },
+                                    {
+                                        "y":  1249,
+                                        "height":  20,
+                                        "width":  29,
+                                        "text":  "of",
+                                        "x":  492
+                                    },
+                                    {
+                                        "y":  1249,
+                                        "height":  24,
+                                        "width":  134,
+                                        "text":  "Intensity",
+                                        "x":  553
+                                    },
+                                    {
+                                        "y":  1249,
+                                        "height":  20,
+                                        "width":  134,
+                                        "text":  "Gradients",
+                                        "x":  719
+                                    },
+                                    {
+                                        "y":  1248,
+                                        "height":  24,
+                                        "width":  66,
+                                        "text":  "(HIG)",
+                                        "x":  889
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "is a feature",
+                      "words":  [
+                                    {
+                                        "y":  1249,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  991
+                                    },
+                                    {
+                                        "y":  1255,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  1051
+                                    },
+                                    {
+                                        "y":  1249,
+                                        "height":  20,
+                                        "width":  104,
+                                        "text":  "feature",
+                                        "x":  1096
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "extraction technique used in computer vision and image",
+                      "words":  [
+                                    {
+                                        "y":  1287,
+                                        "height":  20,
+                                        "width":  148,
+                                        "text":  "extraction",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1287,
+                                        "height":  24,
+                                        "width":  133,
+                                        "text":  "technique",
+                                        "x":  437
+                                    },
+                                    {
+                                        "y":  1287,
+                                        "height":  20,
+                                        "width":  57,
+                                        "text":  "used",
+                                        "x":  608
+                                    },
+                                    {
+                                        "y":  1287,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "in",
+                                        "x":  703
+                                    },
+                                    {
+                                        "y":  1288,
+                                        "height":  23,
+                                        "width":  119,
+                                        "text":  "computer",
+                                        "x":  767
+                                    },
+                                    {
+                                        "y":  1287,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "vision",
+                                        "x":  921
+                                    },
+                                    {
+                                        "y":  1287,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  1046
+                                    },
+                                    {
+                                        "y":  1287,
+                                        "height":  24,
+                                        "width":  73,
+                                        "text":  "image",
+                                        "x":  1127
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "processing. It captures information about the distribution of",
+                      "words":  [
+                                    {
+                                        "y":  1324,
+                                        "height":  25,
+                                        "width":  159,
+                                        "text":  "processing.",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  1325,
+                                        "height":  19,
+                                        "width":  26,
+                                        "text":  "It",
+                                        "x":  438
+                                    },
+                                    {
+                                        "y":  1325,
+                                        "height":  24,
+                                        "width":  118,
+                                        "text":  "captures",
+                                        "x":  486
+                                    },
+                                    {
+                                        "y":  1324,
+                                        "height":  20,
+                                        "width":  163,
+                                        "text":  "information",
+                                        "x":  627
+                                    },
+                                    {
+                                        "y":  1324,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "about",
+                                        "x":  812
+                                    },
+                                    {
+                                        "y":  1324,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  906
+                                    },
+                                    {
+                                        "y":  1324,
+                                        "height":  20,
+                                        "width":  180,
+                                        "text":  "distribution",
+                                        "x":  970
+                                    },
+                                    {
+                                        "y":  1324,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  1172
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "intensity gradients in an image, which can be valuable for",
+                      "words":  [
+                                    {
+                                        "y":  1362,
+                                        "height":  25,
+                                        "width":  133,
+                                        "text":  "intensity",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  1362,
+                                        "height":  25,
+                                        "width":  133,
+                                        "text":  "gradients",
+                                        "x":  411
+                                    },
+                                    {
+                                        "y":  1362,
+                                        "height":  20,
+                                        "width":  26,
+                                        "text":  "in",
+                                        "x":  571
+                                    },
+                                    {
+                                        "y":  1368,
+                                        "height":  14,
+                                        "width":  28,
+                                        "text":  "an",
+                                        "x":  623
+                                    },
+                                    {
+                                        "y":  1362,
+                                        "height":  25,
+                                        "width":  84,
+                                        "text":  "image,",
+                                        "x":  678
+                                    },
+                                    {
+                                        "y":  1362,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "which",
+                                        "x":  791
+                                    },
+                                    {
+                                        "y":  1368,
+                                        "height":  14,
+                                        "width":  41,
+                                        "text":  "can",
+                                        "x":  891
+                                    },
+                                    {
+                                        "y":  1362,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "be",
+                                        "x":  959
+                                    },
+                                    {
+                                        "y":  1362,
+                                        "height":  20,
+                                        "width":  119,
+                                        "text":  "valuable",
+                                        "x":  1012
+                                    },
+                                    {
+                                        "y":  1362,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "for",
+                                        "x":  1156
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "various tasks such as object recognition, texture analysis, and",
+                      "words":  [
+                                    {
+                                        "y":  1400,
+                                        "height":  18,
+                                        "width":  103,
+                                        "text":  "various",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1400,
+                                        "height":  18,
+                                        "width":  74,
+                                        "text":  "tasks",
+                                        "x":  372
+                                    },
+                                    {
+                                        "y":  1400,
+                                        "height":  18,
+                                        "width":  58,
+                                        "text":  "such",
+                                        "x":  462
+                                    },
+                                    {
+                                        "y":  1405,
+                                        "height":  13,
+                                        "width":  29,
+                                        "text":  "as",
+                                        "x":  537
+                                    },
+                                    {
+                                        "y":  1400,
+                                        "height":  23,
+                                        "width":  89,
+                                        "text":  "object",
+                                        "x":  583
+                                    },
+                                    {
+                                        "y":  1400,
+                                        "height":  23,
+                                        "width":  176,
+                                        "text":  "recognition,",
+                                        "x":  689
+                                    },
+                                    {
+                                        "y":  1400,
+                                        "height":  18,
+                                        "width":  103,
+                                        "text":  "texture",
+                                        "x":  885
+                                    },
+                                    {
+                                        "y":  1400,
+                                        "height":  23,
+                                        "width":  130,
+                                        "text":  "analysis,",
+                                        "x":  1006
+                                    },
+                                    {
+                                        "y":  1400,
+                                        "height":  18,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  1157
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "image classification .",
+                      "words":  [
+                                    {
+                                        "y":  1437,
+                                        "height":  24,
+                                        "width":  72,
+                                        "text":  "image",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  1437,
+                                        "height":  19,
+                                        "width":  207,
+                                        "text":  "classification",
+                                        "x":  343
+                                    },
+                                    {
+                                        "y":  1452,
+                                        "height":  4,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  557
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3.5.2 Working Mechanism:",
+                      "words":  [
+                                    {
+                                        "y":  1512,
+                                        "height":  21,
+                                        "width":  61,
+                                        "text":  "3.5.2",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1510,
+                                        "height":  28,
+                                        "width":  118,
+                                        "text":  "Working",
+                                        "x":  239
+                                    },
+                                    {
+                                        "y":  1510,
+                                        "height":  22,
+                                        "width":  160,
+                                        "text":  "Mechanism:",
+                                        "x":  369
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1. Image Preprocessing:",
+                      "words":  [
+                                    {
+                                        "y":  1561,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "1.",
+                                        "x":  224
+                                    },
+                                    {
+                                        "y":  1561,
+                                        "height":  24,
+                                        "width":  73,
+                                        "text":  "Image",
+                                        "x":  266
+                                    },
+                                    {
+                                        "y":  1559,
+                                        "height":  26,
+                                        "width":  204,
+                                        "text":  "Preprocessing:",
+                                        "x":  357
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• Convert the input image to grayscale if it is not already.",
+                      "words":  [
+                                    {
+                                        "y":  1605,
+                                        "height":  10,
+                                        "width":  10,
+                                        "text":  "•",
+                                        "x":  279
+                                    },
+                                    {
+                                        "y":  1599,
+                                        "height":  19,
+                                        "width":  104,
+                                        "text":  "Convert",
+                                        "x":  320
+                                    },
+                                    {
+                                        "y":  1598,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "the",
+                                        "x":  441
+                                    },
+                                    {
+                                        "y":  1597,
+                                        "height":  26,
+                                        "width":  73,
+                                        "text":  "input",
+                                        "x":  501
+                                    },
+                                    {
+                                        "y":  1597,
+                                        "height":  26,
+                                        "width":  72,
+                                        "text":  "image",
+                                        "x":  593
+                                    },
+                                    {
+                                        "y":  1599,
+                                        "height":  19,
+                                        "width":  28,
+                                        "text":  "to",
+                                        "x":  682
+                                    },
+                                    {
+                                        "y":  1598,
+                                        "height":  25,
+                                        "width":  134,
+                                        "text":  "grayscale",
+                                        "x":  728
+                                    },
+                                    {
+                                        "y":  1597,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "if",
+                                        "x":  880
+                                    },
+                                    {
+                                        "y":  1597,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "it",
+                                        "x":  925
+                                    },
+                                    {
+                                        "y":  1598,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  970
+                                    },
+                                    {
+                                        "y":  1599,
+                                        "height":  19,
+                                        "width":  42,
+                                        "text":  "not",
+                                        "x":  1015
+                                    },
+                                    {
+                                        "y":  1598,
+                                        "height":  25,
+                                        "width":  115,
+                                        "text":  "already.",
+                                        "x":  1075
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• Optionally, apply any necessary preprocessing steps like",
+                      "words":  [
+                                    {
+                                        "y":  1642,
+                                        "height":  10,
+                                        "width":  10,
+                                        "text":  "•",
+                                        "x":  279
+                                    },
+                                    {
+                                        "y":  1635,
+                                        "height":  25,
+                                        "width":  159,
+                                        "text":  "Optionally,",
+                                        "x":  320
+                                    },
+                                    {
+                                        "y":  1635,
+                                        "height":  25,
+                                        "width":  73,
+                                        "text":  "apply",
+                                        "x":  507
+                                    },
+                                    {
+                                        "y":  1640,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "any",
+                                        "x":  604
+                                    },
+                                    {
+                                        "y":  1640,
+                                        "height":  20,
+                                        "width":  133,
+                                        "text":  "necessary",
+                                        "x":  671
+                                    },
+                                    {
+                                        "y":  1635,
+                                        "height":  25,
+                                        "width":  194,
+                                        "text":  "preprocessing",
+                                        "x":  828
+                                    },
+                                    {
+                                        "y":  1636,
+                                        "height":  24,
+                                        "width":  73,
+                                        "text":  "steps",
+                                        "x":  1045
+                                    },
+                                    {
+                                        "y":  1635,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "like",
+                                        "x":  1142
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "resizing, smoothing, or contrast enhancement.",
+                      "words":  [
+                                    {
+                                        "y":  1673,
+                                        "height":  25,
+                                        "width":  129,
+                                        "text":  "resizing,",
+                                        "x":  321
+                                    },
+                                    {
+                                        "y":  1673,
+                                        "height":  25,
+                                        "width":  145,
+                                        "text":  "smoothing,",
+                                        "x":  471
+                                    },
+                                    {
+                                        "y":  1678,
+                                        "height":  15,
+                                        "width":  29,
+                                        "text":  "or",
+                                        "x":  637
+                                    },
+                                    {
+                                        "y":  1674,
+                                        "height":  19,
+                                        "width":  118,
+                                        "text":  "contrast",
+                                        "x":  683
+                                    },
+                                    {
+                                        "y":  1673,
+                                        "height":  20,
+                                        "width":  174,
+                                        "text":  "enhancement.",
+                                        "x":  819
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FAST NUCES",
+                      "words":  [
+                                    {
+                                        "y":  1819,
+                                        "height":  19,
+                                        "width":  62,
+                                        "text":  "FAST",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1819,
+                                        "height":  20,
+                                        "width":  85,
+                                        "text":  "NUCES",
+                                        "x":  242
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Karachi",
+                      "words":  [
+                                    {
+                                        "y":  1828,
+                                        "height":  5,
+                                        "width":  12,
+                                        "text":  "-",
+                                        "x":  336
+                                    },
+                                    {
+                                        "y":  1817,
+                                        "height":  21,
+                                        "width":  94,
+                                        "text":  "Karachi",
+                                        "x":  358
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1819,
+                                        "height":  19,
+                                        "width":  72,
+                                        "text":  "Talha",
+                                        "x":  594
+                                    },
+                                    {
+                                        "y":  1817,
+                                        "height":  21,
+                                        "width":  87,
+                                        "text":  "Shahid",
+                                        "x":  676
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "10",
+                      "words":  [
+                                    {
+                                        "y":  1819,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "10",
+                                        "x":  1174
+                                    }
+                                ]
+                  }
+              ]
+}

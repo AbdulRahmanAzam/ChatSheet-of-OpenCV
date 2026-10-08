@@ -1,0 +1,2015 @@
+﻿{
+    "id":  "lab_04_manual_p015",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "contrast National University of Computer \u0026 Emerging Sciences - NUCES - Karachi Department of Artificial Intelligence = cv2.fitter2D(image, -1, np.ones((neighborhood_size, neighborhood_size))) # Compute histograms for texture energy and contrast = np.histogram(energy, bins-256, range=(@, energy _ histogram, energy _ bins energy . max())) contrast _ histogram, contrast _ bins = np.histogram(contrast, bins=256, range=(@, contrast.max())) # Normalize histograms (optional) energy _ histogram = energy _ histogram / energy _ histogram. sum() = contrast_histogram / contrast _ histogram. sum() contrast_histogram # Display the histograms put . 4)) put. subplot(l, 2, 1) put . plot : -I], energy _ histogram, put. Energy Histogram\") put put. ) put. subplot(l, 2, 2) cotor= put . plot : -I], contrast _ histogram, put . Contrast Histogram\") put . xtabet ( \"Contrast \" ) put . ylabet ( \"Frequency\" ) put. put . show() color: # YOU can use the computed histograms as feature vectors for texture analysis . Task: Texture Analysis for Material Classification (Give Code and Description) You are working on a project that involves classifying different materials in images, such as wood, metal, and fabric. The goal is to extract texture features from these materials for classification purposes . Describe at least two texture feature extraction techniques you would use in this project. Explain how each technique works and provide examples of the types of textures they are suitable for. Discuss the advantages and limitations of the selected texture feature extraction techniques in the context of material classification FAST NUCES - Karachi Talha Shahid 14",
+    "review_status":  "raw_ocr_unverified",
+    "page":  15,
+    "source_id":  "lab_04_manual",
+    "lines":  [
+                  {
+                      "text":  "contrast",
+                      "words":  [
+                                    {
+                                        "y":  218,
+                                        "height":  18,
+                                        "width":  107,
+                                        "text":  "contrast",
+                                        "x":  198
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "National University of Computer \u0026 Emerging Sciences -",
+                      "words":  [
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  123,
+                                        "text":  "National",
+                                        "x":  372
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  30,
+                                        "width":  153,
+                                        "text":  "University",
+                                        "x":  504
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  31,
+                                        "text":  "of",
+                                        "x":  664
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  30,
+                                        "width":  146,
+                                        "text":  "Computer",
+                                        "x":  701
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  23,
+                                        "width":  23,
+                                        "text":  "\u0026",
+                                        "x":  854
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  30,
+                                        "width":  140,
+                                        "text":  "Emerging",
+                                        "x":  885
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  23,
+                                        "width":  123,
+                                        "text":  "Sciences",
+                                        "x":  1033
+                                    },
+                                    {
+                                        "y":  107,
+                                        "height":  4,
+                                        "width":  9,
+                                        "text":  "-",
+                                        "x":  1166
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "NUCES - Karachi",
+                      "words":  [
+                                    {
+                                        "y":  138,
+                                        "height":  23,
+                                        "width":  96,
+                                        "text":  "NUCES",
+                                        "x":  655
+                                    },
+                                    {
+                                        "y":  150,
+                                        "height":  4,
+                                        "width":  8,
+                                        "text":  "-",
+                                        "x":  760
+                                    },
+                                    {
+                                        "y":  137,
+                                        "height":  24,
+                                        "width":  113,
+                                        "text":  "Karachi",
+                                        "x":  778
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Department of Artificial Intelligence",
+                      "words":  [
+                                    {
+                                        "y":  179,
+                                        "height":  27,
+                                        "width":  142,
+                                        "text":  "Department",
+                                        "x":  556
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  21,
+                                        "width":  25,
+                                        "text":  "of",
+                                        "x":  706
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  21,
+                                        "width":  100,
+                                        "text":  "Artificial",
+                                        "x":  738
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  27,
+                                        "width":  137,
+                                        "text":  "Intelligence",
+                                        "x":  848
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "= cv2.fitter2D(image,",
+                      "words":  [
+                                    {
+                                        "y":  223,
+                                        "height":  9,
+                                        "width":  11,
+                                        "text":  "=",
+                                        "x":  322
+                                    },
+                                    {
+                                        "y":  216,
+                                        "height":  23,
+                                        "width":  253,
+                                        "text":  "cv2.fitter2D(image,",
+                                        "x":  350
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "-1, np.ones((neighborhood_size,",
+                      "words":  [
+                                    {
+                                        "y":  218,
+                                        "height":  21,
+                                        "width":  34,
+                                        "text":  "-1,",
+                                        "x":  624
+                                    },
+                                    {
+                                        "y":  216,
+                                        "height":  23,
+                                        "width":  364,
+                                        "text":  "np.ones((neighborhood_size,",
+                                        "x":  679
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "neighborhood_size)))",
+                      "words":  [
+                                    {
+                                        "y":  244,
+                                        "height":  24,
+                                        "width":  269,
+                                        "text":  "neighborhood_size)))",
+                                        "x":  198
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# Compute histograms for texture energy and contrast",
+                      "words":  [
+                                    {
+                                        "y":  303,
+                                        "height":  17,
+                                        "width":  13,
+                                        "text":  "#",
+                                        "x":  197
+                                    },
+                                    {
+                                        "y":  303,
+                                        "height":  21,
+                                        "width":  93,
+                                        "text":  "Compute",
+                                        "x":  226
+                                    },
+                                    {
+                                        "y":  302,
+                                        "height":  22,
+                                        "width":  133,
+                                        "text":  "histograms",
+                                        "x":  336
+                                    },
+                                    {
+                                        "y":  303,
+                                        "height":  18,
+                                        "width":  40,
+                                        "text":  "for",
+                                        "x":  485
+                                    },
+                                    {
+                                        "y":  303,
+                                        "height":  18,
+                                        "width":  94,
+                                        "text":  "texture",
+                                        "x":  540
+                                    },
+                                    {
+                                        "y":  307,
+                                        "height":  17,
+                                        "width":  80,
+                                        "text":  "energy",
+                                        "x":  651
+                                    },
+                                    {
+                                        "y":  303,
+                                        "height":  18,
+                                        "width":  39,
+                                        "text":  "and",
+                                        "x":  747
+                                    },
+                                    {
+                                        "y":  303,
+                                        "height":  18,
+                                        "width":  107,
+                                        "text":  "contrast",
+                                        "x":  802
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "= np.histogram(energy, bins-256, range=(@,",
+                      "words":  [
+                                    {
+                                        "y":  337,
+                                        "height":  8,
+                                        "width":  11,
+                                        "text":  "=",
+                                        "x":  610
+                                    },
+                                    {
+                                        "y":  329,
+                                        "height":  24,
+                                        "width":  269,
+                                        "text":  "np.histogram(energy,",
+                                        "x":  638
+                                    },
+                                    {
+                                        "y":  331,
+                                        "height":  22,
+                                        "width":  118,
+                                        "text":  "bins-256,",
+                                        "x":  925
+                                    },
+                                    {
+                                        "y":  329,
+                                        "height":  24,
+                                        "width":  117,
+                                        "text":  "range=(@,",
+                                        "x":  1064
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "energy _ histogram, energy _ bins",
+                      "words":  [
+                                    {
+                                        "y":  335,
+                                        "height":  18,
+                                        "width":  80,
+                                        "text":  "energy",
+                                        "x":  198
+                                    },
+                                    {
+                                        "y":  349,
+                                        "height":  2,
+                                        "width":  12,
+                                        "text":  "_",
+                                        "x":  280
+                                    },
+                                    {
+                                        "y":  331,
+                                        "height":  22,
+                                        "width":  132,
+                                        "text":  "histogram,",
+                                        "x":  294
+                                    },
+                                    {
+                                        "y":  335,
+                                        "height":  18,
+                                        "width":  80,
+                                        "text":  "energy",
+                                        "x":  445
+                                    },
+                                    {
+                                        "y":  349,
+                                        "height":  2,
+                                        "width":  12,
+                                        "text":  "_",
+                                        "x":  527
+                                    },
+                                    {
+                                        "y":  331,
+                                        "height":  18,
+                                        "width":  52,
+                                        "text":  "bins",
+                                        "x":  541
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "energy . max()))",
+                      "words":  [
+                                    {
+                                        "y":  363,
+                                        "height":  17,
+                                        "width":  80,
+                                        "text":  "energy",
+                                        "x":  198
+                                    },
+                                    {
+                                        "y":  372,
+                                        "height":  4,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  284
+                                    },
+                                    {
+                                        "y":  356,
+                                        "height":  23,
+                                        "width":  91,
+                                        "text":  "max()))",
+                                        "x":  294
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "contrast _ histogram, contrast _ bins = np.histogram(contrast, bins=256,",
+                      "words":  [
+                                    {
+                                        "y":  387,
+                                        "height":  18,
+                                        "width":  107,
+                                        "text":  "contrast",
+                                        "x":  198
+                                    },
+                                    {
+                                        "y":  404,
+                                        "height":  3,
+                                        "width":  12,
+                                        "text":  "_",
+                                        "x":  308
+                                    },
+                                    {
+                                        "y":  386,
+                                        "height":  22,
+                                        "width":  131,
+                                        "text":  "histogram,",
+                                        "x":  322
+                                    },
+                                    {
+                                        "y":  387,
+                                        "height":  18,
+                                        "width":  108,
+                                        "text":  "contrast",
+                                        "x":  472
+                                    },
+                                    {
+                                        "y":  404,
+                                        "height":  3,
+                                        "width":  11,
+                                        "text":  "_",
+                                        "x":  582
+                                    },
+                                    {
+                                        "y":  386,
+                                        "height":  19,
+                                        "width":  52,
+                                        "text":  "bins",
+                                        "x":  596
+                                    },
+                                    {
+                                        "y":  392,
+                                        "height":  9,
+                                        "width":  11,
+                                        "text":  "=",
+                                        "x":  665
+                                    },
+                                    {
+                                        "y":  385,
+                                        "height":  24,
+                                        "width":  296,
+                                        "text":  "np.histogram(contrast,",
+                                        "x":  692
+                                    },
+                                    {
+                                        "y":  386,
+                                        "height":  22,
+                                        "width":  117,
+                                        "text":  "bins=256,",
+                                        "x":  1008
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "range=(@, contrast.max()))",
+                      "words":  [
+                                    {
+                                        "y":  413,
+                                        "height":  24,
+                                        "width":  117,
+                                        "text":  "range=(@,",
+                                        "x":  199
+                                    },
+                                    {
+                                        "y":  413,
+                                        "height":  23,
+                                        "width":  213,
+                                        "text":  "contrast.max()))",
+                                        "x":  336
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# Normalize histograms (optional)",
+                      "words":  [
+                                    {
+                                        "y":  473,
+                                        "height":  17,
+                                        "width":  13,
+                                        "text":  "#",
+                                        "x":  197
+                                    },
+                                    {
+                                        "y":  472,
+                                        "height":  19,
+                                        "width":  122,
+                                        "text":  "Normalize",
+                                        "x":  225
+                                    },
+                                    {
+                                        "y":  472,
+                                        "height":  22,
+                                        "width":  134,
+                                        "text":  "histograms",
+                                        "x":  363
+                                    },
+                                    {
+                                        "y":  470,
+                                        "height":  24,
+                                        "width":  130,
+                                        "text":  "(optional)",
+                                        "x":  516
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "energy _ histogram = energy _ histogram / energy _ histogram. sum()",
+                      "words":  [
+                                    {
+                                        "y":  505,
+                                        "height":  18,
+                                        "width":  80,
+                                        "text":  "energy",
+                                        "x":  198
+                                    },
+                                    {
+                                        "y":  518,
+                                        "height":  3,
+                                        "width":  12,
+                                        "text":  "_",
+                                        "x":  280
+                                    },
+                                    {
+                                        "y":  501,
+                                        "height":  22,
+                                        "width":  122,
+                                        "text":  "histogram",
+                                        "x":  294
+                                    },
+                                    {
+                                        "y":  506,
+                                        "height":  9,
+                                        "width":  11,
+                                        "text":  "=",
+                                        "x":  432
+                                    },
+                                    {
+                                        "y":  505,
+                                        "height":  18,
+                                        "width":  81,
+                                        "text":  "energy",
+                                        "x":  458
+                                    },
+                                    {
+                                        "y":  518,
+                                        "height":  3,
+                                        "width":  12,
+                                        "text":  "_",
+                                        "x":  540
+                                    },
+                                    {
+                                        "y":  500,
+                                        "height":  23,
+                                        "width":  121,
+                                        "text":  "histogram",
+                                        "x":  555
+                                    },
+                                    {
+                                        "y":  499,
+                                        "height":  22,
+                                        "width":  11,
+                                        "text":  "/",
+                                        "x":  692
+                                    },
+                                    {
+                                        "y":  505,
+                                        "height":  18,
+                                        "width":  80,
+                                        "text":  "energy",
+                                        "x":  720
+                                    },
+                                    {
+                                        "y":  518,
+                                        "height":  3,
+                                        "width":  12,
+                                        "text":  "_",
+                                        "x":  802
+                                    },
+                                    {
+                                        "y":  500,
+                                        "height":  23,
+                                        "width":  131,
+                                        "text":  "histogram.",
+                                        "x":  816
+                                    },
+                                    {
+                                        "y":  499,
+                                        "height":  22,
+                                        "width":  64,
+                                        "text":  "sum()",
+                                        "x":  953
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "= contrast_histogram / contrast _ histogram. sum()",
+                      "words":  [
+                                    {
+                                        "y":  535,
+                                        "height":  8,
+                                        "width":  11,
+                                        "text":  "=",
+                                        "x":  458
+                                    },
+                                    {
+                                        "y":  529,
+                                        "height":  22,
+                                        "width":  245,
+                                        "text":  "contrast_histogram",
+                                        "x":  486
+                                    },
+                                    {
+                                        "y":  527,
+                                        "height":  23,
+                                        "width":  10,
+                                        "text":  "/",
+                                        "x":  748
+                                    },
+                                    {
+                                        "y":  530,
+                                        "height":  17,
+                                        "width":  107,
+                                        "text":  "contrast",
+                                        "x":  775
+                                    },
+                                    {
+                                        "y":  547,
+                                        "height":  3,
+                                        "width":  12,
+                                        "text":  "_",
+                                        "x":  884
+                                    },
+                                    {
+                                        "y":  529,
+                                        "height":  22,
+                                        "width":  131,
+                                        "text":  "histogram.",
+                                        "x":  899
+                                    },
+                                    {
+                                        "y":  527,
+                                        "height":  23,
+                                        "width":  63,
+                                        "text":  "sum()",
+                                        "x":  1036
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "contrast_histogram",
+                      "words":  [
+                                    {
+                                        "y":  529,
+                                        "height":  22,
+                                        "width":  245,
+                                        "text":  "contrast_histogram",
+                                        "x":  198
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# Display the histograms",
+                      "words":  [
+                                    {
+                                        "y":  586,
+                                        "height":  18,
+                                        "width":  13,
+                                        "text":  "#",
+                                        "x":  197
+                                    },
+                                    {
+                                        "y":  586,
+                                        "height":  22,
+                                        "width":  94,
+                                        "text":  "Display",
+                                        "x":  226
+                                    },
+                                    {
+                                        "y":  586,
+                                        "height":  18,
+                                        "width":  39,
+                                        "text":  "the",
+                                        "x":  335
+                                    },
+                                    {
+                                        "y":  585,
+                                        "height":  23,
+                                        "width":  133,
+                                        "text":  "histograms",
+                                        "x":  391
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "put . 4))",
+                      "words":  [
+                                    {
+                                        "y":  615,
+                                        "height":  21,
+                                        "width":  38,
+                                        "text":  "put",
+                                        "x":  198
+                                    },
+                                    {
+                                        "y":  627,
+                                        "height":  5,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  243
+                                    },
+                                    {
+                                        "y":  612,
+                                        "height":  23,
+                                        "width":  36,
+                                        "text":  "4))",
+                                        "x":  527
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "put. subplot(l, 2, 1)",
+                      "words":  [
+                                    {
+                                        "y":  643,
+                                        "height":  21,
+                                        "width":  49,
+                                        "text":  "put.",
+                                        "x":  198
+                                    },
+                                    {
+                                        "y":  640,
+                                        "height":  24,
+                                        "width":  131,
+                                        "text":  "subplot(l,",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  643,
+                                        "height":  21,
+                                        "width":  21,
+                                        "text":  "2,",
+                                        "x":  404
+                                    },
+                                    {
+                                        "y":  641,
+                                        "height":  22,
+                                        "width":  21,
+                                        "text":  "1)",
+                                        "x":  446
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "put . plot : -I], energy _ histogram,",
+                      "words":  [
+                                    {
+                                        "y":  671,
+                                        "height":  22,
+                                        "width":  38,
+                                        "text":  "put",
+                                        "x":  198
+                                    },
+                                    {
+                                        "y":  684,
+                                        "height":  5,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  243
+                                    },
+                                    {
+                                        "y":  671,
+                                        "height":  22,
+                                        "width":  52,
+                                        "text":  "plot",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  675,
+                                        "height":  14,
+                                        "width":  5,
+                                        "text":  ":",
+                                        "x":  489
+                                    },
+                                    {
+                                        "y":  669,
+                                        "height":  24,
+                                        "width":  49,
+                                        "text":  "-I],",
+                                        "x":  500
+                                    },
+                                    {
+                                        "y":  675,
+                                        "height":  18,
+                                        "width":  81,
+                                        "text":  "energy",
+                                        "x":  568
+                                    },
+                                    {
+                                        "y":  688,
+                                        "height":  3,
+                                        "width":  13,
+                                        "text":  "_",
+                                        "x":  650
+                                    },
+                                    {
+                                        "y":  671,
+                                        "height":  22,
+                                        "width":  131,
+                                        "text":  "histogram,",
+                                        "x":  665
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "put. Energy Histogram\")",
+                      "words":  [
+                                    {
+                                        "y":  700,
+                                        "height":  20,
+                                        "width":  49,
+                                        "text":  "put.",
+                                        "x":  198
+                                    },
+                                    {
+                                        "y":  700,
+                                        "height":  20,
+                                        "width":  81,
+                                        "text":  "Energy",
+                                        "x":  458
+                                    },
+                                    {
+                                        "y":  697,
+                                        "height":  23,
+                                        "width":  146,
+                                        "text":  "Histogram\")",
+                                        "x":  555
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "put",
+                      "words":  [
+                                    {
+                                        "y":  728,
+                                        "height":  21,
+                                        "width":  38,
+                                        "text":  "put",
+                                        "x":  198
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "put. )",
+                      "words":  [
+                                    {
+                                        "y":  756,
+                                        "height":  22,
+                                        "width":  49,
+                                        "text":  "put.",
+                                        "x":  198
+                                    },
+                                    {
+                                        "y":  754,
+                                        "height":  22,
+                                        "width":  8,
+                                        "text":  ")",
+                                        "x":  500
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "put. subplot(l, 2, 2)",
+                      "words":  [
+                                    {
+                                        "y":  813,
+                                        "height":  22,
+                                        "width":  49,
+                                        "text":  "put.",
+                                        "x":  198
+                                    },
+                                    {
+                                        "y":  810,
+                                        "height":  24,
+                                        "width":  131,
+                                        "text":  "subplot(l,",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  813,
+                                        "height":  21,
+                                        "width":  21,
+                                        "text":  "2,",
+                                        "x":  404
+                                    },
+                                    {
+                                        "y":  810,
+                                        "height":  23,
+                                        "width":  22,
+                                        "text":  "2)",
+                                        "x":  445
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "cotor=",
+                      "words":  [
+                                    {
+                                        "y":  671,
+                                        "height":  18,
+                                        "width":  80,
+                                        "text":  "cotor=",
+                                        "x":  816
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "put . plot : -I], contrast _ histogram,",
+                      "words":  [
+                                    {
+                                        "y":  841,
+                                        "height":  22,
+                                        "width":  38,
+                                        "text":  "put",
+                                        "x":  198
+                                    },
+                                    {
+                                        "y":  854,
+                                        "height":  5,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  243
+                                    },
+                                    {
+                                        "y":  841,
+                                        "height":  22,
+                                        "width":  52,
+                                        "text":  "plot",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  845,
+                                        "height":  14,
+                                        "width":  4,
+                                        "text":  ":",
+                                        "x":  517
+                                    },
+                                    {
+                                        "y":  839,
+                                        "height":  24,
+                                        "width":  48,
+                                        "text":  "-I],",
+                                        "x":  528
+                                    },
+                                    {
+                                        "y":  842,
+                                        "height":  17,
+                                        "width":  107,
+                                        "text":  "contrast",
+                                        "x":  596
+                                    },
+                                    {
+                                        "y":  859,
+                                        "height":  2,
+                                        "width":  11,
+                                        "text":  "_",
+                                        "x":  706
+                                    },
+                                    {
+                                        "y":  841,
+                                        "height":  22,
+                                        "width":  131,
+                                        "text":  "histogram,",
+                                        "x":  720
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "put . Contrast Histogram\")",
+                      "words":  [
+                                    {
+                                        "y":  870,
+                                        "height":  21,
+                                        "width":  38,
+                                        "text":  "put",
+                                        "x":  198
+                                    },
+                                    {
+                                        "y":  883,
+                                        "height":  5,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  243
+                                    },
+                                    {
+                                        "y":  870,
+                                        "height":  18,
+                                        "width":  108,
+                                        "text":  "Contrast",
+                                        "x":  458
+                                    },
+                                    {
+                                        "y":  867,
+                                        "height":  24,
+                                        "width":  146,
+                                        "text":  "Histogram\")",
+                                        "x":  582
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "put . xtabet ( \"Contrast \" )",
+                      "words":  [
+                                    {
+                                        "y":  899,
+                                        "height":  21,
+                                        "width":  38,
+                                        "text":  "put",
+                                        "x":  198
+                                    },
+                                    {
+                                        "y":  912,
+                                        "height":  5,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  243
+                                    },
+                                    {
+                                        "y":  899,
+                                        "height":  18,
+                                        "width":  80,
+                                        "text":  "xtabet",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  896,
+                                        "height":  23,
+                                        "width":  8,
+                                        "text":  "(",
+                                        "x":  338
+                                    },
+                                    {
+                                        "y":  899,
+                                        "height":  18,
+                                        "width":  118,
+                                        "text":  "\"Contrast",
+                                        "x":  351
+                                    },
+                                    {
+                                        "y":  899,
+                                        "height":  8,
+                                        "width":  7,
+                                        "text":  "\"",
+                                        "x":  474
+                                    },
+                                    {
+                                        "y":  896,
+                                        "height":  23,
+                                        "width":  8,
+                                        "text":  ")",
+                                        "x":  487
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "put . ylabet ( \"Frequency\" )",
+                      "words":  [
+                                    {
+                                        "y":  927,
+                                        "height":  22,
+                                        "width":  38,
+                                        "text":  "put",
+                                        "x":  198
+                                    },
+                                    {
+                                        "y":  940,
+                                        "height":  5,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  243
+                                    },
+                                    {
+                                        "y":  927,
+                                        "height":  22,
+                                        "width":  80,
+                                        "text":  "ylabet",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  925,
+                                        "height":  23,
+                                        "width":  8,
+                                        "text":  "(",
+                                        "x":  338
+                                    },
+                                    {
+                                        "y":  927,
+                                        "height":  22,
+                                        "width":  144,
+                                        "text":  "\"Frequency\"",
+                                        "x":  351
+                                    },
+                                    {
+                                        "y":  925,
+                                        "height":  23,
+                                        "width":  8,
+                                        "text":  ")",
+                                        "x":  500
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "put.",
+                      "words":  [
+                                    {
+                                        "y":  984,
+                                        "height":  22,
+                                        "width":  49,
+                                        "text":  "put.",
+                                        "x":  198
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "put . show()",
+                      "words":  [
+                                    {
+                                        "y":  1013,
+                                        "height":  21,
+                                        "width":  38,
+                                        "text":  "put",
+                                        "x":  198
+                                    },
+                                    {
+                                        "y":  1025,
+                                        "height":  5,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  243
+                                    },
+                                    {
+                                        "y":  1010,
+                                        "height":  23,
+                                        "width":  77,
+                                        "text":  "show()",
+                                        "x":  253
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "color:",
+                      "words":  [
+                                    {
+                                        "y":  841,
+                                        "height":  18,
+                                        "width":  79,
+                                        "text":  "color:",
+                                        "x":  871
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# YOU can use the computed histograms as feature vectors for texture",
+                      "words":  [
+                                    {
+                                        "y":  1069,
+                                        "height":  17,
+                                        "width":  13,
+                                        "text":  "#",
+                                        "x":  197
+                                    },
+                                    {
+                                        "y":  1069,
+                                        "height":  17,
+                                        "width":  39,
+                                        "text":  "YOU",
+                                        "x":  225
+                                    },
+                                    {
+                                        "y":  1072,
+                                        "height":  14,
+                                        "width":  38,
+                                        "text":  "can",
+                                        "x":  281
+                                    },
+                                    {
+                                        "y":  1072,
+                                        "height":  14,
+                                        "width":  38,
+                                        "text":  "use",
+                                        "x":  336
+                                    },
+                                    {
+                                        "y":  1069,
+                                        "height":  17,
+                                        "width":  39,
+                                        "text":  "the",
+                                        "x":  390
+                                    },
+                                    {
+                                        "y":  1069,
+                                        "height":  21,
+                                        "width":  106,
+                                        "text":  "computed",
+                                        "x":  446
+                                    },
+                                    {
+                                        "y":  1068,
+                                        "height":  22,
+                                        "width":  134,
+                                        "text":  "histograms",
+                                        "x":  569
+                                    },
+                                    {
+                                        "y":  1072,
+                                        "height":  14,
+                                        "width":  25,
+                                        "text":  "as",
+                                        "x":  719
+                                    },
+                                    {
+                                        "y":  1069,
+                                        "height":  17,
+                                        "width":  95,
+                                        "text":  "feature",
+                                        "x":  760
+                                    },
+                                    {
+                                        "y":  1069,
+                                        "height":  17,
+                                        "width":  93,
+                                        "text":  "vectors",
+                                        "x":  871
+                                    },
+                                    {
+                                        "y":  1069,
+                                        "height":  17,
+                                        "width":  39,
+                                        "text":  "for",
+                                        "x":  980
+                                    },
+                                    {
+                                        "y":  1069,
+                                        "height":  17,
+                                        "width":  94,
+                                        "text":  "texture",
+                                        "x":  1035
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "analysis .",
+                      "words":  [
+                                    {
+                                        "y":  1096,
+                                        "height":  22,
+                                        "width":  107,
+                                        "text":  "analysis",
+                                        "x":  198
+                                    },
+                                    {
+                                        "y":  1110,
+                                        "height":  4,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  311
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Task: Texture Analysis for Material Classification (Give Code and",
+                      "words":  [
+                                    {
+                                        "y":  1162,
+                                        "height":  19,
+                                        "width":  72,
+                                        "text":  "Task:",
+                                        "x":  168
+                                    },
+                                    {
+                                        "y":  1163,
+                                        "height":  18,
+                                        "width":  105,
+                                        "text":  "Texture",
+                                        "x":  251
+                                    },
+                                    {
+                                        "y":  1162,
+                                        "height":  24,
+                                        "width":  119,
+                                        "text":  "Analysis",
+                                        "x":  380
+                                    },
+                                    {
+                                        "y":  1162,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "for",
+                                        "x":  525
+                                    },
+                                    {
+                                        "y":  1162,
+                                        "height":  19,
+                                        "width":  120,
+                                        "text":  "Material",
+                                        "x":  593
+                                    },
+                                    {
+                                        "y":  1162,
+                                        "height":  19,
+                                        "width":  210,
+                                        "text":  "Classification",
+                                        "x":  738
+                                    },
+                                    {
+                                        "y":  1161,
+                                        "height":  24,
+                                        "width":  71,
+                                        "text":  "(Give",
+                                        "x":  976
+                                    },
+                                    {
+                                        "y":  1162,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "Code",
+                                        "x":  1072
+                                    },
+                                    {
+                                        "y":  1162,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  1157
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Description)",
+                      "words":  [
+                                    {
+                                        "y":  1199,
+                                        "height":  24,
+                                        "width":  176,
+                                        "text":  "Description)",
+                                        "x":  252
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "You are working on a project that involves classifying different",
+                      "words":  [
+                                    {
+                                        "y":  1238,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "You",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1243,
+                                        "height":  14,
+                                        "width":  44,
+                                        "text":  "are",
+                                        "x":  237
+                                    },
+                                    {
+                                        "y":  1237,
+                                        "height":  25,
+                                        "width":  106,
+                                        "text":  "working",
+                                        "x":  304
+                                    },
+                                    {
+                                        "y":  1243,
+                                        "height":  14,
+                                        "width":  26,
+                                        "text":  "on",
+                                        "x":  433
+                                    },
+                                    {
+                                        "y":  1243,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  485
+                                    },
+                                    {
+                                        "y":  1237,
+                                        "height":  25,
+                                        "width":  103,
+                                        "text":  "project",
+                                        "x":  523
+                                    },
+                                    {
+                                        "y":  1237,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "that",
+                                        "x":  651
+                                    },
+                                    {
+                                        "y":  1237,
+                                        "height":  20,
+                                        "width":  118,
+                                        "text":  "involves",
+                                        "x":  735
+                                    },
+                                    {
+                                        "y":  1237,
+                                        "height":  25,
+                                        "width":  164,
+                                        "text":  "classifying",
+                                        "x":  878
+                                    },
+                                    {
+                                        "y":  1237,
+                                        "height":  20,
+                                        "width":  134,
+                                        "text":  "different",
+                                        "x":  1066
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "materials in images, such as wood, metal, and fabric. The goal is to",
+                      "words":  [
+                                    {
+                                        "y":  1275,
+                                        "height":  19,
+                                        "width":  134,
+                                        "text":  "materials",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1275,
+                                        "height":  19,
+                                        "width":  26,
+                                        "text":  "in",
+                                        "x":  322
+                                    },
+                                    {
+                                        "y":  1275,
+                                        "height":  24,
+                                        "width":  98,
+                                        "text":  "images,",
+                                        "x":  368
+                                    },
+                                    {
+                                        "y":  1275,
+                                        "height":  19,
+                                        "width":  57,
+                                        "text":  "such",
+                                        "x":  488
+                                    },
+                                    {
+                                        "y":  1280,
+                                        "height":  14,
+                                        "width":  27,
+                                        "text":  "as",
+                                        "x":  564
+                                    },
+                                    {
+                                        "y":  1275,
+                                        "height":  23,
+                                        "width":  70,
+                                        "text":  "wood,",
+                                        "x":  609
+                                    },
+                                    {
+                                        "y":  1275,
+                                        "height":  23,
+                                        "width":  85,
+                                        "text":  "metal,",
+                                        "x":  701
+                                    },
+                                    {
+                                        "y":  1275,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  807
+                                    },
+                                    {
+                                        "y":  1275,
+                                        "height":  19,
+                                        "width":  99,
+                                        "text":  "fabric.",
+                                        "x":  868
+                                    },
+                                    {
+                                        "y":  1275,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "The",
+                                        "x":  988
+                                    },
+                                    {
+                                        "y":  1275,
+                                        "height":  24,
+                                        "width":  58,
+                                        "text":  "goal",
+                                        "x":  1050
+                                    },
+                                    {
+                                        "y":  1275,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  1127
+                                    },
+                                    {
+                                        "y":  1275,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  1171
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "extract texture features from these materials for classification",
+                      "words":  [
+                                    {
+                                        "y":  1313,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "extract",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1313,
+                                        "height":  19,
+                                        "width":  104,
+                                        "text":  "texture",
+                                        "x":  299
+                                    },
+                                    {
+                                        "y":  1313,
+                                        "height":  19,
+                                        "width":  118,
+                                        "text":  "features",
+                                        "x":  430
+                                    },
+                                    {
+                                        "y":  1313,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "from",
+                                        "x":  575
+                                    },
+                                    {
+                                        "y":  1313,
+                                        "height":  19,
+                                        "width":  74,
+                                        "text":  "these",
+                                        "x":  659
+                                    },
+                                    {
+                                        "y":  1313,
+                                        "height":  19,
+                                        "width":  134,
+                                        "text":  "materials",
+                                        "x":  760
+                                    },
+                                    {
+                                        "y":  1313,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "for",
+                                        "x":  920
+                                    },
+                                    {
+                                        "y":  1313,
+                                        "height":  19,
+                                        "width":  208,
+                                        "text":  "classification",
+                                        "x":  991
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "purposes .",
+                      "words":  [
+                                    {
+                                        "y":  1356,
+                                        "height":  18,
+                                        "width":  118,
+                                        "text":  "purposes",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1365,
+                                        "height":  4,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  294
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Describe at least two texture feature extraction techniques you",
+                      "words":  [
+                                    {
+                                        "y":  1388,
+                                        "height":  20,
+                                        "width":  118,
+                                        "text":  "Describe",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1389,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "at",
+                                        "x":  388
+                                    },
+                                    {
+                                        "y":  1388,
+                                        "height":  20,
+                                        "width":  72,
+                                        "text":  "least",
+                                        "x":  433
+                                    },
+                                    {
+                                        "y":  1389,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "two",
+                                        "x":  522
+                                    },
+                                    {
+                                        "y":  1389,
+                                        "height":  19,
+                                        "width":  105,
+                                        "text":  "texture",
+                                        "x":  582
+                                    },
+                                    {
+                                        "y":  1388,
+                                        "height":  20,
+                                        "width":  104,
+                                        "text":  "feature",
+                                        "x":  704
+                                    },
+                                    {
+                                        "y":  1388,
+                                        "height":  20,
+                                        "width":  147,
+                                        "text":  "extraction",
+                                        "x":  825
+                                    },
+                                    {
+                                        "y":  1388,
+                                        "height":  25,
+                                        "width":  149,
+                                        "text":  "techniques",
+                                        "x":  990
+                                    },
+                                    {
+                                        "y":  1393,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "you",
+                                        "x":  1156
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "would use in this project. Explain how each technique works and",
+                      "words":  [
+                                    {
+                                        "y":  1424,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "would",
+                                        "x":  251
+                                    },
+                                    {
+                                        "y":  1430,
+                                        "height":  14,
+                                        "width":  43,
+                                        "text":  "use",
+                                        "x":  343
+                                    },
+                                    {
+                                        "y":  1424,
+                                        "height":  20,
+                                        "width":  26,
+                                        "text":  "in",
+                                        "x":  404
+                                    },
+                                    {
+                                        "y":  1424,
+                                        "height":  20,
+                                        "width":  57,
+                                        "text":  "this",
+                                        "x":  448
+                                    },
+                                    {
+                                        "y":  1424,
+                                        "height":  25,
+                                        "width":  114,
+                                        "text":  "project.",
+                                        "x":  523
+                                    },
+                                    {
+                                        "y":  1424,
+                                        "height":  25,
+                                        "width":  103,
+                                        "text":  "Explain",
+                                        "x":  659
+                                    },
+                                    {
+                                        "y":  1424,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "how",
+                                        "x":  781
+                                    },
+                                    {
+                                        "y":  1424,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "each",
+                                        "x":  840
+                                    },
+                                    {
+                                        "y":  1424,
+                                        "height":  25,
+                                        "width":  135,
+                                        "text":  "technique",
+                                        "x":  914
+                                    },
+                                    {
+                                        "y":  1424,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "works",
+                                        "x":  1065
+                                    },
+                                    {
+                                        "y":  1424,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  1157
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "provide examples of the types of textures they are suitable for.",
+                      "words":  [
+                                    {
+                                        "y":  1462,
+                                        "height":  25,
+                                        "width":  103,
+                                        "text":  "provide",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1462,
+                                        "height":  25,
+                                        "width":  118,
+                                        "text":  "examples",
+                                        "x":  371
+                                    },
+                                    {
+                                        "y":  1462,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  505
+                                    },
+                                    {
+                                        "y":  1462,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  548
+                                    },
+                                    {
+                                        "y":  1463,
+                                        "height":  24,
+                                        "width":  73,
+                                        "text":  "types",
+                                        "x":  607
+                                    },
+                                    {
+                                        "y":  1462,
+                                        "height":  20,
+                                        "width":  29,
+                                        "text":  "of",
+                                        "x":  696
+                                    },
+                                    {
+                                        "y":  1463,
+                                        "height":  19,
+                                        "width":  120,
+                                        "text":  "textures",
+                                        "x":  739
+                                    },
+                                    {
+                                        "y":  1462,
+                                        "height":  25,
+                                        "width":  58,
+                                        "text":  "they",
+                                        "x":  874
+                                    },
+                                    {
+                                        "y":  1468,
+                                        "height":  14,
+                                        "width":  43,
+                                        "text":  "are",
+                                        "x":  948
+                                    },
+                                    {
+                                        "y":  1462,
+                                        "height":  20,
+                                        "width":  119,
+                                        "text":  "suitable",
+                                        "x":  1007
+                                    },
+                                    {
+                                        "y":  1462,
+                                        "height":  20,
+                                        "width":  54,
+                                        "text":  "for.",
+                                        "x":  1142
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Discuss the advantages and limitations of the selected texture",
+                      "words":  [
+                                    {
+                                        "y":  1499,
+                                        "height":  21,
+                                        "width":  103,
+                                        "text":  "Discuss",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1500,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  374
+                                    },
+                                    {
+                                        "y":  1500,
+                                        "height":  25,
+                                        "width":  148,
+                                        "text":  "advantages",
+                                        "x":  436
+                                    },
+                                    {
+                                        "y":  1500,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  604
+                                    },
+                                    {
+                                        "y":  1499,
+                                        "height":  21,
+                                        "width":  164,
+                                        "text":  "limitations",
+                                        "x":  666
+                                    },
+                                    {
+                                        "y":  1500,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  850
+                                    },
+                                    {
+                                        "y":  1500,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  896
+                                    },
+                                    {
+                                        "y":  1500,
+                                        "height":  20,
+                                        "width":  118,
+                                        "text":  "selected",
+                                        "x":  958
+                                    },
+                                    {
+                                        "y":  1501,
+                                        "height":  19,
+                                        "width":  104,
+                                        "text":  "texture",
+                                        "x":  1096
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "feature extraction techniques in the context of material",
+                      "words":  [
+                                    {
+                                        "y":  1538,
+                                        "height":  20,
+                                        "width":  103,
+                                        "text":  "feature",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1537,
+                                        "height":  21,
+                                        "width":  147,
+                                        "text":  "extraction",
+                                        "x":  388
+                                    },
+                                    {
+                                        "y":  1537,
+                                        "height":  25,
+                                        "width":  150,
+                                        "text":  "techniques",
+                                        "x":  567
+                                    },
+                                    {
+                                        "y":  1537,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "in",
+                                        "x":  750
+                                    },
+                                    {
+                                        "y":  1538,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  809
+                                    },
+                                    {
+                                        "y":  1539,
+                                        "height":  19,
+                                        "width":  102,
+                                        "text":  "context",
+                                        "x":  886
+                                    },
+                                    {
+                                        "y":  1538,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  1020
+                                    },
+                                    {
+                                        "y":  1537,
+                                        "height":  21,
+                                        "width":  119,
+                                        "text":  "material",
+                                        "x":  1080
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "classification",
+                      "words":  [
+                                    {
+                                        "y":  1575,
+                                        "height":  20,
+                                        "width":  208,
+                                        "text":  "classification",
+                                        "x":  252
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FAST NUCES",
+                      "words":  [
+                                    {
+                                        "y":  1819,
+                                        "height":  19,
+                                        "width":  62,
+                                        "text":  "FAST",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1819,
+                                        "height":  20,
+                                        "width":  85,
+                                        "text":  "NUCES",
+                                        "x":  242
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Karachi",
+                      "words":  [
+                                    {
+                                        "y":  1828,
+                                        "height":  5,
+                                        "width":  12,
+                                        "text":  "-",
+                                        "x":  336
+                                    },
+                                    {
+                                        "y":  1817,
+                                        "height":  21,
+                                        "width":  94,
+                                        "text":  "Karachi",
+                                        "x":  358
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1819,
+                                        "height":  19,
+                                        "width":  72,
+                                        "text":  "Talha",
+                                        "x":  594
+                                    },
+                                    {
+                                        "y":  1817,
+                                        "height":  21,
+                                        "width":  87,
+                                        "text":  "Shahid",
+                                        "x":  676
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "14",
+                      "words":  [
+                                    {
+                                        "y":  1819,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "14",
+                                        "x":  1174
+                                    }
+                                ]
+                  }
+              ]
+}

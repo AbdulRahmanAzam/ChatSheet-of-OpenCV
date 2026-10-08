@@ -1,0 +1,1762 @@
+﻿{
+    "id":  "lab_03_manual_p016",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "National University of Computer \u0026 Emerging Sciences - NUCES - Karachi Department of Artificial Intelligence 6.1.1.3 The Limitation: The Anchored Origin This raises an important analytical question: Can this matric translate (slide) a point, such as moving (10, 20) to (110, 70)? The mathematical answer is no. A strict rule of linear transformations is that any matrix multiplied by a zero vector results in a zero vector : If you multiply the origin (@,@) by any 2 x 2 matrix, the result will always be . Because the origin is permanently anchored, standard linear transformations cannot translate geometry. They can spin, stretch, and shear the grid, but they cannot slide it across the board. This specific mathematical limitation is what forces computer graphics systems to introduce a workaround to achieve full affine transformations . The Limitation: The Anchored Origin Rotation Stretching (Scaling) 40 20 10 10 30 20 10 o (110, 70) x 10 30 20 10 Rotation Stretching (Scaling) Translation (Sliding) BLOCKED (10, 20) 10 20 30 40 50 60 70 80 90 100 x While the grid can spin (rotation) or stretch (scaling) around the center, the origin (0,0) is permanently fixed, preventing any sliding (translation) motion. The entire coordinate system is anchored at this single point. FAST NUCES - Karachi Talha Shahid 15",
+    "review_status":  "raw_ocr_unverified",
+    "page":  16,
+    "source_id":  "lab_03_manual",
+    "lines":  [
+                  {
+                      "text":  "National University of Computer \u0026 Emerging Sciences -",
+                      "words":  [
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  123,
+                                        "text":  "National",
+                                        "x":  373
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  30,
+                                        "width":  153,
+                                        "text":  "University",
+                                        "x":  505
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  29,
+                                        "text":  "of",
+                                        "x":  666
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  30,
+                                        "width":  146,
+                                        "text":  "Computer",
+                                        "x":  701
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  23,
+                                        "text":  "\u0026",
+                                        "x":  855
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  30,
+                                        "width":  141,
+                                        "text":  "Emerging",
+                                        "x":  886
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  123,
+                                        "text":  "Sciences",
+                                        "x":  1035
+                                    },
+                                    {
+                                        "y":  106,
+                                        "height":  5,
+                                        "width":  8,
+                                        "text":  "-",
+                                        "x":  1168
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "NUCES - Karachi",
+                      "words":  [
+                                    {
+                                        "y":  138,
+                                        "height":  23,
+                                        "width":  94,
+                                        "text":  "NUCES",
+                                        "x":  657
+                                    },
+                                    {
+                                        "y":  149,
+                                        "height":  5,
+                                        "width":  9,
+                                        "text":  "-",
+                                        "x":  760
+                                    },
+                                    {
+                                        "y":  137,
+                                        "height":  24,
+                                        "width":  114,
+                                        "text":  "Karachi",
+                                        "x":  778
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Department of Artificial Intelligence",
+                      "words":  [
+                                    {
+                                        "y":  179,
+                                        "height":  27,
+                                        "width":  141,
+                                        "text":  "Department",
+                                        "x":  558
+                                    },
+                                    {
+                                        "y":  178,
+                                        "height":  22,
+                                        "width":  25,
+                                        "text":  "of",
+                                        "x":  707
+                                    },
+                                    {
+                                        "y":  178,
+                                        "height":  22,
+                                        "width":  100,
+                                        "text":  "Artificial",
+                                        "x":  738
+                                    },
+                                    {
+                                        "y":  178,
+                                        "height":  28,
+                                        "width":  137,
+                                        "text":  "Intelligence",
+                                        "x":  849
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "6.1.1.3 The Limitation: The Anchored Origin",
+                      "words":  [
+                                    {
+                                        "y":  290,
+                                        "height":  20,
+                                        "width":  83,
+                                        "text":  "6.1.1.3",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  289,
+                                        "height":  21,
+                                        "width":  50,
+                                        "text":  "The",
+                                        "x":  263
+                                    },
+                                    {
+                                        "y":  287,
+                                        "height":  23,
+                                        "width":  149,
+                                        "text":  "Limitation:",
+                                        "x":  324
+                                    },
+                                    {
+                                        "y":  289,
+                                        "height":  21,
+                                        "width":  51,
+                                        "text":  "The",
+                                        "x":  483
+                                    },
+                                    {
+                                        "y":  289,
+                                        "height":  21,
+                                        "width":  132,
+                                        "text":  "Anchored",
+                                        "x":  543
+                                    },
+                                    {
+                                        "y":  287,
+                                        "height":  29,
+                                        "width":  85,
+                                        "text":  "Origin",
+                                        "x":  685
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "This raises an important analytical question:",
+                      "words":  [
+                                    {
+                                        "y":  373,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "This",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  373,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "raises",
+                                        "x":  246
+                                    },
+                                    {
+                                        "y":  379,
+                                        "height":  14,
+                                        "width":  28,
+                                        "text":  "an",
+                                        "x":  351
+                                    },
+                                    {
+                                        "y":  373,
+                                        "height":  25,
+                                        "width":  133,
+                                        "text":  "important",
+                                        "x":  398
+                                    },
+                                    {
+                                        "y":  373,
+                                        "height":  25,
+                                        "width":  148,
+                                        "text":  "analytical",
+                                        "x":  548
+                                    },
+                                    {
+                                        "y":  373,
+                                        "height":  25,
+                                        "width":  130,
+                                        "text":  "question:",
+                                        "x":  713
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Can this matric translate (slide) a point, such as moving (10, 20) to",
+                      "words":  [
+                                    {
+                                        "y":  450,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "Can",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  449,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "this",
+                                        "x":  230
+                                    },
+                                    {
+                                        "y":  449,
+                                        "height":  20,
+                                        "width":  91,
+                                        "text":  "matric",
+                                        "x":  303
+                                    },
+                                    {
+                                        "y":  450,
+                                        "height":  19,
+                                        "width":  134,
+                                        "text":  "translate",
+                                        "x":  410
+                                    },
+                                    {
+                                        "y":  449,
+                                        "height":  24,
+                                        "width":  97,
+                                        "text":  "(slide)",
+                                        "x":  564
+                                    },
+                                    {
+                                        "y":  455,
+                                        "height":  14,
+                                        "width":  12,
+                                        "text":  "a",
+                                        "x":  680
+                                    },
+                                    {
+                                        "y":  449,
+                                        "height":  25,
+                                        "width":  85,
+                                        "text":  "point,",
+                                        "x":  708
+                                    },
+                                    {
+                                        "y":  450,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "such",
+                                        "x":  814
+                                    },
+                                    {
+                                        "y":  455,
+                                        "height":  14,
+                                        "width":  28,
+                                        "text":  "as",
+                                        "x":  889
+                                    },
+                                    {
+                                        "y":  449,
+                                        "height":  25,
+                                        "width":  90,
+                                        "text":  "moving",
+                                        "x":  933
+                                    },
+                                    {
+                                        "y":  449,
+                                        "height":  24,
+                                        "width":  50,
+                                        "text":  "(10,",
+                                        "x":  1043
+                                    },
+                                    {
+                                        "y":  449,
+                                        "height":  24,
+                                        "width":  41,
+                                        "text":  "20)",
+                                        "x":  1114
+                                    },
+                                    {
+                                        "y":  450,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "to",
+                                        "x":  1175
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "(110, 70)?",
+                      "words":  [
+                                    {
+                                        "y":  486,
+                                        "height":  24,
+                                        "width":  65,
+                                        "text":  "(110,",
+                                        "x":  174
+                                    },
+                                    {
+                                        "y":  486,
+                                        "height":  24,
+                                        "width":  57,
+                                        "text":  "70)?",
+                                        "x":  262
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The mathematical answer is no. A strict rule of linear transformations",
+                      "words":  [
+                                    {
+                                        "y":  563,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "The",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  562,
+                                        "height":  21,
+                                        "width":  179,
+                                        "text":  "mathematical",
+                                        "x":  228
+                                    },
+                                    {
+                                        "y":  569,
+                                        "height":  14,
+                                        "width":  89,
+                                        "text":  "answer",
+                                        "x":  422
+                                    },
+                                    {
+                                        "y":  562,
+                                        "height":  21,
+                                        "width":  26,
+                                        "text":  "is",
+                                        "x":  527
+                                    },
+                                    {
+                                        "y":  569,
+                                        "height":  14,
+                                        "width":  39,
+                                        "text":  "no.",
+                                        "x":  569
+                                    },
+                                    {
+                                        "y":  564,
+                                        "height":  19,
+                                        "width":  14,
+                                        "text":  "A",
+                                        "x":  626
+                                    },
+                                    {
+                                        "y":  562,
+                                        "height":  21,
+                                        "width":  87,
+                                        "text":  "strict",
+                                        "x":  655
+                                    },
+                                    {
+                                        "y":  563,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "rule",
+                                        "x":  757
+                                    },
+                                    {
+                                        "y":  563,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  830
+                                    },
+                                    {
+                                        "y":  563,
+                                        "height":  20,
+                                        "width":  89,
+                                        "text":  "linear",
+                                        "x":  873
+                                    },
+                                    {
+                                        "y":  563,
+                                        "height":  20,
+                                        "width":  225,
+                                        "text":  "transformations",
+                                        "x":  976
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "is that any matrix multiplied by a zero vector results in a zero",
+                      "words":  [
+                                    {
+                                        "y":  600,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  171
+                                    },
+                                    {
+                                        "y":  601,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "that",
+                                        "x":  220
+                                    },
+                                    {
+                                        "y":  606,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "any",
+                                        "x":  302
+                                    },
+                                    {
+                                        "y":  600,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "matrix",
+                                        "x":  368
+                                    },
+                                    {
+                                        "y":  600,
+                                        "height":  25,
+                                        "width":  149,
+                                        "text":  "multiplied",
+                                        "x":  479
+                                    },
+                                    {
+                                        "y":  600,
+                                        "height":  25,
+                                        "width":  27,
+                                        "text":  "by",
+                                        "x":  652
+                                    },
+                                    {
+                                        "y":  606,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  701
+                                    },
+                                    {
+                                        "y":  606,
+                                        "height":  14,
+                                        "width":  58,
+                                        "text":  "zero",
+                                        "x":  737
+                                    },
+                                    {
+                                        "y":  601,
+                                        "height":  19,
+                                        "width":  89,
+                                        "text":  "vector",
+                                        "x":  818
+                                    },
+                                    {
+                                        "y":  600,
+                                        "height":  20,
+                                        "width":  103,
+                                        "text":  "results",
+                                        "x":  930
+                                    },
+                                    {
+                                        "y":  600,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "in",
+                                        "x":  1057
+                                    },
+                                    {
+                                        "y":  606,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  1107
+                                    },
+                                    {
+                                        "y":  606,
+                                        "height":  14,
+                                        "width":  58,
+                                        "text":  "zero",
+                                        "x":  1143
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "vector :",
+                      "words":  [
+                                    {
+                                        "y":  638,
+                                        "height":  19,
+                                        "width":  89,
+                                        "text":  "vector",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  643,
+                                        "height":  14,
+                                        "width":  5,
+                                        "text":  ":",
+                                        "x":  265
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "If you multiply the origin (@,@) by any 2 x 2 matrix, the result will",
+                      "words":  [
+                                    {
+                                        "y":  785,
+                                        "height":  19,
+                                        "width":  28,
+                                        "text":  "If",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  790,
+                                        "height":  19,
+                                        "width":  42,
+                                        "text":  "you",
+                                        "x":  215
+                                    },
+                                    {
+                                        "y":  784,
+                                        "height":  25,
+                                        "width":  120,
+                                        "text":  "multiply",
+                                        "x":  274
+                                    },
+                                    {
+                                        "y":  785,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  410
+                                    },
+                                    {
+                                        "y":  784,
+                                        "height":  25,
+                                        "width":  88,
+                                        "text":  "origin",
+                                        "x":  470
+                                    },
+                                    {
+                                        "y":  784,
+                                        "height":  24,
+                                        "width":  66,
+                                        "text":  "(@,@)",
+                                        "x":  579
+                                    },
+                                    {
+                                        "y":  785,
+                                        "height":  24,
+                                        "width":  27,
+                                        "text":  "by",
+                                        "x":  666
+                                    },
+                                    {
+                                        "y":  790,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "any",
+                                        "x":  709
+                                    },
+                                    {
+                                        "y":  785,
+                                        "height":  19,
+                                        "width":  13,
+                                        "text":  "2",
+                                        "x":  769
+                                    },
+                                    {
+                                        "y":  790,
+                                        "height":  14,
+                                        "width":  12,
+                                        "text":  "x",
+                                        "x":  799
+                                    },
+                                    {
+                                        "y":  785,
+                                        "height":  19,
+                                        "width":  13,
+                                        "text":  "2",
+                                        "x":  829
+                                    },
+                                    {
+                                        "y":  784,
+                                        "height":  24,
+                                        "width":  100,
+                                        "text":  "matrix,",
+                                        "x":  858
+                                    },
+                                    {
+                                        "y":  785,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  977
+                                    },
+                                    {
+                                        "y":  785,
+                                        "height":  19,
+                                        "width":  88,
+                                        "text":  "result",
+                                        "x":  1039
+                                    },
+                                    {
+                                        "y":  784,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "will",
+                                        "x":  1143
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "always be . Because the origin is permanently anchored, standard",
+                      "words":  [
+                                    {
+                                        "y":  822,
+                                        "height":  24,
+                                        "width":  88,
+                                        "text":  "always",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  822,
+                                        "height":  19,
+                                        "width":  28,
+                                        "text":  "be",
+                                        "x":  275
+                                    },
+                                    {
+                                        "y":  837,
+                                        "height":  4,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  399
+                                    },
+                                    {
+                                        "y":  823,
+                                        "height":  18,
+                                        "width":  104,
+                                        "text":  "Because",
+                                        "x":  424
+                                    },
+                                    {
+                                        "y":  822,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  543
+                                    },
+                                    {
+                                        "y":  821,
+                                        "height":  25,
+                                        "width":  87,
+                                        "text":  "origin",
+                                        "x":  603
+                                    },
+                                    {
+                                        "y":  821,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  708
+                                    },
+                                    {
+                                        "y":  822,
+                                        "height":  24,
+                                        "width":  164,
+                                        "text":  "permanently",
+                                        "x":  752
+                                    },
+                                    {
+                                        "y":  822,
+                                        "height":  23,
+                                        "width":  131,
+                                        "text":  "anchored,",
+                                        "x":  932
+                                    },
+                                    {
+                                        "y":  822,
+                                        "height":  19,
+                                        "width":  118,
+                                        "text":  "standard",
+                                        "x":  1083
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "linear transformations cannot translate geometry. They can spin,",
+                      "words":  [
+                                    {
+                                        "y":  859,
+                                        "height":  20,
+                                        "width":  89,
+                                        "text":  "linear",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  859,
+                                        "height":  20,
+                                        "width":  226,
+                                        "text":  "transformations",
+                                        "x":  284
+                                    },
+                                    {
+                                        "y":  861,
+                                        "height":  18,
+                                        "width":  88,
+                                        "text":  "cannot",
+                                        "x":  537
+                                    },
+                                    {
+                                        "y":  860,
+                                        "height":  19,
+                                        "width":  134,
+                                        "text":  "translate",
+                                        "x":  651
+                                    },
+                                    {
+                                        "y":  861,
+                                        "height":  23,
+                                        "width":  130,
+                                        "text":  "geometry.",
+                                        "x":  812
+                                    },
+                                    {
+                                        "y":  860,
+                                        "height":  24,
+                                        "width":  59,
+                                        "text":  "They",
+                                        "x":  972
+                                    },
+                                    {
+                                        "y":  866,
+                                        "height":  13,
+                                        "width":  43,
+                                        "text":  "can",
+                                        "x":  1058
+                                    },
+                                    {
+                                        "y":  859,
+                                        "height":  25,
+                                        "width":  69,
+                                        "text":  "spin,",
+                                        "x":  1128
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "stretch, and shear the grid, but they cannot slide it across the",
+                      "words":  [
+                                    {
+                                        "y":  898,
+                                        "height":  23,
+                                        "width":  115,
+                                        "text":  "stretch,",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  898,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  312
+                                    },
+                                    {
+                                        "y":  898,
+                                        "height":  19,
+                                        "width":  73,
+                                        "text":  "shear",
+                                        "x":  379
+                                    },
+                                    {
+                                        "y":  898,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  475
+                                    },
+                                    {
+                                        "y":  897,
+                                        "height":  25,
+                                        "width":  69,
+                                        "text":  "grid,",
+                                        "x":  542
+                                    },
+                                    {
+                                        "y":  898,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "but",
+                                        "x":  639
+                                    },
+                                    {
+                                        "y":  898,
+                                        "height":  24,
+                                        "width":  60,
+                                        "text":  "they",
+                                        "x":  703
+                                    },
+                                    {
+                                        "y":  899,
+                                        "height":  18,
+                                        "width":  88,
+                                        "text":  "cannot",
+                                        "x":  787
+                                    },
+                                    {
+                                        "y":  897,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "slide",
+                                        "x":  898
+                                    },
+                                    {
+                                        "y":  897,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "it",
+                                        "x":  996
+                                    },
+                                    {
+                                        "y":  904,
+                                        "height":  13,
+                                        "width":  89,
+                                        "text":  "across",
+                                        "x":  1046
+                                    },
+                                    {
+                                        "y":  898,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  1158
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "board. This specific mathematical limitation is what forces computer",
+                      "words":  [
+                                    {
+                                        "y":  936,
+                                        "height":  18,
+                                        "width":  83,
+                                        "text":  "board.",
+                                        "x":  171
+                                    },
+                                    {
+                                        "y":  935,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "This",
+                                        "x":  276
+                                    },
+                                    {
+                                        "y":  935,
+                                        "height":  24,
+                                        "width":  118,
+                                        "text":  "specific",
+                                        "x":  353
+                                    },
+                                    {
+                                        "y":  935,
+                                        "height":  19,
+                                        "width":  179,
+                                        "text":  "mathematical",
+                                        "x":  490
+                                    },
+                                    {
+                                        "y":  935,
+                                        "height":  19,
+                                        "width":  148,
+                                        "text":  "limitation",
+                                        "x":  687
+                                    },
+                                    {
+                                        "y":  935,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  854
+                                    },
+                                    {
+                                        "y":  936,
+                                        "height":  18,
+                                        "width":  59,
+                                        "text":  "what",
+                                        "x":  899
+                                    },
+                                    {
+                                        "y":  936,
+                                        "height":  18,
+                                        "width":  88,
+                                        "text":  "forces",
+                                        "x":  976
+                                    },
+                                    {
+                                        "y":  937,
+                                        "height":  22,
+                                        "width":  120,
+                                        "text":  "computer",
+                                        "x":  1083
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "graphics systems to introduce",
+                      "words":  [
+                                    {
+                                        "y":  972,
+                                        "height":  25,
+                                        "width":  118,
+                                        "text":  "graphics",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  973,
+                                        "height":  24,
+                                        "width":  103,
+                                        "text":  "systems",
+                                        "x":  312
+                                    },
+                                    {
+                                        "y":  973,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  437
+                                    },
+                                    {
+                                        "y":  972,
+                                        "height":  20,
+                                        "width":  133,
+                                        "text":  "introduce",
+                                        "x":  490
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "a workaround to achieve full affine",
+                      "words":  [
+                                    {
+                                        "y":  978,
+                                        "height":  14,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  646
+                                    },
+                                    {
+                                        "y":  972,
+                                        "height":  20,
+                                        "width":  149,
+                                        "text":  "workaround",
+                                        "x":  681
+                                    },
+                                    {
+                                        "y":  973,
+                                        "height":  19,
+                                        "width":  28,
+                                        "text":  "to",
+                                        "x":  853
+                                    },
+                                    {
+                                        "y":  972,
+                                        "height":  20,
+                                        "width":  103,
+                                        "text":  "achieve",
+                                        "x":  905
+                                    },
+                                    {
+                                        "y":  972,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "full",
+                                        "x":  1031
+                                    },
+                                    {
+                                        "y":  972,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "affine",
+                                        "x":  1113
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "transformations .",
+                      "words":  [
+                                    {
+                                        "y":  1010,
+                                        "height":  20,
+                                        "width":  225,
+                                        "text":  "transformations",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1026,
+                                        "height":  4,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  401
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The Limitation: The Anchored Origin",
+                      "words":  [
+                                    {
+                                        "y":  1091,
+                                        "height":  26,
+                                        "width":  62,
+                                        "text":  "The",
+                                        "x":  377
+                                    },
+                                    {
+                                        "y":  1090,
+                                        "height":  27,
+                                        "width":  180,
+                                        "text":  "Limitation:",
+                                        "x":  451
+                                    },
+                                    {
+                                        "y":  1091,
+                                        "height":  26,
+                                        "width":  62,
+                                        "text":  "The",
+                                        "x":  640
+                                    },
+                                    {
+                                        "y":  1091,
+                                        "height":  26,
+                                        "width":  165,
+                                        "text":  "Anchored",
+                                        "x":  711
+                                    },
+                                    {
+                                        "y":  1090,
+                                        "height":  33,
+                                        "width":  103,
+                                        "text":  "Origin",
+                                        "x":  888
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Rotation",
+                      "words":  [
+                                    {
+                                        "y":  1216,
+                                        "height":  15,
+                                        "width":  72,
+                                        "text":  "Rotation",
+                                        "x":  422
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Stretching",
+                      "words":  [
+                                    {
+                                        "y":  1185,
+                                        "height":  18,
+                                        "width":  79,
+                                        "text":  "Stretching",
+                                        "x":  550
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "(Scaling)",
+                      "words":  [
+                                    {
+                                        "y":  1204,
+                                        "height":  19,
+                                        "width":  67,
+                                        "text":  "(Scaling)",
+                                        "x":  556
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "40",
+                      "words":  [
+                                    {
+                                        "y":  1217,
+                                        "height":  13,
+                                        "width":  19,
+                                        "text":  "40",
+                                        "x":  658
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "20",
+                      "words":  [
+                                    {
+                                        "y":  1307,
+                                        "height":  13,
+                                        "width":  19,
+                                        "text":  "20",
+                                        "x":  658
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "10",
+                      "words":  [
+                                    {
+                                        "y":  1352,
+                                        "height":  14,
+                                        "width":  18,
+                                        "text":  "10",
+                                        "x":  659
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "10",
+                      "words":  [
+                                    {
+                                        "y":  1444,
+                                        "height":  13,
+                                        "width":  18,
+                                        "text":  "10",
+                                        "x":  659
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "30",
+                      "words":  [
+                                    {
+                                        "y":  1490,
+                                        "height":  13,
+                                        "width":  19,
+                                        "text":  "30",
+                                        "x":  658
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "20",
+                      "words":  [
+                                    {
+                                        "y":  1536,
+                                        "height":  13,
+                                        "width":  19,
+                                        "text":  "20",
+                                        "x":  658
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "10",
+                      "words":  [
+                                    {
+                                        "y":  1582,
+                                        "height":  12,
+                                        "width":  18,
+                                        "text":  "10",
+                                        "x":  659
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "o",
+                      "words":  [
+                                    {
+                                        "y":  1640,
+                                        "height":  15,
+                                        "width":  9,
+                                        "text":  "o",
+                                        "x":  669
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "(110, 70)",
+                      "words":  [
+                                    {
+                                        "y":  1238,
+                                        "height":  21,
+                                        "width":  44,
+                                        "text":  "(110,",
+                                        "x":  1073
+                                    },
+                                    {
+                                        "y":  1238,
+                                        "height":  21,
+                                        "width":  28,
+                                        "text":  "70)",
+                                        "x":  1123
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x",
+                      "words":  [
+                                    {
+                                        "y":  1417,
+                                        "height":  13,
+                                        "width":  12,
+                                        "text":  "x",
+                                        "x":  1145
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "10",
+                      "words":  [
+                                    {
+                                        "y":  1444,
+                                        "height":  13,
+                                        "width":  18,
+                                        "text":  "10",
+                                        "x":  694
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "30",
+                      "words":  [
+                                    {
+                                        "y":  1490,
+                                        "height":  13,
+                                        "width":  19,
+                                        "text":  "30",
+                                        "x":  693
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "20",
+                      "words":  [
+                                    {
+                                        "y":  1536,
+                                        "height":  13,
+                                        "width":  19,
+                                        "text":  "20",
+                                        "x":  693
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "10",
+                      "words":  [
+                                    {
+                                        "y":  1581,
+                                        "height":  13,
+                                        "width":  18,
+                                        "text":  "10",
+                                        "x":  694
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Rotation",
+                      "words":  [
+                                    {
+                                        "y":  1594,
+                                        "height":  14,
+                                        "width":  63,
+                                        "text":  "Rotation",
+                                        "x":  305
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Stretching (Scaling)",
+                      "words":  [
+                                    {
+                                        "y":  1613,
+                                        "height":  18,
+                                        "width":  78,
+                                        "text":  "Stretching",
+                                        "x":  482
+                                    },
+                                    {
+                                        "y":  1612,
+                                        "height":  19,
+                                        "width":  67,
+                                        "text":  "(Scaling)",
+                                        "x":  565
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Translation (Sliding)",
+                      "words":  [
+                                    {
+                                        "y":  1510,
+                                        "height":  17,
+                                        "width":  105,
+                                        "text":  "Translation",
+                                        "x":  845
+                                    },
+                                    {
+                                        "y":  1510,
+                                        "height":  22,
+                                        "width":  78,
+                                        "text":  "(Sliding)",
+                                        "x":  957
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "BLOCKED",
+                      "words":  [
+                                    {
+                                        "y":  1535,
+                                        "height":  17,
+                                        "width":  89,
+                                        "text":  "BLOCKED",
+                                        "x":  896
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "(10, 20)",
+                      "words":  [
+                                    {
+                                        "y":  1553,
+                                        "height":  21,
+                                        "width":  33,
+                                        "text":  "(10,",
+                                        "x":  775
+                                    },
+                                    {
+                                        "y":  1553,
+                                        "height":  21,
+                                        "width":  29,
+                                        "text":  "20)",
+                                        "x":  813
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "10 20 30 40 50 60 70 80 90 100 x",
+                      "words":  [
+                                    {
+                                        "y":  1642,
+                                        "height":  14,
+                                        "width":  18,
+                                        "text":  "10",
+                                        "x":  718
+                                    },
+                                    {
+                                        "y":  1642,
+                                        "height":  14,
+                                        "width":  19,
+                                        "text":  "20",
+                                        "x":  760
+                                    },
+                                    {
+                                        "y":  1642,
+                                        "height":  14,
+                                        "width":  19,
+                                        "text":  "30",
+                                        "x":  803
+                                    },
+                                    {
+                                        "y":  1642,
+                                        "height":  14,
+                                        "width":  19,
+                                        "text":  "40",
+                                        "x":  846
+                                    },
+                                    {
+                                        "y":  1642,
+                                        "height":  14,
+                                        "width":  18,
+                                        "text":  "50",
+                                        "x":  889
+                                    },
+                                    {
+                                        "y":  1642,
+                                        "height":  14,
+                                        "width":  18,
+                                        "text":  "60",
+                                        "x":  932
+                                    },
+                                    {
+                                        "y":  1642,
+                                        "height":  14,
+                                        "width":  19,
+                                        "text":  "70",
+                                        "x":  974
+                                    },
+                                    {
+                                        "y":  1642,
+                                        "height":  14,
+                                        "width":  19,
+                                        "text":  "80",
+                                        "x":  1017
+                                    },
+                                    {
+                                        "y":  1642,
+                                        "height":  14,
+                                        "width":  19,
+                                        "text":  "90",
+                                        "x":  1060
+                                    },
+                                    {
+                                        "y":  1643,
+                                        "height":  13,
+                                        "width":  28,
+                                        "text":  "100",
+                                        "x":  1099
+                                    },
+                                    {
+                                        "y":  1647,
+                                        "height":  14,
+                                        "width":  12,
+                                        "text":  "x",
+                                        "x":  1145
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "While the grid can spin (rotation) or stretch (scaling) around the center, the origin (0,0) is permanently fixed,",
+                      "words":  [
+                                    {
+                                        "y":  1683,
+                                        "height":  16,
+                                        "width":  47,
+                                        "text":  "While",
+                                        "x":  229
+                                    },
+                                    {
+                                        "y":  1683,
+                                        "height":  16,
+                                        "width":  28,
+                                        "text":  "the",
+                                        "x":  281
+                                    },
+                                    {
+                                        "y":  1683,
+                                        "height":  20,
+                                        "width":  32,
+                                        "text":  "grid",
+                                        "x":  314
+                                    },
+                                    {
+                                        "y":  1687,
+                                        "height":  12,
+                                        "width":  30,
+                                        "text":  "can",
+                                        "x":  351
+                                    },
+                                    {
+                                        "y":  1683,
+                                        "height":  20,
+                                        "width":  34,
+                                        "text":  "spin",
+                                        "x":  387
+                                    },
+                                    {
+                                        "y":  1682,
+                                        "height":  20,
+                                        "width":  76,
+                                        "text":  "(rotation)",
+                                        "x":  428
+                                    },
+                                    {
+                                        "y":  1687,
+                                        "height":  12,
+                                        "width":  18,
+                                        "text":  "or",
+                                        "x":  510
+                                    },
+                                    {
+                                        "y":  1683,
+                                        "height":  16,
+                                        "width":  59,
+                                        "text":  "stretch",
+                                        "x":  533
+                                    },
+                                    {
+                                        "y":  1682,
+                                        "height":  21,
+                                        "width":  70,
+                                        "text":  "(scaling)",
+                                        "x":  598
+                                    },
+                                    {
+                                        "y":  1683,
+                                        "height":  16,
+                                        "width":  57,
+                                        "text":  "around",
+                                        "x":  675
+                                    },
+                                    {
+                                        "y":  1683,
+                                        "height":  16,
+                                        "width":  27,
+                                        "text":  "the",
+                                        "x":  738
+                                    },
+                                    {
+                                        "y":  1684,
+                                        "height":  18,
+                                        "width":  58,
+                                        "text":  "center,",
+                                        "x":  770
+                                    },
+                                    {
+                                        "y":  1683,
+                                        "height":  16,
+                                        "width":  28,
+                                        "text":  "the",
+                                        "x":  833
+                                    },
+                                    {
+                                        "y":  1683,
+                                        "height":  20,
+                                        "width":  47,
+                                        "text":  "origin",
+                                        "x":  866
+                                    },
+                                    {
+                                        "y":  1682,
+                                        "height":  20,
+                                        "width":  38,
+                                        "text":  "(0,0)",
+                                        "x":  919
+                                    },
+                                    {
+                                        "y":  1683,
+                                        "height":  16,
+                                        "width":  14,
+                                        "text":  "is",
+                                        "x":  963
+                                    },
+                                    {
+                                        "y":  1683,
+                                        "height":  20,
+                                        "width":  106,
+                                        "text":  "permanently",
+                                        "x":  982
+                                    },
+                                    {
+                                        "y":  1683,
+                                        "height":  19,
+                                        "width":  46,
+                                        "text":  "fixed,",
+                                        "x":  1093
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "preventing any sliding (translation) motion. The entire coordinate system is anchored at this single point.",
+                      "words":  [
+                                    {
+                                        "y":  1707,
+                                        "height":  21,
+                                        "width":  90,
+                                        "text":  "preventing",
+                                        "x":  246
+                                    },
+                                    {
+                                        "y":  1711,
+                                        "height":  17,
+                                        "width":  31,
+                                        "text":  "any",
+                                        "x":  341
+                                    },
+                                    {
+                                        "y":  1707,
+                                        "height":  21,
+                                        "width":  54,
+                                        "text":  "sliding",
+                                        "x":  377
+                                    },
+                                    {
+                                        "y":  1707,
+                                        "height":  20,
+                                        "width":  101,
+                                        "text":  "(translation)",
+                                        "x":  437
+                                    },
+                                    {
+                                        "y":  1707,
+                                        "height":  16,
+                                        "width":  63,
+                                        "text":  "motion.",
+                                        "x":  544
+                                    },
+                                    {
+                                        "y":  1708,
+                                        "height":  15,
+                                        "width":  33,
+                                        "text":  "The",
+                                        "x":  612
+                                    },
+                                    {
+                                        "y":  1707,
+                                        "height":  17,
+                                        "width":  48,
+                                        "text":  "entire",
+                                        "x":  649
+                                    },
+                                    {
+                                        "y":  1707,
+                                        "height":  17,
+                                        "width":  91,
+                                        "text":  "coordinate",
+                                        "x":  702
+                                    },
+                                    {
+                                        "y":  1709,
+                                        "height":  19,
+                                        "width":  60,
+                                        "text":  "system",
+                                        "x":  799
+                                    },
+                                    {
+                                        "y":  1707,
+                                        "height":  16,
+                                        "width":  13,
+                                        "text":  "is",
+                                        "x":  865
+                                    },
+                                    {
+                                        "y":  1707,
+                                        "height":  17,
+                                        "width":  79,
+                                        "text":  "anchored",
+                                        "x":  883
+                                    },
+                                    {
+                                        "y":  1708,
+                                        "height":  15,
+                                        "width":  16,
+                                        "text":  "at",
+                                        "x":  968
+                                    },
+                                    {
+                                        "y":  1707,
+                                        "height":  17,
+                                        "width":  31,
+                                        "text":  "this",
+                                        "x":  989
+                                    },
+                                    {
+                                        "y":  1707,
+                                        "height":  21,
+                                        "width":  50,
+                                        "text":  "single",
+                                        "x":  1025
+                                    },
+                                    {
+                                        "y":  1707,
+                                        "height":  20,
+                                        "width":  47,
+                                        "text":  "point.",
+                                        "x":  1080
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FAST NUCES -",
+                      "words":  [
+                                    {
+                                        "y":  1820,
+                                        "height":  19,
+                                        "width":  61,
+                                        "text":  "FAST",
+                                        "x":  171
+                                    },
+                                    {
+                                        "y":  1820,
+                                        "height":  19,
+                                        "width":  85,
+                                        "text":  "NUCES",
+                                        "x":  242
+                                    },
+                                    {
+                                        "y":  1829,
+                                        "height":  4,
+                                        "width":  12,
+                                        "text":  "-",
+                                        "x":  337
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Karachi",
+                      "words":  [
+                                    {
+                                        "y":  1818,
+                                        "height":  21,
+                                        "width":  95,
+                                        "text":  "Karachi",
+                                        "x":  358
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1820,
+                                        "height":  19,
+                                        "width":  71,
+                                        "text":  "Talha",
+                                        "x":  596
+                                    },
+                                    {
+                                        "y":  1818,
+                                        "height":  21,
+                                        "width":  86,
+                                        "text":  "Shahid",
+                                        "x":  677
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "15",
+                      "words":  [
+                                    {
+                                        "y":  1820,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "15",
+                                        "x":  1177
+                                    }
+                                ]
+                  }
+              ]
+}

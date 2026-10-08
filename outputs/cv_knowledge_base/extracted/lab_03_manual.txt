@@ -1,0 +1,820 @@
+=== PAGE 1 ===
+Computer
+Lab 03
+Vision
+Geometric Transformation
+A1-4002
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+
+=== PAGE 2 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+Course Code: A1-4002
+Computer Vision Lab
+2. What is Geometric Transformation . .
+3. The Image Coordinate System
+4. 2D Transformation vs 3D Transformation ...................................................................6
+4.1 2D transformation..................................................................................................... 6
+4.2 3D transformation.
+5. Transformation Matrix............................„.......... ......
+5.1 The Anatomy of a 2x2 Transformation Matrix .
+5.2 Reading the Vectors
+5.3 What Each Variable Controls
+6. 2D Geometric Transformations ............„................ ....... .
+6.1 Affine Transformation
+6.1.1 Linear Transformation .
+1. Objectives..
+.2
+• • • • • • • 18
+6.1.1.1 The Mathematical Foundation — .
+6.1.1.2 What Linear Transformations Can Achieve
+6.1.1.3 The Limitation: The Anchored Origin ..... .........................
+6.1.1.4 The solution: Homogenous Coordinates
+6.2 Projective Transformations..............................
+6.2.1 The Mathematical Core
+6.2.2 The Denominator Effect .
+6.2.3 Modeling Real-World Perspective.
+FAST NUCES -
+Karachi
+Talha Shahid
+.2
+.4
+.............8
+.. ........... 10
+10
+12
+12
+.13
+. .15
+16
+17
+..... 18
+18
+1
+
+=== PAGE 3 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+1. Objectives
+1.
+2.
+3.
+4.
+5.
+Explain what a geometric transformation is.
+Distinguish geometric and photometric transformations.
+Explain the image coordinate system used in computer vision.
+Distinguish linear, affine and projective transformations.
+Explain homogeneous coordinates.
+2. What is Geometric Transformation
+"A geometric transformation is a mathematical operation that alters
+the spatial position, orientation, scale, or shape of an object,
+without changing its under Lying data values".
+In simple words, a geometric transformation changes where image
+information is located .
+Geometric Transformation (Translation)
+I(x,y) -> I(x', y')
+Original
+Translation
+iiiiiiiiiiiiii
+I(x,y)
+Translated
+A geometric transformation changes where image information is
+located without altering the underlying data.
+An image can be viewed as a function
+where :
+•
+•
+x = horizontal image coordinate
+y = vertical image coordinate
+I(x,y) =
+pixel intensity/ color at that location
+transformed image
+FAST NUCES -
+Karachi
+Talha Shahid
+2
+
+=== PAGE 4 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+Coordinate Manipulation: Unlike photometric transformations (which
+change a pixel I s color ,
+brightness ,
+01 contrast) ,
+geometric
+transformations change where the pixel is located, not what the pixel
+looks like.
+Geometric transformation:
+(x, y) * (x',y')
+Photometric transformation :
+I(x,y) I' (x', y')
+Examples of geometric transformations :
+• affine transformation
+o linear transformation
+• rotation
+• scaling
+• shearing
+perspective transformation
+translation
+o
+Examples of photometric transformations:
+Point Transformation
+o
+o
+o
+brightness adjustment
+contrast enhancement
+gamma correction
+color conversion
+This distinction is important:
+Geometry changes where the pixel is.
+Photometry changes what the pixel
+looks like .
+FAST NUCES -
+Karachi
+Talha Shahid
+3
+
+=== PAGE 5 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+2D GEOMETRIC
+TRANSFORMATIONS
+AFFINE
+PROJECTIVE (HOMOGRAPHY)
+Perspective
+Rotation
+LINEAR
+Scale
+Similarity
+Rigid
+Translation
+Shear
+3. The Image Coordinate System
+In mathematical Cartesian coordinates we usually imagine:
+(0,0)
+FAST NUCES -
+Karachi
+Talha Shahid
+4
+
+=== PAGE 6 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+However, images normally use:
+(0,0)
+Therefore :
+x
+x light
+y down
+The origin is normally the top-left corner.
+OpenCV also represents image points using this image-coordinate
+convention. In its rotation documentation, OpenCV explicitly accounts
+for the top-left-origin coordinate system when defining positive
+rotation .
+Example
+Suppose an image has:
+width
+640
+FAST NUCES -
+Karachi
+height = 480
+Talha Shahid
+5
+
+=== PAGE 7 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+Then approximately:
+height = 480
+Note that:
+width = 640
+(0,0)
+(639 , 0)
+(0, 479)
+(639 , 479)
+image Cyr x]
+but a geometric point is commonly written as:
+4. 2D Transformation vs 3D Transformation
+4.1 2D transformation
+A 2D transformation operates on points:
+It is appropriate when dealing with:
+•
+•
+•
+•
+an image plane
+a photograph
+a document
+a planar object
+Typical matrix representations are:
+FAST NUCES -
+Karachi
+Talha Shahid
+6
+
+=== PAGE 8 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+for affine warping, or
+using homogeneous coordinates .
+OpenCV's warpAffine() accepts a 2 x 3 matrix,
+uses a 3 x 3matrix.
+4.2 3D transformation
+A 3D transformation works with:
+Typical homogeneous representation:
+while warpPerspective()
+For example,
+robotics and 3D graphics frequently use:
+x'
+1
+x
+z
+1
+Computer vision often eventually connects 3D world coordinates to 2D
+image coordinates:
+(X, Y,Z) (x,y)
+That is a separate topic involving camera projection and calibration.
+FAST NUCES -
+Karachi
+Talha Shahid
+7
+
+=== PAGE 9 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+2D TRANSFORMATION
+(x',y')
+(x,y)
+Operates on: Image planes,
+Photos, Documents
+Representation: 2x3 Affine
+or 3x3 Homogeneous
+5. Transformation Matrix
+3D TRANSFORMATION
+(x',y',z')
+(x,y,z)
+Operates on:
+3D World Space
+Representation:
+4x4 Homogeneous
+A transformation matrix is a mathematical map that encodes exactly
+how to warp, rotate, scale, or shear a 2D coordinate space. When you
+multiply an original coordinate vector by this matrix, it calculates
+the new, transformed location of that point.
+5.1 The Anatomy of a 2x2 Transformation Matrix
+The transformation matrix is composed of two distinct vectors, but to
+visualize how it alters space, you must read the matrix vertically as
+columns, rather than horizontally as rows. The two column vectors tell
+you exactly where the foundational axes of the entire grid end up
+after the transformation .
+FAST NUCES - Karachi
+Talha Shahid
+8
+
+=== PAGE 10 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+5.2 Reading the Vectors
+Think of the original coordinate grid as being built from two "basis
+vectors "
+the unit X-axis at (1, @) and the unit Y-axis at (0, 1) .
+The matrix simply tells you their new coordinates.
+The First Column Vector:
+X-axis.
+The Second Column Vector:
+Y-axis.
+This is the new landing spot for the
+This is the new landing spot for the
+Every other point on the grid just goes along for the ride,
+automatically redrawing itself based on where those two primary axes
+landed .
+5.3 What Each Variable Controls
+By manipulating the individual values of $a$,
+control specific geometric behaviors:
+$c$,
+and $d$,
+you
+Structural
+Variable
+Visual Effect
+Horizontal Scaling.
+a
+c
+b
+Role
+X-coordinate
+of the new X-
+axis
+Y-coordinate
+of the new X-
+axis
+X-coordinate
+of the new Y-
+axis
+Values > 1 stretch the
+grid horizontally. A negative value flips
+the grid horizontally.
+Vertical Shearing. Changes this value tilt
+the vertical grid lines up or down ,
+breaking perpendicularity .
+Horizontal Shearing. Changes this value
+tilt the horizontal grid lines left 01
+right, creating the shear effect seen in
+FAST NUCES -
+Karachi
+your previous diagram.
+Talha Shahid
+9
+
+=== PAGE 11 ===
+National University of Computer & Emerging Sciences -
+d
+Y-coordinate
+of the new Y-
+axis
+NUCES - Karachi
+Department of Artificial Intelligence
+Vertical Scaling. Values > 1 stretch the
+grid vertically. A negative value flips the
+grid vertically .
+If you want a pure rotation, you cannot just change one variable. You
+must change all four simultaneously using trigonometric functions
+(sine and cosine) so that both axes tilt and scale perfectly in unison
+to maintain their 9@-degree relationship.
+Anatomy of a 2x2 Transformation Matrix
+Original Space
+(0,1)
+j -hat
+(0,0)
+(1,0)
+i-hat
+Original Space
+c
+b
+d
+X-basis vector
+(New X-axis)
+Y-basis vector
+(New Y-axis)
+Transformed Space
+-axi (b,d)
+New
+New
+X-axis
+(a,c)
+i - hat
+(0,0)
+Transformed Space
+Horizontal Scale (X of X-axis)
+Vertical Shear (Y of X-axis)
+Horizontal Shear (X of Y-axis)
+Vertical Scale (Y of Y-axis)
+6. 2D Geometric Transformations
+6.1 Affine Transformation
+An affine transformation is a fundamental geometric mapping that
+preserves collinearity (points on a line remain on a line) and
+parallelism (parallel lines remain parallel). While it can alter
+angles and distances, it always preserves the ratio of distances
+between points lying on a straight line.
+Mathematically, an affine transformation is simply the composition of
+a linear transformation and a translation. It is expressed by the
+equation :
+FAST NUCES -
+Karachi
+p' = Ap + b
+Talha Shahid
+10
+
+=== PAGE 12 ===
+where :
+•
+A
+x
+b
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+represents the linear transformation matrix,
+is the original coordinate vector, and
+is the translation vector
+Original
+Transformed
+Parallelism
+preserved
+Affine
+Transformation
+c
+Collinearity
+preserved
+Note: This diagram illustrates the core geometric properties of an
+affine transformation by comparing a standard 2D coordinate
+space to its transformed state (warped Parallelogram) .
+The Original Coordinate Space (Left)
+•
+•
+The grid represents a standard Cartesian plane composed of
+perpendicular intersecting lines and perfect squares.
+Points A, B, and C are plotted along a single horizontal axis.
+A specific, measurable distance ratio exists between the points
+(e.g., the length of segment AB compared to the length of segment
+The Transformed Space (Right)
+The grid demonstrates the resulting coordinate space after an
+affine
+FAST NUCES -
+mapping—specifically a shear operation—is applied .
+Karachi
+Talha Shahid
+11
+
+=== PAGE 13 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+The uniform light angles of the original grid are skewed, warping
+the coordinate system and stretching the original squares into
+tilted parallelograms .
+Core Properties Preserved Despite the structural distortion of the
+grid, the affine transformation strictly enforces two fundamental
+mathematical rules:
+•
+•
+Collinearity: Points A ,
+and CI remain positioned on a
+perfectly straight, continuous line. While the line itself has
+changed its angle,
+it does not curve ,
+bend ,
+or break .
+Furthermore, the ratio of the distances between these points
+(A 1B' relative to B'CI) remains mathematically identical to the
+original ratio of AB to BC.
+Parallelism: The grid lines that were parallel in the original
+space stretch and tilt uniformly together. Lines that never
+intersected in the original Cartesian grid remain strictly
+parallel and will never intersect in the transformed coordinate
+space.
+6.1.1 Linear Transformation
+A linear transformation is the foundational subset of an affine
+transformation that relies strictly on matrix multiplication, meaning
+it can warp, scale, and rotate space, but it is mathematically tethered
+to the origin point .
+Note: A linear transformation
+translation vector.
+is
+affine
+transformation
+without
+a
+6.1.1.1 The Mathematical Foundation
+A linear transformation operates by multiplying a coordinate vector p
+by a 2 x 2 transformation matrix A:
+p' = Ap
+Expanded into its full matrix form, it looks like this:
+FAST NUCES - Karachi
+Talha Shahid
+12
+
+=== PAGE 14 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+[51 =
+This multiplication dictates the new coordinates through two algebraic
+equations :
+x' = ax + by
+cx + dy
+6.1.1.2 What Linear Transformations Can Achieve
+By altering the values of the matrix, this single mathematical
+operation can produce distinct geometric effects:
+Scaling:
+Resizes the object by multiplying coordinates by scale
+factors and Sy. The diagonal placement in the matrix
+ensures the axes scale independently without mixing.
+Rotation: Tilts the coordinate space around the origin.
+cos 9
+sin 9
+to perfectly balance both
+perpendicular as they rotate.
+— sin 0
+cos 9
+axes,
+ensuring
+they
+It uses
+remain
+Reflection: Flips the geometry like a mirror. A negative value
+on the diagonal will invert that axis (e.g. ,
+inverts the Y-values,
+I -01]
+reflecting the object across the X-axis) .
+FAST NUCES -
+Karachi
+Talha Shahid
+13
+
+=== PAGE 15 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+Shearing: Skews the grid by adding a fraction of one coordinate
+to another using a constant k. A horizontal shear matrix
+results in the equation x' = x + ky.
+What Linear Transformations Can Achieve
+SCALING
+(43)
+(0,3)
+(0,2)
+(0.0)
+(02)
+(0,0)
+-sine
+cose
+(02) - •
+(2.2)
+O
+sy
+- (2,2)
+ROTATION
+cose
+sine
+9
+(2.0)
+Resizing a shape
+uniformly or non-
+x uniformly along the axes.
+REFLECTION
+1
+x
+Flipping a shape across
+an axis (e.g., x-axis) to a
+(0.0)
+(02)
+(2.0)
+x
+Tilting a shape by an
+angle 8 around the
+origin.
+(2+k.2)
+SCALING
+uniform or non-uniform
+expansion/contraction
+from the center.
+REFLECTION
+Flipping across
+an axis or line
+through the
+center.
+The Invariant Origin
+/ Origin
+' fil-
+SHEARING
+Skewing a shape into a
+parallelogram by shifting
+ROTATION
+Turning around the
+fixed center.
+tino
+coso
+k SHEARING@
+Sliding layers
+parallel to an axis,
+relative to the center.
+FAST NUCES -
+1-
+Karachi
+Origin Preserved:
+Talha Shahid
+14
+
+=== PAGE 16 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+6.1.1.3 The Limitation: The Anchored Origin
+This raises an important analytical question:
+Can this matric translate (slide) a point, such as moving (10, 20) to
+(110, 70)?
+The mathematical answer is no. A strict rule of linear transformations
+is that any matrix multiplied by a zero vector results in a zero
+vector :
+If you multiply the origin (@,@) by any 2 x 2 matrix, the result will
+always be . Because the origin is permanently anchored, standard
+linear transformations cannot translate geometry. They can spin,
+stretch, and shear the grid, but they cannot slide it across the
+board. This specific mathematical limitation is what forces computer
+graphics systems to introduce
+a workaround to achieve full affine
+transformations .
+The Limitation: The Anchored Origin
+Rotation
+Stretching
+(Scaling)
+40
+20
+10
+10
+30
+20
+10
+o
+(110, 70)
+x
+10
+30
+20
+10
+Rotation
+Stretching (Scaling)
+Translation (Sliding)
+BLOCKED
+(10, 20)
+10 20 30 40 50 60 70 80 90 100 x
+While the grid can spin (rotation) or stretch (scaling) around the center, the origin (0,0) is permanently fixed,
+preventing any sliding (translation) motion. The entire coordinate system is anchored at this single point.
+FAST NUCES -
+Karachi
+Talha Shahid
+15
+
+=== PAGE 17 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+6.1.1.4 The solution: Homogenous Coordinates
+Homogeneous coordinates bypass the origin limitation by adding a
+temporary, dummy "1" to standard 2D coordinates, turning (x, y) into
+(x, y, 1). This mathematical trick allows computers to perform
+translations using only matrix multiplication, completely eliminating
+the need for a separate vector addition step.
+The Problem with Vector Addition
+The standard affine equation is
+p' = Ap + b
+This forces the computer to perform a matrix multiplication (Ap) for
+scaling or rotating, stop that process, and then perform a separate
+vector addition (+b) to slide the object. Graphics processors (GPUs)
+are deeply optimized to execute continuous, uninterrupted chains of
+matrix multiplications. Breaking that hardware pipeline to switch to
+vector addition creates a massive computational bottleneck when
+calculating millions of coordinate points per second.
+The Matrix Multiplication Solution
+By upgrading the math to a 3 x 3 matrix, we can fold the translation
+values tx and ty directly into the rightmost column:
+10 tx X
+01 tyy
+0011
+When the computer executes this multiplication, the row-by-column math
+forces the "1" in the coordinate vector to multiply against the tx and
+ty in the matrix. These cleanly outputs the exact translation equations
+algebraically :
+FAST NUCES -
+Karachi
+Talha Shahid
+16
+
+=== PAGE 18 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+The Power of Composition
+Because translation, rotation, and scaling are now aLL formatted
+uniformly as 3 x 3 matrix multiplications, they speak the exact same
+mathematical language. A computer can multiply a scale matrix, a
+rotation matrix, and a translation matrix together into one single
+"master matrix" before touching the geometry. The graphics engine then
+only has to perform one single matrix multiplication per pixel to
+apply all three transformations simultaneously.
+6.2 Projective Transformations
+Projective transformations, or homographies, are a broader category
+of geometric mapping that break the strict rules of affine
+transformations to simulate how human eyes and cameras perceive 3D
+depth in a 2D space. While affine transformations always preserve
+parallelism ,
+projective transformations allow parallel lines to
+converge, creating the illusion of perspective.
+Affine: Preserves Parallelism
+Uniform Scaling, Rotation,
+Projective: Simulates 3D Perspective
+Vanishing
+point
+FAST NUCES -
+Shearing, Translation
+Karachi
+Core Difference:
+Parallelism
+Talha Shahid
+Simulates Depth, Foreshortening,
+Viewpoint Change
+17
+
+=== PAGE 19 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+6.2.1 The Mathematical Core
+A projective transformation uses a full 3 x 3 transformation matrix,
+commonly denoted as H:
+x'
+hil
+1121
+To find the final 2D coordinates
+1112
+1122
+1132
+on
+1113 x
+h23 Y
+h33
+1
+a screen, the resulting vector
+must be normalized by dividing by the third scaling coordinate, $wl$.
+This yields the following algebraic equations:
+m 1 x + h12Y + h13
+h31X + h32Y + h33
+h21X + h22Y + 1123
+h31X + h32Y + h33
+6.2.2 The Denominator Effect
+The denominator h31X + h32Y + is the critical mathematical distinction
+between affine and projective geometry .
+In an affine transformation, the bottom row of the matrix is strictly
+locked to [O, @ , 1] . Therefore, the denominator is always exactly 1,
+causing uniform scaling across the entire image.
+In a projective transformation, the denominator fluctuates depending
+on the x and y values of the specific point being processed. As points
+"move further away" in the virtual space, the denominator grows
+larger, causing the resulting x' and y' coordinates to shrink closer
+together. This variable division is the mathematical engine that
+generates depth.
+6.2.3 Modeling Real-World Perspective
+Because of this dynamic denominator, projective transformations can
+accurately model how flat planes distort when viewed at an angle:
+FAST NUCES -
+Karachi
+Talha Shahid
+18
+
+=== PAGE 20 ===
+•
+•
+•
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+Converging Lines: The visual effect of a straight road where the
+left and right parallel edges appear to pinch together at the
+horizon .
+Camera Viewpoints: How an object Is perceived shape warps as a
+camera pans 01 tilts around it in 3D space.
+Planar Alignment: Photographing a rectangular document resting
+on a desk from an angle. The camera captures it as a trapezoid
+wider up close) .
+A projective
+(narrower further away ,
+transformation matrix can perfectly reverse this distortion ,
+stretching the trapezoid back into a flat, properly proportioned
+rectangle .
+PLANAR ALIGNMENT
+PERSPECTIVE DISTORTION
+Distorted
+Document
+(Trapezoid)
+Image of a rectangular object captured at an
+angle, appearing distorted as a trapezoid due
+to Droiective aeometrv.
+Pan Left, Tilt Down (Warp)
+2D Projection (Warped)
+Shape is distorted.
+Parallel lines converge.
+FAST NUCES - Karachi
+CORRECTED FLAT VIEW
+PROJECTIVE
+TRANSFORMATION
+Mathematical operation reversing
+perspective distortion.
+Center View (No Warp)
+2D Projection (Unchanged)
+Proportions are preserved.
+Parallel lines remain parallel.
+Talha Shahid
+Corrected
+Document
+(Rectangle)
+The result of applying the transformation,
+restoring the Original planar proportions
+and creatina a fiat. rectilinear view.
+Pan Right, Tilt Up (Warp)
+2D Projection (Warped)
+Shape is distorted.
+Parallel lines converge.
+19

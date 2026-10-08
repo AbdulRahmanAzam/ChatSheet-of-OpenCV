@@ -1,0 +1,1016 @@
+﻿{
+    "id":  "lab_manual_06_p006",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "National University of Computer \u0026 Emerging Sciences - NUCES - Karachi Department of Artificial Intelligence BOUNDARY DETECTION (EDGE DETECTION) it E, Input: Original Scene (Intensity \u0026 Color) Output: Edge Map (Significant Changes in Intensity) Isolating structural information to simplify image interpretation and feature extraction. 3.1 Sobel Edge Detection Sobel edge detection is a basic gradient-based method. It applies convolution with two 3x3 kernels to calculate the gradient in the horizontal and vertical directions. The magnitude of the gradient represents the strength of the edge, and its direction indicates the edge\u0027s orientation. SOBEL EDGE DETECTION OPERATOR INPUT FAST NUCES - CONVOLUTION KERNELS G = GX2 + Gy2 GRADIENT COMPONENTS Karachi Gy Output Highlighting horizontal edges Talha Shahid FINAL MAGNITUDE Final Edge Magnitude (G) 6",
+    "review_status":  "raw_ocr_unverified",
+    "page":  6,
+    "source_id":  "lab_manual_06",
+    "lines":  [
+                  {
+                      "text":  "National University of Computer \u0026 Emerging Sciences -",
+                      "words":  [
+                                    {
+                                        "y":  94,
+                                        "height":  23,
+                                        "width":  122,
+                                        "text":  "National",
+                                        "x":  376
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  29,
+                                        "width":  146,
+                                        "text":  "University",
+                                        "x":  507
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  22,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  660
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  28,
+                                        "width":  147,
+                                        "text":  "Computer",
+                                        "x":  696
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  22,
+                                        "width":  21,
+                                        "text":  "\u0026",
+                                        "x":  851
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  28,
+                                        "width":  134,
+                                        "text":  "Emerging",
+                                        "x":  880
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  23,
+                                        "width":  132,
+                                        "text":  "Sciences",
+                                        "x":  1021
+                                    },
+                                    {
+                                        "y":  107,
+                                        "height":  4,
+                                        "width":  10,
+                                        "text":  "-",
+                                        "x":  1162
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "NUCES - Karachi",
+                      "words":  [
+                                    {
+                                        "y":  140,
+                                        "height":  22,
+                                        "width":  103,
+                                        "text":  "NUCES",
+                                        "x":  654
+                                    },
+                                    {
+                                        "y":  152,
+                                        "height":  4,
+                                        "width":  10,
+                                        "text":  "-",
+                                        "x":  765
+                                    },
+                                    {
+                                        "y":  139,
+                                        "height":  23,
+                                        "width":  109,
+                                        "text":  "Karachi",
+                                        "x":  784
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Department of Artificial Intelligence",
+                      "words":  [
+                                    {
+                                        "y":  183,
+                                        "height":  26,
+                                        "width":  143,
+                                        "text":  "Department",
+                                        "x":  555
+                                    },
+                                    {
+                                        "y":  182,
+                                        "height":  22,
+                                        "width":  24,
+                                        "text":  "of",
+                                        "x":  706
+                                    },
+                                    {
+                                        "y":  182,
+                                        "height":  22,
+                                        "width":  100,
+                                        "text":  "Artificial",
+                                        "x":  737
+                                    },
+                                    {
+                                        "y":  182,
+                                        "height":  27,
+                                        "width":  137,
+                                        "text":  "Intelligence",
+                                        "x":  847
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "BOUNDARY DETECTION (EDGE DETECTION)",
+                      "words":  [
+                                    {
+                                        "y":  262,
+                                        "height":  30,
+                                        "width":  245,
+                                        "text":  "BOUNDARY",
+                                        "x":  228
+                                    },
+                                    {
+                                        "y":  262,
+                                        "height":  30,
+                                        "width":  241,
+                                        "text":  "DETECTION",
+                                        "x":  486
+                                    },
+                                    {
+                                        "y":  260,
+                                        "height":  39,
+                                        "width":  129,
+                                        "text":  "(EDGE",
+                                        "x":  744
+                                    },
+                                    {
+                                        "y":  260,
+                                        "height":  39,
+                                        "width":  254,
+                                        "text":  "DETECTION)",
+                                        "x":  888
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "it",
+                      "words":  [
+                                    {
+                                        "y":  400,
+                                        "height":  36,
+                                        "width":  25,
+                                        "text":  "it",
+                                        "x":  725
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "E,",
+                      "words":  [
+                                    {
+                                        "y":  575,
+                                        "height":  30,
+                                        "width":  34,
+                                        "text":  "E,",
+                                        "x":  721
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Input: Original Scene (Intensity \u0026 Color)",
+                      "words":  [
+                                    {
+                                        "y":  723,
+                                        "height":  16,
+                                        "width":  49,
+                                        "text":  "Input:",
+                                        "x":  280
+                                    },
+                                    {
+                                        "y":  722,
+                                        "height":  17,
+                                        "width":  64,
+                                        "text":  "Original",
+                                        "x":  334
+                                    },
+                                    {
+                                        "y":  722,
+                                        "height":  14,
+                                        "width":  49,
+                                        "text":  "Scene",
+                                        "x":  404
+                                    },
+                                    {
+                                        "y":  722,
+                                        "height":  17,
+                                        "width":  76,
+                                        "text":  "(Intensity",
+                                        "x":  458
+                                    },
+                                    {
+                                        "y":  722,
+                                        "height":  14,
+                                        "width":  10,
+                                        "text":  "\u0026",
+                                        "x":  539
+                                    },
+                                    {
+                                        "y":  722,
+                                        "height":  17,
+                                        "width":  47,
+                                        "text":  "Color)",
+                                        "x":  554
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Output: Edge Map (Significant Changes in Intensity)",
+                      "words":  [
+                                    {
+                                        "y":  723,
+                                        "height":  16,
+                                        "width":  65,
+                                        "text":  "Output:",
+                                        "x":  713
+                                    },
+                                    {
+                                        "y":  722,
+                                        "height":  17,
+                                        "width":  41,
+                                        "text":  "Edge",
+                                        "x":  784
+                                    },
+                                    {
+                                        "y":  723,
+                                        "height":  16,
+                                        "width":  35,
+                                        "text":  "Map",
+                                        "x":  831
+                                    },
+                                    {
+                                        "y":  722,
+                                        "height":  17,
+                                        "width":  92,
+                                        "text":  "(Significant",
+                                        "x":  871
+                                    },
+                                    {
+                                        "y":  722,
+                                        "height":  17,
+                                        "width":  72,
+                                        "text":  "Changes",
+                                        "x":  968
+                                    },
+                                    {
+                                        "y":  722,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "in",
+                                        "x":  1046
+                                    },
+                                    {
+                                        "y":  722,
+                                        "height":  17,
+                                        "width":  75,
+                                        "text":  "Intensity)",
+                                        "x":  1066
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Isolating structural information to simplify image interpretation and feature extraction.",
+                      "words":  [
+                                    {
+                                        "y":  758,
+                                        "height":  18,
+                                        "width":  70,
+                                        "text":  "Isolating",
+                                        "x":  325
+                                    },
+                                    {
+                                        "y":  758,
+                                        "height":  14,
+                                        "width":  78,
+                                        "text":  "structural",
+                                        "x":  401
+                                    },
+                                    {
+                                        "y":  758,
+                                        "height":  14,
+                                        "width":  97,
+                                        "text":  "information",
+                                        "x":  485
+                                    },
+                                    {
+                                        "y":  760,
+                                        "height":  12,
+                                        "width":  17,
+                                        "text":  "to",
+                                        "x":  587
+                                    },
+                                    {
+                                        "y":  758,
+                                        "height":  18,
+                                        "width":  65,
+                                        "text":  "simplify",
+                                        "x":  609
+                                    },
+                                    {
+                                        "y":  758,
+                                        "height":  18,
+                                        "width":  53,
+                                        "text":  "image",
+                                        "x":  679
+                                    },
+                                    {
+                                        "y":  758,
+                                        "height":  18,
+                                        "width":  115,
+                                        "text":  "interpretation",
+                                        "x":  737
+                                    },
+                                    {
+                                        "y":  758,
+                                        "height":  14,
+                                        "width":  31,
+                                        "text":  "and",
+                                        "x":  857
+                                    },
+                                    {
+                                        "y":  758,
+                                        "height":  14,
+                                        "width":  59,
+                                        "text":  "feature",
+                                        "x":  893
+                                    },
+                                    {
+                                        "y":  758,
+                                        "height":  14,
+                                        "width":  88,
+                                        "text":  "extraction.",
+                                        "x":  957
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3.1 Sobel Edge Detection",
+                      "words":  [
+                                    {
+                                        "y":  869,
+                                        "height":  24,
+                                        "width":  43,
+                                        "text":  "3.1",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  868,
+                                        "height":  25,
+                                        "width":  88,
+                                        "text":  "Sobel",
+                                        "x":  250
+                                    },
+                                    {
+                                        "y":  868,
+                                        "height":  32,
+                                        "width":  79,
+                                        "text":  "Edge",
+                                        "x":  353
+                                    },
+                                    {
+                                        "y":  866,
+                                        "height":  27,
+                                        "width":  151,
+                                        "text":  "Detection",
+                                        "x":  445
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Sobel edge detection is a basic gradient-based method. It applies",
+                      "words":  [
+                                    {
+                                        "y":  925,
+                                        "height":  19,
+                                        "width":  74,
+                                        "text":  "Sobel",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  925,
+                                        "height":  24,
+                                        "width":  58,
+                                        "text":  "edge",
+                                        "x":  266
+                                    },
+                                    {
+                                        "y":  925,
+                                        "height":  19,
+                                        "width":  132,
+                                        "text":  "detection",
+                                        "x":  347
+                                    },
+                                    {
+                                        "y":  925,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  504
+                                    },
+                                    {
+                                        "y":  930,
+                                        "height":  14,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  554
+                                    },
+                                    {
+                                        "y":  925,
+                                        "height":  19,
+                                        "width":  72,
+                                        "text":  "basic",
+                                        "x":  591
+                                    },
+                                    {
+                                        "y":  925,
+                                        "height":  24,
+                                        "width":  209,
+                                        "text":  "gradient-based",
+                                        "x":  687
+                                    },
+                                    {
+                                        "y":  925,
+                                        "height":  19,
+                                        "width":  100,
+                                        "text":  "method.",
+                                        "x":  918
+                                    },
+                                    {
+                                        "y":  925,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "It",
+                                        "x":  1046
+                                    },
+                                    {
+                                        "y":  925,
+                                        "height":  24,
+                                        "width":  103,
+                                        "text":  "applies",
+                                        "x":  1097
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "convolution with two 3x3 kernels to calculate the gradient in the",
+                      "words":  [
+                                    {
+                                        "y":  962,
+                                        "height":  20,
+                                        "width":  163,
+                                        "text":  "convolution",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  962,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "with",
+                                        "x":  355
+                                    },
+                                    {
+                                        "y":  963,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "two",
+                                        "x":  435
+                                    },
+                                    {
+                                        "y":  963,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "3x3",
+                                        "x":  501
+                                    },
+                                    {
+                                        "y":  962,
+                                        "height":  20,
+                                        "width":  103,
+                                        "text":  "kernels",
+                                        "x":  568
+                                    },
+                                    {
+                                        "y":  963,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  692
+                                    },
+                                    {
+                                        "y":  962,
+                                        "height":  20,
+                                        "width":  134,
+                                        "text":  "calculate",
+                                        "x":  744
+                                    },
+                                    {
+                                        "y":  962,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  899
+                                    },
+                                    {
+                                        "y":  962,
+                                        "height":  24,
+                                        "width":  119,
+                                        "text":  "gradient",
+                                        "x":  965
+                                    },
+                                    {
+                                        "y":  962,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "in",
+                                        "x":  1107
+                                    },
+                                    {
+                                        "y":  962,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  1156
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "horizontal and vertical directions. The magnitude of the gradient",
+                      "words":  [
+                                    {
+                                        "y":  1000,
+                                        "height":  20,
+                                        "width":  148,
+                                        "text":  "horizontal",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1000,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  342
+                                    },
+                                    {
+                                        "y":  1000,
+                                        "height":  20,
+                                        "width":  117,
+                                        "text":  "vertical",
+                                        "x":  409
+                                    },
+                                    {
+                                        "y":  1000,
+                                        "height":  20,
+                                        "width":  161,
+                                        "text":  "directions.",
+                                        "x":  550
+                                    },
+                                    {
+                                        "y":  1000,
+                                        "height":  20,
+                                        "width":  45,
+                                        "text":  "The",
+                                        "x":  737
+                                    },
+                                    {
+                                        "y":  1000,
+                                        "height":  25,
+                                        "width":  133,
+                                        "text":  "magnitude",
+                                        "x":  805
+                                    },
+                                    {
+                                        "y":  1000,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  962
+                                    },
+                                    {
+                                        "y":  1000,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  1013
+                                    },
+                                    {
+                                        "y":  1000,
+                                        "height":  25,
+                                        "width":  119,
+                                        "text":  "gradient",
+                                        "x":  1081
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "represents the strength of the edge, and its direction indicates the",
+                      "words":  [
+                                    {
+                                        "y":  1038,
+                                        "height":  23,
+                                        "width":  148,
+                                        "text":  "represents",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1038,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  335
+                                    },
+                                    {
+                                        "y":  1038,
+                                        "height":  23,
+                                        "width":  117,
+                                        "text":  "strength",
+                                        "x":  397
+                                    },
+                                    {
+                                        "y":  1038,
+                                        "height":  19,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  533
+                                    },
+                                    {
+                                        "y":  1038,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  578
+                                    },
+                                    {
+                                        "y":  1038,
+                                        "height":  23,
+                                        "width":  69,
+                                        "text":  "edge,",
+                                        "x":  640
+                                    },
+                                    {
+                                        "y":  1038,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  731
+                                    },
+                                    {
+                                        "y":  1038,
+                                        "height":  19,
+                                        "width":  42,
+                                        "text":  "its",
+                                        "x":  793
+                                    },
+                                    {
+                                        "y":  1038,
+                                        "height":  19,
+                                        "width":  132,
+                                        "text":  "direction",
+                                        "x":  854
+                                    },
+                                    {
+                                        "y":  1038,
+                                        "height":  19,
+                                        "width":  133,
+                                        "text":  "indicates",
+                                        "x":  1006
+                                    },
+                                    {
+                                        "y":  1038,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  1156
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "edge\u0027s orientation.",
+                      "words":  [
+                                    {
+                                        "y":  1075,
+                                        "height":  24,
+                                        "width":  89,
+                                        "text":  "edge\u0027s",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1075,
+                                        "height":  19,
+                                        "width":  175,
+                                        "text":  "orientation.",
+                                        "x":  275
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "SOBEL EDGE DETECTION OPERATOR",
+                      "words":  [
+                                    {
+                                        "y":  1200,
+                                        "height":  25,
+                                        "width":  106,
+                                        "text":  "SOBEL",
+                                        "x":  392
+                                    },
+                                    {
+                                        "y":  1201,
+                                        "height":  24,
+                                        "width":  86,
+                                        "text":  "EDGE",
+                                        "x":  508
+                                    },
+                                    {
+                                        "y":  1200,
+                                        "height":  25,
+                                        "width":  185,
+                                        "text":  "DETECTION",
+                                        "x":  605
+                                    },
+                                    {
+                                        "y":  1201,
+                                        "height":  24,
+                                        "width":  175,
+                                        "text":  "OPERATOR",
+                                        "x":  801
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "INPUT",
+                      "words":  [
+                                    {
+                                        "y":  1283,
+                                        "height":  15,
+                                        "width":  48,
+                                        "text":  "INPUT",
+                                        "x":  283
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FAST NUCES -",
+                      "words":  [
+                                    {
+                                        "y":  1822,
+                                        "height":  17,
+                                        "width":  56,
+                                        "text":  "FAST",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1822,
+                                        "height":  17,
+                                        "width":  78,
+                                        "text":  "NUCES",
+                                        "x":  234
+                                    },
+                                    {
+                                        "y":  1830,
+                                        "height":  4,
+                                        "width":  11,
+                                        "text":  "-",
+                                        "x":  320
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "CONVOLUTION KERNELS",
+                      "words":  [
+                                    {
+                                        "y":  1283,
+                                        "height":  15,
+                                        "width":  114,
+                                        "text":  "CONVOLUTION",
+                                        "x":  472
+                                    },
+                                    {
+                                        "y":  1283,
+                                        "height":  15,
+                                        "width":  71,
+                                        "text":  "KERNELS",
+                                        "x":  591
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "G = GX2 + Gy2",
+                      "words":  [
+                                    {
+                                        "y":  1325,
+                                        "height":  17,
+                                        "width":  12,
+                                        "text":  "G",
+                                        "x":  501
+                                    },
+                                    {
+                                        "y":  1330,
+                                        "height":  8,
+                                        "width":  10,
+                                        "text":  "=",
+                                        "x":  519
+                                    },
+                                    {
+                                        "y":  1322,
+                                        "height":  20,
+                                        "width":  31,
+                                        "text":  "GX2",
+                                        "x":  549
+                                    },
+                                    {
+                                        "y":  1328,
+                                        "height":  12,
+                                        "width":  10,
+                                        "text":  "+",
+                                        "x":  585
+                                    },
+                                    {
+                                        "y":  1322,
+                                        "height":  24,
+                                        "width":  30,
+                                        "text":  "Gy2",
+                                        "x":  601
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "GRADIENT COMPONENTS",
+                      "words":  [
+                                    {
+                                        "y":  1283,
+                                        "height":  15,
+                                        "width":  80,
+                                        "text":  "GRADIENT",
+                                        "x":  728
+                                    },
+                                    {
+                                        "y":  1283,
+                                        "height":  15,
+                                        "width":  111,
+                                        "text":  "COMPONENTS",
+                                        "x":  812
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Karachi",
+                      "words":  [
+                                    {
+                                        "y":  1820,
+                                        "height":  19,
+                                        "width":  86,
+                                        "text":  "Karachi",
+                                        "x":  340
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Gy Output",
+                      "words":  [
+                                    {
+                                        "y":  1610,
+                                        "height":  15,
+                                        "width":  17,
+                                        "text":  "Gy",
+                                        "x":  793
+                                    },
+                                    {
+                                        "y":  1610,
+                                        "height":  15,
+                                        "width":  46,
+                                        "text":  "Output",
+                                        "x":  814
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Highlighting",
+                      "words":  [
+                                    {
+                                        "y":  1628,
+                                        "height":  13,
+                                        "width":  65,
+                                        "text":  "Highlighting",
+                                        "x":  794
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "horizontal edges",
+                      "words":  [
+                                    {
+                                        "y":  1642,
+                                        "height":  11,
+                                        "width":  54,
+                                        "text":  "horizontal",
+                                        "x":  781
+                                    },
+                                    {
+                                        "y":  1643,
+                                        "height":  12,
+                                        "width":  33,
+                                        "text":  "edges",
+                                        "x":  838
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1821,
+                                        "height":  18,
+                                        "width":  65,
+                                        "text":  "Talha",
+                                        "x":  607
+                                    },
+                                    {
+                                        "y":  1820,
+                                        "height":  19,
+                                        "width":  80,
+                                        "text":  "Shahid",
+                                        "x":  681
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FINAL MAGNITUDE",
+                      "words":  [
+                                    {
+                                        "y":  1283,
+                                        "height":  15,
+                                        "width":  46,
+                                        "text":  "FINAL",
+                                        "x":  978
+                                    },
+                                    {
+                                        "y":  1283,
+                                        "height":  15,
+                                        "width":  95,
+                                        "text":  "MAGNITUDE",
+                                        "x":  1029
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Final Edge Magnitude (G)",
+                      "words":  [
+                                    {
+                                        "y":  1564,
+                                        "height":  12,
+                                        "width":  32,
+                                        "text":  "Final",
+                                        "x":  966
+                                    },
+                                    {
+                                        "y":  1564,
+                                        "height":  15,
+                                        "width":  33,
+                                        "text":  "Edge",
+                                        "x":  1002
+                                    },
+                                    {
+                                        "y":  1563,
+                                        "height":  16,
+                                        "width":  72,
+                                        "text":  "Magnitude",
+                                        "x":  1040
+                                    },
+                                    {
+                                        "y":  1563,
+                                        "height":  16,
+                                        "width":  19,
+                                        "text":  "(G)",
+                                        "x":  1117
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "6",
+                      "words":  [
+                                    {
+                                        "y":  1822,
+                                        "height":  17,
+                                        "width":  12,
+                                        "text":  "6",
+                                        "x":  1189
+                                    }
+                                ]
+                  }
+              ]
+}

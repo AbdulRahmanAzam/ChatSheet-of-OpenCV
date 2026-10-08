@@ -1,0 +1,2024 @@
+﻿{
+    "id":  "lab_02_tasks_p004",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "Task 1: Diagnostic Enhancement of Chest X-Rays The Scenario: You are a junior computational researcher at a pulmonary imaging lab. The lab has acquired a massive dataset of chest X-rays to train a pneumonia-detection algorithm. However, many of the raw X-rays suffer from severe underexposure, making the lung cavities and potential fluid build-up nearly invisible. Your task is to mathematically process these single-channel matrices to maximize structural visibility before they are handed off to the diagnostic doctors. The Operations: • • • • • • Load and Display: Load a sample grayscale image from the dataset . Contrast Enhancement: Apply Histogram Equalization to the X-ray matrix to forcefully redistribute the pixel intensities. Compare the equalized matrix with the raw image to document the newly visible lung structures. Color Mapping: Convert the equalized grayscale image into a false-color heatmap using OpenCV\u0027s COLORMAP _ JET. Document how mapping intensity to a color spectrum helps the human eye detect subtle fluid boundaries. Color Balance: Simulate a lighting correction by applying a mathematical color balance shift to neutralize any artificial color casts in the visualization. Color Filtering (Thresholding): Because dense tissue (like bone or dense fluid) reflects specific high -intensity values, apply a strict mathematical threshold to mask out everything except the densest tissues. Logarithmic Transformation: Apply a logarithmic curve to a raw, underexposed X-ray to mathematically expand the dark background regions, revealing the faint outer edges of the ribcage . Power-Law Transformation (Gamma): Apply a fractional power- law transformation (y \u003c 1.0) to fine-tune the midtones, Talha Shahid 31 Page",
+    "review_status":  "raw_ocr_unverified",
+    "page":  4,
+    "source_id":  "lab_02_tasks",
+    "lines":  [
+                  {
+                      "text":  "Task 1: Diagnostic Enhancement of Chest X-Rays",
+                      "words":  [
+                                    {
+                                        "y":  178,
+                                        "height":  25,
+                                        "width":  76,
+                                        "text":  "Task",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  24,
+                                        "width":  32,
+                                        "text":  "1:",
+                                        "x":  266
+                                    },
+                                    {
+                                        "y":  178,
+                                        "height":  31,
+                                        "width":  189,
+                                        "text":  "Diagnostic",
+                                        "x":  324
+                                    },
+                                    {
+                                        "y":  178,
+                                        "height":  25,
+                                        "width":  207,
+                                        "text":  "Enhancement",
+                                        "x":  537
+                                    },
+                                    {
+                                        "y":  178,
+                                        "height":  25,
+                                        "width":  36,
+                                        "text":  "of",
+                                        "x":  766
+                                    },
+                                    {
+                                        "y":  178,
+                                        "height":  25,
+                                        "width":  93,
+                                        "text":  "Chest",
+                                        "x":  824
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  30,
+                                        "width":  113,
+                                        "text":  "X-Rays",
+                                        "x":  939
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The Scenario:",
+                      "words":  [
+                                    {
+                                        "y":  234,
+                                        "height":  22,
+                                        "width":  48,
+                                        "text":  "The",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  234,
+                                        "height":  22,
+                                        "width":  143,
+                                        "text":  "Scenario:",
+                                        "x":  235
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "You are a junior computational researcher at a pulmonary imaging",
+                      "words":  [
+                                    {
+                                        "y":  296,
+                                        "height":  20,
+                                        "width":  47,
+                                        "text":  "You",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  300,
+                                        "height":  16,
+                                        "width":  46,
+                                        "text":  "are",
+                                        "x":  234
+                                    },
+                                    {
+                                        "y":  300,
+                                        "height":  16,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  297
+                                    },
+                                    {
+                                        "y":  294,
+                                        "height":  26,
+                                        "width":  97,
+                                        "text":  "junior",
+                                        "x":  328
+                                    },
+                                    {
+                                        "y":  294,
+                                        "height":  26,
+                                        "width":  212,
+                                        "text":  "computational",
+                                        "x":  441
+                                    },
+                                    {
+                                        "y":  294,
+                                        "height":  22,
+                                        "width":  162,
+                                        "text":  "researcher",
+                                        "x":  670
+                                    },
+                                    {
+                                        "y":  296,
+                                        "height":  20,
+                                        "width":  30,
+                                        "text":  "at",
+                                        "x":  848
+                                    },
+                                    {
+                                        "y":  300,
+                                        "height":  16,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  895
+                                    },
+                                    {
+                                        "y":  294,
+                                        "height":  26,
+                                        "width":  146,
+                                        "text":  "pulmonary",
+                                        "x":  926
+                                    },
+                                    {
+                                        "y":  294,
+                                        "height":  27,
+                                        "width":  113,
+                                        "text":  "imaging",
+                                        "x":  1089
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "lab. The lab has acquired a massive dataset of chest X-rays to",
+                      "words":  [
+                                    {
+                                        "y":  335,
+                                        "height":  22,
+                                        "width":  58,
+                                        "text":  "lab.",
+                                        "x":  171
+                                    },
+                                    {
+                                        "y":  335,
+                                        "height":  22,
+                                        "width":  49,
+                                        "text":  "The",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  335,
+                                        "height":  22,
+                                        "width":  47,
+                                        "text":  "lab",
+                                        "x":  321
+                                    },
+                                    {
+                                        "y":  335,
+                                        "height":  22,
+                                        "width":  45,
+                                        "text":  "has",
+                                        "x":  389
+                                    },
+                                    {
+                                        "y":  335,
+                                        "height":  27,
+                                        "width":  129,
+                                        "text":  "acquired",
+                                        "x":  454
+                                    },
+                                    {
+                                        "y":  341,
+                                        "height":  16,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  604
+                                    },
+                                    {
+                                        "y":  335,
+                                        "height":  22,
+                                        "width":  112,
+                                        "text":  "massive",
+                                        "x":  638
+                                    },
+                                    {
+                                        "y":  335,
+                                        "height":  22,
+                                        "width":  113,
+                                        "text":  "dataset",
+                                        "x":  770
+                                    },
+                                    {
+                                        "y":  335,
+                                        "height":  22,
+                                        "width":  31,
+                                        "text":  "of",
+                                        "x":  903
+                                    },
+                                    {
+                                        "y":  335,
+                                        "height":  22,
+                                        "width":  78,
+                                        "text":  "chest",
+                                        "x":  955
+                                    },
+                                    {
+                                        "y":  336,
+                                        "height":  26,
+                                        "width":  98,
+                                        "text":  "X-rays",
+                                        "x":  1053
+                                    },
+                                    {
+                                        "y":  336,
+                                        "height":  21,
+                                        "width":  32,
+                                        "text":  "to",
+                                        "x":  1170
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "train a pneumonia-detection algorithm. However, many of the raw",
+                      "words":  [
+                                    {
+                                        "y":  376,
+                                        "height":  22,
+                                        "width":  80,
+                                        "text":  "train",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  382,
+                                        "height":  16,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  269
+                                    },
+                                    {
+                                        "y":  376,
+                                        "height":  27,
+                                        "width":  309,
+                                        "text":  "pneumonia-detection",
+                                        "x":  302
+                                    },
+                                    {
+                                        "y":  376,
+                                        "height":  27,
+                                        "width":  157,
+                                        "text":  "algorithm.",
+                                        "x":  630
+                                    },
+                                    {
+                                        "y":  377,
+                                        "height":  25,
+                                        "width":  125,
+                                        "text":  "However,",
+                                        "x":  811
+                                    },
+                                    {
+                                        "y":  382,
+                                        "height":  21,
+                                        "width":  64,
+                                        "text":  "many",
+                                        "x":  958
+                                    },
+                                    {
+                                        "y":  376,
+                                        "height":  22,
+                                        "width":  31,
+                                        "text":  "of",
+                                        "x":  1040
+                                    },
+                                    {
+                                        "y":  376,
+                                        "height":  22,
+                                        "width":  47,
+                                        "text":  "the",
+                                        "x":  1089
+                                    },
+                                    {
+                                        "y":  382,
+                                        "height":  16,
+                                        "width":  48,
+                                        "text":  "raw",
+                                        "x":  1155
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "X-rays suffer from severe underexposure, making the lung",
+                      "words":  [
+                                    {
+                                        "y":  419,
+                                        "height":  26,
+                                        "width":  97,
+                                        "text":  "X-rays",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  418,
+                                        "height":  22,
+                                        "width":  96,
+                                        "text":  "suffer",
+                                        "x":  302
+                                    },
+                                    {
+                                        "y":  418,
+                                        "height":  22,
+                                        "width":  64,
+                                        "text":  "from",
+                                        "x":  432
+                                    },
+                                    {
+                                        "y":  424,
+                                        "height":  16,
+                                        "width":  96,
+                                        "text":  "severe",
+                                        "x":  531
+                                    },
+                                    {
+                                        "y":  418,
+                                        "height":  27,
+                                        "width":  223,
+                                        "text":  "underexposure,",
+                                        "x":  663
+                                    },
+                                    {
+                                        "y":  418,
+                                        "height":  27,
+                                        "width":  98,
+                                        "text":  "making",
+                                        "x":  924
+                                    },
+                                    {
+                                        "y":  418,
+                                        "height":  22,
+                                        "width":  48,
+                                        "text":  "the",
+                                        "x":  1055
+                                    },
+                                    {
+                                        "y":  418,
+                                        "height":  27,
+                                        "width":  64,
+                                        "text":  "lung",
+                                        "x":  1138
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "cavities and potential fluid build-up nearly invisible. Your",
+                      "words":  [
+                                    {
+                                        "y":  460,
+                                        "height":  21,
+                                        "width":  128,
+                                        "text":  "cavities",
+                                        "x":  171
+                                    },
+                                    {
+                                        "y":  460,
+                                        "height":  21,
+                                        "width":  46,
+                                        "text":  "and",
+                                        "x":  325
+                                    },
+                                    {
+                                        "y":  460,
+                                        "height":  27,
+                                        "width":  145,
+                                        "text":  "potential",
+                                        "x":  398
+                                    },
+                                    {
+                                        "y":  460,
+                                        "height":  21,
+                                        "width":  79,
+                                        "text":  "fluid",
+                                        "x":  569
+                                    },
+                                    {
+                                        "y":  460,
+                                        "height":  27,
+                                        "width":  129,
+                                        "text":  "build-up",
+                                        "x":  674
+                                    },
+                                    {
+                                        "y":  460,
+                                        "height":  27,
+                                        "width":  95,
+                                        "text":  "nearly",
+                                        "x":  829
+                                    },
+                                    {
+                                        "y":  460,
+                                        "height":  21,
+                                        "width":  157,
+                                        "text":  "invisible.",
+                                        "x":  951
+                                    },
+                                    {
+                                        "y":  461,
+                                        "height":  20,
+                                        "width":  65,
+                                        "text":  "Your",
+                                        "x":  1137
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "task is to mathematically process these single-channel matrices",
+                      "words":  [
+                                    {
+                                        "y":  501,
+                                        "height":  22,
+                                        "width":  65,
+                                        "text":  "task",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  501,
+                                        "height":  22,
+                                        "width":  29,
+                                        "text":  "is",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  502,
+                                        "height":  21,
+                                        "width":  31,
+                                        "text":  "to",
+                                        "x":  300
+                                    },
+                                    {
+                                        "y":  501,
+                                        "height":  27,
+                                        "width":  229,
+                                        "text":  "mathematically",
+                                        "x":  349
+                                    },
+                                    {
+                                        "y":  507,
+                                        "height":  21,
+                                        "width":  110,
+                                        "text":  "process",
+                                        "x":  597
+                                    },
+                                    {
+                                        "y":  501,
+                                        "height":  22,
+                                        "width":  80,
+                                        "text":  "these",
+                                        "x":  726
+                                    },
+                                    {
+                                        "y":  501,
+                                        "height":  27,
+                                        "width":  228,
+                                        "text":  "single-channel",
+                                        "x":  825
+                                    },
+                                    {
+                                        "y":  501,
+                                        "height":  22,
+                                        "width":  129,
+                                        "text":  "matrices",
+                                        "x":  1072
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "to maximize structural visibility before they are handed off to",
+                      "words":  [
+                                    {
+                                        "y":  544,
+                                        "height":  20,
+                                        "width":  31,
+                                        "text":  "to",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  543,
+                                        "height":  21,
+                                        "width":  129,
+                                        "text":  "maximize",
+                                        "x":  219
+                                    },
+                                    {
+                                        "y":  543,
+                                        "height":  21,
+                                        "width":  162,
+                                        "text":  "structural",
+                                        "x":  367
+                                    },
+                                    {
+                                        "y":  543,
+                                        "height":  26,
+                                        "width":  161,
+                                        "text":  "visibility",
+                                        "x":  548
+                                    },
+                                    {
+                                        "y":  543,
+                                        "height":  21,
+                                        "width":  95,
+                                        "text":  "before",
+                                        "x":  729
+                                    },
+                                    {
+                                        "y":  543,
+                                        "height":  26,
+                                        "width":  65,
+                                        "text":  "they",
+                                        "x":  842
+                                    },
+                                    {
+                                        "y":  548,
+                                        "height":  16,
+                                        "width":  47,
+                                        "text":  "are",
+                                        "x":  925
+                                    },
+                                    {
+                                        "y":  543,
+                                        "height":  21,
+                                        "width":  95,
+                                        "text":  "handed",
+                                        "x":  991
+                                    },
+                                    {
+                                        "y":  543,
+                                        "height":  21,
+                                        "width":  47,
+                                        "text":  "off",
+                                        "x":  1106
+                                    },
+                                    {
+                                        "y":  544,
+                                        "height":  20,
+                                        "width":  31,
+                                        "text":  "to",
+                                        "x":  1171
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "the diagnostic doctors.",
+                      "words":  [
+                                    {
+                                        "y":  584,
+                                        "height":  22,
+                                        "width":  48,
+                                        "text":  "the",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  584,
+                                        "height":  27,
+                                        "width":  162,
+                                        "text":  "diagnostic",
+                                        "x":  236
+                                    },
+                                    {
+                                        "y":  584,
+                                        "height":  22,
+                                        "width":  126,
+                                        "text":  "doctors.",
+                                        "x":  417
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The Operations:",
+                      "words":  [
+                                    {
+                                        "y":  643,
+                                        "height":  22,
+                                        "width":  48,
+                                        "text":  "The",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  643,
+                                        "height":  27,
+                                        "width":  176,
+                                        "text":  "Operations:",
+                                        "x":  235
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "•",
+                      "words":  [
+                                    {
+                                        "y":  713,
+                                        "height":  9,
+                                        "width":  9,
+                                        "text":  "•",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "•",
+                      "words":  [
+                                    {
+                                        "y":  814,
+                                        "height":  9,
+                                        "width":  9,
+                                        "text":  "•",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "•",
+                      "words":  [
+                                    {
+                                        "y":  997,
+                                        "height":  9,
+                                        "width":  9,
+                                        "text":  "•",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "•",
+                      "words":  [
+                                    {
+                                        "y":  1323,
+                                        "height":  9,
+                                        "width":  9,
+                                        "text":  "•",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "•",
+                      "words":  [
+                                    {
+                                        "y":  1508,
+                                        "height":  9,
+                                        "width":  9,
+                                        "text":  "•",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "•",
+                      "words":  [
+                                    {
+                                        "y":  1691,
+                                        "height":  9,
+                                        "width":  9,
+                                        "text":  "•",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Load and Display: Load a sample grayscale image from the",
+                      "words":  [
+                                    {
+                                        "y":  703,
+                                        "height":  22,
+                                        "width":  63,
+                                        "text":  "Load",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  703,
+                                        "height":  22,
+                                        "width":  47,
+                                        "text":  "and",
+                                        "x":  338
+                                    },
+                                    {
+                                        "y":  703,
+                                        "height":  27,
+                                        "width":  126,
+                                        "text":  "Display:",
+                                        "x":  407
+                                    },
+                                    {
+                                        "y":  703,
+                                        "height":  22,
+                                        "width":  61,
+                                        "text":  "Load",
+                                        "x":  560
+                                    },
+                                    {
+                                        "y":  709,
+                                        "height":  16,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  644
+                                    },
+                                    {
+                                        "y":  703,
+                                        "height":  27,
+                                        "width":  96,
+                                        "text":  "sample",
+                                        "x":  680
+                                    },
+                                    {
+                                        "y":  703,
+                                        "height":  27,
+                                        "width":  146,
+                                        "text":  "grayscale",
+                                        "x":  798
+                                    },
+                                    {
+                                        "y":  703,
+                                        "height":  27,
+                                        "width":  79,
+                                        "text":  "image",
+                                        "x":  967
+                                    },
+                                    {
+                                        "y":  703,
+                                        "height":  22,
+                                        "width":  63,
+                                        "text":  "from",
+                                        "x":  1069
+                                    },
+                                    {
+                                        "y":  703,
+                                        "height":  22,
+                                        "width":  48,
+                                        "text":  "the",
+                                        "x":  1153
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "dataset .",
+                      "words":  [
+                                    {
+                                        "y":  744,
+                                        "height":  22,
+                                        "width":  113,
+                                        "text":  "dataset",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  761,
+                                        "height":  5,
+                                        "width":  6,
+                                        "text":  ".",
+                                        "x":  372
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Contrast Enhancement: Apply Histogram Equalization to the",
+                      "words":  [
+                                    {
+                                        "y":  805,
+                                        "height":  21,
+                                        "width":  130,
+                                        "text":  "Contrast",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  804,
+                                        "height":  22,
+                                        "width":  192,
+                                        "text":  "Enhancement:",
+                                        "x":  403
+                                    },
+                                    {
+                                        "y":  804,
+                                        "height":  27,
+                                        "width":  79,
+                                        "text":  "Apply",
+                                        "x":  619
+                                    },
+                                    {
+                                        "y":  804,
+                                        "height":  27,
+                                        "width":  146,
+                                        "text":  "Histogram",
+                                        "x":  720
+                                    },
+                                    {
+                                        "y":  804,
+                                        "height":  27,
+                                        "width":  195,
+                                        "text":  "Equalization",
+                                        "x":  887
+                                    },
+                                    {
+                                        "y":  805,
+                                        "height":  21,
+                                        "width":  32,
+                                        "text":  "to",
+                                        "x":  1102
+                                    },
+                                    {
+                                        "y":  804,
+                                        "height":  22,
+                                        "width":  48,
+                                        "text":  "the",
+                                        "x":  1154
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "X-ray matrix to forcefully redistribute the pixel",
+                      "words":  [
+                                    {
+                                        "y":  847,
+                                        "height":  25,
+                                        "width":  80,
+                                        "text":  "X-ray",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  846,
+                                        "height":  21,
+                                        "width":  97,
+                                        "text":  "matrix",
+                                        "x":  375
+                                    },
+                                    {
+                                        "y":  847,
+                                        "height":  20,
+                                        "width":  31,
+                                        "text":  "to",
+                                        "x":  514
+                                    },
+                                    {
+                                        "y":  846,
+                                        "height":  26,
+                                        "width":  162,
+                                        "text":  "forcefully",
+                                        "x":  588
+                                    },
+                                    {
+                                        "y":  846,
+                                        "height":  21,
+                                        "width":  195,
+                                        "text":  "redistribute",
+                                        "x":  793
+                                    },
+                                    {
+                                        "y":  846,
+                                        "height":  21,
+                                        "width":  48,
+                                        "text":  "the",
+                                        "x":  1031
+                                    },
+                                    {
+                                        "y":  846,
+                                        "height":  26,
+                                        "width":  79,
+                                        "text":  "pixel",
+                                        "x":  1122
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "intensities. Compare the equalized matrix with the raw",
+                      "words":  [
+                                    {
+                                        "y":  887,
+                                        "height":  22,
+                                        "width":  189,
+                                        "text":  "intensities.",
+                                        "x":  254
+                                    },
+                                    {
+                                        "y":  888,
+                                        "height":  26,
+                                        "width":  113,
+                                        "text":  "Compare",
+                                        "x":  476
+                                    },
+                                    {
+                                        "y":  887,
+                                        "height":  22,
+                                        "width":  47,
+                                        "text":  "the",
+                                        "x":  616
+                                    },
+                                    {
+                                        "y":  887,
+                                        "height":  27,
+                                        "width":  145,
+                                        "text":  "equalized",
+                                        "x":  690
+                                    },
+                                    {
+                                        "y":  887,
+                                        "height":  21,
+                                        "width":  96,
+                                        "text":  "matrix",
+                                        "x":  864
+                                    },
+                                    {
+                                        "y":  887,
+                                        "height":  21,
+                                        "width":  63,
+                                        "text":  "with",
+                                        "x":  988
+                                    },
+                                    {
+                                        "y":  887,
+                                        "height":  22,
+                                        "width":  48,
+                                        "text":  "the",
+                                        "x":  1079
+                                    },
+                                    {
+                                        "y":  893,
+                                        "height":  16,
+                                        "width":  47,
+                                        "text":  "raw",
+                                        "x":  1155
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "image to document the newly visible lung structures.",
+                      "words":  [
+                                    {
+                                        "y":  928,
+                                        "height":  27,
+                                        "width":  78,
+                                        "text":  "image",
+                                        "x":  254
+                                    },
+                                    {
+                                        "y":  930,
+                                        "height":  20,
+                                        "width":  31,
+                                        "text":  "to",
+                                        "x":  351
+                                    },
+                                    {
+                                        "y":  929,
+                                        "height":  21,
+                                        "width":  129,
+                                        "text":  "document",
+                                        "x":  401
+                                    },
+                                    {
+                                        "y":  929,
+                                        "height":  21,
+                                        "width":  47,
+                                        "text":  "the",
+                                        "x":  549
+                                    },
+                                    {
+                                        "y":  928,
+                                        "height":  26,
+                                        "width":  79,
+                                        "text":  "newly",
+                                        "x":  616
+                                    },
+                                    {
+                                        "y":  928,
+                                        "height":  22,
+                                        "width":  113,
+                                        "text":  "visible",
+                                        "x":  714
+                                    },
+                                    {
+                                        "y":  928,
+                                        "height":  27,
+                                        "width":  64,
+                                        "text":  "lung",
+                                        "x":  846
+                                    },
+                                    {
+                                        "y":  930,
+                                        "height":  20,
+                                        "width":  174,
+                                        "text":  "structures.",
+                                        "x":  929
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Color Mapping: Convert the equalized grayscale image into",
+                      "words":  [
+                                    {
+                                        "y":  987,
+                                        "height":  22,
+                                        "width":  81,
+                                        "text":  "Color",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  987,
+                                        "height":  27,
+                                        "width":  127,
+                                        "text":  "Mapping:",
+                                        "x":  352
+                                    },
+                                    {
+                                        "y":  988,
+                                        "height":  21,
+                                        "width":  113,
+                                        "text":  "Convert",
+                                        "x":  503
+                                    },
+                                    {
+                                        "y":  987,
+                                        "height":  22,
+                                        "width":  47,
+                                        "text":  "the",
+                                        "x":  636
+                                    },
+                                    {
+                                        "y":  987,
+                                        "height":  27,
+                                        "width":  145,
+                                        "text":  "equalized",
+                                        "x":  704
+                                    },
+                                    {
+                                        "y":  987,
+                                        "height":  28,
+                                        "width":  146,
+                                        "text":  "grayscale",
+                                        "x":  871
+                                    },
+                                    {
+                                        "y":  987,
+                                        "height":  28,
+                                        "width":  78,
+                                        "text":  "image",
+                                        "x":  1039
+                                    },
+                                    {
+                                        "y":  987,
+                                        "height":  22,
+                                        "width":  63,
+                                        "text":  "into",
+                                        "x":  1139
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "a false-color heatmap using OpenCV\u0027s COLORMAP _ JET. Document",
+                      "words":  [
+                                    {
+                                        "y":  1035,
+                                        "height":  16,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  1029,
+                                        "height":  22,
+                                        "width":  180,
+                                        "text":  "false-color",
+                                        "x":  282
+                                    },
+                                    {
+                                        "y":  1029,
+                                        "height":  27,
+                                        "width":  112,
+                                        "text":  "heatmap",
+                                        "x":  477
+                                    },
+                                    {
+                                        "y":  1029,
+                                        "height":  27,
+                                        "width":  79,
+                                        "text":  "using",
+                                        "x":  605
+                                    },
+                                    {
+                                        "y":  1029,
+                                        "height":  27,
+                                        "width":  129,
+                                        "text":  "OpenCV\u0027s",
+                                        "x":  699
+                                    },
+                                    {
+                                        "y":  1030,
+                                        "height":  21,
+                                        "width":  129,
+                                        "text":  "COLORMAP",
+                                        "x":  845
+                                    },
+                                    {
+                                        "y":  1052,
+                                        "height":  3,
+                                        "width":  14,
+                                        "text":  "_",
+                                        "x":  977
+                                    },
+                                    {
+                                        "y":  1030,
+                                        "height":  21,
+                                        "width":  58,
+                                        "text":  "JET.",
+                                        "x":  994
+                                    },
+                                    {
+                                        "y":  1030,
+                                        "height":  21,
+                                        "width":  128,
+                                        "text":  "Document",
+                                        "x":  1073
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "how mapping intensity to a color spectrum helps the human",
+                      "words":  [
+                                    {
+                                        "y":  1070,
+                                        "height":  22,
+                                        "width":  47,
+                                        "text":  "how",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  1070,
+                                        "height":  27,
+                                        "width":  113,
+                                        "text":  "mapping",
+                                        "x":  320
+                                    },
+                                    {
+                                        "y":  1070,
+                                        "height":  27,
+                                        "width":  145,
+                                        "text":  "intensity",
+                                        "x":  454
+                                    },
+                                    {
+                                        "y":  1071,
+                                        "height":  21,
+                                        "width":  32,
+                                        "text":  "to",
+                                        "x":  618
+                                    },
+                                    {
+                                        "y":  1076,
+                                        "height":  16,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  670
+                                    },
+                                    {
+                                        "y":  1070,
+                                        "height":  22,
+                                        "width":  80,
+                                        "text":  "color",
+                                        "x":  704
+                                    },
+                                    {
+                                        "y":  1071,
+                                        "height":  26,
+                                        "width":  130,
+                                        "text":  "spectrum",
+                                        "x":  804
+                                    },
+                                    {
+                                        "y":  1070,
+                                        "height":  27,
+                                        "width":  78,
+                                        "text":  "helps",
+                                        "x":  955
+                                    },
+                                    {
+                                        "y":  1070,
+                                        "height":  22,
+                                        "width":  48,
+                                        "text":  "the",
+                                        "x":  1053
+                                    },
+                                    {
+                                        "y":  1070,
+                                        "height":  22,
+                                        "width":  79,
+                                        "text":  "human",
+                                        "x":  1122
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "eye detect subtle fluid boundaries.",
+                      "words":  [
+                                    {
+                                        "y":  1118,
+                                        "height":  21,
+                                        "width":  46,
+                                        "text":  "eye",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  1112,
+                                        "height":  22,
+                                        "width":  97,
+                                        "text":  "detect",
+                                        "x":  318
+                                    },
+                                    {
+                                        "y":  1112,
+                                        "height":  22,
+                                        "width":  96,
+                                        "text":  "subtle",
+                                        "x":  434
+                                    },
+                                    {
+                                        "y":  1112,
+                                        "height":  22,
+                                        "width":  78,
+                                        "text":  "fluid",
+                                        "x":  550
+                                    },
+                                    {
+                                        "y":  1112,
+                                        "height":  22,
+                                        "width":  173,
+                                        "text":  "boundaries.",
+                                        "x":  649
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Color Balance: Simulate a lighting correction by applying",
+                      "words":  [
+                                    {
+                                        "y":  1172,
+                                        "height":  21,
+                                        "width":  81,
+                                        "text":  "Color",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1172,
+                                        "height":  21,
+                                        "width":  126,
+                                        "text":  "Balance:",
+                                        "x":  353
+                                    },
+                                    {
+                                        "y":  1172,
+                                        "height":  21,
+                                        "width":  130,
+                                        "text":  "Simulate",
+                                        "x":  503
+                                    },
+                                    {
+                                        "y":  1178,
+                                        "height":  15,
+                                        "width":  15,
+                                        "text":  "a",
+                                        "x":  653
+                                    },
+                                    {
+                                        "y":  1172,
+                                        "height":  27,
+                                        "width":  129,
+                                        "text":  "lighting",
+                                        "x":  688
+                                    },
+                                    {
+                                        "y":  1172,
+                                        "height":  21,
+                                        "width":  161,
+                                        "text":  "correction",
+                                        "x":  838
+                                    },
+                                    {
+                                        "y":  1172,
+                                        "height":  27,
+                                        "width":  29,
+                                        "text":  "by",
+                                        "x":  1022
+                                    },
+                                    {
+                                        "y":  1172,
+                                        "height":  27,
+                                        "width":  130,
+                                        "text":  "applying",
+                                        "x":  1072
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "a mathematical color balance shift to neutralize any",
+                      "words":  [
+                                    {
+                                        "y":  1219,
+                                        "height":  16,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  1213,
+                                        "height":  22,
+                                        "width":  195,
+                                        "text":  "mathematical",
+                                        "x":  299
+                                    },
+                                    {
+                                        "y":  1213,
+                                        "height":  22,
+                                        "width":  80,
+                                        "text":  "color",
+                                        "x":  527
+                                    },
+                                    {
+                                        "y":  1213,
+                                        "height":  22,
+                                        "width":  111,
+                                        "text":  "balance",
+                                        "x":  640
+                                    },
+                                    {
+                                        "y":  1213,
+                                        "height":  22,
+                                        "width":  79,
+                                        "text":  "shift",
+                                        "x":  784
+                                    },
+                                    {
+                                        "y":  1214,
+                                        "height":  21,
+                                        "width":  31,
+                                        "text":  "to",
+                                        "x":  895
+                                    },
+                                    {
+                                        "y":  1213,
+                                        "height":  22,
+                                        "width":  162,
+                                        "text":  "neutralize",
+                                        "x":  960
+                                    },
+                                    {
+                                        "y":  1219,
+                                        "height":  21,
+                                        "width":  47,
+                                        "text":  "any",
+                                        "x":  1154
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "artificial color casts in the visualization.",
+                      "words":  [
+                                    {
+                                        "y":  1255,
+                                        "height":  20,
+                                        "width":  162,
+                                        "text":  "artificial",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  1255,
+                                        "height":  20,
+                                        "width":  81,
+                                        "text":  "color",
+                                        "x":  434
+                                    },
+                                    {
+                                        "y":  1256,
+                                        "height":  19,
+                                        "width":  78,
+                                        "text":  "casts",
+                                        "x":  534
+                                    },
+                                    {
+                                        "y":  1255,
+                                        "height":  20,
+                                        "width":  29,
+                                        "text":  "in",
+                                        "x":  633
+                                    },
+                                    {
+                                        "y":  1255,
+                                        "height":  20,
+                                        "width":  47,
+                                        "text":  "the",
+                                        "x":  681
+                                    },
+                                    {
+                                        "y":  1255,
+                                        "height":  20,
+                                        "width":  224,
+                                        "text":  "visualization.",
+                                        "x":  747
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Color Filtering (Thresholding): Because dense tissue (like",
+                      "words":  [
+                                    {
+                                        "y":  1313,
+                                        "height":  22,
+                                        "width":  81,
+                                        "text":  "Color",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1313,
+                                        "height":  28,
+                                        "width":  147,
+                                        "text":  "Filtering",
+                                        "x":  351
+                                    },
+                                    {
+                                        "y":  1313,
+                                        "height":  28,
+                                        "width":  238,
+                                        "text":  "(Thresholding):",
+                                        "x":  518
+                                    },
+                                    {
+                                        "y":  1315,
+                                        "height":  20,
+                                        "width":  112,
+                                        "text":  "Because",
+                                        "x":  778
+                                    },
+                                    {
+                                        "y":  1313,
+                                        "height":  22,
+                                        "width":  80,
+                                        "text":  "dense",
+                                        "x":  909
+                                    },
+                                    {
+                                        "y":  1313,
+                                        "height":  22,
+                                        "width":  97,
+                                        "text":  "tissue",
+                                        "x":  1006
+                                    },
+                                    {
+                                        "y":  1313,
+                                        "height":  25,
+                                        "width":  76,
+                                        "text":  "(like",
+                                        "x":  1126
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "bone or dense fluid) reflects specific high -intensity",
+                      "words":  [
+                                    {
+                                        "y":  1355,
+                                        "height":  22,
+                                        "width":  63,
+                                        "text":  "bone",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  1361,
+                                        "height":  16,
+                                        "width":  31,
+                                        "text":  "or",
+                                        "x":  348
+                                    },
+                                    {
+                                        "y":  1355,
+                                        "height":  22,
+                                        "width":  80,
+                                        "text":  "dense",
+                                        "x":  410
+                                    },
+                                    {
+                                        "y":  1355,
+                                        "height":  25,
+                                        "width":  93,
+                                        "text":  "fluid)",
+                                        "x":  522
+                                    },
+                                    {
+                                        "y":  1355,
+                                        "height":  22,
+                                        "width":  128,
+                                        "text":  "reflects",
+                                        "x":  651
+                                    },
+                                    {
+                                        "y":  1355,
+                                        "height":  27,
+                                        "width":  129,
+                                        "text":  "specific",
+                                        "x":  811
+                                    },
+                                    {
+                                        "y":  1355,
+                                        "height":  27,
+                                        "width":  62,
+                                        "text":  "high",
+                                        "x":  973
+                                    },
+                                    {
+                                        "y":  1355,
+                                        "height":  27,
+                                        "width":  160,
+                                        "text":  "-intensity",
+                                        "x":  1042
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "values, apply a strict mathematical threshold to mask out",
+                      "words":  [
+                                    {
+                                        "y":  1396,
+                                        "height":  25,
+                                        "width":  108,
+                                        "text":  "values,",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  1396,
+                                        "height":  27,
+                                        "width":  80,
+                                        "text":  "apply",
+                                        "x":  386
+                                    },
+                                    {
+                                        "y":  1402,
+                                        "height":  16,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  486
+                                    },
+                                    {
+                                        "y":  1396,
+                                        "height":  22,
+                                        "width":  96,
+                                        "text":  "strict",
+                                        "x":  521
+                                    },
+                                    {
+                                        "y":  1396,
+                                        "height":  22,
+                                        "width":  195,
+                                        "text":  "mathematical",
+                                        "x":  637
+                                    },
+                                    {
+                                        "y":  1396,
+                                        "height":  22,
+                                        "width":  146,
+                                        "text":  "threshold",
+                                        "x":  852
+                                    },
+                                    {
+                                        "y":  1398,
+                                        "height":  20,
+                                        "width":  31,
+                                        "text":  "to",
+                                        "x":  1018
+                                    },
+                                    {
+                                        "y":  1396,
+                                        "height":  22,
+                                        "width":  64,
+                                        "text":  "mask",
+                                        "x":  1070
+                                    },
+                                    {
+                                        "y":  1398,
+                                        "height":  20,
+                                        "width":  47,
+                                        "text":  "out",
+                                        "x":  1154
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "everything except the densest tissues.",
+                      "words":  [
+                                    {
+                                        "y":  1438,
+                                        "height":  27,
+                                        "width":  163,
+                                        "text":  "everything",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  1439,
+                                        "height":  26,
+                                        "width":  96,
+                                        "text":  "except",
+                                        "x":  434
+                                    },
+                                    {
+                                        "y":  1438,
+                                        "height":  22,
+                                        "width":  47,
+                                        "text":  "the",
+                                        "x":  549
+                                    },
+                                    {
+                                        "y":  1438,
+                                        "height":  22,
+                                        "width":  112,
+                                        "text":  "densest",
+                                        "x":  615
+                                    },
+                                    {
+                                        "y":  1438,
+                                        "height":  22,
+                                        "width":  126,
+                                        "text":  "tissues.",
+                                        "x":  746
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Logarithmic Transformation: Apply a logarithmic curve to a",
+                      "words":  [
+                                    {
+                                        "y":  1498,
+                                        "height":  27,
+                                        "width":  178,
+                                        "text":  "Logarithmic",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  1498,
+                                        "height":  22,
+                                        "width":  241,
+                                        "text":  "Transformation:",
+                                        "x":  449
+                                    },
+                                    {
+                                        "y":  1498,
+                                        "height":  27,
+                                        "width":  81,
+                                        "text":  "Apply",
+                                        "x":  711
+                                    },
+                                    {
+                                        "y":  1504,
+                                        "height":  16,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  811
+                                    },
+                                    {
+                                        "y":  1498,
+                                        "height":  27,
+                                        "width":  178,
+                                        "text":  "logarithmic",
+                                        "x":  843
+                                    },
+                                    {
+                                        "y":  1504,
+                                        "height":  16,
+                                        "width":  79,
+                                        "text":  "curve",
+                                        "x":  1041
+                                    },
+                                    {
+                                        "y":  1499,
+                                        "height":  21,
+                                        "width":  31,
+                                        "text":  "to",
+                                        "x":  1138
+                                    },
+                                    {
+                                        "y":  1504,
+                                        "height":  16,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  1188
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "raw, underexposed X-ray to mathematically expand the dark",
+                      "words":  [
+                                    {
+                                        "y":  1545,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "raw,",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  1540,
+                                        "height":  26,
+                                        "width":  194,
+                                        "text":  "underexposed",
+                                        "x":  337
+                                    },
+                                    {
+                                        "y":  1541,
+                                        "height":  25,
+                                        "width":  81,
+                                        "text":  "X-ray",
+                                        "x":  552
+                                    },
+                                    {
+                                        "y":  1541,
+                                        "height":  20,
+                                        "width":  30,
+                                        "text":  "to",
+                                        "x":  653
+                                    },
+                                    {
+                                        "y":  1540,
+                                        "height":  26,
+                                        "width":  229,
+                                        "text":  "mathematically",
+                                        "x":  703
+                                    },
+                                    {
+                                        "y":  1540,
+                                        "height":  26,
+                                        "width":  96,
+                                        "text":  "expand",
+                                        "x":  953
+                                    },
+                                    {
+                                        "y":  1540,
+                                        "height":  21,
+                                        "width":  47,
+                                        "text":  "the",
+                                        "x":  1070
+                                    },
+                                    {
+                                        "y":  1540,
+                                        "height":  21,
+                                        "width":  64,
+                                        "text":  "dark",
+                                        "x":  1138
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "background regions, revealing the faint outer edges of the",
+                      "words":  [
+                                    {
+                                        "y":  1581,
+                                        "height":  26,
+                                        "width":  161,
+                                        "text":  "background",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  1581,
+                                        "height":  26,
+                                        "width":  125,
+                                        "text":  "regions,",
+                                        "x":  434
+                                    },
+                                    {
+                                        "y":  1581,
+                                        "height":  26,
+                                        "width":  145,
+                                        "text":  "revealing",
+                                        "x":  582
+                                    },
+                                    {
+                                        "y":  1581,
+                                        "height":  20,
+                                        "width":  48,
+                                        "text":  "the",
+                                        "x":  744
+                                    },
+                                    {
+                                        "y":  1581,
+                                        "height":  20,
+                                        "width":  80,
+                                        "text":  "faint",
+                                        "x":  810
+                                    },
+                                    {
+                                        "y":  1582,
+                                        "height":  19,
+                                        "width":  81,
+                                        "text":  "outer",
+                                        "x":  909
+                                    },
+                                    {
+                                        "y":  1581,
+                                        "height":  26,
+                                        "width":  80,
+                                        "text":  "edges",
+                                        "x":  1007
+                                    },
+                                    {
+                                        "y":  1581,
+                                        "height":  20,
+                                        "width":  31,
+                                        "text":  "of",
+                                        "x":  1106
+                                    },
+                                    {
+                                        "y":  1581,
+                                        "height":  20,
+                                        "width":  48,
+                                        "text":  "the",
+                                        "x":  1154
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ribcage .",
+                      "words":  [
+                                    {
+                                        "y":  1621,
+                                        "height":  28,
+                                        "width":  112,
+                                        "text":  "ribcage",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  1638,
+                                        "height":  5,
+                                        "width":  6,
+                                        "text":  ".",
+                                        "x":  372
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Power-Law Transformation (Gamma): Apply a fractional power-",
+                      "words":  [
+                                    {
+                                        "y":  1682,
+                                        "height":  21,
+                                        "width":  147,
+                                        "text":  "Power-Law",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  1681,
+                                        "height":  22,
+                                        "width":  229,
+                                        "text":  "Transformation",
+                                        "x":  413
+                                    },
+                                    {
+                                        "y":  1681,
+                                        "height":  25,
+                                        "width":  122,
+                                        "text":  "(Gamma):",
+                                        "x":  661
+                                    },
+                                    {
+                                        "y":  1681,
+                                        "height":  27,
+                                        "width":  81,
+                                        "text":  "Apply",
+                                        "x":  801
+                                    },
+                                    {
+                                        "y":  1687,
+                                        "height":  16,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  898
+                                    },
+                                    {
+                                        "y":  1681,
+                                        "height":  22,
+                                        "width":  162,
+                                        "text":  "fractional",
+                                        "x":  927
+                                    },
+                                    {
+                                        "y":  1687,
+                                        "height":  21,
+                                        "width":  94,
+                                        "text":  "power-",
+                                        "x":  1106
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "law transformation (y \u003c 1.0) to fine-tune the midtones,",
+                      "words":  [
+                                    {
+                                        "y":  1723,
+                                        "height":  22,
+                                        "width":  47,
+                                        "text":  "law",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  1723,
+                                        "height":  22,
+                                        "width":  228,
+                                        "text":  "transformation",
+                                        "x":  328
+                                    },
+                                    {
+                                        "y":  1722,
+                                        "height":  28,
+                                        "width":  26,
+                                        "text":  "(y",
+                                        "x":  590
+                                    },
+                                    {
+                                        "y":  1727,
+                                        "height":  18,
+                                        "width":  18,
+                                        "text":  "\u003c",
+                                        "x":  632
+                                    },
+                                    {
+                                        "y":  1722,
+                                        "height":  26,
+                                        "width":  44,
+                                        "text":  "1.0)",
+                                        "x":  667
+                                    },
+                                    {
+                                        "y":  1724,
+                                        "height":  21,
+                                        "width":  31,
+                                        "text":  "to",
+                                        "x":  744
+                                    },
+                                    {
+                                        "y":  1723,
+                                        "height":  22,
+                                        "width":  145,
+                                        "text":  "fine-tune",
+                                        "x":  805
+                                    },
+                                    {
+                                        "y":  1723,
+                                        "height":  22,
+                                        "width":  48,
+                                        "text":  "the",
+                                        "x":  978
+                                    },
+                                    {
+                                        "y":  1723,
+                                        "height":  25,
+                                        "width":  142,
+                                        "text":  "midtones,",
+                                        "x":  1055
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1825,
+                                        "height":  19,
+                                        "width":  69,
+                                        "text":  "Talha",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1823,
+                                        "height":  21,
+                                        "width":  88,
+                                        "text":  "Shahid",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "31",
+                      "words":  [
+                                    {
+                                        "y":  1824,
+                                        "height":  25,
+                                        "width":  29,
+                                        "text":  "31",
+                                        "x":  1072
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Page",
+                      "words":  [
+                                    {
+                                        "y":  1826,
+                                        "height":  24,
+                                        "width":  84,
+                                        "text":  "Page",
+                                        "x":  1112
+                                    }
+                                ]
+                  }
+              ]
+}

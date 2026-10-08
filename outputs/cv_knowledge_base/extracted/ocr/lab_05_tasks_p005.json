@@ -1,0 +1,1297 @@
+﻿{
+    "id":  "lab_05_tasks_p005",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "Task 5 — Detecting the Boundary of a Manufactured Part A factory camera must identify the boundary of a mechanical component before its shape is analyzed. The system does not need to keep the interior of the object; it needs to highlight rapid changes intensity corresponding to boundaries. The camera images contain both strong and weak edges. Your Task Choose a suitable object image and perform Canny edge detection. Test at least: One low/ high threshold pair A second low/high threshold pair • A third low/ high threshold pair For example, investigate what happens when the increased while the low threshold remains fixed . Required Output Produce: high threshold in is Original Edge Result 1 Edge Result 2 + Edge Result 3 Then identify: • Strong edges • Weak edges • Missing edges Unwanted edges Explain how changing the two thresholds changes the final result. Your implementation should use the two-threshold hysteresis concept described in the manual. Talha Shahid 51 Page",
+    "review_status":  "raw_ocr_unverified",
+    "page":  5,
+    "source_id":  "lab_05_tasks",
+    "lines":  [
+                  {
+                      "text":  "Task 5 — Detecting the Boundary of a Manufactured Part",
+                      "words":  [
+                                    {
+                                        "y":  176,
+                                        "height":  20,
+                                        "width":  61,
+                                        "text":  "Task",
+                                        "x":  168
+                                    },
+                                    {
+                                        "y":  177,
+                                        "height":  19,
+                                        "width":  14,
+                                        "text":  "5",
+                                        "x":  245
+                                    },
+                                    {
+                                        "y":  185,
+                                        "height":  4,
+                                        "width":  16,
+                                        "text":  "—",
+                                        "x":  274
+                                    },
+                                    {
+                                        "y":  176,
+                                        "height":  25,
+                                        "width":  134,
+                                        "text":  "Detecting",
+                                        "x":  306
+                                    },
+                                    {
+                                        "y":  176,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  455
+                                    },
+                                    {
+                                        "y":  176,
+                                        "height":  24,
+                                        "width":  119,
+                                        "text":  "Boundary",
+                                        "x":  517
+                                    },
+                                    {
+                                        "y":  176,
+                                        "height":  20,
+                                        "width":  29,
+                                        "text":  "of",
+                                        "x":  652
+                                    },
+                                    {
+                                        "y":  181,
+                                        "height":  15,
+                                        "width":  15,
+                                        "text":  "a",
+                                        "x":  697
+                                    },
+                                    {
+                                        "y":  176,
+                                        "height":  20,
+                                        "width":  180,
+                                        "text":  "Manufactured",
+                                        "x":  728
+                                    },
+                                    {
+                                        "y":  177,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "Part",
+                                        "x":  924
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "A factory camera must identify the boundary of a mechanical component",
+                      "words":  [
+                                    {
+                                        "y":  233,
+                                        "height":  19,
+                                        "width":  14,
+                                        "text":  "A",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  233,
+                                        "height":  24,
+                                        "width":  104,
+                                        "text":  "factory",
+                                        "x":  199
+                                    },
+                                    {
+                                        "y":  238,
+                                        "height":  15,
+                                        "width":  89,
+                                        "text":  "camera",
+                                        "x":  319
+                                    },
+                                    {
+                                        "y":  233,
+                                        "height":  20,
+                                        "width":  57,
+                                        "text":  "must",
+                                        "x":  424
+                                    },
+                                    {
+                                        "y":  232,
+                                        "height":  25,
+                                        "width":  117,
+                                        "text":  "identify",
+                                        "x":  499
+                                    },
+                                    {
+                                        "y":  233,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  632
+                                    },
+                                    {
+                                        "y":  233,
+                                        "height":  24,
+                                        "width":  118,
+                                        "text":  "boundary",
+                                        "x":  693
+                                    },
+                                    {
+                                        "y":  233,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  828
+                                    },
+                                    {
+                                        "y":  238,
+                                        "height":  15,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  872
+                                    },
+                                    {
+                                        "y":  232,
+                                        "height":  21,
+                                        "width":  148,
+                                        "text":  "mechanical",
+                                        "x":  902
+                                    },
+                                    {
+                                        "y":  233,
+                                        "height":  24,
+                                        "width":  133,
+                                        "text":  "component",
+                                        "x":  1067
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "before its shape is analyzed. The system does not need to keep the",
+                      "words":  [
+                                    {
+                                        "y":  271,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "before",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  270,
+                                        "height":  21,
+                                        "width":  42,
+                                        "text":  "its",
+                                        "x":  279
+                                    },
+                                    {
+                                        "y":  271,
+                                        "height":  24,
+                                        "width":  73,
+                                        "text":  "shape",
+                                        "x":  342
+                                    },
+                                    {
+                                        "y":  270,
+                                        "height":  21,
+                                        "width":  26,
+                                        "text":  "is",
+                                        "x":  436
+                                    },
+                                    {
+                                        "y":  271,
+                                        "height":  24,
+                                        "width":  130,
+                                        "text":  "analyzed.",
+                                        "x":  483
+                                    },
+                                    {
+                                        "y":  271,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "The",
+                                        "x":  636
+                                    },
+                                    {
+                                        "y":  272,
+                                        "height":  23,
+                                        "width":  89,
+                                        "text":  "system",
+                                        "x":  701
+                                    },
+                                    {
+                                        "y":  271,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "does",
+                                        "x":  809
+                                    },
+                                    {
+                                        "y":  272,
+                                        "height":  18,
+                                        "width":  42,
+                                        "text":  "not",
+                                        "x":  889
+                                    },
+                                    {
+                                        "y":  271,
+                                        "height":  20,
+                                        "width":  57,
+                                        "text":  "need",
+                                        "x":  952
+                                    },
+                                    {
+                                        "y":  271,
+                                        "height":  20,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  1029
+                                    },
+                                    {
+                                        "y":  271,
+                                        "height":  24,
+                                        "width":  58,
+                                        "text":  "keep",
+                                        "x":  1079
+                                    },
+                                    {
+                                        "y":  271,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  1156
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "interior of the object; it needs to highlight rapid changes",
+                      "words":  [
+                                    {
+                                        "y":  308,
+                                        "height":  21,
+                                        "width":  119,
+                                        "text":  "interior",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  309,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  315
+                                    },
+                                    {
+                                        "y":  309,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  369
+                                    },
+                                    {
+                                        "y":  308,
+                                        "height":  25,
+                                        "width":  99,
+                                        "text":  "object;",
+                                        "x":  440
+                                    },
+                                    {
+                                        "y":  308,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "it",
+                                        "x":  571
+                                    },
+                                    {
+                                        "y":  309,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "needs",
+                                        "x":  625
+                                    },
+                                    {
+                                        "y":  309,
+                                        "height":  20,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  724
+                                    },
+                                    {
+                                        "y":  308,
+                                        "height":  26,
+                                        "width":  132,
+                                        "text":  "highlight",
+                                        "x":  781
+                                    },
+                                    {
+                                        "y":  308,
+                                        "height":  25,
+                                        "width":  73,
+                                        "text":  "rapid",
+                                        "x":  940
+                                    },
+                                    {
+                                        "y":  309,
+                                        "height":  25,
+                                        "width":  103,
+                                        "text":  "changes",
+                                        "x":  1041
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "intensity corresponding to boundaries.",
+                      "words":  [
+                                    {
+                                        "y":  346,
+                                        "height":  24,
+                                        "width":  133,
+                                        "text":  "intensity",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  346,
+                                        "height":  25,
+                                        "width":  193,
+                                        "text":  "corresponding",
+                                        "x":  321
+                                    },
+                                    {
+                                        "y":  347,
+                                        "height":  19,
+                                        "width":  28,
+                                        "text":  "to",
+                                        "x":  531
+                                    },
+                                    {
+                                        "y":  346,
+                                        "height":  20,
+                                        "width":  160,
+                                        "text":  "boundaries.",
+                                        "x":  577
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The camera images contain both strong and weak edges.",
+                      "words":  [
+                                    {
+                                        "y":  402,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "The",
+                                        "x":  168
+                                    },
+                                    {
+                                        "y":  407,
+                                        "height":  15,
+                                        "width":  89,
+                                        "text":  "camera",
+                                        "x":  230
+                                    },
+                                    {
+                                        "y":  401,
+                                        "height":  26,
+                                        "width":  87,
+                                        "text":  "images",
+                                        "x":  337
+                                    },
+                                    {
+                                        "y":  401,
+                                        "height":  21,
+                                        "width":  102,
+                                        "text":  "contain",
+                                        "x":  442
+                                    },
+                                    {
+                                        "y":  402,
+                                        "height":  20,
+                                        "width":  57,
+                                        "text":  "both",
+                                        "x":  562
+                                    },
+                                    {
+                                        "y":  403,
+                                        "height":  24,
+                                        "width":  89,
+                                        "text":  "strong",
+                                        "x":  638
+                                    },
+                                    {
+                                        "y":  402,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  743
+                                    },
+                                    {
+                                        "y":  402,
+                                        "height":  20,
+                                        "width":  60,
+                                        "text":  "weak",
+                                        "x":  803
+                                    },
+                                    {
+                                        "y":  402,
+                                        "height":  25,
+                                        "width":  83,
+                                        "text":  "edges.",
+                                        "x":  880
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Your Task",
+                      "words":  [
+                                    {
+                                        "y":  458,
+                                        "height":  20,
+                                        "width":  60,
+                                        "text":  "Your",
+                                        "x":  168
+                                    },
+                                    {
+                                        "y":  458,
+                                        "height":  20,
+                                        "width":  60,
+                                        "text":  "Task",
+                                        "x":  244
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Choose a suitable object image and perform Canny edge detection.",
+                      "words":  [
+                                    {
+                                        "y":  514,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "Choose",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  520,
+                                        "height":  14,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  275
+                                    },
+                                    {
+                                        "y":  514,
+                                        "height":  20,
+                                        "width":  118,
+                                        "text":  "suitable",
+                                        "x":  306
+                                    },
+                                    {
+                                        "y":  514,
+                                        "height":  25,
+                                        "width":  87,
+                                        "text":  "object",
+                                        "x":  442
+                                    },
+                                    {
+                                        "y":  514,
+                                        "height":  25,
+                                        "width":  73,
+                                        "text":  "image",
+                                        "x":  547
+                                    },
+                                    {
+                                        "y":  514,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  637
+                                    },
+                                    {
+                                        "y":  514,
+                                        "height":  25,
+                                        "width":  103,
+                                        "text":  "perform",
+                                        "x":  699
+                                    },
+                                    {
+                                        "y":  515,
+                                        "height":  24,
+                                        "width":  74,
+                                        "text":  "Canny",
+                                        "x":  819
+                                    },
+                                    {
+                                        "y":  514,
+                                        "height":  25,
+                                        "width":  58,
+                                        "text":  "edge",
+                                        "x":  909
+                                    },
+                                    {
+                                        "y":  514,
+                                        "height":  20,
+                                        "width":  146,
+                                        "text":  "detection.",
+                                        "x":  984
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Test at least:",
+                      "words":  [
+                                    {
+                                        "y":  572,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "Test",
+                                        "x":  168
+                                    },
+                                    {
+                                        "y":  572,
+                                        "height":  19,
+                                        "width":  28,
+                                        "text":  "at",
+                                        "x":  245
+                                    },
+                                    {
+                                        "y":  571,
+                                        "height":  20,
+                                        "width":  85,
+                                        "text":  "least:",
+                                        "x":  290
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "One low/ high threshold pair",
+                      "words":  [
+                                    {
+                                        "y":  628,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "One",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  626,
+                                        "height":  24,
+                                        "width":  57,
+                                        "text":  "low/",
+                                        "x":  313
+                                    },
+                                    {
+                                        "y":  627,
+                                        "height":  25,
+                                        "width":  57,
+                                        "text":  "high",
+                                        "x":  373
+                                    },
+                                    {
+                                        "y":  627,
+                                        "height":  20,
+                                        "width":  133,
+                                        "text":  "threshold",
+                                        "x":  448
+                                    },
+                                    {
+                                        "y":  627,
+                                        "height":  25,
+                                        "width":  59,
+                                        "text":  "pair",
+                                        "x":  599
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "A second low/high threshold pair",
+                      "words":  [
+                                    {
+                                        "y":  684,
+                                        "height":  19,
+                                        "width":  14,
+                                        "text":  "A",
+                                        "x":  251
+                                    },
+                                    {
+                                        "y":  683,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "second",
+                                        "x":  282
+                                    },
+                                    {
+                                        "y":  683,
+                                        "height":  24,
+                                        "width":  117,
+                                        "text":  "low/high",
+                                        "x":  388
+                                    },
+                                    {
+                                        "y":  683,
+                                        "height":  20,
+                                        "width":  134,
+                                        "text":  "threshold",
+                                        "x":  522
+                                    },
+                                    {
+                                        "y":  683,
+                                        "height":  24,
+                                        "width":  58,
+                                        "text":  "pair",
+                                        "x":  675
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• A third low/ high threshold pair",
+                      "words":  [
+                                    {
+                                        "y":  747,
+                                        "height":  9,
+                                        "width":  9,
+                                        "text":  "•",
+                                        "x":  210
+                                    },
+                                    {
+                                        "y":  740,
+                                        "height":  18,
+                                        "width":  14,
+                                        "text":  "A",
+                                        "x":  251
+                                    },
+                                    {
+                                        "y":  738,
+                                        "height":  21,
+                                        "width":  74,
+                                        "text":  "third",
+                                        "x":  281
+                                    },
+                                    {
+                                        "y":  738,
+                                        "height":  24,
+                                        "width":  57,
+                                        "text":  "low/",
+                                        "x":  373
+                                    },
+                                    {
+                                        "y":  738,
+                                        "height":  26,
+                                        "width":  56,
+                                        "text":  "high",
+                                        "x":  434
+                                    },
+                                    {
+                                        "y":  739,
+                                        "height":  20,
+                                        "width":  134,
+                                        "text":  "threshold",
+                                        "x":  507
+                                    },
+                                    {
+                                        "y":  738,
+                                        "height":  26,
+                                        "width":  58,
+                                        "text":  "pair",
+                                        "x":  660
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "For example, investigate what happens when the",
+                      "words":  [
+                                    {
+                                        "y":  796,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "For",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  795,
+                                        "height":  25,
+                                        "width":  115,
+                                        "text":  "example,",
+                                        "x":  237
+                                    },
+                                    {
+                                        "y":  795,
+                                        "height":  25,
+                                        "width":  162,
+                                        "text":  "investigate",
+                                        "x":  382
+                                    },
+                                    {
+                                        "y":  795,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "what",
+                                        "x":  568
+                                    },
+                                    {
+                                        "y":  795,
+                                        "height":  25,
+                                        "width":  103,
+                                        "text":  "happens",
+                                        "x":  652
+                                    },
+                                    {
+                                        "y":  795,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "when",
+                                        "x":  780
+                                    },
+                                    {
+                                        "y":  795,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  863
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "increased while the low threshold remains fixed .",
+                      "words":  [
+                                    {
+                                        "y":  833,
+                                        "height":  20,
+                                        "width":  133,
+                                        "text":  "increased",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  833,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "while",
+                                        "x":  320
+                                    },
+                                    {
+                                        "y":  833,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  410
+                                    },
+                                    {
+                                        "y":  833,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "low",
+                                        "x":  471
+                                    },
+                                    {
+                                        "y":  833,
+                                        "height":  20,
+                                        "width":  134,
+                                        "text":  "threshold",
+                                        "x":  531
+                                    },
+                                    {
+                                        "y":  833,
+                                        "height":  20,
+                                        "width":  103,
+                                        "text":  "remains",
+                                        "x":  683
+                                    },
+                                    {
+                                        "y":  833,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "fixed",
+                                        "x":  804
+                                    },
+                                    {
+                                        "y":  849,
+                                        "height":  4,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  884
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Required Output",
+                      "words":  [
+                                    {
+                                        "y":  890,
+                                        "height":  24,
+                                        "width":  118,
+                                        "text":  "Required",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  891,
+                                        "height":  24,
+                                        "width":  89,
+                                        "text":  "Output",
+                                        "x":  305
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Produce:",
+                      "words":  [
+                                    {
+                                        "y":  946,
+                                        "height":  20,
+                                        "width":  114,
+                                        "text":  "Produce:",
+                                        "x":  170
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "high",
+                      "words":  [
+                                    {
+                                        "y":  795,
+                                        "height":  25,
+                                        "width":  57,
+                                        "text":  "high",
+                                        "x":  931
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "threshold",
+                      "words":  [
+                                    {
+                                        "y":  795,
+                                        "height":  20,
+                                        "width":  134,
+                                        "text":  "threshold",
+                                        "x":  1013
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "in",
+                      "words":  [
+                                    {
+                                        "y":  308,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "in",
+                                        "x":  1172
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "is",
+                      "words":  [
+                                    {
+                                        "y":  795,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  1173
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Original Edge Result 1 Edge Result 2 + Edge Result 3",
+                      "words":  [
+                                    {
+                                        "y":  1003,
+                                        "height":  25,
+                                        "width":  120,
+                                        "text":  "Original",
+                                        "x":  168
+                                    },
+                                    {
+                                        "y":  1003,
+                                        "height":  25,
+                                        "width":  58,
+                                        "text":  "Edge",
+                                        "x":  336
+                                    },
+                                    {
+                                        "y":  1003,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "Result",
+                                        "x":  411
+                                    },
+                                    {
+                                        "y":  1004,
+                                        "height":  19,
+                                        "width":  14,
+                                        "text":  "1",
+                                        "x":  516
+                                    },
+                                    {
+                                        "y":  1003,
+                                        "height":  25,
+                                        "width":  58,
+                                        "text":  "Edge",
+                                        "x":  577
+                                    },
+                                    {
+                                        "y":  1003,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "Result",
+                                        "x":  653
+                                    },
+                                    {
+                                        "y":  1004,
+                                        "height":  19,
+                                        "width":  14,
+                                        "text":  "2",
+                                        "x":  758
+                                    },
+                                    {
+                                        "y":  1007,
+                                        "height":  13,
+                                        "width":  15,
+                                        "text":  "+",
+                                        "x":  788
+                                    },
+                                    {
+                                        "y":  1003,
+                                        "height":  25,
+                                        "width":  59,
+                                        "text":  "Edge",
+                                        "x":  819
+                                    },
+                                    {
+                                        "y":  1003,
+                                        "height":  20,
+                                        "width":  87,
+                                        "text":  "Result",
+                                        "x":  895
+                                    },
+                                    {
+                                        "y":  1004,
+                                        "height":  19,
+                                        "width":  14,
+                                        "text":  "3",
+                                        "x":  999
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Then identify:",
+                      "words":  [
+                                    {
+                                        "y":  1059,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "Then",
+                                        "x":  168
+                                    },
+                                    {
+                                        "y":  1059,
+                                        "height":  24,
+                                        "width":  129,
+                                        "text":  "identify:",
+                                        "x":  246
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• Strong edges",
+                      "words":  [
+                                    {
+                                        "y":  1123,
+                                        "height":  9,
+                                        "width":  9,
+                                        "text":  "•",
+                                        "x":  210
+                                    },
+                                    {
+                                        "y":  1116,
+                                        "height":  24,
+                                        "width":  89,
+                                        "text":  "Strong",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1115,
+                                        "height":  25,
+                                        "width":  72,
+                                        "text":  "edges",
+                                        "x":  358
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• Weak edges",
+                      "words":  [
+                                    {
+                                        "y":  1179,
+                                        "height":  9,
+                                        "width":  9,
+                                        "text":  "•",
+                                        "x":  210
+                                    },
+                                    {
+                                        "y":  1171,
+                                        "height":  20,
+                                        "width":  60,
+                                        "text":  "Weak",
+                                        "x":  251
+                                    },
+                                    {
+                                        "y":  1171,
+                                        "height":  25,
+                                        "width":  73,
+                                        "text":  "edges",
+                                        "x":  327
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• Missing edges",
+                      "words":  [
+                                    {
+                                        "y":  1235,
+                                        "height":  9,
+                                        "width":  9,
+                                        "text":  "•",
+                                        "x":  210
+                                    },
+                                    {
+                                        "y":  1227,
+                                        "height":  25,
+                                        "width":  104,
+                                        "text":  "Missing",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1227,
+                                        "height":  25,
+                                        "width":  73,
+                                        "text":  "edges",
+                                        "x":  373
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Unwanted edges",
+                      "words":  [
+                                    {
+                                        "y":  1284,
+                                        "height":  20,
+                                        "width":  118,
+                                        "text":  "Unwanted",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1284,
+                                        "height":  25,
+                                        "width":  72,
+                                        "text":  "edges",
+                                        "x":  388
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Explain how changing the two thresholds changes the final result.",
+                      "words":  [
+                                    {
+                                        "y":  1340,
+                                        "height":  25,
+                                        "width":  102,
+                                        "text":  "Explain",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1340,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "how",
+                                        "x":  291
+                                    },
+                                    {
+                                        "y":  1340,
+                                        "height":  25,
+                                        "width":  118,
+                                        "text":  "changing",
+                                        "x":  351
+                                    },
+                                    {
+                                        "y":  1340,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  485
+                                    },
+                                    {
+                                        "y":  1341,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "two",
+                                        "x":  546
+                                    },
+                                    {
+                                        "y":  1340,
+                                        "height":  20,
+                                        "width":  150,
+                                        "text":  "thresholds",
+                                        "x":  606
+                                    },
+                                    {
+                                        "y":  1340,
+                                        "height":  25,
+                                        "width":  103,
+                                        "text":  "changes",
+                                        "x":  774
+                                    },
+                                    {
+                                        "y":  1340,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  894
+                                    },
+                                    {
+                                        "y":  1340,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "final",
+                                        "x":  954
+                                    },
+                                    {
+                                        "y":  1340,
+                                        "height":  20,
+                                        "width":  99,
+                                        "text":  "result.",
+                                        "x":  1046
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Your implementation should use the two-threshold hysteresis concept",
+                      "words":  [
+                                    {
+                                        "y":  1397,
+                                        "height":  18,
+                                        "width":  59,
+                                        "text":  "Your",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1396,
+                                        "height":  24,
+                                        "width":  207,
+                                        "text":  "implementation",
+                                        "x":  249
+                                    },
+                                    {
+                                        "y":  1396,
+                                        "height":  19,
+                                        "width":  88,
+                                        "text":  "should",
+                                        "x":  477
+                                    },
+                                    {
+                                        "y":  1401,
+                                        "height":  14,
+                                        "width":  43,
+                                        "text":  "use",
+                                        "x":  586
+                                    },
+                                    {
+                                        "y":  1396,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  649
+                                    },
+                                    {
+                                        "y":  1396,
+                                        "height":  19,
+                                        "width":  195,
+                                        "text":  "two-threshold",
+                                        "x":  712
+                                    },
+                                    {
+                                        "y":  1396,
+                                        "height":  24,
+                                        "width":  149,
+                                        "text":  "hysteresis",
+                                        "x":  927
+                                    },
+                                    {
+                                        "y":  1397,
+                                        "height":  23,
+                                        "width":  103,
+                                        "text":  "concept",
+                                        "x":  1097
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "described in the manual.",
+                      "words":  [
+                                    {
+                                        "y":  1433,
+                                        "height":  20,
+                                        "width":  133,
+                                        "text":  "described",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1433,
+                                        "height":  20,
+                                        "width":  26,
+                                        "text":  "in",
+                                        "x":  322
+                                    },
+                                    {
+                                        "y":  1433,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  365
+                                    },
+                                    {
+                                        "y":  1433,
+                                        "height":  20,
+                                        "width":  99,
+                                        "text":  "manual.",
+                                        "x":  426
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1821,
+                                        "height":  21,
+                                        "width":  75,
+                                        "text":  "Talha",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1820,
+                                        "height":  23,
+                                        "width":  95,
+                                        "text":  "Shahid",
+                                        "x":  255
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "51",
+                      "words":  [
+                                    {
+                                        "y":  1821,
+                                        "height":  27,
+                                        "width":  30,
+                                        "text":  "51",
+                                        "x":  1062
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Page",
+                      "words":  [
+                                    {
+                                        "y":  1822,
+                                        "height":  27,
+                                        "width":  86,
+                                        "text":  "Page",
+                                        "x":  1105
+                                    }
+                                ]
+                  }
+              ]
+}

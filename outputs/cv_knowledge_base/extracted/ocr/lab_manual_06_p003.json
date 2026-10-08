@@ -1,0 +1,2179 @@
+﻿{
+    "id":  "lab_manual_06_p003",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "National University of Computer \u0026 Emerging Sciences - NUCES - Karachi Department of Artificial Intelligence Objectives 1. 2. 1. 2. 3. 4. 5. Wavelet Transformation Boundary Detection Hough Tlansformation Line Detection by Hough Transformation SIFT Feature Extraction Introduction to Wavelet Transformation Wavelet transformation is a mathematical technique used in signal processing, data analysis, and image processing. It allows you to analyze a signal or image in terms of its frequency components at different scales. Wavelet transforms provide a time-frequency analysis that is particularly useful for non-stationary signals. There are several types of wavelet transforms, with the most common being the Continuous Wavelet Transform (CWT) and the Discrete Wavelet Transform (DWT) . 2.1 Continuous Wavelet Transform (CWT) Mathematical Function: The CWT involves continuous wavelet functions that are dilated and translated across the signal. The wavelet function, often denoted as 111 is scaled by different frequencies and translated across time . Wavelet Families: Different wavelet families can be used, such as the Morlet wavelet for analyzing oscillatory components in signals. Applications: CWT is useful for analyzing time-frequency properties of continuous signals and is commonly used in applications like seismic signal analysis and image analysis. 2.2 Discrete Wavelet Transform (DWT) Mathematical Function: The DWT involves discrete wavelet functions that are used to transform discrete signal data. The wavelet function is scaled and shifted across the signal in a discrete manner. Wavelet Families: DWT uses various wavelet families , including Daubechies, Haar, and Symlet wavelets. Applications: DWT is widely used denoising, and feature extraction . compression and analysis. in image compression , It\u0027 s also used in FAST NUCES - Karachi Talha Shahid image signal 3",
+    "review_status":  "raw_ocr_unverified",
+    "page":  3,
+    "source_id":  "lab_manual_06",
+    "lines":  [
+                  {
+                      "text":  "National University of Computer \u0026 Emerging Sciences -",
+                      "words":  [
+                                    {
+                                        "y":  94,
+                                        "height":  23,
+                                        "width":  122,
+                                        "text":  "National",
+                                        "x":  376
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  29,
+                                        "width":  146,
+                                        "text":  "University",
+                                        "x":  507
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  22,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  660
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  28,
+                                        "width":  147,
+                                        "text":  "Computer",
+                                        "x":  696
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  22,
+                                        "width":  21,
+                                        "text":  "\u0026",
+                                        "x":  851
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  28,
+                                        "width":  134,
+                                        "text":  "Emerging",
+                                        "x":  880
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  23,
+                                        "width":  132,
+                                        "text":  "Sciences",
+                                        "x":  1021
+                                    },
+                                    {
+                                        "y":  107,
+                                        "height":  4,
+                                        "width":  10,
+                                        "text":  "-",
+                                        "x":  1162
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "NUCES - Karachi",
+                      "words":  [
+                                    {
+                                        "y":  140,
+                                        "height":  22,
+                                        "width":  103,
+                                        "text":  "NUCES",
+                                        "x":  654
+                                    },
+                                    {
+                                        "y":  152,
+                                        "height":  4,
+                                        "width":  10,
+                                        "text":  "-",
+                                        "x":  765
+                                    },
+                                    {
+                                        "y":  139,
+                                        "height":  23,
+                                        "width":  109,
+                                        "text":  "Karachi",
+                                        "x":  784
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Department of Artificial Intelligence",
+                      "words":  [
+                                    {
+                                        "y":  183,
+                                        "height":  26,
+                                        "width":  143,
+                                        "text":  "Department",
+                                        "x":  555
+                                    },
+                                    {
+                                        "y":  182,
+                                        "height":  22,
+                                        "width":  24,
+                                        "text":  "of",
+                                        "x":  706
+                                    },
+                                    {
+                                        "y":  182,
+                                        "height":  22,
+                                        "width":  100,
+                                        "text":  "Artificial",
+                                        "x":  737
+                                    },
+                                    {
+                                        "y":  182,
+                                        "height":  27,
+                                        "width":  137,
+                                        "text":  "Intelligence",
+                                        "x":  847
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Objectives",
+                      "words":  [
+                                    {
+                                        "y":  222,
+                                        "height":  38,
+                                        "width":  192,
+                                        "text":  "Objectives",
+                                        "x":  235
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1.",
+                      "words":  [
+                                    {
+                                        "y":  225,
+                                        "height":  28,
+                                        "width":  26,
+                                        "text":  "1.",
+                                        "x":  171
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2.",
+                      "words":  [
+                                    {
+                                        "y":  509,
+                                        "height":  27,
+                                        "width":  27,
+                                        "text":  "2.",
+                                        "x":  169
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1.",
+                      "words":  [
+                                    {
+                                        "y":  289,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "1.",
+                                        "x":  252
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2.",
+                      "words":  [
+                                    {
+                                        "y":  325,
+                                        "height":  18,
+                                        "width":  24,
+                                        "text":  "2.",
+                                        "x":  252
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3.",
+                      "words":  [
+                                    {
+                                        "y":  359,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "3.",
+                                        "x":  252
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4.",
+                      "words":  [
+                                    {
+                                        "y":  394,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "4.",
+                                        "x":  251
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "5.",
+                      "words":  [
+                                    {
+                                        "y":  429,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "5.",
+                                        "x":  252
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Wavelet Transformation",
+                      "words":  [
+                                    {
+                                        "y":  289,
+                                        "height":  19,
+                                        "width":  105,
+                                        "text":  "Wavelet",
+                                        "x":  292
+                                    },
+                                    {
+                                        "y":  289,
+                                        "height":  19,
+                                        "width":  209,
+                                        "text":  "Transformation",
+                                        "x":  413
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Boundary Detection",
+                      "words":  [
+                                    {
+                                        "y":  324,
+                                        "height":  24,
+                                        "width":  118,
+                                        "text":  "Boundary",
+                                        "x":  294
+                                    },
+                                    {
+                                        "y":  324,
+                                        "height":  19,
+                                        "width":  132,
+                                        "text":  "Detection",
+                                        "x":  430
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Hough Tlansformation",
+                      "words":  [
+                                    {
+                                        "y":  358,
+                                        "height":  24,
+                                        "width":  73,
+                                        "text":  "Hough",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  358,
+                                        "height":  20,
+                                        "width":  209,
+                                        "text":  "Tlansformation",
+                                        "x":  383
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Line Detection by Hough Transformation",
+                      "words":  [
+                                    {
+                                        "y":  393,
+                                        "height":  20,
+                                        "width":  57,
+                                        "text":  "Line",
+                                        "x":  294
+                                    },
+                                    {
+                                        "y":  393,
+                                        "height":  20,
+                                        "width":  132,
+                                        "text":  "Detection",
+                                        "x":  369
+                                    },
+                                    {
+                                        "y":  393,
+                                        "height":  25,
+                                        "width":  27,
+                                        "text":  "by",
+                                        "x":  520
+                                    },
+                                    {
+                                        "y":  393,
+                                        "height":  25,
+                                        "width":  72,
+                                        "text":  "Hough",
+                                        "x":  565
+                                    },
+                                    {
+                                        "y":  393,
+                                        "height":  20,
+                                        "width":  210,
+                                        "text":  "Transformation",
+                                        "x":  654
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "SIFT Feature Extraction",
+                      "words":  [
+                                    {
+                                        "y":  429,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "SIFT",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  429,
+                                        "height":  19,
+                                        "width":  102,
+                                        "text":  "Feature",
+                                        "x":  369
+                                    },
+                                    {
+                                        "y":  429,
+                                        "height":  19,
+                                        "width":  148,
+                                        "text":  "Extraction",
+                                        "x":  489
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Introduction to Wavelet Transformation",
+                      "words":  [
+                                    {
+                                        "y":  506,
+                                        "height":  30,
+                                        "width":  234,
+                                        "text":  "Introduction",
+                                        "x":  235
+                                    },
+                                    {
+                                        "y":  511,
+                                        "height":  25,
+                                        "width":  37,
+                                        "text":  "to",
+                                        "x":  483
+                                    },
+                                    {
+                                        "y":  508,
+                                        "height":  28,
+                                        "width":  150,
+                                        "text":  "Wavelet",
+                                        "x":  533
+                                    },
+                                    {
+                                        "y":  506,
+                                        "height":  30,
+                                        "width":  289,
+                                        "text":  "Transformation",
+                                        "x":  697
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Wavelet transformation is a mathematical technique used in signal",
+                      "words":  [
+                                    {
+                                        "y":  572,
+                                        "height":  19,
+                                        "width":  104,
+                                        "text":  "Wavelet",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  572,
+                                        "height":  19,
+                                        "width":  208,
+                                        "text":  "transformation",
+                                        "x":  296
+                                    },
+                                    {
+                                        "y":  572,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  530
+                                    },
+                                    {
+                                        "y":  577,
+                                        "height":  14,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  580
+                                    },
+                                    {
+                                        "y":  572,
+                                        "height":  19,
+                                        "width":  180,
+                                        "text":  "mathematical",
+                                        "x":  617
+                                    },
+                                    {
+                                        "y":  572,
+                                        "height":  24,
+                                        "width":  134,
+                                        "text":  "technique",
+                                        "x":  820
+                                    },
+                                    {
+                                        "y":  572,
+                                        "height":  19,
+                                        "width":  57,
+                                        "text":  "used",
+                                        "x":  978
+                                    },
+                                    {
+                                        "y":  572,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "in",
+                                        "x":  1060
+                                    },
+                                    {
+                                        "y":  572,
+                                        "height":  24,
+                                        "width":  88,
+                                        "text":  "signal",
+                                        "x":  1112
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "processing, data analysis, and image processing. It allows you to",
+                      "words":  [
+                                    {
+                                        "y":  610,
+                                        "height":  24,
+                                        "width":  160,
+                                        "text":  "processing,",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  610,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "data",
+                                        "x":  357
+                                    },
+                                    {
+                                        "y":  610,
+                                        "height":  24,
+                                        "width":  129,
+                                        "text":  "analysis,",
+                                        "x":  438
+                                    },
+                                    {
+                                        "y":  610,
+                                        "height":  19,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  594
+                                    },
+                                    {
+                                        "y":  610,
+                                        "height":  24,
+                                        "width":  72,
+                                        "text":  "image",
+                                        "x":  661
+                                    },
+                                    {
+                                        "y":  610,
+                                        "height":  24,
+                                        "width":  159,
+                                        "text":  "processing.",
+                                        "x":  757
+                                    },
+                                    {
+                                        "y":  610,
+                                        "height":  19,
+                                        "width":  28,
+                                        "text":  "It",
+                                        "x":  943
+                                    },
+                                    {
+                                        "y":  610,
+                                        "height":  19,
+                                        "width":  88,
+                                        "text":  "allows",
+                                        "x":  994
+                                    },
+                                    {
+                                        "y":  615,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "you",
+                                        "x":  1105
+                                    },
+                                    {
+                                        "y":  610,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  1171
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "analyze a signal or image in terms of its frequency components at",
+                      "words":  [
+                                    {
+                                        "y":  647,
+                                        "height":  24,
+                                        "width":  103,
+                                        "text":  "analyze",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  653,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  295
+                                    },
+                                    {
+                                        "y":  647,
+                                        "height":  24,
+                                        "width":  88,
+                                        "text":  "signal",
+                                        "x":  330
+                                    },
+                                    {
+                                        "y":  653,
+                                        "height":  14,
+                                        "width":  28,
+                                        "text":  "or",
+                                        "x":  440
+                                    },
+                                    {
+                                        "y":  647,
+                                        "height":  24,
+                                        "width":  73,
+                                        "text":  "image",
+                                        "x":  490
+                                    },
+                                    {
+                                        "y":  647,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "in",
+                                        "x":  586
+                                    },
+                                    {
+                                        "y":  648,
+                                        "height":  19,
+                                        "width":  74,
+                                        "text":  "terms",
+                                        "x":  634
+                                    },
+                                    {
+                                        "y":  647,
+                                        "height":  20,
+                                        "width":  29,
+                                        "text":  "of",
+                                        "x":  730
+                                    },
+                                    {
+                                        "y":  647,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "its",
+                                        "x":  782
+                                    },
+                                    {
+                                        "y":  647,
+                                        "height":  24,
+                                        "width":  133,
+                                        "text":  "frequency",
+                                        "x":  846
+                                    },
+                                    {
+                                        "y":  648,
+                                        "height":  23,
+                                        "width":  149,
+                                        "text":  "components",
+                                        "x":  1001
+                                    },
+                                    {
+                                        "y":  648,
+                                        "height":  19,
+                                        "width":  28,
+                                        "text":  "at",
+                                        "x":  1172
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "different scales. Wavelet transforms provide a time-frequency analysis",
+                      "words":  [
+                                    {
+                                        "y":  685,
+                                        "height":  20,
+                                        "width":  134,
+                                        "text":  "different",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  685,
+                                        "height":  20,
+                                        "width":  100,
+                                        "text":  "scales.",
+                                        "x":  317
+                                    },
+                                    {
+                                        "y":  685,
+                                        "height":  20,
+                                        "width":  103,
+                                        "text":  "Wavelet",
+                                        "x":  434
+                                    },
+                                    {
+                                        "y":  685,
+                                        "height":  20,
+                                        "width":  149,
+                                        "text":  "transforms",
+                                        "x":  551
+                                    },
+                                    {
+                                        "y":  685,
+                                        "height":  23,
+                                        "width":  103,
+                                        "text":  "provide",
+                                        "x":  715
+                                    },
+                                    {
+                                        "y":  691,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  832
+                                    },
+                                    {
+                                        "y":  685,
+                                        "height":  23,
+                                        "width":  210,
+                                        "text":  "time-frequency",
+                                        "x":  858
+                                    },
+                                    {
+                                        "y":  685,
+                                        "height":  23,
+                                        "width":  119,
+                                        "text":  "analysis",
+                                        "x":  1082
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "that is particularly useful for non-stationary signals. There are",
+                      "words":  [
+                                    {
+                                        "y":  722,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "that",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  722,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  722,
+                                        "height":  24,
+                                        "width":  178,
+                                        "text":  "particularly",
+                                        "x":  304
+                                    },
+                                    {
+                                        "y":  722,
+                                        "height":  19,
+                                        "width":  87,
+                                        "text":  "useful",
+                                        "x":  506
+                                    },
+                                    {
+                                        "y":  722,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "for",
+                                        "x":  618
+                                    },
+                                    {
+                                        "y":  722,
+                                        "height":  24,
+                                        "width":  210,
+                                        "text":  "non-stationary",
+                                        "x":  685
+                                    },
+                                    {
+                                        "y":  722,
+                                        "height":  24,
+                                        "width":  114,
+                                        "text":  "signals.",
+                                        "x":  918
+                                    },
+                                    {
+                                        "y":  722,
+                                        "height":  19,
+                                        "width":  74,
+                                        "text":  "There",
+                                        "x":  1059
+                                    },
+                                    {
+                                        "y":  727,
+                                        "height":  14,
+                                        "width":  43,
+                                        "text":  "are",
+                                        "x":  1157
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "several types of wavelet transforms, with the most common being the",
+                      "words":  [
+                                    {
+                                        "y":  760,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "several",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  760,
+                                        "height":  24,
+                                        "width":  74,
+                                        "text":  "types",
+                                        "x":  292
+                                    },
+                                    {
+                                        "y":  760,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "of",
+                                        "x":  385
+                                    },
+                                    {
+                                        "y":  760,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "wavelet",
+                                        "x":  432
+                                    },
+                                    {
+                                        "y":  760,
+                                        "height":  23,
+                                        "width":  161,
+                                        "text":  "transforms,",
+                                        "x":  554
+                                    },
+                                    {
+                                        "y":  760,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "with",
+                                        "x":  738
+                                    },
+                                    {
+                                        "y":  760,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  816
+                                    },
+                                    {
+                                        "y":  760,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "most",
+                                        "x":  879
+                                    },
+                                    {
+                                        "y":  765,
+                                        "height":  14,
+                                        "width":  88,
+                                        "text":  "common",
+                                        "x":  956
+                                    },
+                                    {
+                                        "y":  760,
+                                        "height":  24,
+                                        "width":  74,
+                                        "text":  "being",
+                                        "x":  1064
+                                    },
+                                    {
+                                        "y":  760,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  1156
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Continuous Wavelet Transform (CWT) and the Discrete Wavelet Transform",
+                      "words":  [
+                                    {
+                                        "y":  797,
+                                        "height":  20,
+                                        "width":  148,
+                                        "text":  "Continuous",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  797,
+                                        "height":  20,
+                                        "width":  104,
+                                        "text":  "Wavelet",
+                                        "x":  334
+                                    },
+                                    {
+                                        "y":  797,
+                                        "height":  20,
+                                        "width":  135,
+                                        "text":  "Transform",
+                                        "x":  453
+                                    },
+                                    {
+                                        "y":  796,
+                                        "height":  24,
+                                        "width":  67,
+                                        "text":  "(CWT)",
+                                        "x":  607
+                                    },
+                                    {
+                                        "y":  797,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  694
+                                    },
+                                    {
+                                        "y":  797,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  752
+                                    },
+                                    {
+                                        "y":  797,
+                                        "height":  20,
+                                        "width":  117,
+                                        "text":  "Discrete",
+                                        "x":  813
+                                    },
+                                    {
+                                        "y":  797,
+                                        "height":  20,
+                                        "width":  104,
+                                        "text":  "Wavelet",
+                                        "x":  946
+                                    },
+                                    {
+                                        "y":  797,
+                                        "height":  20,
+                                        "width":  136,
+                                        "text":  "Transform",
+                                        "x":  1065
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "(DWT) .",
+                      "words":  [
+                                    {
+                                        "y":  835,
+                                        "height":  23,
+                                        "width":  66,
+                                        "text":  "(DWT)",
+                                        "x":  173
+                                    },
+                                    {
+                                        "y":  851,
+                                        "height":  4,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  249
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2.1 Continuous Wavelet Transform (CWT)",
+                      "words":  [
+                                    {
+                                        "y":  907,
+                                        "height":  24,
+                                        "width":  42,
+                                        "text":  "2.1",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  905,
+                                        "height":  26,
+                                        "width":  183,
+                                        "text":  "Continuous",
+                                        "x":  250
+                                    },
+                                    {
+                                        "y":  906,
+                                        "height":  25,
+                                        "width":  131,
+                                        "text":  "Wavelet",
+                                        "x":  444
+                                    },
+                                    {
+                                        "y":  907,
+                                        "height":  24,
+                                        "width":  170,
+                                        "text":  "Transform",
+                                        "x":  586
+                                    },
+                                    {
+                                        "y":  907,
+                                        "height":  30,
+                                        "width":  98,
+                                        "text":  "(CWT)",
+                                        "x":  769
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Mathematical Function: The CWT involves continuous wavelet functions",
+                      "words":  [
+                                    {
+                                        "y":  963,
+                                        "height":  19,
+                                        "width":  179,
+                                        "text":  "Mathematical",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  963,
+                                        "height":  19,
+                                        "width":  129,
+                                        "text":  "Function:",
+                                        "x":  367
+                                    },
+                                    {
+                                        "y":  963,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "The",
+                                        "x":  517
+                                    },
+                                    {
+                                        "y":  964,
+                                        "height":  18,
+                                        "width":  45,
+                                        "text":  "CWT",
+                                        "x":  579
+                                    },
+                                    {
+                                        "y":  963,
+                                        "height":  19,
+                                        "width":  118,
+                                        "text":  "involves",
+                                        "x":  642
+                                    },
+                                    {
+                                        "y":  963,
+                                        "height":  19,
+                                        "width":  148,
+                                        "text":  "continuous",
+                                        "x":  778
+                                    },
+                                    {
+                                        "y":  963,
+                                        "height":  19,
+                                        "width":  105,
+                                        "text":  "wavelet",
+                                        "x":  943
+                                    },
+                                    {
+                                        "y":  963,
+                                        "height":  19,
+                                        "width":  134,
+                                        "text":  "functions",
+                                        "x":  1066
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "that are dilated and translated across the signal. The wavelet",
+                      "words":  [
+                                    {
+                                        "y":  1001,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "that",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1007,
+                                        "height":  13,
+                                        "width":  43,
+                                        "text":  "are",
+                                        "x":  256
+                                    },
+                                    {
+                                        "y":  1001,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "dilated",
+                                        "x":  327
+                                    },
+                                    {
+                                        "y":  1001,
+                                        "height":  19,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  458
+                                    },
+                                    {
+                                        "y":  1001,
+                                        "height":  19,
+                                        "width":  149,
+                                        "text":  "translated",
+                                        "x":  528
+                                    },
+                                    {
+                                        "y":  1007,
+                                        "height":  13,
+                                        "width":  89,
+                                        "text":  "across",
+                                        "x":  706
+                                    },
+                                    {
+                                        "y":  1001,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  822
+                                    },
+                                    {
+                                        "y":  1001,
+                                        "height":  24,
+                                        "width":  99,
+                                        "text":  "signal.",
+                                        "x":  894
+                                    },
+                                    {
+                                        "y":  1001,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "The",
+                                        "x":  1024
+                                    },
+                                    {
+                                        "y":  1001,
+                                        "height":  19,
+                                        "width":  104,
+                                        "text":  "wavelet",
+                                        "x":  1096
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "function, often denoted as 111 is scaled by different frequencies",
+                      "words":  [
+                                    {
+                                        "y":  1038,
+                                        "height":  22,
+                                        "width":  129,
+                                        "text":  "function,",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1038,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "often",
+                                        "x":  323
+                                    },
+                                    {
+                                        "y":  1038,
+                                        "height":  20,
+                                        "width":  103,
+                                        "text":  "denoted",
+                                        "x":  415
+                                    },
+                                    {
+                                        "y":  1044,
+                                        "height":  14,
+                                        "width":  28,
+                                        "text":  "as",
+                                        "x":  538
+                                    },
+                                    {
+                                        "y":  1041,
+                                        "height":  21,
+                                        "width":  14,
+                                        "text":  "111",
+                                        "x":  585
+                                    },
+                                    {
+                                        "y":  1038,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  680
+                                    },
+                                    {
+                                        "y":  1038,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "scaled",
+                                        "x":  727
+                                    },
+                                    {
+                                        "y":  1038,
+                                        "height":  24,
+                                        "width":  27,
+                                        "text":  "by",
+                                        "x":  836
+                                    },
+                                    {
+                                        "y":  1038,
+                                        "height":  20,
+                                        "width":  133,
+                                        "text":  "different",
+                                        "x":  883
+                                    },
+                                    {
+                                        "y":  1038,
+                                        "height":  24,
+                                        "width":  164,
+                                        "text":  "frequencies",
+                                        "x":  1036
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "and translated across time .",
+                      "words":  [
+                                    {
+                                        "y":  1076,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1076,
+                                        "height":  20,
+                                        "width":  149,
+                                        "text":  "translated",
+                                        "x":  229
+                                    },
+                                    {
+                                        "y":  1082,
+                                        "height":  14,
+                                        "width":  87,
+                                        "text":  "across",
+                                        "x":  396
+                                    },
+                                    {
+                                        "y":  1076,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "time",
+                                        "x":  500
+                                    },
+                                    {
+                                        "y":  1091,
+                                        "height":  5,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  566
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Wavelet Families: Different wavelet families can be used, such as the",
+                      "words":  [
+                                    {
+                                        "y":  1127,
+                                        "height":  20,
+                                        "width":  105,
+                                        "text":  "Wavelet",
+                                        "x":  168
+                                    },
+                                    {
+                                        "y":  1127,
+                                        "height":  20,
+                                        "width":  130,
+                                        "text":  "Families:",
+                                        "x":  290
+                                    },
+                                    {
+                                        "y":  1127,
+                                        "height":  20,
+                                        "width":  133,
+                                        "text":  "Different",
+                                        "x":  440
+                                    },
+                                    {
+                                        "y":  1127,
+                                        "height":  20,
+                                        "width":  104,
+                                        "text":  "wavelet",
+                                        "x":  589
+                                    },
+                                    {
+                                        "y":  1127,
+                                        "height":  20,
+                                        "width":  119,
+                                        "text":  "families",
+                                        "x":  709
+                                    },
+                                    {
+                                        "y":  1133,
+                                        "height":  14,
+                                        "width":  42,
+                                        "text":  "can",
+                                        "x":  845
+                                    },
+                                    {
+                                        "y":  1127,
+                                        "height":  20,
+                                        "width":  26,
+                                        "text":  "be",
+                                        "x":  905
+                                    },
+                                    {
+                                        "y":  1127,
+                                        "height":  23,
+                                        "width":  68,
+                                        "text":  "used,",
+                                        "x":  949
+                                    },
+                                    {
+                                        "y":  1127,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "such",
+                                        "x":  1038
+                                    },
+                                    {
+                                        "y":  1133,
+                                        "height":  14,
+                                        "width":  27,
+                                        "text":  "as",
+                                        "x":  1113
+                                    },
+                                    {
+                                        "y":  1127,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  1156
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Morlet wavelet for analyzing oscillatory components in signals.",
+                      "words":  [
+                                    {
+                                        "y":  1165,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "Morlet",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1165,
+                                        "height":  20,
+                                        "width":  104,
+                                        "text":  "wavelet",
+                                        "x":  275
+                                    },
+                                    {
+                                        "y":  1165,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "for",
+                                        "x":  396
+                                    },
+                                    {
+                                        "y":  1165,
+                                        "height":  25,
+                                        "width":  134,
+                                        "text":  "analyzing",
+                                        "x":  456
+                                    },
+                                    {
+                                        "y":  1165,
+                                        "height":  25,
+                                        "width":  164,
+                                        "text":  "oscillatory",
+                                        "x":  607
+                                    },
+                                    {
+                                        "y":  1166,
+                                        "height":  24,
+                                        "width":  148,
+                                        "text":  "components",
+                                        "x":  789
+                                    },
+                                    {
+                                        "y":  1165,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "in",
+                                        "x":  955
+                                    },
+                                    {
+                                        "y":  1165,
+                                        "height":  25,
+                                        "width":  115,
+                                        "text":  "signals.",
+                                        "x":  1000
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Applications: CWT is useful for analyzing time-frequency properties",
+                      "words":  [
+                                    {
+                                        "y":  1217,
+                                        "height":  24,
+                                        "width":  193,
+                                        "text":  "Applications:",
+                                        "x":  168
+                                    },
+                                    {
+                                        "y":  1217,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "CWT",
+                                        "x":  384
+                                    },
+                                    {
+                                        "y":  1217,
+                                        "height":  19,
+                                        "width":  26,
+                                        "text":  "is",
+                                        "x":  448
+                                    },
+                                    {
+                                        "y":  1217,
+                                        "height":  19,
+                                        "width":  87,
+                                        "text":  "useful",
+                                        "x":  496
+                                    },
+                                    {
+                                        "y":  1217,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "for",
+                                        "x":  604
+                                    },
+                                    {
+                                        "y":  1217,
+                                        "height":  24,
+                                        "width":  135,
+                                        "text":  "analyzing",
+                                        "x":  667
+                                    },
+                                    {
+                                        "y":  1217,
+                                        "height":  24,
+                                        "width":  210,
+                                        "text":  "time-frequency",
+                                        "x":  821
+                                    },
+                                    {
+                                        "y":  1217,
+                                        "height":  24,
+                                        "width":  148,
+                                        "text":  "properties",
+                                        "x":  1052
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "of continuous signals and is commonly used in applications like",
+                      "words":  [
+                                    {
+                                        "y":  1255,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "of",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1255,
+                                        "height":  19,
+                                        "width":  149,
+                                        "text":  "continuous",
+                                        "x":  224
+                                    },
+                                    {
+                                        "y":  1255,
+                                        "height":  24,
+                                        "width":  101,
+                                        "text":  "signals",
+                                        "x":  400
+                                    },
+                                    {
+                                        "y":  1255,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  528
+                                    },
+                                    {
+                                        "y":  1255,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  599
+                                    },
+                                    {
+                                        "y":  1255,
+                                        "height":  24,
+                                        "width":  118,
+                                        "text":  "commonly",
+                                        "x":  653
+                                    },
+                                    {
+                                        "y":  1255,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "used",
+                                        "x":  798
+                                    },
+                                    {
+                                        "y":  1255,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "in",
+                                        "x":  884
+                                    },
+                                    {
+                                        "y":  1255,
+                                        "height":  24,
+                                        "width":  180,
+                                        "text":  "applications",
+                                        "x":  936
+                                    },
+                                    {
+                                        "y":  1255,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "like",
+                                        "x":  1142
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "seismic signal analysis and image analysis.",
+                      "words":  [
+                                    {
+                                        "y":  1292,
+                                        "height":  19,
+                                        "width":  102,
+                                        "text":  "seismic",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1292,
+                                        "height":  24,
+                                        "width":  88,
+                                        "text":  "signal",
+                                        "x":  290
+                                    },
+                                    {
+                                        "y":  1292,
+                                        "height":  24,
+                                        "width":  118,
+                                        "text":  "analysis",
+                                        "x":  396
+                                    },
+                                    {
+                                        "y":  1292,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  531
+                                    },
+                                    {
+                                        "y":  1292,
+                                        "height":  24,
+                                        "width":  72,
+                                        "text":  "image",
+                                        "x":  593
+                                    },
+                                    {
+                                        "y":  1292,
+                                        "height":  24,
+                                        "width":  130,
+                                        "text":  "analysis.",
+                                        "x":  683
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2.2 Discrete Wavelet Transform (DWT)",
+                      "words":  [
+                                    {
+                                        "y":  1364,
+                                        "height":  24,
+                                        "width":  43,
+                                        "text":  "2.2",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1362,
+                                        "height":  26,
+                                        "width":  130,
+                                        "text":  "Discrete",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1364,
+                                        "height":  24,
+                                        "width":  131,
+                                        "text":  "Wavelet",
+                                        "x":  393
+                                    },
+                                    {
+                                        "y":  1364,
+                                        "height":  24,
+                                        "width":  170,
+                                        "text":  "Transform",
+                                        "x":  535
+                                    },
+                                    {
+                                        "y":  1365,
+                                        "height":  29,
+                                        "width":  100,
+                                        "text":  "(DWT)",
+                                        "x":  718
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Mathematical Function: The DWT involves discrete wavelet functions",
+                      "words":  [
+                                    {
+                                        "y":  1419,
+                                        "height":  19,
+                                        "width":  179,
+                                        "text":  "Mathematical",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1419,
+                                        "height":  19,
+                                        "width":  130,
+                                        "text":  "Function:",
+                                        "x":  371
+                                    },
+                                    {
+                                        "y":  1419,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "The",
+                                        "x":  526
+                                    },
+                                    {
+                                        "y":  1420,
+                                        "height":  18,
+                                        "width":  44,
+                                        "text":  "DWT",
+                                        "x":  593
+                                    },
+                                    {
+                                        "y":  1419,
+                                        "height":  19,
+                                        "width":  118,
+                                        "text":  "involves",
+                                        "x":  659
+                                    },
+                                    {
+                                        "y":  1419,
+                                        "height":  19,
+                                        "width":  118,
+                                        "text":  "discrete",
+                                        "x":  799
+                                    },
+                                    {
+                                        "y":  1419,
+                                        "height":  19,
+                                        "width":  105,
+                                        "text":  "wavelet",
+                                        "x":  939
+                                    },
+                                    {
+                                        "y":  1419,
+                                        "height":  19,
+                                        "width":  134,
+                                        "text":  "functions",
+                                        "x":  1066
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "that are used to transform discrete signal data. The wavelet function",
+                      "words":  [
+                                    {
+                                        "y":  1456,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "that",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1462,
+                                        "height":  14,
+                                        "width":  43,
+                                        "text":  "are",
+                                        "x":  244
+                                    },
+                                    {
+                                        "y":  1456,
+                                        "height":  20,
+                                        "width":  57,
+                                        "text":  "used",
+                                        "x":  304
+                                    },
+                                    {
+                                        "y":  1457,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  378
+                                    },
+                                    {
+                                        "y":  1456,
+                                        "height":  20,
+                                        "width":  134,
+                                        "text":  "transform",
+                                        "x":  422
+                                    },
+                                    {
+                                        "y":  1456,
+                                        "height":  20,
+                                        "width":  119,
+                                        "text":  "discrete",
+                                        "x":  572
+                                    },
+                                    {
+                                        "y":  1456,
+                                        "height":  24,
+                                        "width":  87,
+                                        "text":  "signal",
+                                        "x":  708
+                                    },
+                                    {
+                                        "y":  1456,
+                                        "height":  20,
+                                        "width":  70,
+                                        "text":  "data.",
+                                        "x":  812
+                                    },
+                                    {
+                                        "y":  1456,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "The",
+                                        "x":  901
+                                    },
+                                    {
+                                        "y":  1456,
+                                        "height":  20,
+                                        "width":  105,
+                                        "text":  "wavelet",
+                                        "x":  960
+                                    },
+                                    {
+                                        "y":  1456,
+                                        "height":  20,
+                                        "width":  118,
+                                        "text":  "function",
+                                        "x":  1082
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "is scaled and shifted across the signal in a discrete manner.",
+                      "words":  [
+                                    {
+                                        "y":  1494,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1494,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "scaled",
+                                        "x":  215
+                                    },
+                                    {
+                                        "y":  1494,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  321
+                                    },
+                                    {
+                                        "y":  1494,
+                                        "height":  20,
+                                        "width":  102,
+                                        "text":  "shifted",
+                                        "x":  381
+                                    },
+                                    {
+                                        "y":  1500,
+                                        "height":  14,
+                                        "width":  88,
+                                        "text":  "across",
+                                        "x":  501
+                                    },
+                                    {
+                                        "y":  1494,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  606
+                                    },
+                                    {
+                                        "y":  1494,
+                                        "height":  24,
+                                        "width":  88,
+                                        "text":  "signal",
+                                        "x":  668
+                                    },
+                                    {
+                                        "y":  1494,
+                                        "height":  20,
+                                        "width":  26,
+                                        "text":  "in",
+                                        "x":  775
+                                    },
+                                    {
+                                        "y":  1500,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  819
+                                    },
+                                    {
+                                        "y":  1494,
+                                        "height":  20,
+                                        "width":  118,
+                                        "text":  "discrete",
+                                        "x":  849
+                                    },
+                                    {
+                                        "y":  1500,
+                                        "height":  14,
+                                        "width":  100,
+                                        "text":  "manner.",
+                                        "x":  984
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Wavelet Families: DWT uses various wavelet families ,",
+                      "words":  [
+                                    {
+                                        "y":  1545,
+                                        "height":  20,
+                                        "width":  105,
+                                        "text":  "Wavelet",
+                                        "x":  168
+                                    },
+                                    {
+                                        "y":  1545,
+                                        "height":  20,
+                                        "width":  131,
+                                        "text":  "Families:",
+                                        "x":  304
+                                    },
+                                    {
+                                        "y":  1546,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "DWT",
+                                        "x":  469
+                                    },
+                                    {
+                                        "y":  1551,
+                                        "height":  14,
+                                        "width":  57,
+                                        "text":  "uses",
+                                        "x":  543
+                                    },
+                                    {
+                                        "y":  1545,
+                                        "height":  20,
+                                        "width":  103,
+                                        "text":  "various",
+                                        "x":  632
+                                    },
+                                    {
+                                        "y":  1545,
+                                        "height":  20,
+                                        "width":  104,
+                                        "text":  "wavelet",
+                                        "x":  766
+                                    },
+                                    {
+                                        "y":  1545,
+                                        "height":  20,
+                                        "width":  117,
+                                        "text":  "families",
+                                        "x":  902
+                                    },
+                                    {
+                                        "y":  1561,
+                                        "height":  7,
+                                        "width":  5,
+                                        "text":  ",",
+                                        "x":  1026
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "including",
+                      "words":  [
+                                    {
+                                        "y":  1545,
+                                        "height":  25,
+                                        "width":  134,
+                                        "text":  "including",
+                                        "x":  1067
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Daubechies, Haar, and Symlet wavelets.",
+                      "words":  [
+                                    {
+                                        "y":  1583,
+                                        "height":  23,
+                                        "width":  160,
+                                        "text":  "Daubechies,",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1584,
+                                        "height":  22,
+                                        "width":  69,
+                                        "text":  "Haar,",
+                                        "x":  351
+                                    },
+                                    {
+                                        "y":  1583,
+                                        "height":  20,
+                                        "width":  41,
+                                        "text":  "and",
+                                        "x":  442
+                                    },
+                                    {
+                                        "y":  1583,
+                                        "height":  25,
+                                        "width":  89,
+                                        "text":  "Symlet",
+                                        "x":  501
+                                    },
+                                    {
+                                        "y":  1583,
+                                        "height":  20,
+                                        "width":  131,
+                                        "text":  "wavelets.",
+                                        "x":  606
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Applications: DWT is widely used",
+                      "words":  [
+                                    {
+                                        "y":  1635,
+                                        "height":  24,
+                                        "width":  193,
+                                        "text":  "Applications:",
+                                        "x":  168
+                                    },
+                                    {
+                                        "y":  1635,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "DWT",
+                                        "x":  398
+                                    },
+                                    {
+                                        "y":  1635,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  473
+                                    },
+                                    {
+                                        "y":  1635,
+                                        "height":  24,
+                                        "width":  90,
+                                        "text":  "widely",
+                                        "x":  533
+                                    },
+                                    {
+                                        "y":  1635,
+                                        "height":  19,
+                                        "width":  57,
+                                        "text":  "used",
+                                        "x":  656
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "denoising, and feature extraction .",
+                      "words":  [
+                                    {
+                                        "y":  1673,
+                                        "height":  24,
+                                        "width":  145,
+                                        "text":  "denoising,",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1673,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  353
+                                    },
+                                    {
+                                        "y":  1673,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "feature",
+                                        "x":  431
+                                    },
+                                    {
+                                        "y":  1673,
+                                        "height":  19,
+                                        "width":  149,
+                                        "text":  "extraction",
+                                        "x":  569
+                                    },
+                                    {
+                                        "y":  1688,
+                                        "height":  4,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  725
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "compression and analysis.",
+                      "words":  [
+                                    {
+                                        "y":  1710,
+                                        "height":  24,
+                                        "width":  163,
+                                        "text":  "compression",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1710,
+                                        "height":  19,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  351
+                                    },
+                                    {
+                                        "y":  1710,
+                                        "height":  24,
+                                        "width":  129,
+                                        "text":  "analysis.",
+                                        "x":  411
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "in image compression ,",
+                      "words":  [
+                                    {
+                                        "y":  1635,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "in",
+                                        "x":  748
+                                    },
+                                    {
+                                        "y":  1635,
+                                        "height":  24,
+                                        "width":  73,
+                                        "text":  "image",
+                                        "x":  809
+                                    },
+                                    {
+                                        "y":  1635,
+                                        "height":  24,
+                                        "width":  163,
+                                        "text":  "compression",
+                                        "x":  915
+                                    },
+                                    {
+                                        "y":  1650,
+                                        "height":  7,
+                                        "width":  6,
+                                        "text":  ",",
+                                        "x":  1084
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "It\u0027 s also used in",
+                      "words":  [
+                                    {
+                                        "y":  1673,
+                                        "height":  19,
+                                        "width":  38,
+                                        "text":  "It\u0027",
+                                        "x":  769
+                                    },
+                                    {
+                                        "y":  1678,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "s",
+                                        "x":  814
+                                    },
+                                    {
+                                        "y":  1673,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "also",
+                                        "x":  862
+                                    },
+                                    {
+                                        "y":  1673,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "used",
+                                        "x":  955
+                                    },
+                                    {
+                                        "y":  1673,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "in",
+                                        "x":  1049
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FAST NUCES -",
+                      "words":  [
+                                    {
+                                        "y":  1822,
+                                        "height":  17,
+                                        "width":  56,
+                                        "text":  "FAST",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1822,
+                                        "height":  17,
+                                        "width":  78,
+                                        "text":  "NUCES",
+                                        "x":  234
+                                    },
+                                    {
+                                        "y":  1830,
+                                        "height":  4,
+                                        "width":  11,
+                                        "text":  "-",
+                                        "x":  320
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Karachi",
+                      "words":  [
+                                    {
+                                        "y":  1820,
+                                        "height":  19,
+                                        "width":  86,
+                                        "text":  "Karachi",
+                                        "x":  340
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1821,
+                                        "height":  18,
+                                        "width":  65,
+                                        "text":  "Talha",
+                                        "x":  607
+                                    },
+                                    {
+                                        "y":  1820,
+                                        "height":  19,
+                                        "width":  80,
+                                        "text":  "Shahid",
+                                        "x":  681
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "image",
+                      "words":  [
+                                    {
+                                        "y":  1635,
+                                        "height":  24,
+                                        "width":  72,
+                                        "text":  "image",
+                                        "x":  1128
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "signal",
+                      "words":  [
+                                    {
+                                        "y":  1673,
+                                        "height":  24,
+                                        "width":  88,
+                                        "text":  "signal",
+                                        "x":  1112
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3",
+                      "words":  [
+                                    {
+                                        "y":  1822,
+                                        "height":  17,
+                                        "width":  12,
+                                        "text":  "3",
+                                        "x":  1189
+                                    }
+                                ]
+                  }
+              ]
+}

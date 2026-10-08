@@ -1,0 +1,1113 @@
+{
+  "mcq_features_edges.shuf.txt": {
+    "questions": 125,
+    "correct": 122,
+    "note": "",
+    "wrong": [
+      {
+        "n": 54,
+        "section": "hed",
+        "question": "In HED, edge detection can use:",
+        "picked": "Only Canny",
+        "key": "Canny, Sobel, or Scharr",
+        "evidence": "fact:0052 lab_04_manual:p10"
+      },
+      {
+        "n": 59,
+        "section": "hed",
+        "question": "HED histogram bins in code:",
+        "picked": "256",
+        "key": "8",
+        "evidence": "fact:0081 lab_04_manual:p15"
+      },
+      {
+        "n": 124,
+        "section": "edge_tech",
+        "question": "Scharr operator is:",
+        "picked": "Not gradient-based",
+        "key": "A gradient-based edge detector",
+        "evidence": "fact:0103 lab_04_manual:p20"
+      }
+    ]
+  },
+  "mcq_features_edges.txt": {
+    "questions": 125,
+    "correct": 122,
+    "note": "User-supplied Lab 04 MCQs with answer key. Facts were written after seeing these, so the score is optimistic.",
+    "wrong": [
+      {
+        "n": 54,
+        "section": "hed",
+        "question": "In HED, edge detection can use:",
+        "picked": "Only Canny",
+        "key": "Canny, Sobel, or Scharr",
+        "evidence": "fact:0052 lab_04_manual:p10"
+      },
+      {
+        "n": 59,
+        "section": "hed",
+        "question": "HED histogram bins in code:",
+        "picked": "256",
+        "key": "8",
+        "evidence": "fact:0081 lab_04_manual:p15"
+      },
+      {
+        "n": 124,
+        "section": "edge_tech",
+        "question": "Scharr operator is:",
+        "picked": "Not gradient-based",
+        "key": "A gradient-based edge detector",
+        "evidence": "fact:0103 lab_04_manual:p20"
+      }
+    ]
+  },
+  "mcq_lab01_lab03.shuf.txt": {
+    "questions": 100,
+    "correct": 82,
+    "note": "",
+    "wrong": [
+      {
+        "n": 25,
+        "section": "lab01",
+        "question": "Which library is mainly used for general computer vision tasks?",
+        "picked": "Keras",
+        "key": "OpenCV",
+        "evidence": "fact:0531 lab_01_manual:p7"
+      },
+      {
+        "n": 31,
+        "section": "lab01",
+        "question": "In image coordinates, the x-axis goes:",
+        "picked": "Left",
+        "key": "Right",
+        "evidence": "fact:0215 lab_03_manual:p9"
+      },
+      {
+        "n": 33,
+        "section": "lab01",
+        "question": "In digital image representation, M represents:",
+        "picked": "Total columns / width",
+        "key": "Total rows / height",
+        "evidence": "fact:0164 lab_01_manual:p10"
+      },
+      {
+        "n": 46,
+        "section": "lab01",
+        "question": "Matplotlib expects images in which format?",
+        "picked": "BGR",
+        "key": "RGB",
+        "evidence": "fact:0352 opencv_docs:cvtColor"
+      },
+      {
+        "n": 48,
+        "section": "lab01",
+        "question": "Grayscale conversion in OpenCV uses:",
+        "picked": "cv2.COLOR_RGB2BGR",
+        "key": "cv2.COLOR_BGR2GRAY",
+        "evidence": "fact:0425 opencv_introspection:opencv-4.13.0"
+      },
+      {
+        "n": 53,
+        "section": "lab01",
+        "question": "In Pandas image analysis, image.reshape(-1, 3) converts:",
+        "picked": "2D array to 3D array",
+        "key": "3D image array to 2D array",
+        "evidence": "fact:0192 lab_01_manual:p20"
+      },
+      {
+        "n": 62,
+        "section": "lab03",
+        "question": "Geometric transformation formula is:",
+        "picked": "I(x,y) → I'(x',y')",
+        "key": "(x,y) → (x',y')",
+        "evidence": "fact:0204 lab_03_manual:p3"
+      },
+      {
+        "n": 65,
+        "section": "lab03",
+        "question": "In image coordinate system, x increases:",
+        "picked": "Down",
+        "key": "Right",
+        "evidence": "fact:0210 lab_03_manual:p6"
+      },
+      {
+        "n": 69,
+        "section": "lab03",
+        "question": "OpenCV's warpPerspective() uses a:",
+        "picked": "2×3 matrix",
+        "key": "3×3 matrix",
+        "evidence": "fact:0213 lab_03_manual:p8"
+      },
+      {
+        "n": 71,
+        "section": "lab03",
+        "question": "In a 2×2 transformation matrix, the first column represents:",
+        "picked": "New landing spot for the Y-axis",
+        "key": "New landing spot for the X-axis",
+        "evidence": "lab_03_manual:p10#w0"
+      },
+      {
+        "n": 73,
+        "section": "lab03",
+        "question": "In the matrix [[a, b], [c, d]], variable 'a' controls:",
+        "picked": "Vertical scaling",
+        "key": "Horizontal scaling",
+        "evidence": "fact:0219 lab_03_manual:p10"
+      },
+      {
+        "n": 75,
+        "section": "lab03",
+        "question": "In the matrix [[a, b], [c, d]], variable 'b' controls:",
+        "picked": "Vertical shearing",
+        "key": "Horizontal shearing",
+        "evidence": "fact:0220 lab_03_manual:p10"
+      },
+      {
+        "n": 80,
+        "section": "lab03",
+        "question": "A linear transformation is represented by:",
+        "picked": "p' = Ap + b",
+        "key": "p' = Ap",
+        "evidence": "fact:0224 lab_03_manual:p11"
+      },
+      {
+        "n": 85,
+        "section": "lab03",
+        "question": "A projective transformation is also called:",
+        "picked": "Convolution",
+        "key": "Homography",
+        "evidence": "correction:C19"
+      },
+      {
+        "n": 93,
+        "section": "lab03",
+        "question": "Linear transformations can achieve:",
+        "picked": "Translation only",
+        "key": "Scaling, rotation, reflection",
+        "evidence": "fact:0224 lab_03_manual:p11"
+      },
+      {
+        "n": 94,
+        "section": "lab03",
+        "question": "In a homogeneous 3×3 matrix, translation values are placed in:",
+        "picked": "The bottom row",
+        "key": "The rightmost column",
+        "evidence": "fact:0241 lab_03_manual:p19"
+      },
+      {
+        "n": 97,
+        "section": "lab03",
+        "question": "Which of the following is a geometric transformation?",
+        "picked": "Brightness adjustment",
+        "key": "Rotation",
+        "evidence": "fact:0208 lab_03_manual:p4"
+      },
+      {
+        "n": 98,
+        "section": "lab03",
+        "question": "Which of the following is a photometric transformation?",
+        "picked": "Translation",
+        "key": "Contrast enhancement",
+        "evidence": "fact:0224 lab_03_manual:p11"
+      }
+    ]
+  },
+  "mcq_lab01_lab03.txt": {
+    "questions": 100,
+    "correct": 82,
+    "note": "User-supplied Lab 01/03 MCQs. Held-out: facts written before seeing them (first run 75/100); scorer fixes (x-sign, NOT/all-of handling, stemming) applied after.",
+    "wrong": [
+      {
+        "n": 25,
+        "section": "lab01",
+        "question": "Which library is mainly used for general computer vision tasks?",
+        "picked": "Keras",
+        "key": "OpenCV",
+        "evidence": "fact:0531 lab_01_manual:p7"
+      },
+      {
+        "n": 31,
+        "section": "lab01",
+        "question": "In image coordinates, the x-axis goes:",
+        "picked": "Left",
+        "key": "Right",
+        "evidence": "fact:0215 lab_03_manual:p9"
+      },
+      {
+        "n": 33,
+        "section": "lab01",
+        "question": "In digital image representation, M represents:",
+        "picked": "Total columns / width",
+        "key": "Total rows / height",
+        "evidence": "fact:0164 lab_01_manual:p10"
+      },
+      {
+        "n": 46,
+        "section": "lab01",
+        "question": "Matplotlib expects images in which format?",
+        "picked": "BGR",
+        "key": "RGB",
+        "evidence": "fact:0352 opencv_docs:cvtColor"
+      },
+      {
+        "n": 48,
+        "section": "lab01",
+        "question": "Grayscale conversion in OpenCV uses:",
+        "picked": "cv2.COLOR_RGB2BGR",
+        "key": "cv2.COLOR_BGR2GRAY",
+        "evidence": "fact:0425 opencv_introspection:opencv-4.13.0"
+      },
+      {
+        "n": 53,
+        "section": "lab01",
+        "question": "In Pandas image analysis, image.reshape(-1, 3) converts:",
+        "picked": "2D array to 3D array",
+        "key": "3D image array to 2D array",
+        "evidence": "fact:0192 lab_01_manual:p20"
+      },
+      {
+        "n": 62,
+        "section": "lab03",
+        "question": "Geometric transformation formula is:",
+        "picked": "I(x,y) → I'(x',y')",
+        "key": "(x,y) → (x',y')",
+        "evidence": "fact:0204 lab_03_manual:p3"
+      },
+      {
+        "n": 65,
+        "section": "lab03",
+        "question": "In image coordinate system, x increases:",
+        "picked": "Down",
+        "key": "Right",
+        "evidence": "fact:0210 lab_03_manual:p6"
+      },
+      {
+        "n": 69,
+        "section": "lab03",
+        "question": "OpenCV's warpPerspective() uses a:",
+        "picked": "2×3 matrix",
+        "key": "3×3 matrix",
+        "evidence": "fact:0213 lab_03_manual:p8"
+      },
+      {
+        "n": 71,
+        "section": "lab03",
+        "question": "In a 2×2 transformation matrix, the first column represents:",
+        "picked": "New landing spot for the Y-axis",
+        "key": "New landing spot for the X-axis",
+        "evidence": "lab_03_manual:p10#w0"
+      },
+      {
+        "n": 73,
+        "section": "lab03",
+        "question": "In the matrix [[a, b], [c, d]], variable 'a' controls:",
+        "picked": "Vertical scaling",
+        "key": "Horizontal scaling",
+        "evidence": "fact:0219 lab_03_manual:p10"
+      },
+      {
+        "n": 75,
+        "section": "lab03",
+        "question": "In the matrix [[a, b], [c, d]], variable 'b' controls:",
+        "picked": "Vertical shearing",
+        "key": "Horizontal shearing",
+        "evidence": "fact:0220 lab_03_manual:p10"
+      },
+      {
+        "n": 80,
+        "section": "lab03",
+        "question": "A linear transformation is represented by:",
+        "picked": "p' = Ap + b",
+        "key": "p' = Ap",
+        "evidence": "fact:0224 lab_03_manual:p11"
+      },
+      {
+        "n": 85,
+        "section": "lab03",
+        "question": "A projective transformation is also called:",
+        "picked": "Convolution",
+        "key": "Homography",
+        "evidence": "correction:C19"
+      },
+      {
+        "n": 93,
+        "section": "lab03",
+        "question": "Linear transformations can achieve:",
+        "picked": "Translation only",
+        "key": "Scaling, rotation, reflection",
+        "evidence": "fact:0224 lab_03_manual:p11"
+      },
+      {
+        "n": 94,
+        "section": "lab03",
+        "question": "In a homogeneous 3×3 matrix, translation values are placed in:",
+        "picked": "The bottom row",
+        "key": "The rightmost column",
+        "evidence": "fact:0241 lab_03_manual:p19"
+      },
+      {
+        "n": 97,
+        "section": "lab03",
+        "question": "Which of the following is a geometric transformation?",
+        "picked": "Brightness adjustment",
+        "key": "Rotation",
+        "evidence": "fact:0208 lab_03_manual:p4"
+      },
+      {
+        "n": 98,
+        "section": "lab03",
+        "question": "Which of the following is a photometric transformation?",
+        "picked": "Translation",
+        "key": "Contrast enhancement",
+        "evidence": "fact:0224 lab_03_manual:p11"
+      }
+    ]
+  },
+  "mcq_lab05.shuf.txt": {
+    "questions": 103,
+    "correct": 87,
+    "note": "",
+    "wrong": [
+      {
+        "n": 7,
+        "section": "intro",
+        "question": "Which of the following is NOT a visual characteristic used in segmentation?",
+        "picked": "Intensity",
+        "key": "File size",
+        "evidence": "fact:0518 lab_05_manual:p3"
+      },
+      {
+        "n": 9,
+        "section": "intro",
+        "question": "Which of the following is a segmentation algorithm?",
+        "picked": "Region growing",
+        "key": "All of the above",
+        "evidence": "fact:0271 lab_05_manual:p10"
+      },
+      {
+        "n": 22,
+        "section": "math",
+        "question": "Which graph algorithms can be used for segmentation?",
+        "picked": "Graph cuts",
+        "key": "Both A and B",
+        "evidence": "lab_05_manual:p5#w160"
+      },
+      {
+        "n": 37,
+        "section": "threshold",
+        "question": "In Canny edge detection, the high threshold is used to detect:",
+        "picked": "Weak edges",
+        "key": "Strong edges",
+        "evidence": "fact:0117 lab_04_manual:p22"
+      },
+      {
+        "n": 43,
+        "section": "region",
+        "question": "Region growing expands to neighboring pixels that are:",
+        "picked": "Different in intensity",
+        "key": "Similar in some criteria",
+        "evidence": "fact:0270 lab_05_manual:p10"
+      },
+      {
+        "n": 46,
+        "section": "region",
+        "question": "In the region growing code, the threshold value is:",
+        "picked": "10",
+        "key": "50",
+        "evidence": "fact:0526 lab_05_manual:p11"
+      },
+      {
+        "n": 61,
+        "section": "region",
+        "question": "In watershed code, threshold type used for markers is:",
+        "picked": "THRESH_TOZERO",
+        "key": "THRESH_BINARY_INV + THRESH_OTSU",
+        "evidence": "fact:0438 opencv_introspection:opencv-4.13.0"
+      },
+      {
+        "n": 63,
+        "section": "region",
+        "question": "In watershed code, sure_bg is created by:",
+        "picked": "Opening",
+        "key": "Dilation",
+        "evidence": "fact:0280 lab_05_manual:p13"
+      },
+      {
+        "n": 67,
+        "section": "region",
+        "question": "In watershed code, connectedComponents returns:",
+        "picked": "Labels",
+        "key": "Markers",
+        "evidence": "fact:0506 opencv_introspection:opencv-4.13.0"
+      },
+      {
+        "n": 68,
+        "section": "region",
+        "question": "After connectedComponents, markers are incremented by:",
+        "picked": "-1",
+        "key": "1",
+        "evidence": "fact:0385 opencv_docs:watershed"
+      },
+      {
+        "n": 86,
+        "section": "cluster",
+        "question": "In K-Means code, centers are converted to:",
+        "picked": "np.float32",
+        "key": "np.uint8",
+        "evidence": "fact:0288 lab_05_manual:p15"
+      },
+      {
+        "n": 88,
+        "section": "cluster",
+        "question": "Semantic segmentation means:",
+        "picked": "Different instances of same class separated",
+        "key": "Same class gets same label",
+        "evidence": "fact:0403 cv_fundamentals:segmentation"
+      },
+      {
+        "n": 94,
+        "section": "opencv",
+        "question": "cv2.imread() flag for grayscale is:",
+        "picked": "IMREAD_ANYCOLOR",
+        "key": "IMREAD_GRAYSCALE",
+        "evidence": "fact:0421 opencv_introspection:opencv-4.13.0"
+      },
+      {
+        "n": 97,
+        "section": "opencv",
+        "question": "cv2.cvtColor() code for BGR to HSV is:",
+        "picked": "COLOR_BGR2GRAY",
+        "key": "COLOR_BGR2HSV",
+        "evidence": "fact:0181 lab_01_manual:p15"
+      },
+      {
+        "n": 101,
+        "section": "opencv",
+        "question": "cv2.watershed() marks boundaries as:",
+        "picked": "0",
+        "key": "-1",
+        "evidence": "fact:0520 lab_05_manual:p13"
+      },
+      {
+        "n": 103,
+        "section": "opencv",
+        "question": "cv2.morphologyEx() with MORPH_OPEN performs:",
+        "picked": "Dilation then erosion",
+        "key": "Erosion then dilation",
+        "evidence": "topic:morphology"
+      }
+    ]
+  },
+  "mcq_lab05.txt": {
+    "questions": 103,
+    "correct": 87,
+    "note": "",
+    "wrong": [
+      {
+        "n": 7,
+        "section": "intro",
+        "question": "Which of the following is NOT a visual characteristic used in segmentation?",
+        "picked": "Intensity",
+        "key": "File size",
+        "evidence": "fact:0518 lab_05_manual:p3"
+      },
+      {
+        "n": 9,
+        "section": "intro",
+        "question": "Which of the following is a segmentation algorithm?",
+        "picked": "Region growing",
+        "key": "All of the above",
+        "evidence": "fact:0271 lab_05_manual:p10"
+      },
+      {
+        "n": 22,
+        "section": "math",
+        "question": "Which graph algorithms can be used for segmentation?",
+        "picked": "Graph cuts",
+        "key": "Both A and B",
+        "evidence": "lab_05_manual:p5#w160"
+      },
+      {
+        "n": 37,
+        "section": "threshold",
+        "question": "In Canny edge detection, the high threshold is used to detect:",
+        "picked": "Weak edges",
+        "key": "Strong edges",
+        "evidence": "fact:0117 lab_04_manual:p22"
+      },
+      {
+        "n": 43,
+        "section": "region",
+        "question": "Region growing expands to neighboring pixels that are:",
+        "picked": "Different in intensity",
+        "key": "Similar in some criteria",
+        "evidence": "fact:0270 lab_05_manual:p10"
+      },
+      {
+        "n": 46,
+        "section": "region",
+        "question": "In the region growing code, the threshold value is:",
+        "picked": "10",
+        "key": "50",
+        "evidence": "fact:0526 lab_05_manual:p11"
+      },
+      {
+        "n": 61,
+        "section": "region",
+        "question": "In watershed code, threshold type used for markers is:",
+        "picked": "THRESH_TOZERO",
+        "key": "THRESH_BINARY_INV + THRESH_OTSU",
+        "evidence": "fact:0438 opencv_introspection:opencv-4.13.0"
+      },
+      {
+        "n": 63,
+        "section": "region",
+        "question": "In watershed code, sure_bg is created by:",
+        "picked": "Opening",
+        "key": "Dilation",
+        "evidence": "fact:0280 lab_05_manual:p13"
+      },
+      {
+        "n": 67,
+        "section": "region",
+        "question": "In watershed code, connectedComponents returns:",
+        "picked": "Labels",
+        "key": "Markers",
+        "evidence": "fact:0506 opencv_introspection:opencv-4.13.0"
+      },
+      {
+        "n": 70,
+        "section": "region",
+        "question": "In watershed, boundaries are marked as:",
+        "picked": "1",
+        "key": "-1",
+        "evidence": "lab_manual_06:p1#w40"
+      },
+      {
+        "n": 86,
+        "section": "cluster",
+        "question": "In K-Means code, centers are converted to:",
+        "picked": "np.float32",
+        "key": "np.uint8",
+        "evidence": "fact:0288 lab_05_manual:p15"
+      },
+      {
+        "n": 88,
+        "section": "cluster",
+        "question": "Semantic segmentation means:",
+        "picked": "Different instances of same class separated",
+        "key": "Same class gets same label",
+        "evidence": "fact:0403 cv_fundamentals:segmentation"
+      },
+      {
+        "n": 94,
+        "section": "opencv",
+        "question": "cv2.imread() flag for grayscale is:",
+        "picked": "IMREAD_ANYCOLOR",
+        "key": "IMREAD_GRAYSCALE",
+        "evidence": "fact:0421 opencv_introspection:opencv-4.13.0"
+      },
+      {
+        "n": 97,
+        "section": "opencv",
+        "question": "cv2.cvtColor() code for BGR to HSV is:",
+        "picked": "COLOR_BGR2GRAY",
+        "key": "COLOR_BGR2HSV",
+        "evidence": "fact:0181 lab_01_manual:p15"
+      },
+      {
+        "n": 101,
+        "section": "opencv",
+        "question": "cv2.watershed() marks boundaries as:",
+        "picked": "0",
+        "key": "-1",
+        "evidence": "fact:0520 lab_05_manual:p13"
+      },
+      {
+        "n": 103,
+        "section": "opencv",
+        "question": "cv2.morphologyEx() with MORPH_OPEN performs:",
+        "picked": "Dilation then erosion",
+        "key": "Erosion then dilation",
+        "evidence": "topic:morphology"
+      }
+    ]
+  },
+  "mcq_lab06.shuf.txt": {
+    "questions": 100,
+    "correct": 72,
+    "note": "",
+    "wrong": [
+      {
+        "n": 1,
+        "section": "wavelet",
+        "question": "What does CWT stand for?",
+        "picked": "Discrete Wavelet Transform",
+        "key": "Continuous Wavelet Transform",
+        "evidence": "fact:0297 lab_manual_06:p3"
+      },
+      {
+        "n": 4,
+        "section": "wavelet",
+        "question": "In CWT, the wavelet function is:",
+        "picked": "Neither dilated nor translated",
+        "key": "Dilated and translated",
+        "evidence": "fact:0298 lab_manual_06:p3"
+      },
+      {
+        "n": 7,
+        "section": "wavelet",
+        "question": "WPT is an extension of:",
+        "picked": "Inverse Wavelet Transform",
+        "key": "DWT",
+        "evidence": "lab_manual_06:p4#w40"
+      },
+      {
+        "n": 17,
+        "section": "boundary",
+        "question": "Which Sobel kernel detects vertical edges?",
+        "picked": "Gy",
+        "key": "Gx",
+        "evidence": "fact:0311 lab_manual_06:p7"
+      },
+      {
+        "n": 22,
+        "section": "boundary",
+        "question": "What is the correct order of Canny edge detection steps?",
+        "picked": "Hysteresis → NMS → Gradient → Gaussian smoothing",
+        "key": "Gaussian smoothing → Gradient → NMS → Hysteresis",
+        "evidence": "fact:0316 lab_manual_06:p11"
+      },
+      {
+        "n": 24,
+        "section": "boundary",
+        "question": "What does Non-Maximum Suppression do in Canny?",
+        "picked": "Links strong and weak edges",
+        "key": "Thins edges to 1-pixel width",
+        "evidence": "fact:0317 lab_manual_06:p11"
+      },
+      {
+        "n": 25,
+        "section": "boundary",
+        "question": "In hysteresis thresholding, weak edges are kept only if:",
+        "picked": "They are below the low threshold",
+        "key": "They are connected to strong edges",
+        "evidence": "fact:0118 lab_04_manual:p22"
+      },
+      {
+        "n": 28,
+        "section": "boundary",
+        "question": "In LoG, edges are indicated by:",
+        "picked": "High gradients",
+        "key": "Zero-crossings",
+        "evidence": "fact:0102 lab_04_manual:p20"
+      },
+      {
+        "n": 30,
+        "section": "boundary",
+        "question": "Which derivative does Laplacian represent?",
+        "picked": "First derivative",
+        "key": "Second derivative",
+        "evidence": "fact:0366 opencv_docs:Laplacian"
+      },
+      {
+        "n": 33,
+        "section": "hough",
+        "question": "A line in Cartesian coordinates is represented as:",
+        "picked": "y = mx² + b",
+        "key": "y = mx + b",
+        "evidence": "fact:0329 lab_manual_06:p17"
+      },
+      {
+        "n": 34,
+        "section": "hough",
+        "question": "In Hough line detection, the parameter space axes are:",
+        "picked": "a, b, and r",
+        "key": "m and b",
+        "evidence": "fact:0333 lab_manual_06:p18"
+      },
+      {
+        "n": 38,
+        "section": "hough",
+        "question": "The parameter space for circle detection has how many dimensions?",
+        "picked": "2",
+        "key": "3",
+        "evidence": "lab_manual_06:p18#w0"
+      },
+      {
+        "n": 44,
+        "section": "sift",
+        "question": "SIFT is used for:",
+        "picked": "Image stitching",
+        "key": "All of the above",
+        "evidence": "fact:0335 lab_manual_06:p18"
+      },
+      {
+        "n": 50,
+        "section": "sift",
+        "question": "Orientation assignment in SIFT makes keypoints invariant to:",
+        "picked": "All of the above",
+        "key": "Rotation",
+        "evidence": "lab_manual_06:p20#w0"
+      },
+      {
+        "n": 55,
+        "section": "sift",
+        "question": "Homography estimation is used for:",
+        "picked": "Image stitching",
+        "key": "Both A and B",
+        "evidence": "fact:0346 lab_manual_06:p22"
+      },
+      {
+        "n": 61,
+        "section": "opencv",
+        "question": "Which cv2.imread flag loads an image in grayscale?",
+        "picked": "cv2.IMREAD_UNCHANGED",
+        "key": "cv2.IMREAD_GRAYSCALE",
+        "evidence": "fact:0417 opencv_introspection:opencv-4.13.0"
+      },
+      {
+        "n": 63,
+        "section": "opencv",
+        "question": "Which cv2.cvtColor code converts BGR to RGB?",
+        "picked": "cv2.COLOR_BGR2GRAY",
+        "key": "cv2.COLOR_BGR2RGB",
+        "evidence": "fact:0181 lab_01_manual:p15"
+      },
+      {
+        "n": 66,
+        "section": "opencv",
+        "question": "In cv2.Sobel, what does ksize=3 mean?",
+        "picked": "3×3 image",
+        "key": "3×3 kernel",
+        "evidence": "fact:0362 opencv_docs:Sobel"
+      },
+      {
+        "n": 68,
+        "section": "opencv",
+        "question": "In the lab, what Gaussian blur kernel size is used?",
+        "picked": "(3, 3)",
+        "key": "(5, 5)",
+        "evidence": "fact:0089 lab_04_manual:p16"
+      },
+      {
+        "n": 69,
+        "section": "opencv",
+        "question": "In the lab, what sigmaX value is used for Gaussian blur?",
+        "picked": "1.0",
+        "key": "1.4",
+        "evidence": "lab_04_manual:p17#w0"
+      },
+      {
+        "n": 72,
+        "section": "opencv",
+        "question": "In cv2.Canny, if L2gradient=True, which norm is used?",
+        "picked": "L1 norm",
+        "key": "L2 norm",
+        "evidence": "fact:0371 opencv_docs:Canny"
+      },
+      {
+        "n": 73,
+        "section": "opencv",
+        "question": "In cv2.Laplacian, which depth is used in the lab?",
+        "picked": "cv2.CV_16S",
+        "key": "cv2.CV_64F",
+        "evidence": "fact:0460 opencv_introspection:opencv-4.13.0"
+      },
+      {
+        "n": 86,
+        "section": "opencv",
+        "question": "Which function detects keypoints and computes descriptors in SIFT?",
+        "picked": "sift.compute()",
+        "key": "sift.detectAndCompute()",
+        "evidence": "fact:0397 opencv_docs:detectAndCompute"
+      },
+      {
+        "n": 87,
+        "section": "opencv",
+        "question": "In cv2.HoughLines, what does rho represent?",
+        "picked": "Angle resolution in radians",
+        "key": "Distance resolution in pixels",
+        "evidence": "fact:0388 opencv_docs:HoughLines"
+      },
+      {
+        "n": 89,
+        "section": "opencv",
+        "question": "In cv2.HoughLines, what does threshold represent?",
+        "picked": "Angle resolution",
+        "key": "Accumulator threshold",
+        "evidence": "fact:0388 opencv_docs:HoughLines"
+      },
+      {
+        "n": 96,
+        "section": "opencv",
+        "question": "Which edge detector uses hysteresis thresholding?",
+        "picked": "LoG",
+        "key": "Canny",
+        "evidence": "fact:0108 lab_04_manual:p21"
+      },
+      {
+        "n": 98,
+        "section": "opencv",
+        "question": "Which transform is used for line and circle detection?",
+        "picked": "Wavelet Transform",
+        "key": "Hough Transform",
+        "evidence": "fact:0297 lab_manual_06:p3"
+      },
+      {
+        "n": 99,
+        "section": "opencv",
+        "question": "Which feature detector is scale-invariant?",
+        "picked": "Hough",
+        "key": "SIFT",
+        "evidence": "fact:0412 cv_fundamentals:features"
+      }
+    ]
+  },
+  "mcq_lab06.txt": {
+    "questions": 100,
+    "correct": 73,
+    "note": "",
+    "wrong": [
+      {
+        "n": 1,
+        "section": "wavelet",
+        "question": "What does CWT stand for?",
+        "picked": "Discrete Wavelet Transform",
+        "key": "Continuous Wavelet Transform",
+        "evidence": "fact:0297 lab_manual_06:p3"
+      },
+      {
+        "n": 4,
+        "section": "wavelet",
+        "question": "In CWT, the wavelet function is:",
+        "picked": "Neither dilated nor translated",
+        "key": "Dilated and translated",
+        "evidence": "fact:0298 lab_manual_06:p3"
+      },
+      {
+        "n": 7,
+        "section": "wavelet",
+        "question": "WPT is an extension of:",
+        "picked": "Inverse Wavelet Transform",
+        "key": "DWT",
+        "evidence": "lab_manual_06:p4#w40"
+      },
+      {
+        "n": 17,
+        "section": "boundary",
+        "question": "Which Sobel kernel detects vertical edges?",
+        "picked": "Gy",
+        "key": "Gx",
+        "evidence": "fact:0311 lab_manual_06:p7"
+      },
+      {
+        "n": 22,
+        "section": "boundary",
+        "question": "What is the correct order of Canny edge detection steps?",
+        "picked": "NMS → Gradient → Gaussian smoothing → Hysteresis",
+        "key": "Gaussian smoothing → Gradient → NMS → Hysteresis",
+        "evidence": "fact:0316 lab_manual_06:p11"
+      },
+      {
+        "n": 24,
+        "section": "boundary",
+        "question": "What does Non-Maximum Suppression do in Canny?",
+        "picked": "Links strong and weak edges",
+        "key": "Thins edges to 1-pixel width",
+        "evidence": "fact:0317 lab_manual_06:p11"
+      },
+      {
+        "n": 25,
+        "section": "boundary",
+        "question": "In hysteresis thresholding, weak edges are kept only if:",
+        "picked": "They are below the low threshold",
+        "key": "They are connected to strong edges",
+        "evidence": "fact:0118 lab_04_manual:p22"
+      },
+      {
+        "n": 28,
+        "section": "boundary",
+        "question": "In LoG, edges are indicated by:",
+        "picked": "High gradients",
+        "key": "Zero-crossings",
+        "evidence": "fact:0102 lab_04_manual:p20"
+      },
+      {
+        "n": 30,
+        "section": "boundary",
+        "question": "Which derivative does Laplacian represent?",
+        "picked": "First derivative",
+        "key": "Second derivative",
+        "evidence": "fact:0366 opencv_docs:Laplacian"
+      },
+      {
+        "n": 34,
+        "section": "hough",
+        "question": "In Hough line detection, the parameter space axes are:",
+        "picked": "a, b, and r",
+        "key": "m and b",
+        "evidence": "fact:0333 lab_manual_06:p18"
+      },
+      {
+        "n": 38,
+        "section": "hough",
+        "question": "The parameter space for circle detection has how many dimensions?",
+        "picked": "2",
+        "key": "3",
+        "evidence": "lab_manual_06:p18#w0"
+      },
+      {
+        "n": 44,
+        "section": "sift",
+        "question": "SIFT is used for:",
+        "picked": "Image stitching",
+        "key": "All of the above",
+        "evidence": "fact:0335 lab_manual_06:p18"
+      },
+      {
+        "n": 50,
+        "section": "sift",
+        "question": "Orientation assignment in SIFT makes keypoints invariant to:",
+        "picked": "All of the above",
+        "key": "Rotation",
+        "evidence": "lab_manual_06:p20#w0"
+      },
+      {
+        "n": 55,
+        "section": "sift",
+        "question": "Homography estimation is used for:",
+        "picked": "Image stitching",
+        "key": "Both A and B",
+        "evidence": "fact:0346 lab_manual_06:p22"
+      },
+      {
+        "n": 61,
+        "section": "opencv",
+        "question": "Which cv2.imread flag loads an image in grayscale?",
+        "picked": "cv2.IMREAD_UNCHANGED",
+        "key": "cv2.IMREAD_GRAYSCALE",
+        "evidence": "fact:0417 opencv_introspection:opencv-4.13.0"
+      },
+      {
+        "n": 63,
+        "section": "opencv",
+        "question": "Which cv2.cvtColor code converts BGR to RGB?",
+        "picked": "cv2.COLOR_BGR2GRAY",
+        "key": "cv2.COLOR_BGR2RGB",
+        "evidence": "fact:0181 lab_01_manual:p15"
+      },
+      {
+        "n": 66,
+        "section": "opencv",
+        "question": "In cv2.Sobel, what does ksize=3 mean?",
+        "picked": "3×3 image",
+        "key": "3×3 kernel",
+        "evidence": "fact:0362 opencv_docs:Sobel"
+      },
+      {
+        "n": 68,
+        "section": "opencv",
+        "question": "In the lab, what Gaussian blur kernel size is used?",
+        "picked": "(3, 3)",
+        "key": "(5, 5)",
+        "evidence": "fact:0089 lab_04_manual:p16"
+      },
+      {
+        "n": 69,
+        "section": "opencv",
+        "question": "In the lab, what sigmaX value is used for Gaussian blur?",
+        "picked": "1.0",
+        "key": "1.4",
+        "evidence": "lab_04_manual:p17#w0"
+      },
+      {
+        "n": 72,
+        "section": "opencv",
+        "question": "In cv2.Canny, if L2gradient=True, which norm is used?",
+        "picked": "L1 norm",
+        "key": "L2 norm",
+        "evidence": "fact:0371 opencv_docs:Canny"
+      },
+      {
+        "n": 73,
+        "section": "opencv",
+        "question": "In cv2.Laplacian, which depth is used in the lab?",
+        "picked": "cv2.CV_16S",
+        "key": "cv2.CV_64F",
+        "evidence": "fact:0460 opencv_introspection:opencv-4.13.0"
+      },
+      {
+        "n": 86,
+        "section": "opencv",
+        "question": "Which function detects keypoints and computes descriptors in SIFT?",
+        "picked": "sift.compute()",
+        "key": "sift.detectAndCompute()",
+        "evidence": "fact:0397 opencv_docs:detectAndCompute"
+      },
+      {
+        "n": 87,
+        "section": "opencv",
+        "question": "In cv2.HoughLines, what does rho represent?",
+        "picked": "Angle resolution in radians",
+        "key": "Distance resolution in pixels",
+        "evidence": "fact:0388 opencv_docs:HoughLines"
+      },
+      {
+        "n": 89,
+        "section": "opencv",
+        "question": "In cv2.HoughLines, what does threshold represent?",
+        "picked": "Angle resolution",
+        "key": "Accumulator threshold",
+        "evidence": "fact:0388 opencv_docs:HoughLines"
+      },
+      {
+        "n": 96,
+        "section": "opencv",
+        "question": "Which edge detector uses hysteresis thresholding?",
+        "picked": "LoG",
+        "key": "Canny",
+        "evidence": "fact:0108 lab_04_manual:p21"
+      },
+      {
+        "n": 98,
+        "section": "opencv",
+        "question": "Which transform is used for line and circle detection?",
+        "picked": "Wavelet Transform",
+        "key": "Hough Transform",
+        "evidence": "fact:0297 lab_manual_06:p3"
+      },
+      {
+        "n": 99,
+        "section": "opencv",
+        "question": "Which feature detector is scale-invariant?",
+        "picked": "Hough",
+        "key": "SIFT",
+        "evidence": "fact:0412 cv_fundamentals:features"
+      }
+    ]
+  },
+  "mcq_other_labs_selfwritten.txt": {
+    "questions": 24,
+    "correct": 22,
+    "note": "Written by the KB author for Labs 01/03/05/06; a pipeline sanity check, not an independent benchmark.",
+    "wrong": [
+      {
+        "n": 13,
+        "section": "lab03",
+        "question": "warpPerspective in OpenCV uses a matrix of size:",
+        "picked": "2x3",
+        "key": "3x3",
+        "evidence": "fact:0213 lab_03_manual:p8"
+      },
+      {
+        "n": 23,
+        "section": "lab06",
+        "question": "A SIFT keypoint candidate is compared with how many neighbors?",
+        "picked": "9",
+        "key": "26",
+        "evidence": "fact:0339 lab_manual_06:p19"
+      }
+    ]
+  }
+}

@@ -1,0 +1,719 @@
+=== PAGE 1 ===
+Computer
+Lab 05
+Vision
+Image Segmentation
+A1-4002
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+
+=== PAGE 2 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+Course Code: AI-4002 Computer Vision Lab
+1. Objectives ....................................................................................................„...............................................2
+2. Image Segmentation .............................................................................„.
+2.1 Mathematics Behind Image Segmentation.........................
+2.2 Real-Life Examples .
+Image Segmentation Techniques ...................................
+2.3
+2.3.1 Thresholding .
+2.3.1.1 Global Thresholding .
+2.3.1.2 Adaptive Thresholding .
+2.3.1.3 Otsu's Thresholding..
+2.3.1.4 Color-Based Thresholding.
+2.3.1.5 Hysteresis Thresholding (Canny Edge Detector):.
+2.3.2 Edge Detection..
+2.3.3 Region Growing • • • • • • • • • • • • • • • • • • 9
+2.3.4 Watershed Segmentation ................................................................................ 1 1
+2.3.5 Clustering-Based Segmentation..
+2.3.6 Deep Learning-Based Segmentation............................................................. 14
+2.3.7 Active Contour Models (Snakes).............
+15
+FAST NUCES
+- Karachi
+Talha Shahid
+.5
+8
+.8
+9
+.9
+... 13
+1
+
+=== PAGE 3 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+1. Objectives
+1.
+2.
+3.
+4.
+5.
+Introduction to Image Segmentation
+Techniques/Method010gies of Image Segmentations
+Region-based segmentation
+Edge detection segmentation
+Clustering-based segmentation
+2. Image Segmentation
+Image Segmentation is the process of partitioning an image into
+distinct,
+non-overLapping regions or segments,
+each of which
+corresponds to a meaningful object or part of the scene. The goat is
+to separate an image into areas that share similar visual
+characteristics, such as color, texture, or intensity.
+INPUT: COMPLEX LANDSCAPE IMAGE
+.14
+PREPROCESSING &
+FEATURE EXTRACTION
+FAST NUCES
+- Karachi
+SEGMENTATION
+ALGORITHM
+nowm
+DEEP LEARNING
+MODEL (CNN)
+Talha Shahid
+OUTPUT: SEGMENTED REGION MAP
+SEGMENT 1: SKY
+SEGMENT 2:
+MOUNTAINS
+EXE.'SHAPE)
+SEGMENT 3: WATER
+(SHAREO PATTERN,'
+2
+
+=== PAGE 4 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+Original Image
+Hair Region
+Face Region Clothing Region
+Segmented Image
+(Partitioned Regions)
+Process of dividing an image into meaningful, separate parts.
+IMAGE SEGMENTATION PROCESS
+ORIGINAL IMAGE
+Input Street Scene
+SEGMENTATION
+SEGMENTED OUTPUT
+ALGORITHM
+FAST NUCES
+- Karachi
+Partitioning pixels based
+on shared characteristics
+Talha Shahid
+SEGMENT A: SEGMENT B: SEGMENT C:
+TREE
+PERSON
+Result: Distinct, non-overlapping
+regions representing meaningful objects
+3
+
+=== PAGE 5 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+2.1 Mathematics Behind Image Segmentation
+The mathematics behind image segmentation involves various techniques
+and algorithms,
+Thresholding:
+Edge Detection:
+Clustering:
+Graph Theory:
+including:
+Image
+segmentation
+begin
+with
+simple
+can
+thresholding, where a pixel Is intensity value is
+compared to a predefined threshold. If the intensity
+is above the threshold, it belongs to one region;
+otherwise, it belongs to another.
+Edge detection algorithms identify rapid changes in
+intensity ,
+which
+often
+correspond to object
+boundaries. Common edge detection methods include the
+Sobel operator, Canny edge detector, and Laplacian of
+Gaussian (LOG) .
+Clustering techniques, like K-Means clustering or
+Mean-Shift clustering, group similar pixels together
+based on feature similarity. These methods consider
+multiple attributes, such as color values, to form
+clusters.
+In graph-based segmentation, pixels are represented
+as nodes in a graph, and edges between nodes represent
+the similarity between pixel values. Graph algorithms
+like minimum spanning trees or graph cuts can be used
+to partition the image into segments .
+FAST NUCES
+- Karachi
+Talha Shahid
+4
+
+=== PAGE 6 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+Thresholding
+Threshold (T)
+Edge Detection
+Background
+(Pixels s T)
+Object
+(Pixels > T)
+Pixel Intensity (0-255)
+Object. if I(x.y) > T
+Background, otherwise
+K-Means Clustering (Iterative partitioning into K groups)
+Sobel: Gradient Magnitude
+(Edges based on intensity change)
+Canny: Mufti-stage Process
+(Noise reduction, gradient. non-maxirnum
+suppression, hysteresis thresholding)
+Graph-based Segmentation (Minimum Cut / Max Flow)
+Segment 1
+(Source)
+Centroid
+Assign Points to
+Nearest Centroid
+Centroid
+(Sun of "tuxes)
+Initialize K
+Update
+Repeat until
+T-set
+Segment 2
+(Sink)
+Cut Cost w(e) for e E Cut
+(Minimizing cut cost optimal SMMtation)
+2.2 Real-Life Examples
+Medical Imaging:
+Object Detection:
+Satellite Imagery:
+Biomedical Imaging:
+Augmented Reality:
+In medical image analysis, segmentation is used
+to identify and isolate specific anatomical
+structures or tumors in X-rays, CT scans, or
+MRIs.
+In autonomous vehicles, image segmentation is
+employed to detect and locate objects like
+pedestrians, other vehicles, and road signs.
+Segmentation of satellite images can help
+classify
+land
+monitor
+types ,
+cover
+deforestation, and assess urban growth .
+In microscopy images, segmentation is used to
+count cells, identify cell nuclei, and diagnose
+diseases .
+Image segmentation is crucial for scene
+understanding in AR applications, helping to
+identify and track objects in real-time video.
+FAST NUCES
+- Karachi
+Talha Shahid
+5
+
+=== PAGE 7 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+REAL-LIFE EXAMPLES OF IMAGE SEGMENTATION
+MEDICAL IMAGING: MRI BRAIN SCAN
+Segmentation
+for Disease
+Detection
+(e.g., Tumor)
+Precise Anatomical &
+Pathological Segmentation
+AUTONOMOUS VEHICLE: OBJECT DETECTION
+ooo
+ooa
+SPEED
+LIMIT
+50
+Pedestrian
+Detection
+Vehicle
+Tracking
+Sign & Signal
+Recognition
+SATELLITE IMAGERY
+URBAN
+AREAS
+FORESTS
+WATER
+Partitioning landscapes into
+distinct segments for land
+cover classification.
+FAST NUCES
+- Karachi
+BIOMEDICAL IMAGING
+CELL NUCLEI
+Accurately isolating specific
+cellular structures like nuclei
+for analysis.
+Talha Shahid
+Scene Parsing & Obstacle
+Identification for Navigation
+AUGMENTED REALITY
+REAL-TIME TRACKINC
+& ALIGNMENT
+Precise overlay and interaction
+of digital content with
+real-world objects.
+6
+
+=== PAGE 8 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+2.3 Image Segmentation Techniques
+Image segmentation is a critical task in computer vision, and various
+techniques and methodologies are employed to achieve accurate and
+meaningful segmentations.
+Here are some common techniques and
+methodologies used in image segmentation:
+2.3.1 Thresholding
+Methodology:
+Use Cases:
+Divides an image into two regions based on pixel
+intensity values. Pixels above a certain threshold
+belong to one region, and those below belong to
+another.
+Simple and effective for segmenting objects with
+distinct intensity differences.
+2.3.1.1 Global Thresholding
+Methodology :
+Use Cases:
+import cv2
+A single global threshold value is applied to the
+entire image.
+Effective when there is a clear intensity difference
+between the objects and background .
+image
+= cv2. imread(' image .jpg' ,
+cv2. IMREAD_GRAYSCALE)
+= cv2.thresh01d(image, 128, 255, cv2.THRESH_BINARY)
+binary _ mask
+2.3.1.2 Adaptive Thresholding
+Methodology :
+Use Cases:
+FAST NUCES
+Uses different threshold values for different regions
+of the image, which adapt to local variations in
+intensity.
+Ideal for images with varying lighting conditions.
+- Karachi
+Talha Shahid
+7
+
+=== PAGE 9 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+import cv2
+= cv2. imread( image .jpg I
+cv2. IMREAD_GRAYSCALE)
+image
+binary_mask
+= cv2. adaptiveThresh01d(image, 255,
+cv2.ADAPTIVE THRESH GAUSSIAN C, cv2.THRESH BINARY, 11,
+2.3.1.3 Otsu's Thresholding
+2)
+Methodology :
+Use Cases:
+import cv2
+Automatically selects an optimal threshold value to
+maximize the inter-class variance between object and
+background pixels.
+Suitable when the distribution of pixel intensities
+is bimodal .
+image
+= cv2. imread(l image .jpg' ,
+cv2. IMREAD_GRAYSCALE)
+= cv2.thresh01d(image, O, 255, cv2.THRESH_BINARY +
+binary_mask
+cv2 . THRESH_OTSU)
+2.3.1.4 Color-Based Thresholding
+Methodology :
+Use Cases:
+import cv2
+Applies thresholding in multiple color channels
+(e.g., RGB, HSV) to segment based on color.
+Useful for segmenting objects with distinct colors.
+import numpy as np
+= cv2. imread( image .jpg')
+image
+= cv2.cvtC010r(image, cv2.COLOR_BGR2HSV)
+hsv _ image
+= np.array( [30, 50, 50])
+lower bound
+= 255, 255])
+upper_bound
+mask
+= cv2. inRange (hsv _ image, lower _ bound, upper_bound)
+FAST NUCES
+- Karachi
+Talha Shahid
+8
+
+=== PAGE 10 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+2.3.1.5 Hysteresis Thresholding (Canny Edge Detector):
+Methodology :
+Use Cases:
+import cv2
+Utilizes two threshold values, a high threshold to
+detect strong edges and a low threshold to link weak
+edges .
+Typically used for edge detection but can be adapted
+for segmentation .
+= cv2. imread( image .jpg I
+cv2. IMREAD_GRAYSCALE)
+image
+= cv2. Canny (image, 100, 200)
+edges
+2.3.2 Edge Detection
+Methodology :
+Use Cases:
+Detects boundaries between objects by identifying
+rapid changes in intensity or color.
+Useful for extracting object contours and boundaries.
+2.3.3 Region Growing
+Methodology :
+Use Cases:
+import cv2
+Starts with a seed pixel and expands to neighboring
+pixels that are similar in some criteria (e.g. ,
+intensity, color) .
+Effective for segmenting
+characteristics.
+regions
+with
+import numpy as np
+from matplotlib import pyplot as plt
+# Load the image
+= cv2. imread(lents.jpgl
+cv2. IMREAD_GRAYSCALE)
+image
+# Initialize seed point (starting point for region growing)
+seed _ point
+FAST NUCES
+= (10, 10)
+- Karachi
+Talha Shahid
+uniform
+9
+
+=== PAGE 11 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+# Define a function for region growing
+def region _ growing(image, seed, threshold) :
+# Create an empty mask to store the segmented region
+mask
+= np.zeros_like (image, dtype=np . uint8)
+# Create a stack for pixel traversal
+stack
+# Get the intensity value of the seed point
+seed _ intensity
+= image C seed]
+while stack:
+x, y = stack. pop()
+4k Check if the pixel is within the image boundaries
+if x < @ 01 x >= or y < @ or y >=
+image . shape C 1] :
+continue
+4k Check if the pixel is unvisited
+if mask [x, y] == O
+# Check if the intensity difference is below the
+threshold
+if abs (int(imageCx, y]) -
+int(seed_intensity)) <
+threshold :
+# Add the pixel to the segmented region
+mask (X' y ]
+- 255
+4k Add neighboring pixels to the stack
+stack. extend([(x + 1, y),
+(x,
+return mask
+4k Define a threshold
+threshold = 50
+4k Perform region growing
+region _ growing(image, seed _ point,
+segmented _ image =
+4k 4k Display the segmented image
+4k cv2. imshow( Segmented Image
+segmented _ image)
+threshold)
+4k cv2.waitKey(@)
+# cv2.destroyA11Windows()
+plt . imshow (segmented_image)
+plt . axis(' off I)
+FAST NUCES - Karachi
+Talha Shahid
+10
+
+=== PAGE 12 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+I plt . show()
+2.3.4 Watershed Segmentation
+Methodology :
+Use Cases:
+Steps :
+Treats the image as a topographic map and simulates
+flooding to identify segment boundaries.
+Suitable for segmenting touching or overlapping
+objects .
+1.
+2.
+3.
+4.
+5.
+6.
+Preprocessing
+• Convert the input image to grayscale if it's a color image.
+• Apply suitable preprocessing techniques like noise reduction
+and contrast enhancement if necessary.
+Marker Generation
+•
+•
+Identify markers that represent the regions you want to
+segment. These markers can be manually created or generated
+automatically based on specific criteria. Common approaches
+include:
+Manual placement of markers by the user.
+Thresholding to create markers based on intensity levels.
+Distance transform to create markers around the object
+centers .
+Gradient Calculation
+• Calculate the gradient of the image to highlight the
+boundaries of objects. You can use techniques like Sobel or
+Scharr filters.
+Marker Labeling
+Label the markers created in step 2 using different integer
+values .
+Watershed Transformation
+• Treat the gradient image as a topographic surface where high
+gradient values represent peaks.
+• Fill basins in the topographic surface with different colors,
+starting from the labeled markers .
+• The boundaries where the basins meet represent the segmented
+regions .
+Post-processing
+• Optionally, you can apply post-processing techniques like
+morphological operations (erosion, dilation) to refine the
+segmentation .
+FAST NUCES
+- Karachi
+Talha Shahid
+11
+
+=== PAGE 13 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+import cv2
+import numpy as np
+from matplotlib import pyplot as plt
+# Load the image
+image
+= cv2. imread( dog. jpeg' )
+= cv2.cvtC010r(image, cv2.COLOR_BGR2GRAY)
+gray
+# Threshold the image to create markers (you can adjust the
+threshold value)
+thresh
+= cv2.thresh01d(gray, O, 255, +
+cv2. THRESH_OTSU)
+# Perform morphological operations to remove noise
+np.ones((5, 5), np.uint8)
+kernel =
+opening = cv2.morph010gyEx(thresh, cv2 . MORPH_OPEN, kernel,
+iterations=2)
+4k Create sure background and sure foreground markers
+sure_bg = cv2.di1ate(opening, kernel, iterations=3)
+dist_transform = cv2.distanceTransform(opening, cv2 . DIST_L2,
+= cv2. threshold (dist_transform, 0.2 *
+sure_fg
+dist_transform.max(), 255, 0)
+5)
+# Subtract sure foreground from sure background to get unknown
+region
+sure_fg
+= np.uint8(sure_fg)
+= cv2. sure_fg)
+unknown
+# Label markers for watershed algorithm
+= cv2.
+markers
+markers = markers + 1
+markers C unknown
+255] = @
+# Apply watershed algorithm
+cv2. watershed (image, markers)
+image [markers == -1]
+color
+plt . imshow (image)
+plt.axis( Ion')
+plt. show()
+= [255, o,
+0] # Mark boundaries with red
+FAST NUCES
+- Karachi
+Talha Shahid
+12
+
+=== PAGE 14 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+2.3.5 Clustering-Based Segmentation
+Methodology :
+Use Cases:
+Steps :
+Groups pixels into clusters based
+similarity using techniques like K-Means,
+or DBSCAN.
+on feature
+Mean-Shift ,
+Effective for segmenting objects with complex
+characteristics .
+1.
+2.
+3.
+4.
+5.
+Feature Extraction
+a. Choose the feature (s) that represent each pixel ' s
+characteristics. For color images, these features could be
+RGB values or color spaces like LAB or HSV. For grayscale
+images, intensity values are commonly used.
+Cluster Initialization
+a. Decide on the number of clusters (K) you want to create.
+This choice depends on the specific image and application.
+b. Initialize K cluster centroids. These centroids represent
+the initial cluster centers, which can be randomly chosen
+or based on some heuristic.
+Clustering Algorithm (K-Means)
+a.
+b.
+c.
+d.
+Iterate through the following steps until convergence.
+Assignment Step: Assign each pixel to the nearest cluster
+centroid based on feature similarity (e.g. ,
+Euclidean
+distance) .
+Update Step: Recalculate the cluster centroids as the mean
+of the pixels in each cluster.
+Convergence is reached when the cluster assignments no
+longer change significantly.
+Segmentation
+a. After convergence, the image is segmented based on the
+final cluster assignments.
+Each cluster represents a
+segment or region in the image.
+Post-processing
+a. Optionally, apply post-processing techniques to refine the
+segmentation, such as merging or splitting clusters based
+on specific criteria.
+FAST NUCES
+- Karachi
+Talha Shahid
+13
+
+=== PAGE 15 ===
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+import cv2
+import numpy as np
+from matplotlib import pyplot as plt
+4k Load the image
+image
+= cv2. imread( dogimg. jpgl)
+4k Reshape the image to a 2D array of pixels
+= image . 3))
+pixel _ values
+4k Convert to float32 for K-Means clustering
+pixel _ values
+= np.
+4k Define criteria and apply K-Means clustering
+criteria =
++ cv2. 100,
+0.2)
+K = 4 4k Number of clusters (you can adjust this)
+labels, centers
+= cv2. kmeans(pixel_values, K, None, criteria, 10,
+cv2.
+4k Convert back to 8-bit values
+= np.uint8(centers)
+centers
+= centers [labels. flatten()]
+segmented _ image
+4k Reshape the segmented image back to its original shape
+= segmented _ image . reshape (image . shape)
+segmented _ image
+4k Display the segmented image
+cv2. imshow( Segmented Image ,
+segmented _ image)
+cv2. waitKey (0)
+cv2. destroyA11Windows ( )
+plt . imshow (segmented_image)
+plt . axis('on')
+plt . show()
+2.3.6 Deep Learning-Based Segmentation
+Methodology :
+Use Cases:
+FAST NUCES
+Utilizes deep learning models, such as Convolutional
+Neural Networks (CNNs), for semantic and instance
+segmentation.
+Suitable for complex tasks and large datasets.
+- Karachi
+Talha Shahid
+14
+
+=== PAGE 16 ===
+Frameworks :
+National University of Computer & Emerging Sciences -
+NUCES - Karachi
+Department of Artificial Intelligence
+TensorFlow, PyTorch, and libraries like Keras provide
+pre-trained models and tools for deep learning-based
+segmentation.
+2.3.7 Active Contour Models (Snakes)
+Methodology :
+Use Cases:
+FAST NUCES
+Deformable models that evolve and adapt to object
+boundaries based on image gradients and constraints.
+Effective
+for
+object tracking
+and
+refinement.
+- Karachi
+Talha Shahid
+boundary
+15

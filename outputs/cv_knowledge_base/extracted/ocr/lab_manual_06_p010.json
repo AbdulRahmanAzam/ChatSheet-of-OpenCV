@@ -1,0 +1,887 @@
+﻿{
+    "id":  "lab_manual_06_p010",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "National University of Computer \u0026 Emerging Sciences - NUCES - Karachi Department of Artificial Intelligence # Sobel in Y direction cv2. Sobel (gray, ksize=3) sobet_y = cv2.CV_64F, @ , 1, # Calculate gradient magnitude magnitude = # Convert magnitude to uint8 for display np.uint8(np.ctip(magnitude, 0, 255)) magnitude = # Plot results ptt.subplot(2, 2, 1) put . imshow (image_rgb) Image\") put . axis (\"off\") put. subplot(2, 2, 2) put. cmap=\"gray\") ptt.axis(\"off\") ptt.subptot(2, 2, 3) put . put . axis (\"off\") put. subplot(2, 2, 4) plt. imshow(magnitude, Edge Magnitude\") put. axis (\"off\") put. put . show() FAST NUCES - Karachi Talha Shahid 10",
+    "review_status":  "raw_ocr_unverified",
+    "page":  10,
+    "source_id":  "lab_manual_06",
+    "lines":  [
+                  {
+                      "text":  "National University of Computer \u0026 Emerging Sciences -",
+                      "words":  [
+                                    {
+                                        "y":  94,
+                                        "height":  23,
+                                        "width":  122,
+                                        "text":  "National",
+                                        "x":  376
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  29,
+                                        "width":  146,
+                                        "text":  "University",
+                                        "x":  507
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  22,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  660
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  28,
+                                        "width":  147,
+                                        "text":  "Computer",
+                                        "x":  696
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  22,
+                                        "width":  21,
+                                        "text":  "\u0026",
+                                        "x":  851
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  28,
+                                        "width":  134,
+                                        "text":  "Emerging",
+                                        "x":  880
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  23,
+                                        "width":  132,
+                                        "text":  "Sciences",
+                                        "x":  1021
+                                    },
+                                    {
+                                        "y":  107,
+                                        "height":  4,
+                                        "width":  10,
+                                        "text":  "-",
+                                        "x":  1162
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "NUCES - Karachi",
+                      "words":  [
+                                    {
+                                        "y":  140,
+                                        "height":  22,
+                                        "width":  103,
+                                        "text":  "NUCES",
+                                        "x":  654
+                                    },
+                                    {
+                                        "y":  152,
+                                        "height":  4,
+                                        "width":  10,
+                                        "text":  "-",
+                                        "x":  765
+                                    },
+                                    {
+                                        "y":  139,
+                                        "height":  23,
+                                        "width":  109,
+                                        "text":  "Karachi",
+                                        "x":  784
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Department of Artificial Intelligence",
+                      "words":  [
+                                    {
+                                        "y":  183,
+                                        "height":  26,
+                                        "width":  143,
+                                        "text":  "Department",
+                                        "x":  555
+                                    },
+                                    {
+                                        "y":  182,
+                                        "height":  22,
+                                        "width":  24,
+                                        "text":  "of",
+                                        "x":  706
+                                    },
+                                    {
+                                        "y":  182,
+                                        "height":  22,
+                                        "width":  100,
+                                        "text":  "Artificial",
+                                        "x":  737
+                                    },
+                                    {
+                                        "y":  182,
+                                        "height":  27,
+                                        "width":  137,
+                                        "text":  "Intelligence",
+                                        "x":  847
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# Sobel in Y direction",
+                      "words":  [
+                                    {
+                                        "y":  224,
+                                        "height":  18,
+                                        "width":  13,
+                                        "text":  "#",
+                                        "x":  182
+                                    },
+                                    {
+                                        "y":  224,
+                                        "height":  18,
+                                        "width":  70,
+                                        "text":  "Sobel",
+                                        "x":  212
+                                    },
+                                    {
+                                        "y":  223,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "in",
+                                        "x":  299
+                                    },
+                                    {
+                                        "y":  224,
+                                        "height":  18,
+                                        "width":  13,
+                                        "text":  "Y",
+                                        "x":  341
+                                    },
+                                    {
+                                        "y":  223,
+                                        "height":  19,
+                                        "width":  126,
+                                        "text":  "direction",
+                                        "x":  370
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "cv2. Sobel (gray,",
+                      "words":  [
+                                    {
+                                        "y":  256,
+                                        "height":  19,
+                                        "width":  50,
+                                        "text":  "cv2.",
+                                        "x":  328
+                                    },
+                                    {
+                                        "y":  256,
+                                        "height":  19,
+                                        "width":  69,
+                                        "text":  "Sobel",
+                                        "x":  385
+                                    },
+                                    {
+                                        "y":  254,
+                                        "height":  25,
+                                        "width":  77,
+                                        "text":  "(gray,",
+                                        "x":  459
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ksize=3)",
+                      "words":  [
+                                    {
+                                        "y":  254,
+                                        "height":  24,
+                                        "width":  109,
+                                        "text":  "ksize=3)",
+                                        "x":  818
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "sobet_y =",
+                      "words":  [
+                                    {
+                                        "y":  256,
+                                        "height":  23,
+                                        "width":  98,
+                                        "text":  "sobet_y",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  262,
+                                        "height":  9,
+                                        "width":  12,
+                                        "text":  "=",
+                                        "x":  298
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "cv2.CV_64F, @ , 1,",
+                      "words":  [
+                                    {
+                                        "y":  256,
+                                        "height":  23,
+                                        "width":  152,
+                                        "text":  "cv2.CV_64F,",
+                                        "x":  558
+                                    },
+                                    {
+                                        "y":  256,
+                                        "height":  19,
+                                        "width":  11,
+                                        "text":  "@",
+                                        "x":  731
+                                    },
+                                    {
+                                        "y":  271,
+                                        "height":  8,
+                                        "width":  5,
+                                        "text":  ",",
+                                        "x":  748
+                                    },
+                                    {
+                                        "y":  256,
+                                        "height":  23,
+                                        "width":  22,
+                                        "text":  "1,",
+                                        "x":  775
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# Calculate gradient magnitude",
+                      "words":  [
+                                    {
+                                        "y":  322,
+                                        "height":  19,
+                                        "width":  13,
+                                        "text":  "#",
+                                        "x":  182
+                                    },
+                                    {
+                                        "y":  322,
+                                        "height":  18,
+                                        "width":  127,
+                                        "text":  "Calculate",
+                                        "x":  212
+                                    },
+                                    {
+                                        "y":  321,
+                                        "height":  24,
+                                        "width":  111,
+                                        "text":  "gradient",
+                                        "x":  356
+                                    },
+                                    {
+                                        "y":  321,
+                                        "height":  24,
+                                        "width":  127,
+                                        "text":  "magnitude",
+                                        "x":  485
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "magnitude =",
+                      "words":  [
+                                    {
+                                        "y":  353,
+                                        "height":  23,
+                                        "width":  128,
+                                        "text":  "magnitude",
+                                        "x":  182
+                                    },
+                                    {
+                                        "y":  359,
+                                        "height":  9,
+                                        "width":  12,
+                                        "text":  "=",
+                                        "x":  327
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# Convert magnitude to uint8 for display",
+                      "words":  [
+                                    {
+                                        "y":  419,
+                                        "height":  19,
+                                        "width":  13,
+                                        "text":  "#",
+                                        "x":  182
+                                    },
+                                    {
+                                        "y":  419,
+                                        "height":  19,
+                                        "width":  98,
+                                        "text":  "Convert",
+                                        "x":  212
+                                    },
+                                    {
+                                        "y":  418,
+                                        "height":  24,
+                                        "width":  127,
+                                        "text":  "magnitude",
+                                        "x":  327
+                                    },
+                                    {
+                                        "y":  419,
+                                        "height":  19,
+                                        "width":  26,
+                                        "text":  "to",
+                                        "x":  470
+                                    },
+                                    {
+                                        "y":  418,
+                                        "height":  20,
+                                        "width":  69,
+                                        "text":  "uint8",
+                                        "x":  514
+                                    },
+                                    {
+                                        "y":  419,
+                                        "height":  19,
+                                        "width":  42,
+                                        "text":  "for",
+                                        "x":  600
+                                    },
+                                    {
+                                        "y":  418,
+                                        "height":  24,
+                                        "width":  99,
+                                        "text":  "display",
+                                        "x":  658
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "np.uint8(np.ctip(magnitude, 0, 255))",
+                      "words":  [
+                                    {
+                                        "y":  449,
+                                        "height":  25,
+                                        "width":  382,
+                                        "text":  "np.uint8(np.ctip(magnitude,",
+                                        "x":  356
+                                    },
+                                    {
+                                        "y":  452,
+                                        "height":  22,
+                                        "width":  22,
+                                        "text":  "0,",
+                                        "x":  760
+                                    },
+                                    {
+                                        "y":  449,
+                                        "height":  24,
+                                        "width":  67,
+                                        "text":  "255))",
+                                        "x":  803
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "magnitude =",
+                      "words":  [
+                                    {
+                                        "y":  451,
+                                        "height":  23,
+                                        "width":  128,
+                                        "text":  "magnitude",
+                                        "x":  182
+                                    },
+                                    {
+                                        "y":  457,
+                                        "height":  9,
+                                        "width":  12,
+                                        "text":  "=",
+                                        "x":  327
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# Plot results",
+                      "words":  [
+                                    {
+                                        "y":  517,
+                                        "height":  18,
+                                        "width":  13,
+                                        "text":  "#",
+                                        "x":  182
+                                    },
+                                    {
+                                        "y":  517,
+                                        "height":  18,
+                                        "width":  55,
+                                        "text":  "Plot",
+                                        "x":  212
+                                    },
+                                    {
+                                        "y":  517,
+                                        "height":  18,
+                                        "width":  97,
+                                        "text":  "results",
+                                        "x":  285
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ptt.subplot(2, 2, 1)",
+                      "words":  [
+                                    {
+                                        "y":  613,
+                                        "height":  24,
+                                        "width":  195,
+                                        "text":  "ptt.subplot(2,",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  615,
+                                        "height":  23,
+                                        "width":  22,
+                                        "text":  "2,",
+                                        "x":  399
+                                    },
+                                    {
+                                        "y":  613,
+                                        "height":  23,
+                                        "width":  22,
+                                        "text":  "1)",
+                                        "x":  443
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "put . imshow (image_rgb)",
+                      "words":  [
+                                    {
+                                        "y":  647,
+                                        "height":  23,
+                                        "width":  40,
+                                        "text":  "put",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  661,
+                                        "height":  5,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  230
+                                    },
+                                    {
+                                        "y":  647,
+                                        "height":  19,
+                                        "width":  84,
+                                        "text":  "imshow",
+                                        "x":  241
+                                    },
+                                    {
+                                        "y":  645,
+                                        "height":  25,
+                                        "width":  150,
+                                        "text":  "(image_rgb)",
+                                        "x":  330
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Image\")",
+                      "words":  [
+                                    {
+                                        "y":  678,
+                                        "height":  25,
+                                        "width":  95,
+                                        "text":  "Image\")",
+                                        "x":  471
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "put . axis (\"off\")",
+                      "words":  [
+                                    {
+                                        "y":  712,
+                                        "height":  23,
+                                        "width":  40,
+                                        "text":  "put",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  726,
+                                        "height":  5,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  230
+                                    },
+                                    {
+                                        "y":  711,
+                                        "height":  20,
+                                        "width":  55,
+                                        "text":  "axis",
+                                        "x":  240
+                                    },
+                                    {
+                                        "y":  710,
+                                        "height":  23,
+                                        "width":  93,
+                                        "text":  "(\"off\")",
+                                        "x":  301
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "put. subplot(2, 2, 2)",
+                      "words":  [
+                                    {
+                                        "y":  777,
+                                        "height":  23,
+                                        "width":  51,
+                                        "text":  "put.",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  775,
+                                        "height":  25,
+                                        "width":  137,
+                                        "text":  "subplot(2,",
+                                        "x":  241
+                                    },
+                                    {
+                                        "y":  777,
+                                        "height":  23,
+                                        "width":  23,
+                                        "text":  "2,",
+                                        "x":  399
+                                    },
+                                    {
+                                        "y":  775,
+                                        "height":  24,
+                                        "width":  23,
+                                        "text":  "2)",
+                                        "x":  442
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "put. cmap=\"gray\")",
+                      "words":  [
+                                    {
+                                        "y":  810,
+                                        "height":  23,
+                                        "width":  51,
+                                        "text":  "put.",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  808,
+                                        "height":  25,
+                                        "width":  168,
+                                        "text":  "cmap=\"gray\")",
+                                        "x":  471
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ptt.axis(\"off\")",
+                      "words":  [
+                                    {
+                                        "y":  873,
+                                        "height":  25,
+                                        "width":  211,
+                                        "text":  "ptt.axis(\"off\")",
+                                        "x":  183
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "ptt.subptot(2, 2, 3)",
+                      "words":  [
+                                    {
+                                        "y":  939,
+                                        "height":  25,
+                                        "width":  195,
+                                        "text":  "ptt.subptot(2,",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  942,
+                                        "height":  22,
+                                        "width":  22,
+                                        "text":  "2,",
+                                        "x":  399
+                                    },
+                                    {
+                                        "y":  939,
+                                        "height":  24,
+                                        "width":  22,
+                                        "text":  "3)",
+                                        "x":  443
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "put .",
+                      "words":  [
+                                    {
+                                        "y":  974,
+                                        "height":  23,
+                                        "width":  40,
+                                        "text":  "put",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  988,
+                                        "height":  5,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  230
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "put . axis (\"off\")",
+                      "words":  [
+                                    {
+                                        "y":  1040,
+                                        "height":  22,
+                                        "width":  40,
+                                        "text":  "put",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  1054,
+                                        "height":  5,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  230
+                                    },
+                                    {
+                                        "y":  1039,
+                                        "height":  20,
+                                        "width":  55,
+                                        "text":  "axis",
+                                        "x":  240
+                                    },
+                                    {
+                                        "y":  1038,
+                                        "height":  22,
+                                        "width":  93,
+                                        "text":  "(\"off\")",
+                                        "x":  301
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "put. subplot(2, 2, 4)",
+                      "words":  [
+                                    {
+                                        "y":  1104,
+                                        "height":  23,
+                                        "width":  51,
+                                        "text":  "put.",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  1102,
+                                        "height":  25,
+                                        "width":  137,
+                                        "text":  "subplot(2,",
+                                        "x":  241
+                                    },
+                                    {
+                                        "y":  1104,
+                                        "height":  23,
+                                        "width":  22,
+                                        "text":  "2,",
+                                        "x":  399
+                                    },
+                                    {
+                                        "y":  1102,
+                                        "height":  23,
+                                        "width":  22,
+                                        "text":  "4)",
+                                        "x":  443
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "plt. imshow(magnitude,",
+                      "words":  [
+                                    {
+                                        "y":  1136,
+                                        "height":  23,
+                                        "width":  51,
+                                        "text":  "plt.",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  1134,
+                                        "height":  25,
+                                        "width":  237,
+                                        "text":  "imshow(magnitude,",
+                                        "x":  241
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Edge Magnitude\")",
+                      "words":  [
+                                    {
+                                        "y":  1170,
+                                        "height":  22,
+                                        "width":  54,
+                                        "text":  "Edge",
+                                        "x":  428
+                                    },
+                                    {
+                                        "y":  1167,
+                                        "height":  25,
+                                        "width":  154,
+                                        "text":  "Magnitude\")",
+                                        "x":  499
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "put. axis (\"off\")",
+                      "words":  [
+                                    {
+                                        "y":  1202,
+                                        "height":  23,
+                                        "width":  51,
+                                        "text":  "put.",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  1201,
+                                        "height":  20,
+                                        "width":  55,
+                                        "text":  "axis",
+                                        "x":  240
+                                    },
+                                    {
+                                        "y":  1200,
+                                        "height":  24,
+                                        "width":  93,
+                                        "text":  "(\"off\")",
+                                        "x":  301
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "put.",
+                      "words":  [
+                                    {
+                                        "y":  1267,
+                                        "height":  23,
+                                        "width":  51,
+                                        "text":  "put.",
+                                        "x":  183
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "put . show()",
+                      "words":  [
+                                    {
+                                        "y":  1300,
+                                        "height":  23,
+                                        "width":  40,
+                                        "text":  "put",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  1314,
+                                        "height":  5,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  230
+                                    },
+                                    {
+                                        "y":  1298,
+                                        "height":  24,
+                                        "width":  81,
+                                        "text":  "show()",
+                                        "x":  241
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FAST NUCES -",
+                      "words":  [
+                                    {
+                                        "y":  1822,
+                                        "height":  17,
+                                        "width":  56,
+                                        "text":  "FAST",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1822,
+                                        "height":  17,
+                                        "width":  78,
+                                        "text":  "NUCES",
+                                        "x":  234
+                                    },
+                                    {
+                                        "y":  1830,
+                                        "height":  4,
+                                        "width":  11,
+                                        "text":  "-",
+                                        "x":  320
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Karachi",
+                      "words":  [
+                                    {
+                                        "y":  1820,
+                                        "height":  19,
+                                        "width":  86,
+                                        "text":  "Karachi",
+                                        "x":  340
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1821,
+                                        "height":  18,
+                                        "width":  65,
+                                        "text":  "Talha",
+                                        "x":  607
+                                    },
+                                    {
+                                        "y":  1820,
+                                        "height":  19,
+                                        "width":  80,
+                                        "text":  "Shahid",
+                                        "x":  681
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "10",
+                      "words":  [
+                                    {
+                                        "y":  1822,
+                                        "height":  17,
+                                        "width":  24,
+                                        "text":  "10",
+                                        "x":  1177
+                                    }
+                                ]
+                  }
+              ]
+}

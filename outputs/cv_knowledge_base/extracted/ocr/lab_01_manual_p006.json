@@ -1,0 +1,2051 @@
+﻿{
+    "id":  "lab_01_manual_p006",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "24. 25. National University of Computer \u0026 Emerging Sciences - NUCES - Karachi Department of Artificial Intelligence SURF (Speeded-Up Robust Features) A feature detection and description algorithm similar to SIFT but faster. HOG (Histogram of Oriented Gradients) • A feature descriptor used for object detection and recognition. 4. Applications of Computer Vision 1. 2. 3. 4. 5. 6. Autonomous Vehicles : Computer vision enables self-driving cars to perceive their environment, recognize obstacles, pedestrians, traffic signs, and lane markings, and make real-time driving decisions . Computer vision assists in medical diagnosis Medical Imaging: through techniques like image segmentation, tumor detection, and anomaly identification in various medical imaging modalities, including X-rays, MRI, CT scans, and more. Robotics : Robots can use computer vision to navigate and interact with their surroundings, grasp objects, and perform tasks that require visual understanding. Object Detection and Recognition: Computer vision is used to identify and categorize objects within images or videos, enabling applications like security surveillance, retail analytics, and inventory management. Facial Recognition : This technology is employed for authentication, security, and human-computer interaction, such as unlocking devices or verifying identities. Augmented Reality (AR) and Virtual Reality (VR) : Computer vision enhances AR and VR experiences by overlaying digital content onto the real world and enabling interactions with virtual environments . 5. Essential Libraries for Computer Vision OpenCV Scikit- Image Pillow (PIL Fork) TorchVision TensorFlow Keras OpenVINO PyTorch Hugging Face FAST NUCES - Karachi Caffe Detectron2 Instructor: Talha Shahid 5",
+    "review_status":  "raw_ocr_unverified",
+    "page":  6,
+    "source_id":  "lab_01_manual",
+    "lines":  [
+                  {
+                      "text":  "24.",
+                      "words":  [
+                                    {
+                                        "y":  405,
+                                        "height":  27,
+                                        "width":  55,
+                                        "text":  "24.",
+                                        "x":  297
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "25.",
+                      "words":  [
+                                    {
+                                        "y":  505,
+                                        "height":  27,
+                                        "width":  55,
+                                        "text":  "25.",
+                                        "x":  297
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "National University of Computer \u0026 Emerging Sciences -",
+                      "words":  [
+                                    {
+                                        "y":  179,
+                                        "height":  33,
+                                        "width":  175,
+                                        "text":  "National",
+                                        "x":  535
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  42,
+                                        "width":  216,
+                                        "text":  "University",
+                                        "x":  723
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  33,
+                                        "width":  42,
+                                        "text":  "of",
+                                        "x":  950
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  42,
+                                        "width":  207,
+                                        "text":  "Computer",
+                                        "x":  1000
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  33,
+                                        "width":  32,
+                                        "text":  "\u0026",
+                                        "x":  1218
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  42,
+                                        "width":  199,
+                                        "text":  "Emerging",
+                                        "x":  1262
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  33,
+                                        "width":  173,
+                                        "text":  "Sciences",
+                                        "x":  1473
+                                    },
+                                    {
+                                        "y":  195,
+                                        "height":  7,
+                                        "width":  12,
+                                        "text":  "-",
+                                        "x":  1660
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "NUCES - Karachi",
+                      "words":  [
+                                    {
+                                        "y":  241,
+                                        "height":  33,
+                                        "width":  134,
+                                        "text":  "NUCES",
+                                        "x":  937
+                                    },
+                                    {
+                                        "y":  257,
+                                        "height":  6,
+                                        "width":  12,
+                                        "text":  "-",
+                                        "x":  1084
+                                    },
+                                    {
+                                        "y":  240,
+                                        "height":  34,
+                                        "width":  160,
+                                        "text":  "Karachi",
+                                        "x":  1110
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Department of Artificial Intelligence",
+                      "words":  [
+                                    {
+                                        "y":  300,
+                                        "height":  36,
+                                        "width":  199,
+                                        "text":  "Department",
+                                        "x":  795
+                                    },
+                                    {
+                                        "y":  298,
+                                        "height":  30,
+                                        "width":  35,
+                                        "text":  "of",
+                                        "x":  1006
+                                    },
+                                    {
+                                        "y":  298,
+                                        "height":  30,
+                                        "width":  141,
+                                        "text":  "Artificial",
+                                        "x":  1051
+                                    },
+                                    {
+                                        "y":  299,
+                                        "height":  37,
+                                        "width":  195,
+                                        "text":  "Intelligence",
+                                        "x":  1207
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "SURF (Speeded-Up Robust Features)",
+                      "words":  [
+                                    {
+                                        "y":  405,
+                                        "height":  27,
+                                        "width":  83,
+                                        "text":  "SURF",
+                                        "x":  471
+                                    },
+                                    {
+                                        "y":  404,
+                                        "height":  35,
+                                        "width":  228,
+                                        "text":  "(Speeded-Up",
+                                        "x":  582
+                                    },
+                                    {
+                                        "y":  404,
+                                        "height":  28,
+                                        "width":  124,
+                                        "text":  "Robust",
+                                        "x":  834
+                                    },
+                                    {
+                                        "y":  403,
+                                        "height":  34,
+                                        "width":  184,
+                                        "text":  "Features)",
+                                        "x":  981
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "A feature detection and",
+                      "words":  [
+                                    {
+                                        "y":  406,
+                                        "height":  26,
+                                        "width":  19,
+                                        "text":  "A",
+                                        "x":  1214
+                                    },
+                                    {
+                                        "y":  404,
+                                        "height":  28,
+                                        "width":  146,
+                                        "text":  "feature",
+                                        "x":  1256
+                                    },
+                                    {
+                                        "y":  404,
+                                        "height":  28,
+                                        "width":  189,
+                                        "text":  "detection",
+                                        "x":  1425
+                                    },
+                                    {
+                                        "y":  404,
+                                        "height":  28,
+                                        "width":  59,
+                                        "text":  "and",
+                                        "x":  1639
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "description algorithm similar to SIFT but faster.",
+                      "words":  [
+                                    {
+                                        "y":  454,
+                                        "height":  35,
+                                        "width":  231,
+                                        "text":  "description",
+                                        "x":  355
+                                    },
+                                    {
+                                        "y":  454,
+                                        "height":  35,
+                                        "width":  189,
+                                        "text":  "algorithm",
+                                        "x":  612
+                                    },
+                                    {
+                                        "y":  454,
+                                        "height":  28,
+                                        "width":  145,
+                                        "text":  "similar",
+                                        "x":  827
+                                    },
+                                    {
+                                        "y":  456,
+                                        "height":  26,
+                                        "width":  40,
+                                        "text":  "to",
+                                        "x":  996
+                                    },
+                                    {
+                                        "y":  455,
+                                        "height":  27,
+                                        "width":  84,
+                                        "text":  "SIFT",
+                                        "x":  1060
+                                    },
+                                    {
+                                        "y":  454,
+                                        "height":  28,
+                                        "width":  59,
+                                        "text":  "but",
+                                        "x":  1169
+                                    },
+                                    {
+                                        "y":  454,
+                                        "height":  28,
+                                        "width":  140,
+                                        "text":  "faster.",
+                                        "x":  1254
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "HOG (Histogram of Oriented Gradients) •",
+                      "words":  [
+                                    {
+                                        "y":  506,
+                                        "height":  26,
+                                        "width":  61,
+                                        "text":  "HOG",
+                                        "x":  472
+                                    },
+                                    {
+                                        "y":  504,
+                                        "height":  35,
+                                        "width":  208,
+                                        "text":  "(Histogram",
+                                        "x":  557
+                                    },
+                                    {
+                                        "y":  505,
+                                        "height":  27,
+                                        "width":  41,
+                                        "text":  "of",
+                                        "x":  783
+                                    },
+                                    {
+                                        "y":  504,
+                                        "height":  28,
+                                        "width":  168,
+                                        "text":  "Oriented",
+                                        "x":  842
+                                    },
+                                    {
+                                        "y":  504,
+                                        "height":  33,
+                                        "width":  207,
+                                        "text":  "Gradients)",
+                                        "x":  1030
+                                    },
+                                    {
+                                        "y":  512,
+                                        "height":  6,
+                                        "width":  6,
+                                        "text":  "•",
+                                        "x":  1251
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "A feature descriptor",
+                      "words":  [
+                                    {
+                                        "y":  506,
+                                        "height":  26,
+                                        "width":  20,
+                                        "text":  "A",
+                                        "x":  1282
+                                    },
+                                    {
+                                        "y":  504,
+                                        "height":  28,
+                                        "width":  146,
+                                        "text":  "feature",
+                                        "x":  1322
+                                    },
+                                    {
+                                        "y":  504,
+                                        "height":  35,
+                                        "width":  212,
+                                        "text":  "descriptor",
+                                        "x":  1488
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "used for object detection and recognition.",
+                      "words":  [
+                                    {
+                                        "y":  554,
+                                        "height":  28,
+                                        "width":  80,
+                                        "text":  "used",
+                                        "x":  356
+                                    },
+                                    {
+                                        "y":  554,
+                                        "height":  28,
+                                        "width":  61,
+                                        "text":  "for",
+                                        "x":  463
+                                    },
+                                    {
+                                        "y":  554,
+                                        "height":  35,
+                                        "width":  124,
+                                        "text":  "object",
+                                        "x":  548
+                                    },
+                                    {
+                                        "y":  554,
+                                        "height":  28,
+                                        "width":  188,
+                                        "text":  "detection",
+                                        "x":  698
+                                    },
+                                    {
+                                        "y":  554,
+                                        "height":  28,
+                                        "width":  59,
+                                        "text":  "and",
+                                        "x":  912
+                                    },
+                                    {
+                                        "y":  554,
+                                        "height":  35,
+                                        "width":  247,
+                                        "text":  "recognition.",
+                                        "x":  997
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4. Applications of Computer Vision",
+                      "words":  [
+                                    {
+                                        "y":  674,
+                                        "height":  38,
+                                        "width":  44,
+                                        "text":  "4.",
+                                        "x":  238
+                                    },
+                                    {
+                                        "y":  669,
+                                        "height":  54,
+                                        "width":  327,
+                                        "text":  "Applications",
+                                        "x":  301
+                                    },
+                                    {
+                                        "y":  672,
+                                        "height":  40,
+                                        "width":  53,
+                                        "text":  "of",
+                                        "x":  647
+                                    },
+                                    {
+                                        "y":  674,
+                                        "height":  49,
+                                        "width":  257,
+                                        "text":  "Computer",
+                                        "x":  718
+                                    },
+                                    {
+                                        "y":  669,
+                                        "height":  43,
+                                        "width":  159,
+                                        "text":  "Vision",
+                                        "x":  993
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1.",
+                      "words":  [
+                                    {
+                                        "y":  765,
+                                        "height":  26,
+                                        "width":  33,
+                                        "text":  "1.",
+                                        "x":  297
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2.",
+                      "words":  [
+                                    {
+                                        "y":  964,
+                                        "height":  27,
+                                        "width":  33,
+                                        "text":  "2.",
+                                        "x":  297
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3.",
+                      "words":  [
+                                    {
+                                        "y":  1165,
+                                        "height":  27,
+                                        "width":  33,
+                                        "text":  "3.",
+                                        "x":  297
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4.",
+                      "words":  [
+                                    {
+                                        "y":  1315,
+                                        "height":  26,
+                                        "width":  34,
+                                        "text":  "4.",
+                                        "x":  296
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "5.",
+                      "words":  [
+                                    {
+                                        "y":  1516,
+                                        "height":  26,
+                                        "width":  33,
+                                        "text":  "5.",
+                                        "x":  297
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "6.",
+                      "words":  [
+                                    {
+                                        "y":  1665,
+                                        "height":  27,
+                                        "width":  33,
+                                        "text":  "6.",
+                                        "x":  297
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Autonomous Vehicles :",
+                      "words":  [
+                                    {
+                                        "y":  765,
+                                        "height":  26,
+                                        "width":  212,
+                                        "text":  "Autonomous",
+                                        "x":  354
+                                    },
+                                    {
+                                        "y":  763,
+                                        "height":  28,
+                                        "width":  170,
+                                        "text":  "Vehicles",
+                                        "x":  592
+                                    },
+                                    {
+                                        "y":  771,
+                                        "height":  20,
+                                        "width":  6,
+                                        "text":  ":",
+                                        "x":  772
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Computer vision enables self-driving cars",
+                      "words":  [
+                                    {
+                                        "y":  764,
+                                        "height":  34,
+                                        "width":  167,
+                                        "text":  "Computer",
+                                        "x":  812
+                                    },
+                                    {
+                                        "y":  763,
+                                        "height":  28,
+                                        "width":  124,
+                                        "text":  "vision",
+                                        "x":  1007
+                                    },
+                                    {
+                                        "y":  763,
+                                        "height":  28,
+                                        "width":  146,
+                                        "text":  "enables",
+                                        "x":  1160
+                                    },
+                                    {
+                                        "y":  763,
+                                        "height":  35,
+                                        "width":  254,
+                                        "text":  "self-driving",
+                                        "x":  1335
+                                    },
+                                    {
+                                        "y":  771,
+                                        "height":  20,
+                                        "width":  81,
+                                        "text":  "cars",
+                                        "x":  1617
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "to perceive their environment, recognize obstacles, pedestrians,",
+                      "words":  [
+                                    {
+                                        "y":  815,
+                                        "height":  26,
+                                        "width":  40,
+                                        "text":  "to",
+                                        "x":  354
+                                    },
+                                    {
+                                        "y":  813,
+                                        "height":  35,
+                                        "width":  166,
+                                        "text":  "perceive",
+                                        "x":  417
+                                    },
+                                    {
+                                        "y":  813,
+                                        "height":  28,
+                                        "width":  105,
+                                        "text":  "their",
+                                        "x":  604
+                                    },
+                                    {
+                                        "y":  813,
+                                        "height":  33,
+                                        "width":  247,
+                                        "text":  "environment,",
+                                        "x":  729
+                                    },
+                                    {
+                                        "y":  813,
+                                        "height":  36,
+                                        "width":  189,
+                                        "text":  "recognize",
+                                        "x":  1003
+                                    },
+                                    {
+                                        "y":  814,
+                                        "height":  32,
+                                        "width":  206,
+                                        "text":  "obstacles,",
+                                        "x":  1213
+                                    },
+                                    {
+                                        "y":  813,
+                                        "height":  35,
+                                        "width":  247,
+                                        "text":  "pedestrians,",
+                                        "x":  1446
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "traffic signs, and lane markings, and make real-time driving",
+                      "words":  [
+                                    {
+                                        "y":  863,
+                                        "height":  29,
+                                        "width":  147,
+                                        "text":  "traffic",
+                                        "x":  354
+                                    },
+                                    {
+                                        "y":  863,
+                                        "height":  36,
+                                        "width":  118,
+                                        "text":  "signs,",
+                                        "x":  535
+                                    },
+                                    {
+                                        "y":  864,
+                                        "height":  28,
+                                        "width":  59,
+                                        "text":  "and",
+                                        "x":  692
+                                    },
+                                    {
+                                        "y":  864,
+                                        "height":  27,
+                                        "width":  81,
+                                        "text":  "lane",
+                                        "x":  786
+                                    },
+                                    {
+                                        "y":  863,
+                                        "height":  36,
+                                        "width":  183,
+                                        "text":  "markings,",
+                                        "x":  900
+                                    },
+                                    {
+                                        "y":  864,
+                                        "height":  27,
+                                        "width":  59,
+                                        "text":  "and",
+                                        "x":  1121
+                                    },
+                                    {
+                                        "y":  864,
+                                        "height":  27,
+                                        "width":  82,
+                                        "text":  "make",
+                                        "x":  1214
+                                    },
+                                    {
+                                        "y":  863,
+                                        "height":  28,
+                                        "width":  189,
+                                        "text":  "real-time",
+                                        "x":  1330
+                                    },
+                                    {
+                                        "y":  863,
+                                        "height":  36,
+                                        "width":  147,
+                                        "text":  "driving",
+                                        "x":  1552
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "decisions .",
+                      "words":  [
+                                    {
+                                        "y":  914,
+                                        "height":  28,
+                                        "width":  189,
+                                        "text":  "decisions",
+                                        "x":  355
+                                    },
+                                    {
+                                        "y":  936,
+                                        "height":  6,
+                                        "width":  6,
+                                        "text":  ".",
+                                        "x":  554
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Computer vision assists in medical diagnosis",
+                      "words":  [
+                                    {
+                                        "y":  964,
+                                        "height":  33,
+                                        "width":  169,
+                                        "text":  "Computer",
+                                        "x":  731
+                                    },
+                                    {
+                                        "y":  962,
+                                        "height":  29,
+                                        "width":  123,
+                                        "text":  "vision",
+                                        "x":  930
+                                    },
+                                    {
+                                        "y":  963,
+                                        "height":  28,
+                                        "width":  146,
+                                        "text":  "assists",
+                                        "x":  1084
+                                    },
+                                    {
+                                        "y":  962,
+                                        "height":  28,
+                                        "width":  37,
+                                        "text":  "in",
+                                        "x":  1263
+                                    },
+                                    {
+                                        "y":  963,
+                                        "height":  28,
+                                        "width":  147,
+                                        "text":  "medical",
+                                        "x":  1331
+                                    },
+                                    {
+                                        "y":  963,
+                                        "height":  35,
+                                        "width":  189,
+                                        "text":  "diagnosis",
+                                        "x":  1509
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Medical Imaging:",
+                      "words":  [
+                                    {
+                                        "y":  963,
+                                        "height":  28,
+                                        "width":  146,
+                                        "text":  "Medical",
+                                        "x":  355
+                                    },
+                                    {
+                                        "y":  963,
+                                        "height":  35,
+                                        "width":  161,
+                                        "text":  "Imaging:",
+                                        "x":  533
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "through techniques like image segmentation, tumor detection, and",
+                      "words":  [
+                                    {
+                                        "y":  1013,
+                                        "height":  35,
+                                        "width":  147,
+                                        "text":  "through",
+                                        "x":  354
+                                    },
+                                    {
+                                        "y":  1013,
+                                        "height":  35,
+                                        "width":  211,
+                                        "text":  "techniques",
+                                        "x":  522
+                                    },
+                                    {
+                                        "y":  1013,
+                                        "height":  28,
+                                        "width":  82,
+                                        "text":  "like",
+                                        "x":  756
+                                    },
+                                    {
+                                        "y":  1013,
+                                        "height":  35,
+                                        "width":  102,
+                                        "text":  "image",
+                                        "x":  861
+                                    },
+                                    {
+                                        "y":  1013,
+                                        "height":  35,
+                                        "width":  269,
+                                        "text":  "segmentation,",
+                                        "x":  984
+                                    },
+                                    {
+                                        "y":  1015,
+                                        "height":  26,
+                                        "width":  105,
+                                        "text":  "tumor",
+                                        "x":  1280
+                                    },
+                                    {
+                                        "y":  1013,
+                                        "height":  33,
+                                        "width":  205,
+                                        "text":  "detection,",
+                                        "x":  1406
+                                    },
+                                    {
+                                        "y":  1013,
+                                        "height":  28,
+                                        "width":  60,
+                                        "text":  "and",
+                                        "x":  1638
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "anomaly identification in various medical imaging modalities,",
+                      "words":  [
+                                    {
+                                        "y":  1063,
+                                        "height":  35,
+                                        "width":  147,
+                                        "text":  "anomaly",
+                                        "x":  355
+                                    },
+                                    {
+                                        "y":  1063,
+                                        "height":  28,
+                                        "width":  294,
+                                        "text":  "identification",
+                                        "x":  535
+                                    },
+                                    {
+                                        "y":  1063,
+                                        "height":  28,
+                                        "width":  37,
+                                        "text":  "in",
+                                        "x":  863
+                                    },
+                                    {
+                                        "y":  1063,
+                                        "height":  28,
+                                        "width":  145,
+                                        "text":  "various",
+                                        "x":  933
+                                    },
+                                    {
+                                        "y":  1063,
+                                        "height":  28,
+                                        "width":  146,
+                                        "text":  "medical",
+                                        "x":  1110
+                                    },
+                                    {
+                                        "y":  1063,
+                                        "height":  36,
+                                        "width":  145,
+                                        "text":  "imaging",
+                                        "x":  1290
+                                    },
+                                    {
+                                        "y":  1063,
+                                        "height":  33,
+                                        "width":  227,
+                                        "text":  "modalities,",
+                                        "x":  1466
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "including X-rays, MRI, CT scans, and more.",
+                      "words":  [
+                                    {
+                                        "y":  1113,
+                                        "height":  36,
+                                        "width":  188,
+                                        "text":  "including",
+                                        "x":  357
+                                    },
+                                    {
+                                        "y":  1115,
+                                        "height":  33,
+                                        "width":  142,
+                                        "text":  "X-rays,",
+                                        "x":  568
+                                    },
+                                    {
+                                        "y":  1115,
+                                        "height":  31,
+                                        "width":  76,
+                                        "text":  "MRI,",
+                                        "x":  741
+                                    },
+                                    {
+                                        "y":  1114,
+                                        "height":  27,
+                                        "width":  40,
+                                        "text":  "CT",
+                                        "x":  848
+                                    },
+                                    {
+                                        "y":  1121,
+                                        "height":  25,
+                                        "width":  118,
+                                        "text":  "scans,",
+                                        "x":  912
+                                    },
+                                    {
+                                        "y":  1114,
+                                        "height":  27,
+                                        "width":  60,
+                                        "text":  "and",
+                                        "x":  1061
+                                    },
+                                    {
+                                        "y":  1121,
+                                        "height":  20,
+                                        "width":  98,
+                                        "text":  "more.",
+                                        "x":  1146
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Robotics :",
+                      "words":  [
+                                    {
+                                        "y":  1164,
+                                        "height":  28,
+                                        "width":  167,
+                                        "text":  "Robotics",
+                                        "x":  356
+                                    },
+                                    {
+                                        "y":  1172,
+                                        "height":  20,
+                                        "width":  7,
+                                        "text":  ":",
+                                        "x":  532
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Robots can use computer vision to navigate and interact",
+                      "words":  [
+                                    {
+                                        "y":  1164,
+                                        "height":  28,
+                                        "width":  124,
+                                        "text":  "Robots",
+                                        "x":  565
+                                    },
+                                    {
+                                        "y":  1171,
+                                        "height":  21,
+                                        "width":  59,
+                                        "text":  "can",
+                                        "x":  710
+                                    },
+                                    {
+                                        "y":  1172,
+                                        "height":  20,
+                                        "width":  60,
+                                        "text":  "use",
+                                        "x":  791
+                                    },
+                                    {
+                                        "y":  1165,
+                                        "height":  34,
+                                        "width":  167,
+                                        "text":  "computer",
+                                        "x":  871
+                                    },
+                                    {
+                                        "y":  1164,
+                                        "height":  28,
+                                        "width":  124,
+                                        "text":  "vision",
+                                        "x":  1058
+                                    },
+                                    {
+                                        "y":  1165,
+                                        "height":  27,
+                                        "width":  40,
+                                        "text":  "to",
+                                        "x":  1202
+                                    },
+                                    {
+                                        "y":  1164,
+                                        "height":  35,
+                                        "width":  167,
+                                        "text":  "navigate",
+                                        "x":  1263
+                                    },
+                                    {
+                                        "y":  1164,
+                                        "height":  28,
+                                        "width":  59,
+                                        "text":  "and",
+                                        "x":  1450
+                                    },
+                                    {
+                                        "y":  1164,
+                                        "height":  28,
+                                        "width":  167,
+                                        "text":  "interact",
+                                        "x":  1532
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "with their surroundings, grasp objects, and perform tasks that",
+                      "words":  [
+                                    {
+                                        "y":  1214,
+                                        "height":  27,
+                                        "width":  83,
+                                        "text":  "with",
+                                        "x":  354
+                                    },
+                                    {
+                                        "y":  1214,
+                                        "height":  28,
+                                        "width":  105,
+                                        "text":  "their",
+                                        "x":  464
+                                    },
+                                    {
+                                        "y":  1213,
+                                        "height":  36,
+                                        "width":  269,
+                                        "text":  "surroundings,",
+                                        "x":  596
+                                    },
+                                    {
+                                        "y":  1219,
+                                        "height":  30,
+                                        "width":  102,
+                                        "text":  "grasp",
+                                        "x":  898
+                                    },
+                                    {
+                                        "y":  1214,
+                                        "height":  34,
+                                        "width":  162,
+                                        "text":  "objects,",
+                                        "x":  1028
+                                    },
+                                    {
+                                        "y":  1214,
+                                        "height":  28,
+                                        "width":  60,
+                                        "text":  "and",
+                                        "x":  1223
+                                    },
+                                    {
+                                        "y":  1214,
+                                        "height":  34,
+                                        "width":  146,
+                                        "text":  "perform",
+                                        "x":  1312
+                                    },
+                                    {
+                                        "y":  1214,
+                                        "height":  28,
+                                        "width":  104,
+                                        "text":  "tasks",
+                                        "x":  1484
+                                    },
+                                    {
+                                        "y":  1214,
+                                        "height":  28,
+                                        "width":  83,
+                                        "text":  "that",
+                                        "x":  1615
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "require visual understanding.",
+                      "words":  [
+                                    {
+                                        "y":  1264,
+                                        "height":  34,
+                                        "width":  145,
+                                        "text":  "require",
+                                        "x":  356
+                                    },
+                                    {
+                                        "y":  1264,
+                                        "height":  27,
+                                        "width":  124,
+                                        "text":  "visual",
+                                        "x":  527
+                                    },
+                                    {
+                                        "y":  1264,
+                                        "height":  34,
+                                        "width":  289,
+                                        "text":  "understanding.",
+                                        "x":  677
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Object Detection and Recognition:",
+                      "words":  [
+                                    {
+                                        "y":  1313,
+                                        "height":  35,
+                                        "width":  126,
+                                        "text":  "Object",
+                                        "x":  354
+                                    },
+                                    {
+                                        "y":  1313,
+                                        "height":  28,
+                                        "width":  189,
+                                        "text":  "Detection",
+                                        "x":  513
+                                    },
+                                    {
+                                        "y":  1313,
+                                        "height":  28,
+                                        "width":  61,
+                                        "text":  "and",
+                                        "x":  735
+                                    },
+                                    {
+                                        "y":  1313,
+                                        "height":  35,
+                                        "width":  246,
+                                        "text":  "Recognition:",
+                                        "x":  829
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Computer vision is used to",
+                      "words":  [
+                                    {
+                                        "y":  1315,
+                                        "height":  33,
+                                        "width":  168,
+                                        "text":  "Computer",
+                                        "x":  1114
+                                    },
+                                    {
+                                        "y":  1313,
+                                        "height":  28,
+                                        "width":  124,
+                                        "text":  "vision",
+                                        "x":  1314
+                                    },
+                                    {
+                                        "y":  1313,
+                                        "height":  28,
+                                        "width":  38,
+                                        "text":  "is",
+                                        "x":  1473
+                                    },
+                                    {
+                                        "y":  1313,
+                                        "height":  28,
+                                        "width":  80,
+                                        "text":  "used",
+                                        "x":  1545
+                                    },
+                                    {
+                                        "y":  1315,
+                                        "height":  26,
+                                        "width":  40,
+                                        "text":  "to",
+                                        "x":  1658
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "identify and categorize objects within images or videos,",
+                      "words":  [
+                                    {
+                                        "y":  1363,
+                                        "height":  35,
+                                        "width":  166,
+                                        "text":  "identify",
+                                        "x":  357
+                                    },
+                                    {
+                                        "y":  1363,
+                                        "height":  28,
+                                        "width":  60,
+                                        "text":  "and",
+                                        "x":  569
+                                    },
+                                    {
+                                        "y":  1363,
+                                        "height":  36,
+                                        "width":  210,
+                                        "text":  "categorize",
+                                        "x":  676
+                                    },
+                                    {
+                                        "y":  1363,
+                                        "height":  35,
+                                        "width":  144,
+                                        "text":  "objects",
+                                        "x":  933
+                                    },
+                                    {
+                                        "y":  1363,
+                                        "height":  28,
+                                        "width":  125,
+                                        "text":  "within",
+                                        "x":  1123
+                                    },
+                                    {
+                                        "y":  1363,
+                                        "height":  36,
+                                        "width":  123,
+                                        "text":  "images",
+                                        "x":  1297
+                                    },
+                                    {
+                                        "y":  1371,
+                                        "height":  20,
+                                        "width":  40,
+                                        "text":  "or",
+                                        "x":  1466
+                                    },
+                                    {
+                                        "y":  1363,
+                                        "height":  33,
+                                        "width":  140,
+                                        "text":  "videos,",
+                                        "x":  1552
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "enabling applications like security surveillance,",
+                      "words":  [
+                                    {
+                                        "y":  1414,
+                                        "height":  35,
+                                        "width":  169,
+                                        "text":  "enabling",
+                                        "x":  355
+                                    },
+                                    {
+                                        "y":  1414,
+                                        "height":  35,
+                                        "width":  252,
+                                        "text":  "applications",
+                                        "x":  578
+                                    },
+                                    {
+                                        "y":  1414,
+                                        "height":  28,
+                                        "width":  80,
+                                        "text":  "like",
+                                        "x":  886
+                                    },
+                                    {
+                                        "y":  1414,
+                                        "height":  35,
+                                        "width":  168,
+                                        "text":  "security",
+                                        "x":  1021
+                                    },
+                                    {
+                                        "y":  1414,
+                                        "height":  32,
+                                        "width":  269,
+                                        "text":  "surveillance,",
+                                        "x":  1244
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "retail",
+                      "words":  [
+                                    {
+                                        "y":  1414,
+                                        "height":  28,
+                                        "width":  124,
+                                        "text":  "retail",
+                                        "x":  1573
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "analytics, and inventory management.",
+                      "words":  [
+                                    {
+                                        "y":  1464,
+                                        "height":  34,
+                                        "width":  205,
+                                        "text":  "analytics,",
+                                        "x":  355
+                                    },
+                                    {
+                                        "y":  1464,
+                                        "height":  28,
+                                        "width":  59,
+                                        "text":  "and",
+                                        "x":  591
+                                    },
+                                    {
+                                        "y":  1464,
+                                        "height":  34,
+                                        "width":  188,
+                                        "text":  "inventory",
+                                        "x":  678
+                                    },
+                                    {
+                                        "y":  1465,
+                                        "height":  34,
+                                        "width":  226,
+                                        "text":  "management.",
+                                        "x":  890
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Facial",
+                      "words":  [
+                                    {
+                                        "y":  1514,
+                                        "height":  28,
+                                        "width":  124,
+                                        "text":  "Facial",
+                                        "x":  356
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Recognition :",
+                      "words":  [
+                                    {
+                                        "y":  1514,
+                                        "height":  35,
+                                        "width":  231,
+                                        "text":  "Recognition",
+                                        "x":  548
+                                    },
+                                    {
+                                        "y":  1522,
+                                        "height":  20,
+                                        "width":  6,
+                                        "text":  ":",
+                                        "x":  789
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "This",
+                      "words":  [
+                                    {
+                                        "y":  1514,
+                                        "height":  28,
+                                        "width":  83,
+                                        "text":  "This",
+                                        "x":  867
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "technology",
+                      "words":  [
+                                    {
+                                        "y":  1514,
+                                        "height":  35,
+                                        "width":  212,
+                                        "text":  "technology",
+                                        "x":  1016
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "is",
+                      "words":  [
+                                    {
+                                        "y":  1514,
+                                        "height":  28,
+                                        "width":  37,
+                                        "text":  "is",
+                                        "x":  1297
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "employed",
+                      "words":  [
+                                    {
+                                        "y":  1514,
+                                        "height":  35,
+                                        "width":  167,
+                                        "text":  "employed",
+                                        "x":  1402
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "for",
+                      "words":  [
+                                    {
+                                        "y":  1514,
+                                        "height":  28,
+                                        "width":  61,
+                                        "text":  "for",
+                                        "x":  1638
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "authentication, security, and human-computer interaction, such",
+                      "words":  [
+                                    {
+                                        "y":  1564,
+                                        "height":  32,
+                                        "width":  312,
+                                        "text":  "authentication,",
+                                        "x":  355
+                                    },
+                                    {
+                                        "y":  1564,
+                                        "height":  34,
+                                        "width":  183,
+                                        "text":  "security,",
+                                        "x":  702
+                                    },
+                                    {
+                                        "y":  1564,
+                                        "height":  27,
+                                        "width":  58,
+                                        "text":  "and",
+                                        "x":  920
+                                    },
+                                    {
+                                        "y":  1564,
+                                        "height":  34,
+                                        "width":  297,
+                                        "text":  "human-computer",
+                                        "x":  1009
+                                    },
+                                    {
+                                        "y":  1564,
+                                        "height":  32,
+                                        "width":  247,
+                                        "text":  "interaction,",
+                                        "x":  1335
+                                    },
+                                    {
+                                        "y":  1565,
+                                        "height":  26,
+                                        "width":  80,
+                                        "text":  "such",
+                                        "x":  1617
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "as unlocking devices or verifying identities.",
+                      "words":  [
+                                    {
+                                        "y":  1621,
+                                        "height":  20,
+                                        "width":  39,
+                                        "text":  "as",
+                                        "x":  355
+                                    },
+                                    {
+                                        "y":  1613,
+                                        "height":  35,
+                                        "width":  189,
+                                        "text":  "unlocking",
+                                        "x":  420
+                                    },
+                                    {
+                                        "y":  1613,
+                                        "height":  28,
+                                        "width":  145,
+                                        "text":  "devices",
+                                        "x":  634
+                                    },
+                                    {
+                                        "y":  1621,
+                                        "height":  20,
+                                        "width":  40,
+                                        "text":  "or",
+                                        "x":  805
+                                    },
+                                    {
+                                        "y":  1613,
+                                        "height":  35,
+                                        "width":  189,
+                                        "text":  "verifying",
+                                        "x":  869
+                                    },
+                                    {
+                                        "y":  1613,
+                                        "height":  28,
+                                        "width":  225,
+                                        "text":  "identities.",
+                                        "x":  1084
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Augmented Reality (AR) and Virtual Reality (VR) : Computer vision",
+                      "words":  [
+                                    {
+                                        "y":  1664,
+                                        "height":  35,
+                                        "width":  190,
+                                        "text":  "Augmented",
+                                        "x":  354
+                                    },
+                                    {
+                                        "y":  1663,
+                                        "height":  35,
+                                        "width":  147,
+                                        "text":  "Reality",
+                                        "x":  567
+                                    },
+                                    {
+                                        "y":  1663,
+                                        "height":  33,
+                                        "width":  74,
+                                        "text":  "(AR)",
+                                        "x":  739
+                                    },
+                                    {
+                                        "y":  1664,
+                                        "height":  27,
+                                        "width":  61,
+                                        "text":  "and",
+                                        "x":  839
+                                    },
+                                    {
+                                        "y":  1663,
+                                        "height":  28,
+                                        "width":  146,
+                                        "text":  "Virtual",
+                                        "x":  921
+                                    },
+                                    {
+                                        "y":  1663,
+                                        "height":  35,
+                                        "width":  147,
+                                        "text":  "Reality",
+                                        "x":  1090
+                                    },
+                                    {
+                                        "y":  1663,
+                                        "height":  33,
+                                        "width":  74,
+                                        "text":  "(VR)",
+                                        "x":  1262
+                                    },
+                                    {
+                                        "y":  1671,
+                                        "height":  20,
+                                        "width":  6,
+                                        "text":  ":",
+                                        "x":  1350
+                                    },
+                                    {
+                                        "y":  1665,
+                                        "height":  33,
+                                        "width":  168,
+                                        "text":  "Computer",
+                                        "x":  1384
+                                    },
+                                    {
+                                        "y":  1663,
+                                        "height":  29,
+                                        "width":  124,
+                                        "text":  "vision",
+                                        "x":  1574
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "enhances AR and VR experiences by overlaying digital content",
+                      "words":  [
+                                    {
+                                        "y":  1714,
+                                        "height":  28,
+                                        "width":  167,
+                                        "text":  "enhances",
+                                        "x":  355
+                                    },
+                                    {
+                                        "y":  1715,
+                                        "height":  26,
+                                        "width":  40,
+                                        "text":  "AR",
+                                        "x":  555
+                                    },
+                                    {
+                                        "y":  1714,
+                                        "height":  28,
+                                        "width":  59,
+                                        "text":  "and",
+                                        "x":  628
+                                    },
+                                    {
+                                        "y":  1715,
+                                        "height":  26,
+                                        "width":  40,
+                                        "text":  "VR",
+                                        "x":  720
+                                    },
+                                    {
+                                        "y":  1713,
+                                        "height":  35,
+                                        "width":  230,
+                                        "text":  "experiences",
+                                        "x":  793
+                                    },
+                                    {
+                                        "y":  1714,
+                                        "height":  34,
+                                        "width":  38,
+                                        "text":  "by",
+                                        "x":  1058
+                                    },
+                                    {
+                                        "y":  1713,
+                                        "height":  36,
+                                        "width":  211,
+                                        "text":  "overlaying",
+                                        "x":  1129
+                                    },
+                                    {
+                                        "y":  1713,
+                                        "height":  36,
+                                        "width":  146,
+                                        "text":  "digital",
+                                        "x":  1372
+                                    },
+                                    {
+                                        "y":  1715,
+                                        "height":  27,
+                                        "width":  145,
+                                        "text":  "content",
+                                        "x":  1552
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "onto the real world and enabling interactions with virtual",
+                      "words":  [
+                                    {
+                                        "y":  1765,
+                                        "height":  27,
+                                        "width":  82,
+                                        "text":  "onto",
+                                        "x":  355
+                                    },
+                                    {
+                                        "y":  1764,
+                                        "height":  28,
+                                        "width":  61,
+                                        "text":  "the",
+                                        "x":  475
+                                    },
+                                    {
+                                        "y":  1764,
+                                        "height":  28,
+                                        "width":  81,
+                                        "text":  "real",
+                                        "x":  575
+                                    },
+                                    {
+                                        "y":  1764,
+                                        "height":  28,
+                                        "width":  103,
+                                        "text":  "world",
+                                        "x":  694
+                                    },
+                                    {
+                                        "y":  1764,
+                                        "height":  28,
+                                        "width":  60,
+                                        "text":  "and",
+                                        "x":  836
+                                    },
+                                    {
+                                        "y":  1764,
+                                        "height":  35,
+                                        "width":  168,
+                                        "text":  "enabling",
+                                        "x":  935
+                                    },
+                                    {
+                                        "y":  1764,
+                                        "height":  28,
+                                        "width":  251,
+                                        "text":  "interactions",
+                                        "x":  1142
+                                    },
+                                    {
+                                        "y":  1764,
+                                        "height":  28,
+                                        "width":  82,
+                                        "text":  "with",
+                                        "x":  1431
+                                    },
+                                    {
+                                        "y":  1764,
+                                        "height":  28,
+                                        "width":  145,
+                                        "text":  "virtual",
+                                        "x":  1553
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "environments .",
+                      "words":  [
+                                    {
+                                        "y":  1814,
+                                        "height":  28,
+                                        "width":  253,
+                                        "text":  "environments",
+                                        "x":  355
+                                    },
+                                    {
+                                        "y":  1836,
+                                        "height":  6,
+                                        "width":  6,
+                                        "text":  ".",
+                                        "x":  618
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "5. Essential Libraries for Computer Vision",
+                      "words":  [
+                                    {
+                                        "y":  1934,
+                                        "height":  38,
+                                        "width":  41,
+                                        "text":  "5.",
+                                        "x":  238
+                                    },
+                                    {
+                                        "y":  1929,
+                                        "height":  42,
+                                        "width":  227,
+                                        "text":  "Essential",
+                                        "x":  302
+                                    },
+                                    {
+                                        "y":  1929,
+                                        "height":  42,
+                                        "width":  231,
+                                        "text":  "Libraries",
+                                        "x":  553
+                                    },
+                                    {
+                                        "y":  1932,
+                                        "height":  39,
+                                        "width":  76,
+                                        "text":  "for",
+                                        "x":  803
+                                    },
+                                    {
+                                        "y":  1933,
+                                        "height":  49,
+                                        "width":  258,
+                                        "text":  "Computer",
+                                        "x":  898
+                                    },
+                                    {
+                                        "y":  1929,
+                                        "height":  42,
+                                        "width":  159,
+                                        "text":  "Vision",
+                                        "x":  1173
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "OpenCV",
+                      "words":  [
+                                    {
+                                        "y":  2024,
+                                        "height":  31,
+                                        "width":  114,
+                                        "text":  "OpenCV",
+                                        "x":  355
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Scikit- Image",
+                      "words":  [
+                                    {
+                                        "y":  2073,
+                                        "height":  26,
+                                        "width":  131,
+                                        "text":  "Scikit-",
+                                        "x":  355
+                                    },
+                                    {
+                                        "y":  2075,
+                                        "height":  30,
+                                        "width":  93,
+                                        "text":  "Image",
+                                        "x":  494
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Pillow (PIL Fork)",
+                      "words":  [
+                                    {
+                                        "y":  2123,
+                                        "height":  27,
+                                        "width":  114,
+                                        "text":  "Pillow",
+                                        "x":  356
+                                    },
+                                    {
+                                        "y":  2121,
+                                        "height":  33,
+                                        "width":  71,
+                                        "text":  "(PIL",
+                                        "x":  499
+                                    },
+                                    {
+                                        "y":  2121,
+                                        "height":  33,
+                                        "width":  90,
+                                        "text":  "Fork)",
+                                        "x":  595
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "TorchVision",
+                      "words":  [
+                                    {
+                                        "y":  2173,
+                                        "height":  26,
+                                        "width":  210,
+                                        "text":  "TorchVision",
+                                        "x":  355
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "TensorFlow",
+                      "words":  [
+                                    {
+                                        "y":  2223,
+                                        "height":  24,
+                                        "width":  193,
+                                        "text":  "TensorFlow",
+                                        "x":  355
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Keras",
+                      "words":  [
+                                    {
+                                        "y":  2271,
+                                        "height":  25,
+                                        "width":  93,
+                                        "text":  "Keras",
+                                        "x":  356
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "OpenVINO",
+                      "words":  [
+                                    {
+                                        "y":  2320,
+                                        "height":  30,
+                                        "width":  152,
+                                        "text":  "OpenVINO",
+                                        "x":  355
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "PyTorch",
+                      "words":  [
+                                    {
+                                        "y":  2370,
+                                        "height":  30,
+                                        "width":  131,
+                                        "text":  "PyTorch",
+                                        "x":  356
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Hugging",
+                      "words":  [
+                                    {
+                                        "y":  2418,
+                                        "height":  32,
+                                        "width":  131,
+                                        "text":  "Hugging",
+                                        "x":  356
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Face",
+                      "words":  [
+                                    {
+                                        "y":  2418,
+                                        "height":  27,
+                                        "width":  81,
+                                        "text":  "Face",
+                                        "x":  514
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FAST NUCES -",
+                      "words":  [
+                                    {
+                                        "y":  2576,
+                                        "height":  26,
+                                        "width":  87,
+                                        "text":  "FAST",
+                                        "x":  240
+                                    },
+                                    {
+                                        "y":  2576,
+                                        "height":  26,
+                                        "width":  120,
+                                        "text":  "NUCES",
+                                        "x":  341
+                                    },
+                                    {
+                                        "y":  2589,
+                                        "height":  5,
+                                        "width":  12,
+                                        "text":  "-",
+                                        "x":  474
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Karachi",
+                      "words":  [
+                                    {
+                                        "y":  2573,
+                                        "height":  29,
+                                        "width":  133,
+                                        "text":  "Karachi",
+                                        "x":  501
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Caffe",
+                      "words":  [
+                                    {
+                                        "y":  2024,
+                                        "height":  25,
+                                        "width":  93,
+                                        "text":  "Caffe",
+                                        "x":  1145
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Detectron2",
+                      "words":  [
+                                    {
+                                        "y":  2074,
+                                        "height":  25,
+                                        "width":  191,
+                                        "text":  "Detectron2",
+                                        "x":  1145
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Instructor: Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  2576,
+                                        "height":  26,
+                                        "width":  182,
+                                        "text":  "Instructor:",
+                                        "x":  794
+                                    },
+                                    {
+                                        "y":  2575,
+                                        "height":  27,
+                                        "width":  101,
+                                        "text":  "Talha",
+                                        "x":  989
+                                    },
+                                    {
+                                        "y":  2573,
+                                        "height":  29,
+                                        "width":  123,
+                                        "text":  "Shahid",
+                                        "x":  1104
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "5",
+                      "words":  [
+                                    {
+                                        "y":  2576,
+                                        "height":  26,
+                                        "width":  18,
+                                        "text":  "5",
+                                        "x":  1639
+                                    }
+                                ]
+                  }
+              ]
+}

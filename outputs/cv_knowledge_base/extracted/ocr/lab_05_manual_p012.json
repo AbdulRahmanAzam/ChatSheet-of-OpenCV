@@ -1,0 +1,2000 @@
+﻿{
+    "id":  "lab_05_manual_p012",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "National University of Computer \u0026 Emerging Sciences - NUCES - Karachi Department of Artificial Intelligence I plt . show() 2.3.4 Watershed Segmentation Methodology : Use Cases: Steps : Treats the image as a topographic map and simulates flooding to identify segment boundaries. Suitable for segmenting touching or overlapping objects . 1. 2. 3. 4. 5. 6. Preprocessing • Convert the input image to grayscale if it\u0027s a color image. • Apply suitable preprocessing techniques like noise reduction and contrast enhancement if necessary. Marker Generation • • Identify markers that represent the regions you want to segment. These markers can be manually created or generated automatically based on specific criteria. Common approaches include: Manual placement of markers by the user. Thresholding to create markers based on intensity levels. Distance transform to create markers around the object centers . Gradient Calculation • Calculate the gradient of the image to highlight the boundaries of objects. You can use techniques like Sobel or Scharr filters. Marker Labeling Label the markers created in step 2 using different integer values . Watershed Transformation • Treat the gradient image as a topographic surface where high gradient values represent peaks. • Fill basins in the topographic surface with different colors, starting from the labeled markers . • The boundaries where the basins meet represent the segmented regions . Post-processing • Optionally, you can apply post-processing techniques like morphological operations (erosion, dilation) to refine the segmentation . FAST NUCES - Karachi Talha Shahid 11",
+    "review_status":  "raw_ocr_unverified",
+    "page":  12,
+    "source_id":  "lab_05_manual",
+    "lines":  [
+                  {
+                      "text":  "National University of Computer \u0026 Emerging Sciences -",
+                      "words":  [
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  123,
+                                        "text":  "National",
+                                        "x":  372
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  30,
+                                        "width":  153,
+                                        "text":  "University",
+                                        "x":  504
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  31,
+                                        "text":  "of",
+                                        "x":  664
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  30,
+                                        "width":  146,
+                                        "text":  "Computer",
+                                        "x":  701
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  23,
+                                        "width":  23,
+                                        "text":  "\u0026",
+                                        "x":  854
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  30,
+                                        "width":  140,
+                                        "text":  "Emerging",
+                                        "x":  885
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  23,
+                                        "width":  123,
+                                        "text":  "Sciences",
+                                        "x":  1033
+                                    },
+                                    {
+                                        "y":  107,
+                                        "height":  4,
+                                        "width":  9,
+                                        "text":  "-",
+                                        "x":  1166
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "NUCES - Karachi",
+                      "words":  [
+                                    {
+                                        "y":  138,
+                                        "height":  23,
+                                        "width":  96,
+                                        "text":  "NUCES",
+                                        "x":  655
+                                    },
+                                    {
+                                        "y":  150,
+                                        "height":  4,
+                                        "width":  8,
+                                        "text":  "-",
+                                        "x":  760
+                                    },
+                                    {
+                                        "y":  137,
+                                        "height":  24,
+                                        "width":  113,
+                                        "text":  "Karachi",
+                                        "x":  778
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Department of Artificial Intelligence",
+                      "words":  [
+                                    {
+                                        "y":  180,
+                                        "height":  26,
+                                        "width":  142,
+                                        "text":  "Department",
+                                        "x":  556
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  21,
+                                        "width":  25,
+                                        "text":  "of",
+                                        "x":  706
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  21,
+                                        "width":  100,
+                                        "text":  "Artificial",
+                                        "x":  738
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  27,
+                                        "width":  137,
+                                        "text":  "Intelligence",
+                                        "x":  848
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "I plt . show()",
+                      "words":  [
+                                    {
+                                        "y":  211,
+                                        "height":  36,
+                                        "width":  2,
+                                        "text":  "I",
+                                        "x":  161
+                                    },
+                                    {
+                                        "y":  218,
+                                        "height":  24,
+                                        "width":  42,
+                                        "text":  "plt",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  233,
+                                        "height":  4,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  219
+                                    },
+                                    {
+                                        "y":  217,
+                                        "height":  24,
+                                        "width":  85,
+                                        "text":  "show()",
+                                        "x":  230
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2.3.4 Watershed Segmentation",
+                      "words":  [
+                                    {
+                                        "y":  292,
+                                        "height":  20,
+                                        "width":  62,
+                                        "text":  "2.3.4",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  291,
+                                        "height":  21,
+                                        "width":  148,
+                                        "text":  "Watershed",
+                                        "x":  241
+                                    },
+                                    {
+                                        "y":  290,
+                                        "height":  28,
+                                        "width":  193,
+                                        "text":  "Segmentation",
+                                        "x":  400
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Methodology :",
+                      "words":  [
+                                    {
+                                        "y":  340,
+                                        "height":  23,
+                                        "width":  165,
+                                        "text":  "Methodology",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  345,
+                                        "height":  13,
+                                        "width":  6,
+                                        "text":  ":",
+                                        "x":  339
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Use Cases:",
+                      "words":  [
+                                    {
+                                        "y":  453,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "Use",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  453,
+                                        "height":  19,
+                                        "width":  86,
+                                        "text":  "Cases:",
+                                        "x":  229
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Steps :",
+                      "words":  [
+                                    {
+                                        "y":  566,
+                                        "height":  23,
+                                        "width":  74,
+                                        "text":  "Steps",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  570,
+                                        "height":  14,
+                                        "width":  6,
+                                        "text":  ":",
+                                        "x":  248
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Treats the image as a topographic map and simulates",
+                      "words":  [
+                                    {
+                                        "y":  340,
+                                        "height":  18,
+                                        "width":  88,
+                                        "text":  "Treats",
+                                        "x":  416
+                                    },
+                                    {
+                                        "y":  340,
+                                        "height":  18,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  523
+                                    },
+                                    {
+                                        "y":  340,
+                                        "height":  23,
+                                        "width":  73,
+                                        "text":  "image",
+                                        "x":  587
+                                    },
+                                    {
+                                        "y":  345,
+                                        "height":  13,
+                                        "width":  28,
+                                        "text":  "as",
+                                        "x":  679
+                                    },
+                                    {
+                                        "y":  345,
+                                        "height":  13,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  726
+                                    },
+                                    {
+                                        "y":  340,
+                                        "height":  23,
+                                        "width":  163,
+                                        "text":  "topographic",
+                                        "x":  758
+                                    },
+                                    {
+                                        "y":  345,
+                                        "height":  18,
+                                        "width":  44,
+                                        "text":  "map",
+                                        "x":  941
+                                    },
+                                    {
+                                        "y":  340,
+                                        "height":  18,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  1004
+                                    },
+                                    {
+                                        "y":  340,
+                                        "height":  18,
+                                        "width":  134,
+                                        "text":  "simulates",
+                                        "x":  1066
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "flooding to identify segment boundaries.",
+                      "words":  [
+                                    {
+                                        "y":  377,
+                                        "height":  24,
+                                        "width":  118,
+                                        "text":  "flooding",
+                                        "x":  417
+                                    },
+                                    {
+                                        "y":  378,
+                                        "height":  18,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  551
+                                    },
+                                    {
+                                        "y":  377,
+                                        "height":  24,
+                                        "width":  119,
+                                        "text":  "identify",
+                                        "x":  598
+                                    },
+                                    {
+                                        "y":  378,
+                                        "height":  23,
+                                        "width":  103,
+                                        "text":  "segment",
+                                        "x":  734
+                                    },
+                                    {
+                                        "y":  377,
+                                        "height":  19,
+                                        "width":  158,
+                                        "text":  "boundaries.",
+                                        "x":  856
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Suitable for segmenting touching or overlapping",
+                      "words":  [
+                                    {
+                                        "y":  452,
+                                        "height":  20,
+                                        "width":  118,
+                                        "text":  "Suitable",
+                                        "x":  417
+                                    },
+                                    {
+                                        "y":  452,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "for",
+                                        "x":  567
+                                    },
+                                    {
+                                        "y":  452,
+                                        "height":  24,
+                                        "width":  150,
+                                        "text":  "segmenting",
+                                        "x":  643
+                                    },
+                                    {
+                                        "y":  452,
+                                        "height":  24,
+                                        "width":  119,
+                                        "text":  "touching",
+                                        "x":  824
+                                    },
+                                    {
+                                        "y":  458,
+                                        "height":  14,
+                                        "width":  29,
+                                        "text":  "or",
+                                        "x":  975
+                                    },
+                                    {
+                                        "y":  452,
+                                        "height":  24,
+                                        "width":  165,
+                                        "text":  "overlapping",
+                                        "x":  1035
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "objects .",
+                      "words":  [
+                                    {
+                                        "y":  490,
+                                        "height":  24,
+                                        "width":  102,
+                                        "text":  "objects",
+                                        "x":  417
+                                    },
+                                    {
+                                        "y":  505,
+                                        "height":  4,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  526
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1.",
+                      "words":  [
+                                    {
+                                        "y":  604,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "1.",
+                                        "x":  210
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2.",
+                      "words":  [
+                                    {
+                                        "y":  744,
+                                        "height":  20,
+                                        "width":  25,
+                                        "text":  "2.",
+                                        "x":  210
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3.",
+                      "words":  [
+                                    {
+                                        "y":  1063,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "3.",
+                                        "x":  210
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4.",
+                      "words":  [
+                                    {
+                                        "y":  1204,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "4.",
+                                        "x":  210
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "5.",
+                      "words":  [
+                                    {
+                                        "y":  1311,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "5.",
+                                        "x":  210
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "6.",
+                      "words":  [
+                                    {
+                                        "y":  1557,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "6.",
+                                        "x":  210
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Preprocessing",
+                      "words":  [
+                                    {
+                                        "y":  602,
+                                        "height":  26,
+                                        "width":  195,
+                                        "text":  "Preprocessing",
+                                        "x":  252
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• Convert the input image to grayscale if it\u0027s a color image.",
+                      "words":  [
+                                    {
+                                        "y":  645,
+                                        "height":  10,
+                                        "width":  9,
+                                        "text":  "•",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  639,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "Convert",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  638,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  413
+                                    },
+                                    {
+                                        "y":  638,
+                                        "height":  25,
+                                        "width":  73,
+                                        "text":  "input",
+                                        "x":  474
+                                    },
+                                    {
+                                        "y":  638,
+                                        "height":  25,
+                                        "width":  73,
+                                        "text":  "image",
+                                        "x":  565
+                                    },
+                                    {
+                                        "y":  639,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  654
+                                    },
+                                    {
+                                        "y":  638,
+                                        "height":  25,
+                                        "width":  134,
+                                        "text":  "grayscale",
+                                        "x":  701
+                                    },
+                                    {
+                                        "y":  638,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "if",
+                                        "x":  853
+                                    },
+                                    {
+                                        "y":  638,
+                                        "height":  20,
+                                        "width":  56,
+                                        "text":  "it\u0027s",
+                                        "x":  898
+                                    },
+                                    {
+                                        "y":  643,
+                                        "height":  15,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  972
+                                    },
+                                    {
+                                        "y":  638,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "color",
+                                        "x":  1003
+                                    },
+                                    {
+                                        "y":  638,
+                                        "height":  25,
+                                        "width":  84,
+                                        "text":  "image.",
+                                        "x":  1094
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• Apply suitable preprocessing techniques like noise reduction",
+                      "words":  [
+                                    {
+                                        "y":  680,
+                                        "height":  10,
+                                        "width":  9,
+                                        "text":  "•",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  673,
+                                        "height":  25,
+                                        "width":  74,
+                                        "text":  "Apply",
+                                        "x":  292
+                                    },
+                                    {
+                                        "y":  673,
+                                        "height":  20,
+                                        "width":  117,
+                                        "text":  "suitable",
+                                        "x":  385
+                                    },
+                                    {
+                                        "y":  673,
+                                        "height":  25,
+                                        "width":  194,
+                                        "text":  "preprocessing",
+                                        "x":  521
+                                    },
+                                    {
+                                        "y":  673,
+                                        "height":  25,
+                                        "width":  150,
+                                        "text":  "techniques",
+                                        "x":  732
+                                    },
+                                    {
+                                        "y":  673,
+                                        "height":  20,
+                                        "width":  57,
+                                        "text":  "like",
+                                        "x":  900
+                                    },
+                                    {
+                                        "y":  673,
+                                        "height":  20,
+                                        "width":  72,
+                                        "text":  "noise",
+                                        "x":  976
+                                    },
+                                    {
+                                        "y":  673,
+                                        "height":  20,
+                                        "width":  134,
+                                        "text":  "reduction",
+                                        "x":  1066
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "and contrast enhancement if necessary.",
+                      "words":  [
+                                    {
+                                        "y":  708,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  709,
+                                        "height":  19,
+                                        "width":  117,
+                                        "text":  "contrast",
+                                        "x":  354
+                                    },
+                                    {
+                                        "y":  708,
+                                        "height":  20,
+                                        "width":  164,
+                                        "text":  "enhancement",
+                                        "x":  489
+                                    },
+                                    {
+                                        "y":  708,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "if",
+                                        "x":  671
+                                    },
+                                    {
+                                        "y":  714,
+                                        "height":  19,
+                                        "width":  145,
+                                        "text":  "necessary.",
+                                        "x":  716
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Marker Generation",
+                      "words":  [
+                                    {
+                                        "y":  744,
+                                        "height":  20,
+                                        "width":  90,
+                                        "text":  "Marker",
+                                        "x":  251
+                                    },
+                                    {
+                                        "y":  743,
+                                        "height":  21,
+                                        "width":  149,
+                                        "text":  "Generation",
+                                        "x":  357
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "•",
+                      "words":  [
+                                    {
+                                        "y":  928,
+                                        "height":  10,
+                                        "width":  9,
+                                        "text":  "•",
+                                        "x":  252
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "•",
+                      "words":  [
+                                    {
+                                        "y":  999,
+                                        "height":  10,
+                                        "width":  9,
+                                        "text":  "•",
+                                        "x":  252
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Identify markers that represent the regions you want to",
+                      "words":  [
+                                    {
+                                        "y":  779,
+                                        "height":  25,
+                                        "width":  119,
+                                        "text":  "Identify",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  779,
+                                        "height":  20,
+                                        "width":  102,
+                                        "text":  "markers",
+                                        "x":  439
+                                    },
+                                    {
+                                        "y":  779,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "that",
+                                        "x":  568
+                                    },
+                                    {
+                                        "y":  780,
+                                        "height":  24,
+                                        "width":  133,
+                                        "text":  "represent",
+                                        "x":  655
+                                    },
+                                    {
+                                        "y":  779,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  815
+                                    },
+                                    {
+                                        "y":  779,
+                                        "height":  25,
+                                        "width":  103,
+                                        "text":  "regions",
+                                        "x":  886
+                                    },
+                                    {
+                                        "y":  784,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "you",
+                                        "x":  1016
+                                    },
+                                    {
+                                        "y":  780,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "want",
+                                        "x":  1086
+                                    },
+                                    {
+                                        "y":  780,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  1171
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "segment. These markers can be manually created or generated",
+                      "words":  [
+                                    {
+                                        "y":  815,
+                                        "height":  24,
+                                        "width":  115,
+                                        "text":  "segment.",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  814,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "These",
+                                        "x":  430
+                                    },
+                                    {
+                                        "y":  814,
+                                        "height":  20,
+                                        "width":  104,
+                                        "text":  "markers",
+                                        "x":  523
+                                    },
+                                    {
+                                        "y":  820,
+                                        "height":  14,
+                                        "width":  42,
+                                        "text":  "can",
+                                        "x":  647
+                                    },
+                                    {
+                                        "y":  814,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "be",
+                                        "x":  710
+                                    },
+                                    {
+                                        "y":  814,
+                                        "height":  25,
+                                        "width":  119,
+                                        "text":  "manually",
+                                        "x":  757
+                                    },
+                                    {
+                                        "y":  814,
+                                        "height":  20,
+                                        "width":  102,
+                                        "text":  "created",
+                                        "x":  896
+                                    },
+                                    {
+                                        "y":  820,
+                                        "height":  14,
+                                        "width":  29,
+                                        "text":  "or",
+                                        "x":  1018
+                                    },
+                                    {
+                                        "y":  814,
+                                        "height":  25,
+                                        "width":  133,
+                                        "text":  "generated",
+                                        "x":  1066
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "automatically based on specific criteria. Common approaches",
+                      "words":  [
+                                    {
+                                        "y":  849,
+                                        "height":  25,
+                                        "width":  193,
+                                        "text":  "automatically",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  850,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "based",
+                                        "x":  507
+                                    },
+                                    {
+                                        "y":  855,
+                                        "height":  15,
+                                        "width":  28,
+                                        "text":  "on",
+                                        "x":  600
+                                    },
+                                    {
+                                        "y":  849,
+                                        "height":  25,
+                                        "width":  118,
+                                        "text":  "specific",
+                                        "x":  649
+                                    },
+                                    {
+                                        "y":  849,
+                                        "height":  21,
+                                        "width":  129,
+                                        "text":  "criteria.",
+                                        "x":  789
+                                    },
+                                    {
+                                        "y":  851,
+                                        "height":  19,
+                                        "width":  88,
+                                        "text":  "Common",
+                                        "x":  942
+                                    },
+                                    {
+                                        "y":  850,
+                                        "height":  24,
+                                        "width":  149,
+                                        "text":  "approaches",
+                                        "x":  1051
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "include:",
+                      "words":  [
+                                    {
+                                        "y":  885,
+                                        "height":  21,
+                                        "width":  114,
+                                        "text":  "include:",
+                                        "x":  294
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Manual placement of markers by the user.",
+                      "words":  [
+                                    {
+                                        "y":  921,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "Manual",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  921,
+                                        "height":  25,
+                                        "width":  132,
+                                        "text":  "placement",
+                                        "x":  400
+                                    },
+                                    {
+                                        "y":  921,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  549
+                                    },
+                                    {
+                                        "y":  921,
+                                        "height":  20,
+                                        "width":  104,
+                                        "text":  "markers",
+                                        "x":  594
+                                    },
+                                    {
+                                        "y":  921,
+                                        "height":  25,
+                                        "width":  28,
+                                        "text":  "by",
+                                        "x":  716
+                                    },
+                                    {
+                                        "y":  921,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  760
+                                    },
+                                    {
+                                        "y":  926,
+                                        "height":  15,
+                                        "width":  69,
+                                        "text":  "user.",
+                                        "x":  822
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Thresholding to create markers based on intensity levels.",
+                      "words":  [
+                                    {
+                                        "y":  956,
+                                        "height":  26,
+                                        "width":  180,
+                                        "text":  "Thresholding",
+                                        "x":  292
+                                    },
+                                    {
+                                        "y":  957,
+                                        "height":  20,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  488
+                                    },
+                                    {
+                                        "y":  957,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "create",
+                                        "x":  535
+                                    },
+                                    {
+                                        "y":  957,
+                                        "height":  20,
+                                        "width":  104,
+                                        "text":  "markers",
+                                        "x":  640
+                                    },
+                                    {
+                                        "y":  957,
+                                        "height":  20,
+                                        "width":  72,
+                                        "text":  "based",
+                                        "x":  762
+                                    },
+                                    {
+                                        "y":  962,
+                                        "height":  15,
+                                        "width":  27,
+                                        "text":  "on",
+                                        "x":  852
+                                    },
+                                    {
+                                        "y":  956,
+                                        "height":  25,
+                                        "width":  132,
+                                        "text":  "intensity",
+                                        "x":  898
+                                    },
+                                    {
+                                        "y":  957,
+                                        "height":  20,
+                                        "width":  99,
+                                        "text":  "levels.",
+                                        "x":  1048
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Distance transform to create markers around the object",
+                      "words":  [
+                                    {
+                                        "y":  992,
+                                        "height":  20,
+                                        "width":  118,
+                                        "text":  "Distance",
+                                        "x":  294
+                                    },
+                                    {
+                                        "y":  992,
+                                        "height":  20,
+                                        "width":  134,
+                                        "text":  "transform",
+                                        "x":  442
+                                    },
+                                    {
+                                        "y":  993,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  605
+                                    },
+                                    {
+                                        "y":  993,
+                                        "height":  19,
+                                        "width":  88,
+                                        "text":  "create",
+                                        "x":  666
+                                    },
+                                    {
+                                        "y":  992,
+                                        "height":  20,
+                                        "width":  104,
+                                        "text":  "markers",
+                                        "x":  784
+                                    },
+                                    {
+                                        "y":  992,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "around",
+                                        "x":  918
+                                    },
+                                    {
+                                        "y":  992,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  1037
+                                    },
+                                    {
+                                        "y":  992,
+                                        "height":  25,
+                                        "width":  89,
+                                        "text":  "object",
+                                        "x":  1111
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "centers .",
+                      "words":  [
+                                    {
+                                        "y":  1028,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "centers",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  1043,
+                                        "height":  4,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  403
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Gradient Calculation",
+                      "words":  [
+                                    {
+                                        "y":  1062,
+                                        "height":  20,
+                                        "width":  119,
+                                        "text":  "Gradient",
+                                        "x":  251
+                                    },
+                                    {
+                                        "y":  1062,
+                                        "height":  20,
+                                        "width":  164,
+                                        "text":  "Calculation",
+                                        "x":  387
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• Calculate the gradient of the image to highlight the",
+                      "words":  [
+                                    {
+                                        "y":  1105,
+                                        "height":  10,
+                                        "width":  9,
+                                        "text":  "•",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1098,
+                                        "height":  20,
+                                        "width":  134,
+                                        "text":  "Calculate",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  1098,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  458
+                                    },
+                                    {
+                                        "y":  1097,
+                                        "height":  25,
+                                        "width":  118,
+                                        "text":  "gradient",
+                                        "x":  535
+                                    },
+                                    {
+                                        "y":  1098,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  687
+                                    },
+                                    {
+                                        "y":  1098,
+                                        "height":  20,
+                                        "width":  45,
+                                        "text":  "the",
+                                        "x":  746
+                                    },
+                                    {
+                                        "y":  1097,
+                                        "height":  25,
+                                        "width":  73,
+                                        "text":  "image",
+                                        "x":  824
+                                    },
+                                    {
+                                        "y":  1098,
+                                        "height":  20,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  928
+                                    },
+                                    {
+                                        "y":  1097,
+                                        "height":  25,
+                                        "width":  134,
+                                        "text":  "highlight",
+                                        "x":  990
+                                    },
+                                    {
+                                        "y":  1098,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  1156
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "boundaries of objects. You can use techniques like Sobel or",
+                      "words":  [
+                                    {
+                                        "y":  1133,
+                                        "height":  20,
+                                        "width":  148,
+                                        "text":  "boundaries",
+                                        "x":  294
+                                    },
+                                    {
+                                        "y":  1133,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  460
+                                    },
+                                    {
+                                        "y":  1133,
+                                        "height":  25,
+                                        "width":  115,
+                                        "text":  "objects.",
+                                        "x":  508
+                                    },
+                                    {
+                                        "y":  1134,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "You",
+                                        "x":  645
+                                    },
+                                    {
+                                        "y":  1138,
+                                        "height":  15,
+                                        "width":  42,
+                                        "text":  "can",
+                                        "x":  709
+                                    },
+                                    {
+                                        "y":  1138,
+                                        "height":  15,
+                                        "width":  43,
+                                        "text":  "use",
+                                        "x":  771
+                                    },
+                                    {
+                                        "y":  1133,
+                                        "height":  25,
+                                        "width":  148,
+                                        "text":  "techniques",
+                                        "x":  833
+                                    },
+                                    {
+                                        "y":  1133,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "like",
+                                        "x":  1001
+                                    },
+                                    {
+                                        "y":  1133,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "Sobel",
+                                        "x":  1079
+                                    },
+                                    {
+                                        "y":  1138,
+                                        "height":  15,
+                                        "width":  28,
+                                        "text":  "or",
+                                        "x":  1172
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Scharr filters.",
+                      "words":  [
+                                    {
+                                        "y":  1168,
+                                        "height":  20,
+                                        "width":  89,
+                                        "text":  "Scharr",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  1168,
+                                        "height":  20,
+                                        "width":  113,
+                                        "text":  "filters.",
+                                        "x":  399
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Marker Labeling",
+                      "words":  [
+                                    {
+                                        "y":  1203,
+                                        "height":  20,
+                                        "width":  90,
+                                        "text":  "Marker",
+                                        "x":  251
+                                    },
+                                    {
+                                        "y":  1203,
+                                        "height":  25,
+                                        "width":  118,
+                                        "text":  "Labeling",
+                                        "x":  358
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Label the markers created in step 2 using different integer",
+                      "words":  [
+                                    {
+                                        "y":  1239,
+                                        "height":  20,
+                                        "width":  72,
+                                        "text":  "Label",
+                                        "x":  294
+                                    },
+                                    {
+                                        "y":  1239,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  385
+                                    },
+                                    {
+                                        "y":  1239,
+                                        "height":  20,
+                                        "width":  103,
+                                        "text":  "markers",
+                                        "x":  448
+                                    },
+                                    {
+                                        "y":  1239,
+                                        "height":  20,
+                                        "width":  102,
+                                        "text":  "created",
+                                        "x":  571
+                                    },
+                                    {
+                                        "y":  1238,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "in",
+                                        "x":  694
+                                    },
+                                    {
+                                        "y":  1240,
+                                        "height":  23,
+                                        "width":  58,
+                                        "text":  "step",
+                                        "x":  741
+                                    },
+                                    {
+                                        "y":  1239,
+                                        "height":  19,
+                                        "width":  13,
+                                        "text":  "2",
+                                        "x":  818
+                                    },
+                                    {
+                                        "y":  1238,
+                                        "height":  26,
+                                        "width":  73,
+                                        "text":  "using",
+                                        "x":  851
+                                    },
+                                    {
+                                        "y":  1238,
+                                        "height":  21,
+                                        "width":  134,
+                                        "text":  "different",
+                                        "x":  943
+                                    },
+                                    {
+                                        "y":  1238,
+                                        "height":  26,
+                                        "width":  104,
+                                        "text":  "integer",
+                                        "x":  1097
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "values .",
+                      "words":  [
+                                    {
+                                        "y":  1274,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "values",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  1289,
+                                        "height":  5,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  388
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Watershed Transformation",
+                      "words":  [
+                                    {
+                                        "y":  1310,
+                                        "height":  20,
+                                        "width":  135,
+                                        "text":  "Watershed",
+                                        "x":  251
+                                    },
+                                    {
+                                        "y":  1310,
+                                        "height":  20,
+                                        "width":  210,
+                                        "text":  "Transformation",
+                                        "x":  402
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• Treat the gradient image as a topographic surface where high",
+                      "words":  [
+                                    {
+                                        "y":  1352,
+                                        "height":  10,
+                                        "width":  9,
+                                        "text":  "•",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1346,
+                                        "height":  19,
+                                        "width":  74,
+                                        "text":  "Treat",
+                                        "x":  292
+                                    },
+                                    {
+                                        "y":  1345,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  383
+                                    },
+                                    {
+                                        "y":  1345,
+                                        "height":  25,
+                                        "width":  117,
+                                        "text":  "gradient",
+                                        "x":  445
+                                    },
+                                    {
+                                        "y":  1345,
+                                        "height":  25,
+                                        "width":  73,
+                                        "text":  "image",
+                                        "x":  581
+                                    },
+                                    {
+                                        "y":  1350,
+                                        "height":  15,
+                                        "width":  28,
+                                        "text":  "as",
+                                        "x":  671
+                                    },
+                                    {
+                                        "y":  1350,
+                                        "height":  15,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  717
+                                    },
+                                    {
+                                        "y":  1345,
+                                        "height":  25,
+                                        "width":  164,
+                                        "text":  "topographic",
+                                        "x":  747
+                                    },
+                                    {
+                                        "y":  1345,
+                                        "height":  20,
+                                        "width":  104,
+                                        "text":  "surface",
+                                        "x":  929
+                                    },
+                                    {
+                                        "y":  1345,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "where",
+                                        "x":  1050
+                                    },
+                                    {
+                                        "y":  1345,
+                                        "height":  25,
+                                        "width":  57,
+                                        "text":  "high",
+                                        "x":  1142
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "gradient values represent peaks.",
+                      "words":  [
+                                    {
+                                        "y":  1380,
+                                        "height":  25,
+                                        "width":  119,
+                                        "text":  "gradient",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  1380,
+                                        "height":  20,
+                                        "width":  87,
+                                        "text":  "values",
+                                        "x":  429
+                                    },
+                                    {
+                                        "y":  1381,
+                                        "height":  24,
+                                        "width":  134,
+                                        "text":  "represent",
+                                        "x":  534
+                                    },
+                                    {
+                                        "y":  1380,
+                                        "height":  25,
+                                        "width":  84,
+                                        "text":  "peaks.",
+                                        "x":  686
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• Fill basins in the topographic surface with different colors,",
+                      "words":  [
+                                    {
+                                        "y":  1422,
+                                        "height":  10,
+                                        "width":  9,
+                                        "text":  "•",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1414,
+                                        "height":  20,
+                                        "width":  57,
+                                        "text":  "Fill",
+                                        "x":  294
+                                    },
+                                    {
+                                        "y":  1414,
+                                        "height":  21,
+                                        "width":  86,
+                                        "text":  "basins",
+                                        "x":  368
+                                    },
+                                    {
+                                        "y":  1414,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "in",
+                                        "x":  471
+                                    },
+                                    {
+                                        "y":  1415,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  513
+                                    },
+                                    {
+                                        "y":  1414,
+                                        "height":  26,
+                                        "width":  164,
+                                        "text":  "topographic",
+                                        "x":  573
+                                    },
+                                    {
+                                        "y":  1415,
+                                        "height":  20,
+                                        "width":  103,
+                                        "text":  "surface",
+                                        "x":  754
+                                    },
+                                    {
+                                        "y":  1414,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "with",
+                                        "x":  872
+                                    },
+                                    {
+                                        "y":  1414,
+                                        "height":  21,
+                                        "width":  134,
+                                        "text":  "different",
+                                        "x":  946
+                                    },
+                                    {
+                                        "y":  1415,
+                                        "height":  23,
+                                        "width":  100,
+                                        "text":  "colors,",
+                                        "x":  1097
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "starting from the labeled markers .",
+                      "words":  [
+                                    {
+                                        "y":  1450,
+                                        "height":  25,
+                                        "width":  119,
+                                        "text":  "starting",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  1450,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "from",
+                                        "x":  429
+                                    },
+                                    {
+                                        "y":  1450,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  503
+                                    },
+                                    {
+                                        "y":  1450,
+                                        "height":  20,
+                                        "width":  102,
+                                        "text":  "labeled",
+                                        "x":  565
+                                    },
+                                    {
+                                        "y":  1450,
+                                        "height":  20,
+                                        "width":  104,
+                                        "text":  "markers",
+                                        "x":  685
+                                    },
+                                    {
+                                        "y":  1465,
+                                        "height":  5,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  796
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• The boundaries where the basins meet represent the segmented",
+                      "words":  [
+                                    {
+                                        "y":  1493,
+                                        "height":  10,
+                                        "width":  9,
+                                        "text":  "•",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1486,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "The",
+                                        "x":  292
+                                    },
+                                    {
+                                        "y":  1486,
+                                        "height":  20,
+                                        "width":  147,
+                                        "text":  "boundaries",
+                                        "x":  354
+                                    },
+                                    {
+                                        "y":  1486,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "where",
+                                        "x":  519
+                                    },
+                                    {
+                                        "y":  1486,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  610
+                                    },
+                                    {
+                                        "y":  1486,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "basins",
+                                        "x":  672
+                                    },
+                                    {
+                                        "y":  1487,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "meet",
+                                        "x":  778
+                                    },
+                                    {
+                                        "y":  1487,
+                                        "height":  24,
+                                        "width":  133,
+                                        "text":  "represent",
+                                        "x":  854
+                                    },
+                                    {
+                                        "y":  1486,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  1004
+                                    },
+                                    {
+                                        "y":  1486,
+                                        "height":  25,
+                                        "width":  133,
+                                        "text":  "segmented",
+                                        "x":  1066
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "regions .",
+                      "words":  [
+                                    {
+                                        "y":  1521,
+                                        "height":  25,
+                                        "width":  103,
+                                        "text":  "regions",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  1536,
+                                        "height":  5,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  403
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Post-processing",
+                      "words":  [
+                                    {
+                                        "y":  1556,
+                                        "height":  25,
+                                        "width":  224,
+                                        "text":  "Post-processing",
+                                        "x":  252
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• Optionally, you can apply post-processing techniques like",
+                      "words":  [
+                                    {
+                                        "y":  1599,
+                                        "height":  10,
+                                        "width":  9,
+                                        "text":  "•",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1591,
+                                        "height":  25,
+                                        "width":  160,
+                                        "text":  "Optionally,",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  1597,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "you",
+                                        "x":  481
+                                    },
+                                    {
+                                        "y":  1597,
+                                        "height":  15,
+                                        "width":  42,
+                                        "text":  "can",
+                                        "x":  551
+                                    },
+                                    {
+                                        "y":  1592,
+                                        "height":  24,
+                                        "width":  73,
+                                        "text":  "apply",
+                                        "x":  619
+                                    },
+                                    {
+                                        "y":  1591,
+                                        "height":  26,
+                                        "width":  225,
+                                        "text":  "post-processing",
+                                        "x":  718
+                                    },
+                                    {
+                                        "y":  1591,
+                                        "height":  25,
+                                        "width":  149,
+                                        "text":  "techniques",
+                                        "x":  967
+                                    },
+                                    {
+                                        "y":  1591,
+                                        "height":  21,
+                                        "width":  58,
+                                        "text":  "like",
+                                        "x":  1142
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "morphological operations (erosion, dilation) to refine the",
+                      "words":  [
+                                    {
+                                        "y":  1627,
+                                        "height":  25,
+                                        "width":  193,
+                                        "text":  "morphological",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  1627,
+                                        "height":  25,
+                                        "width":  149,
+                                        "text":  "operations",
+                                        "x":  509
+                                    },
+                                    {
+                                        "y":  1626,
+                                        "height":  24,
+                                        "width":  126,
+                                        "text":  "(erosion,",
+                                        "x":  685
+                                    },
+                                    {
+                                        "y":  1626,
+                                        "height":  24,
+                                        "width":  129,
+                                        "text":  "dilation)",
+                                        "x":  838
+                                    },
+                                    {
+                                        "y":  1628,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  993
+                                    },
+                                    {
+                                        "y":  1627,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "refine",
+                                        "x":  1045
+                                    },
+                                    {
+                                        "y":  1627,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  1156
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "segmentation .",
+                      "words":  [
+                                    {
+                                        "y":  1662,
+                                        "height":  25,
+                                        "width":  177,
+                                        "text":  "segmentation",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  1677,
+                                        "height":  5,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  477
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FAST NUCES",
+                      "words":  [
+                                    {
+                                        "y":  1819,
+                                        "height":  19,
+                                        "width":  62,
+                                        "text":  "FAST",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1819,
+                                        "height":  20,
+                                        "width":  85,
+                                        "text":  "NUCES",
+                                        "x":  242
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Karachi",
+                      "words":  [
+                                    {
+                                        "y":  1828,
+                                        "height":  5,
+                                        "width":  12,
+                                        "text":  "-",
+                                        "x":  336
+                                    },
+                                    {
+                                        "y":  1817,
+                                        "height":  21,
+                                        "width":  94,
+                                        "text":  "Karachi",
+                                        "x":  358
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1819,
+                                        "height":  19,
+                                        "width":  71,
+                                        "text":  "Talha",
+                                        "x":  624
+                                    },
+                                    {
+                                        "y":  1817,
+                                        "height":  21,
+                                        "width":  87,
+                                        "text":  "Shahid",
+                                        "x":  706
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "11",
+                      "words":  [
+                                    {
+                                        "y":  1819,
+                                        "height":  19,
+                                        "width":  23,
+                                        "text":  "11",
+                                        "x":  1177
+                                    }
+                                ]
+                  }
+              ]
+}

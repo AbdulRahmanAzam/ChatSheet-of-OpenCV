@@ -1,0 +1,1824 @@
+﻿{
+    "id":  "lab_06_tasks_p001",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "Lab 06 Tasks Lab Tasks (Lab Timing) Computer Screen Detection in a Computer Lab You are working on a computer vision project for monitoring computer lab usage and ensuring the availability of computer screens. Your goal is to implement screen detection using the Hough Line Transformation. The lab contains rows of computers, and you need to identify the boundaries of computer screens to monitor their status (on or off) and detect any anomalies, such as missing screens. Asset Tracking in a Computer Lab Using SIFT You are responsible for managing computer assets in a busy computing lab. One of the challenges you face is keeping track of the various computers and their components within the lab. To streamline this process, you want to implement a computer vision solution using the Scale-Invariant Feature Transform (SIFT) . Your goal is to automatically recognize and identify individual computer systems and their unique components, such as monitors and keyboards, to maintain an up-to-date inventory Anomaly Detection in Sensor Data Using Wavelet Transformation You are tasked with developing a system to monitor sensor data from industrial machines and identify anomalies in real-time. Anomalies may indicate potential machine malfunctions or issues. Your approach is to use the wavelet transformation to analyze the sensor data and detect abnormal patterns. Your goal is to create a simple anomaly detection system using a sample sensor dataset and wavelet analysis. FAST NUCES — Karachi Talha Shahid 1",
+    "review_status":  "raw_ocr_unverified",
+    "page":  1,
+    "source_id":  "lab_06_tasks",
+    "lines":  [
+                  {
+                      "text":  "Lab 06 Tasks",
+                      "words":  [
+                                    {
+                                        "y":  200,
+                                        "height":  39,
+                                        "width":  92,
+                                        "text":  "Lab",
+                                        "x":  518
+                                    },
+                                    {
+                                        "y":  202,
+                                        "height":  37,
+                                        "width":  60,
+                                        "text":  "06",
+                                        "x":  629
+                                    },
+                                    {
+                                        "y":  200,
+                                        "height":  39,
+                                        "width":  146,
+                                        "text":  "Tasks",
+                                        "x":  708
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Lab Tasks (Lab Timing)",
+                      "words":  [
+                                    {
+                                        "y":  311,
+                                        "height":  28,
+                                        "width":  67,
+                                        "text":  "Lab",
+                                        "x":  171
+                                    },
+                                    {
+                                        "y":  311,
+                                        "height":  28,
+                                        "width":  105,
+                                        "text":  "Tasks",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  311,
+                                        "height":  34,
+                                        "width":  82,
+                                        "text":  "(Lab",
+                                        "x":  371
+                                    },
+                                    {
+                                        "y":  309,
+                                        "height":  38,
+                                        "width":  143,
+                                        "text":  "Timing)",
+                                        "x":  466
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Computer Screen Detection in a Computer Lab",
+                      "words":  [
+                                    {
+                                        "y":  394,
+                                        "height":  31,
+                                        "width":  161,
+                                        "text":  "Computer",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  394,
+                                        "height":  24,
+                                        "width":  107,
+                                        "text":  "Screen",
+                                        "x":  341
+                                    },
+                                    {
+                                        "y":  391,
+                                        "height":  27,
+                                        "width":  153,
+                                        "text":  "Detection",
+                                        "x":  462
+                                    },
+                                    {
+                                        "y":  391,
+                                        "height":  27,
+                                        "width":  28,
+                                        "text":  "in",
+                                        "x":  628
+                                    },
+                                    {
+                                        "y":  400,
+                                        "height":  18,
+                                        "width":  19,
+                                        "text":  "a",
+                                        "x":  668
+                                    },
+                                    {
+                                        "y":  394,
+                                        "height":  31,
+                                        "width":  161,
+                                        "text":  "Computer",
+                                        "x":  700
+                                    },
+                                    {
+                                        "y":  393,
+                                        "height":  25,
+                                        "width":  57,
+                                        "text":  "Lab",
+                                        "x":  874
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "You are working on a computer vision project for monitoring computer",
+                      "words":  [
+                                    {
+                                        "y":  450,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "You",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  455,
+                                        "height":  14,
+                                        "width":  44,
+                                        "text":  "are",
+                                        "x":  230
+                                    },
+                                    {
+                                        "y":  449,
+                                        "height":  25,
+                                        "width":  105,
+                                        "text":  "working",
+                                        "x":  291
+                                    },
+                                    {
+                                        "y":  455,
+                                        "height":  14,
+                                        "width":  27,
+                                        "text":  "on",
+                                        "x":  413
+                                    },
+                                    {
+                                        "y":  455,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  458
+                                    },
+                                    {
+                                        "y":  450,
+                                        "height":  24,
+                                        "width":  119,
+                                        "text":  "computer",
+                                        "x":  489
+                                    },
+                                    {
+                                        "y":  449,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "vision",
+                                        "x":  626
+                                    },
+                                    {
+                                        "y":  449,
+                                        "height":  25,
+                                        "width":  103,
+                                        "text":  "project",
+                                        "x":  733
+                                    },
+                                    {
+                                        "y":  449,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "for",
+                                        "x":  854
+                                    },
+                                    {
+                                        "y":  449,
+                                        "height":  25,
+                                        "width":  151,
+                                        "text":  "monitoring",
+                                        "x":  913
+                                    },
+                                    {
+                                        "y":  450,
+                                        "height":  24,
+                                        "width":  120,
+                                        "text":  "computer",
+                                        "x":  1081
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "lab usage and ensuring the availability of computer screens. Your goal",
+                      "words":  [
+                                    {
+                                        "y":  487,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "lab",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  491,
+                                        "height":  21,
+                                        "width":  73,
+                                        "text":  "usage",
+                                        "x":  228
+                                    },
+                                    {
+                                        "y":  487,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  316
+                                    },
+                                    {
+                                        "y":  487,
+                                        "height":  25,
+                                        "width":  118,
+                                        "text":  "ensuring",
+                                        "x":  374
+                                    },
+                                    {
+                                        "y":  488,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  506
+                                    },
+                                    {
+                                        "y":  487,
+                                        "height":  25,
+                                        "width":  180,
+                                        "text":  "availability",
+                                        "x":  564
+                                    },
+                                    {
+                                        "y":  487,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  759
+                                    },
+                                    {
+                                        "y":  488,
+                                        "height":  24,
+                                        "width":  119,
+                                        "text":  "computer",
+                                        "x":  802
+                                    },
+                                    {
+                                        "y":  493,
+                                        "height":  14,
+                                        "width":  115,
+                                        "text":  "screens.",
+                                        "x":  935
+                                    },
+                                    {
+                                        "y":  488,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "Your",
+                                        "x":  1068
+                                    },
+                                    {
+                                        "y":  487,
+                                        "height":  25,
+                                        "width":  58,
+                                        "text":  "goal",
+                                        "x":  1142
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "is to implement screen detection using the Hough Line Transformation.",
+                      "words":  [
+                                    {
+                                        "y":  525,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  525,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  213
+                                    },
+                                    {
+                                        "y":  525,
+                                        "height":  24,
+                                        "width":  133,
+                                        "text":  "implement",
+                                        "x":  259
+                                    },
+                                    {
+                                        "y":  530,
+                                        "height":  14,
+                                        "width":  87,
+                                        "text":  "screen",
+                                        "x":  408
+                                    },
+                                    {
+                                        "y":  525,
+                                        "height":  19,
+                                        "width":  134,
+                                        "text":  "detection",
+                                        "x":  512
+                                    },
+                                    {
+                                        "y":  525,
+                                        "height":  24,
+                                        "width":  74,
+                                        "text":  "using",
+                                        "x":  663
+                                    },
+                                    {
+                                        "y":  525,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  751
+                                    },
+                                    {
+                                        "y":  525,
+                                        "height":  24,
+                                        "width":  73,
+                                        "text":  "Hough",
+                                        "x":  812
+                                    },
+                                    {
+                                        "y":  525,
+                                        "height":  19,
+                                        "width":  56,
+                                        "text":  "Line",
+                                        "x":  903
+                                    },
+                                    {
+                                        "y":  525,
+                                        "height":  19,
+                                        "width":  222,
+                                        "text":  "Transformation.",
+                                        "x":  974
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The lab contains rows of computers, and you need to identify the",
+                      "words":  [
+                                    {
+                                        "y":  563,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "The",
+                                        "x":  168
+                                    },
+                                    {
+                                        "y":  563,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "lab",
+                                        "x":  236
+                                    },
+                                    {
+                                        "y":  563,
+                                        "height":  19,
+                                        "width":  118,
+                                        "text":  "contains",
+                                        "x":  303
+                                    },
+                                    {
+                                        "y":  568,
+                                        "height":  14,
+                                        "width":  57,
+                                        "text":  "rows",
+                                        "x":  445
+                                    },
+                                    {
+                                        "y":  563,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "of",
+                                        "x":  525
+                                    },
+                                    {
+                                        "y":  564,
+                                        "height":  23,
+                                        "width":  145,
+                                        "text":  "computers,",
+                                        "x":  577
+                                    },
+                                    {
+                                        "y":  563,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  749
+                                    },
+                                    {
+                                        "y":  568,
+                                        "height":  19,
+                                        "width":  42,
+                                        "text":  "you",
+                                        "x":  816
+                                    },
+                                    {
+                                        "y":  563,
+                                        "height":  19,
+                                        "width":  56,
+                                        "text":  "need",
+                                        "x":  883
+                                    },
+                                    {
+                                        "y":  564,
+                                        "height":  18,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  963
+                                    },
+                                    {
+                                        "y":  563,
+                                        "height":  24,
+                                        "width":  118,
+                                        "text":  "identify",
+                                        "x":  1016
+                                    },
+                                    {
+                                        "y":  563,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  1156
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "boundaries of computer screens to monitor their status (on or off)",
+                      "words":  [
+                                    {
+                                        "y":  601,
+                                        "height":  19,
+                                        "width":  148,
+                                        "text":  "boundaries",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  601,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "of",
+                                        "x":  339
+                                    },
+                                    {
+                                        "y":  602,
+                                        "height":  23,
+                                        "width":  118,
+                                        "text":  "computer",
+                                        "x":  388
+                                    },
+                                    {
+                                        "y":  606,
+                                        "height":  14,
+                                        "width":  103,
+                                        "text":  "screens",
+                                        "x":  527
+                                    },
+                                    {
+                                        "y":  602,
+                                        "height":  18,
+                                        "width":  28,
+                                        "text":  "to",
+                                        "x":  651
+                                    },
+                                    {
+                                        "y":  601,
+                                        "height":  19,
+                                        "width":  105,
+                                        "text":  "monitor",
+                                        "x":  700
+                                    },
+                                    {
+                                        "y":  601,
+                                        "height":  19,
+                                        "width":  74,
+                                        "text":  "their",
+                                        "x":  825
+                                    },
+                                    {
+                                        "y":  602,
+                                        "height":  18,
+                                        "width":  88,
+                                        "text":  "status",
+                                        "x":  919
+                                    },
+                                    {
+                                        "y":  600,
+                                        "height":  24,
+                                        "width":  39,
+                                        "text":  "(on",
+                                        "x":  1032
+                                    },
+                                    {
+                                        "y":  606,
+                                        "height":  14,
+                                        "width":  29,
+                                        "text":  "or",
+                                        "x":  1092
+                                    },
+                                    {
+                                        "y":  600,
+                                        "height":  24,
+                                        "width":  55,
+                                        "text":  "off)",
+                                        "x":  1141
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "and detect any anomalies, such as missing screens.",
+                      "words":  [
+                                    {
+                                        "y":  638,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  638,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "detect",
+                                        "x":  230
+                                    },
+                                    {
+                                        "y":  644,
+                                        "height":  18,
+                                        "width":  43,
+                                        "text":  "any",
+                                        "x":  336
+                                    },
+                                    {
+                                        "y":  638,
+                                        "height":  23,
+                                        "width":  144,
+                                        "text":  "anomalies,",
+                                        "x":  396
+                                    },
+                                    {
+                                        "y":  638,
+                                        "height":  20,
+                                        "width":  57,
+                                        "text":  "such",
+                                        "x":  562
+                                    },
+                                    {
+                                        "y":  644,
+                                        "height":  14,
+                                        "width":  28,
+                                        "text":  "as",
+                                        "x":  637
+                                    },
+                                    {
+                                        "y":  638,
+                                        "height":  24,
+                                        "width":  105,
+                                        "text":  "missing",
+                                        "x":  682
+                                    },
+                                    {
+                                        "y":  644,
+                                        "height":  14,
+                                        "width":  114,
+                                        "text":  "screens.",
+                                        "x":  804
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Asset Tracking in a Computer Lab Using SIFT",
+                      "words":  [
+                                    {
+                                        "y":  709,
+                                        "height":  24,
+                                        "width":  86,
+                                        "text":  "Asset",
+                                        "x":  168
+                                    },
+                                    {
+                                        "y":  706,
+                                        "height":  34,
+                                        "width":  144,
+                                        "text":  "Tracking",
+                                        "x":  265
+                                    },
+                                    {
+                                        "y":  706,
+                                        "height":  27,
+                                        "width":  27,
+                                        "text":  "in",
+                                        "x":  423
+                                    },
+                                    {
+                                        "y":  715,
+                                        "height":  18,
+                                        "width":  19,
+                                        "text":  "a",
+                                        "x":  461
+                                    },
+                                    {
+                                        "y":  709,
+                                        "height":  31,
+                                        "width":  161,
+                                        "text":  "Computer",
+                                        "x":  493
+                                    },
+                                    {
+                                        "y":  708,
+                                        "height":  25,
+                                        "width":  59,
+                                        "text":  "Lab",
+                                        "x":  666
+                                    },
+                                    {
+                                        "y":  706,
+                                        "height":  34,
+                                        "width":  89,
+                                        "text":  "Using",
+                                        "x":  738
+                                    },
+                                    {
+                                        "y":  709,
+                                        "height":  24,
+                                        "width":  77,
+                                        "text":  "SIFT",
+                                        "x":  840
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "You are responsible for managing computer assets in a busy computing",
+                      "words":  [
+                                    {
+                                        "y":  765,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "You",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  770,
+                                        "height":  14,
+                                        "width":  44,
+                                        "text":  "are",
+                                        "x":  230
+                                    },
+                                    {
+                                        "y":  765,
+                                        "height":  24,
+                                        "width":  162,
+                                        "text":  "responsible",
+                                        "x":  292
+                                    },
+                                    {
+                                        "y":  765,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "for",
+                                        "x":  472
+                                    },
+                                    {
+                                        "y":  765,
+                                        "height":  24,
+                                        "width":  120,
+                                        "text":  "managing",
+                                        "x":  533
+                                    },
+                                    {
+                                        "y":  765,
+                                        "height":  24,
+                                        "width":  119,
+                                        "text":  "computer",
+                                        "x":  671
+                                    },
+                                    {
+                                        "y":  765,
+                                        "height":  19,
+                                        "width":  89,
+                                        "text":  "assets",
+                                        "x":  807
+                                    },
+                                    {
+                                        "y":  765,
+                                        "height":  19,
+                                        "width":  26,
+                                        "text":  "in",
+                                        "x":  914
+                                    },
+                                    {
+                                        "y":  770,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  959
+                                    },
+                                    {
+                                        "y":  765,
+                                        "height":  24,
+                                        "width":  58,
+                                        "text":  "busy",
+                                        "x":  990
+                                    },
+                                    {
+                                        "y":  765,
+                                        "height":  24,
+                                        "width":  135,
+                                        "text":  "computing",
+                                        "x":  1066
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "lab. One of the challenges you face is keeping track of the various",
+                      "words":  [
+                                    {
+                                        "y":  803,
+                                        "height":  19,
+                                        "width":  54,
+                                        "text":  "lab.",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  803,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "One",
+                                        "x":  246
+                                    },
+                                    {
+                                        "y":  803,
+                                        "height":  19,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  309
+                                    },
+                                    {
+                                        "y":  803,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  355
+                                    },
+                                    {
+                                        "y":  803,
+                                        "height":  24,
+                                        "width":  148,
+                                        "text":  "challenges",
+                                        "x":  418
+                                    },
+                                    {
+                                        "y":  808,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "you",
+                                        "x":  585
+                                    },
+                                    {
+                                        "y":  803,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "face",
+                                        "x":  648
+                                    },
+                                    {
+                                        "y":  803,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  726
+                                    },
+                                    {
+                                        "y":  803,
+                                        "height":  24,
+                                        "width":  104,
+                                        "text":  "keeping",
+                                        "x":  773
+                                    },
+                                    {
+                                        "y":  803,
+                                        "height":  19,
+                                        "width":  74,
+                                        "text":  "track",
+                                        "x":  894
+                                    },
+                                    {
+                                        "y":  803,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "of",
+                                        "x":  986
+                                    },
+                                    {
+                                        "y":  803,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  1033
+                                    },
+                                    {
+                                        "y":  803,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "various",
+                                        "x":  1096
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "computers and their components within the lab. To streamline this",
+                      "words":  [
+                                    {
+                                        "y":  841,
+                                        "height":  23,
+                                        "width":  133,
+                                        "text":  "computers",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  840,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  326
+                                    },
+                                    {
+                                        "y":  840,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "their",
+                                        "x":  392
+                                    },
+                                    {
+                                        "y":  841,
+                                        "height":  23,
+                                        "width":  149,
+                                        "text":  "components",
+                                        "x":  488
+                                    },
+                                    {
+                                        "y":  840,
+                                        "height":  20,
+                                        "width":  89,
+                                        "text":  "within",
+                                        "x":  659
+                                    },
+                                    {
+                                        "y":  840,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  771
+                                    },
+                                    {
+                                        "y":  840,
+                                        "height":  20,
+                                        "width":  54,
+                                        "text":  "lab.",
+                                        "x":  838
+                                    },
+                                    {
+                                        "y":  841,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "To",
+                                        "x":  917
+                                    },
+                                    {
+                                        "y":  840,
+                                        "height":  20,
+                                        "width":  148,
+                                        "text":  "streamline",
+                                        "x":  970
+                                    },
+                                    {
+                                        "y":  840,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "this",
+                                        "x":  1141
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "process, you want to implement a computer vision solution using the",
+                      "words":  [
+                                    {
+                                        "y":  884,
+                                        "height":  19,
+                                        "width":  114,
+                                        "text":  "process,",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  884,
+                                        "height":  19,
+                                        "width":  42,
+                                        "text":  "you",
+                                        "x":  308
+                                    },
+                                    {
+                                        "y":  879,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "want",
+                                        "x":  369
+                                    },
+                                    {
+                                        "y":  879,
+                                        "height":  19,
+                                        "width":  28,
+                                        "text":  "to",
+                                        "x":  447
+                                    },
+                                    {
+                                        "y":  878,
+                                        "height":  25,
+                                        "width":  133,
+                                        "text":  "implement",
+                                        "x":  495
+                                    },
+                                    {
+                                        "y":  884,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  648
+                                    },
+                                    {
+                                        "y":  879,
+                                        "height":  24,
+                                        "width":  119,
+                                        "text":  "computer",
+                                        "x":  681
+                                    },
+                                    {
+                                        "y":  878,
+                                        "height":  20,
+                                        "width":  87,
+                                        "text":  "vision",
+                                        "x":  819
+                                    },
+                                    {
+                                        "y":  878,
+                                        "height":  20,
+                                        "width":  118,
+                                        "text":  "solution",
+                                        "x":  926
+                                    },
+                                    {
+                                        "y":  878,
+                                        "height":  25,
+                                        "width":  73,
+                                        "text":  "using",
+                                        "x":  1065
+                                    },
+                                    {
+                                        "y":  878,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  1157
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Scale-Invariant Feature Transform (SIFT) .",
+                      "words":  [
+                                    {
+                                        "y":  916,
+                                        "height":  19,
+                                        "width":  225,
+                                        "text":  "Scale-Invariant",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  916,
+                                        "height":  19,
+                                        "width":  102,
+                                        "text":  "Feature",
+                                        "x":  436
+                                    },
+                                    {
+                                        "y":  916,
+                                        "height":  19,
+                                        "width":  136,
+                                        "text":  "Transform",
+                                        "x":  579
+                                    },
+                                    {
+                                        "y":  915,
+                                        "height":  24,
+                                        "width":  81,
+                                        "text":  "(SIFT)",
+                                        "x":  760
+                                    },
+                                    {
+                                        "y":  931,
+                                        "height":  4,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  851
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Your goal is to",
+                      "words":  [
+                                    {
+                                        "y":  916,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "Your",
+                                        "x":  901
+                                    },
+                                    {
+                                        "y":  916,
+                                        "height":  24,
+                                        "width":  58,
+                                        "text":  "goal",
+                                        "x":  1001
+                                    },
+                                    {
+                                        "y":  916,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  1102
+                                    },
+                                    {
+                                        "y":  916,
+                                        "height":  19,
+                                        "width":  28,
+                                        "text":  "to",
+                                        "x":  1171
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "automatically recognize and identify individual computer systems and",
+                      "words":  [
+                                    {
+                                        "y":  954,
+                                        "height":  24,
+                                        "width":  195,
+                                        "text":  "automatically",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  954,
+                                        "height":  24,
+                                        "width":  133,
+                                        "text":  "recognize",
+                                        "x":  382
+                                    },
+                                    {
+                                        "y":  954,
+                                        "height":  19,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  533
+                                    },
+                                    {
+                                        "y":  954,
+                                        "height":  24,
+                                        "width":  118,
+                                        "text":  "identify",
+                                        "x":  595
+                                    },
+                                    {
+                                        "y":  954,
+                                        "height":  19,
+                                        "width":  148,
+                                        "text":  "individual",
+                                        "x":  732
+                                    },
+                                    {
+                                        "y":  955,
+                                        "height":  23,
+                                        "width":  118,
+                                        "text":  "computer",
+                                        "x":  899
+                                    },
+                                    {
+                                        "y":  955,
+                                        "height":  23,
+                                        "width":  103,
+                                        "text":  "systems",
+                                        "x":  1035
+                                    },
+                                    {
+                                        "y":  954,
+                                        "height":  19,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  1157
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "their unique components, such as monitors and keyboards, to maintain",
+                      "words":  [
+                                    {
+                                        "y":  992,
+                                        "height":  19,
+                                        "width":  75,
+                                        "text":  "their",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  992,
+                                        "height":  24,
+                                        "width":  88,
+                                        "text":  "unique",
+                                        "x":  261
+                                    },
+                                    {
+                                        "y":  993,
+                                        "height":  23,
+                                        "width":  158,
+                                        "text":  "components,",
+                                        "x":  368
+                                    },
+                                    {
+                                        "y":  992,
+                                        "height":  19,
+                                        "width":  57,
+                                        "text":  "such",
+                                        "x":  549
+                                    },
+                                    {
+                                        "y":  998,
+                                        "height":  13,
+                                        "width":  27,
+                                        "text":  "as",
+                                        "x":  625
+                                    },
+                                    {
+                                        "y":  992,
+                                        "height":  19,
+                                        "width":  120,
+                                        "text":  "monitors",
+                                        "x":  670
+                                    },
+                                    {
+                                        "y":  992,
+                                        "height":  19,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  808
+                                    },
+                                    {
+                                        "y":  992,
+                                        "height":  24,
+                                        "width":  143,
+                                        "text":  "keyboards,",
+                                        "x":  870
+                                    },
+                                    {
+                                        "y":  993,
+                                        "height":  18,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  1035
+                                    },
+                                    {
+                                        "y":  992,
+                                        "height":  19,
+                                        "width":  119,
+                                        "text":  "maintain",
+                                        "x":  1081
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "an up-to-date inventory",
+                      "words":  [
+                                    {
+                                        "y":  1035,
+                                        "height":  14,
+                                        "width":  28,
+                                        "text":  "an",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1029,
+                                        "height":  25,
+                                        "width":  149,
+                                        "text":  "up-to-date",
+                                        "x":  215
+                                    },
+                                    {
+                                        "y":  1029,
+                                        "height":  25,
+                                        "width":  132,
+                                        "text":  "inventory",
+                                        "x":  382
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Anomaly Detection in Sensor Data Using Wavelet",
+                      "words":  [
+                                    {
+                                        "y":  1100,
+                                        "height":  32,
+                                        "width":  145,
+                                        "text":  "Anomaly",
+                                        "x":  168
+                                    },
+                                    {
+                                        "y":  1098,
+                                        "height":  27,
+                                        "width":  151,
+                                        "text":  "Detection",
+                                        "x":  326
+                                    },
+                                    {
+                                        "y":  1098,
+                                        "height":  27,
+                                        "width":  27,
+                                        "text":  "in",
+                                        "x":  491
+                                    },
+                                    {
+                                        "y":  1101,
+                                        "height":  24,
+                                        "width":  111,
+                                        "text":  "Sensor",
+                                        "x":  530
+                                    },
+                                    {
+                                        "y":  1101,
+                                        "height":  24,
+                                        "width":  76,
+                                        "text":  "Data",
+                                        "x":  653
+                                    },
+                                    {
+                                        "y":  1098,
+                                        "height":  34,
+                                        "width":  89,
+                                        "text":  "Using",
+                                        "x":  743
+                                    },
+                                    {
+                                        "y":  1100,
+                                        "height":  25,
+                                        "width":  132,
+                                        "text":  "Wavelet",
+                                        "x":  844
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Transformation",
+                      "words":  [
+                                    {
+                                        "y":  1144,
+                                        "height":  26,
+                                        "width":  254,
+                                        "text":  "Transformation",
+                                        "x":  250
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "You are tasked with developing a system to monitor sensor data from",
+                      "words":  [
+                                    {
+                                        "y":  1203,
+                                        "height":  18,
+                                        "width":  43,
+                                        "text":  "You",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1208,
+                                        "height":  13,
+                                        "width":  43,
+                                        "text":  "are",
+                                        "x":  232
+                                    },
+                                    {
+                                        "y":  1202,
+                                        "height":  19,
+                                        "width":  88,
+                                        "text":  "tasked",
+                                        "x":  294
+                                    },
+                                    {
+                                        "y":  1202,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "with",
+                                        "x":  401
+                                    },
+                                    {
+                                        "y":  1202,
+                                        "height":  24,
+                                        "width":  151,
+                                        "text":  "developing",
+                                        "x":  478
+                                    },
+                                    {
+                                        "y":  1208,
+                                        "height":  13,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  647
+                                    },
+                                    {
+                                        "y":  1203,
+                                        "height":  23,
+                                        "width":  88,
+                                        "text":  "system",
+                                        "x":  680
+                                    },
+                                    {
+                                        "y":  1203,
+                                        "height":  18,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  786
+                                    },
+                                    {
+                                        "y":  1202,
+                                        "height":  19,
+                                        "width":  104,
+                                        "text":  "monitor",
+                                        "x":  834
+                                    },
+                                    {
+                                        "y":  1208,
+                                        "height":  13,
+                                        "width":  89,
+                                        "text":  "sensor",
+                                        "x":  957
+                                    },
+                                    {
+                                        "y":  1202,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "data",
+                                        "x":  1064
+                                    },
+                                    {
+                                        "y":  1202,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "from",
+                                        "x":  1142
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "industrial machines and identify anomalies in real-time. Anomalies",
+                      "words":  [
+                                    {
+                                        "y":  1240,
+                                        "height":  19,
+                                        "width":  148,
+                                        "text":  "industrial",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1240,
+                                        "height":  20,
+                                        "width":  117,
+                                        "text":  "machines",
+                                        "x":  341
+                                    },
+                                    {
+                                        "y":  1240,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  481
+                                    },
+                                    {
+                                        "y":  1240,
+                                        "height":  24,
+                                        "width":  118,
+                                        "text":  "identify",
+                                        "x":  548
+                                    },
+                                    {
+                                        "y":  1240,
+                                        "height":  19,
+                                        "width":  134,
+                                        "text":  "anomalies",
+                                        "x":  688
+                                    },
+                                    {
+                                        "y":  1240,
+                                        "height":  20,
+                                        "width":  26,
+                                        "text":  "in",
+                                        "x":  846
+                                    },
+                                    {
+                                        "y":  1240,
+                                        "height":  20,
+                                        "width":  143,
+                                        "text":  "real-time.",
+                                        "x":  896
+                                    },
+                                    {
+                                        "y":  1240,
+                                        "height":  19,
+                                        "width":  134,
+                                        "text":  "Anomalies",
+                                        "x":  1066
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "may indicate potential machine malfunctions or issues. Your approach",
+                      "words":  [
+                                    {
+                                        "y":  1283,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "may",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1277,
+                                        "height":  20,
+                                        "width":  118,
+                                        "text":  "indicate",
+                                        "x":  232
+                                    },
+                                    {
+                                        "y":  1277,
+                                        "height":  25,
+                                        "width":  132,
+                                        "text":  "potential",
+                                        "x":  368
+                                    },
+                                    {
+                                        "y":  1277,
+                                        "height":  20,
+                                        "width":  104,
+                                        "text":  "machine",
+                                        "x":  518
+                                    },
+                                    {
+                                        "y":  1277,
+                                        "height":  20,
+                                        "width":  179,
+                                        "text":  "malfunctions",
+                                        "x":  640
+                                    },
+                                    {
+                                        "y":  1283,
+                                        "height":  14,
+                                        "width":  29,
+                                        "text":  "or",
+                                        "x":  838
+                                    },
+                                    {
+                                        "y":  1277,
+                                        "height":  20,
+                                        "width":  98,
+                                        "text":  "issues.",
+                                        "x":  885
+                                    },
+                                    {
+                                        "y":  1278,
+                                        "height":  19,
+                                        "width":  60,
+                                        "text":  "Your",
+                                        "x":  1004
+                                    },
+                                    {
+                                        "y":  1277,
+                                        "height":  25,
+                                        "width":  119,
+                                        "text":  "approach",
+                                        "x":  1081
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "is to use the wavelet transformation to analyze the sensor data and",
+                      "words":  [
+                                    {
+                                        "y":  1315,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1316,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  216
+                                    },
+                                    {
+                                        "y":  1321,
+                                        "height":  14,
+                                        "width":  43,
+                                        "text":  "use",
+                                        "x":  264
+                                    },
+                                    {
+                                        "y":  1315,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  326
+                                    },
+                                    {
+                                        "y":  1315,
+                                        "height":  20,
+                                        "width":  103,
+                                        "text":  "wavelet",
+                                        "x":  388
+                                    },
+                                    {
+                                        "y":  1315,
+                                        "height":  20,
+                                        "width":  210,
+                                        "text":  "transformation",
+                                        "x":  510
+                                    },
+                                    {
+                                        "y":  1316,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  739
+                                    },
+                                    {
+                                        "y":  1315,
+                                        "height":  25,
+                                        "width":  104,
+                                        "text":  "analyze",
+                                        "x":  787
+                                    },
+                                    {
+                                        "y":  1315,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  909
+                                    },
+                                    {
+                                        "y":  1321,
+                                        "height":  14,
+                                        "width":  89,
+                                        "text":  "sensor",
+                                        "x":  972
+                                    },
+                                    {
+                                        "y":  1315,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "data",
+                                        "x":  1080
+                                    },
+                                    {
+                                        "y":  1315,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  1157
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "detect abnormal patterns. Your goal is to create a simple anomaly",
+                      "words":  [
+                                    {
+                                        "y":  1353,
+                                        "height":  19,
+                                        "width":  89,
+                                        "text":  "detect",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1353,
+                                        "height":  19,
+                                        "width":  118,
+                                        "text":  "abnormal",
+                                        "x":  281
+                                    },
+                                    {
+                                        "y":  1353,
+                                        "height":  24,
+                                        "width":  128,
+                                        "text":  "patterns.",
+                                        "x":  422
+                                    },
+                                    {
+                                        "y":  1353,
+                                        "height":  19,
+                                        "width":  60,
+                                        "text":  "Your",
+                                        "x":  576
+                                    },
+                                    {
+                                        "y":  1353,
+                                        "height":  24,
+                                        "width":  58,
+                                        "text":  "goal",
+                                        "x":  658
+                                    },
+                                    {
+                                        "y":  1353,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  739
+                                    },
+                                    {
+                                        "y":  1353,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  789
+                                    },
+                                    {
+                                        "y":  1354,
+                                        "height":  18,
+                                        "width":  87,
+                                        "text":  "create",
+                                        "x":  840
+                                    },
+                                    {
+                                        "y":  1358,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  950
+                                    },
+                                    {
+                                        "y":  1353,
+                                        "height":  24,
+                                        "width":  89,
+                                        "text":  "simple",
+                                        "x":  985
+                                    },
+                                    {
+                                        "y":  1353,
+                                        "height":  24,
+                                        "width":  104,
+                                        "text":  "anomaly",
+                                        "x":  1096
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "detection system using a sample sensor dataset and wavelet analysis.",
+                      "words":  [
+                                    {
+                                        "y":  1391,
+                                        "height":  19,
+                                        "width":  134,
+                                        "text":  "detection",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1392,
+                                        "height":  22,
+                                        "width":  88,
+                                        "text":  "system",
+                                        "x":  321
+                                    },
+                                    {
+                                        "y":  1391,
+                                        "height":  23,
+                                        "width":  72,
+                                        "text":  "using",
+                                        "x":  427
+                                    },
+                                    {
+                                        "y":  1396,
+                                        "height":  14,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  516
+                                    },
+                                    {
+                                        "y":  1391,
+                                        "height":  23,
+                                        "width":  88,
+                                        "text":  "sample",
+                                        "x":  547
+                                    },
+                                    {
+                                        "y":  1396,
+                                        "height":  14,
+                                        "width":  89,
+                                        "text":  "sensor",
+                                        "x":  653
+                                    },
+                                    {
+                                        "y":  1391,
+                                        "height":  19,
+                                        "width":  104,
+                                        "text":  "dataset",
+                                        "x":  758
+                                    },
+                                    {
+                                        "y":  1391,
+                                        "height":  19,
+                                        "width":  41,
+                                        "text":  "and",
+                                        "x":  880
+                                    },
+                                    {
+                                        "y":  1391,
+                                        "height":  19,
+                                        "width":  105,
+                                        "text":  "wavelet",
+                                        "x":  938
+                                    },
+                                    {
+                                        "y":  1391,
+                                        "height":  23,
+                                        "width":  130,
+                                        "text":  "analysis.",
+                                        "x":  1060
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FAST NUCES",
+                      "words":  [
+                                    {
+                                        "y":  1822,
+                                        "height":  20,
+                                        "width":  57,
+                                        "text":  "FAST",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1822,
+                                        "height":  20,
+                                        "width":  85,
+                                        "text":  "NUCES",
+                                        "x":  234
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "— Karachi",
+                      "words":  [
+                                    {
+                                        "y":  1833,
+                                        "height":  3,
+                                        "width":  14,
+                                        "text":  "—",
+                                        "x":  325
+                                    },
+                                    {
+                                        "y":  1823,
+                                        "height":  19,
+                                        "width":  85,
+                                        "text":  "Karachi",
+                                        "x":  346
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1821,
+                                        "height":  21,
+                                        "width":  76,
+                                        "text":  "Talha",
+                                        "x":  612
+                                    },
+                                    {
+                                        "y":  1819,
+                                        "height":  23,
+                                        "width":  95,
+                                        "text":  "Shahid",
+                                        "x":  699
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1",
+                      "words":  [
+                                    {
+                                        "y":  1823,
+                                        "height":  19,
+                                        "width":  8,
+                                        "text":  "1",
+                                        "x":  1189
+                                    }
+                                ]
+                  }
+              ]
+}

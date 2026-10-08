@@ -1,0 +1,1079 @@
+﻿{
+    "id":  "lab_04_manual_p003",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  ". 15 4.2 Convolution: ........................................ .15 4.2.1 Convolution Types:....................................................................... 4.2.1.1 Standard Convolution:................................ 16 4.2.1.2 Valid Convolution (No Padding)... 17 4.2.1.3 Same Convolution (Zero Padding)............................................................ 17 4.2.1.4 Valid Convolution with Strides . 5. Edge Detection \u0026 its Common Techniques..................................„................. 5.1 Common Edge Detection Techniques .. 19 5.2 The Canny Edge Detector ................................................. .. 20 5.2.1 Key Steps in the Canny Edge Detection Algorithm . 21 5.2.1.1 Gaussian Smoothing:. .. 21 5.2.1.2 Gradient Calculation:........................................... 5.2.1.3 Non-Maximum Suppression: ..... ..... ............................................................ 21 5.2.1.4 Edge Tracking by Hysteresis: .................................... 21 5.2.1.5 Parameters in the Canny Edge Detector: ................................................. 22 2 National University of Computer \u0026 Emerging Sciences - NUCES - Karachi Department of Artificial Intelligence 4.1 Filtering: . 16 . — 18 ............. 18 21 FAST NUCES - Karachi Talha Shahid",
+    "review_status":  "raw_ocr_unverified",
+    "page":  3,
+    "source_id":  "lab_04_manual",
+    "lines":  [
+                  {
+                      "text":  ". 15",
+                      "words":  [
+                                    {
+                                        "y":  233,
+                                        "height":  4,
+                                        "width":  3,
+                                        "text":  ".",
+                                        "x":  1155
+                                    },
+                                    {
+                                        "y":  217,
+                                        "height":  20,
+                                        "width":  26,
+                                        "text":  "15",
+                                        "x":  1174
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4.2 Convolution: ........................................",
+                      "words":  [
+                                    {
+                                        "y":  266,
+                                        "height":  19,
+                                        "width":  34,
+                                        "text":  "4.2",
+                                        "x":  194
+                                    },
+                                    {
+                                        "y":  264,
+                                        "height":  21,
+                                        "width":  150,
+                                        "text":  "Convolution:",
+                                        "x":  237
+                                    },
+                                    {
+                                        "y":  281,
+                                        "height":  4,
+                                        "width":  282,
+                                        "text":  "........................................",
+                                        "x":  391
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  ".15",
+                      "words":  [
+                                    {
+                                        "y":  265,
+                                        "height":  20,
+                                        "width":  38,
+                                        "text":  ".15",
+                                        "x":  1162
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4.2.1 Convolution Types:.......................................................................",
+                      "words":  [
+                                    {
+                                        "y":  314,
+                                        "height":  19,
+                                        "width":  52,
+                                        "text":  "4.2.1",
+                                        "x":  219
+                                    },
+                                    {
+                                        "y":  312,
+                                        "height":  21,
+                                        "width":  144,
+                                        "text":  "Convolution",
+                                        "x":  280
+                                    },
+                                    {
+                                        "y":  314,
+                                        "height":  24,
+                                        "width":  583,
+                                        "text":  "Types:.......................................................................",
+                                        "x":  433
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4.2.1.1 Standard Convolution:................................",
+                      "words":  [
+                                    {
+                                        "y":  360,
+                                        "height":  19,
+                                        "width":  71,
+                                        "text":  "4.2.1.1",
+                                        "x":  244
+                                    },
+                                    {
+                                        "y":  360,
+                                        "height":  19,
+                                        "width":  112,
+                                        "text":  "Standard",
+                                        "x":  324
+                                    },
+                                    {
+                                        "y":  359,
+                                        "height":  20,
+                                        "width":  378,
+                                        "text":  "Convolution:................................",
+                                        "x":  445
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "16",
+                      "words":  [
+                                    {
+                                        "y":  360,
+                                        "height":  19,
+                                        "width":  26,
+                                        "text":  "16",
+                                        "x":  1174
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4.2.1.2 Valid Convolution (No Padding)...",
+                      "words":  [
+                                    {
+                                        "y":  408,
+                                        "height":  19,
+                                        "width":  73,
+                                        "text":  "4.2.1.2",
+                                        "x":  244
+                                    },
+                                    {
+                                        "y":  407,
+                                        "height":  20,
+                                        "width":  62,
+                                        "text":  "Valid",
+                                        "x":  324
+                                    },
+                                    {
+                                        "y":  407,
+                                        "height":  20,
+                                        "width":  144,
+                                        "text":  "Convolution",
+                                        "x":  395
+                                    },
+                                    {
+                                        "y":  408,
+                                        "height":  23,
+                                        "width":  44,
+                                        "text":  "(No",
+                                        "x":  547
+                                    },
+                                    {
+                                        "y":  407,
+                                        "height":  25,
+                                        "width":  129,
+                                        "text":  "Padding)...",
+                                        "x":  601
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "17",
+                      "words":  [
+                                    {
+                                        "y":  407,
+                                        "height":  20,
+                                        "width":  26,
+                                        "text":  "17",
+                                        "x":  1174
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4.2.1.3 Same Convolution (Zero Padding)............................................................ 17",
+                      "words":  [
+                                    {
+                                        "y":  456,
+                                        "height":  19,
+                                        "width":  72,
+                                        "text":  "4.2.1.3",
+                                        "x":  244
+                                    },
+                                    {
+                                        "y":  456,
+                                        "height":  19,
+                                        "width":  68,
+                                        "text":  "Same",
+                                        "x":  325
+                                    },
+                                    {
+                                        "y":  454,
+                                        "height":  21,
+                                        "width":  143,
+                                        "text":  "Convolution",
+                                        "x":  401
+                                    },
+                                    {
+                                        "y":  456,
+                                        "height":  23,
+                                        "width":  65,
+                                        "text":  "(Zero",
+                                        "x":  553
+                                    },
+                                    {
+                                        "y":  454,
+                                        "height":  26,
+                                        "width":  538,
+                                        "text":  "Padding)............................................................",
+                                        "x":  628
+                                    },
+                                    {
+                                        "y":  455,
+                                        "height":  19,
+                                        "width":  26,
+                                        "text":  "17",
+                                        "x":  1174
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4.2.1.4 Valid Convolution with Strides .",
+                      "words":  [
+                                    {
+                                        "y":  503,
+                                        "height":  19,
+                                        "width":  74,
+                                        "text":  "4.2.1.4",
+                                        "x":  244
+                                    },
+                                    {
+                                        "y":  502,
+                                        "height":  20,
+                                        "width":  62,
+                                        "text":  "Valid",
+                                        "x":  326
+                                    },
+                                    {
+                                        "y":  502,
+                                        "height":  20,
+                                        "width":  143,
+                                        "text":  "Convolution",
+                                        "x":  397
+                                    },
+                                    {
+                                        "y":  502,
+                                        "height":  20,
+                                        "width":  50,
+                                        "text":  "with",
+                                        "x":  549
+                                    },
+                                    {
+                                        "y":  502,
+                                        "height":  20,
+                                        "width":  83,
+                                        "text":  "Strides",
+                                        "x":  609
+                                    },
+                                    {
+                                        "y":  519,
+                                        "height":  3,
+                                        "width":  3,
+                                        "text":  ".",
+                                        "x":  1048
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "5. Edge Detection \u0026 its Common Techniques..................................„.................",
+                      "words":  [
+                                    {
+                                        "y":  551,
+                                        "height":  19,
+                                        "width":  18,
+                                        "text":  "5.",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  550,
+                                        "height":  25,
+                                        "width":  59,
+                                        "text":  "Edge",
+                                        "x":  198
+                                    },
+                                    {
+                                        "y":  550,
+                                        "height":  20,
+                                        "width":  115,
+                                        "text":  "Detection",
+                                        "x":  267
+                                    },
+                                    {
+                                        "y":  551,
+                                        "height":  19,
+                                        "width":  16,
+                                        "text":  "\u0026",
+                                        "x":  392
+                                    },
+                                    {
+                                        "y":  550,
+                                        "height":  20,
+                                        "width":  26,
+                                        "text":  "its",
+                                        "x":  418
+                                    },
+                                    {
+                                        "y":  551,
+                                        "height":  19,
+                                        "width":  106,
+                                        "text":  "Common",
+                                        "x":  453
+                                    },
+                                    {
+                                        "y":  550,
+                                        "height":  25,
+                                        "width":  444,
+                                        "text":  "Techniques..................................„.................",
+                                        "x":  568
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "5.1 Common Edge Detection Techniques ..",
+                      "words":  [
+                                    {
+                                        "y":  599,
+                                        "height":  19,
+                                        "width":  31,
+                                        "text":  "5.1",
+                                        "x":  194
+                                    },
+                                    {
+                                        "y":  599,
+                                        "height":  19,
+                                        "width":  107,
+                                        "text":  "Common",
+                                        "x":  234
+                                    },
+                                    {
+                                        "y":  598,
+                                        "height":  25,
+                                        "width":  60,
+                                        "text":  "Edge",
+                                        "x":  352
+                                    },
+                                    {
+                                        "y":  597,
+                                        "height":  21,
+                                        "width":  115,
+                                        "text":  "Detection",
+                                        "x":  421
+                                    },
+                                    {
+                                        "y":  597,
+                                        "height":  26,
+                                        "width":  137,
+                                        "text":  "Techniques",
+                                        "x":  545
+                                    },
+                                    {
+                                        "y":  614,
+                                        "height":  4,
+                                        "width":  10,
+                                        "text":  "..",
+                                        "x":  691
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "19",
+                      "words":  [
+                                    {
+                                        "y":  598,
+                                        "height":  19,
+                                        "width":  26,
+                                        "text":  "19",
+                                        "x":  1174
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "5.2 The Canny Edge Detector .................................................",
+                      "words":  [
+                                    {
+                                        "y":  647,
+                                        "height":  19,
+                                        "width":  33,
+                                        "text":  "5.2",
+                                        "x":  194
+                                    },
+                                    {
+                                        "y":  647,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "The",
+                                        "x":  235
+                                    },
+                                    {
+                                        "y":  647,
+                                        "height":  25,
+                                        "width":  77,
+                                        "text":  "Canny",
+                                        "x":  287
+                                    },
+                                    {
+                                        "y":  646,
+                                        "height":  26,
+                                        "width":  61,
+                                        "text":  "Edge",
+                                        "x":  372
+                                    },
+                                    {
+                                        "y":  647,
+                                        "height":  19,
+                                        "width":  104,
+                                        "text":  "Detector",
+                                        "x":  442
+                                    },
+                                    {
+                                        "y":  662,
+                                        "height":  4,
+                                        "width":  347,
+                                        "text":  ".................................................",
+                                        "x":  555
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  ".. 20",
+                      "words":  [
+                                    {
+                                        "y":  662,
+                                        "height":  4,
+                                        "width":  10,
+                                        "text":  "..",
+                                        "x":  1155
+                                    },
+                                    {
+                                        "y":  646,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "20",
+                                        "x":  1173
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "5.2.1 Key Steps in the Canny Edge Detection Algorithm .",
+                      "words":  [
+                                    {
+                                        "y":  694,
+                                        "height":  18,
+                                        "width":  51,
+                                        "text":  "5.2.1",
+                                        "x":  219
+                                    },
+                                    {
+                                        "y":  694,
+                                        "height":  24,
+                                        "width":  46,
+                                        "text":  "Key",
+                                        "x":  280
+                                    },
+                                    {
+                                        "y":  694,
+                                        "height":  23,
+                                        "width":  66,
+                                        "text":  "Steps",
+                                        "x":  334
+                                    },
+                                    {
+                                        "y":  693,
+                                        "height":  19,
+                                        "width":  20,
+                                        "text":  "in",
+                                        "x":  409
+                                    },
+                                    {
+                                        "y":  693,
+                                        "height":  19,
+                                        "width":  38,
+                                        "text":  "the",
+                                        "x":  437
+                                    },
+                                    {
+                                        "y":  694,
+                                        "height":  24,
+                                        "width":  77,
+                                        "text":  "Canny",
+                                        "x":  483
+                                    },
+                                    {
+                                        "y":  694,
+                                        "height":  24,
+                                        "width":  59,
+                                        "text":  "Edge",
+                                        "x":  570
+                                    },
+                                    {
+                                        "y":  693,
+                                        "height":  19,
+                                        "width":  116,
+                                        "text":  "Detection",
+                                        "x":  639
+                                    },
+                                    {
+                                        "y":  693,
+                                        "height":  25,
+                                        "width":  120,
+                                        "text":  "Algorithm",
+                                        "x":  763
+                                    },
+                                    {
+                                        "y":  708,
+                                        "height":  4,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  891
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "21",
+                      "words":  [
+                                    {
+                                        "y":  694,
+                                        "height":  18,
+                                        "width":  23,
+                                        "text":  "21",
+                                        "x":  1173
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "5.2.1.1 Gaussian Smoothing:.",
+                      "words":  [
+                                    {
+                                        "y":  741,
+                                        "height":  19,
+                                        "width":  68,
+                                        "text":  "5.2.1.1",
+                                        "x":  245
+                                    },
+                                    {
+                                        "y":  740,
+                                        "height":  20,
+                                        "width":  111,
+                                        "text":  "Gaussian",
+                                        "x":  322
+                                    },
+                                    {
+                                        "y":  740,
+                                        "height":  26,
+                                        "width":  145,
+                                        "text":  "Smoothing:.",
+                                        "x":  442
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  ".. 21",
+                      "words":  [
+                                    {
+                                        "y":  756,
+                                        "height":  4,
+                                        "width":  11,
+                                        "text":  "..",
+                                        "x":  1155
+                                    },
+                                    {
+                                        "y":  740,
+                                        "height":  20,
+                                        "width":  23,
+                                        "text":  "21",
+                                        "x":  1173
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "5.2.1.2 Gradient Calculation:...........................................",
+                      "words":  [
+                                    {
+                                        "y":  790,
+                                        "height":  19,
+                                        "width":  70,
+                                        "text":  "5.2.1.2",
+                                        "x":  245
+                                    },
+                                    {
+                                        "y":  788,
+                                        "height":  21,
+                                        "width":  106,
+                                        "text":  "Gradient",
+                                        "x":  324
+                                    },
+                                    {
+                                        "y":  788,
+                                        "height":  21,
+                                        "width":  457,
+                                        "text":  "Calculation:...........................................",
+                                        "x":  438
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "5.2.1.3 Non-Maximum Suppression: ..... ..... ............................................................ 21",
+                      "words":  [
+                                    {
+                                        "y":  837,
+                                        "height":  19,
+                                        "width":  70,
+                                        "text":  "5.2.1.3",
+                                        "x":  245
+                                    },
+                                    {
+                                        "y":  835,
+                                        "height":  21,
+                                        "width":  177,
+                                        "text":  "Non-Maximum",
+                                        "x":  324
+                                    },
+                                    {
+                                        "y":  835,
+                                        "height":  26,
+                                        "width":  154,
+                                        "text":  "Suppression:",
+                                        "x":  510
+                                    },
+                                    {
+                                        "y":  852,
+                                        "height":  3,
+                                        "width":  32,
+                                        "text":  ".....",
+                                        "x":  669
+                                    },
+                                    {
+                                        "y":  852,
+                                        "height":  4,
+                                        "width":  32,
+                                        "text":  ".....",
+                                        "x":  705
+                                    },
+                                    {
+                                        "y":  852,
+                                        "height":  4,
+                                        "width":  425,
+                                        "text":  "............................................................",
+                                        "x":  741
+                                    },
+                                    {
+                                        "y":  836,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "21",
+                                        "x":  1172
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "5.2.1.4 Edge Tracking by Hysteresis: ....................................",
+                      "words":  [
+                                    {
+                                        "y":  885,
+                                        "height":  19,
+                                        "width":  72,
+                                        "text":  "5.2.1.4",
+                                        "x":  245
+                                    },
+                                    {
+                                        "y":  885,
+                                        "height":  25,
+                                        "width":  61,
+                                        "text":  "Edge",
+                                        "x":  326
+                                    },
+                                    {
+                                        "y":  884,
+                                        "height":  26,
+                                        "width":  104,
+                                        "text":  "Tracking",
+                                        "x":  395
+                                    },
+                                    {
+                                        "y":  885,
+                                        "height":  25,
+                                        "width":  29,
+                                        "text":  "by",
+                                        "x":  508
+                                    },
+                                    {
+                                        "y":  884,
+                                        "height":  26,
+                                        "width":  130,
+                                        "text":  "Hysteresis:",
+                                        "x":  546
+                                    },
+                                    {
+                                        "y":  900,
+                                        "height":  4,
+                                        "width":  254,
+                                        "text":  "....................................",
+                                        "x":  683
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "21",
+                      "words":  [
+                                    {
+                                        "y":  885,
+                                        "height":  19,
+                                        "width":  23,
+                                        "text":  "21",
+                                        "x":  1173
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "5.2.1.5 Parameters in the Canny Edge Detector: ................................................. 22",
+                      "words":  [
+                                    {
+                                        "y":  932,
+                                        "height":  19,
+                                        "width":  70,
+                                        "text":  "5.2.1.5",
+                                        "x":  245
+                                    },
+                                    {
+                                        "y":  933,
+                                        "height":  18,
+                                        "width":  140,
+                                        "text":  "Parameters",
+                                        "x":  325
+                                    },
+                                    {
+                                        "y":  931,
+                                        "height":  20,
+                                        "width":  19,
+                                        "text":  "in",
+                                        "x":  474
+                                    },
+                                    {
+                                        "y":  932,
+                                        "height":  19,
+                                        "width":  39,
+                                        "text":  "the",
+                                        "x":  501
+                                    },
+                                    {
+                                        "y":  932,
+                                        "height":  25,
+                                        "width":  77,
+                                        "text":  "Canny",
+                                        "x":  548
+                                    },
+                                    {
+                                        "y":  932,
+                                        "height":  25,
+                                        "width":  60,
+                                        "text":  "Edge",
+                                        "x":  634
+                                    },
+                                    {
+                                        "y":  932,
+                                        "height":  19,
+                                        "width":  110,
+                                        "text":  "Detector:",
+                                        "x":  704
+                                    },
+                                    {
+                                        "y":  948,
+                                        "height":  3,
+                                        "width":  347,
+                                        "text":  ".................................................",
+                                        "x":  819
+                                    },
+                                    {
+                                        "y":  932,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "22",
+                                        "x":  1173
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2",
+                      "words":  [
+                                    {
+                                        "y":  1819,
+                                        "height":  19,
+                                        "width":  13,
+                                        "text":  "2",
+                                        "x":  1188
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "National University of Computer \u0026 Emerging Sciences -",
+                      "words":  [
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  123,
+                                        "text":  "National",
+                                        "x":  372
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  30,
+                                        "width":  153,
+                                        "text":  "University",
+                                        "x":  504
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  31,
+                                        "text":  "of",
+                                        "x":  664
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  30,
+                                        "width":  146,
+                                        "text":  "Computer",
+                                        "x":  701
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  23,
+                                        "width":  23,
+                                        "text":  "\u0026",
+                                        "x":  854
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  30,
+                                        "width":  140,
+                                        "text":  "Emerging",
+                                        "x":  885
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  23,
+                                        "width":  123,
+                                        "text":  "Sciences",
+                                        "x":  1033
+                                    },
+                                    {
+                                        "y":  107,
+                                        "height":  4,
+                                        "width":  9,
+                                        "text":  "-",
+                                        "x":  1166
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "NUCES - Karachi",
+                      "words":  [
+                                    {
+                                        "y":  138,
+                                        "height":  23,
+                                        "width":  96,
+                                        "text":  "NUCES",
+                                        "x":  655
+                                    },
+                                    {
+                                        "y":  150,
+                                        "height":  4,
+                                        "width":  8,
+                                        "text":  "-",
+                                        "x":  760
+                                    },
+                                    {
+                                        "y":  137,
+                                        "height":  24,
+                                        "width":  113,
+                                        "text":  "Karachi",
+                                        "x":  778
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Department of Artificial Intelligence",
+                      "words":  [
+                                    {
+                                        "y":  179,
+                                        "height":  27,
+                                        "width":  142,
+                                        "text":  "Department",
+                                        "x":  556
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  21,
+                                        "width":  25,
+                                        "text":  "of",
+                                        "x":  706
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  21,
+                                        "width":  100,
+                                        "text":  "Artificial",
+                                        "x":  738
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  27,
+                                        "width":  137,
+                                        "text":  "Intelligence",
+                                        "x":  848
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4.1 Filtering: .",
+                      "words":  [
+                                    {
+                                        "y":  218,
+                                        "height":  19,
+                                        "width":  33,
+                                        "text":  "4.1",
+                                        "x":  194
+                                    },
+                                    {
+                                        "y":  217,
+                                        "height":  26,
+                                        "width":  104,
+                                        "text":  "Filtering:",
+                                        "x":  237
+                                    },
+                                    {
+                                        "y":  233,
+                                        "height":  4,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  348
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "16",
+                      "words":  [
+                                    {
+                                        "y":  313,
+                                        "height":  19,
+                                        "width":  26,
+                                        "text":  "16",
+                                        "x":  1174
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  ". — 18",
+                      "words":  [
+                                    {
+                                        "y":  519,
+                                        "height":  3,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  1040
+                                    },
+                                    {
+                                        "y":  519,
+                                        "height":  3,
+                                        "width":  111,
+                                        "text":  "—",
+                                        "x":  1055
+                                    },
+                                    {
+                                        "y":  503,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "18",
+                                        "x":  1175
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "............. 18",
+                      "words":  [
+                                    {
+                                        "y":  566,
+                                        "height":  4,
+                                        "width":  74,
+                                        "text":  ".............",
+                                        "x":  1094
+                                    },
+                                    {
+                                        "y":  551,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "18",
+                                        "x":  1175
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "21",
+                      "words":  [
+                                    {
+                                        "y":  789,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "21",
+                                        "x":  1172
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FAST NUCES",
+                      "words":  [
+                                    {
+                                        "y":  1819,
+                                        "height":  19,
+                                        "width":  62,
+                                        "text":  "FAST",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1819,
+                                        "height":  20,
+                                        "width":  85,
+                                        "text":  "NUCES",
+                                        "x":  242
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Karachi",
+                      "words":  [
+                                    {
+                                        "y":  1828,
+                                        "height":  5,
+                                        "width":  12,
+                                        "text":  "-",
+                                        "x":  336
+                                    },
+                                    {
+                                        "y":  1817,
+                                        "height":  21,
+                                        "width":  94,
+                                        "text":  "Karachi",
+                                        "x":  358
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1819,
+                                        "height":  19,
+                                        "width":  72,
+                                        "text":  "Talha",
+                                        "x":  594
+                                    },
+                                    {
+                                        "y":  1817,
+                                        "height":  21,
+                                        "width":  87,
+                                        "text":  "Shahid",
+                                        "x":  676
+                                    }
+                                ]
+                  }
+              ]
+}

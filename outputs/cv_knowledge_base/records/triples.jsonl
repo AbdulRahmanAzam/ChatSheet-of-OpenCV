@@ -1,0 +1,220 @@
+{"id": "triple:0001", "subjects": ["a"], "attribute": "controls in matrix [[a, b], [c, d]]", "value": "horizontal scaling", "source_refs": ["lab_03_manual:p10"], "scope": "core"}
+{"id": "triple:0002", "subjects": ["b"], "attribute": "controls in matrix [[a, b], [c, d]]", "value": "horizontal shearing", "source_refs": ["lab_03_manual:p10"], "scope": "core"}
+{"id": "triple:0003", "subjects": ["c"], "attribute": "controls in matrix [[a, b], [c, d]]", "value": "vertical shearing", "source_refs": ["lab_03_manual:p10"], "scope": "core"}
+{"id": "triple:0004", "subjects": ["d"], "attribute": "controls in matrix [[a, b], [c, d]]", "value": "vertical scaling", "source_refs": ["lab_03_manual:p10"], "scope": "core"}
+{"id": "triple:0005", "subjects": ["first column"], "attribute": "represents in 2x2 transformation matrix", "value": "new landing spot for the X-axis", "source_refs": ["lab_03_manual:p10"], "scope": "core"}
+{"id": "triple:0006", "subjects": ["second column"], "attribute": "represents in 2x2 transformation matrix", "value": "new landing spot for the Y-axis", "source_refs": ["lab_03_manual:p10"], "scope": "core"}
+{"id": "triple:0007", "subjects": ["M"], "attribute": "represents in digital image", "value": "total rows / height", "source_refs": ["lab_01_manual:p10"], "scope": "core"}
+{"id": "triple:0008", "subjects": ["N"], "attribute": "represents in digital image", "value": "total columns / width", "source_refs": ["lab_01_manual:p10"], "scope": "core"}
+{"id": "triple:0009", "subjects": ["x", "x-axis"], "attribute": "direction in image coordinates, goes, increases", "value": "right", "source_refs": ["lab_03_manual:p6"], "scope": "core"}
+{"id": "triple:0010", "subjects": ["y", "y-axis"], "attribute": "direction in image coordinates, goes, increases", "value": "down", "source_refs": ["lab_03_manual:p6"], "scope": "core"}
+{"id": "triple:0011", "subjects": ["origin"], "attribute": "location in image coordinates", "value": "top-left", "source_refs": ["lab_03_manual:p6"], "scope": "core"}
+{"id": "triple:0012", "subjects": ["warpAffine"], "attribute": "matrix size, accepts, uses", "value": "2x3", "source_refs": ["lab_03_manual:p8"], "scope": "core"}
+{"id": "triple:0013", "subjects": ["warpPerspective"], "attribute": "matrix size, uses", "value": "3x3", "source_refs": ["lab_03_manual:p8"], "scope": "core"}
+{"id": "triple:0014", "subjects": ["projective transformation", "homography"], "attribute": "matrix size, uses", "value": "3x3", "source_refs": ["lab_03_manual:p19"], "scope": "core"}
+{"id": "triple:0015", "subjects": ["3D homogeneous transformation", "3D transformation"], "attribute": "matrix size, uses", "value": "4x4", "source_refs": ["lab_03_manual:p9"], "scope": "core"}
+{"id": "triple:0016", "subjects": ["2D affine transformation"], "attribute": "represented as", "value": "2x3 or 3x3 homogeneous", "source_refs": ["lab_03_manual:p9"], "scope": "core"}
+{"id": "triple:0017", "subjects": ["linear transformation"], "attribute": "equation, represented by", "value": "p' = Ap", "source_refs": ["lab_03_manual:p13"], "scope": "core"}
+{"id": "triple:0018", "subjects": ["affine transformation"], "attribute": "equation", "value": "p' = Ap + b", "source_refs": ["lab_03_manual:p11"], "scope": "core"}
+{"id": "triple:0019", "subjects": ["linear transformation", "linear transformations"], "attribute": "can achieve", "value": "scaling, rotation, reflection, shearing", "source_refs": ["lab_03_manual:p14"], "scope": "core"}
+{"id": "triple:0020", "subjects": ["linear transformation"], "attribute": "limitation", "value": "cannot translate because origin is anchored", "source_refs": ["lab_03_manual:p16"], "scope": "core"}
+{"id": "triple:0021", "subjects": ["homogeneous coordinates"], "attribute": "add value", "value": "1", "source_refs": ["lab_03_manual:p17"], "scope": "core"}
+{"id": "triple:0022", "subjects": ["homogeneous 3x3 matrix", "translation values"], "attribute": "translation placed in", "value": "the rightmost column", "source_refs": ["lab_03_manual:p17"], "scope": "core"}
+{"id": "triple:0023", "subjects": ["affine transformation"], "attribute": "bottom row of the matrix", "value": "[0, 0, 1]", "source_refs": ["lab_03_manual:p19"], "scope": "core"}
+{"id": "triple:0024", "subjects": ["projective transformation"], "attribute": "also called", "value": "homography", "source_refs": ["lab_03_manual:p18"], "scope": "core"}
+{"id": "triple:0025", "subjects": ["geometric transformation"], "attribute": "formula", "value": "(x,y) -> (x',y')", "source_refs": ["lab_03_manual:p4"], "scope": "core"}
+{"id": "triple:0026", "subjects": ["photometric transformation"], "attribute": "formula", "value": "I(x,y) -> I'(x',y')", "source_refs": ["lab_03_manual:p4"], "scope": "core"}
+{"id": "triple:0027", "subjects": ["geometric transformation"], "attribute": "example", "value": "rotation, scaling, shearing, translation, affine, perspective", "source_refs": ["lab_03_manual:p4"], "scope": "core"}
+{"id": "triple:0028", "subjects": ["photometric transformation"], "attribute": "example", "value": "brightness adjustment, contrast enhancement, gamma correction, color conversion", "source_refs": ["lab_03_manual:p4"], "scope": "core"}
+{"id": "triple:0029", "subjects": ["Matplotlib"], "attribute": "expects image format", "value": "RGB", "source_refs": ["lab_01_manual:p14"], "scope": "core"}
+{"id": "triple:0030", "subjects": ["OpenCV"], "attribute": "loads color images in format by default", "value": "BGR", "source_refs": ["lab_01_manual:p14"], "scope": "core"}
+{"id": "triple:0031", "subjects": ["OpenCV"], "attribute": "mainly used for", "value": "general computer vision tasks", "source_refs": ["lab_01_manual:p7"], "scope": "core"}
+{"id": "triple:0032", "subjects": ["fx", "fy"], "attribute": "represent in cv2.resize", "value": "scale factors along x and y", "source_refs": ["lab_01_manual:p16"], "scope": "core"}
+{"id": "triple:0033", "subjects": ["reshape(-1, 3)"], "attribute": "converts", "value": "3D image array to 2D array", "source_refs": ["lab_01_manual:p20"], "scope": "core"}
+{"id": "triple:0034", "subjects": ["Gx"], "attribute": "detects edges", "value": "vertical edges", "source_refs": ["lab_manual_06:p7"], "scope": "core"}
+{"id": "triple:0035", "subjects": ["Gy"], "attribute": "detects edges", "value": "horizontal edges", "source_refs": ["lab_manual_06:p7"], "scope": "core"}
+{"id": "triple:0036", "subjects": ["dx=1, dy=0"], "attribute": "computes in cv2.Sobel", "value": "horizontal gradient (Gx)", "source_refs": ["opencv_docs:Sobel"], "scope": "core"}
+{"id": "triple:0037", "subjects": ["dx=0, dy=1"], "attribute": "computes in cv2.Sobel", "value": "vertical gradient (Gy)", "source_refs": ["opencv_docs:Sobel"], "scope": "core"}
+{"id": "triple:0038", "subjects": ["Sobel", "Canny/Sobel", "Canny"], "attribute": "derivative", "value": "first derivative", "source_refs": ["cv_fundamentals:derivatives"], "scope": "core"}
+{"id": "triple:0039", "subjects": ["Laplacian", "LoG"], "attribute": "derivative", "value": "second derivative", "source_refs": ["cv_fundamentals:derivatives"], "scope": "core"}
+{"id": "triple:0040", "subjects": ["threshold1"], "attribute": "in cv2.Canny is", "value": "low threshold", "source_refs": ["lab_04_manual:p23"], "scope": "core"}
+{"id": "triple:0041", "subjects": ["threshold2"], "attribute": "in cv2.Canny is", "value": "high threshold", "source_refs": ["lab_04_manual:p23"], "scope": "core"}
+{"id": "triple:0042", "subjects": ["high threshold"], "attribute": "in Canny used to", "value": "detect strong edges", "source_refs": ["lab_05_manual:p10"], "scope": "core"}
+{"id": "triple:0043", "subjects": ["low threshold"], "attribute": "in Canny used to", "value": "link weak edges", "source_refs": ["lab_05_manual:p10"], "scope": "core"}
+{"id": "triple:0044", "subjects": ["apertureSize"], "attribute": "controls in cv2.Canny", "value": "Sobel operator aperture size", "source_refs": ["opencv_docs:Canny"], "scope": "core"}
+{"id": "triple:0045", "subjects": ["L2gradient=True", "L2gradient"], "attribute": "norm used", "value": "L2 norm", "source_refs": ["opencv_docs:Canny"], "scope": "core"}
+{"id": "triple:0046", "subjects": ["sigmaY=0", "sigmaY"], "attribute": "in cv2.GaussianBlur when 0", "value": "set equal to sigmaX", "source_refs": ["opencv_docs:GaussianBlur"], "scope": "core"}
+{"id": "triple:0047", "subjects": ["cv2.Laplacian", "Laplacian"], "attribute": "default ksize", "value": "1", "source_refs": ["opencv_docs:Laplacian"], "scope": "core"}
+{"id": "triple:0048", "subjects": ["alpha"], "attribute": "controls in cv2.convertScaleAbs", "value": "scale factor (contrast)", "source_refs": ["opencv_docs:convertScaleAbs"], "scope": "core"}
+{"id": "triple:0049", "subjects": ["beta"], "attribute": "controls in cv2.convertScaleAbs", "value": "delta (brightness)", "source_refs": ["opencv_docs:convertScaleAbs"], "scope": "core"}
+{"id": "triple:0050", "subjects": ["rho"], "attribute": "represents in cv2.HoughLines", "value": "distance resolution in pixels", "source_refs": ["opencv_docs:HoughLines"], "scope": "core"}
+{"id": "triple:0051", "subjects": ["theta"], "attribute": "represents in cv2.HoughLines", "value": "angle resolution in radians", "source_refs": ["opencv_docs:HoughLines"], "scope": "core"}
+{"id": "triple:0052", "subjects": ["threshold"], "attribute": "represents in cv2.HoughLines", "value": "accumulator threshold", "source_refs": ["opencv_docs:HoughLines"], "scope": "core"}
+{"id": "triple:0053", "subjects": ["minDist"], "attribute": "represents in cv2.HoughCircles", "value": "minimum distance between centers of detected circles", "source_refs": ["opencv_docs:HoughCircles"], "scope": "core"}
+{"id": "triple:0054", "subjects": ["param1"], "attribute": "represents in cv2.HoughCircles", "value": "higher threshold for Canny", "source_refs": ["opencv_docs:HoughCircles"], "scope": "core"}
+{"id": "triple:0055", "subjects": ["param2"], "attribute": "represents in cv2.HoughCircles", "value": "accumulator threshold for circle centers", "source_refs": ["opencv_docs:HoughCircles"], "scope": "core"}
+{"id": "triple:0056", "subjects": ["cv2.HoughCircles", "HoughCircles"], "attribute": "method implemented", "value": "cv2.HOUGH_GRADIENT", "source_refs": ["opencv_docs:HoughCircles"], "scope": "core"}
+{"id": "triple:0057", "subjects": ["blockSize"], "attribute": "parameter in cv2.adaptiveThreshold", "value": "neighborhood size", "source_refs": ["opencv_docs:adaptiveThreshold"], "scope": "core"}
+{"id": "triple:0058", "subjects": ["C"], "attribute": "parameter in cv2.adaptiveThreshold", "value": "constant subtracted from the mean", "source_refs": ["opencv_docs:adaptiveThreshold"], "scope": "core"}
+{"id": "triple:0059", "subjects": ["MORPH_OPEN", "opening"], "attribute": "performs", "value": "erosion then dilation", "source_refs": ["opencv_docs:morphologyEx"], "scope": "core"}
+{"id": "triple:0060", "subjects": ["MORPH_CLOSE", "closing"], "attribute": "performs", "value": "dilation then erosion", "source_refs": ["opencv_docs:morphologyEx"], "scope": "core"}
+{"id": "triple:0061", "subjects": ["opening", "morphological opening"], "attribute": "removes", "value": "noise", "source_refs": ["opencv_docs:morphologyEx"], "scope": "core"}
+{"id": "triple:0062", "subjects": ["cv2.watershed", "watershed"], "attribute": "marks boundaries as", "value": "-1", "source_refs": ["opencv_docs:watershed"], "scope": "core"}
+{"id": "triple:0063", "subjects": ["cv2.inRange", "inRange"], "attribute": "parameters", "value": "src, lowerb, upperb", "source_refs": ["opencv_docs:inRange"], "scope": "core"}
+{"id": "triple:0064", "subjects": ["cv2.Canny", "Canny()"], "attribute": "parameters", "value": "image, threshold1, threshold2", "source_refs": ["opencv_docs:Canny"], "scope": "core"}
+{"id": "triple:0065", "subjects": ["sift.detectAndCompute", "detectAndCompute"], "attribute": "detects keypoints and computes descriptors", "value": "sift.detectAndCompute()", "source_refs": ["opencv_docs:detectAndCompute"], "scope": "core"}
+{"id": "triple:0066", "subjects": ["DRAW_RICH_KEYPOINTS", "drawKeypoints"], "attribute": "draws keypoints with size and orientation", "value": "cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS", "source_refs": ["opencv_docs:drawKeypoints"], "scope": "core"}
+{"id": "triple:0067", "subjects": ["semantic segmentation"], "attribute": "means", "value": "same class gets same label", "source_refs": ["cv_fundamentals:segmentation"], "scope": "core"}
+{"id": "triple:0068", "subjects": ["instance segmentation"], "attribute": "means", "value": "different instances of same class are separated", "source_refs": ["cv_fundamentals:segmentation"], "scope": "core"}
+{"id": "triple:0069", "subjects": ["Otsu", "Otsu's thresholding"], "attribute": "maximizes", "value": "inter-class variance", "source_refs": ["lab_05_manual:p9"], "scope": "core"}
+{"id": "triple:0070", "subjects": ["Otsu"], "attribute": "suitable distribution", "value": "bimodal", "source_refs": ["lab_05_manual:p9"], "scope": "core"}
+{"id": "triple:0071", "subjects": ["region growing"], "attribute": "neighbours added in the manual code", "value": "4-connected", "source_refs": ["lab_05_manual:p11"], "scope": "core"}
+{"id": "triple:0072", "subjects": ["region growing"], "attribute": "seed point in the manual code", "value": "(10,10)", "source_refs": ["lab_05_manual:p10"], "scope": "core"}
+{"id": "triple:0073", "subjects": ["region growing"], "attribute": "threshold value in the manual code", "value": "50", "source_refs": ["lab_05_manual:p11"], "scope": "core"}
+{"id": "triple:0074", "subjects": ["region growing"], "attribute": "mask dtype in the manual code", "value": "np.uint8", "source_refs": ["lab_05_manual:p11"], "scope": "core"}
+{"id": "triple:0075", "subjects": ["sure_bg"], "attribute": "created by in watershed code", "value": "dilation", "source_refs": ["lab_05_manual:p13"], "scope": "core"}
+{"id": "triple:0076", "subjects": ["sure_fg"], "attribute": "threshold in watershed code", "value": "0.2 * max", "source_refs": ["lab_05_manual:p13"], "scope": "core"}
+{"id": "triple:0077", "subjects": ["unknown region"], "attribute": "calculated as in watershed code", "value": "subtract(sure_bg, sure_fg)", "source_refs": ["lab_05_manual:p13"], "scope": "core"}
+{"id": "triple:0078", "subjects": ["unknown region"], "attribute": "set to in watershed code", "value": "0", "source_refs": ["lab_05_manual:p13"], "scope": "core"}
+{"id": "triple:0079", "subjects": ["markers"], "attribute": "incremented by after connectedComponents", "value": "1", "source_refs": ["lab_05_manual:p13"], "scope": "core"}
+{"id": "triple:0080", "subjects": ["K", "K value"], "attribute": "in K-Means code", "value": "4", "source_refs": ["lab_05_manual:p15"], "scope": "core"}
+{"id": "triple:0081", "subjects": ["pixel_values"], "attribute": "reshaped to in K-Means code", "value": "(-1, 3)", "source_refs": ["lab_05_manual:p15"], "scope": "core"}
+{"id": "triple:0082", "subjects": ["pixel_values"], "attribute": "converted to in K-Means code", "value": "np.float32", "source_refs": ["lab_05_manual:p15"], "scope": "core"}
+{"id": "triple:0083", "subjects": ["centers"], "attribute": "converted to in K-Means code", "value": "np.uint8", "source_refs": ["lab_05_manual:p15"], "scope": "core"}
+{"id": "triple:0084", "subjects": ["SIFT keypoint", "candidate keypoint"], "attribute": "compared with neighbors", "value": "26", "source_refs": ["lab_manual_06:p19"], "scope": "core"}
+{"id": "triple:0085", "subjects": ["26 neighbors"], "attribute": "consist of", "value": "8 same layer, 9 above, 9 below", "source_refs": ["lab_manual_06:p19"], "scope": "core"}
+{"id": "triple:0086", "subjects": ["SIFT descriptor"], "attribute": "generated from", "value": "4x4 sub-regions and 8 orientation bins", "source_refs": ["cv_fundamentals:sift"], "scope": "core"}
+{"id": "triple:0087", "subjects": ["orientation assignment"], "attribute": "makes keypoints invariant to", "value": "rotation", "source_refs": ["lab_manual_06:p20"], "scope": "core"}
+{"id": "triple:0088", "subjects": ["keypoint localization"], "attribute": "refines location by fitting", "value": "3D quadratic function", "source_refs": ["lab_manual_06:p19"], "scope": "core"}
+{"id": "triple:0089", "subjects": ["Hough line", "Hough line detection"], "attribute": "parameter space axes", "value": "m and b", "source_refs": ["lab_manual_06:p17"], "scope": "core"}
+{"id": "triple:0090", "subjects": ["circle Hough", "circle detection"], "attribute": "parameters", "value": "a, b, and r", "source_refs": ["lab_manual_06:p18"], "scope": "core"}
+{"id": "triple:0091", "subjects": ["circle detection"], "attribute": "parameter space dimensions", "value": "3", "source_refs": ["lab_manual_06:p18"], "scope": "core"}
+{"id": "triple:0092", "subjects": ["Hough Transform"], "attribute": "introduced in", "value": "1962", "source_refs": ["lab_manual_06:p17"], "scope": "core"}
+{"id": "triple:0093", "subjects": ["Hough Transform"], "attribute": "introduced by", "value": "Paul Hough", "source_refs": ["lab_manual_06:p17"], "scope": "core"}
+{"id": "triple:0094", "subjects": ["Canny"], "attribute": "developed in", "value": "1986", "source_refs": ["lab_04_manual:p21"], "scope": "core"}
+{"id": "triple:0095", "subjects": ["Canny"], "attribute": "developed by", "value": "John F. Canny", "source_refs": ["lab_04_manual:p21"], "scope": "core"}
+{"id": "triple:0096", "subjects": ["WPT", "Wavelet Packet Transform"], "attribute": "extension of", "value": "DWT", "source_refs": ["lab_manual_06:p4"], "scope": "core"}
+{"id": "triple:0097", "subjects": ["Morlet"], "attribute": "used for", "value": "oscillatory components", "source_refs": ["lab_manual_06:p3"], "scope": "core"}
+{"id": "triple:0098", "subjects": ["Inverse Wavelet Transform"], "attribute": "crucial for", "value": "image reconstruction", "source_refs": ["lab_manual_06:p4"], "scope": "core"}
+{"id": "triple:0099", "subjects": ["Lab 05"], "attribute": "main topic", "value": "Image Segmentation", "source_refs": ["lab_05_manual:p1"], "scope": "core"}
+{"id": "triple:0100", "subjects": ["university", "lab manual"], "attribute": "from university", "value": "NUCES Karachi", "source_refs": ["lab_01_manual:p1"], "scope": "core"}
+{"id": "triple:0101", "subjects": ["course code"], "attribute": "course code", "value": "AI-4002", "source_refs": ["lab_01_manual:p1"], "scope": "core"}
+{"id": "triple:0102", "subjects": ["landscape example"], "attribute": "segmented region map includes", "value": "sky, mountains, water", "source_refs": ["lab_05_manual:p3"], "scope": "core"}
+{"id": "triple:0103", "subjects": ["street scene example", "street scene"], "attribute": "segments include", "value": "car, tree, person", "source_refs": ["lab_05_manual:p4"], "scope": "core"}
+{"id": "triple:0104", "subjects": ["portrait example"], "attribute": "regions shown", "value": "hair region, face region, clothing region", "source_refs": ["lab_05_manual:p4"], "scope": "core"}
+{"id": "triple:0105", "subjects": ["preprocessing and feature extraction"], "attribute": "includes in segmentation", "value": "pixel values, edge detection, texture analysis, color similarity", "source_refs": ["lab_05_manual:p3"], "scope": "core"}
+{"id": "triple:0106", "subjects": ["watershed code", "markers"], "attribute": "threshold type used for markers", "value": "THRESH_BINARY_INV + THRESH_OTSU", "source_refs": ["lab_05_manual:p13"], "scope": "core"}
+{"id": "triple:0107", "subjects": ["watershed post-processing", "post-processing"], "attribute": "watershed post-processing uses", "value": "morphological operations", "source_refs": ["lab_05_manual:p12"], "scope": "core"}
+{"id": "triple:0108", "subjects": ["clustering", "post-processing in clustering"], "attribute": "post-processing can involve", "value": "merging or splitting clusters", "source_refs": ["lab_05_manual:p14"], "scope": "core"}
+{"id": "triple:0109", "subjects": ["update step"], "attribute": "recalculates centroids as", "value": "mean of pixels in each cluster", "source_refs": ["lab_05_manual:p14"], "scope": "core"}
+{"id": "triple:0110", "subjects": ["Hugging Face"], "attribute": "known for", "value": "pretrained NLP and CV models", "source_refs": ["lab_01_manual:p8"], "scope": "core"}
+{"id": "triple:0111", "subjects": ["image coordinate system"], "attribute": "important because", "value": "it affects how transformations like rotation and cropping are applied", "source_refs": ["lab_03_manual:p6"], "scope": "core"}
+{"id": "triple:0112", "subjects": ["Sobel"], "attribute": "number of convolution kernels", "value": "two", "source_refs": ["lab_manual_06:p6"], "scope": "core"}
+{"id": "triple:0113", "subjects": ["Sobel kernels", "Sobel"], "attribute": "kernel size", "value": "3x3", "source_refs": ["lab_manual_06:p6"], "scope": "core"}
+{"id": "triple:0114", "subjects": ["Non-Maximum Suppression", "NMS"], "attribute": "does in Canny", "value": "thins edges to 1-pixel width", "source_refs": ["lab_manual_06:p12"], "scope": "core"}
+{"id": "triple:0115", "subjects": ["line", "line in Cartesian coordinates"], "attribute": "represented as in Hough", "value": "y = mx + b", "source_refs": ["lab_manual_06:p17"], "scope": "core"}
+{"id": "triple:0116", "subjects": ["circle", "circle in Cartesian coordinates"], "attribute": "represented as in Hough", "value": "(x - a)^2 + (y - b)^2 = r^2", "source_refs": ["lab_manual_06:p18"], "scope": "core"}
+{"id": "triple:0117", "subjects": ["scale-space extrema detection"], "attribute": "finds", "value": "local extrema in scale space", "source_refs": ["lab_manual_06:p18"], "scope": "core"}
+{"id": "triple:0118", "subjects": ["outlier rejection"], "attribute": "uses in SIFT matching", "value": "RANSAC", "source_refs": ["lab_manual_06:p21"], "scope": "core"}
+{"id": "triple:0119", "subjects": ["Gaussian blur", "GaussianBlur"], "attribute": "kernel size used in the lab", "value": "(5, 5)", "source_refs": ["lab_manual_06:p13"], "scope": "core"}
+{"id": "triple:0120", "subjects": ["Gaussian blur", "sigmaX"], "attribute": "sigmaX value used in the lab", "value": "1.4", "source_refs": ["lab_manual_06:p13"], "scope": "core"}
+{"id": "triple:0121", "subjects": ["cv2.Canny", "Canny"], "attribute": "lower and upper thresholds used in the lab", "value": "50, 150", "source_refs": ["lab_manual_06:p13"], "scope": "core"}
+{"id": "triple:0122", "subjects": ["cv2.Laplacian", "Laplacian"], "attribute": "depth used in the lab", "value": "cv2.CV_64F", "source_refs": ["lab_manual_06:p15"], "scope": "core"}
+{"id": "triple:0123", "subjects": ["cv2.convertScaleAbs", "convertScaleAbs"], "attribute": "does", "value": "converts to absolute values and scales to 8-bit", "source_refs": ["opencv_docs:convertScaleAbs"], "scope": "core"}
+{"id": "triple:0124", "subjects": ["COLOR_BGR2RGB"], "attribute": "does in cv2.cvtColor", "value": "converts BGR to RGB for Matplotlib", "source_refs": ["lab_01_manual:p14"], "scope": "core"}
+{"id": "triple:0125", "subjects": ["grayscale conversion", "COLOR_BGR2GRAY"], "attribute": "code used in OpenCV", "value": "cv2.COLOR_BGR2GRAY", "source_refs": ["lab_01_manual:p15"], "scope": "core"}
+{"id": "triple:0126", "subjects": ["imread", "cv2.imread()"], "attribute": "flag for grayscale", "value": "IMREAD_GRAYSCALE", "source_refs": ["lab_01_manual:p24"], "scope": "core"}
+{"id": "triple:0127", "subjects": ["pixels between low and high threshold", "between low and high threshold"], "attribute": "are in Canny", "value": "weak edge points", "source_refs": ["lab_04_manual:p22"], "scope": "core"}
+{"id": "triple:0128", "subjects": ["HED histogram", "HED"], "attribute": "histogram bins in code", "value": "8", "source_refs": ["lab_04_manual:p11"], "scope": "core"}
+{"id": "triple:0129", "subjects": ["cv2.IMREAD_UNCHANGED", "IMREAD_UNCHANGED"], "attribute": "integer value", "value": "-1", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0130", "subjects": ["cv2.IMREAD_GRAYSCALE", "IMREAD_GRAYSCALE"], "attribute": "integer value", "value": "0", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0131", "subjects": ["cv2.IMREAD_COLOR", "IMREAD_COLOR"], "attribute": "integer value", "value": "1", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0132", "subjects": ["cv2.IMREAD_ANYDEPTH", "IMREAD_ANYDEPTH"], "attribute": "integer value", "value": "2", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0133", "subjects": ["cv2.IMREAD_ANYCOLOR", "IMREAD_ANYCOLOR"], "attribute": "integer value", "value": "4", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0134", "subjects": ["cv2.IMREAD_REDUCED_GRAYSCALE_2", "IMREAD_REDUCED_GRAYSCALE_2"], "attribute": "integer value", "value": "16", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0135", "subjects": ["cv2.COLOR_BGR2GRAY", "COLOR_BGR2GRAY"], "attribute": "integer value", "value": "6", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0136", "subjects": ["cv2.COLOR_BGR2RGB", "COLOR_BGR2RGB"], "attribute": "integer value", "value": "4", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0137", "subjects": ["cv2.COLOR_RGB2BGR", "COLOR_RGB2BGR"], "attribute": "integer value", "value": "4", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0138", "subjects": ["cv2.COLOR_BGR2HSV", "COLOR_BGR2HSV"], "attribute": "integer value", "value": "40", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0139", "subjects": ["cv2.COLOR_HSV2BGR", "COLOR_HSV2BGR"], "attribute": "integer value", "value": "54", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0140", "subjects": ["cv2.COLOR_BGR2LAB", "COLOR_BGR2LAB"], "attribute": "integer value", "value": "44", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0141", "subjects": ["cv2.COLOR_GRAY2BGR", "COLOR_GRAY2BGR"], "attribute": "integer value", "value": "8", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0142", "subjects": ["cv2.COLOR_RGB2GRAY", "COLOR_RGB2GRAY"], "attribute": "integer value", "value": "7", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0143", "subjects": ["cv2.COLOR_BGR2YCrCb", "COLOR_BGR2YCrCb"], "attribute": "integer value", "value": "36", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0144", "subjects": ["cv2.COLOR_BGR2HLS", "COLOR_BGR2HLS"], "attribute": "integer value", "value": "52", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0145", "subjects": ["cv2.COLOR_BGR2XYZ", "COLOR_BGR2XYZ"], "attribute": "integer value", "value": "32", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0146", "subjects": ["cv2.COLOR_BGRA2BGR", "COLOR_BGRA2BGR"], "attribute": "integer value", "value": "1", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0147", "subjects": ["cv2.THRESH_BINARY", "THRESH_BINARY"], "attribute": "integer value", "value": "0", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0148", "subjects": ["cv2.THRESH_BINARY_INV", "THRESH_BINARY_INV"], "attribute": "integer value", "value": "1", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0149", "subjects": ["cv2.THRESH_TRUNC", "THRESH_TRUNC"], "attribute": "integer value", "value": "2", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0150", "subjects": ["cv2.THRESH_TOZERO", "THRESH_TOZERO"], "attribute": "integer value", "value": "3", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0151", "subjects": ["cv2.THRESH_TOZERO_INV", "THRESH_TOZERO_INV"], "attribute": "integer value", "value": "4", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0152", "subjects": ["cv2.THRESH_OTSU", "THRESH_OTSU"], "attribute": "integer value", "value": "8", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0153", "subjects": ["cv2.THRESH_TRIANGLE", "THRESH_TRIANGLE"], "attribute": "integer value", "value": "16", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0154", "subjects": ["cv2.ADAPTIVE_THRESH_MEAN_C", "ADAPTIVE_THRESH_MEAN_C"], "attribute": "integer value", "value": "0", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0155", "subjects": ["cv2.ADAPTIVE_THRESH_GAUSSIAN_C", "ADAPTIVE_THRESH_GAUSSIAN_C"], "attribute": "integer value", "value": "1", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0156", "subjects": ["cv2.MORPH_ERODE", "MORPH_ERODE"], "attribute": "integer value", "value": "0", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0157", "subjects": ["cv2.MORPH_DILATE", "MORPH_DILATE"], "attribute": "integer value", "value": "1", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0158", "subjects": ["cv2.MORPH_OPEN", "MORPH_OPEN"], "attribute": "integer value", "value": "2", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0159", "subjects": ["cv2.MORPH_CLOSE", "MORPH_CLOSE"], "attribute": "integer value", "value": "3", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0160", "subjects": ["cv2.MORPH_GRADIENT", "MORPH_GRADIENT"], "attribute": "integer value", "value": "4", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0161", "subjects": ["cv2.MORPH_TOPHAT", "MORPH_TOPHAT"], "attribute": "integer value", "value": "5", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0162", "subjects": ["cv2.MORPH_BLACKHAT", "MORPH_BLACKHAT"], "attribute": "integer value", "value": "6", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0163", "subjects": ["cv2.MORPH_RECT", "MORPH_RECT"], "attribute": "integer value", "value": "0", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0164", "subjects": ["cv2.MORPH_CROSS", "MORPH_CROSS"], "attribute": "integer value", "value": "1", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0165", "subjects": ["cv2.MORPH_ELLIPSE", "MORPH_ELLIPSE"], "attribute": "integer value", "value": "2", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0166", "subjects": ["cv2.DIST_L1", "DIST_L1"], "attribute": "integer value", "value": "1", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0167", "subjects": ["cv2.DIST_L2", "DIST_L2"], "attribute": "integer value", "value": "2", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0168", "subjects": ["cv2.DIST_C", "DIST_C"], "attribute": "integer value", "value": "3", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0169", "subjects": ["cv2.CV_8U", "CV_8U"], "attribute": "integer value", "value": "0", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0170", "subjects": ["cv2.CV_8S", "CV_8S"], "attribute": "integer value", "value": "1", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0171", "subjects": ["cv2.CV_16U", "CV_16U"], "attribute": "integer value", "value": "2", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0172", "subjects": ["cv2.CV_16S", "CV_16S"], "attribute": "integer value", "value": "3", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0173", "subjects": ["cv2.CV_32S", "CV_32S"], "attribute": "integer value", "value": "4", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0174", "subjects": ["cv2.CV_32F", "CV_32F"], "attribute": "integer value", "value": "5", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0175", "subjects": ["cv2.CV_64F", "CV_64F"], "attribute": "integer value", "value": "6", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0176", "subjects": ["cv2.HOUGH_STANDARD", "HOUGH_STANDARD"], "attribute": "integer value", "value": "0", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0177", "subjects": ["cv2.HOUGH_PROBABILISTIC", "HOUGH_PROBABILISTIC"], "attribute": "integer value", "value": "1", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0178", "subjects": ["cv2.HOUGH_MULTI_SCALE", "HOUGH_MULTI_SCALE"], "attribute": "integer value", "value": "2", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0179", "subjects": ["cv2.HOUGH_GRADIENT", "HOUGH_GRADIENT"], "attribute": "integer value", "value": "3", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0180", "subjects": ["cv2.HOUGH_GRADIENT_ALT", "HOUGH_GRADIENT_ALT"], "attribute": "integer value", "value": "4", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0181", "subjects": ["cv2.BORDER_CONSTANT", "BORDER_CONSTANT"], "attribute": "integer value", "value": "0", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0182", "subjects": ["cv2.BORDER_REPLICATE", "BORDER_REPLICATE"], "attribute": "integer value", "value": "1", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0183", "subjects": ["cv2.BORDER_REFLECT", "BORDER_REFLECT"], "attribute": "integer value", "value": "2", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0184", "subjects": ["cv2.BORDER_WRAP", "BORDER_WRAP"], "attribute": "integer value", "value": "3", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0185", "subjects": ["cv2.BORDER_REFLECT_101", "BORDER_REFLECT_101"], "attribute": "integer value", "value": "4", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0186", "subjects": ["cv2.BORDER_DEFAULT", "BORDER_DEFAULT"], "attribute": "integer value", "value": "4", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0187", "subjects": ["cv2.INTER_NEAREST", "INTER_NEAREST"], "attribute": "integer value", "value": "0", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0188", "subjects": ["cv2.INTER_LINEAR", "INTER_LINEAR"], "attribute": "integer value", "value": "1", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0189", "subjects": ["cv2.INTER_CUBIC", "INTER_CUBIC"], "attribute": "integer value", "value": "2", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0190", "subjects": ["cv2.INTER_AREA", "INTER_AREA"], "attribute": "integer value", "value": "3", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0191", "subjects": ["cv2.INTER_LANCZOS4", "INTER_LANCZOS4"], "attribute": "integer value", "value": "4", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0192", "subjects": ["cv2.KMEANS_RANDOM_CENTERS", "KMEANS_RANDOM_CENTERS"], "attribute": "integer value", "value": "0", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0193", "subjects": ["cv2.KMEANS_PP_CENTERS", "KMEANS_PP_CENTERS"], "attribute": "integer value", "value": "2", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0194", "subjects": ["cv2.KMEANS_USE_INITIAL_LABELS", "KMEANS_USE_INITIAL_LABELS"], "attribute": "integer value", "value": "1", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0195", "subjects": ["cv2.TERM_CRITERIA_COUNT", "TERM_CRITERIA_COUNT"], "attribute": "integer value", "value": "1", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0196", "subjects": ["cv2.TERM_CRITERIA_MAX_ITER", "TERM_CRITERIA_MAX_ITER"], "attribute": "integer value", "value": "1", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0197", "subjects": ["cv2.TERM_CRITERIA_EPS", "TERM_CRITERIA_EPS"], "attribute": "integer value", "value": "2", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0198", "subjects": ["cv2.NORM_L1", "NORM_L1"], "attribute": "integer value", "value": "2", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0199", "subjects": ["cv2.NORM_L2", "NORM_L2"], "attribute": "integer value", "value": "4", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0200", "subjects": ["cv2.NORM_HAMMING", "NORM_HAMMING"], "attribute": "integer value", "value": "6", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0201", "subjects": ["cv2.NORM_INF", "NORM_INF"], "attribute": "integer value", "value": "1", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0202", "subjects": ["cv2.DRAW_MATCHES_FLAGS_DEFAULT", "DRAW_MATCHES_FLAGS_DEFAULT"], "attribute": "integer value", "value": "0", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0203", "subjects": ["cv2.DRAW_MATCHES_FLAGS_DRAW_OVER_OUTIMG", "DRAW_MATCHES_FLAGS_DRAW_OVER_OUTIMG"], "attribute": "integer value", "value": "1", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0204", "subjects": ["cv2.DRAW_MATCHES_FLAGS_NOT_DRAW_SINGLE_POINTS", "DRAW_MATCHES_FLAGS_NOT_DRAW_SINGLE_POINTS"], "attribute": "integer value", "value": "2", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0205", "subjects": ["cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS", "DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS"], "attribute": "integer value", "value": "4", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0206", "subjects": ["cv2.ROTATE_90_CLOCKWISE", "ROTATE_90_CLOCKWISE"], "attribute": "integer value", "value": "0", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0207", "subjects": ["cv2.ROTATE_180", "ROTATE_180"], "attribute": "integer value", "value": "1", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0208", "subjects": ["cv2.ROTATE_90_COUNTERCLOCKWISE", "ROTATE_90_COUNTERCLOCKWISE"], "attribute": "integer value", "value": "2", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0209", "subjects": ["SIFT_create", "SIFT"], "attribute": "default nfeatures", "value": "0", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0210", "subjects": ["SIFT_create", "SIFT"], "attribute": "default nOctaveLayers", "value": "3", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0211", "subjects": ["SIFT_create", "SIFT"], "attribute": "default contrastThreshold", "value": "0.04", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0212", "subjects": ["SIFT_create", "SIFT"], "attribute": "default edgeThreshold", "value": "10", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0213", "subjects": ["SIFT_create", "SIFT"], "attribute": "default sigma", "value": "1.6", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0214", "subjects": ["SIFT_create", "SIFT"], "attribute": "default descriptorType", "value": "CV_32F", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0215", "subjects": ["SIFT descriptor", "SIFT"], "attribute": "descriptor size", "value": "128", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0216", "subjects": ["ORB_create", "ORB"], "attribute": "default nfeatures", "value": "500", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0217", "subjects": ["cv2.threshold", "threshold()"], "attribute": "returns", "value": "retval and dst", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0218", "subjects": ["cv2.kmeans", "kmeans()"], "attribute": "returns", "value": "compactness, labels, centers", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0219", "subjects": ["cv2.connectedComponents", "connectedComponents"], "attribute": "returns", "value": "retval (count) and labels/markers image", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}
+{"id": "triple:0220", "subjects": ["SIFT descriptors", "descriptors"], "attribute": "shape", "value": "(N, 128)", "source_refs": ["opencv_introspection:opencv-4.13.0"], "scope": "core"}

@@ -1,0 +1,1875 @@
+﻿{
+    "id":  "lab_03_manual_p019",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "National University of Computer \u0026 Emerging Sciences - NUCES - Karachi Department of Artificial Intelligence 6.2.1 The Mathematical Core A projective transformation uses a full 3 x 3 transformation matrix, commonly denoted as H: x\u0027 hil 1121 To find the final 2D coordinates 1112 1122 1132 on 1113 x h23 Y h33 1 a screen, the resulting vector must be normalized by dividing by the third scaling coordinate, $wl$. This yields the following algebraic equations: m 1 x + h12Y + h13 h31X + h32Y + h33 h21X + h22Y + 1123 h31X + h32Y + h33 6.2.2 The Denominator Effect The denominator h31X + h32Y + is the critical mathematical distinction between affine and projective geometry . In an affine transformation, the bottom row of the matrix is strictly locked to [O, @ , 1] . Therefore, the denominator is always exactly 1, causing uniform scaling across the entire image. In a projective transformation, the denominator fluctuates depending on the x and y values of the specific point being processed. As points \"move further away\" in the virtual space, the denominator grows larger, causing the resulting x\u0027 and y\u0027 coordinates to shrink closer together. This variable division is the mathematical engine that generates depth. 6.2.3 Modeling Real-World Perspective Because of this dynamic denominator, projective transformations can accurately model how flat planes distort when viewed at an angle: FAST NUCES - Karachi Talha Shahid 18",
+    "review_status":  "raw_ocr_unverified",
+    "page":  19,
+    "source_id":  "lab_03_manual",
+    "lines":  [
+                  {
+                      "text":  "National University of Computer \u0026 Emerging Sciences -",
+                      "words":  [
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  123,
+                                        "text":  "National",
+                                        "x":  373
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  30,
+                                        "width":  153,
+                                        "text":  "University",
+                                        "x":  505
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  29,
+                                        "text":  "of",
+                                        "x":  666
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  30,
+                                        "width":  146,
+                                        "text":  "Computer",
+                                        "x":  701
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  23,
+                                        "text":  "\u0026",
+                                        "x":  855
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  30,
+                                        "width":  141,
+                                        "text":  "Emerging",
+                                        "x":  886
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  123,
+                                        "text":  "Sciences",
+                                        "x":  1035
+                                    },
+                                    {
+                                        "y":  106,
+                                        "height":  5,
+                                        "width":  8,
+                                        "text":  "-",
+                                        "x":  1168
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "NUCES - Karachi",
+                      "words":  [
+                                    {
+                                        "y":  138,
+                                        "height":  23,
+                                        "width":  94,
+                                        "text":  "NUCES",
+                                        "x":  657
+                                    },
+                                    {
+                                        "y":  149,
+                                        "height":  5,
+                                        "width":  9,
+                                        "text":  "-",
+                                        "x":  760
+                                    },
+                                    {
+                                        "y":  137,
+                                        "height":  24,
+                                        "width":  114,
+                                        "text":  "Karachi",
+                                        "x":  778
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Department of Artificial Intelligence",
+                      "words":  [
+                                    {
+                                        "y":  179,
+                                        "height":  27,
+                                        "width":  141,
+                                        "text":  "Department",
+                                        "x":  558
+                                    },
+                                    {
+                                        "y":  178,
+                                        "height":  22,
+                                        "width":  25,
+                                        "text":  "of",
+                                        "x":  707
+                                    },
+                                    {
+                                        "y":  178,
+                                        "height":  22,
+                                        "width":  100,
+                                        "text":  "Artificial",
+                                        "x":  738
+                                    },
+                                    {
+                                        "y":  178,
+                                        "height":  28,
+                                        "width":  137,
+                                        "text":  "Intelligence",
+                                        "x":  849
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "6.2.1 The Mathematical Core",
+                      "words":  [
+                                    {
+                                        "y":  294,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "6.2.1",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  293,
+                                        "height":  21,
+                                        "width":  50,
+                                        "text":  "The",
+                                        "x":  239
+                                    },
+                                    {
+                                        "y":  292,
+                                        "height":  22,
+                                        "width":  188,
+                                        "text":  "Mathematical",
+                                        "x":  301
+                                    },
+                                    {
+                                        "y":  294,
+                                        "height":  21,
+                                        "width":  63,
+                                        "text":  "Core",
+                                        "x":  501
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "A projective transformation uses a full 3 x 3 transformation matrix,",
+                      "words":  [
+                                    {
+                                        "y":  341,
+                                        "height":  19,
+                                        "width":  15,
+                                        "text":  "A",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  340,
+                                        "height":  25,
+                                        "width":  149,
+                                        "text":  "projective",
+                                        "x":  201
+                                    },
+                                    {
+                                        "y":  340,
+                                        "height":  20,
+                                        "width":  210,
+                                        "text":  "transformation",
+                                        "x":  367
+                                    },
+                                    {
+                                        "y":  346,
+                                        "height":  14,
+                                        "width":  57,
+                                        "text":  "uses",
+                                        "x":  596
+                                    },
+                                    {
+                                        "y":  346,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  671
+                                    },
+                                    {
+                                        "y":  341,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "full",
+                                        "x":  701
+                                    },
+                                    {
+                                        "y":  341,
+                                        "height":  19,
+                                        "width":  13,
+                                        "text":  "3",
+                                        "x":  777
+                                    },
+                                    {
+                                        "y":  346,
+                                        "height":  14,
+                                        "width":  12,
+                                        "text":  "x",
+                                        "x":  809
+                                    },
+                                    {
+                                        "y":  341,
+                                        "height":  19,
+                                        "width":  13,
+                                        "text":  "3",
+                                        "x":  839
+                                    },
+                                    {
+                                        "y":  340,
+                                        "height":  20,
+                                        "width":  210,
+                                        "text":  "transformation",
+                                        "x":  869
+                                    },
+                                    {
+                                        "y":  340,
+                                        "height":  24,
+                                        "width":  101,
+                                        "text":  "matrix,",
+                                        "x":  1097
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "commonly denoted as H:",
+                      "words":  [
+                                    {
+                                        "y":  379,
+                                        "height":  24,
+                                        "width":  119,
+                                        "text":  "commonly",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  379,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "denoted",
+                                        "x":  306
+                                    },
+                                    {
+                                        "y":  384,
+                                        "height":  14,
+                                        "width":  28,
+                                        "text":  "as",
+                                        "x":  427
+                                    },
+                                    {
+                                        "y":  379,
+                                        "height":  19,
+                                        "width":  23,
+                                        "text":  "H:",
+                                        "x":  473
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "x\u0027",
+                      "words":  [
+                                    {
+                                        "y":  452,
+                                        "height":  20,
+                                        "width":  19,
+                                        "text":  "x\u0027",
+                                        "x":  551
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "hil",
+                      "words":  [
+                                    {
+                                        "y":  451,
+                                        "height":  23,
+                                        "width":  33,
+                                        "text":  "hil",
+                                        "x":  628
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1121",
+                      "words":  [
+                                    {
+                                        "y":  481,
+                                        "height":  24,
+                                        "width":  34,
+                                        "text":  "1121",
+                                        "x":  627
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "To find the final 2D coordinates",
+                      "words":  [
+                                    {
+                                        "y":  586,
+                                        "height":  18,
+                                        "width":  29,
+                                        "text":  "To",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  584,
+                                        "height":  20,
+                                        "width":  57,
+                                        "text":  "find",
+                                        "x":  219
+                                    },
+                                    {
+                                        "y":  585,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  297
+                                    },
+                                    {
+                                        "y":  584,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "final",
+                                        "x":  361
+                                    },
+                                    {
+                                        "y":  586,
+                                        "height":  18,
+                                        "width":  28,
+                                        "text":  "2D",
+                                        "x":  455
+                                    },
+                                    {
+                                        "y":  584,
+                                        "height":  20,
+                                        "width":  164,
+                                        "text":  "coordinates",
+                                        "x":  504
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1112",
+                      "words":  [
+                                    {
+                                        "y":  450,
+                                        "height":  24,
+                                        "width":  33,
+                                        "text":  "1112",
+                                        "x":  688
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1122",
+                      "words":  [
+                                    {
+                                        "y":  481,
+                                        "height":  24,
+                                        "width":  33,
+                                        "text":  "1122",
+                                        "x":  688
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1132",
+                      "words":  [
+                                    {
+                                        "y":  512,
+                                        "height":  25,
+                                        "width":  33,
+                                        "text":  "1132",
+                                        "x":  688
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "on",
+                      "words":  [
+                                    {
+                                        "y":  591,
+                                        "height":  13,
+                                        "width":  27,
+                                        "text":  "on",
+                                        "x":  688
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1113 x",
+                      "words":  [
+                                    {
+                                        "y":  451,
+                                        "height":  23,
+                                        "width":  33,
+                                        "text":  "1113",
+                                        "x":  749
+                                    },
+                                    {
+                                        "y":  457,
+                                        "height":  13,
+                                        "width":  13,
+                                        "text":  "x",
+                                        "x":  809
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "h23 Y",
+                      "words":  [
+                                    {
+                                        "y":  481,
+                                        "height":  24,
+                                        "width":  33,
+                                        "text":  "h23",
+                                        "x":  749
+                                    },
+                                    {
+                                        "y":  486,
+                                        "height":  18,
+                                        "width":  14,
+                                        "text":  "Y",
+                                        "x":  809
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "h33",
+                      "words":  [
+                                    {
+                                        "y":  512,
+                                        "height":  25,
+                                        "width":  33,
+                                        "text":  "h33",
+                                        "x":  749
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1",
+                      "words":  [
+                                    {
+                                        "y":  513,
+                                        "height":  17,
+                                        "width":  10,
+                                        "text":  "1",
+                                        "x":  811
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "a screen, the resulting vector",
+                      "words":  [
+                                    {
+                                        "y":  591,
+                                        "height":  13,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  737
+                                    },
+                                    {
+                                        "y":  591,
+                                        "height":  17,
+                                        "width":  100,
+                                        "text":  "screen,",
+                                        "x":  770
+                                    },
+                                    {
+                                        "y":  585,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  894
+                                    },
+                                    {
+                                        "y":  584,
+                                        "height":  25,
+                                        "width":  134,
+                                        "text":  "resulting",
+                                        "x":  959
+                                    },
+                                    {
+                                        "y":  586,
+                                        "height":  18,
+                                        "width":  89,
+                                        "text":  "vector",
+                                        "x":  1114
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "must be normalized by dividing by the third scaling coordinate, $wl$.",
+                      "words":  [
+                                    {
+                                        "y":  624,
+                                        "height":  17,
+                                        "width":  58,
+                                        "text":  "must",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  623,
+                                        "height":  18,
+                                        "width":  28,
+                                        "text":  "be",
+                                        "x":  245
+                                    },
+                                    {
+                                        "y":  622,
+                                        "height":  19,
+                                        "width":  147,
+                                        "text":  "normalized",
+                                        "x":  290
+                                    },
+                                    {
+                                        "y":  623,
+                                        "height":  23,
+                                        "width":  28,
+                                        "text":  "by",
+                                        "x":  455
+                                    },
+                                    {
+                                        "y":  622,
+                                        "height":  24,
+                                        "width":  119,
+                                        "text":  "dividing",
+                                        "x":  499
+                                    },
+                                    {
+                                        "y":  623,
+                                        "height":  23,
+                                        "width":  28,
+                                        "text":  "by",
+                                        "x":  635
+                                    },
+                                    {
+                                        "y":  623,
+                                        "height":  18,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  678
+                                    },
+                                    {
+                                        "y":  622,
+                                        "height":  19,
+                                        "width":  74,
+                                        "text":  "third",
+                                        "x":  736
+                                    },
+                                    {
+                                        "y":  622,
+                                        "height":  24,
+                                        "width":  105,
+                                        "text":  "scaling",
+                                        "x":  827
+                                    },
+                                    {
+                                        "y":  622,
+                                        "height":  23,
+                                        "width":  159,
+                                        "text":  "coordinate,",
+                                        "x":  948
+                                    },
+                                    {
+                                        "y":  621,
+                                        "height":  23,
+                                        "width":  69,
+                                        "text":  "$wl$.",
+                                        "x":  1128
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "This yields the following algebraic equations:",
+                      "words":  [
+                                    {
+                                        "y":  659,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "This",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  659,
+                                        "height":  25,
+                                        "width":  89,
+                                        "text":  "yields",
+                                        "x":  245
+                                    },
+                                    {
+                                        "y":  659,
+                                        "height":  20,
+                                        "width":  45,
+                                        "text":  "the",
+                                        "x":  350
+                                    },
+                                    {
+                                        "y":  659,
+                                        "height":  25,
+                                        "width":  134,
+                                        "text":  "following",
+                                        "x":  412
+                                    },
+                                    {
+                                        "y":  659,
+                                        "height":  25,
+                                        "width":  132,
+                                        "text":  "algebraic",
+                                        "x":  563
+                                    },
+                                    {
+                                        "y":  659,
+                                        "height":  25,
+                                        "width":  145,
+                                        "text":  "equations:",
+                                        "x":  714
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "m 1 x + h12Y + h13",
+                      "words":  [
+                                    {
+                                        "y":  731,
+                                        "height":  24,
+                                        "width":  22,
+                                        "text":  "m",
+                                        "x":  616
+                                    },
+                                    {
+                                        "y":  742,
+                                        "height":  13,
+                                        "width":  8,
+                                        "text":  "1",
+                                        "x":  641
+                                    },
+                                    {
+                                        "y":  737,
+                                        "height":  13,
+                                        "width":  13,
+                                        "text":  "x",
+                                        "x":  652
+                                    },
+                                    {
+                                        "y":  734,
+                                        "height":  16,
+                                        "width":  16,
+                                        "text":  "+",
+                                        "x":  672
+                                    },
+                                    {
+                                        "y":  731,
+                                        "height":  24,
+                                        "width":  50,
+                                        "text":  "h12Y",
+                                        "x":  695
+                                    },
+                                    {
+                                        "y":  734,
+                                        "height":  16,
+                                        "width":  16,
+                                        "text":  "+",
+                                        "x":  752
+                                    },
+                                    {
+                                        "y":  731,
+                                        "height":  24,
+                                        "width":  33,
+                                        "text":  "h13",
+                                        "x":  776
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "h31X + h32Y + h33",
+                      "words":  [
+                                    {
+                                        "y":  767,
+                                        "height":  25,
+                                        "width":  48,
+                                        "text":  "h31X",
+                                        "x":  616
+                                    },
+                                    {
+                                        "y":  770,
+                                        "height":  17,
+                                        "width":  15,
+                                        "text":  "+",
+                                        "x":  672
+                                    },
+                                    {
+                                        "y":  767,
+                                        "height":  25,
+                                        "width":  50,
+                                        "text":  "h32Y",
+                                        "x":  695
+                                    },
+                                    {
+                                        "y":  770,
+                                        "height":  17,
+                                        "width":  16,
+                                        "text":  "+",
+                                        "x":  752
+                                    },
+                                    {
+                                        "y":  767,
+                                        "height":  25,
+                                        "width":  33,
+                                        "text":  "h33",
+                                        "x":  776
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "h21X + h22Y + 1123",
+                      "words":  [
+                                    {
+                                        "y":  836,
+                                        "height":  24,
+                                        "width":  49,
+                                        "text":  "h21X",
+                                        "x":  616
+                                    },
+                                    {
+                                        "y":  838,
+                                        "height":  17,
+                                        "width":  16,
+                                        "text":  "+",
+                                        "x":  672
+                                    },
+                                    {
+                                        "y":  836,
+                                        "height":  24,
+                                        "width":  50,
+                                        "text":  "h22Y",
+                                        "x":  695
+                                    },
+                                    {
+                                        "y":  838,
+                                        "height":  17,
+                                        "width":  17,
+                                        "text":  "+",
+                                        "x":  752
+                                    },
+                                    {
+                                        "y":  836,
+                                        "height":  24,
+                                        "width":  34,
+                                        "text":  "1123",
+                                        "x":  776
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "h31X + h32Y + h33",
+                      "words":  [
+                                    {
+                                        "y":  873,
+                                        "height":  23,
+                                        "width":  49,
+                                        "text":  "h31X",
+                                        "x":  616
+                                    },
+                                    {
+                                        "y":  875,
+                                        "height":  17,
+                                        "width":  16,
+                                        "text":  "+",
+                                        "x":  672
+                                    },
+                                    {
+                                        "y":  873,
+                                        "height":  24,
+                                        "width":  50,
+                                        "text":  "h32Y",
+                                        "x":  695
+                                    },
+                                    {
+                                        "y":  875,
+                                        "height":  17,
+                                        "width":  16,
+                                        "text":  "+",
+                                        "x":  752
+                                    },
+                                    {
+                                        "y":  873,
+                                        "height":  23,
+                                        "width":  34,
+                                        "text":  "h33",
+                                        "x":  776
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "6.2.2 The Denominator Effect",
+                      "words":  [
+                                    {
+                                        "y":  981,
+                                        "height":  21,
+                                        "width":  60,
+                                        "text":  "6.2.2",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  981,
+                                        "height":  21,
+                                        "width":  51,
+                                        "text":  "The",
+                                        "x":  238
+                                    },
+                                    {
+                                        "y":  979,
+                                        "height":  23,
+                                        "width":  181,
+                                        "text":  "Denominator",
+                                        "x":  301
+                                    },
+                                    {
+                                        "y":  981,
+                                        "height":  21,
+                                        "width":  79,
+                                        "text":  "Effect",
+                                        "x":  493
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The denominator h31X + h32Y + is the critical mathematical distinction",
+                      "words":  [
+                                    {
+                                        "y":  1067,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "The",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1066,
+                                        "height":  20,
+                                        "width":  165,
+                                        "text":  "denominator",
+                                        "x":  227
+                                    },
+                                    {
+                                        "y":  1068,
+                                        "height":  24,
+                                        "width":  50,
+                                        "text":  "h31X",
+                                        "x":  404
+                                    },
+                                    {
+                                        "y":  1070,
+                                        "height":  17,
+                                        "width":  16,
+                                        "text":  "+",
+                                        "x":  461
+                                    },
+                                    {
+                                        "y":  1068,
+                                        "height":  24,
+                                        "width":  50,
+                                        "text":  "h32Y",
+                                        "x":  485
+                                    },
+                                    {
+                                        "y":  1070,
+                                        "height":  17,
+                                        "width":  16,
+                                        "text":  "+",
+                                        "x":  542
+                                    },
+                                    {
+                                        "y":  1066,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  615
+                                    },
+                                    {
+                                        "y":  1067,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  655
+                                    },
+                                    {
+                                        "y":  1066,
+                                        "height":  21,
+                                        "width":  118,
+                                        "text":  "critical",
+                                        "x":  712
+                                    },
+                                    {
+                                        "y":  1066,
+                                        "height":  20,
+                                        "width":  179,
+                                        "text":  "mathematical",
+                                        "x":  844
+                                    },
+                                    {
+                                        "y":  1066,
+                                        "height":  20,
+                                        "width":  164,
+                                        "text":  "distinction",
+                                        "x":  1037
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "between affine and projective geometry .",
+                      "words":  [
+                                    {
+                                        "y":  1105,
+                                        "height":  19,
+                                        "width":  102,
+                                        "text":  "between",
+                                        "x":  171
+                                    },
+                                    {
+                                        "y":  1104,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "affine",
+                                        "x":  291
+                                    },
+                                    {
+                                        "y":  1105,
+                                        "height":  19,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  397
+                                    },
+                                    {
+                                        "y":  1104,
+                                        "height":  25,
+                                        "width":  148,
+                                        "text":  "projective",
+                                        "x":  458
+                                    },
+                                    {
+                                        "y":  1106,
+                                        "height":  23,
+                                        "width":  118,
+                                        "text":  "geometry",
+                                        "x":  624
+                                    },
+                                    {
+                                        "y":  1121,
+                                        "height":  3,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  748
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "In an affine transformation, the bottom row of the matrix is strictly",
+                      "words":  [
+                                    {
+                                        "y":  1181,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "In",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1186,
+                                        "height":  14,
+                                        "width":  27,
+                                        "text":  "an",
+                                        "x":  215
+                                    },
+                                    {
+                                        "y":  1180,
+                                        "height":  20,
+                                        "width":  89,
+                                        "text":  "affine",
+                                        "x":  259
+                                    },
+                                    {
+                                        "y":  1180,
+                                        "height":  24,
+                                        "width":  222,
+                                        "text":  "transformation,",
+                                        "x":  363
+                                    },
+                                    {
+                                        "y":  1180,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  605
+                                    },
+                                    {
+                                        "y":  1180,
+                                        "height":  20,
+                                        "width":  87,
+                                        "text":  "bottom",
+                                        "x":  666
+                                    },
+                                    {
+                                        "y":  1186,
+                                        "height":  14,
+                                        "width":  44,
+                                        "text":  "row",
+                                        "x":  769
+                                    },
+                                    {
+                                        "y":  1180,
+                                        "height":  20,
+                                        "width":  29,
+                                        "text":  "of",
+                                        "x":  829
+                                    },
+                                    {
+                                        "y":  1180,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  873
+                                    },
+                                    {
+                                        "y":  1180,
+                                        "height":  20,
+                                        "width":  89,
+                                        "text":  "matrix",
+                                        "x":  933
+                                    },
+                                    {
+                                        "y":  1180,
+                                        "height":  20,
+                                        "width":  26,
+                                        "text":  "is",
+                                        "x":  1040
+                                    },
+                                    {
+                                        "y":  1180,
+                                        "height":  25,
+                                        "width":  118,
+                                        "text":  "strictly",
+                                        "x":  1084
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "locked to [O, @ , 1] . Therefore, the denominator is always exactly 1,",
+                      "words":  [
+                                    {
+                                        "y":  1218,
+                                        "height":  19,
+                                        "width":  88,
+                                        "text":  "locked",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1218,
+                                        "height":  19,
+                                        "width":  28,
+                                        "text":  "to",
+                                        "x":  276
+                                    },
+                                    {
+                                        "y":  1217,
+                                        "height":  24,
+                                        "width":  36,
+                                        "text":  "[O,",
+                                        "x":  326
+                                    },
+                                    {
+                                        "y":  1218,
+                                        "height":  19,
+                                        "width":  13,
+                                        "text":  "@",
+                                        "x":  383
+                                    },
+                                    {
+                                        "y":  1233,
+                                        "height":  8,
+                                        "width":  6,
+                                        "text":  ",",
+                                        "x":  402
+                                    },
+                                    {
+                                        "y":  1217,
+                                        "height":  24,
+                                        "width":  24,
+                                        "text":  "1]",
+                                        "x":  429
+                                    },
+                                    {
+                                        "y":  1233,
+                                        "height":  4,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  464
+                                    },
+                                    {
+                                        "y":  1218,
+                                        "height":  23,
+                                        "width":  146,
+                                        "text":  "Therefore,",
+                                        "x":  489
+                                    },
+                                    {
+                                        "y":  1218,
+                                        "height":  19,
+                                        "width":  42,
+                                        "text":  "the",
+                                        "x":  657
+                                    },
+                                    {
+                                        "y":  1217,
+                                        "height":  20,
+                                        "width":  165,
+                                        "text":  "denominator",
+                                        "x":  717
+                                    },
+                                    {
+                                        "y":  1217,
+                                        "height":  20,
+                                        "width":  26,
+                                        "text":  "is",
+                                        "x":  901
+                                    },
+                                    {
+                                        "y":  1218,
+                                        "height":  24,
+                                        "width":  89,
+                                        "text":  "always",
+                                        "x":  945
+                                    },
+                                    {
+                                        "y":  1218,
+                                        "height":  24,
+                                        "width":  104,
+                                        "text":  "exactly",
+                                        "x":  1052
+                                    },
+                                    {
+                                        "y":  1218,
+                                        "height":  23,
+                                        "width":  24,
+                                        "text":  "1,",
+                                        "x":  1174
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "causing uniform scaling across the entire image.",
+                      "words":  [
+                                    {
+                                        "y":  1255,
+                                        "height":  24,
+                                        "width":  103,
+                                        "text":  "causing",
+                                        "x":  171
+                                    },
+                                    {
+                                        "y":  1255,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "uniform",
+                                        "x":  292
+                                    },
+                                    {
+                                        "y":  1255,
+                                        "height":  24,
+                                        "width":  103,
+                                        "text":  "scaling",
+                                        "x":  413
+                                    },
+                                    {
+                                        "y":  1261,
+                                        "height":  13,
+                                        "width":  88,
+                                        "text":  "across",
+                                        "x":  533
+                                    },
+                                    {
+                                        "y":  1256,
+                                        "height":  18,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  638
+                                    },
+                                    {
+                                        "y":  1255,
+                                        "height":  19,
+                                        "width":  89,
+                                        "text":  "entire",
+                                        "x":  698
+                                    },
+                                    {
+                                        "y":  1255,
+                                        "height":  24,
+                                        "width":  84,
+                                        "text":  "image.",
+                                        "x":  805
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "In a projective transformation, the denominator fluctuates depending",
+                      "words":  [
+                                    {
+                                        "y":  1293,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "In",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1298,
+                                        "height":  14,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  216
+                                    },
+                                    {
+                                        "y":  1292,
+                                        "height":  25,
+                                        "width":  148,
+                                        "text":  "projective",
+                                        "x":  248
+                                    },
+                                    {
+                                        "y":  1292,
+                                        "height":  23,
+                                        "width":  221,
+                                        "text":  "transformation,",
+                                        "x":  414
+                                    },
+                                    {
+                                        "y":  1292,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "the",
+                                        "x":  657
+                                    },
+                                    {
+                                        "y":  1292,
+                                        "height":  20,
+                                        "width":  166,
+                                        "text":  "denominator",
+                                        "x":  717
+                                    },
+                                    {
+                                        "y":  1292,
+                                        "height":  20,
+                                        "width":  149,
+                                        "text":  "fluctuates",
+                                        "x":  900
+                                    },
+                                    {
+                                        "y":  1292,
+                                        "height":  25,
+                                        "width":  134,
+                                        "text":  "depending",
+                                        "x":  1068
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "on the x and y values of the specific point being processed. As points",
+                      "words":  [
+                                    {
+                                        "y":  1336,
+                                        "height":  14,
+                                        "width":  27,
+                                        "text":  "on",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1330,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  213
+                                    },
+                                    {
+                                        "y":  1336,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "x",
+                                        "x":  272
+                                    },
+                                    {
+                                        "y":  1330,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  300
+                                    },
+                                    {
+                                        "y":  1336,
+                                        "height":  19,
+                                        "width":  13,
+                                        "text":  "y",
+                                        "x":  359
+                                    },
+                                    {
+                                        "y":  1330,
+                                        "height":  20,
+                                        "width":  89,
+                                        "text":  "values",
+                                        "x":  387
+                                    },
+                                    {
+                                        "y":  1330,
+                                        "height":  20,
+                                        "width":  29,
+                                        "text":  "of",
+                                        "x":  491
+                                    },
+                                    {
+                                        "y":  1330,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  534
+                                    },
+                                    {
+                                        "y":  1330,
+                                        "height":  25,
+                                        "width":  117,
+                                        "text":  "specific",
+                                        "x":  594
+                                    },
+                                    {
+                                        "y":  1330,
+                                        "height":  25,
+                                        "width":  72,
+                                        "text":  "point",
+                                        "x":  728
+                                    },
+                                    {
+                                        "y":  1330,
+                                        "height":  25,
+                                        "width":  73,
+                                        "text":  "being",
+                                        "x":  817
+                                    },
+                                    {
+                                        "y":  1330,
+                                        "height":  25,
+                                        "width":  144,
+                                        "text":  "processed.",
+                                        "x":  906
+                                    },
+                                    {
+                                        "y":  1331,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "As",
+                                        "x":  1069
+                                    },
+                                    {
+                                        "y":  1330,
+                                        "height":  25,
+                                        "width":  88,
+                                        "text":  "points",
+                                        "x":  1114
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "\"move further away\" in the virtual space, the denominator grows",
+                      "words":  [
+                                    {
+                                        "y":  1368,
+                                        "height":  20,
+                                        "width":  70,
+                                        "text":  "\"move",
+                                        "x":  173
+                                    },
+                                    {
+                                        "y":  1368,
+                                        "height":  20,
+                                        "width":  104,
+                                        "text":  "further",
+                                        "x":  270
+                                    },
+                                    {
+                                        "y":  1368,
+                                        "height":  25,
+                                        "width":  71,
+                                        "text":  "away\"",
+                                        "x":  400
+                                    },
+                                    {
+                                        "y":  1368,
+                                        "height":  20,
+                                        "width":  26,
+                                        "text":  "in",
+                                        "x":  501
+                                    },
+                                    {
+                                        "y":  1368,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  553
+                                    },
+                                    {
+                                        "y":  1368,
+                                        "height":  20,
+                                        "width":  102,
+                                        "text":  "virtual",
+                                        "x":  624
+                                    },
+                                    {
+                                        "y":  1374,
+                                        "height":  19,
+                                        "width":  84,
+                                        "text":  "space,",
+                                        "x":  753
+                                    },
+                                    {
+                                        "y":  1368,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  867
+                                    },
+                                    {
+                                        "y":  1368,
+                                        "height":  20,
+                                        "width":  165,
+                                        "text":  "denominator",
+                                        "x":  937
+                                    },
+                                    {
+                                        "y":  1372,
+                                        "height":  21,
+                                        "width":  73,
+                                        "text":  "grows",
+                                        "x":  1129
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "larger, causing the resulting x\u0027 and y\u0027 coordinates to shrink closer",
+                      "words":  [
+                                    {
+                                        "y":  1406,
+                                        "height":  25,
+                                        "width":  100,
+                                        "text":  "larger,",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1406,
+                                        "height":  25,
+                                        "width":  104,
+                                        "text":  "causing",
+                                        "x":  292
+                                    },
+                                    {
+                                        "y":  1406,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  412
+                                    },
+                                    {
+                                        "y":  1406,
+                                        "height":  25,
+                                        "width":  135,
+                                        "text":  "resulting",
+                                        "x":  474
+                                    },
+                                    {
+                                        "y":  1406,
+                                        "height":  20,
+                                        "width":  23,
+                                        "text":  "x\u0027",
+                                        "x":  626
+                                    },
+                                    {
+                                        "y":  1406,
+                                        "height":  20,
+                                        "width":  41,
+                                        "text":  "and",
+                                        "x":  672
+                                    },
+                                    {
+                                        "y":  1406,
+                                        "height":  25,
+                                        "width":  23,
+                                        "text":  "y\u0027",
+                                        "x":  732
+                                    },
+                                    {
+                                        "y":  1406,
+                                        "height":  20,
+                                        "width":  164,
+                                        "text":  "coordinates",
+                                        "x":  778
+                                    },
+                                    {
+                                        "y":  1407,
+                                        "height":  19,
+                                        "width":  28,
+                                        "text":  "to",
+                                        "x":  960
+                                    },
+                                    {
+                                        "y":  1406,
+                                        "height":  20,
+                                        "width":  89,
+                                        "text":  "shrink",
+                                        "x":  1007
+                                    },
+                                    {
+                                        "y":  1406,
+                                        "height":  20,
+                                        "width":  89,
+                                        "text":  "closer",
+                                        "x":  1113
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "together. This variable division is the mathematical engine that",
+                      "words":  [
+                                    {
+                                        "y":  1444,
+                                        "height":  24,
+                                        "width":  131,
+                                        "text":  "together.",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1443,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "This",
+                                        "x":  328
+                                    },
+                                    {
+                                        "y":  1443,
+                                        "height":  20,
+                                        "width":  119,
+                                        "text":  "variable",
+                                        "x":  413
+                                    },
+                                    {
+                                        "y":  1443,
+                                        "height":  20,
+                                        "width":  119,
+                                        "text":  "division",
+                                        "x":  557
+                                    },
+                                    {
+                                        "y":  1443,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  702
+                                    },
+                                    {
+                                        "y":  1444,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  754
+                                    },
+                                    {
+                                        "y":  1443,
+                                        "height":  20,
+                                        "width":  180,
+                                        "text":  "mathematical",
+                                        "x":  823
+                                    },
+                                    {
+                                        "y":  1443,
+                                        "height":  25,
+                                        "width":  88,
+                                        "text":  "engine",
+                                        "x":  1029
+                                    },
+                                    {
+                                        "y":  1444,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "that",
+                                        "x":  1142
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "generates depth.",
+                      "words":  [
+                                    {
+                                        "y":  1482,
+                                        "height":  24,
+                                        "width":  134,
+                                        "text":  "generates",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1482,
+                                        "height":  24,
+                                        "width":  84,
+                                        "text":  "depth.",
+                                        "x":  321
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "6.2.3 Modeling Real-World Perspective",
+                      "words":  [
+                                    {
+                                        "y":  1557,
+                                        "height":  20,
+                                        "width":  60,
+                                        "text":  "6.2.3",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1554,
+                                        "height":  29,
+                                        "width":  126,
+                                        "text":  "Modeling",
+                                        "x":  241
+                                    },
+                                    {
+                                        "y":  1556,
+                                        "height":  21,
+                                        "width":  154,
+                                        "text":  "Real-World",
+                                        "x":  379
+                                    },
+                                    {
+                                        "y":  1554,
+                                        "height":  29,
+                                        "width":  158,
+                                        "text":  "Perspective",
+                                        "x":  546
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Because of this dynamic denominator, projective transformations can",
+                      "words":  [
+                                    {
+                                        "y":  1604,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "Because",
+                                        "x":  171
+                                    },
+                                    {
+                                        "y":  1603,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  294
+                                    },
+                                    {
+                                        "y":  1603,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "this",
+                                        "x":  342
+                                    },
+                                    {
+                                        "y":  1603,
+                                        "height":  25,
+                                        "width":  103,
+                                        "text":  "dynamic",
+                                        "x":  421
+                                    },
+                                    {
+                                        "y":  1603,
+                                        "height":  24,
+                                        "width":  174,
+                                        "text":  "denominator,",
+                                        "x":  545
+                                    },
+                                    {
+                                        "y":  1603,
+                                        "height":  25,
+                                        "width":  149,
+                                        "text":  "projective",
+                                        "x":  744
+                                    },
+                                    {
+                                        "y":  1603,
+                                        "height":  20,
+                                        "width":  225,
+                                        "text":  "transformations",
+                                        "x":  913
+                                    },
+                                    {
+                                        "y":  1609,
+                                        "height":  14,
+                                        "width":  42,
+                                        "text":  "can",
+                                        "x":  1159
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "accurately model how flat planes distort when viewed at an angle:",
+                      "words":  [
+                                    {
+                                        "y":  1641,
+                                        "height":  25,
+                                        "width":  149,
+                                        "text":  "accurately",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1641,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "model",
+                                        "x":  336
+                                    },
+                                    {
+                                        "y":  1641,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "how",
+                                        "x":  428
+                                    },
+                                    {
+                                        "y":  1641,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "flat",
+                                        "x":  488
+                                    },
+                                    {
+                                        "y":  1641,
+                                        "height":  25,
+                                        "width":  87,
+                                        "text":  "planes",
+                                        "x":  564
+                                    },
+                                    {
+                                        "y":  1641,
+                                        "height":  20,
+                                        "width":  103,
+                                        "text":  "distort",
+                                        "x":  669
+                                    },
+                                    {
+                                        "y":  1641,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "when",
+                                        "x":  789
+                                    },
+                                    {
+                                        "y":  1641,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "viewed",
+                                        "x":  865
+                                    },
+                                    {
+                                        "y":  1642,
+                                        "height":  19,
+                                        "width":  28,
+                                        "text":  "at",
+                                        "x":  971
+                                    },
+                                    {
+                                        "y":  1647,
+                                        "height":  14,
+                                        "width":  28,
+                                        "text":  "an",
+                                        "x":  1016
+                                    },
+                                    {
+                                        "y":  1641,
+                                        "height":  25,
+                                        "width":  84,
+                                        "text":  "angle:",
+                                        "x":  1062
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FAST NUCES -",
+                      "words":  [
+                                    {
+                                        "y":  1820,
+                                        "height":  19,
+                                        "width":  61,
+                                        "text":  "FAST",
+                                        "x":  171
+                                    },
+                                    {
+                                        "y":  1820,
+                                        "height":  19,
+                                        "width":  85,
+                                        "text":  "NUCES",
+                                        "x":  242
+                                    },
+                                    {
+                                        "y":  1829,
+                                        "height":  4,
+                                        "width":  12,
+                                        "text":  "-",
+                                        "x":  337
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Karachi",
+                      "words":  [
+                                    {
+                                        "y":  1818,
+                                        "height":  21,
+                                        "width":  95,
+                                        "text":  "Karachi",
+                                        "x":  358
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1820,
+                                        "height":  19,
+                                        "width":  71,
+                                        "text":  "Talha",
+                                        "x":  596
+                                    },
+                                    {
+                                        "y":  1818,
+                                        "height":  21,
+                                        "width":  86,
+                                        "text":  "Shahid",
+                                        "x":  677
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "18",
+                      "words":  [
+                                    {
+                                        "y":  1820,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "18",
+                                        "x":  1177
+                                    }
+                                ]
+                  }
+              ]
+}

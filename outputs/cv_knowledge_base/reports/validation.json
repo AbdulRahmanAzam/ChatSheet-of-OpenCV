@@ -1,0 +1,190 @@
+{
+  "status": "passed",
+  "checks_passed": 56,
+  "checks": [
+    "Unreadable image fails clearly",
+    "Grocery total and removal",
+    "Missing grocery raises KeyError",
+    "Student average and major filter",
+    "Image decoded unchanged",
+    "Concentric canvas dimensions",
+    "Both center crops exactly 300",
+    "Overlay leaves top 80 percent unchanged",
+    "Composite mask selects exact pixels",
+    "RGB stats count",
+    "Fusion uint8 range",
+    "Unregistered CT MRI rejected",
+    "Synthetic video encoder available",
+    "All three video frames processed",
+    "300 percent scaling dimensions",
+    "Rotation keeps four transformed corners in canvas",
+    "Shear has determinant one",
+    "Exact translation maps origin",
+    "Rigid transform preserves point distances",
+    "Similarity uniformly scales distances",
+    "Solved affine matches landmarks",
+    "Collinear affine rejected",
+    "Perspective maps four corners",
+    "Identity panorama preserves pixels",
+    "Composed painting maps corners to destination",
+    "Texture features normalized and finite",
+    "LBP identical exemplar distance zero",
+    "Uniform bright texture has zero contrast",
+    "All 18 adaptive combinations present",
+    "Otsu splits synthetic foreground from background",
+    "Narrow yellow mask is subset of broad mask",
+    "Canny returns binary maps",
+    "Region growth respects intensity barrier",
+    "Region seed outside image rejected",
+    "Watershed markers signed int32",
+    "Four distance experiments",
+    "K-means produces at most K colors",
+    "IoU scores bounded",
+    "Reference screen visible and absent reference unconfirmed",
+    "SIFT identity match found and blank rejected",
+    "Haar zero threshold reconstructs odd length signal",
+    "Synthetic impulse is actually flagged",
+    "Reference recognition has geometric inliers",
+    "Recognition video loop executes",
+    "Automatic panorama geometry verified",
+    "Both synthetic lane sides fitted",
+    "Synthetic circles detected",
+    "Zone event waits for persistence and fires once",
+    "Zone resets after object gone",
+    "Convolution agrees with direct mathematical sum",
+    "Full convolution output shape",
+    "Stride applies after valid convolution",
+    "Separable and 2D Gaussian agree",
+    "All manual function groups run",
+    "Uniform image has no gradient histogram energy",
+    "All 41 task implementations exercised"
+  ],
+  "tasks_exercised": [
+    "L01-T01",
+    "L01-T02",
+    "L01-T03",
+    "L01-T04",
+    "L01-T05",
+    "L01-T06",
+    "L01-T07",
+    "L01-T08",
+    "L01-T09",
+    "L02-T01",
+    "L02-T02",
+    "L02-T03",
+    "L03-T01",
+    "L03-T02",
+    "L03-T03",
+    "L03-T04",
+    "L03-T05",
+    "L03-T06",
+    "L03-T07",
+    "L03-T08",
+    "L03-T09",
+    "L03-T10",
+    "L04-T01",
+    "L05-T01",
+    "L05-T02",
+    "L05-T03",
+    "L05-T04",
+    "L05-T05",
+    "L05-T06",
+    "L05-T07",
+    "L05-T08",
+    "L05-T09",
+    "L05-T10",
+    "L06-T01",
+    "L06-T02",
+    "L06-T03",
+    "L06-T04",
+    "L06-T05",
+    "L06-T06",
+    "L06-T07",
+    "L06-T08"
+  ],
+  "data": "Generated synthetic fixtures only; original course images/videos absent.",
+  "versions": {
+    "python": "3.12.14",
+    "opencv": "4.13.0",
+    "numpy": "2.5.3",
+    "matplotlib": "3.11.2"
+  },
+  "document_iou": {
+    "Global127": 0.15456293447714836,
+    "Otsu": 0.10843623534294905,
+    "Adaptive": 1.0
+  },
+  "best_document_method": "Adaptive",
+  "otsu_thresholds": {
+    "Original": 15.0,
+    "Blurred": 112.0,
+    "Contrast changed": 28.0
+  },
+  "distance_sweep": {
+    "0.2": {
+      "seed_count": 1,
+      "region_count": 1
+    },
+    "0.4": {
+      "seed_count": 1,
+      "region_count": 1
+    },
+    "0.6": {
+      "seed_count": 1,
+      "region_count": 1
+    },
+    "0.8": {
+      "seed_count": 2,
+      "region_count": 2
+    }
+  },
+  "screen_results": [
+    {
+      "screen": 0,
+      "state": "visible_dark",
+      "side_support": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean_interior_intensity": 10.0,
+      "expected_xywh": [
+        30,
+        60,
+        180,
+        150
+      ]
+    },
+    {
+      "screen": 1,
+      "state": "unconfirmed_possible_missing_or_occluded",
+      "side_support": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_interior_intensity": 80.0,
+      "expected_xywh": [
+        280,
+        60,
+        180,
+        150
+      ]
+    }
+  ],
+  "synthetic_circle_count": 2,
+  "wavelet_flagged_indices": [
+    100,
+    101,
+    102,
+    103
+  ],
+  "limits": [
+    "No real-data accuracy measured",
+    "Optional Pandas path not exercised",
+    "Only installed versions tested",
+    "No network API is used by knowledge search or solutions"
+  ]
+}

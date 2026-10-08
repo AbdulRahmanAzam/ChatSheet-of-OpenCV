@@ -1,0 +1,1467 @@
+﻿{
+    "id":  "lab_05_tasks_p009",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "Task 9 — Segmenting an Image Using K-Means A wildlife researcher receives a color photograph and wants to simplify it into a small number of visually meaningful regions. A single threshold is not appropriate because many different colors and intensity values occur in the image. The researcher decides to cluster pixels according to their color similarity . Use a complex color image such as: Your Task Implement K-Means-based image segmentation. Your 1. 2. 3. 4. 5. program should: Load a color image. Represent the image as a set of pixel feature vectors. Convert the pixel data to the appropriate numeric type. Perform K-Means clustering. Reconstruct the segmented image using cluster centers. Run the experiment for: K = 2, 4 and 6 Required Output Display : Original K=2 K=6 For each K, record: Number of clusters • Visual difference from the original • Amount of color simplification • Major regions represented by the clusters The procedure should follow the K-Means workflow in the manual : reshape pixels, convert to float32, cluster, obtain centers, and reconstruct the image . Talha Shahid 91 Page",
+    "review_status":  "raw_ocr_unverified",
+    "page":  9,
+    "source_id":  "lab_05_tasks",
+    "lines":  [
+                  {
+                      "text":  "Task 9 — Segmenting an Image Using K-Means",
+                      "words":  [
+                                    {
+                                        "y":  176,
+                                        "height":  20,
+                                        "width":  61,
+                                        "text":  "Task",
+                                        "x":  168
+                                    },
+                                    {
+                                        "y":  177,
+                                        "height":  18,
+                                        "width":  14,
+                                        "text":  "9",
+                                        "x":  244
+                                    },
+                                    {
+                                        "y":  185,
+                                        "height":  4,
+                                        "width":  16,
+                                        "text":  "—",
+                                        "x":  274
+                                    },
+                                    {
+                                        "y":  176,
+                                        "height":  25,
+                                        "width":  149,
+                                        "text":  "Segmenting",
+                                        "x":  305
+                                    },
+                                    {
+                                        "y":  181,
+                                        "height":  15,
+                                        "width":  29,
+                                        "text":  "an",
+                                        "x":  470
+                                    },
+                                    {
+                                        "y":  177,
+                                        "height":  24,
+                                        "width":  74,
+                                        "text":  "Image",
+                                        "x":  516
+                                    },
+                                    {
+                                        "y":  176,
+                                        "height":  25,
+                                        "width":  75,
+                                        "text":  "Using",
+                                        "x":  607
+                                    },
+                                    {
+                                        "y":  177,
+                                        "height":  19,
+                                        "width":  104,
+                                        "text":  "K-Means",
+                                        "x":  698
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "A wildlife researcher receives a color photograph and wants to",
+                      "words":  [
+                                    {
+                                        "y":  233,
+                                        "height":  19,
+                                        "width":  14,
+                                        "text":  "A",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  232,
+                                        "height":  21,
+                                        "width":  119,
+                                        "text":  "wildlife",
+                                        "x":  210
+                                    },
+                                    {
+                                        "y":  233,
+                                        "height":  20,
+                                        "width":  149,
+                                        "text":  "researcher",
+                                        "x":  357
+                                    },
+                                    {
+                                        "y":  232,
+                                        "height":  21,
+                                        "width":  119,
+                                        "text":  "receives",
+                                        "x":  533
+                                    },
+                                    {
+                                        "y":  238,
+                                        "height":  15,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  680
+                                    },
+                                    {
+                                        "y":  233,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "color",
+                                        "x":  722
+                                    },
+                                    {
+                                        "y":  233,
+                                        "height":  25,
+                                        "width":  146,
+                                        "text":  "photograph",
+                                        "x":  824
+                                    },
+                                    {
+                                        "y":  233,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  999
+                                    },
+                                    {
+                                        "y":  233,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "wants",
+                                        "x":  1070
+                                    },
+                                    {
+                                        "y":  233,
+                                        "height":  20,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  1171
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "simplify it into a small number of visually meaningful regions.",
+                      "words":  [
+                                    {
+                                        "y":  270,
+                                        "height":  25,
+                                        "width":  118,
+                                        "text":  "simplify",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  270,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "it",
+                                        "x":  306
+                                    },
+                                    {
+                                        "y":  270,
+                                        "height":  21,
+                                        "width":  57,
+                                        "text":  "into",
+                                        "x":  352
+                                    },
+                                    {
+                                        "y":  276,
+                                        "height":  15,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  426
+                                    },
+                                    {
+                                        "y":  271,
+                                        "height":  20,
+                                        "width":  72,
+                                        "text":  "small",
+                                        "x":  456
+                                    },
+                                    {
+                                        "y":  271,
+                                        "height":  20,
+                                        "width":  89,
+                                        "text":  "number",
+                                        "x":  547
+                                    },
+                                    {
+                                        "y":  271,
+                                        "height":  20,
+                                        "width":  29,
+                                        "text":  "of",
+                                        "x":  652
+                                    },
+                                    {
+                                        "y":  270,
+                                        "height":  25,
+                                        "width":  119,
+                                        "text":  "visually",
+                                        "x":  698
+                                    },
+                                    {
+                                        "y":  270,
+                                        "height":  26,
+                                        "width":  148,
+                                        "text":  "meaningful",
+                                        "x":  834
+                                    },
+                                    {
+                                        "y":  270,
+                                        "height":  26,
+                                        "width":  115,
+                                        "text":  "regions.",
+                                        "x":  1000
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "A single threshold is not appropriate because many different colors",
+                      "words":  [
+                                    {
+                                        "y":  327,
+                                        "height":  19,
+                                        "width":  14,
+                                        "text":  "A",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  326,
+                                        "height":  26,
+                                        "width":  88,
+                                        "text":  "single",
+                                        "x":  202
+                                    },
+                                    {
+                                        "y":  327,
+                                        "height":  20,
+                                        "width":  134,
+                                        "text":  "threshold",
+                                        "x":  309
+                                    },
+                                    {
+                                        "y":  326,
+                                        "height":  21,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  463
+                                    },
+                                    {
+                                        "y":  328,
+                                        "height":  19,
+                                        "width":  42,
+                                        "text":  "not",
+                                        "x":  511
+                                    },
+                                    {
+                                        "y":  326,
+                                        "height":  25,
+                                        "width":  164,
+                                        "text":  "appropriate",
+                                        "x":  573
+                                    },
+                                    {
+                                        "y":  327,
+                                        "height":  20,
+                                        "width":  103,
+                                        "text":  "because",
+                                        "x":  758
+                                    },
+                                    {
+                                        "y":  332,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "many",
+                                        "x":  880
+                                    },
+                                    {
+                                        "y":  326,
+                                        "height":  21,
+                                        "width":  134,
+                                        "text":  "different",
+                                        "x":  957
+                                    },
+                                    {
+                                        "y":  327,
+                                        "height":  20,
+                                        "width":  89,
+                                        "text":  "colors",
+                                        "x":  1111
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "and intensity values occur in the image.",
+                      "words":  [
+                                    {
+                                        "y":  364,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  363,
+                                        "height":  25,
+                                        "width":  133,
+                                        "text":  "intensity",
+                                        "x":  231
+                                    },
+                                    {
+                                        "y":  364,
+                                        "height":  20,
+                                        "width":  87,
+                                        "text":  "values",
+                                        "x":  381
+                                    },
+                                    {
+                                        "y":  369,
+                                        "height":  15,
+                                        "width":  74,
+                                        "text":  "occur",
+                                        "x":  486
+                                    },
+                                    {
+                                        "y":  363,
+                                        "height":  20,
+                                        "width":  26,
+                                        "text":  "in",
+                                        "x":  578
+                                    },
+                                    {
+                                        "y":  364,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  622
+                                    },
+                                    {
+                                        "y":  363,
+                                        "height":  26,
+                                        "width":  84,
+                                        "text":  "image.",
+                                        "x":  683
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The researcher decides to cluster pixels according to their color",
+                      "words":  [
+                                    {
+                                        "y":  420,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "The",
+                                        "x":  168
+                                    },
+                                    {
+                                        "y":  420,
+                                        "height":  20,
+                                        "width":  149,
+                                        "text":  "researcher",
+                                        "x":  236
+                                    },
+                                    {
+                                        "y":  419,
+                                        "height":  21,
+                                        "width":  102,
+                                        "text":  "decides",
+                                        "x":  408
+                                    },
+                                    {
+                                        "y":  420,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "to",
+                                        "x":  533
+                                    },
+                                    {
+                                        "y":  420,
+                                        "height":  20,
+                                        "width":  104,
+                                        "text":  "cluster",
+                                        "x":  585
+                                    },
+                                    {
+                                        "y":  419,
+                                        "height":  25,
+                                        "width":  88,
+                                        "text":  "pixels",
+                                        "x":  712
+                                    },
+                                    {
+                                        "y":  419,
+                                        "height":  26,
+                                        "width":  133,
+                                        "text":  "according",
+                                        "x":  823
+                                    },
+                                    {
+                                        "y":  421,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  978
+                                    },
+                                    {
+                                        "y":  419,
+                                        "height":  21,
+                                        "width":  75,
+                                        "text":  "their",
+                                        "x":  1029
+                                    },
+                                    {
+                                        "y":  420,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "color",
+                                        "x":  1127
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "similarity .",
+                      "words":  [
+                                    {
+                                        "y":  457,
+                                        "height":  25,
+                                        "width":  148,
+                                        "text":  "similarity",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  473,
+                                        "height":  5,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  325
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Use a complex color image such as:",
+                      "words":  [
+                                    {
+                                        "y":  515,
+                                        "height":  19,
+                                        "width":  42,
+                                        "text":  "Use",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  520,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  230
+                                    },
+                                    {
+                                        "y":  514,
+                                        "height":  25,
+                                        "width":  102,
+                                        "text":  "complex",
+                                        "x":  261
+                                    },
+                                    {
+                                        "y":  514,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "color",
+                                        "x":  381
+                                    },
+                                    {
+                                        "y":  514,
+                                        "height":  25,
+                                        "width":  72,
+                                        "text":  "image",
+                                        "x":  472
+                                    },
+                                    {
+                                        "y":  514,
+                                        "height":  20,
+                                        "width":  57,
+                                        "text":  "such",
+                                        "x":  562
+                                    },
+                                    {
+                                        "y":  520,
+                                        "height":  14,
+                                        "width":  39,
+                                        "text":  "as:",
+                                        "x":  637
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Your Task",
+                      "words":  [
+                                    {
+                                        "y":  572,
+                                        "height":  19,
+                                        "width":  60,
+                                        "text":  "Your",
+                                        "x":  168
+                                    },
+                                    {
+                                        "y":  571,
+                                        "height":  20,
+                                        "width":  60,
+                                        "text":  "Task",
+                                        "x":  244
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Implement K-Means-based image segmentation.",
+                      "words":  [
+                                    {
+                                        "y":  627,
+                                        "height":  25,
+                                        "width":  133,
+                                        "text":  "Implement",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  627,
+                                        "height":  20,
+                                        "width":  193,
+                                        "text":  "K-Means-based",
+                                        "x":  321
+                                    },
+                                    {
+                                        "y":  627,
+                                        "height":  25,
+                                        "width":  73,
+                                        "text":  "image",
+                                        "x":  532
+                                    },
+                                    {
+                                        "y":  627,
+                                        "height":  25,
+                                        "width":  191,
+                                        "text":  "segmentation.",
+                                        "x":  622
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Your",
+                      "words":  [
+                                    {
+                                        "y":  684,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "Your",
+                                        "x":  169
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1.",
+                      "words":  [
+                                    {
+                                        "y":  740,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "1.",
+                                        "x":  210
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2.",
+                      "words":  [
+                                    {
+                                        "y":  796,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "2.",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3.",
+                      "words":  [
+                                    {
+                                        "y":  853,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "3.",
+                                        "x":  210
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4.",
+                      "words":  [
+                                    {
+                                        "y":  909,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "4.",
+                                        "x":  210
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "5.",
+                      "words":  [
+                                    {
+                                        "y":  966,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "5.",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "program should:",
+                      "words":  [
+                                    {
+                                        "y":  687,
+                                        "height":  20,
+                                        "width":  103,
+                                        "text":  "program",
+                                        "x":  246
+                                    },
+                                    {
+                                        "y":  683,
+                                        "height":  20,
+                                        "width":  98,
+                                        "text":  "should:",
+                                        "x":  366
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Load a color image.",
+                      "words":  [
+                                    {
+                                        "y":  739,
+                                        "height":  20,
+                                        "width":  56,
+                                        "text":  "Load",
+                                        "x":  253
+                                    },
+                                    {
+                                        "y":  744,
+                                        "height":  15,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  327
+                                    },
+                                    {
+                                        "y":  739,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "color",
+                                        "x":  358
+                                    },
+                                    {
+                                        "y":  738,
+                                        "height":  26,
+                                        "width":  83,
+                                        "text":  "image.",
+                                        "x":  449
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Represent the image as a set of pixel feature vectors.",
+                      "words":  [
+                                    {
+                                        "y":  796,
+                                        "height":  24,
+                                        "width":  133,
+                                        "text":  "Represent",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  795,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  402
+                                    },
+                                    {
+                                        "y":  795,
+                                        "height":  25,
+                                        "width":  73,
+                                        "text":  "image",
+                                        "x":  463
+                                    },
+                                    {
+                                        "y":  800,
+                                        "height":  15,
+                                        "width":  28,
+                                        "text":  "as",
+                                        "x":  553
+                                    },
+                                    {
+                                        "y":  800,
+                                        "height":  15,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  599
+                                    },
+                                    {
+                                        "y":  796,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "set",
+                                        "x":  629
+                                    },
+                                    {
+                                        "y":  795,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  690
+                                    },
+                                    {
+                                        "y":  795,
+                                        "height":  25,
+                                        "width":  72,
+                                        "text":  "pixel",
+                                        "x":  736
+                                    },
+                                    {
+                                        "y":  795,
+                                        "height":  20,
+                                        "width":  103,
+                                        "text":  "feature",
+                                        "x":  826
+                                    },
+                                    {
+                                        "y":  796,
+                                        "height":  19,
+                                        "width":  115,
+                                        "text":  "vectors.",
+                                        "x":  946
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Convert the pixel data to the appropriate numeric type.",
+                      "words":  [
+                                    {
+                                        "y":  853,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "Convert",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  852,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  372
+                                    },
+                                    {
+                                        "y":  852,
+                                        "height":  25,
+                                        "width":  71,
+                                        "text":  "pixel",
+                                        "x":  434
+                                    },
+                                    {
+                                        "y":  852,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "data",
+                                        "x":  523
+                                    },
+                                    {
+                                        "y":  853,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  598
+                                    },
+                                    {
+                                        "y":  852,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  643
+                                    },
+                                    {
+                                        "y":  851,
+                                        "height":  26,
+                                        "width":  164,
+                                        "text":  "appropriate",
+                                        "x":  705
+                                    },
+                                    {
+                                        "y":  851,
+                                        "height":  21,
+                                        "width":  101,
+                                        "text":  "numeric",
+                                        "x":  887
+                                    },
+                                    {
+                                        "y":  853,
+                                        "height":  24,
+                                        "width":  70,
+                                        "text":  "type.",
+                                        "x":  1006
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Perform K-Means clustering.",
+                      "words":  [
+                                    {
+                                        "y":  908,
+                                        "height":  20,
+                                        "width":  104,
+                                        "text":  "Perform",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  909,
+                                        "height":  19,
+                                        "width":  102,
+                                        "text":  "K-Means",
+                                        "x":  373
+                                    },
+                                    {
+                                        "y":  908,
+                                        "height":  25,
+                                        "width":  160,
+                                        "text":  "clustering.",
+                                        "x":  493
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Reconstruct the segmented image using cluster centers.",
+                      "words":  [
+                                    {
+                                        "y":  966,
+                                        "height":  19,
+                                        "width":  164,
+                                        "text":  "Reconstruct",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  965,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "the",
+                                        "x":  433
+                                    },
+                                    {
+                                        "y":  965,
+                                        "height":  25,
+                                        "width":  133,
+                                        "text":  "segmented",
+                                        "x":  493
+                                    },
+                                    {
+                                        "y":  965,
+                                        "height":  25,
+                                        "width":  73,
+                                        "text":  "image",
+                                        "x":  645
+                                    },
+                                    {
+                                        "y":  965,
+                                        "height":  25,
+                                        "width":  73,
+                                        "text":  "using",
+                                        "x":  736
+                                    },
+                                    {
+                                        "y":  965,
+                                        "height":  20,
+                                        "width":  103,
+                                        "text":  "cluster",
+                                        "x":  826
+                                    },
+                                    {
+                                        "y":  966,
+                                        "height":  19,
+                                        "width":  115,
+                                        "text":  "centers.",
+                                        "x":  946
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Run the experiment for:",
+                      "words":  [
+                                    {
+                                        "y":  1022,
+                                        "height":  19,
+                                        "width":  42,
+                                        "text":  "Run",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1021,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  229
+                                    },
+                                    {
+                                        "y":  1021,
+                                        "height":  25,
+                                        "width":  149,
+                                        "text":  "experiment",
+                                        "x":  290
+                                    },
+                                    {
+                                        "y":  1021,
+                                        "height":  20,
+                                        "width":  54,
+                                        "text":  "for:",
+                                        "x":  456
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "K = 2, 4 and 6",
+                      "words":  [
+                                    {
+                                        "y":  1078,
+                                        "height":  18,
+                                        "width":  14,
+                                        "text":  "K",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1083,
+                                        "height":  10,
+                                        "width":  13,
+                                        "text":  "=",
+                                        "x":  199
+                                    },
+                                    {
+                                        "y":  1078,
+                                        "height":  22,
+                                        "width":  24,
+                                        "text":  "2,",
+                                        "x":  230
+                                    },
+                                    {
+                                        "y":  1078,
+                                        "height":  18,
+                                        "width":  15,
+                                        "text":  "4",
+                                        "x":  274
+                                    },
+                                    {
+                                        "y":  1077,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "and",
+                                        "x":  305
+                                    },
+                                    {
+                                        "y":  1078,
+                                        "height":  19,
+                                        "width":  14,
+                                        "text":  "6",
+                                        "x":  365
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Required Output",
+                      "words":  [
+                                    {
+                                        "y":  1133,
+                                        "height":  24,
+                                        "width":  118,
+                                        "text":  "Required",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1134,
+                                        "height":  24,
+                                        "width":  89,
+                                        "text":  "Output",
+                                        "x":  305
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Display :",
+                      "words":  [
+                                    {
+                                        "y":  1189,
+                                        "height":  25,
+                                        "width":  103,
+                                        "text":  "Display",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1194,
+                                        "height":  15,
+                                        "width":  5,
+                                        "text":  ":",
+                                        "x":  279
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Original K=2 K=6",
+                      "words":  [
+                                    {
+                                        "y":  1245,
+                                        "height":  25,
+                                        "width":  119,
+                                        "text":  "Original",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1246,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "K=2",
+                                        "x":  336
+                                    },
+                                    {
+                                        "y":  1246,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "K=6",
+                                        "x":  516
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "For each K, record:",
+                      "words":  [
+                                    {
+                                        "y":  1303,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "For",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1302,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "each",
+                                        "x":  230
+                                    },
+                                    {
+                                        "y":  1303,
+                                        "height":  22,
+                                        "width":  24,
+                                        "text":  "K,",
+                                        "x":  306
+                                    },
+                                    {
+                                        "y":  1302,
+                                        "height":  20,
+                                        "width":  99,
+                                        "text":  "record:",
+                                        "x":  351
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Number of clusters",
+                      "words":  [
+                                    {
+                                        "y":  1358,
+                                        "height":  20,
+                                        "width":  89,
+                                        "text":  "Number",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1358,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  358
+                                    },
+                                    {
+                                        "y":  1358,
+                                        "height":  20,
+                                        "width":  116,
+                                        "text":  "clusters",
+                                        "x":  404
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• Visual difference from the original",
+                      "words":  [
+                                    {
+                                        "y":  1421,
+                                        "height":  10,
+                                        "width":  9,
+                                        "text":  "•",
+                                        "x":  210
+                                    },
+                                    {
+                                        "y":  1413,
+                                        "height":  20,
+                                        "width":  89,
+                                        "text":  "Visual",
+                                        "x":  251
+                                    },
+                                    {
+                                        "y":  1413,
+                                        "height":  20,
+                                        "width":  149,
+                                        "text":  "difference",
+                                        "x":  357
+                                    },
+                                    {
+                                        "y":  1413,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "from",
+                                        "x":  523
+                                    },
+                                    {
+                                        "y":  1413,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  598
+                                    },
+                                    {
+                                        "y":  1413,
+                                        "height":  25,
+                                        "width":  119,
+                                        "text":  "original",
+                                        "x":  659
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• Amount of color simplification",
+                      "words":  [
+                                    {
+                                        "y":  1478,
+                                        "height":  9,
+                                        "width":  9,
+                                        "text":  "•",
+                                        "x":  210
+                                    },
+                                    {
+                                        "y":  1471,
+                                        "height":  19,
+                                        "width":  89,
+                                        "text":  "Amount",
+                                        "x":  251
+                                    },
+                                    {
+                                        "y":  1470,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  358
+                                    },
+                                    {
+                                        "y":  1470,
+                                        "height":  20,
+                                        "width":  72,
+                                        "text":  "color",
+                                        "x":  404
+                                    },
+                                    {
+                                        "y":  1470,
+                                        "height":  25,
+                                        "width":  209,
+                                        "text":  "simplification",
+                                        "x":  493
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• Major regions represented by the clusters",
+                      "words":  [
+                                    {
+                                        "y":  1534,
+                                        "height":  9,
+                                        "width":  9,
+                                        "text":  "•",
+                                        "x":  210
+                                    },
+                                    {
+                                        "y":  1526,
+                                        "height":  25,
+                                        "width":  74,
+                                        "text":  "Major",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1526,
+                                        "height":  25,
+                                        "width":  103,
+                                        "text":  "regions",
+                                        "x":  343
+                                    },
+                                    {
+                                        "y":  1526,
+                                        "height":  25,
+                                        "width":  163,
+                                        "text":  "represented",
+                                        "x":  463
+                                    },
+                                    {
+                                        "y":  1526,
+                                        "height":  25,
+                                        "width":  27,
+                                        "text":  "by",
+                                        "x":  645
+                                    },
+                                    {
+                                        "y":  1526,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  689
+                                    },
+                                    {
+                                        "y":  1526,
+                                        "height":  20,
+                                        "width":  118,
+                                        "text":  "clusters",
+                                        "x":  751
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The procedure should follow the K-Means workflow in the manual :",
+                      "words":  [
+                                    {
+                                        "y":  1583,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "The",
+                                        "x":  168
+                                    },
+                                    {
+                                        "y":  1583,
+                                        "height":  24,
+                                        "width":  133,
+                                        "text":  "procedure",
+                                        "x":  240
+                                    },
+                                    {
+                                        "y":  1583,
+                                        "height":  20,
+                                        "width":  87,
+                                        "text":  "should",
+                                        "x":  399
+                                    },
+                                    {
+                                        "y":  1583,
+                                        "height":  20,
+                                        "width":  89,
+                                        "text":  "follow",
+                                        "x":  513
+                                    },
+                                    {
+                                        "y":  1583,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  627
+                                    },
+                                    {
+                                        "y":  1584,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "K-Means",
+                                        "x":  698
+                                    },
+                                    {
+                                        "y":  1583,
+                                        "height":  20,
+                                        "width":  120,
+                                        "text":  "workflow",
+                                        "x":  827
+                                    },
+                                    {
+                                        "y":  1582,
+                                        "height":  20,
+                                        "width":  26,
+                                        "text":  "in",
+                                        "x":  974
+                                    },
+                                    {
+                                        "y":  1583,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  1026
+                                    },
+                                    {
+                                        "y":  1583,
+                                        "height":  20,
+                                        "width":  89,
+                                        "text":  "manual",
+                                        "x":  1096
+                                    },
+                                    {
+                                        "y":  1588,
+                                        "height":  15,
+                                        "width":  5,
+                                        "text":  ":",
+                                        "x":  1192
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "reshape pixels, convert to float32, cluster, obtain centers, and",
+                      "words":  [
+                                    {
+                                        "y":  1621,
+                                        "height":  24,
+                                        "width":  103,
+                                        "text":  "reshape",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1620,
+                                        "height":  25,
+                                        "width":  99,
+                                        "text":  "pixels,",
+                                        "x":  299
+                                    },
+                                    {
+                                        "y":  1622,
+                                        "height":  19,
+                                        "width":  102,
+                                        "text":  "convert",
+                                        "x":  428
+                                    },
+                                    {
+                                        "y":  1622,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  555
+                                    },
+                                    {
+                                        "y":  1621,
+                                        "height":  23,
+                                        "width":  115,
+                                        "text":  "float32,",
+                                        "x":  610
+                                    },
+                                    {
+                                        "y":  1621,
+                                        "height":  23,
+                                        "width":  114,
+                                        "text":  "cluster,",
+                                        "x":  755
+                                    },
+                                    {
+                                        "y":  1620,
+                                        "height":  21,
+                                        "width":  87,
+                                        "text":  "obtain",
+                                        "x":  899
+                                    },
+                                    {
+                                        "y":  1622,
+                                        "height":  22,
+                                        "width":  115,
+                                        "text":  "centers,",
+                                        "x":  1012
+                                    },
+                                    {
+                                        "y":  1621,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  1156
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "reconstruct the image .",
+                      "words":  [
+                                    {
+                                        "y":  1660,
+                                        "height":  19,
+                                        "width":  163,
+                                        "text":  "reconstruct",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1659,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  350
+                                    },
+                                    {
+                                        "y":  1658,
+                                        "height":  26,
+                                        "width":  71,
+                                        "text":  "image",
+                                        "x":  412
+                                    },
+                                    {
+                                        "y":  1674,
+                                        "height":  4,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  490
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1821,
+                                        "height":  21,
+                                        "width":  75,
+                                        "text":  "Talha",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1820,
+                                        "height":  23,
+                                        "width":  95,
+                                        "text":  "Shahid",
+                                        "x":  255
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "91",
+                      "words":  [
+                                    {
+                                        "y":  1821,
+                                        "height":  27,
+                                        "width":  29,
+                                        "text":  "91",
+                                        "x":  1063
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Page",
+                      "words":  [
+                                    {
+                                        "y":  1822,
+                                        "height":  27,
+                                        "width":  86,
+                                        "text":  "Page",
+                                        "x":  1105
+                                    }
+                                ]
+                  }
+              ]
+}

@@ -1,0 +1,970 @@
+{
+  "tuned": {
+    "cases": 76,
+    "top1": 75,
+    "top3": 76,
+    "results": [
+      {
+        "query": "how do I read an image from disk",
+        "expected": "io",
+        "top3": [
+          "io",
+          "video",
+          "dnn"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "show image with matplotlib colors look wrong blue",
+        "expected": "display",
+        "top3": [
+          "display",
+          "plotting",
+          "channels"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "convert VGA to RGB then grayscale",
+        "expected": "colors",
+        "top3": [
+          "colors",
+          "display",
+          "convert_abs"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "what does ddepth -1 mean in filter2D",
+        "expected": "depth",
+        "top3": [
+          "depth",
+          "kernel",
+          "pixels"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "crop the center of the picture R10",
+        "expected": "crop",
+        "top3": [
+          "crop",
+          "kmeans",
+          "lbp"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "make picture half size",
+        "expected": "resize",
+        "top3": [
+          "resize",
+          "padding",
+          "pseudocolor"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "write text on image",
+        "expected": "drawing",
+        "top3": [
+          "drawing",
+          "video",
+          "gabor"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "blend two images with transparency",
+        "expected": "blend",
+        "top3": [
+          "blend",
+          "panorama",
+          "pyramids"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "select only yellow pixels",
+        "expected": "mask",
+        "top3": [
+          "mask",
+          "otsu",
+          "hed"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "plot dot bar of pixel counts",
+        "expected": "histogram",
+        "top3": [
+          "histogram",
+          "components",
+          "display"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "improve contrast of dark photo",
+        "expected": "equalization",
+        "top3": [
+          "equalization",
+          "texture",
+          "gamma"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "gamma correction",
+        "expected": "gamma",
+        "top3": [
+          "gamma",
+          "channels",
+          "pseudocolor"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "difference between convolution and correlation",
+        "expected": "kernel",
+        "top3": [
+          "kernel",
+          "meanshift",
+          "background"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "border types reflect padding",
+        "expected": "padding",
+        "top3": [
+          "padding",
+          "channels",
+          "threshold"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "botch filter",
+        "expected": "box",
+        "top3": [
+          "box",
+          "kernel",
+          "gabor"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "getGaussianKernel 2D",
+        "expected": "gaussian",
+        "top3": [
+          "gaussian",
+          "affine",
+          "coordinates"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "remove salt and pepper noise",
+        "expected": "median",
+        "top3": [
+          "median",
+          "noise",
+          "inpaint"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "smooth but keep edges sharp",
+        "expected": "bilateral",
+        "top3": [
+          "bilateral",
+          "sharpening",
+          "canny"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "sobel x and y gradient magnitude",
+        "expected": "gradients",
+        "top3": [
+          "gradients"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "scar edge detection",
+        "expected": "scharr",
+        "top3": [
+          "scharr",
+          "canny",
+          "segmentation"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "laplacian of gaussian zero crossing",
+        "expected": "laplacian",
+        "top3": [
+          "laplacian",
+          "pyramids",
+          "convert_abs"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "convert scale absolute",
+        "expected": "convert_abs",
+        "top3": [
+          "convert_abs",
+          "depth",
+          "laplacian"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "canny thresholds hysteresis",
+        "expected": "canny",
+        "top3": [
+          "canny"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "binary threshold inverse",
+        "expected": "threshold",
+        "top3": [
+          "threshold",
+          "wavelets",
+          "adaptive"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "uneven lighting document threshold",
+        "expected": "adaptive",
+        "top3": [
+          "adaptive",
+          "threshold",
+          "perspective"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "automatic threshold value",
+        "expected": "otsu",
+        "top3": [
+          "otsu",
+          "threshold",
+          "scharr"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "dilate and erode noise in mask",
+        "expected": "morphology",
+        "top3": [
+          "morphology",
+          "inpaint",
+          "sharpening"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "top hat black hat",
+        "expected": "morphology_more",
+        "top3": [
+          "morphology_more",
+          "panorama",
+          "shape"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "region growing from a seed point",
+        "expected": "region",
+        "top3": [
+          "region",
+          "distance",
+          "kmeans"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "distance transform sure foreground",
+        "expected": "distance",
+        "top3": [
+          "distance",
+          "watershed",
+          "morphology"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "count objects connected components",
+        "expected": "components",
+        "top3": [
+          "components",
+          "watershed",
+          "region"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "separate touching coins watershed markers",
+        "expected": "watershed",
+        "top3": [
+          "watershed",
+          "components",
+          "distance"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "k means color clustering",
+        "expected": "kmeans",
+        "top3": [
+          "kmeans",
+          "meanshift",
+          "advanced"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "find contours and approximate polygon",
+        "expected": "contours",
+        "top3": [
+          "contours",
+          "shape",
+          "flann"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "homogeneous coordinates 3x3 matrix",
+        "expected": "coordinates",
+        "top3": [
+          "coordinates",
+          "pixels",
+          "calibration"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "rotate and shear affine",
+        "expected": "affine",
+        "top3": [
+          "affine",
+          "channels",
+          "coordinates"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "bird eye view four corners warp",
+        "expected": "perspective",
+        "top3": [
+          "perspective",
+          "corners",
+          "fourier"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "align CT and MRI images",
+        "expected": "registration",
+        "top3": [
+          "registration",
+          "perspective",
+          "matching"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "histogram of oriented gradients HOG",
+        "expected": "hog",
+        "top3": [
+          "hog",
+          "hed",
+          "gradients"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "local binary pattern texture",
+        "expected": "lbp",
+        "top3": [
+          "lbp",
+          "texture",
+          "gabor"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "edge direction histogram atan2",
+        "expected": "hed",
+        "top3": [
+          "hed",
+          "histogram",
+          "gradients"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "classify wood metal fabric texture",
+        "expected": "texture",
+        "top3": [
+          "texture",
+          "gabor",
+          "hog"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "gabor filter",
+        "expected": "gabor",
+        "top3": [
+          "gabor",
+          "box",
+          "kernel"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "hough line transformation detect lines",
+        "expected": "hough",
+        "top3": [
+          "hough",
+          "circles",
+          "affine"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "monitor computer lab screens missing on off",
+        "expected": "screen",
+        "top3": [
+          "screen",
+          "video",
+          "evaluation"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "detect coins circles",
+        "expected": "circles",
+        "top3": [
+          "circles",
+          "drawing",
+          "segmentation"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "sift create detect and compute draw keypoints",
+        "expected": "sift",
+        "top3": [
+          "sift",
+          "feature_detectors",
+          "orb"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "bf matcher ratio test",
+        "expected": "matching",
+        "top3": [
+          "matching",
+          "shape",
+          "feature_detectors"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "outliers in matches findHomography",
+        "expected": "ransac",
+        "top3": [
+          "ransac",
+          "matching",
+          "template"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "ORB features",
+        "expected": "orb",
+        "top3": [
+          "orb",
+          "feature_detectors",
+          "sift"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "stitch two photos panorama",
+        "expected": "panorama",
+        "top3": [
+          "panorama",
+          "matching",
+          "pyramids"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "haar wavelet denoising",
+        "expected": "wavelets",
+        "top3": [
+          "wavelets",
+          "anomaly",
+          "cascades"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "process every frame of a video",
+        "expected": "video",
+        "top3": [
+          "video",
+          "background",
+          "optical_flow"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "intersection over union accuracy",
+        "expected": "evaluation",
+        "top3": [
+          "evaluation",
+          "blend",
+          "orb"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "remove lens distortion",
+        "expected": "calibration",
+        "top3": [
+          "calibration",
+          "inpaint",
+          "median"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "fft low pass filter",
+        "expected": "fourier",
+        "top3": [
+          "fourier",
+          "median",
+          "gaussian"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "image pyramid pyrDown",
+        "expected": "pyramids",
+        "top3": [
+          "pyramids",
+          "template",
+          "optical_flow"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "find a small logo inside a big image",
+        "expected": "template",
+        "top3": [
+          "resize",
+          "template",
+          "distance"
+        ],
+        "rank": 2
+      },
+      {
+        "query": "harris corner detection",
+        "expected": "corners",
+        "top3": [
+          "corners",
+          "perspective",
+          "segmentation"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "akaze brisk fast detector",
+        "expected": "feature_detectors",
+        "top3": [
+          "feature_detectors",
+          "noise",
+          "orb"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "flann matcher",
+        "expected": "flann",
+        "top3": [
+          "flann",
+          "matching"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "centroid of a contour moments",
+        "expected": "shape",
+        "top3": [
+          "shape",
+          "contours",
+          "advanced"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "split channels and merge",
+        "expected": "channels",
+        "top3": [
+          "channels",
+          "pixels",
+          "color_spaces"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "sharpen blurry image",
+        "expected": "sharpening",
+        "top3": [
+          "sharpening",
+          "kernel"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "add gaussian noise and measure psnr",
+        "expected": "noise",
+        "top3": [
+          "noise",
+          "sharpening",
+          "median"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "cut out foreground object grabcut",
+        "expected": "grabcut",
+        "top3": [
+          "grabcut",
+          "advanced",
+          "distance"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "remove scratches from old photo",
+        "expected": "inpaint",
+        "top3": [
+          "inpaint",
+          "optical_flow",
+          "wavelets"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "face detection haar cascade",
+        "expected": "cascades",
+        "top3": [
+          "cascades",
+          "wavelets",
+          "advanced"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "detect moving people static camera",
+        "expected": "background",
+        "top3": [
+          "background",
+          "calibration",
+          "screen"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "lucas kanade tracking points",
+        "expected": "optical_flow",
+        "top3": [
+          "optical_flow",
+          "meanshift",
+          "advanced"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "camshift color tracking",
+        "expected": "meanshift",
+        "top3": [
+          "meanshift",
+          "advanced",
+          "optical_flow"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "LAB color space perceptual",
+        "expected": "color_spaces",
+        "top3": [
+          "color_spaces",
+          "colors",
+          "pyramids"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "skeleton of a shape",
+        "expected": "skeleton",
+        "top3": [
+          "skeleton",
+          "pixels",
+          "contours"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "depth from two cameras disparity",
+        "expected": "stereo",
+        "top3": [
+          "stereo",
+          "calibration",
+          "pixels"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "run onnx model blobFromImage",
+        "expected": "dnn",
+        "top3": [
+          "dnn",
+          "noise",
+          "grabcut"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "colorbar and subplot figure",
+        "expected": "plotting",
+        "top3": [
+          "plotting",
+          "display"
+        ],
+        "rank": 1
+      }
+    ]
+  },
+  "heldout": {
+    "cases": 20,
+    "top1": 10,
+    "top3": 15,
+    "results": [
+      {
+        "query": "load a jpg file",
+        "expected": "io",
+        "top3": [
+          "io",
+          "dnn",
+          "cascades"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "picture too big reduce dimensions",
+        "expected": "resize",
+        "top3": [
+          "resize",
+          "box",
+          "laplacian"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "keep only green color area",
+        "expected": "mask",
+        "top3": [
+          "bilateral",
+          "mask",
+          "color_spaces"
+        ],
+        "rank": 2
+      },
+      {
+        "query": "noise removal without blurring edges",
+        "expected": "bilateral",
+        "top3": [
+          "hed",
+          "canny",
+          "fourier"
+        ],
+        "rank": null
+      },
+      {
+        "query": "threshold page photographed with shadow",
+        "expected": "adaptive",
+        "top3": [
+          "adaptive",
+          "background",
+          "threshold"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "blur the photo",
+        "expected": "gaussian",
+        "top3": [
+          "box",
+          "gaussian",
+          "median"
+        ],
+        "rank": 2
+      },
+      {
+        "query": "outline of edges in photo",
+        "expected": "canny",
+        "top3": [
+          "contours",
+          "canny",
+          "bilateral"
+        ],
+        "rank": 2
+      },
+      {
+        "query": "find road lane lines",
+        "expected": "hough",
+        "top3": [
+          "hough",
+          "stereo",
+          "canny"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "how many objects are in the binary image",
+        "expected": "components",
+        "top3": [
+          "contours",
+          "flann",
+          "shape"
+        ],
+        "rank": null
+      },
+      {
+        "query": "flatten a tilted document",
+        "expected": "perspective",
+        "top3": [
+          "numpy",
+          "perspective",
+          "adaptive"
+        ],
+        "rank": 2
+      },
+      {
+        "query": "brighten underexposed photo contrast",
+        "expected": "equalization",
+        "top3": [
+          "equalization",
+          "texture",
+          "gamma"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "put a rectangle around the face",
+        "expected": "drawing",
+        "top3": [
+          "drawing",
+          "cascades",
+          "grabcut"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "find the circle shaped coins",
+        "expected": "circles",
+        "top3": [
+          "circles",
+          "shape",
+          "contours"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "match keypoints between two images",
+        "expected": "matching",
+        "top3": [
+          "sift",
+          "orb",
+          "feature_detectors"
+        ],
+        "rank": null
+      },
+      {
+        "query": "segment overlapping cells",
+        "expected": "watershed",
+        "top3": [
+          "hog",
+          "panorama",
+          "segmentation"
+        ],
+        "rank": null
+      },
+      {
+        "query": "compare texture of surfaces",
+        "expected": "texture",
+        "top3": [
+          "texture",
+          "lbp",
+          "gabor"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "track an object across video frames",
+        "expected": "optical_flow",
+        "top3": [
+          "video",
+          "optical_flow",
+          "background"
+        ],
+        "rank": 2
+      },
+      {
+        "query": "smooth with median filter",
+        "expected": "median",
+        "top3": [
+          "median",
+          "bilateral",
+          "gaussian"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "second derivative edges",
+        "expected": "laplacian",
+        "top3": [
+          "laplacian",
+          "gradients",
+          "scharr"
+        ],
+        "rank": 1
+      },
+      {
+        "query": "image upside down mirror",
+        "expected": "channels",
+        "top3": [
+          "resize",
+          "perspective",
+          "coordinates"
+        ],
+        "rank": null
+      }
+    ]
+  },
+  "note": "tuned: queries used while adding aliases/stemming (optimistic). heldout: unseen paraphrases (realistic). Lexical BM25 misses paraphrases with no shared words; the planner stage should add a learned task classifier."
+}

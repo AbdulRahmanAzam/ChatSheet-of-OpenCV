@@ -1,0 +1,1122 @@
+﻿{
+    "id":  "lab_05_tasks_p007",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "Task 7 — Separating Touching Coins in an Automated Counting System A manufacturing system counts circular components placed on a tray. Unfortunately, several components are touching each other. A simple threshold produces one connected white region containing multiple touching objects . Counting connected regions directly therefore produces an incorrect count. Your Task Develop a marker-based watershed segmentation pipeline. implementation must follow the stages presented in the manual: Your Preprocessing 1. Thresholding 2. Noise removal 3. Sure-background generation 4. Distance transform 5. Sure-foreground generation 6. Unknown-region generation 7. Marker labeling 8. Watershed transformation 9. Boundary visualization 10. Required Output Display : Original + Threshold + Sure Background + Distance Transform + Sure Foreground + Unknown Region + Final Watershed Finally, visually inspect whether touching coins have been separated. Talha Shahid 71 Page",
+    "review_status":  "raw_ocr_unverified",
+    "page":  7,
+    "source_id":  "lab_05_tasks",
+    "lines":  [
+                  {
+                      "text":  "Task 7 — Separating Touching Coins in an Automated Counting System",
+                      "words":  [
+                                    {
+                                        "y":  176,
+                                        "height":  20,
+                                        "width":  61,
+                                        "text":  "Task",
+                                        "x":  168
+                                    },
+                                    {
+                                        "y":  177,
+                                        "height":  18,
+                                        "width":  13,
+                                        "text":  "7",
+                                        "x":  245
+                                    },
+                                    {
+                                        "y":  185,
+                                        "height":  4,
+                                        "width":  16,
+                                        "text":  "—",
+                                        "x":  274
+                                    },
+                                    {
+                                        "y":  176,
+                                        "height":  25,
+                                        "width":  149,
+                                        "text":  "Separating",
+                                        "x":  305
+                                    },
+                                    {
+                                        "y":  176,
+                                        "height":  25,
+                                        "width":  121,
+                                        "text":  "Touching",
+                                        "x":  470
+                                    },
+                                    {
+                                        "y":  176,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "Coins",
+                                        "x":  606
+                                    },
+                                    {
+                                        "y":  175,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "in",
+                                        "x":  699
+                                    },
+                                    {
+                                        "y":  181,
+                                        "height":  15,
+                                        "width":  28,
+                                        "text":  "an",
+                                        "x":  743
+                                    },
+                                    {
+                                        "y":  176,
+                                        "height":  20,
+                                        "width":  135,
+                                        "text":  "Automated",
+                                        "x":  787
+                                    },
+                                    {
+                                        "y":  176,
+                                        "height":  25,
+                                        "width":  121,
+                                        "text":  "Counting",
+                                        "x":  938
+                                    },
+                                    {
+                                        "y":  177,
+                                        "height":  23,
+                                        "width":  90,
+                                        "text":  "System",
+                                        "x":  1075
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "A manufacturing system counts circular components placed on a tray.",
+                      "words":  [
+                                    {
+                                        "y":  233,
+                                        "height":  19,
+                                        "width":  14,
+                                        "text":  "A",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  232,
+                                        "height":  25,
+                                        "width":  196,
+                                        "text":  "manufacturing",
+                                        "x":  201
+                                    },
+                                    {
+                                        "y":  233,
+                                        "height":  24,
+                                        "width":  88,
+                                        "text":  "system",
+                                        "x":  416
+                                    },
+                                    {
+                                        "y":  233,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "counts",
+                                        "x":  523
+                                    },
+                                    {
+                                        "y":  232,
+                                        "height":  21,
+                                        "width":  119,
+                                        "text":  "circular",
+                                        "x":  632
+                                    },
+                                    {
+                                        "y":  233,
+                                        "height":  24,
+                                        "width":  148,
+                                        "text":  "components",
+                                        "x":  770
+                                    },
+                                    {
+                                        "y":  233,
+                                        "height":  24,
+                                        "width":  88,
+                                        "text":  "placed",
+                                        "x":  938
+                                    },
+                                    {
+                                        "y":  238,
+                                        "height":  15,
+                                        "width":  28,
+                                        "text":  "on",
+                                        "x":  1046
+                                    },
+                                    {
+                                        "y":  238,
+                                        "height":  15,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  1094
+                                    },
+                                    {
+                                        "y":  233,
+                                        "height":  24,
+                                        "width":  70,
+                                        "text":  "tray.",
+                                        "x":  1126
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Unfortunately, several components are touching each other.",
+                      "words":  [
+                                    {
+                                        "y":  271,
+                                        "height":  24,
+                                        "width":  205,
+                                        "text":  "Unfortunately,",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  271,
+                                        "height":  20,
+                                        "width":  101,
+                                        "text":  "several",
+                                        "x":  397
+                                    },
+                                    {
+                                        "y":  272,
+                                        "height":  23,
+                                        "width":  148,
+                                        "text":  "components",
+                                        "x":  517
+                                    },
+                                    {
+                                        "y":  276,
+                                        "height":  15,
+                                        "width":  43,
+                                        "text":  "are",
+                                        "x":  683
+                                    },
+                                    {
+                                        "y":  270,
+                                        "height":  26,
+                                        "width":  120,
+                                        "text":  "touching",
+                                        "x":  743
+                                    },
+                                    {
+                                        "y":  271,
+                                        "height":  20,
+                                        "width":  56,
+                                        "text":  "each",
+                                        "x":  880
+                                    },
+                                    {
+                                        "y":  271,
+                                        "height":  20,
+                                        "width":  85,
+                                        "text":  "other.",
+                                        "x":  954
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "A simple threshold produces one connected white region containing",
+                      "words":  [
+                                    {
+                                        "y":  327,
+                                        "height":  19,
+                                        "width":  14,
+                                        "text":  "A",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  326,
+                                        "height":  25,
+                                        "width":  88,
+                                        "text":  "simple",
+                                        "x":  206
+                                    },
+                                    {
+                                        "y":  327,
+                                        "height":  20,
+                                        "width":  134,
+                                        "text":  "threshold",
+                                        "x":  317
+                                    },
+                                    {
+                                        "y":  327,
+                                        "height":  24,
+                                        "width":  118,
+                                        "text":  "produces",
+                                        "x":  475
+                                    },
+                                    {
+                                        "y":  332,
+                                        "height":  15,
+                                        "width":  44,
+                                        "text":  "one",
+                                        "x":  617
+                                    },
+                                    {
+                                        "y":  327,
+                                        "height":  20,
+                                        "width":  133,
+                                        "text":  "connected",
+                                        "x":  685
+                                    },
+                                    {
+                                        "y":  326,
+                                        "height":  21,
+                                        "width":  73,
+                                        "text":  "white",
+                                        "x":  842
+                                    },
+                                    {
+                                        "y":  326,
+                                        "height":  26,
+                                        "width":  88,
+                                        "text":  "region",
+                                        "x":  939
+                                    },
+                                    {
+                                        "y":  326,
+                                        "height":  26,
+                                        "width":  149,
+                                        "text":  "containing",
+                                        "x":  1052
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "multiple touching objects .",
+                      "words":  [
+                                    {
+                                        "y":  363,
+                                        "height":  25,
+                                        "width":  119,
+                                        "text":  "multiple",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  363,
+                                        "height":  26,
+                                        "width":  120,
+                                        "text":  "touching",
+                                        "x":  321
+                                    },
+                                    {
+                                        "y":  363,
+                                        "height":  25,
+                                        "width":  104,
+                                        "text":  "objects",
+                                        "x":  472
+                                    },
+                                    {
+                                        "y":  379,
+                                        "height":  4,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  583
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Counting connected regions directly",
+                      "words":  [
+                                    {
+                                        "y":  363,
+                                        "height":  26,
+                                        "width":  120,
+                                        "text":  "Counting",
+                                        "x":  625
+                                    },
+                                    {
+                                        "y":  364,
+                                        "height":  20,
+                                        "width":  131,
+                                        "text":  "connected",
+                                        "x":  778
+                                    },
+                                    {
+                                        "y":  363,
+                                        "height":  26,
+                                        "width":  103,
+                                        "text":  "regions",
+                                        "x":  944
+                                    },
+                                    {
+                                        "y":  363,
+                                        "height":  25,
+                                        "width":  119,
+                                        "text":  "directly",
+                                        "x":  1081
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "therefore produces an incorrect count.",
+                      "words":  [
+                                    {
+                                        "y":  402,
+                                        "height":  20,
+                                        "width":  134,
+                                        "text":  "therefore",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  402,
+                                        "height":  24,
+                                        "width":  118,
+                                        "text":  "produces",
+                                        "x":  321
+                                    },
+                                    {
+                                        "y":  407,
+                                        "height":  15,
+                                        "width":  28,
+                                        "text":  "an",
+                                        "x":  455
+                                    },
+                                    {
+                                        "y":  401,
+                                        "height":  21,
+                                        "width":  133,
+                                        "text":  "incorrect",
+                                        "x":  502
+                                    },
+                                    {
+                                        "y":  403,
+                                        "height":  19,
+                                        "width":  84,
+                                        "text":  "count.",
+                                        "x":  653
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Your Task",
+                      "words":  [
+                                    {
+                                        "y":  458,
+                                        "height":  20,
+                                        "width":  60,
+                                        "text":  "Your",
+                                        "x":  168
+                                    },
+                                    {
+                                        "y":  458,
+                                        "height":  20,
+                                        "width":  60,
+                                        "text":  "Task",
+                                        "x":  244
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Develop a marker-based watershed segmentation pipeline.",
+                      "words":  [
+                                    {
+                                        "y":  514,
+                                        "height":  25,
+                                        "width":  103,
+                                        "text":  "Develop",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  520,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  290
+                                    },
+                                    {
+                                        "y":  514,
+                                        "height":  20,
+                                        "width":  180,
+                                        "text":  "marker-based",
+                                        "x":  319
+                                    },
+                                    {
+                                        "y":  514,
+                                        "height":  20,
+                                        "width":  135,
+                                        "text":  "watershed",
+                                        "x":  515
+                                    },
+                                    {
+                                        "y":  514,
+                                        "height":  25,
+                                        "width":  180,
+                                        "text":  "segmentation",
+                                        "x":  667
+                                    },
+                                    {
+                                        "y":  514,
+                                        "height":  25,
+                                        "width":  130,
+                                        "text":  "pipeline.",
+                                        "x":  864
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "implementation must follow the stages presented in the manual:",
+                      "words":  [
+                                    {
+                                        "y":  571,
+                                        "height":  25,
+                                        "width":  208,
+                                        "text":  "implementation",
+                                        "x":  246
+                                    },
+                                    {
+                                        "y":  572,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "must",
+                                        "x":  470
+                                    },
+                                    {
+                                        "y":  571,
+                                        "height":  20,
+                                        "width":  90,
+                                        "text":  "follow",
+                                        "x":  546
+                                    },
+                                    {
+                                        "y":  571,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  652
+                                    },
+                                    {
+                                        "y":  572,
+                                        "height":  24,
+                                        "width":  88,
+                                        "text":  "stages",
+                                        "x":  713
+                                    },
+                                    {
+                                        "y":  571,
+                                        "height":  25,
+                                        "width":  131,
+                                        "text":  "presented",
+                                        "x":  820
+                                    },
+                                    {
+                                        "y":  571,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "in",
+                                        "x":  970
+                                    },
+                                    {
+                                        "y":  571,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  1014
+                                    },
+                                    {
+                                        "y":  571,
+                                        "height":  20,
+                                        "width":  100,
+                                        "text":  "manual:",
+                                        "x":  1075
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Your",
+                      "words":  [
+                                    {
+                                        "y":  572,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "Your",
+                                        "x":  169
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Preprocessing",
+                      "words":  [
+                                    {
+                                        "y":  627,
+                                        "height":  25,
+                                        "width":  195,
+                                        "text":  "Preprocessing",
+                                        "x":  252
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1.",
+                      "words":  [
+                                    {
+                                        "y":  628,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "1.",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Thresholding",
+                      "words":  [
+                                    {
+                                        "y":  683,
+                                        "height":  24,
+                                        "width":  181,
+                                        "text":  "Thresholding",
+                                        "x":  251
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2.",
+                      "words":  [
+                                    {
+                                        "y":  684,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "2.",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Noise removal",
+                      "words":  [
+                                    {
+                                        "y":  739,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "Noise",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  739,
+                                        "height":  20,
+                                        "width":  103,
+                                        "text":  "removal",
+                                        "x":  343
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3.",
+                      "words":  [
+                                    {
+                                        "y":  740,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "3.",
+                                        "x":  210
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Sure-background generation",
+                      "words":  [
+                                    {
+                                        "y":  795,
+                                        "height":  25,
+                                        "width":  222,
+                                        "text":  "Sure-background",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  795,
+                                        "height":  25,
+                                        "width":  148,
+                                        "text":  "generation",
+                                        "x":  493
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4.",
+                      "words":  [
+                                    {
+                                        "y":  796,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "4.",
+                                        "x":  210
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Distance transform",
+                      "words":  [
+                                    {
+                                        "y":  851,
+                                        "height":  21,
+                                        "width":  118,
+                                        "text":  "Distance",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  852,
+                                        "height":  20,
+                                        "width":  134,
+                                        "text":  "transform",
+                                        "x":  387
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "5.",
+                      "words":  [
+                                    {
+                                        "y":  853,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "5.",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Sure-foreground generation",
+                      "words":  [
+                                    {
+                                        "y":  908,
+                                        "height":  25,
+                                        "width":  222,
+                                        "text":  "Sure-foreground",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  908,
+                                        "height":  25,
+                                        "width":  148,
+                                        "text":  "generation",
+                                        "x":  493
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "6.",
+                      "words":  [
+                                    {
+                                        "y":  909,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "6.",
+                                        "x":  210
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Unknown-region generation",
+                      "words":  [
+                                    {
+                                        "y":  965,
+                                        "height":  25,
+                                        "width":  208,
+                                        "text":  "Unknown-region",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  964,
+                                        "height":  26,
+                                        "width":  148,
+                                        "text":  "generation",
+                                        "x":  478
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "7.",
+                      "words":  [
+                                    {
+                                        "y":  966,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "7.",
+                                        "x":  210
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Marker labeling",
+                      "words":  [
+                                    {
+                                        "y":  1021,
+                                        "height":  20,
+                                        "width":  89,
+                                        "text":  "Marker",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1021,
+                                        "height":  25,
+                                        "width":  118,
+                                        "text":  "labeling",
+                                        "x":  358
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "8.",
+                      "words":  [
+                                    {
+                                        "y":  1022,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "8.",
+                                        "x":  210
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Watershed transformation",
+                      "words":  [
+                                    {
+                                        "y":  1077,
+                                        "height":  20,
+                                        "width":  134,
+                                        "text":  "Watershed",
+                                        "x":  251
+                                    },
+                                    {
+                                        "y":  1077,
+                                        "height":  20,
+                                        "width":  209,
+                                        "text":  "transformation",
+                                        "x":  402
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "9.",
+                      "words":  [
+                                    {
+                                        "y":  1078,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "9.",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Boundary visualization",
+                      "words":  [
+                                    {
+                                        "y":  1133,
+                                        "height":  25,
+                                        "width":  118,
+                                        "text":  "Boundary",
+                                        "x":  335
+                                    },
+                                    {
+                                        "y":  1133,
+                                        "height":  20,
+                                        "width":  194,
+                                        "text":  "visualization",
+                                        "x":  469
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "10.",
+                      "words":  [
+                                    {
+                                        "y":  1134,
+                                        "height":  19,
+                                        "width":  40,
+                                        "text":  "10.",
+                                        "x":  210
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Required Output",
+                      "words":  [
+                                    {
+                                        "y":  1189,
+                                        "height":  24,
+                                        "width":  118,
+                                        "text":  "Required",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1190,
+                                        "height":  24,
+                                        "width":  90,
+                                        "text":  "Output",
+                                        "x":  304
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Display :",
+                      "words":  [
+                                    {
+                                        "y":  1245,
+                                        "height":  25,
+                                        "width":  103,
+                                        "text":  "Display",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1251,
+                                        "height":  14,
+                                        "width":  5,
+                                        "text":  ":",
+                                        "x":  279
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Original + Threshold + Sure Background + Distance Transform + Sure",
+                      "words":  [
+                                    {
+                                        "y":  1302,
+                                        "height":  25,
+                                        "width":  119,
+                                        "text":  "Original",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1306,
+                                        "height":  13,
+                                        "width":  15,
+                                        "text":  "+",
+                                        "x":  308
+                                    },
+                                    {
+                                        "y":  1302,
+                                        "height":  20,
+                                        "width":  134,
+                                        "text":  "Threshold",
+                                        "x":  342
+                                    },
+                                    {
+                                        "y":  1306,
+                                        "height":  13,
+                                        "width":  16,
+                                        "text":  "+",
+                                        "x":  495
+                                    },
+                                    {
+                                        "y":  1303,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "Sure",
+                                        "x":  530
+                                    },
+                                    {
+                                        "y":  1302,
+                                        "height":  25,
+                                        "width":  149,
+                                        "text":  "Background",
+                                        "x":  610
+                                    },
+                                    {
+                                        "y":  1306,
+                                        "height":  13,
+                                        "width":  15,
+                                        "text":  "+",
+                                        "x":  779
+                                    },
+                                    {
+                                        "y":  1302,
+                                        "height":  20,
+                                        "width":  119,
+                                        "text":  "Distance",
+                                        "x":  813
+                                    },
+                                    {
+                                        "y":  1302,
+                                        "height":  20,
+                                        "width":  136,
+                                        "text":  "Transform",
+                                        "x":  951
+                                    },
+                                    {
+                                        "y":  1306,
+                                        "height":  13,
+                                        "width":  16,
+                                        "text":  "+",
+                                        "x":  1106
+                                    },
+                                    {
+                                        "y":  1303,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "Sure",
+                                        "x":  1141
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Foreground + Unknown Region + Final Watershed",
+                      "words":  [
+                                    {
+                                        "y":  1340,
+                                        "height":  25,
+                                        "width":  149,
+                                        "text":  "Foreground",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1344,
+                                        "height":  13,
+                                        "width":  15,
+                                        "text":  "+",
+                                        "x":  335
+                                    },
+                                    {
+                                        "y":  1340,
+                                        "height":  20,
+                                        "width":  102,
+                                        "text":  "Unknown",
+                                        "x":  366
+                                    },
+                                    {
+                                        "y":  1340,
+                                        "height":  25,
+                                        "width":  89,
+                                        "text":  "Region",
+                                        "x":  486
+                                    },
+                                    {
+                                        "y":  1344,
+                                        "height":  13,
+                                        "width":  15,
+                                        "text":  "+",
+                                        "x":  591
+                                    },
+                                    {
+                                        "y":  1340,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "Final",
+                                        "x":  622
+                                    },
+                                    {
+                                        "y":  1340,
+                                        "height":  20,
+                                        "width":  135,
+                                        "text":  "Watershed",
+                                        "x":  712
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Finally, visually inspect whether touching coins have been separated.",
+                      "words":  [
+                                    {
+                                        "y":  1396,
+                                        "height":  24,
+                                        "width":  114,
+                                        "text":  "Finally,",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1396,
+                                        "height":  24,
+                                        "width":  119,
+                                        "text":  "visually",
+                                        "x":  304
+                                    },
+                                    {
+                                        "y":  1396,
+                                        "height":  24,
+                                        "width":  102,
+                                        "text":  "inspect",
+                                        "x":  440
+                                    },
+                                    {
+                                        "y":  1396,
+                                        "height":  19,
+                                        "width":  106,
+                                        "text":  "whether",
+                                        "x":  557
+                                    },
+                                    {
+                                        "y":  1396,
+                                        "height":  24,
+                                        "width":  120,
+                                        "text":  "touching",
+                                        "x":  678
+                                    },
+                                    {
+                                        "y":  1396,
+                                        "height":  19,
+                                        "width":  73,
+                                        "text":  "coins",
+                                        "x":  814
+                                    },
+                                    {
+                                        "y":  1396,
+                                        "height":  19,
+                                        "width":  57,
+                                        "text":  "have",
+                                        "x":  904
+                                    },
+                                    {
+                                        "y":  1396,
+                                        "height":  19,
+                                        "width":  57,
+                                        "text":  "been",
+                                        "x":  977
+                                    },
+                                    {
+                                        "y":  1396,
+                                        "height":  24,
+                                        "width":  144,
+                                        "text":  "separated.",
+                                        "x":  1052
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1821,
+                                        "height":  21,
+                                        "width":  75,
+                                        "text":  "Talha",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1820,
+                                        "height":  23,
+                                        "width":  95,
+                                        "text":  "Shahid",
+                                        "x":  255
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "71",
+                      "words":  [
+                                    {
+                                        "y":  1821,
+                                        "height":  27,
+                                        "width":  28,
+                                        "text":  "71",
+                                        "x":  1064
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Page",
+                      "words":  [
+                                    {
+                                        "y":  1822,
+                                        "height":  27,
+                                        "width":  86,
+                                        "text":  "Page",
+                                        "x":  1104
+                                    }
+                                ]
+                  }
+              ]
+}

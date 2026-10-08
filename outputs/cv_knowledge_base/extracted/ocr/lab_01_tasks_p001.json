@@ -1,0 +1,1835 @@
+﻿{
+    "id":  "lab_01_tasks_p001",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "Lab 01 Tasks Introductory Computer Vision Lab (Extended: 2 Hours) Part 1: Environment Setup \u0026 Validation Before beginning the tasks, ensure your notebook environment is correctly configured to handle image processing and plotting. 1.1 Installation: Use Jupyter magic commands to install the required libraries by running %pip install opencv-python and %pip install matplotlib in your first cell. 1.2 Import \u0026 Validate: Import cv2 and matplotlib. pyptot as plt . Wii te a quick validation script to ensure they are working properly before proceeding. Part 2: Python Data Structures \u0026 Logic Task 1: Object-Oriented Grocery Manager Create a GroceryManager class instead of a simple script. • Implement methods to add_item(item, quantity , remove_item(item), and price) , Add a method that computes the total cost of all items in the list. Implement basic error handling (e.g. , removal of an item that doesn\u0027t exist) . Task 2: Advanced Student Record System Build a nested dictionary-based record system. preventing the • Each student ID should map to a dictionary containing their and a list of \u0027Grades\u0027 . \u0027Major\u0027 , \u0027 Name\u0027 , Write a function that accepts this nested dictionary and returns the name of the student with the highest average grade . Write a search function that takes a major as input and prints all students enrolled in that major. Part 3: Core Computer Vision \u0026 Matplotlib Talha Shahid II P age",
+    "review_status":  "raw_ocr_unverified",
+    "page":  1,
+    "source_id":  "lab_01_tasks",
+    "lines":  [
+                  {
+                      "text":  "Lab 01 Tasks",
+                      "words":  [
+                                    {
+                                        "y":  177,
+                                        "height":  36,
+                                        "width":  82,
+                                        "text":  "Lab",
+                                        "x":  537
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  34,
+                                        "width":  52,
+                                        "text":  "01",
+                                        "x":  637
+                                    },
+                                    {
+                                        "y":  177,
+                                        "height":  36,
+                                        "width":  128,
+                                        "text":  "Tasks",
+                                        "x":  707
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Introductory Computer Vision Lab (Extended: 2 Hours)",
+                      "words":  [
+                                    {
+                                        "y":  259,
+                                        "height":  27,
+                                        "width":  197,
+                                        "text":  "Introductory",
+                                        "x":  167
+                                    },
+                                    {
+                                        "y":  260,
+                                        "height":  26,
+                                        "width":  131,
+                                        "text":  "Computer",
+                                        "x":  382
+                                    },
+                                    {
+                                        "y":  258,
+                                        "height":  22,
+                                        "width":  99,
+                                        "text":  "Vision",
+                                        "x":  530
+                                    },
+                                    {
+                                        "y":  259,
+                                        "height":  21,
+                                        "width":  45,
+                                        "text":  "Lab",
+                                        "x":  649
+                                    },
+                                    {
+                                        "y":  258,
+                                        "height":  26,
+                                        "width":  156,
+                                        "text":  "(Extended:",
+                                        "x":  716
+                                    },
+                                    {
+                                        "y":  259,
+                                        "height":  21,
+                                        "width":  15,
+                                        "text":  "2",
+                                        "x":  895
+                                    },
+                                    {
+                                        "y":  258,
+                                        "height":  26,
+                                        "width":  93,
+                                        "text":  "Hours)",
+                                        "x":  929
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Part 1: Environment Setup \u0026 Validation",
+                      "words":  [
+                                    {
+                                        "y":  320,
+                                        "height":  20,
+                                        "width":  63,
+                                        "text":  "Part",
+                                        "x":  167
+                                    },
+                                    {
+                                        "y":  320,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "1:",
+                                        "x":  249
+                                    },
+                                    {
+                                        "y":  318,
+                                        "height":  22,
+                                        "width":  179,
+                                        "text":  "Environment",
+                                        "x":  300
+                                    },
+                                    {
+                                        "y":  319,
+                                        "height":  26,
+                                        "width":  81,
+                                        "text":  "Setup",
+                                        "x":  498
+                                    },
+                                    {
+                                        "y":  319,
+                                        "height":  21,
+                                        "width":  16,
+                                        "text":  "\u0026",
+                                        "x":  597
+                                    },
+                                    {
+                                        "y":  318,
+                                        "height":  22,
+                                        "width":  163,
+                                        "text":  "Validation",
+                                        "x":  630
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Before beginning the tasks, ensure your notebook environment is",
+                      "words":  [
+                                    {
+                                        "y":  377,
+                                        "height":  20,
+                                        "width":  89,
+                                        "text":  "Before",
+                                        "x":  167
+                                    },
+                                    {
+                                        "y":  377,
+                                        "height":  25,
+                                        "width":  134,
+                                        "text":  "beginning",
+                                        "x":  284
+                                    },
+                                    {
+                                        "y":  377,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  445
+                                    },
+                                    {
+                                        "y":  377,
+                                        "height":  24,
+                                        "width":  85,
+                                        "text":  "tasks,",
+                                        "x":  516
+                                    },
+                                    {
+                                        "y":  383,
+                                        "height":  14,
+                                        "width":  88,
+                                        "text":  "ensure",
+                                        "x":  633
+                                    },
+                                    {
+                                        "y":  383,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "your",
+                                        "x":  749
+                                    },
+                                    {
+                                        "y":  377,
+                                        "height":  20,
+                                        "width":  119,
+                                        "text":  "notebook",
+                                        "x":  836
+                                    },
+                                    {
+                                        "y":  377,
+                                        "height":  20,
+                                        "width":  165,
+                                        "text":  "environment",
+                                        "x":  982
+                                    },
+                                    {
+                                        "y":  377,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  1176
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "correctly configured to handle image processing and plotting.",
+                      "words":  [
+                                    {
+                                        "y":  416,
+                                        "height":  25,
+                                        "width":  134,
+                                        "text":  "correctly",
+                                        "x":  167
+                                    },
+                                    {
+                                        "y":  416,
+                                        "height":  25,
+                                        "width":  149,
+                                        "text":  "configured",
+                                        "x":  319
+                                    },
+                                    {
+                                        "y":  417,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  485
+                                    },
+                                    {
+                                        "y":  416,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "handle",
+                                        "x":  532
+                                    },
+                                    {
+                                        "y":  416,
+                                        "height":  25,
+                                        "width":  71,
+                                        "text":  "image",
+                                        "x":  639
+                                    },
+                                    {
+                                        "y":  416,
+                                        "height":  25,
+                                        "width":  149,
+                                        "text":  "processing",
+                                        "x":  729
+                                    },
+                                    {
+                                        "y":  416,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  895
+                                    },
+                                    {
+                                        "y":  416,
+                                        "height":  25,
+                                        "width":  130,
+                                        "text":  "plotting.",
+                                        "x":  957
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1.1 Installation: Use Jupyter magic commands to install the",
+                      "words":  [
+                                    {
+                                        "y":  473,
+                                        "height":  20,
+                                        "width":  45,
+                                        "text":  "1.1",
+                                        "x":  249
+                                    },
+                                    {
+                                        "y":  472,
+                                        "height":  21,
+                                        "width":  192,
+                                        "text":  "Installation:",
+                                        "x":  318
+                                    },
+                                    {
+                                        "y":  473,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "Use",
+                                        "x":  538
+                                    },
+                                    {
+                                        "y":  473,
+                                        "height":  24,
+                                        "width":  103,
+                                        "text":  "Jupyter",
+                                        "x":  607
+                                    },
+                                    {
+                                        "y":  472,
+                                        "height":  26,
+                                        "width":  74,
+                                        "text":  "magic",
+                                        "x":  734
+                                    },
+                                    {
+                                        "y":  473,
+                                        "height":  20,
+                                        "width":  119,
+                                        "text":  "commands",
+                                        "x":  833
+                                    },
+                                    {
+                                        "y":  473,
+                                        "height":  20,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  977
+                                    },
+                                    {
+                                        "y":  472,
+                                        "height":  21,
+                                        "width":  102,
+                                        "text":  "install",
+                                        "x":  1032
+                                    },
+                                    {
+                                        "y":  473,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  1159
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "required libraries by running %pip install opencv-python and %pip",
+                      "words":  [
+                                    {
+                                        "y":  510,
+                                        "height":  25,
+                                        "width":  118,
+                                        "text":  "required",
+                                        "x":  250
+                                    },
+                                    {
+                                        "y":  510,
+                                        "height":  21,
+                                        "width":  134,
+                                        "text":  "libraries",
+                                        "x":  388
+                                    },
+                                    {
+                                        "y":  511,
+                                        "height":  24,
+                                        "width":  27,
+                                        "text":  "by",
+                                        "x":  542
+                                    },
+                                    {
+                                        "y":  510,
+                                        "height":  26,
+                                        "width":  103,
+                                        "text":  "running",
+                                        "x":  588
+                                    },
+                                    {
+                                        "y":  512,
+                                        "height":  22,
+                                        "width":  54,
+                                        "text":  "%pip",
+                                        "x":  709
+                                    },
+                                    {
+                                        "y":  512,
+                                        "height":  18,
+                                        "width":  94,
+                                        "text":  "install",
+                                        "x":  781
+                                    },
+                                    {
+                                        "y":  513,
+                                        "height":  21,
+                                        "width":  178,
+                                        "text":  "opencv-python",
+                                        "x":  891
+                                    },
+                                    {
+                                        "y":  510,
+                                        "height":  21,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  1088
+                                    },
+                                    {
+                                        "y":  512,
+                                        "height":  22,
+                                        "width":  53,
+                                        "text":  "%pip",
+                                        "x":  1150
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "install matplotlib in your first cell.",
+                      "words":  [
+                                    {
+                                        "y":  550,
+                                        "height":  18,
+                                        "width":  95,
+                                        "text":  "install",
+                                        "x":  250
+                                    },
+                                    {
+                                        "y":  550,
+                                        "height":  22,
+                                        "width":  136,
+                                        "text":  "matplotlib",
+                                        "x":  360
+                                    },
+                                    {
+                                        "y":  548,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "in",
+                                        "x":  514
+                                    },
+                                    {
+                                        "y":  554,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "your",
+                                        "x":  559
+                                    },
+                                    {
+                                        "y":  548,
+                                        "height":  21,
+                                        "width":  72,
+                                        "text":  "first",
+                                        "x":  635
+                                    },
+                                    {
+                                        "y":  548,
+                                        "height":  21,
+                                        "width":  69,
+                                        "text":  "cell.",
+                                        "x":  726
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1.2 Import \u0026 Validate:",
+                      "words":  [
+                                    {
+                                        "y":  607,
+                                        "height":  19,
+                                        "width":  45,
+                                        "text":  "1.2",
+                                        "x":  249
+                                    },
+                                    {
+                                        "y":  607,
+                                        "height":  24,
+                                        "width":  89,
+                                        "text":  "Import",
+                                        "x":  316
+                                    },
+                                    {
+                                        "y":  607,
+                                        "height":  19,
+                                        "width":  15,
+                                        "text":  "\u0026",
+                                        "x":  426
+                                    },
+                                    {
+                                        "y":  606,
+                                        "height":  20,
+                                        "width":  132,
+                                        "text":  "Validate:",
+                                        "x":  462
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Import cv2 and",
+                      "words":  [
+                                    {
+                                        "y":  608,
+                                        "height":  21,
+                                        "width":  79,
+                                        "text":  "Import",
+                                        "x":  621
+                                    },
+                                    {
+                                        "y":  608,
+                                        "height":  18,
+                                        "width":  40,
+                                        "text":  "cv2",
+                                        "x":  720
+                                    },
+                                    {
+                                        "y":  606,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  783
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "matplotlib. pyptot as plt .",
+                      "words":  [
+                                    {
+                                        "y":  607,
+                                        "height":  22,
+                                        "width":  147,
+                                        "text":  "matplotlib.",
+                                        "x":  848
+                                    },
+                                    {
+                                        "y":  608,
+                                        "height":  21,
+                                        "width":  80,
+                                        "text":  "pyptot",
+                                        "x":  1001
+                                    },
+                                    {
+                                        "y":  612,
+                                        "height":  14,
+                                        "width":  26,
+                                        "text":  "as",
+                                        "x":  1102
+                                    },
+                                    {
+                                        "y":  608,
+                                        "height":  21,
+                                        "width":  38,
+                                        "text":  "plt",
+                                        "x":  1149
+                                    },
+                                    {
+                                        "y":  621,
+                                        "height":  5,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  1194
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Wii te a quick validation script to ensure they are working",
+                      "words":  [
+                                    {
+                                        "y":  643,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "Wii",
+                                        "x":  249
+                                    },
+                                    {
+                                        "y":  644,
+                                        "height":  19,
+                                        "width":  28,
+                                        "text":  "te",
+                                        "x":  295
+                                    },
+                                    {
+                                        "y":  648,
+                                        "height":  15,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  349
+                                    },
+                                    {
+                                        "y":  643,
+                                        "height":  25,
+                                        "width":  74,
+                                        "text":  "quick",
+                                        "x":  388
+                                    },
+                                    {
+                                        "y":  643,
+                                        "height":  20,
+                                        "width":  149,
+                                        "text":  "validation",
+                                        "x":  487
+                                    },
+                                    {
+                                        "y":  643,
+                                        "height":  25,
+                                        "width":  87,
+                                        "text":  "script",
+                                        "x":  663
+                                    },
+                                    {
+                                        "y":  644,
+                                        "height":  19,
+                                        "width":  28,
+                                        "text":  "to",
+                                        "x":  776
+                                    },
+                                    {
+                                        "y":  648,
+                                        "height":  15,
+                                        "width":  89,
+                                        "text":  "ensure",
+                                        "x":  830
+                                    },
+                                    {
+                                        "y":  643,
+                                        "height":  25,
+                                        "width":  60,
+                                        "text":  "they",
+                                        "x":  944
+                                    },
+                                    {
+                                        "y":  648,
+                                        "height":  15,
+                                        "width":  44,
+                                        "text":  "are",
+                                        "x":  1029
+                                    },
+                                    {
+                                        "y":  643,
+                                        "height":  25,
+                                        "width":  105,
+                                        "text":  "working",
+                                        "x":  1098
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "properly before proceeding.",
+                      "words":  [
+                                    {
+                                        "y":  681,
+                                        "height":  25,
+                                        "width":  119,
+                                        "text":  "properly",
+                                        "x":  250
+                                    },
+                                    {
+                                        "y":  681,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "before",
+                                        "x":  387
+                                    },
+                                    {
+                                        "y":  681,
+                                        "height":  25,
+                                        "width":  160,
+                                        "text":  "proceeding.",
+                                        "x":  493
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Part 2: Python Data Structures \u0026 Logic",
+                      "words":  [
+                                    {
+                                        "y":  740,
+                                        "height":  20,
+                                        "width":  63,
+                                        "text":  "Part",
+                                        "x":  167
+                                    },
+                                    {
+                                        "y":  739,
+                                        "height":  21,
+                                        "width":  28,
+                                        "text":  "2:",
+                                        "x":  249
+                                    },
+                                    {
+                                        "y":  738,
+                                        "height":  27,
+                                        "width":  96,
+                                        "text":  "Python",
+                                        "x":  300
+                                    },
+                                    {
+                                        "y":  740,
+                                        "height":  20,
+                                        "width":  64,
+                                        "text":  "Data",
+                                        "x":  416
+                                    },
+                                    {
+                                        "y":  739,
+                                        "height":  21,
+                                        "width":  163,
+                                        "text":  "Structures",
+                                        "x":  498
+                                    },
+                                    {
+                                        "y":  739,
+                                        "height":  21,
+                                        "width":  16,
+                                        "text":  "\u0026",
+                                        "x":  679
+                                    },
+                                    {
+                                        "y":  738,
+                                        "height":  28,
+                                        "width":  79,
+                                        "text":  "Logic",
+                                        "x":  714
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Task 1: Object-Oriented Grocery Manager",
+                      "words":  [
+                                    {
+                                        "y":  798,
+                                        "height":  20,
+                                        "width":  60,
+                                        "text":  "Task",
+                                        "x":  249
+                                    },
+                                    {
+                                        "y":  799,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "1:",
+                                        "x":  325
+                                    },
+                                    {
+                                        "y":  798,
+                                        "height":  25,
+                                        "width":  227,
+                                        "text":  "Object-Oriented",
+                                        "x":  370
+                                    },
+                                    {
+                                        "y":  799,
+                                        "height":  24,
+                                        "width":  104,
+                                        "text":  "Grocery",
+                                        "x":  614
+                                    },
+                                    {
+                                        "y":  799,
+                                        "height":  24,
+                                        "width":  106,
+                                        "text":  "Manager",
+                                        "x":  734
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Create a GroceryManager class instead of a simple script.",
+                      "words":  [
+                                    {
+                                        "y":  856,
+                                        "height":  19,
+                                        "width":  89,
+                                        "text":  "Create",
+                                        "x":  167
+                                    },
+                                    {
+                                        "y":  860,
+                                        "height":  15,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  273
+                                    },
+                                    {
+                                        "y":  857,
+                                        "height":  21,
+                                        "width":  192,
+                                        "text":  "GroceryManager",
+                                        "x":  303
+                                    },
+                                    {
+                                        "y":  855,
+                                        "height":  20,
+                                        "width":  72,
+                                        "text":  "class",
+                                        "x":  513
+                                    },
+                                    {
+                                        "y":  854,
+                                        "height":  21,
+                                        "width":  101,
+                                        "text":  "instead",
+                                        "x":  604
+                                    },
+                                    {
+                                        "y":  855,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  724
+                                    },
+                                    {
+                                        "y":  860,
+                                        "height":  15,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  770
+                                    },
+                                    {
+                                        "y":  854,
+                                        "height":  25,
+                                        "width":  89,
+                                        "text":  "simple",
+                                        "x":  800
+                                    },
+                                    {
+                                        "y":  854,
+                                        "height":  25,
+                                        "width":  99,
+                                        "text":  "script.",
+                                        "x":  907
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "•",
+                      "words":  [
+                                    {
+                                        "y":  919,
+                                        "height":  9,
+                                        "width":  10,
+                                        "text":  "•",
+                                        "x":  291
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Implement methods to add_item(item,",
+                      "words":  [
+                                    {
+                                        "y":  911,
+                                        "height":  25,
+                                        "width":  134,
+                                        "text":  "Implement",
+                                        "x":  333
+                                    },
+                                    {
+                                        "y":  911,
+                                        "height":  21,
+                                        "width":  105,
+                                        "text":  "methods",
+                                        "x":  506
+                                    },
+                                    {
+                                        "y":  912,
+                                        "height":  20,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  650
+                                    },
+                                    {
+                                        "y":  911,
+                                        "height":  24,
+                                        "width":  188,
+                                        "text":  "add_item(item,",
+                                        "x":  717
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "quantity ,",
+                      "words":  [
+                                    {
+                                        "y":  913,
+                                        "height":  22,
+                                        "width":  109,
+                                        "text":  "quantity",
+                                        "x":  947
+                                    },
+                                    {
+                                        "y":  927,
+                                        "height":  8,
+                                        "width":  6,
+                                        "text":  ",",
+                                        "x":  1060
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "remove_item(item), and",
+                      "words":  [
+                                    {
+                                        "y":  949,
+                                        "height":  23,
+                                        "width":  243,
+                                        "text":  "remove_item(item),",
+                                        "x":  333
+                                    },
+                                    {
+                                        "y":  949,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  598
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "price) ,",
+                      "words":  [
+                                    {
+                                        "y":  911,
+                                        "height":  24,
+                                        "width":  78,
+                                        "text":  "price)",
+                                        "x":  1107
+                                    },
+                                    {
+                                        "y":  927,
+                                        "height":  8,
+                                        "width":  5,
+                                        "text":  ",",
+                                        "x":  1194
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Add a method that computes the total cost",
+                      "words":  [
+                                    {
+                                        "y":  1005,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "Add",
+                                        "x":  332
+                                    },
+                                    {
+                                        "y":  1010,
+                                        "height":  15,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  393
+                                    },
+                                    {
+                                        "y":  1005,
+                                        "height":  20,
+                                        "width":  89,
+                                        "text":  "method",
+                                        "x":  423
+                                    },
+                                    {
+                                        "y":  1005,
+                                        "height":  20,
+                                        "width":  60,
+                                        "text":  "that",
+                                        "x":  778
+                                    },
+                                    {
+                                        "y":  1006,
+                                        "height":  24,
+                                        "width":  118,
+                                        "text":  "computes",
+                                        "x":  856
+                                    },
+                                    {
+                                        "y":  1005,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  991
+                                    },
+                                    {
+                                        "y":  1005,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "total",
+                                        "x":  1052
+                                    },
+                                    {
+                                        "y":  1006,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "cost",
+                                        "x":  1145
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "of all items in the list.",
+                      "words":  [
+                                    {
+                                        "y":  1043,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  333
+                                    },
+                                    {
+                                        "y":  1043,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "all",
+                                        "x":  378
+                                    },
+                                    {
+                                        "y":  1043,
+                                        "height":  20,
+                                        "width":  72,
+                                        "text":  "items",
+                                        "x":  440
+                                    },
+                                    {
+                                        "y":  1043,
+                                        "height":  20,
+                                        "width":  26,
+                                        "text":  "in",
+                                        "x":  531
+                                    },
+                                    {
+                                        "y":  1043,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  575
+                                    },
+                                    {
+                                        "y":  1043,
+                                        "height":  20,
+                                        "width":  68,
+                                        "text":  "list.",
+                                        "x":  637
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Implement basic error handling (e.g. ,",
+                      "words":  [
+                                    {
+                                        "y":  1100,
+                                        "height":  25,
+                                        "width":  134,
+                                        "text":  "Implement",
+                                        "x":  333
+                                    },
+                                    {
+                                        "y":  1100,
+                                        "height":  20,
+                                        "width":  72,
+                                        "text":  "basic",
+                                        "x":  499
+                                    },
+                                    {
+                                        "y":  1105,
+                                        "height":  15,
+                                        "width":  74,
+                                        "text":  "error",
+                                        "x":  603
+                                    },
+                                    {
+                                        "y":  1100,
+                                        "height":  25,
+                                        "width":  119,
+                                        "text":  "handling",
+                                        "x":  708
+                                    },
+                                    {
+                                        "y":  1099,
+                                        "height":  26,
+                                        "width":  67,
+                                        "text":  "(e.g.",
+                                        "x":  861
+                                    },
+                                    {
+                                        "y":  1115,
+                                        "height":  8,
+                                        "width":  5,
+                                        "text":  ",",
+                                        "x":  938
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "removal of an item that doesn\u0027t exist) .",
+                      "words":  [
+                                    {
+                                        "y":  1138,
+                                        "height":  21,
+                                        "width":  103,
+                                        "text":  "removal",
+                                        "x":  333
+                                    },
+                                    {
+                                        "y":  1138,
+                                        "height":  21,
+                                        "width":  29,
+                                        "text":  "of",
+                                        "x":  454
+                                    },
+                                    {
+                                        "y":  1144,
+                                        "height":  15,
+                                        "width":  28,
+                                        "text":  "an",
+                                        "x":  499
+                                    },
+                                    {
+                                        "y":  1138,
+                                        "height":  21,
+                                        "width":  58,
+                                        "text":  "item",
+                                        "x":  546
+                                    },
+                                    {
+                                        "y":  1138,
+                                        "height":  21,
+                                        "width":  58,
+                                        "text":  "that",
+                                        "x":  621
+                                    },
+                                    {
+                                        "y":  1138,
+                                        "height":  21,
+                                        "width":  104,
+                                        "text":  "doesn\u0027t",
+                                        "x":  696
+                                    },
+                                    {
+                                        "y":  1138,
+                                        "height":  24,
+                                        "width":  85,
+                                        "text":  "exist)",
+                                        "x":  818
+                                    },
+                                    {
+                                        "y":  1154,
+                                        "height":  5,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  913
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Task 2: Advanced Student Record System",
+                      "words":  [
+                                    {
+                                        "y":  1195,
+                                        "height":  20,
+                                        "width":  60,
+                                        "text":  "Task",
+                                        "x":  249
+                                    },
+                                    {
+                                        "y":  1196,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "2:",
+                                        "x":  325
+                                    },
+                                    {
+                                        "y":  1195,
+                                        "height":  20,
+                                        "width":  121,
+                                        "text":  "Advanced",
+                                        "x":  370
+                                    },
+                                    {
+                                        "y":  1195,
+                                        "height":  20,
+                                        "width":  105,
+                                        "text":  "Student",
+                                        "x":  507
+                                    },
+                                    {
+                                        "y":  1195,
+                                        "height":  20,
+                                        "width":  87,
+                                        "text":  "Record",
+                                        "x":  630
+                                    },
+                                    {
+                                        "y":  1196,
+                                        "height":  24,
+                                        "width":  90,
+                                        "text":  "System",
+                                        "x":  734
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Build a nested dictionary-based record system.",
+                      "words":  [
+                                    {
+                                        "y":  1252,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "Build",
+                                        "x":  167
+                                    },
+                                    {
+                                        "y":  1257,
+                                        "height":  15,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  258
+                                    },
+                                    {
+                                        "y":  1252,
+                                        "height":  20,
+                                        "width":  87,
+                                        "text":  "nested",
+                                        "x":  289
+                                    },
+                                    {
+                                        "y":  1252,
+                                        "height":  24,
+                                        "width":  241,
+                                        "text":  "dictionary-based",
+                                        "x":  394
+                                    },
+                                    {
+                                        "y":  1252,
+                                        "height":  20,
+                                        "width":  87,
+                                        "text":  "record",
+                                        "x":  653
+                                    },
+                                    {
+                                        "y":  1253,
+                                        "height":  23,
+                                        "width":  99,
+                                        "text":  "system.",
+                                        "x":  759
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "preventing the",
+                      "words":  [
+                                    {
+                                        "y":  1100,
+                                        "height":  25,
+                                        "width":  149,
+                                        "text":  "preventing",
+                                        "x":  979
+                                    },
+                                    {
+                                        "y":  1100,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  1159
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "•",
+                      "words":  [
+                                    {
+                                        "y":  1409,
+                                        "height":  10,
+                                        "width":  10,
+                                        "text":  "•",
+                                        "x":  291
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Each student ID should map to a dictionary containing their",
+                      "words":  [
+                                    {
+                                        "y":  1308,
+                                        "height":  20,
+                                        "width":  57,
+                                        "text":  "Each",
+                                        "x":  333
+                                    },
+                                    {
+                                        "y":  1308,
+                                        "height":  20,
+                                        "width":  103,
+                                        "text":  "student",
+                                        "x":  407
+                                    },
+                                    {
+                                        "y":  1310,
+                                        "height":  17,
+                                        "width":  25,
+                                        "text":  "ID",
+                                        "x":  526
+                                    },
+                                    {
+                                        "y":  1307,
+                                        "height":  21,
+                                        "width":  87,
+                                        "text":  "should",
+                                        "x":  567
+                                    },
+                                    {
+                                        "y":  1313,
+                                        "height":  19,
+                                        "width":  42,
+                                        "text":  "map",
+                                        "x":  670
+                                    },
+                                    {
+                                        "y":  1309,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  727
+                                    },
+                                    {
+                                        "y":  1313,
+                                        "height":  15,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  771
+                                    },
+                                    {
+                                        "y":  1307,
+                                        "height":  25,
+                                        "width":  150,
+                                        "text":  "dictionary",
+                                        "x":  799
+                                    },
+                                    {
+                                        "y":  1307,
+                                        "height":  26,
+                                        "width":  150,
+                                        "text":  "containing",
+                                        "x":  965
+                                    },
+                                    {
+                                        "y":  1307,
+                                        "height":  21,
+                                        "width":  75,
+                                        "text":  "their",
+                                        "x":  1129
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "and a list of \u0027Grades\u0027 .",
+                      "words":  [
+                                    {
+                                        "y":  1345,
+                                        "height":  21,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  573
+                                    },
+                                    {
+                                        "y":  1351,
+                                        "height":  15,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  634
+                                    },
+                                    {
+                                        "y":  1345,
+                                        "height":  21,
+                                        "width":  57,
+                                        "text":  "list",
+                                        "x":  664
+                                    },
+                                    {
+                                        "y":  1345,
+                                        "height":  21,
+                                        "width":  29,
+                                        "text":  "of",
+                                        "x":  739
+                                    },
+                                    {
+                                        "y":  1348,
+                                        "height":  17,
+                                        "width":  101,
+                                        "text":  "\u0027Grades\u0027",
+                                        "x":  788
+                                    },
+                                    {
+                                        "y":  1361,
+                                        "height":  5,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  900
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "\u0027Major\u0027 ,",
+                      "words":  [
+                                    {
+                                        "y":  1347,
+                                        "height":  22,
+                                        "width":  86,
+                                        "text":  "\u0027Major\u0027",
+                                        "x":  450
+                                    },
+                                    {
+                                        "y":  1361,
+                                        "height":  8,
+                                        "width":  5,
+                                        "text":  ",",
+                                        "x":  546
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "\u0027 Name\u0027 ,",
+                      "words":  [
+                                    {
+                                        "y":  1348,
+                                        "height":  7,
+                                        "width":  4,
+                                        "text":  "\u0027",
+                                        "x":  336
+                                    },
+                                    {
+                                        "y":  1348,
+                                        "height":  17,
+                                        "width":  62,
+                                        "text":  "Name\u0027",
+                                        "x":  347
+                                    },
+                                    {
+                                        "y":  1361,
+                                        "height":  8,
+                                        "width":  5,
+                                        "text":  ",",
+                                        "x":  419
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Write a function that accepts this nested dictionary and",
+                      "words":  [
+                                    {
+                                        "y":  1402,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "Write",
+                                        "x":  332
+                                    },
+                                    {
+                                        "y":  1408,
+                                        "height":  14,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  426
+                                    },
+                                    {
+                                        "y":  1402,
+                                        "height":  20,
+                                        "width":  118,
+                                        "text":  "function",
+                                        "x":  460
+                                    },
+                                    {
+                                        "y":  1402,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "that",
+                                        "x":  598
+                                    },
+                                    {
+                                        "y":  1403,
+                                        "height":  24,
+                                        "width":  103,
+                                        "text":  "accepts",
+                                        "x":  678
+                                    },
+                                    {
+                                        "y":  1402,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "this",
+                                        "x":  801
+                                    },
+                                    {
+                                        "y":  1402,
+                                        "height":  20,
+                                        "width":  87,
+                                        "text":  "nested",
+                                        "x":  881
+                                    },
+                                    {
+                                        "y":  1402,
+                                        "height":  25,
+                                        "width":  150,
+                                        "text":  "dictionary",
+                                        "x":  989
+                                    },
+                                    {
+                                        "y":  1402,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  1159
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "returns the name of the student with the highest average",
+                      "words":  [
+                                    {
+                                        "y":  1442,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "returns",
+                                        "x":  333
+                                    },
+                                    {
+                                        "y":  1441,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  456
+                                    },
+                                    {
+                                        "y":  1446,
+                                        "height":  15,
+                                        "width":  57,
+                                        "text":  "name",
+                                        "x":  521
+                                    },
+                                    {
+                                        "y":  1441,
+                                        "height":  20,
+                                        "width":  28,
+                                        "text":  "of",
+                                        "x":  598
+                                    },
+                                    {
+                                        "y":  1441,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "the",
+                                        "x":  646
+                                    },
+                                    {
+                                        "y":  1441,
+                                        "height":  20,
+                                        "width":  104,
+                                        "text":  "student",
+                                        "x":  709
+                                    },
+                                    {
+                                        "y":  1441,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "with",
+                                        "x":  832
+                                    },
+                                    {
+                                        "y":  1441,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  910
+                                    },
+                                    {
+                                        "y":  1441,
+                                        "height":  25,
+                                        "width":  103,
+                                        "text":  "highest",
+                                        "x":  975
+                                    },
+                                    {
+                                        "y":  1445,
+                                        "height":  21,
+                                        "width":  104,
+                                        "text":  "average",
+                                        "x":  1099
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "grade .",
+                      "words":  [
+                                    {
+                                        "y":  1479,
+                                        "height":  25,
+                                        "width":  73,
+                                        "text":  "grade",
+                                        "x":  333
+                                    },
+                                    {
+                                        "y":  1494,
+                                        "height":  5,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  413
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Write a search function that takes a major as input and",
+                      "words":  [
+                                    {
+                                        "y":  1535,
+                                        "height":  21,
+                                        "width":  74,
+                                        "text":  "Write",
+                                        "x":  332
+                                    },
+                                    {
+                                        "y":  1541,
+                                        "height":  15,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  428
+                                    },
+                                    {
+                                        "y":  1536,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "search",
+                                        "x":  462
+                                    },
+                                    {
+                                        "y":  1535,
+                                        "height":  21,
+                                        "width":  117,
+                                        "text":  "function",
+                                        "x":  572
+                                    },
+                                    {
+                                        "y":  1536,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "that",
+                                        "x":  711
+                                    },
+                                    {
+                                        "y":  1536,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "takes",
+                                        "x":  791
+                                    },
+                                    {
+                                        "y":  1541,
+                                        "height":  15,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  886
+                                    },
+                                    {
+                                        "y":  1535,
+                                        "height":  25,
+                                        "width":  75,
+                                        "text":  "major",
+                                        "x":  920
+                                    },
+                                    {
+                                        "y":  1541,
+                                        "height":  15,
+                                        "width":  28,
+                                        "text":  "as",
+                                        "x":  1015
+                                    },
+                                    {
+                                        "y":  1535,
+                                        "height":  25,
+                                        "width":  72,
+                                        "text":  "input",
+                                        "x":  1066
+                                    },
+                                    {
+                                        "y":  1536,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  1160
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "prints all students enrolled in that major.",
+                      "words":  [
+                                    {
+                                        "y":  1573,
+                                        "height":  24,
+                                        "width":  88,
+                                        "text":  "prints",
+                                        "x":  333
+                                    },
+                                    {
+                                        "y":  1573,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "all",
+                                        "x":  439
+                                    },
+                                    {
+                                        "y":  1574,
+                                        "height":  19,
+                                        "width":  119,
+                                        "text":  "students",
+                                        "x":  500
+                                    },
+                                    {
+                                        "y":  1573,
+                                        "height":  20,
+                                        "width":  118,
+                                        "text":  "enrolled",
+                                        "x":  636
+                                    },
+                                    {
+                                        "y":  1573,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "in",
+                                        "x":  773
+                                    },
+                                    {
+                                        "y":  1574,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "that",
+                                        "x":  817
+                                    },
+                                    {
+                                        "y":  1573,
+                                        "height":  24,
+                                        "width":  86,
+                                        "text":  "major.",
+                                        "x":  893
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Part 3:",
+                      "words":  [
+                                    {
+                                        "y":  1688,
+                                        "height":  20,
+                                        "width":  63,
+                                        "text":  "Part",
+                                        "x":  167
+                                    },
+                                    {
+                                        "y":  1688,
+                                        "height":  21,
+                                        "width":  28,
+                                        "text":  "3:",
+                                        "x":  249
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Core Computer Vision \u0026 Matplotlib",
+                      "words":  [
+                                    {
+                                        "y":  1688,
+                                        "height":  21,
+                                        "width":  64,
+                                        "text":  "Core",
+                                        "x":  299
+                                    },
+                                    {
+                                        "y":  1688,
+                                        "height":  26,
+                                        "width":  131,
+                                        "text":  "Computer",
+                                        "x":  382
+                                    },
+                                    {
+                                        "y":  1687,
+                                        "height":  21,
+                                        "width":  97,
+                                        "text":  "Vision",
+                                        "x":  531
+                                    },
+                                    {
+                                        "y":  1688,
+                                        "height":  20,
+                                        "width":  17,
+                                        "text":  "\u0026",
+                                        "x":  646
+                                    },
+                                    {
+                                        "y":  1687,
+                                        "height":  27,
+                                        "width":  163,
+                                        "text":  "Matplotlib",
+                                        "x":  680
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1829,
+                                        "height":  20,
+                                        "width":  70,
+                                        "text":  "Talha",
+                                        "x":  166
+                                    },
+                                    {
+                                        "y":  1828,
+                                        "height":  21,
+                                        "width":  87,
+                                        "text":  "Shahid",
+                                        "x":  246
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "II",
+                      "words":  [
+                                    {
+                                        "y":  1829,
+                                        "height":  25,
+                                        "width":  27,
+                                        "text":  "II",
+                                        "x":  1075
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "P age",
+                      "words":  [
+                                    {
+                                        "y":  1830,
+                                        "height":  19,
+                                        "width":  14,
+                                        "text":  "P",
+                                        "x":  1113
+                                    },
+                                    {
+                                        "y":  1835,
+                                        "height":  20,
+                                        "width":  61,
+                                        "text":  "age",
+                                        "x":  1136
+                                    }
+                                ]
+                  }
+              ]
+}

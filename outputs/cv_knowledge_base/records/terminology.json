@@ -1,0 +1,26 @@
+{
+  "cv2.BruteForceMatcher": {
+    "canonical": "cv2.BFMatcher",
+    "status": "corrected API name"
+  },
+  "SCAR": {
+    "canonical": "Scharr",
+    "status": "supported by supplied manual topic"
+  },
+  "VGA to RGB": {
+    "canonical": "BGR to RGB",
+    "status": "contextual correction; VGA is not a color space"
+  },
+  "botch filter": {
+    "canonical_candidate": "box filter",
+    "status": "uncertain; Box Blur exists in manual, original term retained"
+  },
+  "R10": {
+    "canonical_candidate": "ROI",
+    "status": "unresolved; do not automatically replace"
+  },
+  "plot dot bar": {
+    "canonical": "matplotlib.pyplot.bar",
+    "status": "spoken API normalization"
+  }
+}

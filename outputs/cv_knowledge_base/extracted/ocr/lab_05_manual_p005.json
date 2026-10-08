@@ -1,0 +1,1485 @@
+﻿{
+    "id":  "lab_05_manual_p005",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "National University of Computer \u0026 Emerging Sciences - NUCES - Karachi Department of Artificial Intelligence 2.1 Mathematics Behind Image Segmentation The mathematics behind image segmentation involves various techniques and algorithms, Thresholding: Edge Detection: Clustering: Graph Theory: including: Image segmentation begin with simple can thresholding, where a pixel Is intensity value is compared to a predefined threshold. If the intensity is above the threshold, it belongs to one region; otherwise, it belongs to another. Edge detection algorithms identify rapid changes in intensity , which often correspond to object boundaries. Common edge detection methods include the Sobel operator, Canny edge detector, and Laplacian of Gaussian (LOG) . Clustering techniques, like K-Means clustering or Mean-Shift clustering, group similar pixels together based on feature similarity. These methods consider multiple attributes, such as color values, to form clusters. In graph-based segmentation, pixels are represented as nodes in a graph, and edges between nodes represent the similarity between pixel values. Graph algorithms like minimum spanning trees or graph cuts can be used to partition the image into segments . FAST NUCES - Karachi Talha Shahid 4",
+    "review_status":  "raw_ocr_unverified",
+    "page":  5,
+    "source_id":  "lab_05_manual",
+    "lines":  [
+                  {
+                      "text":  "National University of Computer \u0026 Emerging Sciences -",
+                      "words":  [
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  123,
+                                        "text":  "National",
+                                        "x":  372
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  30,
+                                        "width":  153,
+                                        "text":  "University",
+                                        "x":  504
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  31,
+                                        "text":  "of",
+                                        "x":  664
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  30,
+                                        "width":  146,
+                                        "text":  "Computer",
+                                        "x":  701
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  23,
+                                        "width":  23,
+                                        "text":  "\u0026",
+                                        "x":  854
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  30,
+                                        "width":  140,
+                                        "text":  "Emerging",
+                                        "x":  885
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  23,
+                                        "width":  123,
+                                        "text":  "Sciences",
+                                        "x":  1033
+                                    },
+                                    {
+                                        "y":  107,
+                                        "height":  4,
+                                        "width":  9,
+                                        "text":  "-",
+                                        "x":  1166
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "NUCES - Karachi",
+                      "words":  [
+                                    {
+                                        "y":  138,
+                                        "height":  23,
+                                        "width":  96,
+                                        "text":  "NUCES",
+                                        "x":  655
+                                    },
+                                    {
+                                        "y":  150,
+                                        "height":  4,
+                                        "width":  8,
+                                        "text":  "-",
+                                        "x":  760
+                                    },
+                                    {
+                                        "y":  137,
+                                        "height":  24,
+                                        "width":  113,
+                                        "text":  "Karachi",
+                                        "x":  778
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Department of Artificial Intelligence",
+                      "words":  [
+                                    {
+                                        "y":  180,
+                                        "height":  26,
+                                        "width":  142,
+                                        "text":  "Department",
+                                        "x":  556
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  21,
+                                        "width":  25,
+                                        "text":  "of",
+                                        "x":  706
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  21,
+                                        "width":  100,
+                                        "text":  "Artificial",
+                                        "x":  738
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  27,
+                                        "width":  137,
+                                        "text":  "Intelligence",
+                                        "x":  848
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2.1 Mathematics Behind Image Segmentation",
+                      "words":  [
+                                    {
+                                        "y":  299,
+                                        "height":  24,
+                                        "width":  42,
+                                        "text":  "2.1",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  296,
+                                        "height":  27,
+                                        "width":  207,
+                                        "text":  "Mathematics",
+                                        "x":  225
+                                    },
+                                    {
+                                        "y":  296,
+                                        "height":  27,
+                                        "width":  109,
+                                        "text":  "Behind",
+                                        "x":  444
+                                    },
+                                    {
+                                        "y":  299,
+                                        "height":  31,
+                                        "width":  107,
+                                        "text":  "Image",
+                                        "x":  567
+                                    },
+                                    {
+                                        "y":  296,
+                                        "height":  34,
+                                        "width":  225,
+                                        "text":  "Segmentation",
+                                        "x":  686
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The mathematics behind image segmentation involves various techniques",
+                      "words":  [
+                                    {
+                                        "y":  356,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "The",
+                                        "x":  168
+                                    },
+                                    {
+                                        "y":  356,
+                                        "height":  19,
+                                        "width":  164,
+                                        "text":  "mathematics",
+                                        "x":  228
+                                    },
+                                    {
+                                        "y":  356,
+                                        "height":  19,
+                                        "width":  86,
+                                        "text":  "behind",
+                                        "x":  409
+                                    },
+                                    {
+                                        "y":  356,
+                                        "height":  24,
+                                        "width":  73,
+                                        "text":  "image",
+                                        "x":  513
+                                    },
+                                    {
+                                        "y":  356,
+                                        "height":  24,
+                                        "width":  179,
+                                        "text":  "segmentation",
+                                        "x":  602
+                                    },
+                                    {
+                                        "y":  356,
+                                        "height":  20,
+                                        "width":  117,
+                                        "text":  "involves",
+                                        "x":  798
+                                    },
+                                    {
+                                        "y":  356,
+                                        "height":  20,
+                                        "width":  104,
+                                        "text":  "various",
+                                        "x":  931
+                                    },
+                                    {
+                                        "y":  356,
+                                        "height":  24,
+                                        "width":  150,
+                                        "text":  "techniques",
+                                        "x":  1050
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "and algorithms,",
+                      "words":  [
+                                    {
+                                        "y":  393,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  393,
+                                        "height":  25,
+                                        "width":  160,
+                                        "text":  "algorithms,",
+                                        "x":  230
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Thresholding:",
+                      "words":  [
+                                    {
+                                        "y":  469,
+                                        "height":  24,
+                                        "width":  192,
+                                        "text":  "Thresholding:",
+                                        "x":  168
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Edge Detection:",
+                      "words":  [
+                                    {
+                                        "y":  696,
+                                        "height":  23,
+                                        "width":  58,
+                                        "text":  "Edge",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  696,
+                                        "height":  18,
+                                        "width":  145,
+                                        "text":  "Detection:",
+                                        "x":  245
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Clustering:",
+                      "words":  [
+                                    {
+                                        "y":  921,
+                                        "height":  24,
+                                        "width":  161,
+                                        "text":  "Clustering:",
+                                        "x":  169
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Graph Theory:",
+                      "words":  [
+                                    {
+                                        "y":  1147,
+                                        "height":  24,
+                                        "width":  74,
+                                        "text":  "Graph",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1147,
+                                        "height":  24,
+                                        "width":  101,
+                                        "text":  "Theory:",
+                                        "x":  259
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "including:",
+                      "words":  [
+                                    {
+                                        "y":  393,
+                                        "height":  25,
+                                        "width":  143,
+                                        "text":  "including:",
+                                        "x":  412
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Image",
+                      "words":  [
+                                    {
+                                        "y":  469,
+                                        "height":  24,
+                                        "width":  72,
+                                        "text":  "Image",
+                                        "x":  417
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "segmentation",
+                      "words":  [
+                                    {
+                                        "y":  469,
+                                        "height":  24,
+                                        "width":  179,
+                                        "text":  "segmentation",
+                                        "x":  543
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "begin",
+                      "words":  [
+                                    {
+                                        "y":  469,
+                                        "height":  24,
+                                        "width":  71,
+                                        "text":  "begin",
+                                        "x":  874
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "with",
+                      "words":  [
+                                    {
+                                        "y":  469,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "with",
+                                        "x":  999
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "simple",
+                      "words":  [
+                                    {
+                                        "y":  469,
+                                        "height":  24,
+                                        "width":  88,
+                                        "text":  "simple",
+                                        "x":  1112
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "can",
+                      "words":  [
+                                    {
+                                        "y":  474,
+                                        "height":  14,
+                                        "width":  42,
+                                        "text":  "can",
+                                        "x":  777
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "thresholding, where a pixel Is intensity value is",
+                      "words":  [
+                                    {
+                                        "y":  507,
+                                        "height":  24,
+                                        "width":  190,
+                                        "text":  "thresholding,",
+                                        "x":  416
+                                    },
+                                    {
+                                        "y":  507,
+                                        "height":  19,
+                                        "width":  74,
+                                        "text":  "where",
+                                        "x":  637
+                                    },
+                                    {
+                                        "y":  512,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  739
+                                    },
+                                    {
+                                        "y":  507,
+                                        "height":  24,
+                                        "width":  73,
+                                        "text":  "pixel",
+                                        "x":  780
+                                    },
+                                    {
+                                        "y":  507,
+                                        "height":  19,
+                                        "width":  23,
+                                        "text":  "Is",
+                                        "x":  860
+                                    },
+                                    {
+                                        "y":  507,
+                                        "height":  24,
+                                        "width":  133,
+                                        "text":  "intensity",
+                                        "x":  911
+                                    },
+                                    {
+                                        "y":  507,
+                                        "height":  19,
+                                        "width":  74,
+                                        "text":  "value",
+                                        "x":  1071
+                                    },
+                                    {
+                                        "y":  507,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  1173
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "compared to a predefined threshold. If the intensity",
+                      "words":  [
+                                    {
+                                        "y":  545,
+                                        "height":  24,
+                                        "width":  117,
+                                        "text":  "compared",
+                                        "x":  417
+                                    },
+                                    {
+                                        "y":  546,
+                                        "height":  18,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  551
+                                    },
+                                    {
+                                        "y":  550,
+                                        "height":  14,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  597
+                                    },
+                                    {
+                                        "y":  545,
+                                        "height":  24,
+                                        "width":  147,
+                                        "text":  "predefined",
+                                        "x":  629
+                                    },
+                                    {
+                                        "y":  545,
+                                        "height":  19,
+                                        "width":  144,
+                                        "text":  "threshold.",
+                                        "x":  794
+                                    },
+                                    {
+                                        "y":  545,
+                                        "height":  19,
+                                        "width":  28,
+                                        "text":  "If",
+                                        "x":  960
+                                    },
+                                    {
+                                        "y":  545,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  1005
+                                    },
+                                    {
+                                        "y":  545,
+                                        "height":  24,
+                                        "width":  133,
+                                        "text":  "intensity",
+                                        "x":  1067
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "is above the threshold, it belongs to one region;",
+                      "words":  [
+                                    {
+                                        "y":  582,
+                                        "height":  20,
+                                        "width":  26,
+                                        "text":  "is",
+                                        "x":  418
+                                    },
+                                    {
+                                        "y":  582,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "above",
+                                        "x":  467
+                                    },
+                                    {
+                                        "y":  582,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  563
+                                    },
+                                    {
+                                        "y":  582,
+                                        "height":  23,
+                                        "width":  146,
+                                        "text":  "threshold,",
+                                        "x":  629
+                                    },
+                                    {
+                                        "y":  582,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "it",
+                                        "x":  803
+                                    },
+                                    {
+                                        "y":  582,
+                                        "height":  24,
+                                        "width":  102,
+                                        "text":  "belongs",
+                                        "x":  854
+                                    },
+                                    {
+                                        "y":  583,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  978
+                                    },
+                                    {
+                                        "y":  588,
+                                        "height":  14,
+                                        "width":  43,
+                                        "text":  "one",
+                                        "x":  1030
+                                    },
+                                    {
+                                        "y":  582,
+                                        "height":  24,
+                                        "width":  99,
+                                        "text":  "region;",
+                                        "x":  1097
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "otherwise, it belongs to another.",
+                      "words":  [
+                                    {
+                                        "y":  620,
+                                        "height":  23,
+                                        "width":  144,
+                                        "text":  "otherwise,",
+                                        "x":  417
+                                    },
+                                    {
+                                        "y":  620,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "it",
+                                        "x":  583
+                                    },
+                                    {
+                                        "y":  620,
+                                        "height":  24,
+                                        "width":  102,
+                                        "text":  "belongs",
+                                        "x":  629
+                                    },
+                                    {
+                                        "y":  621,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  748
+                                    },
+                                    {
+                                        "y":  620,
+                                        "height":  20,
+                                        "width":  115,
+                                        "text":  "another.",
+                                        "x":  794
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Edge detection algorithms identify rapid changes in",
+                      "words":  [
+                                    {
+                                        "y":  696,
+                                        "height":  23,
+                                        "width":  57,
+                                        "text":  "Edge",
+                                        "x":  417
+                                    },
+                                    {
+                                        "y":  696,
+                                        "height":  18,
+                                        "width":  133,
+                                        "text":  "detection",
+                                        "x":  494
+                                    },
+                                    {
+                                        "y":  696,
+                                        "height":  23,
+                                        "width":  149,
+                                        "text":  "algorithms",
+                                        "x":  648
+                                    },
+                                    {
+                                        "y":  696,
+                                        "height":  23,
+                                        "width":  117,
+                                        "text":  "identify",
+                                        "x":  818
+                                    },
+                                    {
+                                        "y":  696,
+                                        "height":  23,
+                                        "width":  73,
+                                        "text":  "rapid",
+                                        "x":  955
+                                    },
+                                    {
+                                        "y":  696,
+                                        "height":  23,
+                                        "width":  103,
+                                        "text":  "changes",
+                                        "x":  1049
+                                    },
+                                    {
+                                        "y":  696,
+                                        "height":  18,
+                                        "width":  27,
+                                        "text":  "in",
+                                        "x":  1173
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "intensity ,",
+                      "words":  [
+                                    {
+                                        "y":  732,
+                                        "height":  24,
+                                        "width":  132,
+                                        "text":  "intensity",
+                                        "x":  418
+                                    },
+                                    {
+                                        "y":  747,
+                                        "height":  8,
+                                        "width":  6,
+                                        "text":  ",",
+                                        "x":  555
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "which",
+                      "words":  [
+                                    {
+                                        "y":  732,
+                                        "height":  19,
+                                        "width":  73,
+                                        "text":  "which",
+                                        "x":  609
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "often",
+                      "words":  [
+                                    {
+                                        "y":  732,
+                                        "height":  19,
+                                        "width":  72,
+                                        "text":  "often",
+                                        "x":  728
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "correspond to object",
+                      "words":  [
+                                    {
+                                        "y":  732,
+                                        "height":  24,
+                                        "width":  147,
+                                        "text":  "correspond",
+                                        "x":  846
+                                    },
+                                    {
+                                        "y":  733,
+                                        "height":  18,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  1038
+                                    },
+                                    {
+                                        "y":  732,
+                                        "height":  24,
+                                        "width":  89,
+                                        "text":  "object",
+                                        "x":  1111
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "boundaries. Common edge detection methods include the",
+                      "words":  [
+                                    {
+                                        "y":  770,
+                                        "height":  20,
+                                        "width":  159,
+                                        "text":  "boundaries.",
+                                        "x":  417
+                                    },
+                                    {
+                                        "y":  771,
+                                        "height":  19,
+                                        "width":  88,
+                                        "text":  "Common",
+                                        "x":  595
+                                    },
+                                    {
+                                        "y":  770,
+                                        "height":  24,
+                                        "width":  59,
+                                        "text":  "edge",
+                                        "x":  698
+                                    },
+                                    {
+                                        "y":  770,
+                                        "height":  20,
+                                        "width":  134,
+                                        "text":  "detection",
+                                        "x":  771
+                                    },
+                                    {
+                                        "y":  770,
+                                        "height":  20,
+                                        "width":  104,
+                                        "text":  "methods",
+                                        "x":  919
+                                    },
+                                    {
+                                        "y":  770,
+                                        "height":  20,
+                                        "width":  103,
+                                        "text":  "include",
+                                        "x":  1039
+                                    },
+                                    {
+                                        "y":  770,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  1156
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Sobel operator, Canny edge detector, and Laplacian of",
+                      "words":  [
+                                    {
+                                        "y":  808,
+                                        "height":  19,
+                                        "width":  72,
+                                        "text":  "Sobel",
+                                        "x":  417
+                                    },
+                                    {
+                                        "y":  808,
+                                        "height":  24,
+                                        "width":  130,
+                                        "text":  "operator,",
+                                        "x":  504
+                                    },
+                                    {
+                                        "y":  808,
+                                        "height":  24,
+                                        "width":  74,
+                                        "text":  "Canny",
+                                        "x":  654
+                                    },
+                                    {
+                                        "y":  808,
+                                        "height":  24,
+                                        "width":  58,
+                                        "text":  "edge",
+                                        "x":  743
+                                    },
+                                    {
+                                        "y":  808,
+                                        "height":  22,
+                                        "width":  129,
+                                        "text":  "detector,",
+                                        "x":  816
+                                    },
+                                    {
+                                        "y":  808,
+                                        "height":  19,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  965
+                                    },
+                                    {
+                                        "y":  808,
+                                        "height":  24,
+                                        "width":  133,
+                                        "text":  "Laplacian",
+                                        "x":  1024
+                                    },
+                                    {
+                                        "y":  808,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "of",
+                                        "x":  1172
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Gaussian (LOG) .",
+                      "words":  [
+                                    {
+                                        "y":  846,
+                                        "height":  19,
+                                        "width":  117,
+                                        "text":  "Gaussian",
+                                        "x":  417
+                                    },
+                                    {
+                                        "y":  845,
+                                        "height":  24,
+                                        "width":  67,
+                                        "text":  "(LOG)",
+                                        "x":  555
+                                    },
+                                    {
+                                        "y":  861,
+                                        "height":  4,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  632
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Clustering techniques, like K-Means clustering or",
+                      "words":  [
+                                    {
+                                        "y":  921,
+                                        "height":  25,
+                                        "width":  149,
+                                        "text":  "Clustering",
+                                        "x":  417
+                                    },
+                                    {
+                                        "y":  921,
+                                        "height":  25,
+                                        "width":  161,
+                                        "text":  "techniques,",
+                                        "x":  591
+                                    },
+                                    {
+                                        "y":  921,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "like",
+                                        "x":  782
+                                    },
+                                    {
+                                        "y":  922,
+                                        "height":  19,
+                                        "width":  102,
+                                        "text":  "K-Means",
+                                        "x":  867
+                                    },
+                                    {
+                                        "y":  921,
+                                        "height":  25,
+                                        "width":  149,
+                                        "text":  "clustering",
+                                        "x":  997
+                                    },
+                                    {
+                                        "y":  927,
+                                        "height":  14,
+                                        "width":  29,
+                                        "text":  "or",
+                                        "x":  1172
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Mean-Shift clustering, group similar pixels together",
+                      "words":  [
+                                    {
+                                        "y":  959,
+                                        "height":  20,
+                                        "width":  148,
+                                        "text":  "Mean-Shift",
+                                        "x":  417
+                                    },
+                                    {
+                                        "y":  959,
+                                        "height":  25,
+                                        "width":  160,
+                                        "text":  "clustering,",
+                                        "x":  583
+                                    },
+                                    {
+                                        "y":  963,
+                                        "height":  21,
+                                        "width":  74,
+                                        "text":  "group",
+                                        "x":  764
+                                    },
+                                    {
+                                        "y":  959,
+                                        "height":  20,
+                                        "width":  102,
+                                        "text":  "similar",
+                                        "x":  856
+                                    },
+                                    {
+                                        "y":  959,
+                                        "height":  25,
+                                        "width":  87,
+                                        "text":  "pixels",
+                                        "x":  976
+                                    },
+                                    {
+                                        "y":  959,
+                                        "height":  25,
+                                        "width":  121,
+                                        "text":  "together",
+                                        "x":  1080
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "based on feature similarity. These methods consider",
+                      "words":  [
+                                    {
+                                        "y":  997,
+                                        "height":  19,
+                                        "width":  71,
+                                        "text":  "based",
+                                        "x":  417
+                                    },
+                                    {
+                                        "y":  1002,
+                                        "height":  14,
+                                        "width":  28,
+                                        "text":  "on",
+                                        "x":  509
+                                    },
+                                    {
+                                        "y":  997,
+                                        "height":  19,
+                                        "width":  104,
+                                        "text":  "feature",
+                                        "x":  557
+                                    },
+                                    {
+                                        "y":  997,
+                                        "height":  24,
+                                        "width":  160,
+                                        "text":  "similarity.",
+                                        "x":  681
+                                    },
+                                    {
+                                        "y":  997,
+                                        "height":  19,
+                                        "width":  74,
+                                        "text":  "These",
+                                        "x":  864
+                                    },
+                                    {
+                                        "y":  997,
+                                        "height":  19,
+                                        "width":  104,
+                                        "text":  "methods",
+                                        "x":  957
+                                    },
+                                    {
+                                        "y":  997,
+                                        "height":  19,
+                                        "width":  119,
+                                        "text":  "consider",
+                                        "x":  1082
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "multiple attributes, such as color values, to form",
+                      "words":  [
+                                    {
+                                        "y":  1035,
+                                        "height":  24,
+                                        "width":  118,
+                                        "text":  "multiple",
+                                        "x":  417
+                                    },
+                                    {
+                                        "y":  1035,
+                                        "height":  23,
+                                        "width":  161,
+                                        "text":  "attributes,",
+                                        "x":  556
+                                    },
+                                    {
+                                        "y":  1035,
+                                        "height":  19,
+                                        "width":  57,
+                                        "text":  "such",
+                                        "x":  743
+                                    },
+                                    {
+                                        "y":  1041,
+                                        "height":  13,
+                                        "width":  27,
+                                        "text":  "as",
+                                        "x":  823
+                                    },
+                                    {
+                                        "y":  1035,
+                                        "height":  19,
+                                        "width":  72,
+                                        "text":  "color",
+                                        "x":  873
+                                    },
+                                    {
+                                        "y":  1035,
+                                        "height":  23,
+                                        "width":  100,
+                                        "text":  "values,",
+                                        "x":  966
+                                    },
+                                    {
+                                        "y":  1036,
+                                        "height":  18,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  1091
+                                    },
+                                    {
+                                        "y":  1035,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "form",
+                                        "x":  1142
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "clusters.",
+                      "words":  [
+                                    {
+                                        "y":  1071,
+                                        "height":  20,
+                                        "width":  129,
+                                        "text":  "clusters.",
+                                        "x":  417
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "In graph-based segmentation, pixels are represented",
+                      "words":  [
+                                    {
+                                        "y":  1147,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "In",
+                                        "x":  417
+                                    },
+                                    {
+                                        "y":  1147,
+                                        "height":  24,
+                                        "width":  164,
+                                        "text":  "graph-based",
+                                        "x":  464
+                                    },
+                                    {
+                                        "y":  1147,
+                                        "height":  24,
+                                        "width":  191,
+                                        "text":  "segmentation,",
+                                        "x":  649
+                                    },
+                                    {
+                                        "y":  1147,
+                                        "height":  24,
+                                        "width":  87,
+                                        "text":  "pixels",
+                                        "x":  865
+                                    },
+                                    {
+                                        "y":  1152,
+                                        "height":  14,
+                                        "width":  43,
+                                        "text":  "are",
+                                        "x":  972
+                                    },
+                                    {
+                                        "y":  1147,
+                                        "height":  24,
+                                        "width":  163,
+                                        "text":  "represented",
+                                        "x":  1036
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "as nodes in a graph, and edges between nodes represent",
+                      "words":  [
+                                    {
+                                        "y":  1190,
+                                        "height":  14,
+                                        "width":  27,
+                                        "text":  "as",
+                                        "x":  417
+                                    },
+                                    {
+                                        "y":  1185,
+                                        "height":  19,
+                                        "width":  72,
+                                        "text":  "nodes",
+                                        "x":  459
+                                    },
+                                    {
+                                        "y":  1185,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "in",
+                                        "x":  546
+                                    },
+                                    {
+                                        "y":  1190,
+                                        "height":  14,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  587
+                                    },
+                                    {
+                                        "y":  1185,
+                                        "height":  24,
+                                        "width":  85,
+                                        "text":  "graph,",
+                                        "x":  614
+                                    },
+                                    {
+                                        "y":  1185,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  717
+                                    },
+                                    {
+                                        "y":  1185,
+                                        "height":  24,
+                                        "width":  73,
+                                        "text":  "edges",
+                                        "x":  775
+                                    },
+                                    {
+                                        "y":  1185,
+                                        "height":  19,
+                                        "width":  101,
+                                        "text":  "between",
+                                        "x":  863
+                                    },
+                                    {
+                                        "y":  1185,
+                                        "height":  19,
+                                        "width":  72,
+                                        "text":  "nodes",
+                                        "x":  980
+                                    },
+                                    {
+                                        "y":  1185,
+                                        "height":  24,
+                                        "width":  134,
+                                        "text":  "represent",
+                                        "x":  1067
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "the similarity between pixel values. Graph algorithms",
+                      "words":  [
+                                    {
+                                        "y":  1222,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  416
+                                    },
+                                    {
+                                        "y":  1222,
+                                        "height":  24,
+                                        "width":  149,
+                                        "text":  "similarity",
+                                        "x":  474
+                                    },
+                                    {
+                                        "y":  1222,
+                                        "height":  19,
+                                        "width":  102,
+                                        "text":  "between",
+                                        "x":  639
+                                    },
+                                    {
+                                        "y":  1222,
+                                        "height":  24,
+                                        "width":  73,
+                                        "text":  "pixel",
+                                        "x":  757
+                                    },
+                                    {
+                                        "y":  1222,
+                                        "height":  20,
+                                        "width":  99,
+                                        "text":  "values.",
+                                        "x":  845
+                                    },
+                                    {
+                                        "y":  1222,
+                                        "height":  24,
+                                        "width":  72,
+                                        "text":  "Graph",
+                                        "x":  963
+                                    },
+                                    {
+                                        "y":  1222,
+                                        "height":  24,
+                                        "width":  149,
+                                        "text":  "algorithms",
+                                        "x":  1051
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "like minimum spanning trees or graph cuts can be used",
+                      "words":  [
+                                    {
+                                        "y":  1260,
+                                        "height":  20,
+                                        "width":  57,
+                                        "text":  "like",
+                                        "x":  417
+                                    },
+                                    {
+                                        "y":  1260,
+                                        "height":  20,
+                                        "width":  104,
+                                        "text":  "minimum",
+                                        "x":  490
+                                    },
+                                    {
+                                        "y":  1260,
+                                        "height":  24,
+                                        "width":  119,
+                                        "text":  "spanning",
+                                        "x":  610
+                                    },
+                                    {
+                                        "y":  1261,
+                                        "height":  19,
+                                        "width":  74,
+                                        "text":  "trees",
+                                        "x":  743
+                                    },
+                                    {
+                                        "y":  1266,
+                                        "height":  14,
+                                        "width":  29,
+                                        "text":  "or",
+                                        "x":  833
+                                    },
+                                    {
+                                        "y":  1260,
+                                        "height":  24,
+                                        "width":  72,
+                                        "text":  "graph",
+                                        "x":  877
+                                    },
+                                    {
+                                        "y":  1261,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "cuts",
+                                        "x":  965
+                                    },
+                                    {
+                                        "y":  1266,
+                                        "height":  14,
+                                        "width":  42,
+                                        "text":  "can",
+                                        "x":  1040
+                                    },
+                                    {
+                                        "y":  1260,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "be",
+                                        "x":  1099
+                                    },
+                                    {
+                                        "y":  1260,
+                                        "height":  20,
+                                        "width":  57,
+                                        "text":  "used",
+                                        "x":  1143
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "to partition the image into segments .",
+                      "words":  [
+                                    {
+                                        "y":  1298,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  416
+                                    },
+                                    {
+                                        "y":  1298,
+                                        "height":  24,
+                                        "width":  133,
+                                        "text":  "partition",
+                                        "x":  462
+                                    },
+                                    {
+                                        "y":  1298,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  612
+                                    },
+                                    {
+                                        "y":  1298,
+                                        "height":  24,
+                                        "width":  72,
+                                        "text":  "image",
+                                        "x":  674
+                                    },
+                                    {
+                                        "y":  1297,
+                                        "height":  20,
+                                        "width":  57,
+                                        "text":  "into",
+                                        "x":  765
+                                    },
+                                    {
+                                        "y":  1298,
+                                        "height":  24,
+                                        "width":  117,
+                                        "text":  "segments",
+                                        "x":  840
+                                    },
+                                    {
+                                        "y":  1313,
+                                        "height":  4,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  964
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FAST NUCES",
+                      "words":  [
+                                    {
+                                        "y":  1819,
+                                        "height":  19,
+                                        "width":  62,
+                                        "text":  "FAST",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1819,
+                                        "height":  20,
+                                        "width":  85,
+                                        "text":  "NUCES",
+                                        "x":  242
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Karachi",
+                      "words":  [
+                                    {
+                                        "y":  1828,
+                                        "height":  5,
+                                        "width":  12,
+                                        "text":  "-",
+                                        "x":  336
+                                    },
+                                    {
+                                        "y":  1817,
+                                        "height":  21,
+                                        "width":  94,
+                                        "text":  "Karachi",
+                                        "x":  358
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1819,
+                                        "height":  19,
+                                        "width":  71,
+                                        "text":  "Talha",
+                                        "x":  624
+                                    },
+                                    {
+                                        "y":  1817,
+                                        "height":  21,
+                                        "width":  87,
+                                        "text":  "Shahid",
+                                        "x":  706
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4",
+                      "words":  [
+                                    {
+                                        "y":  1819,
+                                        "height":  19,
+                                        "width":  15,
+                                        "text":  "4",
+                                        "x":  1186
+                                    }
+                                ]
+                  }
+              ]
+}

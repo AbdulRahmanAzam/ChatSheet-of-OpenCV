@@ -1,0 +1,1571 @@
+﻿{
+    "id":  "lab_05_tasks_p003",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "4. Which combination produces the cleanest text segmentation? 5. Which adaptive method performs better on this image? Your final output should show the original plus at least six different adaptive segmentation results . Task 3 — Quality-Control System Using Otsu\u0027s Thresholding A manufacturing company photographs a set of objects against a relatively consistent background. The intensity distribution is expected to contain two major classes: object pixels + background pixels The engineer does not want to manually determine the threshold for every image. Your Task Use a grayscale object image such as the coins image associated with OpenCV\u0027s watershed example: Perform the following: 1. 2. 3. 4. 5. 6. Convert the image to grayscale. Generate a histogram of the grayscale image . Apply Otsu\u0027s thresholding. Record the automatically selected threshold. Repeat the experiment after changing the image preprocessing slightly. Compare the automatically selected thresholds. contrast or Required Output Show : Original Histogram + Otsu Binary Mask Then answer: Why is Otsu useful when the programmer does not know threshold beforehand? the correct Your implementation must use Otsu Is thresholding rather than manually choosing the threshold, as specified in the manual. Talha Shahid 31 Page",
+    "review_status":  "raw_ocr_unverified",
+    "page":  3,
+    "source_id":  "lab_05_tasks",
+    "lines":  [
+                  {
+                      "text":  "4. Which combination produces the cleanest text segmentation?",
+                      "words":  [
+                                    {
+                                        "y":  177,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "4.",
+                                        "x":  210
+                                    },
+                                    {
+                                        "y":  176,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "Which",
+                                        "x":  251
+                                    },
+                                    {
+                                        "y":  176,
+                                        "height":  20,
+                                        "width":  162,
+                                        "text":  "combination",
+                                        "x":  343
+                                    },
+                                    {
+                                        "y":  176,
+                                        "height":  25,
+                                        "width":  117,
+                                        "text":  "produces",
+                                        "x":  524
+                                    },
+                                    {
+                                        "y":  176,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  659
+                                    },
+                                    {
+                                        "y":  176,
+                                        "height":  20,
+                                        "width":  118,
+                                        "text":  "cleanest",
+                                        "x":  720
+                                    },
+                                    {
+                                        "y":  177,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "text",
+                                        "x":  855
+                                    },
+                                    {
+                                        "y":  176,
+                                        "height":  25,
+                                        "width":  194,
+                                        "text":  "segmentation?",
+                                        "x":  931
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "5. Which adaptive method performs better on this image?",
+                      "words":  [
+                                    {
+                                        "y":  233,
+                                        "height":  20,
+                                        "width":  24,
+                                        "text":  "5.",
+                                        "x":  211
+                                    },
+                                    {
+                                        "y":  232,
+                                        "height":  21,
+                                        "width":  74,
+                                        "text":  "Which",
+                                        "x":  251
+                                    },
+                                    {
+                                        "y":  232,
+                                        "height":  25,
+                                        "width":  117,
+                                        "text":  "adaptive",
+                                        "x":  343
+                                    },
+                                    {
+                                        "y":  233,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "method",
+                                        "x":  477
+                                    },
+                                    {
+                                        "y":  233,
+                                        "height":  24,
+                                        "width":  118,
+                                        "text":  "performs",
+                                        "x":  584
+                                    },
+                                    {
+                                        "y":  233,
+                                        "height":  20,
+                                        "width":  89,
+                                        "text":  "better",
+                                        "x":  720
+                                    },
+                                    {
+                                        "y":  238,
+                                        "height":  15,
+                                        "width":  27,
+                                        "text":  "on",
+                                        "x":  826
+                                    },
+                                    {
+                                        "y":  232,
+                                        "height":  21,
+                                        "width":  57,
+                                        "text":  "this",
+                                        "x":  871
+                                    },
+                                    {
+                                        "y":  232,
+                                        "height":  25,
+                                        "width":  87,
+                                        "text":  "image?",
+                                        "x":  947
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Your final output should show the original plus at least six different",
+                      "words":  [
+                                    {
+                                        "y":  289,
+                                        "height":  19,
+                                        "width":  60,
+                                        "text":  "Your",
+                                        "x":  168
+                                    },
+                                    {
+                                        "y":  288,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "final",
+                                        "x":  243
+                                    },
+                                    {
+                                        "y":  289,
+                                        "height":  24,
+                                        "width":  88,
+                                        "text":  "output",
+                                        "x":  331
+                                    },
+                                    {
+                                        "y":  289,
+                                        "height":  20,
+                                        "width":  87,
+                                        "text":  "should",
+                                        "x":  435
+                                    },
+                                    {
+                                        "y":  289,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "show",
+                                        "x":  538
+                                    },
+                                    {
+                                        "y":  289,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  611
+                                    },
+                                    {
+                                        "y":  288,
+                                        "height":  25,
+                                        "width":  119,
+                                        "text":  "original",
+                                        "x":  669
+                                    },
+                                    {
+                                        "y":  289,
+                                        "height":  24,
+                                        "width":  59,
+                                        "text":  "plus",
+                                        "x":  803
+                                    },
+                                    {
+                                        "y":  289,
+                                        "height":  19,
+                                        "width":  28,
+                                        "text":  "at",
+                                        "x":  877
+                                    },
+                                    {
+                                        "y":  289,
+                                        "height":  19,
+                                        "width":  73,
+                                        "text":  "least",
+                                        "x":  920
+                                    },
+                                    {
+                                        "y":  288,
+                                        "height":  21,
+                                        "width":  44,
+                                        "text":  "six",
+                                        "x":  1008
+                                    },
+                                    {
+                                        "y":  288,
+                                        "height":  20,
+                                        "width":  134,
+                                        "text":  "different",
+                                        "x":  1066
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "adaptive segmentation results .",
+                      "words":  [
+                                    {
+                                        "y":  326,
+                                        "height":  25,
+                                        "width":  119,
+                                        "text":  "adaptive",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  326,
+                                        "height":  25,
+                                        "width":  178,
+                                        "text":  "segmentation",
+                                        "x":  305
+                                    },
+                                    {
+                                        "y":  327,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "results",
+                                        "x":  501
+                                    },
+                                    {
+                                        "y":  342,
+                                        "height":  5,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  611
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Task 3 — Quality-Control System Using Otsu\u0027s Thresholding",
+                      "words":  [
+                                    {
+                                        "y":  438,
+                                        "height":  20,
+                                        "width":  60,
+                                        "text":  "Task",
+                                        "x":  168
+                                    },
+                                    {
+                                        "y":  439,
+                                        "height":  19,
+                                        "width":  14,
+                                        "text":  "3",
+                                        "x":  244
+                                    },
+                                    {
+                                        "y":  447,
+                                        "height":  5,
+                                        "width":  16,
+                                        "text":  "—",
+                                        "x":  274
+                                    },
+                                    {
+                                        "y":  438,
+                                        "height":  25,
+                                        "width":  224,
+                                        "text":  "Quality-Control",
+                                        "x":  305
+                                    },
+                                    {
+                                        "y":  439,
+                                        "height":  24,
+                                        "width":  90,
+                                        "text":  "System",
+                                        "x":  546
+                                    },
+                                    {
+                                        "y":  438,
+                                        "height":  25,
+                                        "width":  75,
+                                        "text":  "Using",
+                                        "x":  652
+                                    },
+                                    {
+                                        "y":  438,
+                                        "height":  20,
+                                        "width":  90,
+                                        "text":  "Otsu\u0027s",
+                                        "x":  742
+                                    },
+                                    {
+                                        "y":  438,
+                                        "height":  25,
+                                        "width":  181,
+                                        "text":  "Thresholding",
+                                        "x":  848
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "A manufacturing company photographs a set of objects against a",
+                      "words":  [
+                                    {
+                                        "y":  496,
+                                        "height":  18,
+                                        "width":  14,
+                                        "text":  "A",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  495,
+                                        "height":  25,
+                                        "width":  195,
+                                        "text":  "manufacturing",
+                                        "x":  210
+                                    },
+                                    {
+                                        "y":  500,
+                                        "height":  20,
+                                        "width":  103,
+                                        "text":  "company",
+                                        "x":  433
+                                    },
+                                    {
+                                        "y":  495,
+                                        "height":  25,
+                                        "width":  164,
+                                        "text":  "photographs",
+                                        "x":  564
+                                    },
+                                    {
+                                        "y":  500,
+                                        "height":  15,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  756
+                                    },
+                                    {
+                                        "y":  496,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "set",
+                                        "x":  797
+                                    },
+                                    {
+                                        "y":  495,
+                                        "height":  20,
+                                        "width":  29,
+                                        "text":  "of",
+                                        "x":  868
+                                    },
+                                    {
+                                        "y":  495,
+                                        "height":  25,
+                                        "width":  104,
+                                        "text":  "objects",
+                                        "x":  923
+                                    },
+                                    {
+                                        "y":  495,
+                                        "height":  25,
+                                        "width":  104,
+                                        "text":  "against",
+                                        "x":  1055
+                                    },
+                                    {
+                                        "y":  500,
+                                        "height":  15,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  1187
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "relatively consistent background. The intensity distribution is",
+                      "words":  [
+                                    {
+                                        "y":  533,
+                                        "height":  25,
+                                        "width":  149,
+                                        "text":  "relatively",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  533,
+                                        "height":  20,
+                                        "width":  147,
+                                        "text":  "consistent",
+                                        "x":  350
+                                    },
+                                    {
+                                        "y":  533,
+                                        "height":  25,
+                                        "width":  160,
+                                        "text":  "background.",
+                                        "x":  528
+                                    },
+                                    {
+                                        "y":  533,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "The",
+                                        "x":  722
+                                    },
+                                    {
+                                        "y":  533,
+                                        "height":  25,
+                                        "width":  132,
+                                        "text":  "intensity",
+                                        "x":  798
+                                    },
+                                    {
+                                        "y":  533,
+                                        "height":  20,
+                                        "width":  179,
+                                        "text":  "distribution",
+                                        "x":  961
+                                    },
+                                    {
+                                        "y":  533,
+                                        "height":  20,
+                                        "width":  26,
+                                        "text":  "is",
+                                        "x":  1173
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "expected to contain two major classes:",
+                      "words":  [
+                                    {
+                                        "y":  571,
+                                        "height":  25,
+                                        "width":  119,
+                                        "text":  "expected",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  572,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  305
+                                    },
+                                    {
+                                        "y":  571,
+                                        "height":  20,
+                                        "width":  103,
+                                        "text":  "contain",
+                                        "x":  351
+                                    },
+                                    {
+                                        "y":  572,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "two",
+                                        "x":  470
+                                    },
+                                    {
+                                        "y":  571,
+                                        "height":  25,
+                                        "width":  74,
+                                        "text":  "major",
+                                        "x":  531
+                                    },
+                                    {
+                                        "y":  571,
+                                        "height":  20,
+                                        "width":  114,
+                                        "text":  "classes:",
+                                        "x":  623
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "object pixels + background pixels",
+                      "words":  [
+                                    {
+                                        "y":  627,
+                                        "height":  24,
+                                        "width":  89,
+                                        "text":  "object",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  627,
+                                        "height":  25,
+                                        "width":  89,
+                                        "text":  "pixels",
+                                        "x":  275
+                                    },
+                                    {
+                                        "y":  632,
+                                        "height":  13,
+                                        "width":  13,
+                                        "text":  "+",
+                                        "x":  381
+                                    },
+                                    {
+                                        "y":  627,
+                                        "height":  25,
+                                        "width":  148,
+                                        "text":  "background",
+                                        "x":  411
+                                    },
+                                    {
+                                        "y":  627,
+                                        "height":  25,
+                                        "width":  88,
+                                        "text":  "pixels",
+                                        "x":  577
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "The engineer does not want to manually determine the threshold for",
+                      "words":  [
+                                    {
+                                        "y":  683,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "The",
+                                        "x":  168
+                                    },
+                                    {
+                                        "y":  683,
+                                        "height":  24,
+                                        "width":  119,
+                                        "text":  "engineer",
+                                        "x":  234
+                                    },
+                                    {
+                                        "y":  683,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "does",
+                                        "x":  373
+                                    },
+                                    {
+                                        "y":  684,
+                                        "height":  19,
+                                        "width":  41,
+                                        "text":  "not",
+                                        "x":  453
+                                    },
+                                    {
+                                        "y":  684,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "want",
+                                        "x":  514
+                                    },
+                                    {
+                                        "y":  684,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  594
+                                    },
+                                    {
+                                        "y":  683,
+                                        "height":  24,
+                                        "width":  120,
+                                        "text":  "manually",
+                                        "x":  643
+                                    },
+                                    {
+                                        "y":  683,
+                                        "height":  20,
+                                        "width":  133,
+                                        "text":  "determine",
+                                        "x":  783
+                                    },
+                                    {
+                                        "y":  683,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  937
+                                    },
+                                    {
+                                        "y":  683,
+                                        "height":  20,
+                                        "width":  134,
+                                        "text":  "threshold",
+                                        "x":  1001
+                                    },
+                                    {
+                                        "y":  683,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "for",
+                                        "x":  1157
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "every image.",
+                      "words":  [
+                                    {
+                                        "y":  725,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "every",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  720,
+                                        "height":  25,
+                                        "width":  83,
+                                        "text":  "image.",
+                                        "x":  261
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Your Task",
+                      "words":  [
+                                    {
+                                        "y":  778,
+                                        "height":  19,
+                                        "width":  60,
+                                        "text":  "Your",
+                                        "x":  168
+                                    },
+                                    {
+                                        "y":  777,
+                                        "height":  20,
+                                        "width":  60,
+                                        "text":  "Task",
+                                        "x":  244
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Use a grayscale object image such as the coins image associated with",
+                      "words":  [
+                                    {
+                                        "y":  834,
+                                        "height":  19,
+                                        "width":  42,
+                                        "text":  "Use",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  838,
+                                        "height":  15,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  230
+                                    },
+                                    {
+                                        "y":  833,
+                                        "height":  25,
+                                        "width":  134,
+                                        "text":  "grayscale",
+                                        "x":  261
+                                    },
+                                    {
+                                        "y":  833,
+                                        "height":  25,
+                                        "width":  87,
+                                        "text":  "object",
+                                        "x":  413
+                                    },
+                                    {
+                                        "y":  833,
+                                        "height":  25,
+                                        "width":  73,
+                                        "text":  "image",
+                                        "x":  519
+                                    },
+                                    {
+                                        "y":  833,
+                                        "height":  20,
+                                        "width":  57,
+                                        "text":  "such",
+                                        "x":  610
+                                    },
+                                    {
+                                        "y":  838,
+                                        "height":  15,
+                                        "width":  28,
+                                        "text":  "as",
+                                        "x":  686
+                                    },
+                                    {
+                                        "y":  833,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  731
+                                    },
+                                    {
+                                        "y":  833,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "coins",
+                                        "x":  793
+                                    },
+                                    {
+                                        "y":  833,
+                                        "height":  25,
+                                        "width":  72,
+                                        "text":  "image",
+                                        "x":  885
+                                    },
+                                    {
+                                        "y":  833,
+                                        "height":  20,
+                                        "width":  148,
+                                        "text":  "associated",
+                                        "x":  975
+                                    },
+                                    {
+                                        "y":  833,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "with",
+                                        "x":  1141
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "OpenCV\u0027s watershed example:",
+                      "words":  [
+                                    {
+                                        "y":  871,
+                                        "height":  25,
+                                        "width":  119,
+                                        "text":  "OpenCV\u0027s",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  871,
+                                        "height":  20,
+                                        "width":  134,
+                                        "text":  "watershed",
+                                        "x":  305
+                                    },
+                                    {
+                                        "y":  871,
+                                        "height":  25,
+                                        "width":  115,
+                                        "text":  "example:",
+                                        "x":  456
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Perform the following:",
+                      "words":  [
+                                    {
+                                        "y":  928,
+                                        "height":  20,
+                                        "width":  103,
+                                        "text":  "Perform",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  928,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  290
+                                    },
+                                    {
+                                        "y":  928,
+                                        "height":  25,
+                                        "width":  144,
+                                        "text":  "following:",
+                                        "x":  351
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1.",
+                      "words":  [
+                                    {
+                                        "y":  985,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "1.",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2.",
+                      "words":  [
+                                    {
+                                        "y":  1042,
+                                        "height":  18,
+                                        "width":  24,
+                                        "text":  "2.",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3.",
+                      "words":  [
+                                    {
+                                        "y":  1097,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "3.",
+                                        "x":  210
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4.",
+                      "words":  [
+                                    {
+                                        "y":  1154,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "4.",
+                                        "x":  210
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "5.",
+                      "words":  [
+                                    {
+                                        "y":  1210,
+                                        "height":  19,
+                                        "width":  24,
+                                        "text":  "5.",
+                                        "x":  211
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "6.",
+                      "words":  [
+                                    {
+                                        "y":  1304,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "6.",
+                                        "x":  210
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Convert the image to grayscale.",
+                      "words":  [
+                                    {
+                                        "y":  985,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "Convert",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  984,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  372
+                                    },
+                                    {
+                                        "y":  984,
+                                        "height":  25,
+                                        "width":  72,
+                                        "text":  "image",
+                                        "x":  434
+                                    },
+                                    {
+                                        "y":  985,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  522
+                                    },
+                                    {
+                                        "y":  984,
+                                        "height":  25,
+                                        "width":  145,
+                                        "text":  "grayscale.",
+                                        "x":  569
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Generate a histogram of the grayscale image .",
+                      "words":  [
+                                    {
+                                        "y":  1042,
+                                        "height":  18,
+                                        "width":  118,
+                                        "text":  "Generate",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1046,
+                                        "height":  14,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  388
+                                    },
+                                    {
+                                        "y":  1041,
+                                        "height":  24,
+                                        "width":  132,
+                                        "text":  "histogram",
+                                        "x":  419
+                                    },
+                                    {
+                                        "y":  1041,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "of",
+                                        "x":  568
+                                    },
+                                    {
+                                        "y":  1041,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  613
+                                    },
+                                    {
+                                        "y":  1041,
+                                        "height":  24,
+                                        "width":  135,
+                                        "text":  "grayscale",
+                                        "x":  674
+                                    },
+                                    {
+                                        "y":  1041,
+                                        "height":  24,
+                                        "width":  72,
+                                        "text":  "image",
+                                        "x":  827
+                                    },
+                                    {
+                                        "y":  1056,
+                                        "height":  4,
+                                        "width":  3,
+                                        "text":  ".",
+                                        "x":  906
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Apply Otsu\u0027s thresholding.",
+                      "words":  [
+                                    {
+                                        "y":  1096,
+                                        "height":  25,
+                                        "width":  74,
+                                        "text":  "Apply",
+                                        "x":  251
+                                    },
+                                    {
+                                        "y":  1096,
+                                        "height":  20,
+                                        "width":  89,
+                                        "text":  "Otsu\u0027s",
+                                        "x":  342
+                                    },
+                                    {
+                                        "y":  1096,
+                                        "height":  25,
+                                        "width":  190,
+                                        "text":  "thresholding.",
+                                        "x":  448
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Record the automatically selected threshold.",
+                      "words":  [
+                                    {
+                                        "y":  1153,
+                                        "height":  20,
+                                        "width":  87,
+                                        "text":  "Record",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1153,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  357
+                                    },
+                                    {
+                                        "y":  1152,
+                                        "height":  26,
+                                        "width":  194,
+                                        "text":  "automatically",
+                                        "x":  418
+                                    },
+                                    {
+                                        "y":  1153,
+                                        "height":  20,
+                                        "width":  118,
+                                        "text":  "selected",
+                                        "x":  629
+                                    },
+                                    {
+                                        "y":  1153,
+                                        "height":  20,
+                                        "width":  145,
+                                        "text":  "threshold.",
+                                        "x":  764
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Repeat the experiment after changing the image",
+                      "words":  [
+                                    {
+                                        "y":  1210,
+                                        "height":  24,
+                                        "width":  88,
+                                        "text":  "Repeat",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1209,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  366
+                                    },
+                                    {
+                                        "y":  1209,
+                                        "height":  25,
+                                        "width":  148,
+                                        "text":  "experiment",
+                                        "x":  437
+                                    },
+                                    {
+                                        "y":  1209,
+                                        "height":  20,
+                                        "width":  74,
+                                        "text":  "after",
+                                        "x":  612
+                                    },
+                                    {
+                                        "y":  1209,
+                                        "height":  25,
+                                        "width":  119,
+                                        "text":  "changing",
+                                        "x":  712
+                                    },
+                                    {
+                                        "y":  1209,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  857
+                                    },
+                                    {
+                                        "y":  1208,
+                                        "height":  26,
+                                        "width":  73,
+                                        "text":  "image",
+                                        "x":  927
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "preprocessing slightly.",
+                      "words":  [
+                                    {
+                                        "y":  1247,
+                                        "height":  25,
+                                        "width":  195,
+                                        "text":  "preprocessing",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1247,
+                                        "height":  25,
+                                        "width":  129,
+                                        "text":  "slightly.",
+                                        "x":  463
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Compare the automatically selected thresholds.",
+                      "words":  [
+                                    {
+                                        "y":  1304,
+                                        "height":  24,
+                                        "width":  103,
+                                        "text":  "Compare",
+                                        "x":  252
+                                    },
+                                    {
+                                        "y":  1303,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  372
+                                    },
+                                    {
+                                        "y":  1303,
+                                        "height":  25,
+                                        "width":  194,
+                                        "text":  "automatically",
+                                        "x":  433
+                                    },
+                                    {
+                                        "y":  1303,
+                                        "height":  20,
+                                        "width":  117,
+                                        "text":  "selected",
+                                        "x":  645
+                                    },
+                                    {
+                                        "y":  1303,
+                                        "height":  20,
+                                        "width":  160,
+                                        "text":  "thresholds.",
+                                        "x":  780
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "contrast",
+                      "words":  [
+                                    {
+                                        "y":  1210,
+                                        "height":  19,
+                                        "width":  118,
+                                        "text":  "contrast",
+                                        "x":  1027
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "or",
+                      "words":  [
+                                    {
+                                        "y":  1214,
+                                        "height":  15,
+                                        "width":  29,
+                                        "text":  "or",
+                                        "x":  1172
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Required Output",
+                      "words":  [
+                                    {
+                                        "y":  1359,
+                                        "height":  25,
+                                        "width":  118,
+                                        "text":  "Required",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1360,
+                                        "height":  24,
+                                        "width":  89,
+                                        "text":  "Output",
+                                        "x":  305
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Show :",
+                      "words":  [
+                                    {
+                                        "y":  1415,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "Show",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1420,
+                                        "height":  15,
+                                        "width":  5,
+                                        "text":  ":",
+                                        "x":  234
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Original Histogram + Otsu Binary Mask",
+                      "words":  [
+                                    {
+                                        "y":  1471,
+                                        "height":  25,
+                                        "width":  119,
+                                        "text":  "Original",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1471,
+                                        "height":  25,
+                                        "width":  134,
+                                        "text":  "Histogram",
+                                        "x":  335
+                                    },
+                                    {
+                                        "y":  1475,
+                                        "height":  13,
+                                        "width":  15,
+                                        "text":  "+",
+                                        "x":  485
+                                    },
+                                    {
+                                        "y":  1472,
+                                        "height":  19,
+                                        "width":  60,
+                                        "text":  "Otsu",
+                                        "x":  515
+                                    },
+                                    {
+                                        "y":  1471,
+                                        "height":  25,
+                                        "width":  89,
+                                        "text":  "Binary",
+                                        "x":  592
+                                    },
+                                    {
+                                        "y":  1471,
+                                        "height":  20,
+                                        "width":  60,
+                                        "text":  "Mask",
+                                        "x":  697
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Then answer:",
+                      "words":  [
+                                    {
+                                        "y":  1527,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "Then",
+                                        "x":  168
+                                    },
+                                    {
+                                        "y":  1533,
+                                        "height":  14,
+                                        "width":  99,
+                                        "text":  "answer:",
+                                        "x":  245
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Why is Otsu useful when the programmer does not know",
+                      "words":  [
+                                    {
+                                        "y":  1584,
+                                        "height":  25,
+                                        "width":  44,
+                                        "text":  "Why",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1584,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  237
+                                    },
+                                    {
+                                        "y":  1585,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "Otsu",
+                                        "x":  287
+                                    },
+                                    {
+                                        "y":  1584,
+                                        "height":  20,
+                                        "width":  87,
+                                        "text":  "useful",
+                                        "x":  369
+                                    },
+                                    {
+                                        "y":  1584,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "when",
+                                        "x":  479
+                                    },
+                                    {
+                                        "y":  1584,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  561
+                                    },
+                                    {
+                                        "y":  1588,
+                                        "height":  21,
+                                        "width":  149,
+                                        "text":  "programmer",
+                                        "x":  629
+                                    },
+                                    {
+                                        "y":  1584,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "does",
+                                        "x":  800
+                                    },
+                                    {
+                                        "y":  1585,
+                                        "height":  19,
+                                        "width":  42,
+                                        "text":  "not",
+                                        "x":  883
+                                    },
+                                    {
+                                        "y":  1584,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "know",
+                                        "x":  949
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "threshold beforehand?",
+                      "words":  [
+                                    {
+                                        "y":  1622,
+                                        "height":  20,
+                                        "width":  134,
+                                        "text":  "threshold",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1622,
+                                        "height":  20,
+                                        "width":  162,
+                                        "text":  "beforehand?",
+                                        "x":  321
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "the correct",
+                      "words":  [
+                                    {
+                                        "y":  1584,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  1029
+                                    },
+                                    {
+                                        "y":  1585,
+                                        "height":  19,
+                                        "width":  103,
+                                        "text":  "correct",
+                                        "x":  1097
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Your implementation must use Otsu Is thresholding rather than manually",
+                      "words":  [
+                                    {
+                                        "y":  1679,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "Your",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1678,
+                                        "height":  25,
+                                        "width":  208,
+                                        "text":  "implementation",
+                                        "x":  245
+                                    },
+                                    {
+                                        "y":  1679,
+                                        "height":  19,
+                                        "width":  59,
+                                        "text":  "must",
+                                        "x":  468
+                                    },
+                                    {
+                                        "y":  1683,
+                                        "height":  15,
+                                        "width":  42,
+                                        "text":  "use",
+                                        "x":  544
+                                    },
+                                    {
+                                        "y":  1679,
+                                        "height":  19,
+                                        "width":  58,
+                                        "text":  "Otsu",
+                                        "x":  602
+                                    },
+                                    {
+                                        "y":  1678,
+                                        "height":  20,
+                                        "width":  23,
+                                        "text":  "Is",
+                                        "x":  668
+                                    },
+                                    {
+                                        "y":  1678,
+                                        "height":  25,
+                                        "width":  180,
+                                        "text":  "thresholding",
+                                        "x":  707
+                                    },
+                                    {
+                                        "y":  1678,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "rather",
+                                        "x":  903
+                                    },
+                                    {
+                                        "y":  1678,
+                                        "height":  20,
+                                        "width":  59,
+                                        "text":  "than",
+                                        "x":  1006
+                                    },
+                                    {
+                                        "y":  1678,
+                                        "height":  25,
+                                        "width":  120,
+                                        "text":  "manually",
+                                        "x":  1081
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "choosing the threshold, as specified in the manual.",
+                      "words":  [
+                                    {
+                                        "y":  1716,
+                                        "height":  25,
+                                        "width":  119,
+                                        "text":  "choosing",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1716,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  305
+                                    },
+                                    {
+                                        "y":  1716,
+                                        "height":  23,
+                                        "width":  145,
+                                        "text":  "threshold,",
+                                        "x":  365
+                                    },
+                                    {
+                                        "y":  1721,
+                                        "height":  15,
+                                        "width":  28,
+                                        "text":  "as",
+                                        "x":  531
+                                    },
+                                    {
+                                        "y":  1716,
+                                        "height":  25,
+                                        "width":  133,
+                                        "text":  "specified",
+                                        "x":  577
+                                    },
+                                    {
+                                        "y":  1716,
+                                        "height":  20,
+                                        "width":  26,
+                                        "text":  "in",
+                                        "x":  729
+                                    },
+                                    {
+                                        "y":  1716,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  773
+                                    },
+                                    {
+                                        "y":  1716,
+                                        "height":  20,
+                                        "width":  99,
+                                        "text":  "manual.",
+                                        "x":  834
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1821,
+                                        "height":  21,
+                                        "width":  75,
+                                        "text":  "Talha",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  1820,
+                                        "height":  23,
+                                        "width":  95,
+                                        "text":  "Shahid",
+                                        "x":  255
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "31",
+                      "words":  [
+                                    {
+                                        "y":  1821,
+                                        "height":  27,
+                                        "width":  30,
+                                        "text":  "31",
+                                        "x":  1062
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Page",
+                      "words":  [
+                                    {
+                                        "y":  1822,
+                                        "height":  27,
+                                        "width":  86,
+                                        "text":  "Page",
+                                        "x":  1105
+                                    }
+                                ]
+                  }
+              ]
+}

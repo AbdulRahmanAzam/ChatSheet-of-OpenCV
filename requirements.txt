@@ -1,0 +1,8 @@
+# cvassist runtime (Python 3.10-3.12). Validated versions; OpenCV must be 4.x (5.x has no HOGDescriptor).
+numpy==2.5.3
+opencv-python-headless==4.13.0.92
+matplotlib==3.11.2
+onnxruntime==1.30.0
+tokenizers==0.23.2
+# Optional, only for the experimental "cvassist code" command:
+# llama-cpp-python==0.3.36   (CPU wheels: --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cpu)

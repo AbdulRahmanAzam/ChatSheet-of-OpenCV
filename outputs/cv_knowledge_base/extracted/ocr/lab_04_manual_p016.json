@@ -1,0 +1,2022 @@
+﻿{
+    "id":  "lab_04_manual_p016",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "National University of Computer \u0026 Emerging Sciences - NUCES - Karachi Department of Artificial Intelligence 4. Filtering \u0026 Convolution Filtering and convolution are fundamental operations in image processing and computer vision. They are used for various tasks, including noise reduction, edge detection, feature extraction, and image enhancement . 4.1 Filtering: • Filtering in image processing involves applying a filter or kernel to an input image. A filter is a small matrix of numbers that is convolved with the image to modify the pixel values. Each element of the filter represents a weighted contribution to the new pixel value. Filtering operations can enhance or suppress certain image features . 4.2 Convolution: Convolution is the mathematical operation used to apply a filter to an image. It involves sliding the filter over the image, element-wise multiplying the filter and the corresponding image region, and summing the results. Convolution is expressed as the dot product between the filter and the image region. It is performed for every pixel in the image, resulting in a new image called the output or convolved image. Box Blur A simple blurring technique that replaces each pixel with the average of its neighboring pixels within a square kernel. Useful for noise reduction and smoothing. import cv2 import numpy as np # Read an image = cv2.imread( \u0027image .jpg image # Define a box blur = np.ones((3, kernel # Apply convolution blurred _ image = cv2. FAST NUCES - Karachi kernel 3), dtype=np.ftoat32) / 9 fitter2D(image, -1, kernel) Talha Shahid 15",
+    "review_status":  "raw_ocr_unverified",
+    "page":  16,
+    "source_id":  "lab_04_manual",
+    "lines":  [
+                  {
+                      "text":  "National University of Computer \u0026 Emerging Sciences -",
+                      "words":  [
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  123,
+                                        "text":  "National",
+                                        "x":  372
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  30,
+                                        "width":  153,
+                                        "text":  "University",
+                                        "x":  504
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  31,
+                                        "text":  "of",
+                                        "x":  664
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  30,
+                                        "width":  146,
+                                        "text":  "Computer",
+                                        "x":  701
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  23,
+                                        "width":  23,
+                                        "text":  "\u0026",
+                                        "x":  854
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  30,
+                                        "width":  140,
+                                        "text":  "Emerging",
+                                        "x":  885
+                                    },
+                                    {
+                                        "y":  95,
+                                        "height":  23,
+                                        "width":  123,
+                                        "text":  "Sciences",
+                                        "x":  1033
+                                    },
+                                    {
+                                        "y":  107,
+                                        "height":  4,
+                                        "width":  9,
+                                        "text":  "-",
+                                        "x":  1166
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "NUCES - Karachi",
+                      "words":  [
+                                    {
+                                        "y":  138,
+                                        "height":  23,
+                                        "width":  96,
+                                        "text":  "NUCES",
+                                        "x":  655
+                                    },
+                                    {
+                                        "y":  150,
+                                        "height":  4,
+                                        "width":  8,
+                                        "text":  "-",
+                                        "x":  760
+                                    },
+                                    {
+                                        "y":  137,
+                                        "height":  24,
+                                        "width":  113,
+                                        "text":  "Karachi",
+                                        "x":  778
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Department of Artificial Intelligence",
+                      "words":  [
+                                    {
+                                        "y":  179,
+                                        "height":  27,
+                                        "width":  142,
+                                        "text":  "Department",
+                                        "x":  556
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  21,
+                                        "width":  25,
+                                        "text":  "of",
+                                        "x":  706
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  21,
+                                        "width":  100,
+                                        "text":  "Artificial",
+                                        "x":  738
+                                    },
+                                    {
+                                        "y":  179,
+                                        "height":  27,
+                                        "width":  137,
+                                        "text":  "Intelligence",
+                                        "x":  848
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4. Filtering \u0026 Convolution",
+                      "words":  [
+                                    {
+                                        "y":  222,
+                                        "height":  27,
+                                        "width":  32,
+                                        "text":  "4.",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  219,
+                                        "height":  38,
+                                        "width":  152,
+                                        "text":  "Filtering",
+                                        "x":  217
+                                    },
+                                    {
+                                        "y":  222,
+                                        "height":  27,
+                                        "width":  27,
+                                        "text":  "\u0026",
+                                        "x":  384
+                                    },
+                                    {
+                                        "y":  219,
+                                        "height":  30,
+                                        "width":  222,
+                                        "text":  "Convolution",
+                                        "x":  424
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Filtering and convolution are fundamental operations in image",
+                      "words":  [
+                                    {
+                                        "y":  285,
+                                        "height":  24,
+                                        "width":  134,
+                                        "text":  "Filtering",
+                                        "x":  211
+                                    },
+                                    {
+                                        "y":  284,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  372
+                                    },
+                                    {
+                                        "y":  285,
+                                        "height":  19,
+                                        "width":  162,
+                                        "text":  "convolution",
+                                        "x":  443
+                                    },
+                                    {
+                                        "y":  290,
+                                        "height":  14,
+                                        "width":  43,
+                                        "text":  "are",
+                                        "x":  633
+                                    },
+                                    {
+                                        "y":  284,
+                                        "height":  20,
+                                        "width":  163,
+                                        "text":  "fundamental",
+                                        "x":  704
+                                    },
+                                    {
+                                        "y":  285,
+                                        "height":  24,
+                                        "width":  148,
+                                        "text":  "operations",
+                                        "x":  895
+                                    },
+                                    {
+                                        "y":  284,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "in",
+                                        "x":  1072
+                                    },
+                                    {
+                                        "y":  285,
+                                        "height":  24,
+                                        "width":  72,
+                                        "text":  "image",
+                                        "x":  1128
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "processing and computer vision. They are used for various tasks,",
+                      "words":  [
+                                    {
+                                        "y":  323,
+                                        "height":  24,
+                                        "width":  149,
+                                        "text":  "processing",
+                                        "x":  211
+                                    },
+                                    {
+                                        "y":  322,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  380
+                                    },
+                                    {
+                                        "y":  323,
+                                        "height":  24,
+                                        "width":  118,
+                                        "text":  "computer",
+                                        "x":  443
+                                    },
+                                    {
+                                        "y":  323,
+                                        "height":  19,
+                                        "width":  100,
+                                        "text":  "vision.",
+                                        "x":  581
+                                    },
+                                    {
+                                        "y":  323,
+                                        "height":  24,
+                                        "width":  59,
+                                        "text":  "They",
+                                        "x":  704
+                                    },
+                                    {
+                                        "y":  328,
+                                        "height":  14,
+                                        "width":  44,
+                                        "text":  "are",
+                                        "x":  783
+                                    },
+                                    {
+                                        "y":  323,
+                                        "height":  19,
+                                        "width":  57,
+                                        "text":  "used",
+                                        "x":  847
+                                    },
+                                    {
+                                        "y":  323,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "for",
+                                        "x":  924
+                                    },
+                                    {
+                                        "y":  323,
+                                        "height":  19,
+                                        "width":  104,
+                                        "text":  "various",
+                                        "x":  987
+                                    },
+                                    {
+                                        "y":  323,
+                                        "height":  22,
+                                        "width":  86,
+                                        "text":  "tasks,",
+                                        "x":  1110
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "including noise reduction, edge detection, feature extraction, and",
+                      "words":  [
+                                    {
+                                        "y":  359,
+                                        "height":  24,
+                                        "width":  133,
+                                        "text":  "including",
+                                        "x":  212
+                                    },
+                                    {
+                                        "y":  359,
+                                        "height":  19,
+                                        "width":  72,
+                                        "text":  "noise",
+                                        "x":  362
+                                    },
+                                    {
+                                        "y":  359,
+                                        "height":  23,
+                                        "width":  144,
+                                        "text":  "reduction,",
+                                        "x":  451
+                                    },
+                                    {
+                                        "y":  359,
+                                        "height":  24,
+                                        "width":  58,
+                                        "text":  "edge",
+                                        "x":  616
+                                    },
+                                    {
+                                        "y":  359,
+                                        "height":  23,
+                                        "width":  145,
+                                        "text":  "detection,",
+                                        "x":  691
+                                    },
+                                    {
+                                        "y":  359,
+                                        "height":  19,
+                                        "width":  102,
+                                        "text":  "feature",
+                                        "x":  857
+                                    },
+                                    {
+                                        "y":  359,
+                                        "height":  23,
+                                        "width":  160,
+                                        "text":  "extraction,",
+                                        "x":  976
+                                    },
+                                    {
+                                        "y":  359,
+                                        "height":  19,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  1157
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "image enhancement .",
+                      "words":  [
+                                    {
+                                        "y":  397,
+                                        "height":  24,
+                                        "width":  72,
+                                        "text":  "image",
+                                        "x":  212
+                                    },
+                                    {
+                                        "y":  397,
+                                        "height":  19,
+                                        "width":  163,
+                                        "text":  "enhancement",
+                                        "x":  301
+                                    },
+                                    {
+                                        "y":  412,
+                                        "height":  4,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  471
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4.1 Filtering:",
+                      "words":  [
+                                    {
+                                        "y":  478,
+                                        "height":  24,
+                                        "width":  45,
+                                        "text":  "4.1",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  475,
+                                        "height":  34,
+                                        "width":  142,
+                                        "text":  "Filtering:",
+                                        "x":  229
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "•",
+                      "words":  [
+                                    {
+                                        "y":  768,
+                                        "height":  10,
+                                        "width":  9,
+                                        "text":  "•",
+                                        "x":  252
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Filtering in image processing involves applying a filter or",
+                      "words":  [
+                                    {
+                                        "y":  535,
+                                        "height":  26,
+                                        "width":  133,
+                                        "text":  "Filtering",
+                                        "x":  294
+                                    },
+                                    {
+                                        "y":  535,
+                                        "height":  20,
+                                        "width":  26,
+                                        "text":  "in",
+                                        "x":  447
+                                    },
+                                    {
+                                        "y":  535,
+                                        "height":  26,
+                                        "width":  72,
+                                        "text":  "image",
+                                        "x":  494
+                                    },
+                                    {
+                                        "y":  535,
+                                        "height":  26,
+                                        "width":  149,
+                                        "text":  "processing",
+                                        "x":  587
+                                    },
+                                    {
+                                        "y":  536,
+                                        "height":  20,
+                                        "width":  118,
+                                        "text":  "involves",
+                                        "x":  756
+                                    },
+                                    {
+                                        "y":  535,
+                                        "height":  26,
+                                        "width":  118,
+                                        "text":  "applying",
+                                        "x":  894
+                                    },
+                                    {
+                                        "y":  541,
+                                        "height":  15,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  1031
+                                    },
+                                    {
+                                        "y":  536,
+                                        "height":  20,
+                                        "width":  89,
+                                        "text":  "filter",
+                                        "x":  1064
+                                    },
+                                    {
+                                        "y":  541,
+                                        "height":  15,
+                                        "width":  29,
+                                        "text":  "or",
+                                        "x":  1172
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "kernel to an input image.",
+                      "words":  [
+                                    {
+                                        "y":  573,
+                                        "height":  20,
+                                        "width":  87,
+                                        "text":  "kernel",
+                                        "x":  294
+                                    },
+                                    {
+                                        "y":  574,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  398
+                                    },
+                                    {
+                                        "y":  578,
+                                        "height":  15,
+                                        "width":  26,
+                                        "text":  "an",
+                                        "x":  444
+                                    },
+                                    {
+                                        "y":  573,
+                                        "height":  25,
+                                        "width":  72,
+                                        "text":  "input",
+                                        "x":  490
+                                    },
+                                    {
+                                        "y":  573,
+                                        "height":  25,
+                                        "width":  84,
+                                        "text":  "image.",
+                                        "x":  580
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "A filter is a small matrix of numbers that is convolved with",
+                      "words":  [
+                                    {
+                                        "y":  612,
+                                        "height":  19,
+                                        "width":  15,
+                                        "text":  "A",
+                                        "x":  292
+                                    },
+                                    {
+                                        "y":  611,
+                                        "height":  20,
+                                        "width":  89,
+                                        "text":  "filter",
+                                        "x":  324
+                                    },
+                                    {
+                                        "y":  611,
+                                        "height":  20,
+                                        "width":  26,
+                                        "text":  "is",
+                                        "x":  430
+                                    },
+                                    {
+                                        "y":  616,
+                                        "height":  15,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  474
+                                    },
+                                    {
+                                        "y":  611,
+                                        "height":  20,
+                                        "width":  73,
+                                        "text":  "small",
+                                        "x":  505
+                                    },
+                                    {
+                                        "y":  611,
+                                        "height":  20,
+                                        "width":  88,
+                                        "text":  "matrix",
+                                        "x":  596
+                                    },
+                                    {
+                                        "y":  611,
+                                        "height":  20,
+                                        "width":  29,
+                                        "text":  "of",
+                                        "x":  702
+                                    },
+                                    {
+                                        "y":  611,
+                                        "height":  20,
+                                        "width":  102,
+                                        "text":  "numbers",
+                                        "x":  749
+                                    },
+                                    {
+                                        "y":  611,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "that",
+                                        "x":  869
+                                    },
+                                    {
+                                        "y":  611,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  945
+                                    },
+                                    {
+                                        "y":  611,
+                                        "height":  20,
+                                        "width":  133,
+                                        "text":  "convolved",
+                                        "x":  990
+                                    },
+                                    {
+                                        "y":  611,
+                                        "height":  20,
+                                        "width":  58,
+                                        "text":  "with",
+                                        "x":  1141
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "the image to modify the pixel values.",
+                      "words":  [
+                                    {
+                                        "y":  649,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  292
+                                    },
+                                    {
+                                        "y":  648,
+                                        "height":  25,
+                                        "width":  72,
+                                        "text":  "image",
+                                        "x":  355
+                                    },
+                                    {
+                                        "y":  649,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "to",
+                                        "x":  444
+                                    },
+                                    {
+                                        "y":  648,
+                                        "height":  25,
+                                        "width":  89,
+                                        "text":  "modify",
+                                        "x":  488
+                                    },
+                                    {
+                                        "y":  649,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  594
+                                    },
+                                    {
+                                        "y":  648,
+                                        "height":  25,
+                                        "width":  72,
+                                        "text":  "pixel",
+                                        "x":  656
+                                    },
+                                    {
+                                        "y":  648,
+                                        "height":  20,
+                                        "width":  100,
+                                        "text":  "values.",
+                                        "x":  746
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Each element of the filter represents a weighted contribution",
+                      "words":  [
+                                    {
+                                        "y":  687,
+                                        "height":  19,
+                                        "width":  56,
+                                        "text":  "Each",
+                                        "x":  294
+                                    },
+                                    {
+                                        "y":  686,
+                                        "height":  20,
+                                        "width":  102,
+                                        "text":  "element",
+                                        "x":  367
+                                    },
+                                    {
+                                        "y":  686,
+                                        "height":  20,
+                                        "width":  29,
+                                        "text":  "of",
+                                        "x":  485
+                                    },
+                                    {
+                                        "y":  687,
+                                        "height":  19,
+                                        "width":  45,
+                                        "text":  "the",
+                                        "x":  528
+                                    },
+                                    {
+                                        "y":  686,
+                                        "height":  20,
+                                        "width":  89,
+                                        "text":  "filter",
+                                        "x":  589
+                                    },
+                                    {
+                                        "y":  687,
+                                        "height":  23,
+                                        "width":  149,
+                                        "text":  "represents",
+                                        "x":  693
+                                    },
+                                    {
+                                        "y":  692,
+                                        "height":  14,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  858
+                                    },
+                                    {
+                                        "y":  686,
+                                        "height":  24,
+                                        "width":  118,
+                                        "text":  "weighted",
+                                        "x":  886
+                                    },
+                                    {
+                                        "y":  686,
+                                        "height":  20,
+                                        "width":  179,
+                                        "text":  "contribution",
+                                        "x":  1021
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "to the new pixel value.",
+                      "words":  [
+                                    {
+                                        "y":  724,
+                                        "height":  19,
+                                        "width":  29,
+                                        "text":  "to",
+                                        "x":  292
+                                    },
+                                    {
+                                        "y":  723,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  338
+                                    },
+                                    {
+                                        "y":  728,
+                                        "height":  15,
+                                        "width":  43,
+                                        "text":  "new",
+                                        "x":  400
+                                    },
+                                    {
+                                        "y":  723,
+                                        "height":  25,
+                                        "width":  72,
+                                        "text":  "pixel",
+                                        "x":  459
+                                    },
+                                    {
+                                        "y":  723,
+                                        "height":  20,
+                                        "width":  85,
+                                        "text":  "value.",
+                                        "x":  549
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Filtering operations can enhance or suppress certain image",
+                      "words":  [
+                                    {
+                                        "y":  761,
+                                        "height":  25,
+                                        "width":  133,
+                                        "text":  "Filtering",
+                                        "x":  294
+                                    },
+                                    {
+                                        "y":  761,
+                                        "height":  25,
+                                        "width":  148,
+                                        "text":  "operations",
+                                        "x":  449
+                                    },
+                                    {
+                                        "y":  766,
+                                        "height":  15,
+                                        "width":  43,
+                                        "text":  "can",
+                                        "x":  619
+                                    },
+                                    {
+                                        "y":  761,
+                                        "height":  20,
+                                        "width":  104,
+                                        "text":  "enhance",
+                                        "x":  684
+                                    },
+                                    {
+                                        "y":  766,
+                                        "height":  15,
+                                        "width":  29,
+                                        "text":  "or",
+                                        "x":  810
+                                    },
+                                    {
+                                        "y":  766,
+                                        "height":  20,
+                                        "width":  117,
+                                        "text":  "suppress",
+                                        "x":  861
+                                    },
+                                    {
+                                        "y":  761,
+                                        "height":  20,
+                                        "width":  103,
+                                        "text":  "certain",
+                                        "x":  1001
+                                    },
+                                    {
+                                        "y":  761,
+                                        "height":  25,
+                                        "width":  73,
+                                        "text":  "image",
+                                        "x":  1127
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "features .",
+                      "words":  [
+                                    {
+                                        "y":  798,
+                                        "height":  20,
+                                        "width":  118,
+                                        "text":  "features",
+                                        "x":  293
+                                    },
+                                    {
+                                        "y":  814,
+                                        "height":  4,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  418
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4.2 Convolution:",
+                      "words":  [
+                                    {
+                                        "y":  880,
+                                        "height":  24,
+                                        "width":  46,
+                                        "text":  "4.2",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  878,
+                                        "height":  26,
+                                        "width":  203,
+                                        "text":  "Convolution:",
+                                        "x":  227
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Convolution is the mathematical operation used to apply a",
+                      "words":  [
+                                    {
+                                        "y":  938,
+                                        "height":  20,
+                                        "width":  162,
+                                        "text":  "Convolution",
+                                        "x":  292
+                                    },
+                                    {
+                                        "y":  937,
+                                        "height":  21,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  479
+                                    },
+                                    {
+                                        "y":  938,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  529
+                                    },
+                                    {
+                                        "y":  937,
+                                        "height":  21,
+                                        "width":  180,
+                                        "text":  "mathematical",
+                                        "x":  596
+                                    },
+                                    {
+                                        "y":  937,
+                                        "height":  26,
+                                        "width":  132,
+                                        "text":  "operation",
+                                        "x":  800
+                                    },
+                                    {
+                                        "y":  938,
+                                        "height":  20,
+                                        "width":  57,
+                                        "text":  "used",
+                                        "x":  957
+                                    },
+                                    {
+                                        "y":  939,
+                                        "height":  19,
+                                        "width":  28,
+                                        "text":  "to",
+                                        "x":  1038
+                                    },
+                                    {
+                                        "y":  938,
+                                        "height":  25,
+                                        "width":  73,
+                                        "text":  "apply",
+                                        "x":  1090
+                                    },
+                                    {
+                                        "y":  943,
+                                        "height":  15,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  1187
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "filter to an image.",
+                      "words":  [
+                                    {
+                                        "y":  976,
+                                        "height":  20,
+                                        "width":  89,
+                                        "text":  "filter",
+                                        "x":  292
+                                    },
+                                    {
+                                        "y":  977,
+                                        "height":  19,
+                                        "width":  28,
+                                        "text":  "to",
+                                        "x":  397
+                                    },
+                                    {
+                                        "y":  981,
+                                        "height":  15,
+                                        "width":  26,
+                                        "text":  "an",
+                                        "x":  443
+                                    },
+                                    {
+                                        "y":  976,
+                                        "height":  25,
+                                        "width":  84,
+                                        "text":  "image.",
+                                        "x":  488
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "It involves sliding the filter over the image, element-wise",
+                      "words":  [
+                                    {
+                                        "y":  1014,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "It",
+                                        "x":  292
+                                    },
+                                    {
+                                        "y":  1013,
+                                        "height":  20,
+                                        "width":  116,
+                                        "text":  "involves",
+                                        "x":  341
+                                    },
+                                    {
+                                        "y":  1013,
+                                        "height":  25,
+                                        "width":  105,
+                                        "text":  "sliding",
+                                        "x":  477
+                                    },
+                                    {
+                                        "y":  1013,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  600
+                                    },
+                                    {
+                                        "y":  1013,
+                                        "height":  20,
+                                        "width":  89,
+                                        "text":  "filter",
+                                        "x":  664
+                                    },
+                                    {
+                                        "y":  1019,
+                                        "height":  14,
+                                        "width":  59,
+                                        "text":  "over",
+                                        "x":  772
+                                    },
+                                    {
+                                        "y":  1013,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  849
+                                    },
+                                    {
+                                        "y":  1013,
+                                        "height":  25,
+                                        "width":  84,
+                                        "text":  "image,",
+                                        "x":  913
+                                    },
+                                    {
+                                        "y":  1013,
+                                        "height":  20,
+                                        "width":  179,
+                                        "text":  "element-wise",
+                                        "x":  1021
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "multiplying the filter and the corresponding image region,",
+                      "words":  [
+                                    {
+                                        "y":  1051,
+                                        "height":  25,
+                                        "width":  164,
+                                        "text":  "multiplying",
+                                        "x":  291
+                                    },
+                                    {
+                                        "y":  1052,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  476
+                                    },
+                                    {
+                                        "y":  1051,
+                                        "height":  20,
+                                        "width":  90,
+                                        "text":  "filter",
+                                        "x":  542
+                                    },
+                                    {
+                                        "y":  1052,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "and",
+                                        "x":  653
+                                    },
+                                    {
+                                        "y":  1052,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  718
+                                    },
+                                    {
+                                        "y":  1051,
+                                        "height":  24,
+                                        "width":  194,
+                                        "text":  "corresponding",
+                                        "x":  785
+                                    },
+                                    {
+                                        "y":  1051,
+                                        "height":  24,
+                                        "width":  73,
+                                        "text":  "image",
+                                        "x":  1001
+                                    },
+                                    {
+                                        "y":  1051,
+                                        "height":  24,
+                                        "width":  100,
+                                        "text":  "region,",
+                                        "x":  1096
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "and summing the results.",
+                      "words":  [
+                                    {
+                                        "y":  1088,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  292
+                                    },
+                                    {
+                                        "y":  1088,
+                                        "height":  25,
+                                        "width":  103,
+                                        "text":  "summing",
+                                        "x":  352
+                                    },
+                                    {
+                                        "y":  1088,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  471
+                                    },
+                                    {
+                                        "y":  1088,
+                                        "height":  20,
+                                        "width":  114,
+                                        "text":  "results.",
+                                        "x":  533
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Convolution is expressed as the dot product between the filter",
+                      "words":  [
+                                    {
+                                        "y":  1126,
+                                        "height":  20,
+                                        "width":  162,
+                                        "text":  "Convolution",
+                                        "x":  292
+                                    },
+                                    {
+                                        "y":  1126,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  470
+                                    },
+                                    {
+                                        "y":  1126,
+                                        "height":  25,
+                                        "width":  133,
+                                        "text":  "expressed",
+                                        "x":  512
+                                    },
+                                    {
+                                        "y":  1131,
+                                        "height":  15,
+                                        "width":  28,
+                                        "text":  "as",
+                                        "x":  660
+                                    },
+                                    {
+                                        "y":  1126,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  702
+                                    },
+                                    {
+                                        "y":  1126,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "dot",
+                                        "x":  760
+                                    },
+                                    {
+                                        "y":  1126,
+                                        "height":  25,
+                                        "width":  102,
+                                        "text":  "product",
+                                        "x":  818
+                                    },
+                                    {
+                                        "y":  1126,
+                                        "height":  20,
+                                        "width":  102,
+                                        "text":  "between",
+                                        "x":  936
+                                    },
+                                    {
+                                        "y":  1126,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  1053
+                                    },
+                                    {
+                                        "y":  1126,
+                                        "height":  20,
+                                        "width":  89,
+                                        "text":  "filter",
+                                        "x":  1112
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "and the image region.",
+                      "words":  [
+                                    {
+                                        "y":  1163,
+                                        "height":  20,
+                                        "width":  42,
+                                        "text":  "and",
+                                        "x":  292
+                                    },
+                                    {
+                                        "y":  1163,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "the",
+                                        "x":  352
+                                    },
+                                    {
+                                        "y":  1163,
+                                        "height":  25,
+                                        "width":  72,
+                                        "text":  "image",
+                                        "x":  413
+                                    },
+                                    {
+                                        "y":  1163,
+                                        "height":  25,
+                                        "width":  100,
+                                        "text":  "region.",
+                                        "x":  502
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "It is performed for every pixel in the image, resulting in a",
+                      "words":  [
+                                    {
+                                        "y":  1202,
+                                        "height":  19,
+                                        "width":  27,
+                                        "text":  "It",
+                                        "x":  292
+                                    },
+                                    {
+                                        "y":  1201,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "is",
+                                        "x":  338
+                                    },
+                                    {
+                                        "y":  1201,
+                                        "height":  25,
+                                        "width":  131,
+                                        "text":  "performed",
+                                        "x":  384
+                                    },
+                                    {
+                                        "y":  1201,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "for",
+                                        "x":  534
+                                    },
+                                    {
+                                        "y":  1207,
+                                        "height":  19,
+                                        "width":  73,
+                                        "text":  "every",
+                                        "x":  595
+                                    },
+                                    {
+                                        "y":  1201,
+                                        "height":  25,
+                                        "width":  73,
+                                        "text":  "pixel",
+                                        "x":  686
+                                    },
+                                    {
+                                        "y":  1201,
+                                        "height":  20,
+                                        "width":  26,
+                                        "text":  "in",
+                                        "x":  778
+                                    },
+                                    {
+                                        "y":  1201,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  822
+                                    },
+                                    {
+                                        "y":  1201,
+                                        "height":  25,
+                                        "width":  83,
+                                        "text":  "image,",
+                                        "x":  885
+                                    },
+                                    {
+                                        "y":  1201,
+                                        "height":  25,
+                                        "width":  135,
+                                        "text":  "resulting",
+                                        "x":  989
+                                    },
+                                    {
+                                        "y":  1201,
+                                        "height":  20,
+                                        "width":  27,
+                                        "text":  "in",
+                                        "x":  1142
+                                    },
+                                    {
+                                        "y":  1206,
+                                        "height":  15,
+                                        "width":  13,
+                                        "text":  "a",
+                                        "x":  1187
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "new image called the output or convolved image.",
+                      "words":  [
+                                    {
+                                        "y":  1244,
+                                        "height":  15,
+                                        "width":  43,
+                                        "text":  "new",
+                                        "x":  292
+                                    },
+                                    {
+                                        "y":  1238,
+                                        "height":  26,
+                                        "width":  72,
+                                        "text":  "image",
+                                        "x":  353
+                                    },
+                                    {
+                                        "y":  1239,
+                                        "height":  20,
+                                        "width":  87,
+                                        "text":  "called",
+                                        "x":  443
+                                    },
+                                    {
+                                        "y":  1239,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "the",
+                                        "x":  547
+                                    },
+                                    {
+                                        "y":  1240,
+                                        "height":  23,
+                                        "width":  89,
+                                        "text":  "output",
+                                        "x":  608
+                                    },
+                                    {
+                                        "y":  1244,
+                                        "height":  15,
+                                        "width":  29,
+                                        "text":  "or",
+                                        "x":  714
+                                    },
+                                    {
+                                        "y":  1239,
+                                        "height":  20,
+                                        "width":  133,
+                                        "text":  "convolved",
+                                        "x":  760
+                                    },
+                                    {
+                                        "y":  1238,
+                                        "height":  26,
+                                        "width":  84,
+                                        "text":  "image.",
+                                        "x":  911
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Box Blur",
+                      "words":  [
+                                    {
+                                        "y":  1344,
+                                        "height":  17,
+                                        "width":  39,
+                                        "text":  "Box",
+                                        "x":  182
+                                    },
+                                    {
+                                        "y":  1344,
+                                        "height":  17,
+                                        "width":  53,
+                                        "text":  "Blur",
+                                        "x":  237
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "A simple blurring technique that replaces each pixel with the average of",
+                      "words":  [
+                                    {
+                                        "y":  1372,
+                                        "height":  17,
+                                        "width":  13,
+                                        "text":  "A",
+                                        "x":  181
+                                    },
+                                    {
+                                        "y":  1371,
+                                        "height":  22,
+                                        "width":  80,
+                                        "text":  "simple",
+                                        "x":  209
+                                    },
+                                    {
+                                        "y":  1371,
+                                        "height":  22,
+                                        "width":  107,
+                                        "text":  "blurring",
+                                        "x":  306
+                                    },
+                                    {
+                                        "y":  1371,
+                                        "height":  22,
+                                        "width":  121,
+                                        "text":  "technique",
+                                        "x":  429
+                                    },
+                                    {
+                                        "y":  1372,
+                                        "height":  18,
+                                        "width":  53,
+                                        "text":  "that",
+                                        "x":  565
+                                    },
+                                    {
+                                        "y":  1372,
+                                        "height":  21,
+                                        "width":  107,
+                                        "text":  "replaces",
+                                        "x":  635
+                                    },
+                                    {
+                                        "y":  1372,
+                                        "height":  18,
+                                        "width":  53,
+                                        "text":  "each",
+                                        "x":  758
+                                    },
+                                    {
+                                        "y":  1371,
+                                        "height":  23,
+                                        "width":  67,
+                                        "text":  "pixel",
+                                        "x":  827
+                                    },
+                                    {
+                                        "y":  1371,
+                                        "height":  19,
+                                        "width":  52,
+                                        "text":  "with",
+                                        "x":  909
+                                    },
+                                    {
+                                        "y":  1372,
+                                        "height":  18,
+                                        "width":  40,
+                                        "text":  "the",
+                                        "x":  977
+                                    },
+                                    {
+                                        "y":  1376,
+                                        "height":  17,
+                                        "width":  95,
+                                        "text":  "average",
+                                        "x":  1032
+                                    },
+                                    {
+                                        "y":  1372,
+                                        "height":  18,
+                                        "width":  25,
+                                        "text":  "of",
+                                        "x":  1143
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "its neighboring pixels within a square kernel.",
+                      "words":  [
+                                    {
+                                        "y":  1400,
+                                        "height":  17,
+                                        "width":  37,
+                                        "text":  "its",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  1400,
+                                        "height":  21,
+                                        "width":  148,
+                                        "text":  "neighboring",
+                                        "x":  237
+                                    },
+                                    {
+                                        "y":  1400,
+                                        "height":  21,
+                                        "width":  78,
+                                        "text":  "pixels",
+                                        "x":  402
+                                    },
+                                    {
+                                        "y":  1400,
+                                        "height":  17,
+                                        "width":  81,
+                                        "text":  "within",
+                                        "x":  496
+                                    },
+                                    {
+                                        "y":  1404,
+                                        "height":  13,
+                                        "width":  11,
+                                        "text":  "a",
+                                        "x":  593
+                                    },
+                                    {
+                                        "y":  1404,
+                                        "height":  17,
+                                        "width":  80,
+                                        "text":  "square",
+                                        "x":  621
+                                    },
+                                    {
+                                        "y":  1400,
+                                        "height":  17,
+                                        "width":  91,
+                                        "text":  "kernel.",
+                                        "x":  717
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Useful for noise reduction and smoothing.",
+                      "words":  [
+                                    {
+                                        "y":  1428,
+                                        "height":  17,
+                                        "width":  80,
+                                        "text":  "Useful",
+                                        "x":  182
+                                    },
+                                    {
+                                        "y":  1428,
+                                        "height":  17,
+                                        "width":  40,
+                                        "text":  "for",
+                                        "x":  277
+                                    },
+                                    {
+                                        "y":  1427,
+                                        "height":  18,
+                                        "width":  66,
+                                        "text":  "noise",
+                                        "x":  333
+                                    },
+                                    {
+                                        "y":  1427,
+                                        "height":  18,
+                                        "width":  119,
+                                        "text":  "reduction",
+                                        "x":  416
+                                    },
+                                    {
+                                        "y":  1428,
+                                        "height":  17,
+                                        "width":  39,
+                                        "text":  "and",
+                                        "x":  552
+                                    },
+                                    {
+                                        "y":  1427,
+                                        "height":  22,
+                                        "width":  132,
+                                        "text":  "smoothing.",
+                                        "x":  607
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "import cv2",
+                      "words":  [
+                                    {
+                                        "y":  1457,
+                                        "height":  22,
+                                        "width":  79,
+                                        "text":  "import",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  1458,
+                                        "height":  17,
+                                        "width":  39,
+                                        "text":  "cv2",
+                                        "x":  278
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "import numpy as np",
+                      "words":  [
+                                    {
+                                        "y":  1485,
+                                        "height":  22,
+                                        "width":  79,
+                                        "text":  "import",
+                                        "x":  183
+                                    },
+                                    {
+                                        "y":  1490,
+                                        "height":  17,
+                                        "width":  66,
+                                        "text":  "numpy",
+                                        "x":  278
+                                    },
+                                    {
+                                        "y":  1490,
+                                        "height":  14,
+                                        "width":  25,
+                                        "text":  "as",
+                                        "x":  360
+                                    },
+                                    {
+                                        "y":  1490,
+                                        "height":  17,
+                                        "width":  24,
+                                        "text":  "np",
+                                        "x":  402
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# Read an image",
+                      "words":  [
+                                    {
+                                        "y":  1514,
+                                        "height":  18,
+                                        "width":  13,
+                                        "text":  "#",
+                                        "x":  181
+                                    },
+                                    {
+                                        "y":  1514,
+                                        "height":  18,
+                                        "width":  51,
+                                        "text":  "Read",
+                                        "x":  210
+                                    },
+                                    {
+                                        "y":  1518,
+                                        "height":  14,
+                                        "width":  25,
+                                        "text":  "an",
+                                        "x":  278
+                                    },
+                                    {
+                                        "y":  1514,
+                                        "height":  21,
+                                        "width":  65,
+                                        "text":  "image",
+                                        "x":  320
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "= cv2.imread( \u0027image .jpg",
+                      "words":  [
+                                    {
+                                        "y":  1548,
+                                        "height":  8,
+                                        "width":  12,
+                                        "text":  "=",
+                                        "x":  264
+                                    },
+                                    {
+                                        "y":  1540,
+                                        "height":  23,
+                                        "width":  147,
+                                        "text":  "cv2.imread(",
+                                        "x":  292
+                                    },
+                                    {
+                                        "y":  1542,
+                                        "height":  22,
+                                        "width":  75,
+                                        "text":  "\u0027image",
+                                        "x":  447
+                                    },
+                                    {
+                                        "y":  1542,
+                                        "height":  22,
+                                        "width":  49,
+                                        "text":  ".jpg",
+                                        "x":  528
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "image",
+                      "words":  [
+                                    {
+                                        "y":  1542,
+                                        "height":  22,
+                                        "width":  65,
+                                        "text":  "image",
+                                        "x":  183
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# Define a box blur",
+                      "words":  [
+                                    {
+                                        "y":  1572,
+                                        "height":  17,
+                                        "width":  13,
+                                        "text":  "#",
+                                        "x":  181
+                                    },
+                                    {
+                                        "y":  1571,
+                                        "height":  18,
+                                        "width":  79,
+                                        "text":  "Define",
+                                        "x":  210
+                                    },
+                                    {
+                                        "y":  1575,
+                                        "height":  14,
+                                        "width":  12,
+                                        "text":  "a",
+                                        "x":  305
+                                    },
+                                    {
+                                        "y":  1572,
+                                        "height":  17,
+                                        "width":  39,
+                                        "text":  "box",
+                                        "x":  333
+                                    },
+                                    {
+                                        "y":  1572,
+                                        "height":  17,
+                                        "width":  53,
+                                        "text":  "blur",
+                                        "x":  388
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "= np.ones((3,",
+                      "words":  [
+                                    {
+                                        "y":  1605,
+                                        "height":  9,
+                                        "width":  11,
+                                        "text":  "=",
+                                        "x":  278
+                                    },
+                                    {
+                                        "y":  1597,
+                                        "height":  24,
+                                        "width":  144,
+                                        "text":  "np.ones((3,",
+                                        "x":  306
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "kernel",
+                      "words":  [
+                                    {
+                                        "y":  1600,
+                                        "height":  18,
+                                        "width":  80,
+                                        "text":  "kernel",
+                                        "x":  182
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "# Apply convolution",
+                      "words":  [
+                                    {
+                                        "y":  1628,
+                                        "height":  18,
+                                        "width":  13,
+                                        "text":  "#",
+                                        "x":  181
+                                    },
+                                    {
+                                        "y":  1628,
+                                        "height":  22,
+                                        "width":  67,
+                                        "text":  "Apply",
+                                        "x":  209
+                                    },
+                                    {
+                                        "y":  1628,
+                                        "height":  18,
+                                        "width":  148,
+                                        "text":  "convolution",
+                                        "x":  292
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "blurred _ image",
+                      "words":  [
+                                    {
+                                        "y":  1657,
+                                        "height":  17,
+                                        "width":  93,
+                                        "text":  "blurred",
+                                        "x":  182
+                                    },
+                                    {
+                                        "y":  1674,
+                                        "height":  2,
+                                        "width":  11,
+                                        "text":  "_",
+                                        "x":  278
+                                    },
+                                    {
+                                        "y":  1656,
+                                        "height":  22,
+                                        "width":  66,
+                                        "text":  "image",
+                                        "x":  292
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "= cv2.",
+                      "words":  [
+                                    {
+                                        "y":  1662,
+                                        "height":  8,
+                                        "width":  11,
+                                        "text":  "=",
+                                        "x":  374
+                                    },
+                                    {
+                                        "y":  1657,
+                                        "height":  17,
+                                        "width":  49,
+                                        "text":  "cv2.",
+                                        "x":  402
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FAST NUCES",
+                      "words":  [
+                                    {
+                                        "y":  1819,
+                                        "height":  19,
+                                        "width":  62,
+                                        "text":  "FAST",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  1819,
+                                        "height":  20,
+                                        "width":  85,
+                                        "text":  "NUCES",
+                                        "x":  242
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "- Karachi",
+                      "words":  [
+                                    {
+                                        "y":  1828,
+                                        "height":  5,
+                                        "width":  12,
+                                        "text":  "-",
+                                        "x":  336
+                                    },
+                                    {
+                                        "y":  1817,
+                                        "height":  21,
+                                        "width":  94,
+                                        "text":  "Karachi",
+                                        "x":  358
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "kernel",
+                      "words":  [
+                                    {
+                                        "y":  1572,
+                                        "height":  17,
+                                        "width":  80,
+                                        "text":  "kernel",
+                                        "x":  456
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3), dtype=np.ftoat32) / 9",
+                      "words":  [
+                                    {
+                                        "y":  1597,
+                                        "height":  24,
+                                        "width":  35,
+                                        "text":  "3),",
+                                        "x":  469
+                                    },
+                                    {
+                                        "y":  1597,
+                                        "height":  24,
+                                        "width":  229,
+                                        "text":  "dtype=np.ftoat32)",
+                                        "x":  524
+                                    },
+                                    {
+                                        "y":  1597,
+                                        "height":  23,
+                                        "width":  10,
+                                        "text":  "/",
+                                        "x":  773
+                                    },
+                                    {
+                                        "y":  1600,
+                                        "height":  17,
+                                        "width":  11,
+                                        "text":  "9",
+                                        "x":  800
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "fitter2D(image,",
+                      "words":  [
+                                    {
+                                        "y":  1654,
+                                        "height":  24,
+                                        "width":  201,
+                                        "text":  "fitter2D(image,",
+                                        "x":  455
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "-1, kernel)",
+                      "words":  [
+                                    {
+                                        "y":  1657,
+                                        "height":  21,
+                                        "width":  35,
+                                        "text":  "-1,",
+                                        "x":  676
+                                    },
+                                    {
+                                        "y":  1654,
+                                        "height":  23,
+                                        "width":  92,
+                                        "text":  "kernel)",
+                                        "x":  731
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1819,
+                                        "height":  19,
+                                        "width":  72,
+                                        "text":  "Talha",
+                                        "x":  594
+                                    },
+                                    {
+                                        "y":  1817,
+                                        "height":  21,
+                                        "width":  87,
+                                        "text":  "Shahid",
+                                        "x":  676
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "15",
+                      "words":  [
+                                    {
+                                        "y":  1819,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "15",
+                                        "x":  1175
+                                    }
+                                ]
+                  }
+              ]
+}

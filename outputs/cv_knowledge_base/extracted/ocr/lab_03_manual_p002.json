@@ -1,0 +1,1348 @@
+﻿{
+    "id":  "lab_03_manual_p002",
+    "engine":  "Windows.Media.Ocr en-US",
+    "text":  "National University of Computer \u0026 Emerging Sciences - NUCES - Karachi Department of Artificial Intelligence Course Code: A1-4002 Computer Vision Lab 2. What is Geometric Transformation . . 3. The Image Coordinate System 4. 2D Transformation vs 3D Transformation ...................................................................6 4.1 2D transformation..................................................................................................... 6 4.2 3D transformation. 5. Transformation Matrix............................„.......... ...... 5.1 The Anatomy of a 2x2 Transformation Matrix . 5.2 Reading the Vectors 5.3 What Each Variable Controls 6. 2D Geometric Transformations ............„................ ....... . 6.1 Affine Transformation 6.1.1 Linear Transformation . 1. Objectives.. .2 • • • • • • • 18 6.1.1.1 The Mathematical Foundation — . 6.1.1.2 What Linear Transformations Can Achieve 6.1.1.3 The Limitation: The Anchored Origin ..... ......................... 6.1.1.4 The solution: Homogenous Coordinates 6.2 Projective Transformations.............................. 6.2.1 The Mathematical Core 6.2.2 The Denominator Effect . 6.2.3 Modeling Real-World Perspective. FAST NUCES - Karachi Talha Shahid .2 .4 .............8 .. ........... 10 10 12 12 .13 . .15 16 17 ..... 18 18 1",
+    "review_status":  "raw_ocr_unverified",
+    "page":  2,
+    "source_id":  "lab_03_manual",
+    "lines":  [
+                  {
+                      "text":  "National University of Computer \u0026 Emerging Sciences -",
+                      "words":  [
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  123,
+                                        "text":  "National",
+                                        "x":  373
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  30,
+                                        "width":  153,
+                                        "text":  "University",
+                                        "x":  505
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  29,
+                                        "text":  "of",
+                                        "x":  666
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  30,
+                                        "width":  146,
+                                        "text":  "Computer",
+                                        "x":  701
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  23,
+                                        "text":  "\u0026",
+                                        "x":  855
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  30,
+                                        "width":  141,
+                                        "text":  "Emerging",
+                                        "x":  886
+                                    },
+                                    {
+                                        "y":  94,
+                                        "height":  24,
+                                        "width":  123,
+                                        "text":  "Sciences",
+                                        "x":  1035
+                                    },
+                                    {
+                                        "y":  106,
+                                        "height":  5,
+                                        "width":  8,
+                                        "text":  "-",
+                                        "x":  1168
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "NUCES - Karachi",
+                      "words":  [
+                                    {
+                                        "y":  138,
+                                        "height":  23,
+                                        "width":  94,
+                                        "text":  "NUCES",
+                                        "x":  657
+                                    },
+                                    {
+                                        "y":  149,
+                                        "height":  5,
+                                        "width":  9,
+                                        "text":  "-",
+                                        "x":  760
+                                    },
+                                    {
+                                        "y":  137,
+                                        "height":  24,
+                                        "width":  114,
+                                        "text":  "Karachi",
+                                        "x":  778
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Department of Artificial Intelligence",
+                      "words":  [
+                                    {
+                                        "y":  179,
+                                        "height":  27,
+                                        "width":  141,
+                                        "text":  "Department",
+                                        "x":  558
+                                    },
+                                    {
+                                        "y":  178,
+                                        "height":  22,
+                                        "width":  25,
+                                        "text":  "of",
+                                        "x":  707
+                                    },
+                                    {
+                                        "y":  178,
+                                        "height":  22,
+                                        "width":  100,
+                                        "text":  "Artificial",
+                                        "x":  738
+                                    },
+                                    {
+                                        "y":  178,
+                                        "height":  28,
+                                        "width":  137,
+                                        "text":  "Intelligence",
+                                        "x":  849
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Course Code: A1-4002",
+                      "words":  [
+                                    {
+                                        "y":  345,
+                                        "height":  20,
+                                        "width":  95,
+                                        "text":  "Course",
+                                        "x":  378
+                                    },
+                                    {
+                                        "y":  344,
+                                        "height":  21,
+                                        "width":  75,
+                                        "text":  "Code:",
+                                        "x":  484
+                                    },
+                                    {
+                                        "y":  345,
+                                        "height":  20,
+                                        "width":  117,
+                                        "text":  "A1-4002",
+                                        "x":  569
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Computer Vision Lab",
+                      "words":  [
+                                    {
+                                        "y":  345,
+                                        "height":  26,
+                                        "width":  138,
+                                        "text":  "Computer",
+                                        "x":  709
+                                    },
+                                    {
+                                        "y":  342,
+                                        "height":  23,
+                                        "width":  85,
+                                        "text":  "Vision",
+                                        "x":  856
+                                    },
+                                    {
+                                        "y":  344,
+                                        "height":  21,
+                                        "width":  50,
+                                        "text":  "Lab",
+                                        "x":  953
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "2. What is Geometric Transformation . .",
+                      "words":  [
+                                    {
+                                        "y":  553,
+                                        "height":  18,
+                                        "width":  19,
+                                        "text":  "2.",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  552,
+                                        "height":  19,
+                                        "width":  68,
+                                        "text":  "What",
+                                        "x":  197
+                                    },
+                                    {
+                                        "y":  550,
+                                        "height":  21,
+                                        "width":  19,
+                                        "text":  "is",
+                                        "x":  274
+                                    },
+                                    {
+                                        "y":  550,
+                                        "height":  21,
+                                        "width":  132,
+                                        "text":  "Geometric",
+                                        "x":  302
+                                    },
+                                    {
+                                        "y":  551,
+                                        "height":  20,
+                                        "width":  200,
+                                        "text":  "Transformation",
+                                        "x":  443
+                                    },
+                                    {
+                                        "y":  566,
+                                        "height":  5,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  651
+                                    },
+                                    {
+                                        "y":  566,
+                                        "height":  5,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  671
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "3. The Image Coordinate System",
+                      "words":  [
+                                    {
+                                        "y":  601,
+                                        "height":  18,
+                                        "width":  20,
+                                        "text":  "3.",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  600,
+                                        "height":  19,
+                                        "width":  46,
+                                        "text":  "The",
+                                        "x":  199
+                                    },
+                                    {
+                                        "y":  601,
+                                        "height":  24,
+                                        "width":  85,
+                                        "text":  "Image",
+                                        "x":  255
+                                    },
+                                    {
+                                        "y":  598,
+                                        "height":  21,
+                                        "width":  142,
+                                        "text":  "Coordinate",
+                                        "x":  349
+                                    },
+                                    {
+                                        "y":  601,
+                                        "height":  24,
+                                        "width":  92,
+                                        "text":  "System",
+                                        "x":  500
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4. 2D Transformation vs 3D Transformation ...................................................................6",
+                      "words":  [
+                                    {
+                                        "y":  647,
+                                        "height":  19,
+                                        "width":  22,
+                                        "text":  "4.",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  647,
+                                        "height":  19,
+                                        "width":  32,
+                                        "text":  "2D",
+                                        "x":  209
+                                    },
+                                    {
+                                        "y":  645,
+                                        "height":  21,
+                                        "width":  200,
+                                        "text":  "Transformation",
+                                        "x":  250
+                                    },
+                                    {
+                                        "y":  651,
+                                        "height":  15,
+                                        "width":  27,
+                                        "text":  "vs",
+                                        "x":  459
+                                    },
+                                    {
+                                        "y":  647,
+                                        "height":  19,
+                                        "width":  32,
+                                        "text":  "3D",
+                                        "x":  496
+                                    },
+                                    {
+                                        "y":  645,
+                                        "height":  21,
+                                        "width":  199,
+                                        "text":  "Transformation",
+                                        "x":  538
+                                    },
+                                    {
+                                        "y":  647,
+                                        "height":  19,
+                                        "width":  459,
+                                        "text":  "...................................................................6",
+                                        "x":  743
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4.1 2D transformation..................................................................................................... 6",
+                      "words":  [
+                                    {
+                                        "y":  695,
+                                        "height":  19,
+                                        "width":  32,
+                                        "text":  "4.1",
+                                        "x":  195
+                                    },
+                                    {
+                                        "y":  695,
+                                        "height":  19,
+                                        "width":  31,
+                                        "text":  "2D",
+                                        "x":  236
+                                    },
+                                    {
+                                        "y":  693,
+                                        "height":  21,
+                                        "width":  907,
+                                        "text":  "transformation.....................................................................................................",
+                                        "x":  275
+                                    },
+                                    {
+                                        "y":  694,
+                                        "height":  20,
+                                        "width":  13,
+                                        "text":  "6",
+                                        "x":  1188
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "4.2 3D transformation.",
+                      "words":  [
+                                    {
+                                        "y":  743,
+                                        "height":  19,
+                                        "width":  34,
+                                        "text":  "4.2",
+                                        "x":  195
+                                    },
+                                    {
+                                        "y":  743,
+                                        "height":  19,
+                                        "width":  31,
+                                        "text":  "3D",
+                                        "x":  237
+                                    },
+                                    {
+                                        "y":  741,
+                                        "height":  21,
+                                        "width":  191,
+                                        "text":  "transformation.",
+                                        "x":  276
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "5. Transformation Matrix............................„.......... ......",
+                      "words":  [
+                                    {
+                                        "y":  791,
+                                        "height":  19,
+                                        "width":  20,
+                                        "text":  "5.",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  789,
+                                        "height":  21,
+                                        "width":  200,
+                                        "text":  "Transformation",
+                                        "x":  199
+                                    },
+                                    {
+                                        "y":  789,
+                                        "height":  21,
+                                        "width":  344,
+                                        "text":  "Matrix............................„..........",
+                                        "x":  410
+                                    },
+                                    {
+                                        "y":  805,
+                                        "height":  5,
+                                        "width":  38,
+                                        "text":  "......",
+                                        "x":  763
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "5.1 The Anatomy of a 2x2 Transformation Matrix .",
+                      "words":  [
+                                    {
+                                        "y":  838,
+                                        "height":  19,
+                                        "width":  31,
+                                        "text":  "5.1",
+                                        "x":  195
+                                    },
+                                    {
+                                        "y":  838,
+                                        "height":  19,
+                                        "width":  44,
+                                        "text":  "The",
+                                        "x":  234
+                                    },
+                                    {
+                                        "y":  838,
+                                        "height":  25,
+                                        "width":  111,
+                                        "text":  "Anatomy",
+                                        "x":  286
+                                    },
+                                    {
+                                        "y":  838,
+                                        "height":  19,
+                                        "width":  26,
+                                        "text":  "of",
+                                        "x":  404
+                                    },
+                                    {
+                                        "y":  843,
+                                        "height":  14,
+                                        "width":  14,
+                                        "text":  "a",
+                                        "x":  437
+                                    },
+                                    {
+                                        "y":  838,
+                                        "height":  19,
+                                        "width":  40,
+                                        "text":  "2x2",
+                                        "x":  461
+                                    },
+                                    {
+                                        "y":  837,
+                                        "height":  20,
+                                        "width":  187,
+                                        "text":  "Transformation",
+                                        "x":  509
+                                    },
+                                    {
+                                        "y":  837,
+                                        "height":  20,
+                                        "width":  76,
+                                        "text":  "Matrix",
+                                        "x":  706
+                                    },
+                                    {
+                                        "y":  854,
+                                        "height":  3,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  791
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "5.2 Reading the Vectors",
+                      "words":  [
+                                    {
+                                        "y":  886,
+                                        "height":  19,
+                                        "width":  33,
+                                        "text":  "5.2",
+                                        "x":  195
+                                    },
+                                    {
+                                        "y":  885,
+                                        "height":  26,
+                                        "width":  99,
+                                        "text":  "Reading",
+                                        "x":  237
+                                    },
+                                    {
+                                        "y":  886,
+                                        "height":  19,
+                                        "width":  39,
+                                        "text":  "the",
+                                        "x":  345
+                                    },
+                                    {
+                                        "y":  886,
+                                        "height":  19,
+                                        "width":  92,
+                                        "text":  "Vectors",
+                                        "x":  392
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "5.3 What Each Variable Controls",
+                      "words":  [
+                                    {
+                                        "y":  934,
+                                        "height":  19,
+                                        "width":  32,
+                                        "text":  "5.3",
+                                        "x":  195
+                                    },
+                                    {
+                                        "y":  933,
+                                        "height":  20,
+                                        "width":  65,
+                                        "text":  "What",
+                                        "x":  235
+                                    },
+                                    {
+                                        "y":  933,
+                                        "height":  20,
+                                        "width":  57,
+                                        "text":  "Each",
+                                        "x":  309
+                                    },
+                                    {
+                                        "y":  933,
+                                        "height":  20,
+                                        "width":  103,
+                                        "text":  "Variable",
+                                        "x":  375
+                                    },
+                                    {
+                                        "y":  933,
+                                        "height":  20,
+                                        "width":  100,
+                                        "text":  "Controls",
+                                        "x":  486
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "6. 2D Geometric Transformations ............„................ ....... .",
+                      "words":  [
+                                    {
+                                        "y":  980,
+                                        "height":  19,
+                                        "width":  20,
+                                        "text":  "6.",
+                                        "x":  169
+                                    },
+                                    {
+                                        "y":  981,
+                                        "height":  18,
+                                        "width":  32,
+                                        "text":  "2D",
+                                        "x":  198
+                                    },
+                                    {
+                                        "y":  978,
+                                        "height":  21,
+                                        "width":  132,
+                                        "text":  "Geometric",
+                                        "x":  240
+                                    },
+                                    {
+                                        "y":  978,
+                                        "height":  21,
+                                        "width":  213,
+                                        "text":  "Transformations",
+                                        "x":  381
+                                    },
+                                    {
+                                        "y":  994,
+                                        "height":  6,
+                                        "width":  202,
+                                        "text":  "............„................",
+                                        "x":  599
+                                    },
+                                    {
+                                        "y":  994,
+                                        "height":  5,
+                                        "width":  45,
+                                        "text":  ".......",
+                                        "x":  809
+                                    },
+                                    {
+                                        "y":  994,
+                                        "height":  5,
+                                        "width":  5,
+                                        "text":  ".",
+                                        "x":  869
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "6.1 Affine Transformation",
+                      "words":  [
+                                    {
+                                        "y":  1028,
+                                        "height":  19,
+                                        "width":  30,
+                                        "text":  "6.1",
+                                        "x":  195
+                                    },
+                                    {
+                                        "y":  1027,
+                                        "height":  21,
+                                        "width":  73,
+                                        "text":  "Affine",
+                                        "x":  234
+                                    },
+                                    {
+                                        "y":  1027,
+                                        "height":  20,
+                                        "width":  187,
+                                        "text":  "Transformation",
+                                        "x":  316
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "6.1.1 Linear Transformation .",
+                      "words":  [
+                                    {
+                                        "y":  1076,
+                                        "height":  20,
+                                        "width":  49,
+                                        "text":  "6.1.1",
+                                        "x":  220
+                                    },
+                                    {
+                                        "y":  1075,
+                                        "height":  20,
+                                        "width":  76,
+                                        "text":  "Linear",
+                                        "x":  279
+                                    },
+                                    {
+                                        "y":  1075,
+                                        "height":  20,
+                                        "width":  189,
+                                        "text":  "Transformation",
+                                        "x":  362
+                                    },
+                                    {
+                                        "y":  1092,
+                                        "height":  3,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  1049
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1. Objectives..",
+                      "words":  [
+                                    {
+                                        "y":  505,
+                                        "height":  19,
+                                        "width":  19,
+                                        "text":  "1.",
+                                        "x":  170
+                                    },
+                                    {
+                                        "y":  502,
+                                        "height":  26,
+                                        "width":  148,
+                                        "text":  "Objectives..",
+                                        "x":  198
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  ".2",
+                      "words":  [
+                                    {
+                                        "y":  505,
+                                        "height":  18,
+                                        "width":  23,
+                                        "text":  ".2",
+                                        "x":  1179
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "• • • • • • • 18",
+                      "words":  [
+                                    {
+                                        "y":  1425,
+                                        "height":  3,
+                                        "width":  4,
+                                        "text":  "•",
+                                        "x":  1020
+                                    },
+                                    {
+                                        "y":  1425,
+                                        "height":  3,
+                                        "width":  3,
+                                        "text":  "•",
+                                        "x":  1028
+                                    },
+                                    {
+                                        "y":  1425,
+                                        "height":  3,
+                                        "width":  3,
+                                        "text":  "•",
+                                        "x":  1035
+                                    },
+                                    {
+                                        "y":  1425,
+                                        "height":  3,
+                                        "width":  3,
+                                        "text":  "•",
+                                        "x":  1071
+                                    },
+                                    {
+                                        "y":  1425,
+                                        "height":  3,
+                                        "width":  3,
+                                        "text":  "•",
+                                        "x":  1078
+                                    },
+                                    {
+                                        "y":  1425,
+                                        "height":  3,
+                                        "width":  3,
+                                        "text":  "•",
+                                        "x":  1121
+                                    },
+                                    {
+                                        "y":  1425,
+                                        "height":  3,
+                                        "width":  3,
+                                        "text":  "•",
+                                        "x":  1128
+                                    },
+                                    {
+                                        "y":  1409,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "18",
+                                        "x":  1176
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "6.1.1.1 The Mathematical Foundation — .",
+                      "words":  [
+                                    {
+                                        "y":  1124,
+                                        "height":  19,
+                                        "width":  68,
+                                        "text":  "6.1.1.1",
+                                        "x":  245
+                                    },
+                                    {
+                                        "y":  1124,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "The",
+                                        "x":  321
+                                    },
+                                    {
+                                        "y":  1123,
+                                        "height":  20,
+                                        "width":  165,
+                                        "text":  "Mathematical",
+                                        "x":  374
+                                    },
+                                    {
+                                        "y":  1123,
+                                        "height":  20,
+                                        "width":  136,
+                                        "text":  "Foundation",
+                                        "x":  550
+                                    },
+                                    {
+                                        "y":  1140,
+                                        "height":  3,
+                                        "width":  362,
+                                        "text":  "—",
+                                        "x":  691
+                                    },
+                                    {
+                                        "y":  1140,
+                                        "height":  3,
+                                        "width":  3,
+                                        "text":  ".",
+                                        "x":  1164
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "6.1.1.2 What Linear Transformations Can Achieve",
+                      "words":  [
+                                    {
+                                        "y":  1172,
+                                        "height":  19,
+                                        "width":  69,
+                                        "text":  "6.1.1.2",
+                                        "x":  245
+                                    },
+                                    {
+                                        "y":  1171,
+                                        "height":  20,
+                                        "width":  65,
+                                        "text":  "What",
+                                        "x":  322
+                                    },
+                                    {
+                                        "y":  1170,
+                                        "height":  21,
+                                        "width":  76,
+                                        "text":  "Linear",
+                                        "x":  397
+                                    },
+                                    {
+                                        "y":  1170,
+                                        "height":  21,
+                                        "width":  201,
+                                        "text":  "Transformations",
+                                        "x":  480
+                                    },
+                                    {
+                                        "y":  1172,
+                                        "height":  19,
+                                        "width":  46,
+                                        "text":  "Can",
+                                        "x":  688
+                                    },
+                                    {
+                                        "y":  1170,
+                                        "height":  21,
+                                        "width":  96,
+                                        "text":  "Achieve",
+                                        "x":  743
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "6.1.1.3 The Limitation: The Anchored Origin ..... .........................",
+                      "words":  [
+                                    {
+                                        "y":  1220,
+                                        "height":  19,
+                                        "width":  69,
+                                        "text":  "6.1.1.3",
+                                        "x":  245
+                                    },
+                                    {
+                                        "y":  1219,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "The",
+                                        "x":  322
+                                    },
+                                    {
+                                        "y":  1218,
+                                        "height":  21,
+                                        "width":  128,
+                                        "text":  "Limitation:",
+                                        "x":  375
+                                    },
+                                    {
+                                        "y":  1219,
+                                        "height":  20,
+                                        "width":  43,
+                                        "text":  "The",
+                                        "x":  511
+                                    },
+                                    {
+                                        "y":  1219,
+                                        "height":  20,
+                                        "width":  115,
+                                        "text":  "Anchored",
+                                        "x":  563
+                                    },
+                                    {
+                                        "y":  1218,
+                                        "height":  26,
+                                        "width":  73,
+                                        "text":  "Origin",
+                                        "x":  687
+                                    },
+                                    {
+                                        "y":  1235,
+                                        "height":  4,
+                                        "width":  32,
+                                        "text":  ".....",
+                                        "x":  770
+                                    },
+                                    {
+                                        "y":  1235,
+                                        "height":  4,
+                                        "width":  182,
+                                        "text":  ".........................",
+                                        "x":  806
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "6.1.1.4 The solution: Homogenous Coordinates",
+                      "words":  [
+                                    {
+                                        "y":  1267,
+                                        "height":  18,
+                                        "width":  71,
+                                        "text":  "6.1.1.4",
+                                        "x":  245
+                                    },
+                                    {
+                                        "y":  1266,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "The",
+                                        "x":  324
+                                    },
+                                    {
+                                        "y":  1266,
+                                        "height":  19,
+                                        "width":  100,
+                                        "text":  "solution:",
+                                        "x":  376
+                                    },
+                                    {
+                                        "y":  1267,
+                                        "height":  24,
+                                        "width":  160,
+                                        "text":  "Homogenous",
+                                        "x":  486
+                                    },
+                                    {
+                                        "y":  1266,
+                                        "height":  19,
+                                        "width":  147,
+                                        "text":  "Coordinates",
+                                        "x":  654
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "6.2 Projective Transformations..............................",
+                      "words":  [
+                                    {
+                                        "y":  1314,
+                                        "height":  19,
+                                        "width":  32,
+                                        "text":  "6.2",
+                                        "x":  195
+                                    },
+                                    {
+                                        "y":  1313,
+                                        "height":  25,
+                                        "width":  120,
+                                        "text":  "Projective",
+                                        "x":  237
+                                    },
+                                    {
+                                        "y":  1313,
+                                        "height":  20,
+                                        "width":  416,
+                                        "text":  "Transformations..............................",
+                                        "x":  365
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "6.2.1 The Mathematical Core",
+                      "words":  [
+                                    {
+                                        "y":  1362,
+                                        "height":  19,
+                                        "width":  50,
+                                        "text":  "6.2.1",
+                                        "x":  220
+                                    },
+                                    {
+                                        "y":  1361,
+                                        "height":  20,
+                                        "width":  44,
+                                        "text":  "The",
+                                        "x":  278
+                                    },
+                                    {
+                                        "y":  1361,
+                                        "height":  20,
+                                        "width":  165,
+                                        "text":  "Mathematical",
+                                        "x":  332
+                                    },
+                                    {
+                                        "y":  1362,
+                                        "height":  19,
+                                        "width":  56,
+                                        "text":  "Core",
+                                        "x":  506
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "6.2.2 The Denominator Effect .",
+                      "words":  [
+                                    {
+                                        "y":  1409,
+                                        "height":  19,
+                                        "width":  52,
+                                        "text":  "6.2.2",
+                                        "x":  220
+                                    },
+                                    {
+                                        "y":  1409,
+                                        "height":  19,
+                                        "width":  43,
+                                        "text":  "The",
+                                        "x":  280
+                                    },
+                                    {
+                                        "y":  1408,
+                                        "height":  20,
+                                        "width":  158,
+                                        "text":  "Denominator",
+                                        "x":  333
+                                    },
+                                    {
+                                        "y":  1409,
+                                        "height":  19,
+                                        "width":  71,
+                                        "text":  "Effect",
+                                        "x":  501
+                                    },
+                                    {
+                                        "y":  1425,
+                                        "height":  3,
+                                        "width":  3,
+                                        "text":  ".",
+                                        "x":  1164
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "6.2.3 Modeling Real-World Perspective.",
+                      "words":  [
+                                    {
+                                        "y":  1457,
+                                        "height":  20,
+                                        "width":  51,
+                                        "text":  "6.2.3",
+                                        "x":  220
+                                    },
+                                    {
+                                        "y":  1456,
+                                        "height":  26,
+                                        "width":  109,
+                                        "text":  "Modeling",
+                                        "x":  281
+                                    },
+                                    {
+                                        "y":  1457,
+                                        "height":  19,
+                                        "width":  134,
+                                        "text":  "Real-World",
+                                        "x":  401
+                                    },
+                                    {
+                                        "y":  1456,
+                                        "height":  26,
+                                        "width":  149,
+                                        "text":  "Perspective.",
+                                        "x":  546
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "FAST NUCES -",
+                      "words":  [
+                                    {
+                                        "y":  1820,
+                                        "height":  19,
+                                        "width":  61,
+                                        "text":  "FAST",
+                                        "x":  171
+                                    },
+                                    {
+                                        "y":  1820,
+                                        "height":  19,
+                                        "width":  85,
+                                        "text":  "NUCES",
+                                        "x":  242
+                                    },
+                                    {
+                                        "y":  1829,
+                                        "height":  4,
+                                        "width":  12,
+                                        "text":  "-",
+                                        "x":  337
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Karachi",
+                      "words":  [
+                                    {
+                                        "y":  1818,
+                                        "height":  21,
+                                        "width":  95,
+                                        "text":  "Karachi",
+                                        "x":  358
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "Talha Shahid",
+                      "words":  [
+                                    {
+                                        "y":  1820,
+                                        "height":  19,
+                                        "width":  71,
+                                        "text":  "Talha",
+                                        "x":  596
+                                    },
+                                    {
+                                        "y":  1818,
+                                        "height":  21,
+                                        "width":  86,
+                                        "text":  "Shahid",
+                                        "x":  677
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  ".2",
+                      "words":  [
+                                    {
+                                        "y":  553,
+                                        "height":  18,
+                                        "width":  23,
+                                        "text":  ".2",
+                                        "x":  1179
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  ".4",
+                      "words":  [
+                                    {
+                                        "y":  601,
+                                        "height":  18,
+                                        "width":  22,
+                                        "text":  ".4",
+                                        "x":  1179
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  ".............8",
+                      "words":  [
+                                    {
+                                        "y":  791,
+                                        "height":  19,
+                                        "width":  101,
+                                        "text":  ".............8",
+                                        "x":  1100
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  ".. ........... 10",
+                      "words":  [
+                                    {
+                                        "y":  994,
+                                        "height":  5,
+                                        "width":  12,
+                                        "text":  "..",
+                                        "x":  1067
+                                    },
+                                    {
+                                        "y":  994,
+                                        "height":  6,
+                                        "width":  71,
+                                        "text":  "...........",
+                                        "x":  1093
+                                    },
+                                    {
+                                        "y":  981,
+                                        "height":  18,
+                                        "width":  29,
+                                        "text":  "10",
+                                        "x":  1172
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "10",
+                      "words":  [
+                                    {
+                                        "y":  1028,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "10",
+                                        "x":  1176
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "12",
+                      "words":  [
+                                    {
+                                        "y":  1076,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "12",
+                                        "x":  1176
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "12",
+                      "words":  [
+                                    {
+                                        "y":  1124,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "12",
+                                        "x":  1176
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  ".13",
+                      "words":  [
+                                    {
+                                        "y":  1171,
+                                        "height":  19,
+                                        "width":  37,
+                                        "text":  ".13",
+                                        "x":  1164
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  ". .15",
+                      "words":  [
+                                    {
+                                        "y":  1235,
+                                        "height":  3,
+                                        "width":  4,
+                                        "text":  ".",
+                                        "x":  1135
+                                    },
+                                    {
+                                        "y":  1219,
+                                        "height":  19,
+                                        "width":  37,
+                                        "text":  ".15",
+                                        "x":  1164
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "16",
+                      "words":  [
+                                    {
+                                        "y":  1266,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "16",
+                                        "x":  1176
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "17",
+                      "words":  [
+                                    {
+                                        "y":  1313,
+                                        "height":  20,
+                                        "width":  25,
+                                        "text":  "17",
+                                        "x":  1176
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "..... 18",
+                      "words":  [
+                                    {
+                                        "y":  1378,
+                                        "height":  3,
+                                        "width":  32,
+                                        "text":  ".....",
+                                        "x":  1135
+                                    },
+                                    {
+                                        "y":  1361,
+                                        "height":  20,
+                                        "width":  25,
+                                        "text":  "18",
+                                        "x":  1176
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "18",
+                      "words":  [
+                                    {
+                                        "y":  1457,
+                                        "height":  19,
+                                        "width":  25,
+                                        "text":  "18",
+                                        "x":  1176
+                                    }
+                                ]
+                  },
+                  {
+                      "text":  "1",
+                      "words":  [
+                                    {
+                                        "y":  1820,
+                                        "height":  19,
+                                        "width":  10,
+                                        "text":  "1",
+                                        "x":  1192
+                                    }
+                                ]
+                  }
+              ]
+}
