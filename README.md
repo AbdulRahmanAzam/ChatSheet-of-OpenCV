@@ -25,8 +25,9 @@ python -m venv .venv
 gh release download models-v1 -R AbdulRahmanAzam/ChatSheet-of-OpenCV -p model_quint8_avx2.onnx -D models/nli-deberta-v3-base
 ```
 
-Optional (experimental `code` command): Qwen2.5-Coder GGUF from the same release into `models/qwen2.5-coder/`,
-plus `pip install llama-cpp-python`.
+Optional (experimental `code` command): download `qwen2.5-coder-0.5b-instruct-q4_k_m.gguf` from
+[Qwen/Qwen2.5-Coder-0.5B-Instruct-GGUF](https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct-GGUF) into
+`models/qwen2.5-coder/`, plus `pip install llama-cpp-python`.
 
 ### Verify
 
