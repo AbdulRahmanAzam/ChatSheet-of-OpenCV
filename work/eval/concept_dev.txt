@@ -1,0 +1,21 @@
+# Conceptual dev questions for ask.py: question|text the one-line answer must contain (case-insensitive regex)
+Explain the ratio test in SIFT|ratio test
+Why do we blur before Canny edge detection?|noise
+What does the distance transform do in watershed?|distance to the nearest background
+Why is k-means data converted to float32?|requires float32|must be float32
+What is the purpose of RANSAC in homography estimation?|outlier
+How does Otsu choose the threshold?|variance
+What is the role of non-maximum suppression in Canny?|thin
+Why do we convert BGR to RGB before plt.imshow?|matplotlib
+How many points are needed for a homography?|4 point|four point|4 pairs
+What is HOG?|histogram of oriented gradients
+Explain how LBP describes texture|neighbo
+What is the difference between affine and perspective transformation?|parallel
+How does the Hough transform detect lines?|vote
+Why does HoughCircles need a median blur first?|noise
+What is the difference between global and adaptive thresholding?|neighbourhood|region|local
+Why is Sobel computed with CV_64F?|negative
+What is the difference between opening and closing?|erosion then dilation
+Why is HSV used for color segmentation?|hue
+What is the difference between HoughLines and HoughLinesP?|segments
+Why does watershed need markers?|over-segment

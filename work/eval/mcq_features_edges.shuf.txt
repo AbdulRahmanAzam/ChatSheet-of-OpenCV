@@ -1,0 +1,126 @@
+# 125 MCQs supplied by the user (2026-10-08), answer key as given. Format: section|question|A|B|C|D|answer
+features|Feature extraction transforms raw visual data into:|Only color channels|More compact and meaningful representation|Larger raw data|Audio signals|B
+features|Raw visual data is often too ___ for direct analysis.|High-dimensional and complex|Low-dimensional|Binary|Simple|A
+features|Features should capture:|Essential information about objects/patterns|All irrelevant details|Only pixel coordinates|Only noise|A
+features|Local features are extracted from:|Only edges|Only color histograms|Entire image|Specific regions such as keypoints, corners, patches|D
+features|Global features are computed:|Only on patches|Only on corners|Over the entire image|Only on keypoints|C
+features|Which is an example of global feature?|Color histogram|Small patch|Keypoint|Corner|A
+features|Histogram-based methods capture:|Statistical information like color or texture distributions|Only motion|Only depth|Only shape|A
+features|Gabor filters and Haar wavelets are examples of:|Color spaces|Histogram methods|Deep learning methods|Filter-based methods|D
+features|CNNs extract features:|Directly from data through layers|Only by histograms|Manually|Only by Sobel|A
+features|Which is an application of feature extraction?|File compression only|Printing|Audio recording|Face recognition|D
+features|Feature extraction challenges include:|No challenges|Lighting, scale, orientation, noise|Only color|Only resolution|B
+features|Choosing appropriate feature extraction techniques and parameters is:|Only for video games|Critical for successful computer vision applications|Only for audio|Not important|B
+features|Extracted features are often used with:|Only keyboards|Only monitors|Matching or learning algorithms|Only printers|C
+features|Local features are often used for:|Color printing|File storage|Image matching and object detection|Audio synthesis|C
+features|Image moments are an example of:|Global feature|Filter|Edge detector|Local feature|A
+hog|HOG stands for:|Histogram of Optical Gradients|Histogram of Oriented Gradients|High Order Gradients|Histogram of Oriented Geometry|B
+hog|HOG is particularly useful for:|Audio detection|File compression|Object detection and pedestrian detection|Color printing|C
+hog|HOG captures information about:|Only motion|Local gradient or edge patterns|Only color|Only depth|B
+hog|In HOG, image is divided into:|Color bins|Small cells|Audio frames|Large blocks only|B
+hog|For HOG, gradient computation typically uses:|PCA|Fourier transform|K-means|Sobel operator|D
+hog|HOG first converts input image to:|RGB|HSV|Grayscale|Binary only|C
+hog|In HOG, histogram bins represent:|Different orientation ranges|Color ranges|Depth values|Pixel coordinates|A
+hog|Block normalization in HOG reduces effects of:|Compression|Motion|Audio noise|Lighting variations|D
+hog|In HOG, neighboring cells are grouped into:|Layers|Bins|Channels|Blocks|D
+hog|Final HOG feature vector is formed by:|Sorting colors|Averaging all pixels|Concatenating normalized histograms from blocks|Removing edges|C
+hog|Typical cell size example in HOG manual:|64x64 pixels|16x16 pixels|32x32 pixels|8x8 pixels|D
+hog|Typical block example in HOG manual:|2x2 cells|3x3 cells|5x5 cells|4x4 cells|A
+hog|HOG code uses function:|cv2.hog|skimage.feature.hog|cv2.HOGDescriptor|numpy.hog|B
+hog|In HOG code, pixels_per_cell=(8,8) means:|Image size|Cell size|Bin count|Block size|B
+hog|In HOG code, cells_per_block=(2,2) means:|Number of cells per block|Cell size|Number of orientations|Number of channels|A
+lbp|LBP stands for:|Local Basic Pattern|Local Binary Pattern|Linear Binary Pattern|Local Binary Pixel|B
+lbp|LBP is commonly used for:|Texture classification and face recognition|Motion detection only|Audio compression|Color printing|A
+lbp|LBP operates on:|Audio signals|Grayscale images|RGB images only|Depth images only|B
+lbp|In LBP, each pixel is compared with:|Whole image|Sobel kernel|Its neighboring pixels|Color histogram|C
+lbp|In LBP, if neighbor intensity is greater or equal to center, assign:|1|-1|0|255|A
+lbp|In LBP, if neighbor intensity is less than center, assign:|1|255|0|-1|C
+lbp|LBP binary values are concatenated to form:|Color histogram|Sobel gradient|LBP pattern|HOG block|C
+lbp|The LBP histogram serves as:|Threshold|Kernel|Edge map|Feature vector|D
+lbp|LBP code uses function:|cv2.LBP|skimage.feature.local_binary_pattern|np.lbp|cv2.local_binary_pattern|B
+lbp|In LBP code, method='uniform' is used to:|Reduce number of patterns / use uniform patterns|Convert to RGB|Detect edges|Increase radius|A
+lbp|In LBP code, radius = 1 defines:|Cell size|Number of bins|Radius of circular neighborhood|Threshold|C
+lbp|In LBP code, n_points = 8 * radius defines:|Kernel size|Histogram bins|Number of neighboring pixels to consider|Image width|C
+lbp|LBP is particularly useful for:|Depth estimation|Audio recognition|Texture classification|Pedestrian detection only|C
+lbp|LBP captures local patterns by:|Applying Canny|Color quantization|Comparing intensity of a pixel with its neighbors|Computing Fourier transform|C
+lbp|LBP histogram counts occurrences of:|Colors|Gradients|Edges|Each LBP pattern|D
+color_hist|Histogram of Color captures:|Texture energy|Edge directions|Gradient magnitude|Distribution of color intensities|D
+color_hist|Histogram of Color divides color space into:|Bins|Blocks|Layers|Cells|A
+color_hist|Common color spaces for Histogram of Color:|Only CMYK|RGB or HSV|Only binary|Only grayscale|B
+color_hist|Histogram of Color counts:|Number of pixels in each bin|Number of edges|Number of corners|Number of gradients|A
+color_hist|Histogram of Color is an example of:|Local feature|Edge detector|Global feature|Filter|C
+hed|HED stands for:|Histogram of Edge Distribution|High Edge Density|Histogram of Edge Directions|Histogram of Edge Detection|C
+hed|HED captures:|Color distribution|Texture energy|Pixel coordinates|Distribution of edge orientations|D
+hed|HED is useful for:|File compression|Texture analysis, object recognition, image segmentation|Printing|Audio processing|B
+hed|In HED, edge detection can use:|Only K-means|Only PCA|Canny, Sobel, or Scharr|Only Canny|C
+hed|In HED, orientation at each pixel is calculated using:|Sine function|Cosine function|Logarithm|Arctangent function|D
+hed|In HED, 360 degrees can be divided into:|16 bins|32 bins|8 bins for octagonal directions|4 bins|C
+hed|HED feature vector is:|HOG vector|Color histogram|LBP histogram|Histogram of edge directions|D
+hed|In HED code, gradient orientation is computed by:|np.arctan2(gradient_x, gradient_y) * 180 / np.pi|np.sin(gradient_x)|np.tan(gradient_y/gradient_x)|np.arctan2(gradient_y, gradient_x) * 180 / np.pi|D
+hed|HED histogram bins in code:|4|8|256|16|B
+hed|HED histogram range in code:|(0, 360)|(0, 90)|(0, 180)|(0, 255)|A
+hig|HIG stands for:|Histogram of Image Gradients|High Intensity Gradient|Histogram of Intensity Gradients|Histogram of Intensity Groups|C
+hig|HIG captures:|Edge directions only|Distribution of intensity gradients|Color distribution|Texture energy|B
+hig|HIG is useful for:|Printing|File compression|Object recognition, texture analysis, image classification|Audio processing|C
+hig|Gradient magnitude formula:|G = dx * dy|G = dx + dy|G = sqrt(dx^2 + dy^2)|G = dx^2 - dy^2|C
+hig|Gradient orientation formula:|Θ = sin(dx/dy)|Θ = atan2(dy, dx)|Θ = cos(dy/dx)|Θ = atan2(dx, dy)|B
+hig|In HIG, gradient can be computed using:|Only PCA|Sobel, Scharr, or other gradient methods|Only K-means|Only Canny|B
+hig|In HIG, histogram range for orientations is typically:|0 to 360 degrees|0 to 180 degrees|0 to 255 degrees|0 to 90 degrees|A
+hig|HIG histogram can be normalized to make it:|Scale-invariant|Colorful|Noisy|Binary|A
+hig|HIG feature vector is:|LBP histogram|Histogram of gradient orientations|HOG block|Color histogram|B
+hig|HIG is similar to HOG but usually:|Only for audio|Global instead of local cells/blocks|Only for depth|Only for video|B
+texture|Texture energy is computed by:|Average of pixel values|Product of pixel values|Sum of pixel values|Sum of squared pixel values in neighborhood|D
+texture|Texture contrast is computed as:|Sum of squared pixels|Maximum pixel value|Mean of pixel values|Standard deviation of pixel values in neighborhood|D
+texture|Texture contrast formula in manual:|C = sqrt(var(pixel values))|C = var(pixel values)|C = max(pixel values)|C = sum(pixel values)|A
+texture|Common neighborhood sizes for texture analysis:|1x1 or 2x2|32x32 or 64x64|8x8 or 16x16|3x3 or 5x5|D
+texture|Texture energy histogram captures:|Distribution of gradients|Distribution of colors|Distribution of texture energy values|Distribution of edges|C
+texture|Texture contrast histogram captures:|Distribution of contrast values|Distribution of colors|Distribution of orientations|Distribution of gradients|A
+texture|Texture energy and contrast features can be used for:|Audio processing|Printing|Texture classification, segmentation|File compression|C
+texture|In texture code, energy uses cv2.filter2D(image**2, -1, np.ones((3,3))) because:|It detects edges|It blurs image|It converts to grayscale|It sums squared pixel values in neighborhood|D
+texture|In texture code, histograms are created using:|plt.hist|np.histogram|skimage.histogram|cv2.histogram|B
+texture|Normalizing texture histograms is:|Optional|Required|Impossible|Only for color|A
+filtering|Filtering involves applying a ___ to an image.|Small matrix called kernel/filter|Large database|Color space|Histogram|A
+filtering|Each element of the filter represents:|Pixel coordinate|Edge direction|Color channel|Weighted contribution to new pixel value|D
+filtering|Convolution involves:|Sliding filter over image, element-wise multiplying, summing|Sliding filter over image, multiplying, summing|Sorting pixels|Averaging colors|A
+filtering|Convolution result is called:|Feature vector|Histogram|Output or convolved image|Kernel|C
+filtering|Box blur replaces each pixel with:|Median of neighbors|Maximum of neighbors|Average of neighboring pixels|Minimum of neighbors|C
+filtering|Box blur kernel in manual:|np.eye(3)|np.ones((3,3))|np.ones((3,3), dtype=np.float32) / 9|np.zeros((3,3))|C
+filtering|Gaussian blur uses:|Emboss kernel|Sobel kernel|Gaussian-shaped kernel|Box kernel|C
+filtering|Gaussian blur provides smoother results compared to:|Scharr|Sobel|Canny|Box blur|D
+filtering|Sobel and Scharr operators detect:|Edges by emphasizing rapid changes in pixel values|Corners only|Textures only|Colors|A
+filtering|Embossing creates:|Blur|Histogram|3D effect by emphasizing differences in neighboring pixel values|Edge map|C
+filtering|Standard convolution is also known as:|Valid convolution|Same convolution|Strided convolution|Full convolution|D
+filtering|Valid convolution (no padding) produces output image:|Larger than input|Same size as input|Infinite|Smaller than input|D
+filtering|Same convolution adds:|Blur|Color|Zero-padding|Random noise|C
+filtering|Same convolution ensures output image has:|Larger dimensions|Same dimensions as input|No dimensions|Smaller dimensions|B
+filtering|Valid convolution with strides:|Skips some pixels based on specified stride|Blurs image|Adds padding|Keeps same size|A
+edges|Edge detection identifies:|Textures only|Histograms|Boundaries within an image|Colors|C
+edges|Edges correspond to changes in:|Color, intensity, or texture|Only color|Only intensity|Only texture|A
+edges|Gradient-based edge detection uses:|Fourier transform|Gradient of pixel intensities|Color space|Histogram|B
+edges|Common gradient-based operators:|HOG, LBP, HED|K-means, PCA, SVM|Sobel, Prewitt, Scharr|Sobel, Canny, LBP|C
+edges|Canny edge detector was developed by:|David Marr|Sobel|Prewitt|John F. Canny|D
+edges|Canny edge detector was developed in:|1996|1976|2006|1986|D
+edges|First step in Canny:|Gradient calculation|Hysteresis|Non-maximum suppression|Gaussian smoothing|D
+edges|Gaussian smoothing in Canny reduces:|Edges|Resolution|Color|Noise|D
+edges|Second step in Canny:|Non-maximum suppression|Hysteresis|Gaussian smoothing|Gradient calculation|D
+edges|Canny gradient calculation uses:|HOG|LBP|K-means|Sobel operators|D
+edges|Non-maximum suppression in Canny:|Adds noise|Blurs edges|Colors edges|Thins edges by keeping local maxima|D
+edges|Hysteresis in Canny uses:|Two thresholds|One threshold|No thresholds|Three thresholds|A
+edges|In Canny, pixels above high threshold are:|Strong edge points|Noise|Weak edge points|Non-edge points|A
+edges|In Canny, pixels between low and high threshold are:|Strong edge points|Noise|Non-edge points|Weak edge points|D
+edges|In Canny, weak edge points are kept if:|Above high threshold|Connected to strong edge points|Below low threshold|Isolated|B
+edges|Canny parameter sigma controls:|Gradient direction|Threshold|Gaussian filter kernel size / smoothing|Color space|C
+edges|Larger sigma in Canny results in:|More noise|Smoother image but loss of fine details|Sharper edges|No edges|B
+edges|Canny threshold1 in OpenCV is:|Sigma|Low threshold|Aperture size|High threshold|B
+edges|Canny threshold2 in OpenCV is:|Low threshold|Aperture size|Sigma|High threshold|D
+edges|Canny code uses function:|cv2.edge(image, 100, 200)|cv2.Canny(image, threshold1=100, threshold2=200)|cv2.CannyEdge(image, 100, 200)|cv2.canny(image, 100, 200)|B
+edge_tech|LoG stands for:|Local of Gradient|Laplacian of Gaussian|Laplacian of Gradient|Logarithm of Gradient|B
+edge_tech|LoG combines:|Sobel and Prewitt|HOG and LBP|Gaussian smoothing and Laplacian edge detection|Canny and Hysteresis|C
+edge_tech|Prewitt operator uses:|7x7 kernels|3x3 kernels for horizontal and vertical gradients|5x5 kernels|1x1 kernels|B
+edge_tech|Marr-Hildreth edge detector uses:|Prewitt only|Canny only|LoG after Gaussian smoothing|Sobel only|C
+edge_tech|Sobel-Feldman operator emphasizes:|Diagonal edges in addition to horizontal and vertical edges|Only vertical edges|Only horizontal edges|Only color edges|A
+edge_tech|CNN-based edge detection can:|Learn complex edge patterns and adapt to domains|Only detect circles|Only detect colors|Only detect straight lines|A
+edge_tech|Edge detection reduces data while:|Changing colors|Removing all features|Adding noise|Highlighting essential features|D
+edge_tech|Gradient magnitude high indicates:|Color change only|Smooth region|No edge|Edge likely present|D
+edge_tech|Scharr operator is:|Not gradient-based|A gradient-based edge detector|Only for color|Only for texture|B
+edge_tech|Canny is known for:|Accuracy and noise reduction|Color detection|Speed only|Texture only|A

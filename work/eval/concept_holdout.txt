@@ -1,0 +1,21 @@
+# FROZEN conceptual hold-out for ask.py (written before testing; never tune on it): question|required regex
+Why do we convert an image to grayscale before edge detection?|single|one (intensity )?channel|intensity
+What does cv2.threshold return?|two values|retval|threshold used
+What is the purpose of hysteresis thresholding in Canny?|weak|connected
+Why is Gaussian blur better than box blur for noise?|gaussian|weight
+What does the minDist parameter of HoughCircles do?|distance between|centers
+Why is SIFT scale invariant?|scale space|scale-space|difference of gaussian
+What is the size of a SIFT descriptor?|128
+How does k-means clustering work?|assign|nearest|center
+What is the difference between erosion and dilation?|shrink|grow|remov|add|expand
+What is adaptive thresholding used for?|lighting|illumination|varying
+Why is the unknown region set to zero before watershed?|unknown|decide
+What is a homography?|plan|3x3|projective
+Why do we use Lowe's ratio test?|ambiguous|second
+What does RANSAC do?|outlier|inlier|consistent
+How many point pairs does an affine transform need?|3|three
+What does CLAHE do?|tile|local contrast|clip
+What is gamma correction used for?|brighten|darken|gamma
+Why does LBP work under different lighting?|brightness|monoton|uniform
+What does non-maximum suppression do?|thin|maxim
+What is the purpose of the distance transform in watershed?|distance|seed|center|peak

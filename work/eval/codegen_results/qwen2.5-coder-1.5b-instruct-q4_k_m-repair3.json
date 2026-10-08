@@ -1,0 +1,162 @@
+[
+ {
+  "id": "coin_largest",
+  "verdict": "WRONG ANSWER: {'count': 2, 'largest_radius': np.int64(35)}",
+  "checked": true,
+  "attempts": 1,
+  "seconds": 25.2,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Convert to grayscale\n    gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY) if img.ndim == 3 else img.copy()\n\n    # Remove speckle noise with a median blur\n    smooth = cv.medianBlur(gray, 5)\n\n    # Find circles with the Hough gradient method\n    found = cv.HoughCircles(smooth, cv.HOUGH_GRADIENT, dp=1.2, minDist=40,\n                        param1=120, param2=30, minRadius=10, maxRadius=80)\n    circles = np.empty((0, 3), int) if found is None else np.round(found[0]).astype(int)\n\n    # Draw circles and the count\n    vis = img.copy()\n    for x, y, r in circles:\n        cv.circle(vis, (int(x), int(y)), int(r), (0, 255, 0), 2)\n        cv.circle(vis, (int(x), int(y)), 2, (0, 0, 255), 3)\n    cv.putText(vis, f'Count: {len(circles)}', (10, 30), cv.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)\n\n    # Find the largest circle\n    if circles.size > 0:\n        largest_circle = circles[np.argmax(circles[:, 2])]\n        largest_radius = largest_circle[2]\n    else:\n        largest_radius = None\n\n    return {\"count\": len(circles), \"largest_radius\": largest_radius}"
+ },
+ {
+  "id": "largest_area",
+  "verdict": "PASS",
+  "checked": true,
+  "attempts": 1,
+  "seconds": 22.2,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Convert to grayscale\n    gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY) if img.ndim == 3 else img.copy()\n\n    # Smooth noise with a Gaussian blur\n    smooth = cv.GaussianBlur(gray, (5, 5), 0)\n\n    # Otsu automatic threshold\n    otsu_value, mask = cv.threshold(smooth, 0, 255, cv.THRESH_BINARY | cv.THRESH_OTSU)\n\n    # Clean the mask with opening and closing\n    kernel = np.ones((5, 5), np.uint8)\n    mask = cv.morphologyEx(mask, cv.MORPH_OPEN, kernel)    # remove small specks\n    mask = cv.morphologyEx(mask, cv.MORPH_CLOSE, kernel)   # fill small holes\n\n    # Find object outlines\n    contours, _ = cv.findContours(mask, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)\n    contours = [c for c in contours if cv.contourArea(c) >= 100]\n\n    # Draw a box and number around each object\n    vis = img.copy()\n    for i, c in enumerate(contours, 1):\n        x, y, w, h = cv.boundingRect(c)\n        cv.rectangle(vis, (x, y), (x + w, y + h), (0, 255, 0), 2)\n        cv.putText(vis, str(i), (x, y - 5), cv.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 255), 2)\n\n    # Calculate the area of the largest object\n    largest_area = max([cv.contourArea(c) for c in contours])\n\n    # Return the count and largest area\n    return {\"count\": len(contours), \"largest_area\": largest_area}"
+ },
+ {
+  "id": "quadrant_means",
+  "verdict": "PASS",
+  "checked": true,
+  "attempts": 1,
+  "seconds": 9.6,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Convert to grayscale\n    gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY) if img.ndim == 3 else img.copy()\n\n    # Split the grayscale image into four equal quadrants\n    top_left = gray[:gray.shape[0]//2, :gray.shape[1]//2]\n    top_right = gray[:gray.shape[0]//2, gray.shape[1]//2:]\n    bottom_left = gray[gray.shape[0]//2:, :gray.shape[1]//2]\n    bottom_right = gray[gray.shape[0]//2:, gray.shape[1]//2:]\n\n    # Calculate the mean brightness of each quadrant\n    mean_brightness = [np.mean(top_left), np.mean(top_right), np.mean(bottom_left), np.mean(bottom_right)]\n\n    return mean_brightness"
+ },
+ {
+  "id": "yellow_box",
+  "verdict": "PASS",
+  "checked": true,
+  "attempts": 1,
+  "seconds": 18.6,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Convert to HSV color space\n    hsv = cv.cvtColor(img, cv.COLOR_BGR2HSV)\n\n    # Keep pixels inside the color range\n    mask = cv.inRange(hsv, np.array([20, 100, 100]), np.array([35, 255, 255]))\n\n    # Clean the mask with opening and closing\n    kernel = np.ones((5, 5), np.uint8)\n    mask = cv.morphologyEx(mask, cv.MORPH_OPEN, kernel)    # remove small specks\n    mask = cv.morphologyEx(mask, cv.MORPH_CLOSE, kernel)   # fill small holes\n\n    # Find object outlines\n    contours, _ = cv.findContours(mask, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)\n    contours = [c for c in contours if cv.contourArea(c) >= 100]\n\n    # Draw a box and number around each object\n    vis = img.copy()\n    for i, c in enumerate(contours, 1):\n        x, y, w, h = cv.boundingRect(c)\n        cv.rectangle(vis, (x, y), (x + w, y + h), (0, 255, 0), 2)\n        cv.putText(vis, str(i), (x, y - 5), cv.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 255), 2)\n\n    # Return the bounding box of the yellow object\n    return (x, y, w, h)"
+ },
+ {
+  "id": "blue_fraction",
+  "verdict": "ERROR: TypeError: 'int' object is not iterable",
+  "checked": false,
+  "attempts": 4,
+  "seconds": 65.6,
+  "code": "import cv2 as cv\nimport numpy as np\ndef solve(img):\n    # Convert to HSV color space\n    hsv = cv.cvtColor(img, cv.COLOR_BGR2HSV)\n\n    # Keep pixels inside the color range\n    mask = cv.inRange(hsv, np.array([90, 80, 50]), np.array([130, 255, 255]))\n\n    # Clean the mask with opening and closing\n    kernel = np.ones((5, 5), np.uint8)\n    mask = cv.morphologyEx(mask, cv.MORPH_OPEN, kernel)    # remove small specks\n    mask = cv.morphologyEx(mask, cv.MORPH_CLOSE, kernel)   # fill small holes\n\n    # Find object outlines\n    contours, _ = cv.findContours(mask, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)\n    contours = [c for c in contours if cv.contourArea(c) >= 100]\n\n    # Calculate the percentage of blue pixels\n    blue_pixels = sum(1 for c in contours for p in cv.boundingRect(c)[0] if isinstance(p, list) and p[0] < 100)\n    total_pixels = cv.contourArea(contours[0])\n    blue_percentage = (blue_pixels / total_pixels) * 100\n\n    return blue_percentage"
+ },
+ {
+  "id": "change_box",
+  "verdict": "PASS",
+  "checked": false,
+  "attempts": 4,
+  "seconds": 89.7,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(before, after):\n    # Convert frames to grayscale\n    g_before = cv.GaussianBlur(cv.cvtColor(before, cv.COLOR_BGR2GRAY), (5, 5), 0)\n    g_after = cv.GaussianBlur(cv.cvtColor(after, cv.COLOR_BGR2GRAY), (5, 5), 0)\n    \n    # Compute the absolute difference between the two frames\n    diff = cv.absdiff(g_before, g_after)\n    \n    # Apply threshold to create a binary mask\n    _, mask = cv.threshold(diff, 30, 255, cv.THRESH_BINARY)\n    \n    # Clean the mask with opening and closing\n    kernel = np.ones((5, 5), np.uint8)\n    mask = cv.morphologyEx(mask, cv.MORPH_OPEN, kernel)    # remove small specks\n    mask = cv.morphologyEx(mask, cv.MORPH_CLOSE, kernel)   # fill small holes\n    \n    # Find contours in the mask\n    contours, _ = cv.findContours(mask, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)\n    \n    # Check if contours are not empty\n    if contours:\n        # Find the largest contour\n        largest_contour = max(contours, key=cv.contourArea)\n        \n        # Calculate the bounding box of the largest contour\n        x, y, w, h = cv.boundingRect(largest_contour)\n        \n        return (x, y, w, h)\n    else:\n        return None  # Return None if no changes are detected"
+ },
+ {
+  "id": "longest_line",
+  "verdict": "PASS",
+  "checked": true,
+  "attempts": 1,
+  "seconds": 17.2,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Convert to grayscale\n    gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY) if img.ndim == 3 else img.copy()\n\n    # Smooth noise with a Gaussian blur\n    smooth = cv.GaussianBlur(gray, (5, 5), 0)\n\n    # Detect edges with Canny\n    edges = cv.Canny(smooth, 50, 150)\n\n    # Find line segments with probabilistic Hough\n    found = cv.HoughLinesP(edges, 1, np.pi / 180, 50,\n                       minLineLength=40, maxLineGap=10)\n    lines = np.empty((0, 4), int) if found is None else found.reshape(-1, 4)\n\n    # Calculate the length of each line segment\n    lengths = []\n    for x1, y1, x2, y2 in lines:\n        length = np.sqrt((x2 - x1)**2 + (y2 - y1)**2)\n        lengths.append(length)\n\n    # Return the length of the longest detected line segment\n    return max(lengths)"
+ },
+ {
+  "id": "hv_lines",
+  "verdict": "WRONG ANSWER: {'horizontal': True, 'vertical': False}",
+  "checked": true,
+  "attempts": 1,
+  "seconds": 13.8,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Convert to grayscale\n    gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY) if img.ndim == 3 else img.copy()\n\n    # Smooth noise with a Gaussian blur\n    smooth = cv.GaussianBlur(gray, (5, 5), 0)\n\n    # Detect edges with Canny\n    edges = cv.Canny(smooth, 50, 150)\n\n    # Find line segments with probabilistic Hough\n    found = cv.HoughLinesP(edges, 1, np.pi / 180, 50,\n                       minLineLength=40, maxLineGap=10)\n    lines = np.empty((0, 4), int) if found is None else found.reshape(-1, 4)\n\n    # Draw the detected line segments\n    vis = img.copy()\n    for x1, y1, x2, y2 in lines:\n        cv.line(vis, (int(x1), int(y1)), (int(x2), int(y2)), (0, 0, 255), 2)\n\n    # Check if there are at least one horizontal and one vertical line\n    horizontal = any(line[0] < line[2] for line in lines)\n    vertical = any(line[1] < line[3] for line in lines)\n\n    return {\"horizontal\": horizontal, \"vertical\": vertical}"
+ },
+ {
+  "id": "rotate_cw",
+  "verdict": "        [ 7,  7,  8]]], dtype=uint8)",
+  "checked": true,
+  "attempts": 1,
+  "seconds": 8.9,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Rotate (and scale) about the center\n    h, w = img.shape[:2]\n    M = cv.getRotationMatrix2D((w / 2, h / 2), 90, 1.0)\n    rotated = cv.warpAffine(img, M, (w, h))\n    return rotated"
+ },
+ {
+  "id": "crop_largest",
+  "verdict": "        ...,",
+  "checked": true,
+  "attempts": 1,
+  "seconds": 27.5,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Convert the image to grayscale\n    gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)\n    \n    # Apply thresholding to create a binary image\n    _, binary = cv.threshold(gray, 0, 255, cv.THRESH_BINARY_INV + cv.THRESH_OTSU)\n    \n    # Find contours in the binary image\n    contours, _ = cv.findContours(binary, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)\n    \n    # Initialize variables to store the largest contour and its bounding box\n    largest_contour = None\n    largest_bbox = None\n    \n    # Iterate through the contours to find the largest one\n    for contour in contours:\n        # Calculate the bounding box of the contour\n        x, y, w, h = cv.boundingRect(contour)\n        \n        # Check if the contour is larger than the current largest contour\n        if largest_contour is None or w * h > largest_contour[2] * largest_contour[3]:\n            largest_contour = contour\n            largest_bbox = (x, y, w, h)\n    \n    # Crop the image to the bounding box of the largest contour\n    crop = img[largest_bbox[1]:largest_bbox[1] + largest_bbox[3], largest_bbox[0]:largest_bbox[0] + largest_bbox[2]]\n    \n    return crop"
+ },
+ {
+  "id": "otsu_white",
+  "verdict": "ERROR: ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()",
+  "checked": true,
+  "attempts": 1,
+  "seconds": 10.6,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Convert to grayscale\n    gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY) if img.ndim == 3 else img.copy()\n\n    # Smooth noise with a Gaussian blur\n    smooth = cv.GaussianBlur(gray, (5, 5), 0)\n\n    # Otsu automatic threshold\n    _, threshold = cv.threshold(smooth, 0, 255, cv.THRESH_BINARY | cv.THRESH_OTSU)\n\n    # Count white pixels\n    white_pixels = np.sum(threshold == 255)\n\n    return {\"threshold\": threshold, \"white_pixels\": white_pixels}"
+ },
+ {
+  "id": "watershed_count",
+  "verdict": "PASS",
+  "checked": true,
+  "attempts": 1,
+  "seconds": 30.3,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Convert to grayscale\n    gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY) if img.ndim == 3 else img.copy()\n\n    # Smooth noise with a Gaussian blur\n    smooth = cv.GaussianBlur(gray, (5, 5), 0)\n\n    # Otsu automatic threshold\n    otsu_value, mask = cv.threshold(smooth, 0, 255, cv.THRESH_BINARY | cv.THRESH_OTSU)\n\n    # Separate touching objects with marker-based watershed\n    kernel = np.ones((3, 3), np.uint8)\n    opening = cv.morphologyEx(mask, cv.MORPH_OPEN, kernel, iterations=2)\n    sure_bg = cv.dilate(opening, kernel, iterations=3)\n    dist = cv.distanceTransform(opening, cv.DIST_L2, 5)\n    _, sure_fg = cv.threshold(dist, 0.5 * dist.max(), 255, cv.THRESH_BINARY)\n    sure_fg = np.uint8(sure_fg)\n    unknown = cv.subtract(sure_bg, sure_fg)\n    _, markers = cv.connectedComponents(sure_fg)\n    markers = markers + 1          # background becomes 1, not 0\n    markers[unknown == 255] = 0    # 0 = let watershed decide\n    markers = cv.watershed(img, markers)\n\n    # Draw watershed boundaries\n    vis = img.copy()\n    vis[markers == -1] = (0, 0, 255)\n    cv.putText(vis, f\"Objects: {np.max(markers) - 1}\", (10, 30), cv.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)\n\n    return np.max(markers) - 1"
+ },
+ {
+  "id": "corner_count",
+  "verdict": "PASS",
+  "checked": true,
+  "attempts": 1,
+  "seconds": 8.7,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Convert to grayscale\n    gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY) if img.ndim == 3 else img.copy()\n\n    # Find corners using goodFeaturesToTrack\n    corners = cv.goodFeaturesToTrack(gray, maxCorners=100, qualityLevel=0.01, minDistance=10, blockSize=3)\n\n    # Return the number of corners found\n    return len(corners)"
+ },
+ {
+  "id": "hist_peak",
+  "verdict": "PASS",
+  "checked": true,
+  "attempts": 1,
+  "seconds": 14.2,
+  "code": "import cv2 as cv\nimport numpy as np\ndef solve(img):\n    # Convert to grayscale\n    gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY) if img.ndim == 3 else img.copy()\n\n    # Compute the grayscale histogram\n    hist = cv.calcHist([gray], [0], None, [256], [0, 256])\n\n    # Find the most frequent gray level\n    most_frequent_gray = np.argmax(hist)\n\n    return most_frequent_gray"
+ },
+ {
+  "id": "spikes",
+  "verdict": "PASS",
+  "checked": true,
+  "attempts": 1,
+  "seconds": 5.7,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(signal):\n    mean = np.mean(signal)\n    std_dev = np.std(signal)\n    anomalies = np.flatnonzero(np.abs(signal - mean) > 3 * std_dev)\n    return sorted(anomalies)"
+ },
+ {
+  "id": "warp_mean",
+  "verdict": "PASS",
+  "checked": true,
+  "attempts": 1,
+  "seconds": 14.7,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img, corners):\n    # Define the source and destination points for perspective transformation\n    src = np.float32([[corners[0][0], corners[0][1]], [corners[1][0], corners[1][1]], [corners[2][0], corners[2][1]], [corners[3][0], corners[3][1]]])\n    dst = np.float32([[0, 0], [200 - 1, 0], [200 - 1, 300 - 1], [0, 300 - 1]])\n\n    # Compute the perspective transformation matrix\n    P = cv.getPerspectiveTransform(src, dst)\n\n    # Apply the perspective transformation to the image\n    warped = cv.warpPerspective(img, P, (200, 300))\n\n    return warped"
+ },
+ {
+  "id": "kmeans_centers",
+  "verdict": "PASS",
+  "checked": true,
+  "attempts": 1,
+  "seconds": 11.9,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Convert the image to grayscale\n    gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)\n    \n    # Reshape the grayscale image to a 2D array of pixels\n    pixels = gray.reshape(-1, 1).astype(np.float32)\n    \n    # Define the criteria for the k-means algorithm\n    criteria = (cv.TERM_CRITERIA_EPS + cv.TERM_CRITERIA_MAX_ITER, 100, 0.2)\n    \n    # Perform k-means clustering with 4 clusters\n    _, labels, centers = cv.kmeans(pixels, 4, None, criteria, 3, cv.KMEANS_PP_CENTERS)\n    \n    # Reshape the cluster centers back to a 3D array\n    cluster_centers = centers.reshape(4, 1, 1)\n    \n    # Sort the cluster centers by their values\n    sorted_centers = np.sort(cluster_centers, axis=0)\n    \n    return sorted_centers"
+ },
+ {
+  "id": "sift_found",
+  "verdict": "WRONG ANSWER: {'found': False, 'good_matches': 33}",
+  "checked": true,
+  "attempts": 1,
+  "seconds": 26.4,
+  "code": "import cv2 as cv\nimport numpy as np\nfrom math import sqrt\n\ndef solve(ref, scene):\n    # Detect SIFT keypoints and descriptors in both images\n    sift = cv.SIFT_create()\n    kp_ref, des_ref = sift.detectAndCompute(cv.cvtColor(ref, cv.COLOR_BGR2GRAY), None)\n    kp, des = sift.detectAndCompute(cv.cvtColor(scene, cv.COLOR_BGR2GRAY), None)\n\n    # Match descriptors with Lowe's ratio test\n    good = []\n    if des_ref is not None and des is not None and len(des) >= 2:\n        for pair in cv.BFMatcher(cv.NORM_L2).knnMatch(des_ref, des, k=2):\n            if len(pair) == 2 and pair[0].distance < 0.75 * pair[1].distance:\n                good.append(pair[0])\n\n    # Estimate the homography with RANSAC\n    H, inliers = None, 0\n    if len(good) >= 4:\n        src = np.float32([kp_ref[m.queryIdx].pt for m in good]).reshape(-1, 1, 2)\n        dst = np.float32([kp[m.trainIdx].pt for m in good]).reshape(-1, 1, 2)\n        H, inlier_mask = cv.findHomography(src, dst, cv.RANSAC, 5.0)\n        inliers = 0 if inlier_mask is None else int(inlier_mask.sum())\n\n    # Calculate the distance between the reference and scene keypoints\n    distances = []\n    for kp_ref, kp in zip(kp_ref, kp):\n        distance = sqrt((kp_ref.pt[0] - kp.pt[0])**2 + (kp_ref.pt[1] - kp.pt[1])**2)\n        distances.append(distance)\n\n    # Calculate the average distance\n    avg_distance = sum(distances) / len(distances)\n\n    # Determine if the reference object appears in the scene\n    found = avg_distance < 10  # Adjust the threshold as needed\n\n    # Return the result\n    return {\"found\": found, \"good_matches\": len(good)}"
+ },
+ {
+  "id": "flip_compare",
+  "verdict": "ERROR: IndexError: index 200 is out of bounds for axis 1 with size 200",
+  "checked": false,
+  "attempts": 4,
+  "seconds": 50.6,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Flip the image horizontally\n    flipped_img = cv.flip(img, 1)\n    \n    # Convert to grayscale\n    gray = cv.cvtColor(flipped_img, cv.COLOR_BGR2GRAY)\n    \n    # Find object outlines\n    contours, _ = cv.findContours(gray, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)\n    contours = [c for c in contours if cv.contourArea(c) >= 100]\n    \n    # Count the number of pixels whose grayscale value changed\n    changed_pixels = 0\n    for i, c in enumerate(contours, 1):\n        x, y, w, h = cv.boundingRect(c)\n        for x in range(x, x + w):\n            for y in range(y, y + h):\n                if gray[x, y] != gray[x, y + 1]:\n                    changed_pixels += 1\n                if gray[x, y] != gray[x + 1, y]:\n                    changed_pixels += 1\n                if gray[x, y] != gray[x + 1, y + 1]:\n                    changed_pixels += 1\n    \n    return changed_pixels"
+ },
+ {
+  "id": "blur_diff",
+  "verdict": "WRONG ANSWER: np.uint8(205)",
+  "checked": true,
+  "attempts": 1,
+  "seconds": 6.3,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Convert to grayscale\n    gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY) if img.ndim == 3 else img.copy()\n\n    # Blur the image with a large kernel\n    blurred = cv.blur(gray, (5, 5))\n\n    # Calculate the maximum absolute difference between the blurred and the original grayscale image\n    max_diff = np.max(np.abs(blurred - gray))\n\n    return max_diff"
+ }
+]

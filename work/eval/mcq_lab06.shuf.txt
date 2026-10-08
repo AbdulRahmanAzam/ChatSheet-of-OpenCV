@@ -1,0 +1,101 @@
+# 100 MCQs supplied by the user (2026-10-08) for Lab Manual 06 + OpenCV parameters, answer key as given.
+wavelet|What does CWT stand for?|Inverse Wavelet Transform|Discrete Wavelet Transform|Continuous Wavelet Transform|Wavelet Packet Transform|C
+wavelet|Wavelet transformation provides analysis in which two domains?|Space and color|Magnitude and phase|Gradient and Laplacian|Time and frequency|D
+wavelet|Which type of signals is wavelet transformation especially useful for?|Non-stationary signals|Stationary signals|Binary signals only|Periodic signals only|A
+wavelet|In CWT, the wavelet function is:|Neither dilated nor translated|Dilated and translated|Only translated|Only dilated|B
+wavelet|Which wavelet is mentioned for analyzing oscillatory components?|Morlet|Haar|Daubechies|Symlet|A
+wavelet|Which wavelet families are used in DWT?|Gabor, Fourier, Laplace|Sobel, Canny, LoG|Morlet, Mexican Hat, Shannon|Daubechies, Haar, Symlet|D
+wavelet|WPT is an extension of:|DWT|Fourier Transform|Inverse Wavelet Transform|CWT|A
+wavelet|The Inverse Wavelet Transform is crucial for:|SIFT matching|Edge detection|Hough voting|Image reconstruction|D
+wavelet|Which application is NOT mentioned for DWT?|Image denoising|Feature extraction|Image compression|Line detection|D
+wavelet|WPT is useful for analyzing signals with:|Complex frequency content|Only binary content|No frequency content|Simple frequency content|A
+boundary|Boundary detection is also known as:|Circle detection|Edge detection|Corner detection|Blob detection|B
+boundary|Edges represent significant changes in:|Only texture|Only color|Only intensity|Intensity or color|D
+boundary|Which task is NOT mentioned as using edges?|Audio compression|Feature extraction|Object recognition|Image segmentation|A
+boundary|Sobel edge detection is based on:|Laplacian|Hough voting|Gradient|Zero-crossings|C
+boundary|How many convolution kernels does Sobel use?|Two|Four|Three|One|A
+boundary|What is the size of Sobel kernels?|2×2|3×3|5×5|7×7|B
+boundary|Which Sobel kernel detects vertical edges?|Gx|G|Gy|Gz|A
+boundary|Which Sobel kernel detects horizontal edges?|G|Gx|Gy|Gz|C
+boundary|The Sobel gradient magnitude is calculated as:|Abs(Gx) + Abs(Gy)|Gx + Gy|sqrt(Gx² + Gy²)|Gx² + Gy²|C
+boundary|Why is CV_64F used in Sobel?|To detect circles|To increase brightness|To reduce noise|To preserve negative values|D
+boundary|Why are grayscale images often used in computer vision tasks?|To simplify intensity analysis|To detect circles|To increase color information|To perform Hough voting|A
+boundary|What is the correct order of Canny edge detection steps?|Gaussian smoothing → Gradient → NMS → Hysteresis|Gradient → Gaussian smoothing → NMS → Hysteresis|Hysteresis → NMS → Gradient → Gaussian smoothing|NMS → Gradient → Gaussian smoothing → Hysteresis|A
+boundary|What is the purpose of Gaussian smoothing in Canny?|Links weak edges|Increases edge strength|Thins edges|Reduces noise to prevent false edges|D
+boundary|What does Non-Maximum Suppression do in Canny?|Links strong and weak edges|Reduces noise|Computes gradient magnitude|Thins edges to 1-pixel width|D
+boundary|In hysteresis thresholding, weak edges are kept only if:|They are isolated|They are above the high threshold|They are connected to strong edges|They are below the low threshold|C
+boundary|Canny edge detection is known for:|Only vertical edges|Thin and continuous edges|Only horizontal edges|Thick and broken edges|B
+boundary|LoG stands for:|Laplacian of Gaussian|Line of Gradient|Length of Gaussian|Logarithm of Gradient|A
+boundary|In LoG, edges are indicated by:|Peaks|Zero-crossings|Valleys|High gradients|B
+boundary|Which derivative does Canny/Sobel represent?|Third derivative|Second derivative|Zeroth derivative|First derivative|D
+boundary|Which derivative does Laplacian represent?|Second derivative|First derivative|Third derivative|Zeroth derivative|A
+hough|Hough Transform is used to detect:|Only ellipses|Only lines|Only circles|Lines and circles|D
+hough|Hough Transform transforms an image from spatial domain to:|Frequency domain|Color space|Parameter space|Scale space|C
+hough|A line in Cartesian coordinates is represented as:|y = mx² + b|y = ax² + bx + c|y = mx + b|x² + y² = r²|C
+hough|In Hough line detection, the parameter space axes are:|m and b|ρ and θ only|x and y|a, b, and r|A
+hough|In Hough Transform, each edge pixel:|Is discarded|Becomes a keypoint|Votes for possible shapes|Is smoothed|C
+hough|Peaks in the Hough parameter space represent:|Noise|Keypoints|Lines or circles|Gradients|C
+hough|A circle in Cartesian coordinates is represented as:|y = mx + b|x² + y² = r|(x − a)² + (y − b)² = r²|y = ax² + bx + c|C
+hough|The parameter space for circle detection has how many dimensions?|3|2|4|1|A
+hough|In circle Hough Transform, the parameters are:|m and b|a, b, and r|x and y|ρ and θ|B
+hough|Who introduced the Hough Transform?|Paul Hough|David Lowe|Irvin Sobel|John Canny|A
+hough|The Hough Transform was first introduced in:|1952|1972|1962|1982|C
+hough|Back-transformation in Hough Transform reveals:|Only noise|Only texture|Position and orientation of shapes|Only color|C
+sift|SIFT stands for:|Spatial Invariant Feature Transform|Simple Invariant Feature Transform|Scale-Invariant Feature Transform|Scale-Invariant Fourier Transform|C
+sift|SIFT is used for:|Object recognition|Image stitching|Tracking|All of the above|D
+sift|DoG stands for:|Difference of Gradients|Derivative of Gaussians|Difference of Gaussians|Derivative of Gradients|C
+sift|The DoG is calculated as:|L(x, y, kσ) − L(x, y, σ)|L(x, y, σ) × L(x, y, kσ)|L(x, y, σ) / L(x, y, kσ)|L(x, y, σ) + L(x, y, kσ)|A
+sift|Scale-space extrema detection finds:|Zero-crossings|Global maxima only|Edges only|Local extrema in scale space|D
+sift|In keypoint localization, a candidate keypoint is compared with how many neighbors?|8|16|32|26|D
+sift|The 26 neighbors consist of:|10 same layer, 8 above, 8 below|8 same layer, 9 above, 9 below|8 same layer, 8 above, 10 below|9 same layer, 8 above, 9 below|B
+sift|Orientation assignment in SIFT makes keypoints invariant to:|Rotation|Scale|Illumination|All of the above|A
+sift|The descriptor in SIFT is generated from:|4×4 sub-regions and 8 orientation bins|3×3 sub-regions and 8 orientation bins|4×4 sub-regions and 6 orientation bins|8×8 sub-regions and 8 orientation bins|A
+sift|The SIFT descriptor size is:|64|256|128|512|C
+sift|SIFT keypoint matching commonly uses:|Hamming distance|Cosine similarity|Manhattan distance|Euclidean distance|D
+sift|Outlier rejection in SIFT often uses:|Sobel|Canny|Hough|RANSAC|D
+sift|Homography estimation is used for:|Image stitching|Object recognition|Both A and B|Neither A nor B|C
+sift|SIFT keypoints are invariant to:|Only rotation|Scale and rotation|Only translation|Only scale|B
+sift|In SIFT, the descriptor is robust to:|Only scale|Only noise|Only rotation|Light changes|D
+sift|The SIFT descriptor is formed by concatenating:|Histograms of colors|Histograms of intensities|Histograms of edges|Histograms of gradient orientations|D
+sift|Keypoint localization refines location by fitting:|3D cubic function|2D quadratic function|2D linear function|3D quadratic function|D
+sift|SIFT detects keypoint candidates at:|Only the finest scale|Single scale|Only the coarsest scale|Multiple scales|D
+opencv|Which cv2.imread flag loads an image in grayscale?|cv2.IMREAD_COLOR|cv2.IMREAD_ANYCOLOR|cv2.IMREAD_UNCHANGED|cv2.IMREAD_GRAYSCALE|D
+opencv|What is the integer value of cv2.IMREAD_GRAYSCALE?|1|0|2|-1|B
+opencv|Which cv2.cvtColor code converts BGR to RGB?|cv2.COLOR_BGR2RGB|cv2.COLOR_RGB2BGR|cv2.COLOR_BGR2GRAY|cv2.COLOR_BGR2XYZ|A
+opencv|What is the integer value of cv2.COLOR_BGR2GRAY?|4|8|6|10|C
+opencv|In cv2.Sobel, which depth is used to preserve negative values?|cv2.CV_32F|cv2.CV_8U|cv2.CV_16S|cv2.CV_64F|D
+opencv|In cv2.Sobel, what does ksize=3 mean?|1×3 kernel|3×3 image|3×3 kernel|3×1 kernel|C
+opencv|In cv2.GaussianBlur, the kernel size must be:|Any integer|Positive odd numbers|Positive even numbers|Any positive number|B
+opencv|In the lab, what Gaussian blur kernel size is used?|(7, 7)|(5, 5)|(9, 9)|(3, 3)|B
+opencv|In the lab, what sigmaX value is used for Gaussian blur?|2.5|1.0|2.0|1.4|D
+opencv|In cv2.Canny, what are the lower and upper thresholds used in the lab?|50, 150|30, 100|150, 250|100, 200|A
+opencv|In cv2.Canny, what does apertureSize control?|Sobel operator aperture size|Gaussian kernel size|Image depth|Threshold value|A
+opencv|In cv2.Canny, if L2gradient=True, which norm is used?|L∞ norm|L1 norm|L0 norm|L2 norm|D
+opencv|In cv2.Laplacian, which depth is used in the lab?|cv2.CV_16S|cv2.CV_8U|cv2.CV_64F|cv2.CV_32F|C
+opencv|What does cv2.convertScaleAbs do?|Converts to binary|Converts to float|Converts to absolute values and scales to 8-bit|Converts to grayscale|C
+opencv|In cv2.convertScaleAbs, what does alpha control?|Kernel size|Threshold|Scale factor (contrast)|Delta (brightness)|C
+opencv|In cv2.HoughCircles, which method is implemented?|cv2.HOUGH_PROBABILISTIC|cv2.HOUGH_STANDARD|cv2.HOUGH_MULTI_SCALE|cv2.HOUGH_GRADIENT|D
+opencv|In cv2.HoughCircles, what does minDist represent?|Accumulator threshold|Maximum radius|Minimum radius|Minimum distance between centers of detected circles|D
+opencv|In cv2.HoughCircles, what does param2 represent?|Maximum radius|Higher threshold for Canny|Accumulator threshold for circle centers|Minimum radius|C
+opencv|In cv2.SIFT_create, what is the default nOctaveLayers?|1|2|3|4|C
+opencv|In cv2.SIFT_create, what is the default contrastThreshold?|0.03|0.05|0.01|0.04|D
+opencv|In cv2.SIFT_create, what is the default edgeThreshold?|15|10|20|5|B
+opencv|In cv2.SIFT_create, what is the default sigma?|1.6|1.0|2.0|1.4|A
+opencv|In cv2.SIFT_create, what is the default descriptorType?|CV_16S|CV_8U|CV_32F|CV_64F|C
+opencv|Which flag in cv2.drawKeypoints draws keypoints with size and orientation?|cv2.DRAW_MATCHES_FLAGS_DEFAULT|cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS|cv2.DRAW_MATCHES_FLAGS_DRAW_OVER_OUTIMG|cv2.DRAW_MATCHES_FLAGS_NOT_DRAW_SINGLE_POINTS|B
+opencv|What is the shape of SIFT descriptors for N keypoints?|(N, 128)|(64, N)|(128, N)|(N, 64)|A
+opencv|Which function detects keypoints and computes descriptors in SIFT?|sift.compute()|sift.detect()|sift.detectAndCompute()|sift.keypoints()|C
+opencv|In cv2.HoughLines, what does rho represent?|Accumulator threshold|Angle resolution in radians|Distance resolution in pixels|Minimum line length|C
+opencv|In cv2.HoughLines, what does theta represent?|Maximum angle|Angle resolution in radians|Distance resolution|Threshold|B
+opencv|In cv2.HoughLines, what does threshold represent?|Maximum line gap|Accumulator threshold|Minimum line length|Angle resolution|B
+opencv|In cv2.Sobel, what does dx=1, dy=0 compute?|Magnitude|Laplacian|Horizontal gradient (Gx)|Vertical gradient (Gy)|C
+opencv|In cv2.Sobel, what does dx=0, dy=1 compute?|Laplacian|Vertical gradient (Gy)|Magnitude|Horizontal gradient (Gx)|B
+opencv|Which function is used to compute gradient magnitude in the lab?|np.sqrt(sobel_x**2 + sobel_y**2)|np.abs(sobel_x + sobel_y)|np.multiply(sobel_x, sobel_y)|np.add(sobel_x, sobel_y)|A
+opencv|What does cv2.cvtColor(image, cv2.COLOR_BGR2RGB) do?|Converts RGB to BGR|Converts to binary|Converts BGR to RGB for Matplotlib|Converts to grayscale|C
+opencv|In cv2.GaussianBlur, what happens if sigmaY=0?|It is set to 1|It is set to 0|It causes an error|It is set equal to sigmaX|D
+opencv|In cv2.Laplacian, what is the default ksize?|5|1|7|3|B
+opencv|Which edge detector uses hysteresis thresholding?|LoG|Hough|Sobel|Canny|D
+opencv|Which edge detector uses zero-crossings?|LoG|Sobel|Hough|Canny|A
+opencv|Which transform is used for line and circle detection?|Fourier Transform|SIFT|Hough Transform|Wavelet Transform|C
+opencv|Which feature detector is scale-invariant?|SIFT|Hough|Sobel|Canny|A
+opencv|Which algorithm is used for outlier rejection in SIFT matching?|RANSAC|Sobel|Canny|LoG|A

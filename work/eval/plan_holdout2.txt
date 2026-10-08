@@ -1,0 +1,42 @@
+# FROZEN hold-out #2, written after hold-out #1 failures were seen but BEFORE any fix; never tune on it.
+# Format: expected_recipe[:required_step]|task text
+circles|A factory camera looks at bottle caps on a conveyor belt; find each cap and report how many there are.
+lines|Detect the straight lines of a tennis court in a broadcast frame.
+screens|An exam hall has rows of PCs; from a photo, report which screens are on, which are off, and where a monitor is missing.
+recognize|Given a photo of a book cover, find that book on a crowded shelf even if it is rotated or partly hidden.
+panorama|Join three overlapping photos of a mountain range into a single wide picture.
+watershed|Rice grains in the image are touching; separate them and count every grain.
+count|Find each washer on a dark table and report its area in pixels.
+color|Extract the orange traffic cones from a road-works photo.
+threshold|Convert a photographed page with a shadow across it into clean black-and-white text.
+enhance|A thermal camera image looks washed out; increase its contrast and show it with a color map.
+transform:perspective4|A photo of a chessboard was taken from the side; warp it so the board is seen from directly above.
+transform:rotate|The camera was mounted crooked by 8 degrees; correct the image orientation.
+zone|Raise an alarm when a person walks into the marked danger area in front of a machine in the video.
+wavelet|Denoise a heartbeat signal and mark the irregular beats.
+kmeans|Reduce a painting to its 5 dominant colors.
+edges|Show the outline of the object using an edge detector and compare thresholds.
+region|Starting from a seed pixel on a road, grow the road region until the intensity changes.
+texture|Distinguish smooth and rough surfaces using local binary patterns.
+corners|Find the corner points of a printed calibration grid.
+lanes|Mark the left and right lane boundaries on highway images for a driver-assistance system.
+circles|Detect the round holes drilled in a metal plate.
+recognize|Recognize which of several product packages appears in a shop-shelf photo using SIFT matching.
+color|Detect the green traffic light in the frame.
+watershed|Separate clustered blood cells that overlap each other.
+transform:translate|Move the image 100 pixels to the left.
+transform:affine3|Map three landmark points of one face photo onto three points of another with an affine warp.
+panorama|Stitch left and right halves of a parking-lot camera view into one image.
+count|How many separate blobs of ink are on the paper? Outline each one.
+threshold:thresh_otsu|Automatically choose the threshold for a bimodal image of bright parts on a dark belt.
+enhance|Brighten the dark regions of an underexposed photo using gamma correction.
+basics:center_roi|Crop the central 100x100 pixels of the image and display it.
+basics:draw_shapes|Draw a rectangle and the text Hello on a blank image.
+basics:channel_stats|Print the average blue, green and red values of the image.
+zone|Use background subtraction to detect moving objects in a fixed security camera.
+lines|Find the long straight edges of the shelves in a warehouse photo.
+recognize|Track a known logo in each frame of an advertisement video by feature matching to the logo image.
+wavelet|Use a Haar wavelet to find sudden spikes in pressure readings.
+kmeans|Group the pixels of a satellite image into 4 land-cover clusters.
+transform:shear|Apply a horizontal shear of 0.2 to the image.
+circles|Detect coins with Hough circles and count them in a video from a webcam.

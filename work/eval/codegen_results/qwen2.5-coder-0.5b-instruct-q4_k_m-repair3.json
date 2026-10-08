@@ -1,0 +1,162 @@
+[
+ {
+  "id": "coin_largest",
+  "verdict": "WRONG ANSWER: {'count': 2, 'largest_radius': np.int64(35)}",
+  "checked": true,
+  "attempts": 1,
+  "seconds": 15.8,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Convert to grayscale\n    gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY) if img.ndim == 3 else img.copy()\n\n    # Remove speckle noise with a median blur\n    smooth = cv.medianBlur(gray, 5)\n\n    # Find circles with the Hough gradient method\n    found = cv.HoughCircles(smooth, cv.HOUGH_GRADIENT, dp=1.2, minDist=40,\n                        param1=120, param2=30, minRadius=10, maxRadius=80)\n    circles = np.empty((0, 3), int) if found is None else np.round(found[0]).astype(int)\n\n    # Draw circles and the count\n    vis = img.copy()\n    for x, y, r in circles:\n        cv.circle(vis, (int(x), int(y)), int(r), (0, 255, 0), 2)\n        cv.circle(vis, (int(x), int(y)), 2, (0, 0, 255), 3)\n        cv.putText(vis, f'Count: {len(circles)}', (10, 30), cv.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)\n\n    # Find the largest circle\n    largest_circle = max(circles, key=lambda x: x[2])\n    largest_radius = largest_circle[2]\n\n    return {'count': len(circles), 'largest_radius': largest_radius}"
+ },
+ {
+  "id": "largest_area",
+  "verdict": "PASS",
+  "checked": true,
+  "attempts": 1,
+  "seconds": 14.6,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Convert to grayscale\n    gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY) if img.ndim == 3 else img.copy()\n\n    # Smooth noise with a Gaussian blur\n    smooth = cv.GaussianBlur(gray, (5, 5), 0)\n\n    # Otsu automatic threshold\n    otsu_value, mask = cv.threshold(smooth, 0, 255, cv.THRESH_BINARY | cv.THRESH_OTSU)\n\n    # Clean the mask with opening and closing\n    kernel = np.ones((5, 5), np.uint8)\n    mask = cv.morphologyEx(mask, cv.MORPH_OPEN, kernel)    # remove small specks\n    mask = cv.morphologyEx(mask, cv.MORPH_CLOSE, kernel)   # fill small holes\n\n    # Find object outlines\n    contours, _ = cv.findContours(mask, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)\n    contours = [c for c in contours if cv.contourArea(c) >= 100]\n\n    # Draw a box and number around each object\n    vis = img.copy()\n    for i, c in enumerate(contours, 1):\n        x, y, w, h = cv.boundingRect(c)\n        cv.rectangle(vis, (x, y), (x + w, y + h), (0, 255, 0), 2)\n        cv.putText(vis, str(i), (x, y - 5), cv.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 255), 2)\n\n    # Find the largest contour\n    largest_contour = max(contours, key=cv.contourArea)\n\n    # Calculate the largest area\n    largest_area = cv.contourArea(largest_contour)\n\n    # Return the count and largest area\n    return {\"count\": len(contours), \"largest_area\": largest_area}"
+ },
+ {
+  "id": "quadrant_means",
+  "verdict": "ERROR: IndexError: too many indices for array: array is 2-dimensional, but 3 were indexed",
+  "checked": false,
+  "attempts": 4,
+  "seconds": 18.7,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Convert to grayscale\n    gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY) if img.ndim == 3 else img.copy()\n\n    # Per-channel statistics\n    for name, channel in zip('BGR', cv.split(img)):\n        # Calculate the mean brightness for each channel\n        mean_brightness = np.mean(channel)\n        print(f\"Mean brightness in {name}: {mean_brightness}\")\n\n    # Split the grayscale version into four equal quadrants\n    quadrants = [gray[:, :, i] for i in range(4)]\n\n    # Return the list of mean brightness in the order top-left, top-right, bottom-left, bottom-right\n    return quadrants"
+ },
+ {
+  "id": "yellow_box",
+  "verdict": "PASS",
+  "checked": true,
+  "attempts": 1,
+  "seconds": 12.1,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Convert to HSV color space\n    hsv = cv.cvtColor(img, cv.COLOR_BGR2HSV)\n    \n    # Keep pixels inside the color range\n    mask = cv.inRange(hsv, np.array([20, 100, 100]), np.array([35, 255, 255]))\n    \n    # Clean the mask with opening and closing\n    kernel = np.ones((5, 5), np.uint8)\n    mask = cv.morphologyEx(mask, cv.MORPH_OPEN, kernel)    # remove small specks\n    mask = cv.morphologyEx(mask, cv.MORPH_CLOSE, kernel)   # fill small holes\n    \n    # Find object outlines\n    contours, _ = cv.findContours(mask, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)\n    contours = [c for c in contours if cv.contourArea(c) >= 100]\n    \n    # Draw a box and number around each object\n    vis = img.copy()\n    for i, c in enumerate(contours, 1):\n        x, y, w, h = cv.boundingRect(c)\n        cv.rectangle(vis, (x, y), (x + w, y + h), (0, 255, 0), 2)\n        cv.putText(vis, str(i), (x, y - 5), cv.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 255), 2)\n    \n    # Return the bounding box as a tuple (x, y, w, h)\n    return (x, y, w, h)"
+ },
+ {
+  "id": "blue_fraction",
+  "verdict": "WRONG ANSWER: np.float64(242000.0)",
+  "checked": true,
+  "attempts": 1,
+  "seconds": 6.8,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Convert to HSV color space\n    hsv = cv.cvtColor(img, cv.COLOR_BGR2HSV)\n    \n    # Keep pixels inside the color range\n    mask = cv.inRange(hsv, np.array([90, 80, 50]), np.array([130, 255, 255]))\n    \n    # Clean the mask with opening and closing\n    kernel = np.ones((5, 5), np.uint8)\n    mask = cv.morphologyEx(mask, cv.MORPH_OPEN, kernel)    # remove small specks\n    mask = cv.morphologyEx(mask, cv.MORPH_CLOSE, kernel)   # fill small holes\n    \n    # Find object outlines\n    contours, _ = cv.findContours(mask, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)\n    contours = [c for c in contours if cv.contourArea(c) >= 100]\n    \n    # Calculate the percentage of blue pixels\n    blue_percentage = (np.sum(contours) / len(contours)) * 100\n    \n    return blue_percentage"
+ },
+ {
+  "id": "change_box",
+  "verdict": "ERROR: >     'depth' is 4 (CV_32S)",
+  "checked": false,
+  "attempts": 4,
+  "seconds": 39.1,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef compare_frames(frame1, frame2):\n    # Convert frames to grayscale\n    gray1 = cv.cvtColor(frame1, cv.COLOR_BGR2GRAY)\n    gray2 = cv.cvtColor(frame2, cv.COLOR_BGR2GRAY)\n    \n    # Compute differences\n    diff = cv.absdiff(gray1, gray2)\n    \n    # Threshold the differences\n    _, mask = cv.threshold(diff, 30, 255, cv.THRESH_BINARY)\n    \n    # Dilate the mask to remove small specks\n    kernel = np.ones((5, 5), np.uint8)\n    mask = cv.dilate(mask, kernel, iterations=2)\n    \n    # Find contours in the mask\n    contours, _ = cv.findContours(mask, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)\n    \n    # Draw the bounding box of the changed region\n    vis = frame1.copy()\n    cv.polylines(vis, [np.int32([[100, 100], [300, 100], [300, 300], [100, 300]])], True, (255, 0, 0), 2)\n    for c in contours:\n        x, y, w, h = cv.boundingRect(c)\n        cv.rectangle(vis, (x, y), (x + w, y + h), (0, 0, 255), 2)\n    \n    # Return the bounding box of the changed region\n    return vis\n\n# Example usage\nframe1 = np.random.randint(0, 255, size=(100, 100, 3))\nframe2 = np.random.randint(0, 255, size=(100, 100, 3))\nresult = compare_frames(frame1, frame2)\nprint(result)"
+ },
+ {
+  "id": "longest_line",
+  "verdict": "ERROR: ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()",
+  "checked": false,
+  "attempts": 4,
+  "seconds": 25.9,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Convert to grayscale\n    gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY) if img.ndim == 3 else img.copy()\n\n    # Smooth noise with a Gaussian blur\n    smooth = cv.GaussianBlur(gray, (5, 5), 0)\n\n    # Detect edges with Canny\n    edges = cv.Canny(smooth, 50, 150)\n\n    # Find line segments with probabilistic Hough\n    found = cv.HoughLinesP(edges, 1, np.pi / 180, 50,\n                       minLineLength=40, maxLineGap=10)\n    lines = np.empty((0, 4), int) if found is None else found.reshape(-1, 4)\n\n    # Check if lines are not empty\n    if lines:\n        longest_line = max(lines, key=lambda x: x[2])\n        return longest_line[2]\n    else:\n        return 0"
+ },
+ {
+  "id": "hv_lines",
+  "verdict": "WRONG ANSWER: {'horizontal': [(np.int32(53), np.int32(47)), (np.int32(49), np.int32(52))], 'vertical': [(np.int32(57), np.int32(103)), (np.int32(62), np.int32(99))]}",
+  "checked": true,
+  "attempts": 1,
+  "seconds": 6.2,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Convert to grayscale\n    gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY) if img.ndim == 3 else img.copy()\n\n    # Smooth noise with a Gaussian blur\n    smooth = cv.GaussianBlur(gray, (5, 5), 0)\n\n    # Detect edges with Canny\n    edges = cv.Canny(smooth, 50, 150)\n\n    # Find line segments with probabilistic Hough\n    found = cv.HoughLinesP(edges, 1, np.pi / 180, 50,\n                       minLineLength=40, maxLineGap=10)\n    lines = np.empty((0, 4), int) if found is None else found.reshape(-1, 4)\n\n    # Initialize dictionaries to track horizontal and vertical lines\n    horizontal_lines = []\n    vertical_lines = []\n\n    # Iterate over the detected lines\n    for x1, y1, x2, y2 in lines:\n        # Check if the line is horizontal\n        if y1 == y2:\n            horizontal_lines.append((x1, y1))\n        # Check if the line is vertical\n        elif x1 == x2:\n            vertical_lines.append((x1, y2))\n\n    # Return the results as a dictionary\n    return {\"horizontal\": horizontal_lines, \"vertical\": vertical_lines}"
+ },
+ {
+  "id": "rotate_cw",
+  "verdict": "        [ 7,  7,  8]]], dtype=uint8)",
+  "checked": true,
+  "attempts": 1,
+  "seconds": 4.3,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Crop the exact center region (ROI)\n    h, w = img.shape[:2]\n    y0, x0 = (h - 200) // 2, (w - 200) // 2\n    roi = img[y0:y0 + 200, x0:x0 + 200]\n\n    # Rotate (and scale) about the center\n    h, w = img.shape[:2]\n    M = cv.getRotationMatrix2D((w / 2, h / 2), 90, 1.0)\n    warped = cv.warpAffine(img, M, (w, h))\n\n    return warped"
+ },
+ {
+  "id": "crop_largest",
+  "verdict": "ERROR: cv2.error: OpenCV(4.13.0) D:\\a\\opencv-python\\opencv-python\\opencv\\modules\\imgproc\\src\\color.cpp:199: error: (-215:Assertion failed) !_src.empty() in function 'cv::cvtColor'",
+  "checked": false,
+  "attempts": 4,
+  "seconds": 27.8,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Convert BGR to RGB for easier processing\n    img_rgb = cv.cvtColor(img, cv.COLOR_BGR2RGB)\n    \n    # Check if the image is not empty\n    if img_rgb.empty():\n        raise ValueError(\"The image is empty. Please provide a valid BGR image.\")\n    \n    # Find the largest white object in the image\n    contours, _ = cv.findContours(img_rgb, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)\n    \n    # Find the largest contour\n    largest_contour = max(contours, key=cv.contourArea)\n    \n    # Get the bounding box of the largest contour\n    x0, y0 = largest_contour[0][0], largest_contour[0][1]\n    x1, y1 = largest_contour[0][2], largest_contour[0][3]\n    \n    # Crop the image to the bounding box\n    roi = img[y0:y0 + y1 - y0, x0:x0 + x1 - x0]\n    \n    return roi\n\n# Example usage\nimg = cv.imread('path_to_your_image.jpg')\nresult = solve(img)\ncv.imshow('Cropped Image', result)\ncv.waitKey(0)\ncv.destroyAllWindows()"
+ },
+ {
+  "id": "otsu_white",
+  "verdict": "WRONG ANSWER: {'threshold': 121.0, 'white_pixels': np.uint64(2085135)}",
+  "checked": true,
+  "attempts": 1,
+  "seconds": 5.5,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Convert to grayscale\n    gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY) if img.ndim == 3 else img.copy()\n\n    # Smooth noise with a Gaussian blur\n    smooth = cv.GaussianBlur(gray, (5, 5), 0)\n\n    # Otsu automatic threshold\n    otsu_value, mask = cv.threshold(smooth, 0, 255, cv.THRESH_BINARY | cv.THRESH_OTSU)\n\n    # Calculate white pixels\n    white_pixels = np.sum(mask)\n\n    # Return the result as a dictionary\n    return {\"threshold\": otsu_value, \"white_pixels\": white_pixels}"
+ },
+ {
+  "id": "watershed_count",
+  "verdict": "ERROR: NameError: name 'report' is not defined. Did you mean: 'repr'?",
+  "checked": false,
+  "attempts": 4,
+  "seconds": 54.8,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Convert to grayscale\n    gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY) if img.ndim == 3 else img.copy()\n\n    # Smooth noise with a Gaussian blur\n    smooth = cv.GaussianBlur(gray, (5, 5), 0)\n\n    # Otsu automatic threshold\n    otsu_value, mask = cv.threshold(smooth, 0, 255, cv.THRESH_BINARY | cv.THRESH_OTSU)\n\n    # Separate touching objects with marker-based watershed\n    kernel = np.ones((3, 3), np.uint8)\n    opening = cv.morphologyEx(mask, cv.MORPH_OPEN, kernel, iterations=2)\n    sure_bg = cv.dilate(opening, kernel, iterations=3)\n    dist = cv.distanceTransform(opening, cv.DIST_L2, 5)\n    _, sure_fg = cv.threshold(dist, 0.5 * dist.max(), 255, cv.THRESH_BINARY)\n    sure_fg = np.uint8(sure_fg)\n    unknown = cv.subtract(sure_bg, sure_fg)\n    _, markers = cv.connectedComponents(sure_fg)\n    markers = markers + 1          # background becomes 1, not 0\n    markers[unknown == 255] = 0    # 0 = let watershed decide\n    markers = cv.watershed(img, markers)\n\n    # Draw watershed boundaries\n    vis = img.copy()\n    vis[markers == -1] = (0, 0, 255)\n    cv.putText(vis, f\"Objects: {report['count']}\", (10, 30), cv.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)\n    return markers.shape[0]"
+ },
+ {
+  "id": "corner_count",
+  "verdict": "ERROR: TypeError: cannot unpack non-iterable NoneType object",
+  "checked": false,
+  "attempts": 4,
+  "seconds": 48.1,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Convert to grayscale\n    gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY) if img.ndim == 3 else img.copy()\n\n    # Smooth noise with a Gaussian blur\n    smooth = cv.GaussianBlur(gray, (5, 5), 0)\n\n    # Otsu automatic threshold\n    otsu_value, mask = cv.threshold(smooth, 0, 255, cv.THRESH_BINARY | cv.THRESH_OTSU)\n\n    # Clean the mask with opening and closing\n    kernel = np.ones((5, 5), np.uint8)\n    mask = cv.morphologyEx(mask, cv.MORPH_OPEN, kernel)    # remove small specks\n    mask = cv.morphologyEx(mask, cv.MORPH_CLOSE, kernel)   # fill small holes\n\n    # Find object outlines\n    contours, _ = cv.findContours(mask, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)\n    contours = [c for c in contours if cv.contourArea(c) >= 100]\n\n    # Draw a box and number around each object\n    vis = img.copy()\n    for i, c in enumerate(contours, 1):\n        x, y, w, h = cv.boundingRect(c)\n        cv.rectangle(vis, (x, y), (x + w, y + h), (0, 255, 0), 2)\n        cv.putText(vis, str(i), (x, y - 5), cv.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 255), 2)\n\n    # Find corners using goodFeaturesToTrack\n    corners = []\n    max_corners = 100\n    min_distance = 10\n    corners, _ = cv.goodFeaturesToTrack(gray, max_corners, min_distance, 0.01, (3, 3))\n\n    # Return the number of corners found\n    return len(corners)"
+ },
+ {
+  "id": "hist_peak",
+  "verdict": "WRONG ANSWER: np.int64(15100)",
+  "checked": true,
+  "attempts": 1,
+  "seconds": 4.0,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Convert to grayscale\n    gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY) if img.ndim == 3 else img.copy()\n\n    # Local contrast enhancement (CLAHE)\n    clahe = cv.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))\n    enhanced = clahe.apply(gray)\n\n    # Global histogram equalization\n    equalized = cv.equalizeHist(gray)\n\n    # Find the most frequent gray level\n    most_frequent_gray = np.argmax(equalized)\n\n    return most_frequent_gray"
+ },
+ {
+  "id": "spikes",
+  "verdict": "WRONG ANSWER: array([], dtype=int64)",
+  "checked": true,
+  "attempts": 1,
+  "seconds": 6.1,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(signal):\n    # Compute the mean and standard deviation of the signal\n    mean = np.mean(signal)\n    std_dev = np.std(signal)\n    \n    # Compute the threshold for anomaly detection\n    threshold = std_dev * np.sqrt(2 * np.log(len(signal)))\n    \n    # Find the indices of values greater than 3 standard deviations from the mean\n    anomalies = np.flatnonzero(np.abs(signal - mean) > 3 * threshold)\n    \n    return anomalies"
+ },
+ {
+  "id": "warp_mean",
+  "verdict": "        [",
+  "checked": true,
+  "attempts": 1,
+  "seconds": 8.4,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img, corners):\n    # Extract the top-left, top-right, bottom-right, bottom-left corners\n    top_left = corners[0]\n    top_right = corners[1]\n    bottom_right = corners[2]\n    bottom_left = corners[3]\n    \n    # Calculate the dimensions of the top-down view\n    width = top_right[0] - top_left[0]\n    height = bottom_right[1] - bottom_left[1]\n    \n    # Create a perspective transformation matrix\n    src = np.float32([[top_left[0], top_left[1]], [top_right[0], top_right[1]], [bottom_right[0], bottom_right[1]], [bottom_left[0], bottom_left[1]]])\n    dst = np.float32([[0, 0], [width - 1, 0], [width - 1, height - 1], [0, height - 1]])\n    P = cv.getPerspectiveTransform(src, dst)\n    \n    # Warp the region to a 200x300 top-down view\n    warped = cv.warpPerspective(img, P, (400, 400))\n    \n    return warped"
+ },
+ {
+  "id": "kmeans_centers",
+  "verdict": "ERROR: SyntaxError: invalid syntax",
+  "checked": false,
+  "attempts": 4,
+  "seconds": 97.8,
+  "code": "The code you provided is trying to cluster the pixel values in a grayscale image using the k-means algorithm. However, there are a few issues that need to be addressed:\n\n1. The `cv.cvtColor` function is used to convert the image to grayscale, but the `cv.COLOR_BGR2GRAY` function is used to convert the image to color.\n\n2. The `cv.kmeans` function is used to cluster the pixel values in a grayscale image, but the `cv.kmeans` function is used to cluster the pixel values in a color image. This is incorrect because the `cv.kmeans` function is used to cluster the pixel values in a color image, while the `cv.kmeans` function is used to cluster the pixel values in a color image.\n\n3. The `cv.kmeans` function is used to cluster the pixel values in a grayscale image, but the `cv.kmeans` function is used to cluster the pixel values in a color image. This is incorrect because the `cv.kmeans` function is used to cluster the pixel values in a color image, while the `cv.kmeans` function is used to cluster the pixel values in a color image.\n\n4. The `cv.kmeans` function is used to cluster the pixel values in a grayscale image, but the `cv.kmeans` function is used to cluster the pixel values in a color image. This is incorrect because the `cv.kmeans` function is used to cluster the pixel values in a color image, while the `cv.kmeans` function is used to cluster the pixel values in a color image.\n\n5. The `cv.kmeans` function is used to cluster the pixel values in a grayscale image, but the `cv.kmeans` function is used to cluster the pixel values in a color image. This is incorrect because the `cv.kmeans` function is used to cluster the pixel values in a color image, while the `cv.kmeans` function is used to cluster the pixel values in a color image.\n\n6. The `cv.kmeans` function is used to cluster the pixel values in a grayscale image, but the `cv.kmeans` function is used to cluster the pixel values in a color image. This is incorrect because the `cv.kmeans` function is used to cluster the pixel values in a color image, while the `cv.kmeans` function is used to cluster the pixel values in a color image.\n\n7. The `cv.kmeans` function is used to cluster the pixel values in a grayscale image, but the `cv.kmeans` function is used to cluster the pixel values in a color image. This is incorrect because the `cv.kmeans` function is used to cluster the pixel values in a color image, while the `cv.kmeans` function is used to cluster the pixel values in a color image.\n\n8. The `cv.kmeans` function is used to cluster the pixel values in a grayscale image, but the `cv.kmeans` function is used to cluster the pixel values in a color image. This is incorrect because the `cv.kmeans` function is used to cluster the pixel values in a color image, while the `cv.kmeans` function is used to cluster the pixel values in a color image.\n\n9. The `cv.kmeans` function is used to cluster the pixel values in a grayscale image, but the `cv.kmeans` function is used to cluster the pixel values in a color image. This is incorrect because the `cv.kmeans` function is used to cluster the pixel values in a color image, while the `cv.kmeans` function is used to cluster the pixel values in a color image.\n\n10. The `cv.kmeans` function is used to cluster the pixel values in a grayscale image, but the `cv.kmeans` function is used to cluster the pixel values in a color image. This is incorrect because the `cv.kmeans` function is used to cluster the pixel values in a color image, while the `cv.kmeans`"
+ },
+ {
+  "id": "sift_found",
+  "verdict": "ERROR: NameError: name 'report' is not defined. Did you mean: 'repr'?",
+  "checked": false,
+  "attempts": 4,
+  "seconds": 65.7,
+  "code": "import cv2\nimport cv2 as cv\nimport numpy as np\n\ndef solve(ref, scene):\n    # Detect SIFT keypoints and descriptors in both images\n    sift = cv.SIFT_create()\n    kp_ref, des_ref = sift.detectAndCompute(cv.cvtColor(ref, cv.COLOR_BGR2GRAY), None)\n    kp, des = sift.detectAndCompute(cv.cvtColor(scene, cv.COLOR_BGR2GRAY), None)\n\n    # Match descriptors with Lowe's ratio test\n    good = []\n    if des_ref is not None and des is not None and len(des) >= 2:\n        for pair in cv.BFMatcher(cv.NORM_L2).knnMatch(des_ref, des, k=2):\n            if len(pair) == 2 and pair[0].distance < 0.75 * pair[1].distance:\n                good.append(pair[0])\n\n    # Estimate the homography with RANSAC\n    H, inliers = None, 0\n    if len(good) >= 4:\n        src = np.float32([kp_ref[m.queryIdx].pt for m in good]).reshape(-1, 1, 2)\n        dst = np.float32([kp[m.trainIdx].pt for m in good]).reshape(-1, 1, 2)\n        H, inlier_mask = cv.findHomography(src, dst, cv2.RANSAC, 5.0)\n        inliers = 0 if inlier_mask is None else int(inlier_mask.sum())\n\n    # Draw the recognised object outline\n    vis = ref.copy()\n    if report['found']:\n        h, w = ref.shape[:2]\n        corners = np.float32([[0, 0], [w - 1, 0], [w - 1, h - 1], [0, h - 1]]).reshape(-1, 1, 2)\n        box = cv.perspectiveTransform(corners, H)\n        cv.polylines(vis, [np.int32(box)], True, (0, 255, 0), 3)\n    cv.putText(vis, 'FOUND' if report['found'] else 'NOT FOUND', (10, 30), cv.FONT_HERSHEY_SIMPLEX, 1,\n           (0, 255, 0) if report['found'] else (0, 0, 255), 2)\n    return {'found': report['found'], 'good_matches': len(good)}"
+ },
+ {
+  "id": "flip_compare",
+  "verdict": "PASS",
+  "checked": true,
+  "attempts": 1,
+  "seconds": 11.7,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Convert to grayscale\n    gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY) if img.ndim == 3 else img.copy()\n\n    # Smooth noise with a Gaussian blur\n    smooth = cv.GaussianBlur(gray, (5, 5), 0)\n\n    # Otsu automatic threshold\n    otsu_value, mask = cv.threshold(smooth, 0, 255, cv.THRESH_BINARY | cv.THRESH_OTSU)\n\n    # Clean the mask with opening and closing\n    kernel = np.ones((5, 5), np.uint8)\n    mask = cv.morphologyEx(mask, cv.MORPH_OPEN, kernel)    # remove small specks\n    mask = cv.morphologyEx(mask, cv.MORPH_CLOSE, kernel)   # fill small holes\n\n    # Find object outlines\n    contours, _ = cv.findContours(mask, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)\n    contours = [c for c in contours if cv.contourArea(c) >= 100]\n\n    # Draw a box and number around each object\n    vis = img.copy()\n    for i, c in enumerate(contours, 1):\n        x, y, w, h = cv.boundingRect(c)\n        cv.rectangle(vis, (x, y), (x + w, y + h), (0, 255, 0), 2)\n        cv.putText(vis, str(i), (x, y - 5), cv.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 255), 2)\n\n    # Flip the image horizontally\n    flipped_img = cv.flip(vis, 1)\n\n    # Count the number of pixels whose grayscale value changed\n    num_changed_pixels = np.sum(flipped_img[:, :, 0] != img[:, :, 0])\n\n    return num_changed_pixels"
+ },
+ {
+  "id": "blur_diff",
+  "verdict": "ERROR: NameError: name 'blurred' is not defined",
+  "checked": false,
+  "attempts": 4,
+  "seconds": 6.5,
+  "code": "import numpy as np\nmax_diff = np.max(np.abs(blurred - img))"
+ }
+]

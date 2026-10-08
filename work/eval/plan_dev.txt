@@ -1,0 +1,37 @@
+# Planner dev set: the course lab tasks (Labs 01-06), paraphrased from the task PDFs.
+# Format: expected_recipe[:required_step]|task text
+basics|Load the Sukuna image, display it with a title and hide the axes.
+basics:draw_shapes|Draw five concentric circles on the image and a bounding box around them.
+basics:center_roi|Apply a 25x25 blur to the image and extract the exact center region of interest.
+basics:blend|Add a transparent blue banner across the bottom of the image.
+basics:rotate|Threshold the image and then rotate it 45 degrees with scaling.
+basics:channel_stats|Compute the mean, standard deviation, min and max of each RGB channel.
+enhance:pseudocolor|Enhance an X-ray image so the bones are clearer and apply pseudocolor.
+fusion|Fuse a registered CT slice and MRI slice into one image.
+enhance|Visualize an echocardiogram video with better contrast.
+transform|Enlarge a fingerprint image using a manual scaling matrix.
+transform:rotate|Undo the rotation of a satellite image using sin and cos.
+transform:shear|Remove the horizontal shear from a barcode image.
+transform:translate|Recover the translation between two map images and shift it back.
+transform:affine3|Solve the six unknowns of an affine transform from three point pairs.
+transform:perspective4|Rectify a square seen in perspective into a top-down view.
+panorama|Build a panorama from two football field images using point correspondences.
+transform:perspective4|Insert a painting into a wall photo using a perspective transform.
+texture|Analyse material texture using HOG and LBP.
+threshold|Compare global and adaptive thresholding on a document image.
+threshold:thresh_adaptive|Sweep the block size and C of adaptive thresholding on a document.
+threshold:thresh_otsu|Segment coins with Otsu thresholding and show how the histogram changes.
+color|Isolate the yellow car using HSV.
+edges|Compare Canny with different high thresholds.
+region|Region growing from two seeds with three tolerances.
+watershed|Implement the complete marker-based watershed pipeline.
+watershed|Show the effect of the distance-transform threshold on watershed.
+kmeans|Segment an image with k-means for K=2,4,6.
+screens|You are working on a computer vision project for monitoring computer lab usage and ensuring the availability of computer screens. Your goal is to implement screen detection using the Hough Line Transformation. The lab contains rows of computers, and you need to identify the boundaries of computer screens to monitor their status (on or off) and detect any anomalies, such as missing screens.
+recognize|You are responsible for managing computer assets in a busy computing lab. Implement a computer vision solution using the Scale-Invariant Feature Transform (SIFT) to automatically recognize and identify individual computer systems and their unique components, such as monitors and keyboards, to maintain an up-to-date inventory.
+wavelet|You are tasked with developing a system to monitor sensor data from industrial machines and identify anomalies in real-time using the wavelet transformation.
+recognize|You have a reference image of the object you want to recognize and a set of test images. Identify and locate the object in each test image, even if it appears at different scales, orientations, or under partial occlusion, using SIFT, and draw bounding boxes.
+panorama|Create a panoramic image by stitching multiple overlapping images captured from a camera while panning, using SIFT to find and match key points between adjacent images.
+lanes|You are working on an autonomous vehicle project, and one of the critical tasks is to detect lane markings on the road to ensure safe driving, using the Hough Line Transformation.
+circles|Count the coins in an image using the Hough circle transform.
+zone|Monitor a restricted zone with a camera and raise an alert when someone enters it.

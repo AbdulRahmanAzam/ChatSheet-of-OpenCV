@@ -1,0 +1,42 @@
+# FROZEN hold-out for the planner. Written before any planner tuning on it; do not tune on these.
+# Format: expected_recipe[:required_step]|task text
+color|Count the red apples on a table.
+circles|Detect the pupils of the eyes in a face image.
+watershed|Find how many cells are in a microscope image where many cells touch each other.
+count|Measure the area of each leaf in a scanned image of separate leaves.
+panorama|A drone flies over farmland and takes many overlapping photos; combine them into one wide image.
+recognize|Locate the company logo inside product photos taken from different angles.
+enhance|Make the details in an underexposed night photo visible.
+transform:perspective4|Straighten a photo of a receipt taken at an angle so it looks scanned flat from the top.
+zone|Detect cars entering a no-parking area from CCTV footage.
+texture|Classify the material of a surface (wood, metal, fabric) with texture descriptors.
+wavelet|Remove noise from vibration sensor readings and spot unusual peaks.
+edges|Find the edges of objects in a photograph of tools.
+kmeans|Split an aerial image into regions of similar color with clustering.
+threshold|Binarize handwritten notes photographed under a desk lamp.
+lines|Detect the straight edges of a building facade.
+lanes|Find the road lanes in dashcam video.
+circles|Count the balls on a snooker table.
+color|Find all green leaves in a garden picture.
+region|Grow the lake region in a satellite image starting from a pixel inside the lake.
+corners|Find the chessboard corners in the calibration image.
+transform:rotate|Rotate a scanned page that is tilted by 12 degrees back to upright.
+screens|Check which monitors in an office are switched on from a photo of the desks.
+zone|Track whether anyone moves inside the server room using the webcam.
+watershed|Separate overlapping coins so each coin can be counted.
+recognize|Detect a stop sign in street photos using a template photo of the sign and feature matching.
+recognize|Identify each pill bottle in a cabinet photo using reference photos of each bottle.
+enhance|Improve the visibility of an ultrasound video.
+circles|Find circular manholes in road images.
+transform:translate|Shift an image 40 pixels right and 20 pixels down.
+texture|Compute HOG features of pedestrians.
+count|Count the number of nuts and bolts on a white background.
+color|Segment the sky in landscape photos using the blue color.
+wavelet|Find abnormal readings in a machine temperature sensor log.
+watershed|Highlight the boundaries between touching nuclei in a medical image.
+lines|Find the straight rails of the railway track in a photo.
+transform:shear|Undo the slant of a sheared barcode image.
+corners|Detect corners of a building with the Harris detector.
+panorama|Merge two photos of a whiteboard taken side by side with an overlap.
+kmeans|Quantize an image to 8 colors.
+region|Find the bright tumour region in an MRI starting from a clicked seed point.

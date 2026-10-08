@@ -1,0 +1,41 @@
+# FROZEN HOLD-OUT (written 2026-10-08 before reader weights were tuned). Never use for tuning. Hard conceptual / reasoning questions, reworded away from fact text.
+concept|Why is an image usually smoothed with a Gaussian before running Canny?|To suppress noise that would otherwise produce false edges|To convert the image to grayscale|To increase the number of color channels|To make the edges thicker|A
+concept|A photo of a page has a shadow across one corner. Which thresholding approach handles it best?|A single global threshold of 127|Adaptive thresholding that computes a local threshold per neighborhood|Inverting the image|Histogram of oriented gradients|B
+concept|Two coins are touching each other in a binary mask. Which method is designed to split them into separate objects?|Global thresholding|Marker-controlled watershed|Gaussian blur|Histogram equalization|B
+concept|You need a mask of all orange objects in a colorful image. Which pipeline is most appropriate?|Convert to HSV and apply cv2.inRange with lower and upper bounds|Apply cv2.Canny to the color image|Apply cv2.equalizeHist|Use cv2.HoughCircles|A
+concept|An 8-bit result of cv2.Sobel loses information because:|Negative gradient values are clipped to zero|The kernel becomes 5x5|The image becomes RGB|Sobel only works on float images|A
+concept|After rotating an image by 45 degrees with the same canvas size, the corners are cut off because:|The output canvas keeps the original width and height|getRotationMatrix2D always scales by 2|warpAffine converts the image to grayscale|The rotation is done around the top-left corner only|A
+concept|Which property is preserved by an affine transformation but NOT necessarily by a projective transformation?|Parallelism of lines|Straightness of lines|Number of pixels|Pixel intensity|A
+concept|Why does a 2x2 matrix need to be extended to 3x3 to represent translation?|Multiplying the origin by any 2x2 matrix always gives the origin|2x2 matrices cannot represent rotation|3x3 matrices are faster to store|Translation changes pixel colors|A
+concept|A photographed rectangular document appears as a trapezoid. Which transformation restores the rectangle?|Projective (homography)|Pure rotation|Uniform scaling|Gamma correction|A
+concept|Which statement about Otsu's method is correct?|It assumes a roughly bimodal histogram and picks the threshold automatically|It requires the user to provide the threshold|It works best on images with a single intensity peak|It is a color-space conversion|A
+concept|In K-means color segmentation with K = 3, the output image contains at most:|3 distinct colors|256 distinct colors|9 distinct colors|1 color|A
+concept|Why must pixel data be converted to float32 before cv2.kmeans?|cv2.kmeans requires floating-point samples|float32 removes noise|It converts BGR to RGB|It reduces the number of clusters|A
+concept|Morphological opening applied to a binary mask mainly:|Removes small isolated white specks|Fills small black holes inside objects|Converts the mask to color|Detects lines|A
+concept|Morphological closing applied to a binary mask mainly:|Fills small holes and gaps in objects|Removes small white specks|Computes gradients|Finds keypoints|A
+concept|In marker-based watershed, what does the distance transform help find?|The sure foreground near object centers|The color of each object|The image histogram|Straight lines|A
+concept|Which edge detector produces thin, one-pixel-wide, connected edges?|Canny|Plain Sobel magnitude|Box blur|Global threshold|A
+concept|Edges in a Laplacian-of-Gaussian response are located at:|Zero-crossings of the response|The brightest pixels only|The image corners|Pixels with value 255|A
+concept|Why does SIFT assign an orientation to each keypoint?|So the descriptor can be computed relative to it, making matching rotation invariant|To convert the image to grayscale|To speed up Gaussian blur|To count the number of keypoints|A
+concept|Why is RANSAC used after matching keypoints between two images?|To reject wrong matches that do not fit a common geometric transform|To blur the images|To compute the SIFT descriptor|To convert colors|A
+concept|Lowe's ratio test keeps a match when:|The best match distance is clearly smaller than the second-best distance|The two images have the same size|The descriptor has 64 values|The keypoint is at the image border|A
+concept|Which descriptor should be matched with Hamming distance?|ORB binary descriptors|SIFT float descriptors|HOG descriptors|Color histograms|A
+concept|In the Hough line transform, a peak in the accumulator corresponds to:|Many edge pixels voting for the same line parameters|A single noisy pixel|The image center|The brightest color|A
+concept|Why do practical Hough line implementations use rho and theta instead of slope and intercept?|Vertical lines have infinite slope|rho and theta use less memory for color images|Slope cannot be negative|Intercepts are always zero|A
+concept|Increasing param2 in cv2.HoughCircles usually:|Detects fewer, more reliable circles|Detects more false circles|Changes the image color|Increases the image size|A
+concept|A valid (no padding) convolution of a 10x10 image with a 3x3 kernel gives an output of size:|8x8|10x10|12x12|3x3|A
+concept|A same convolution of a 10x10 image with a 3x3 kernel gives an output of size:|10x10|8x8|12x12|7x7|A
+concept|Applying a 3x3 box filter replaces each pixel with:|The mean of its 3x3 neighborhood|The median of its neighborhood|The maximum of its neighborhood|The center pixel unchanged|A
+concept|Which filter is best for removing salt-and-pepper noise while keeping edges fairly sharp?|Median filter|Box filter|Embossing kernel|Sobel filter|A
+concept|Which filter smooths flat regions while preserving strong edges by also weighting intensity similarity?|Bilateral filter|Box filter|Laplacian|Sobel|A
+concept|HOG block normalization mainly provides robustness to:|Changes in lighting and contrast|Changes in image file format|Changes in color space|Image compression|A
+concept|Uniform LBP patterns are useful because they:|Reduce the number of histogram bins while keeping most texture information|Increase the image resolution|Convert texture to color|Detect circles|A
+concept|An image of a bright uniform white wall has high texture energy but:|Zero texture contrast|High texture contrast|No histogram|Negative energy|A
+concept|Why is a color histogram considered a global feature?|It is computed over the entire image|It is computed only at keypoints|It depends on corner positions|It is learned by a CNN|A
+concept|Which operation changes what a pixel looks like but not where it is?|Gamma correction|Rotation|Translation|Shearing|A
+concept|cv2.add(200, 100) on uint8 images gives 255 because:|OpenCV uses saturation arithmetic|NumPy wraps around modulo 256|The images are converted to float|The result is divided by 2|A
+concept|Histogram equalization improves a low-contrast image by:|Spreading the clustered intensity values over the full 0-255 range|Converting it to HSV|Detecting its edges|Blurring it|A
+concept|Which segmentation approach starts from a seed pixel and adds similar neighbors?|Region growing|K-means clustering|Watershed|Global thresholding|A
+concept|Instance segmentation differs from semantic segmentation because it:|Separates individual objects of the same class|Uses only grayscale images|Does not assign labels|Only works on videos|A
+concept|Why do practitioners convert an OpenCV image with COLOR_BGR2RGB before plt.imshow?|Matplotlib interprets three-channel arrays as RGB, OpenCV stores BGR|Matplotlib cannot display grayscale|It reduces file size|It equalizes the histogram|A
+concept|Which statement about the Difference of Gaussians in SIFT is correct?|It approximates the Laplacian of Gaussian across scales|It is a color conversion|It removes keypoints at all scales|It is the RANSAC inlier test|A

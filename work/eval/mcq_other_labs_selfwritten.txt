@@ -1,0 +1,25 @@
+# Self-written sanity check for Labs 01/03/05/06 (worded differently from the facts). NOT an independent benchmark.
+lab01|The smallest unit of a digital image is called a:|Kernel|Pixel|Patch|Block|B
+lab01|Which stage is the first of the fundamental steps of digital image processing?|Segmentation|Compression|Image acquisition|Knowledge base|C
+lab01|Which DIP stage is described as the most difficult task?|Segmentation|Image enhancement|Compression|Acquisition|A
+lab01|OpenCV reads color images in which channel order by default?|RGB|HSV|BGR|LAB|C
+lab01|What does cv2.add do when two pixel values sum above 255?|Wraps around to 0|Caps the value at 255|Raises an error|Divides by 2|B
+lab01|Which function improves the contrast of a dark grayscale image by spreading its intensities?|cv2.equalizeHist|cv2.threshold|cv2.resize|cv2.putText|A
+lab01|Cropping an image in OpenCV is done with:|cv2.crop|NumPy array slicing|cv2.cut|cv2.roi|B
+lab03|Which transformation keeps parallel lines parallel?|Projective|Affine|Perspective|Homography|B
+lab03|Changing brightness or contrast of an image is a:|Geometric transformation|Photometric transformation|Projective transformation|Affine transformation|B
+lab03|Why can a 2x2 matrix not translate a point?|Because the origin always maps to the origin|Because it has no rotation|Because it is not square|Because it needs 4x4|A
+lab03|Homogeneous coordinates represent a 2D point (x, y) as:|(x, y, 0)|(x, y, 1)|(1, x, y)|(x, y, x*y)|B
+lab03|In a projective transformation, the result is normalized by dividing by:|The determinant|The third coordinate w|The image width|The translation vector|B
+lab03|warpPerspective in OpenCV uses a matrix of size:|2x2|2x3|3x3|4x4|C
+lab05|Which thresholding method automatically picks a threshold maximizing between-class variance?|Adaptive|Global|Otsu|Hysteresis|C
+lab05|Adaptive thresholding is best for images with:|Bimodal histograms only|Varying lighting conditions|Only color objects|No noise|B
+lab05|Which segmentation method simulates flooding of a topographic surface?|K-means|Region growing|Watershed|Snakes|C
+lab05|Region growing begins from a:|Seed pixel|Centroid|Histogram bin|Kernel|A
+lab05|In K-means, after assigning pixels, centroids are recomputed as:|The median of pixels|The mean of pixels in each cluster|The brightest pixel|A random pixel|B
+lab05|Watershed is particularly suitable for:|Touching or overlapping objects|Straight lines|Text recognition|Color conversion|A
+lab06|The Hough transform was introduced by Paul Hough in:|1962|1986|1999|2004|A
+lab06|The parameter space for Hough circle detection has how many dimensions?|One|Two|Three|Four|C
+lab06|SIFT finds scale-space extrema using:|Difference of Gaussians|Fourier transform|Box filter|K-means|A
+lab06|A SIFT keypoint candidate is compared with how many neighbors?|8|9|18|26|D
+lab06|Which method rejects outlier keypoint matches?|RANSAC|Otsu|Canny|LBP|A

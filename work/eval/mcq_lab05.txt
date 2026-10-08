@@ -1,0 +1,104 @@
+# 103 MCQs supplied by the user (2026-10-08) for Lab 05 (segmentation), answer key as given. Final test set: misses are not inspected until the end.
+intro|What is the main topic of Lab 05?|Image Classification|Image Segmentation|Object Detection|Image Compression|B
+intro|What is the course code for this lab?|AI-4002|AI-4004|CS-4002|CV-4002|A
+intro|Which university is this lab manual from?|NUST|FAST|NUCES Karachi|IBA|C
+intro|Image segmentation partitions an image into:|Overlapping regions|Distinct, non-overlapping regions|Random pixels|Compressed blocks|B
+intro|Each segment in image segmentation corresponds to:|A random color|A meaningful object or part of the scene|A single pixel|The entire image|B
+intro|The goal of image segmentation is to separate an image into areas that share similar:|File sizes|Compression ratios|Visual characteristics such as color, texture, or intensity|Metadata|C
+intro|Which of the following is NOT a visual characteristic used in segmentation?|Color|Texture|Intensity|File size|D
+intro|Preprocessing and feature extraction in segmentation includes:|Pixel values, edge detection, texture analysis, color similarity|File compression, encryption|Audio processing|Text recognition|A
+intro|Which of the following is a segmentation algorithm?|Region growing|Clustering|Watershed|All of the above|D
+intro|In the landscape example, the segmented region map includes:|Buildings, roads, cars|Sky, mountains, water|People, animals, plants|Text, numbers, symbols|B
+intro|In the portrait example, which region is NOT shown?|Hair region|Face region|Clothing region|Background region|D
+intro|In the street scene example, the segments include:|Car, tree, person|Sky, water, mountain|Hair, face, clothing|Cell nuclei, cells|A
+intro|Segmentation is the process of dividing an image into:|Random parts|Meaningful, separate parts|Compressed blocks|Binary digits|B
+math|The mathematics behind image segmentation includes:|Thresholding, edge detection, clustering, graph theory|Calculus, algebra, geometry|Sorting, searching, hashing|Encryption, decryption|A
+math|Thresholding compares a pixel's intensity value to:|A random value|A predefined threshold|The image mean|The maximum pixel value|B
+math|Edge detection algorithms identify:|Slow changes in intensity|Rapid changes in intensity|Constant intensity|Random noise|B
+math|Which is a common edge detection method?|Sobel|Canny|Laplacian of Gaussian (LoG)|All of the above|D
+math|Clustering techniques group similar pixels together based on:|File size|Feature similarity|Metadata|Compression ratio|B
+math|Which of the following is a clustering technique?|K-Means|Mean-Shift|DBSCAN|All of the above|D
+math|In graph-based segmentation, pixels are represented as:|Edges|Nodes|Weights|Clusters|B
+math|In graph-based segmentation, edges between nodes represent:|Distance|Similarity between pixel values|File size|Color depth|B
+math|Which graph algorithms can be used for segmentation?|Minimum spanning trees|Graph cuts|Both A and B|Neither A nor B|C
+math|Medical imaging segmentation is used to:|Identify anatomical structures or tumors|Detect pedestrians|Classify land cover|Track objects in AR|A
+math|Autonomous vehicles use segmentation to detect:|Tumors|Cell nuclei|Pedestrians, vehicles, and road signs|Deforestation|C
+math|Satellite imagery segmentation helps to:|Count cells|Classify land cover, monitor deforestation, assess urban growth|Detect tumors|Track objects in real-time video|B
+math|Biomedical imaging segmentation is used to:|Count cells, identify cell nuclei, diagnose diseases|Detect road signs|Classify land cover|Track objects in AR|A
+math|Augmented Reality (AR) uses segmentation for:|Scene understanding and real-time object tracking|Tumor detection|Deforestation monitoring|Cell counting|A
+threshold|Thresholding divides an image into regions based on:|Color depth|Pixel intensity values|File format|Image resolution|B
+threshold|Global thresholding applies:|Different thresholds to different regions|A single global threshold to the entire image|No threshold|Adaptive thresholds|B
+threshold|Adaptive thresholding uses:|A single threshold|Different threshold values for different regions|Random thresholds|No threshold|B
+threshold|Adaptive thresholding is ideal for images with:|Uniform lighting|Varying lighting conditions|No lighting|High contrast|B
+threshold|Otsu's thresholding automatically selects an optimal threshold to maximize:|Intra-class variance|Inter-class variance|Image contrast|Noise|B
+threshold|Otsu's thresholding is suitable when the distribution of pixel intensities is:|Uniform|Bimodal|Random|Skewed|B
+threshold|Color-based thresholding applies thresholding in:|Only grayscale|Multiple color channels (e.g., RGB, HSV)|Only binary|Only alpha channel|B
+threshold|Color-based thresholding is useful for segmenting objects with:|Similar intensity|Distinct colors|No color|High noise|B
+threshold|Hysteresis thresholding uses:|One threshold|Two threshold values|Three thresholds|No threshold|B
+threshold|In Canny edge detection, the high threshold is used to detect:|Weak edges|Strong edges|Noise|Background|B
+threshold|In Canny edge detection, the low threshold is used to:|Detect strong edges|Link weak edges|Remove noise|Increase contrast|B
+threshold|Hysteresis thresholding is typically used for:|Compression|Edge detection|Color correction|Image resizing|B
+threshold|Edge detection detects boundaries by identifying:|Slow changes|Rapid changes in intensity or color|Constant regions|Random noise|B
+threshold|Edge detection is useful for:|Extracting object contours and boundaries|Compressing images|Enhancing colors|Removing noise|A
+region|Region growing starts with a:|Random pixel|Seed pixel|Threshold value|Gradient|B
+region|Region growing expands to neighboring pixels that are:|Different in intensity|Similar in some criteria|Random|Edges|B
+region|Region growing is effective for segmenting regions with:|Complex textures|Uniform characteristics|High noise|Overlapping objects|B
+region|In the region growing code, the seed point is initialized as:|(0,0)|(10,10)|(50,50)|(100,100)|B
+region|In the region growing code, the threshold value is:|10|20|50|100|C
+region|In region growing code, the mask is created with dtype:|np.float32|np.uint8|np.int16|np.bool|B
+region|Region growing uses a stack for:|Sorting|Pixel traversal|Filtering|Compression|B
+region|If the intensity difference is below the threshold, the pixel is:|Ignored|Added to the segmented region|Marked as edge|Removed|B
+region|Region growing adds which neighboring pixels?|8-connected|4-connected|16-connected|All pixels|B
+region|Watershed segmentation treats the image as a:|Binary image|Topographic map|Graph|Histogram|B
+region|Watershed segmentation simulates:|Erosion|Flooding|Dilation|Clustering|B
+region|Watershed segmentation is suitable for segmenting:|Isolated objects|Touching or overlapping objects|Binary images only|Text|B
+region|In watershed preprocessing, the input image is converted to:|RGB|Grayscale|HSV|Binary|B
+region|Marker generation in watershed can be done by:|Manual placement|Thresholding|Distance transform|All of the above|D
+region|Gradient calculation in watershed uses:|Sobel or Scharr filters|Gaussian blur|Median filter|Histogram equalization|A
+region|Marker labeling in watershed uses:|Binary values|Different integer values|Floating-point values|Strings|B
+region|In watershed, high gradient values represent:|Valleys|Peaks/ridges|Flat regions|Noise|B
+region|Boundaries where basins meet represent:|Noise|Segmented regions|Background|Markers|B
+region|Watershed post-processing uses:|Morphological operations|Fourier transform|Histogram equalization|Edge detection|A
+region|In watershed code, threshold type used for markers is:|THRESH_BINARY|THRESH_BINARY_INV + THRESH_OTSU|THRESH_TRUNC|THRESH_TOZERO|B
+region|Morphological opening removes:|Edges|Noise|Objects|Colors|B
+region|In watershed code, sure_bg is created by:|Erosion|Dilation|Opening|Closing|B
+region|In watershed code, distanceTransform type is:|DIST_L1|DIST_L2|DIST_C|DIST_L12|B
+region|In watershed code, sure_fg threshold is set at:|0.1 * max|0.2 * max|0.5 * max|0.8 * max|B
+region|In watershed code, unknown region is calculated as:|add(sure_bg, sure_fg)|subtract(sure_bg, sure_fg)|multiply(sure_bg, sure_fg)|divide(sure_bg, sure_fg)|B
+region|In watershed code, connectedComponents returns:|Labels|Markers|Centers|Contours|B
+region|After connectedComponents, markers are incremented by:|0|1|2|-1|B
+region|In watershed code, unknown region is set to:|1|0|-1|255|B
+region|In watershed, boundaries are marked as:|0|1|-1|255|C
+region|In watershed code, boundaries are colored:|[0,0,255]|[255,0,0] red|[0,255,0] green|[255,255,255] white|B
+cluster|Clustering-based segmentation groups pixels based on:|File size|Feature similarity|Metadata|Compression|B
+cluster|Which is a clustering technique?|K-Means|Mean-Shift|DBSCAN|All of the above|D
+cluster|Feature extraction for color images can use:|RGB|LAB|HSV|All of the above|D
+cluster|Cluster initialization decides:|Number of clusters K|Number of pixels|Image size|Threshold|A
+cluster|In K-Means, the assignment step assigns each pixel to:|Random cluster|Nearest cluster centroid|Farthest cluster|All clusters|B
+cluster|In K-Means, the update step recalculates centroids as:|Median of pixels|Mean of pixels in each cluster|Mode of pixels|Random values|B
+cluster|K-Means convergence is reached when:|Centroids are random|Cluster assignments no longer change significantly|All pixels are in one cluster|Image is compressed|B
+cluster|After convergence, each cluster represents:|Noise|A segment or region|An edge|A pixel|B
+cluster|Post-processing in clustering can involve:|Merging or splitting clusters|Compression|Encryption|Resizing|A
+cluster|In K-Means code, pixel_values is reshaped to:|(-1, 2)|(-1, 3)|(-1, 4)|(-1, 1)|B
+cluster|In K-Means code, pixel_values is converted to:|np.uint8|np.float32|np.int16|np.bool|B
+cluster|In K-Means code, criteria is:|TERM_CRITERIA_EPS + TERM_CRITERIA_MAX_ITER, 100, 0.2|TERM_CRITERIA_EPS, 50, 0.1|TERM_CRITERIA_MAX_ITER, 200, 0.5|None|A
+cluster|In K-Means code, K value is:|2|3|4|5|C
+cluster|In K-Means code, flags used is:|KMEANS_PP_CENTERS|KMEANS_RANDOM_CENTERS|KMEANS_USE_INITIAL_LABELS|None|B
+cluster|In K-Means code, centers are converted to:|np.float32|np.uint8|np.int16|np.bool|B
+cluster|Deep learning-based segmentation uses:|CNNs|RNNs|GANs|SVMs|A
+cluster|Semantic segmentation means:|Different instances of same class separated|Same class gets same label|Random labels|No labels|B
+cluster|Instance segmentation means:|Same class gets same label|Different instances of same class are separated|No labels|Binary labels|B
+cluster|Deep learning segmentation is suitable for:|Simple tasks|Complex tasks and large datasets|Small datasets only|Binary images only|B
+cluster|Active contour models are also called:|Snakes|Birds|Worms|Fish|A
+cluster|Active contour models evolve based on:|Random motion|Image gradients and constraints|Histogram|Fourier transform|B
+cluster|Active contour models are effective for:|Object tracking and boundary refinement|Compression|Color correction|Noise removal|A
+opencv|cv2.imread() flag for grayscale is:|IMREAD_COLOR|IMREAD_GRAYSCALE|IMREAD_UNCHANGED|IMREAD_ANYCOLOR|B
+opencv|cv2.threshold() returns:|Only binary mask|retval and dst|Only retval|None|B
+opencv|Otsu thresholding is combined with:|THRESH_TRUNC|THRESH_BINARY + THRESH_OTSU|THRESH_TOZERO|THRESH_BINARY_INV only|B
+opencv|cv2.cvtColor() code for BGR to HSV is:|COLOR_BGR2GRAY|COLOR_BGR2HSV|COLOR_BGR2RGB|COLOR_BGR2LAB|B
+opencv|cv2.inRange() parameters are:|src, lowerb, upperb|src, threshold|src, kernel|src, markers|A
+opencv|cv2.Canny() parameters are:|image, threshold1, threshold2|image, K|image, markers|image, kernel|A
+opencv|cv2.kmeans() returns:|compactness, labels, centers|retval, dst|markers|edges|A
+opencv|cv2.watershed() marks boundaries as:|0|1|-1|255|C
+opencv|cv2.adaptiveThreshold() parameter for neighborhood size is:|C|blockSize|maxValue|thresholdType|B
+opencv|cv2.morphologyEx() with MORPH_OPEN performs:|Dilation then erosion|Erosion then dilation|Only erosion|Only dilation|B

@@ -1,0 +1,162 @@
+[
+ {
+  "id": "coin_largest",
+  "verdict": "ERROR: >  - Argument 'method' is required to be an integer",
+  "checked": false,
+  "attempts": 4,
+  "seconds": 18.5,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Convert BGR to grayscale\n    gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)\n    \n    # Apply Hough circles\n    circles = cv.HoughCircles(gray, np.pi / 180, 10, 100)\n    \n    # Filter circles based on area\n    filtered_circles = [c for c in circles if c[2] > 100]\n    \n    # Find the largest circle\n    largest_circle = max(filtered_circles, key=lambda x: x[2])\n    \n    # Return the count and largest radius\n    return {\n        \"count\": len(filtered_circles),\n        \"largest_radius\": largest_circle[2]\n    }"
+ },
+ {
+  "id": "largest_area",
+  "verdict": "ERROR: >     'CV_8UC1' is 0 (CV_8UC1)",
+  "checked": false,
+  "attempts": 4,
+  "seconds": 27.2,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Convert BGR to RGB\n    img_rgb = cv.cvtColor(img, cv.COLOR_BGR2RGB)\n    \n    # Threshold the image\n    _, thresh = cv.threshold(img_rgb, 127, 255, cv.THRESH_BINARY)\n    \n    # Find contours in the thresholded image\n    contours, _ = cv.findContours(thresh, cv.RETR_TREE, cv.CHAIN_APPROX_SIMPLE)\n    \n    # Initialize variables to store the count and largest area\n    count = 0\n    largest_area = 0\n    \n    # Iterate over the contours\n    for contour in contours:\n        # Extract the width and height from the tuple returned by cv.contourArea\n        width, height = cv.contourArea(contour)\n        \n        # Check if the area is greater than the largest area found so far\n        if width > largest_area:\n            largest_area = width\n            count = 1\n        else:\n            count += 1\n    \n    # Return the count and largest area\n    return {\"count\": count, \"largest_area\": largest_area}"
+ },
+ {
+  "id": "quadrant_means",
+  "verdict": "WRONG ANSWER: [np.float64(75.0), np.float64(75.0), np.float64(75.0), np.float64(75.0), np.float64(75.0), np.float64(75.0), np.float64(75.0), np.float64(75.0), np.float64(75.0), np.float64(75.0), np.float64(75.0), n",
+  "checked": true,
+  "attempts": 1,
+  "seconds": 2.9,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Convert the image to grayscale\n    gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)\n    \n    # Split the image into four equal quadrants\n    quadrants = [gray[i:i+3] for i in range(0, gray.shape[0], 3)]\n    \n    # Calculate the mean brightness in each quadrant\n    mean_brightness = [np.mean(quadrant) for quadrant in quadrants]\n    \n    return mean_brightness"
+ },
+ {
+  "id": "yellow_box",
+  "verdict": "ERROR: >  - boundingRect() takes at most 1 argument (3 given)",
+  "checked": false,
+  "attempts": 4,
+  "seconds": 16.5,
+  "code": "import cv2\nimport cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Convert the image to HSV color space\n    hsv = cv.cvtColor(img, cv.COLOR_BGR2HSV)\n    \n    # Define the lower and upper bounds for yellow\n    lower_yellow = np.array([10, 50, 50])\n    upper_yellow = np.array([150, 255, 255])\n    \n    # Find the bounding box of the yellow object\n    y, x, w, h = cv2.boundingRect(hsv, lower_yellow, upper_yellow)\n    \n    return (x, y, w, h)"
+ },
+ {
+  "id": "blue_fraction",
+  "verdict": "WRONG ANSWER: np.float64(12542.48)",
+  "checked": true,
+  "attempts": 1,
+  "seconds": 2.2,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Convert the image to HSV\n    hsv = cv.cvtColor(img, cv.COLOR_BGR2HSV)\n    \n    # Extract the blue channel\n    blue_channel = hsv[:, :, 2]\n    \n    # Calculate the percentage of blue pixels\n    percentage_blue = (blue_channel.sum() / blue_channel.size) * 100\n    \n    return percentage_blue"
+ },
+ {
+  "id": "change_box",
+  "verdict": "ERROR: TypeError: only 0-dimensional arrays can be converted to Python scalars",
+  "checked": true,
+  "attempts": 1,
+  "seconds": 4.9,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(before, after):\n    # Convert BGR to RGB for comparison\n    before_rgb = cv.cvtColor(before, cv.COLOR_BGR2RGB)\n    after_rgb = cv.cvtColor(after, cv.COLOR_BGR2RGB)\n    \n    # Calculate the difference between the two frames\n    diff = cv.absdiff(before_rgb, after_rgb)\n    \n    # Find the bounding box of the region that changed\n    # The bounding box is the largest rectangle that contains the difference\n    # This is done by finding the maximum value in the difference\n    # and then finding the corresponding coordinates\n    max_value = np.max(diff)\n    x = np.argmax(diff, axis=0)[0]\n    y = np.argmax(diff, axis=1)[0]\n    w = np.max(diff, axis=0)[1] - x\n    h = np.max(diff, axis=1)[1] - y\n    \n    return (x, y, w, h)"
+ },
+ {
+  "id": "longest_line",
+  "verdict": "ERROR: IndexError: index 2 is out of bounds for axis 0 with size 1",
+  "checked": true,
+  "attempts": 2,
+  "seconds": 10.2,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Convert BGR to RGB\n    img_rgb = cv.cvtColor(img, cv.COLOR_BGR2RGB)\n    \n    # Apply Canny edge detection\n    edges = cv.Canny(img_rgb, 50, 150)\n    \n    # Apply HoughLinesP to detect lines\n    lines = cv.HoughLinesP(edges, np.pi / 4, 10, 100, minLineLength=10, maxLineGap=10)\n    \n    # Check if any lines were detected\n    if lines is not None:\n        # Find the longest line segment\n        longest_line = max(lines, key=lambda x: x[2])\n        \n        # Return the length of the longest line segment in pixels\n        return longest_line[0]\n    else:\n        # Return a default value or handle the case where no lines were detected\n        return 0"
+ },
+ {
+  "id": "hv_lines",
+  "verdict": "WRONG ANSWER: {'horizontal': True, 'vertical': False}",
+  "checked": true,
+  "attempts": 1,
+  "seconds": 4.6,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Convert BGR to grayscale\n    gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)\n    \n    # Apply HoughLinesP to detect lines\n    lines = cv.HoughLinesP(gray, np.pi / 180, 10, 50, minLineLength=10, maxLineGap=10)\n    \n    # Initialize dictionaries to track horizontal and vertical lines\n    horizontal = False\n    vertical = False\n    \n    # Iterate over the lines\n    for line in lines:\n        # Extract the x and y coordinates of the line\n        x1, y1, x2, y2 = line[0]\n        \n        # Check if the line is horizontal\n        if x1 == x2:\n            horizontal = True\n        \n        # Check if the line is vertical\n        if y1 == y2:\n            vertical = True\n    \n    # Return the results as a dictionary\n    return {\"horizontal\": horizontal, \"vertical\": vertical}"
+ },
+ {
+  "id": "rotate_cw",
+  "verdict": "ERROR: AttributeError: module 'cv2' has no attribute 'ROTATE_90'",
+  "checked": false,
+  "attempts": 4,
+  "seconds": 7.6,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Convert the image to grayscale\n    gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)\n    \n    # Rotate the image 90 degrees clockwise\n    rotated = cv.rotate(gray, cv.ROTATE_90)\n    \n    return rotated"
+ },
+ {
+  "id": "crop_largest",
+  "verdict": "PASS",
+  "checked": true,
+  "attempts": 1,
+  "seconds": 3.2,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Convert the image to grayscale\n    gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)\n    \n    # Find the largest white object in the image\n    contours, _ = cv.findContours(gray, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)\n    \n    # Find the bounding box of the largest white object\n    max_contour = max(contours, key=cv.contourArea)\n    x, y, w, h = cv.boundingRect(max_contour)\n    \n    # Crop the image to the bounding box\n    crop = img[y:y+h, x:x+w]\n    \n    return crop"
+ },
+ {
+  "id": "otsu_white",
+  "verdict": "ERROR: ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()",
+  "checked": true,
+  "attempts": 1,
+  "seconds": 2.7,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Convert the image to grayscale\n    gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)\n    \n    # Apply Otsu thresholding\n    _, threshold = cv.threshold(gray, 0, 255, cv.THRESH_BINARY)\n    \n    # Count the number of white pixels in the thresholded image\n    white_pixels = np.sum(gray == threshold)\n    \n    # Return the threshold and the number of white pixels\n    return {\"threshold\": threshold, \"white_pixels\": white_pixels}"
+ },
+ {
+  "id": "watershed_count",
+  "verdict": "ERROR: >  - watershed() takes at most 2 arguments (3 given)",
+  "checked": false,
+  "attempts": 4,
+  "seconds": 11.0,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Convert BGR to RGB for watershed\n    img_rgb = cv.cvtColor(img, cv.COLOR_BGR2RGB)\n    \n    # Apply marker-based watershed\n    markers, hierarchy = cv.watershed(img_rgb, markers=None, hierarchy=None)\n    \n    # Count the number of objects\n    num_objects = len(markers)\n    \n    return num_objects"
+ },
+ {
+  "id": "corner_count",
+  "verdict": "ERROR: >  - goodFeaturesToTrack() missing required argument 'qualityLevel' (pos 3)",
+  "checked": false,
+  "attempts": 4,
+  "seconds": 12.3,
+  "code": "import cv2\nimport cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Convert BGR to RGB\n    img_rgb = cv.cvtColor(img, cv.COLOR_BGR2RGB)\n    \n    # Use cv2.goodFeaturesToTrack to find corners\n    corners, qualityLevel = cv2.goodFeaturesToTrack(img_rgb, maxCorners=100, minDistance=10, criteria=(cv2.TERM_CRITERIA_EPS, 0.01, 0.01))\n    \n    # Return the number of corners found\n    return len(corners)"
+ },
+ {
+  "id": "hist_peak",
+  "verdict": "ERROR: >  - calcHist() missing required argument 'ranges' (pos 5)",
+  "checked": false,
+  "attempts": 4,
+  "seconds": 12.4,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Convert the image to grayscale\n    gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)\n    \n    # Compute the histogram of the grayscale image\n    hist = cv.calcHist(gray, [0], [256], [0, 256])\n    \n    # Find the maximum frequency\n    max_freq = np.max(hist)\n    \n    # Find the index of the maximum frequency\n    max_index = np.argmax(hist)\n    \n    # Return the most frequent gray level\n    return max_index"
+ },
+ {
+  "id": "spikes",
+  "verdict": "WRONG ANSWER: array([250, 900])",
+  "checked": true,
+  "attempts": 1,
+  "seconds": 6.4,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(signal):\n    \"\"\"\n    Takes a 1-D numpy array of sensor readings and returns the sorted list of indices whose value is more than 3 standard deviations from the mean.\n    \n    Parameters:\n    signal (np.ndarray): A 1-D numpy array of sensor readings.\n    \n    Returns:\n    np.ndarray: A sorted list of indices whose value is more than 3 standard deviations from the mean.\n    \"\"\"\n    # Calculate the mean and standard deviation\n    mean = np.mean(signal)\n    std_dev = np.std(signal)\n    \n    # Filter the indices based on the condition\n    filtered_indices = np.where((signal - mean) > 3 * std_dev)[0]\n    \n    return filtered_indices\n\n# Example usage\nsensor_readings = np.array([10, 20, 30, 40, 50, 60, 70, 80, 90, 100])\nsorted_indices = solve(sensor_readings)\nprint(sorted_indices)"
+ },
+ {
+  "id": "warp_mean",
+  "verdict": "        ...,",
+  "checked": true,
+  "attempts": 1,
+  "seconds": 7.6,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img, corners):\n    # Convert BGR to RGB\n    img_rgb = cv.cvtColor(img, cv.COLOR_BGR2RGB)\n    \n    # Calculate the bounding box of the region to be warped\n    x1, y1 = corners[0]\n    x2, y2 = corners[1]\n    x3, y3 = corners[2]\n    x4, y4 = corners[3]\n    \n    # Calculate the width and height of the region to be warped\n    width = x2 - x1\n    height = y2 - y1\n    \n    # Calculate the top-left and top-right corners of the region to be warped\n    top_left = (x1, y1)\n    top_right = (x2, y2)\n    bottom_right = (x3, y3)\n    bottom_left = (x4, y4)\n    \n    # Calculate the translation matrix to transform the region to the top-down view\n    translation_matrix = np.array([\n        [width / 2, 0, width / 2],\n        [0, height / 2, height / 2],\n        [0, 0, 1]\n    ])\n    \n    # Calculate the perspective matrix to transform the region to the top-down view\n    perspective_matrix = np.array([\n        [1, 0, 0],\n        [0, 1, 0],\n        [0, 0, 1]\n    ])\n    \n    # Calculate the perspective matrix to transform the region to the top-down view\n    perspective_matrix = np.dot(perspective_matrix, translation_matrix)\n    \n    # Warp the region to the top-down view\n    warped_img = cv.warpPerspective(img_rgb, perspective_matrix, (200, 300))\n    \n    return warped_img"
+ },
+ {
+  "id": "kmeans_centers",
+  "verdict": "ERROR: AttributeError: module 'cv2' has no attribute 'KMEANS_RANDOM_SEED'",
+  "checked": false,
+  "attempts": 4,
+  "seconds": 10.0,
+  "code": "import cv2\nimport cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Convert the image to grayscale\n    gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)\n    \n    # Apply K-means clustering\n    clusters, _ = cv2.kmeans(gray, 4, cv.KMEANS_RANDOM_SEED, cv.KMEANS_USE_INITIAL_centers)\n    \n    # Extract the cluster centers\n    cluster_centers = clusters.reshape(-1, 2)\n    \n    # Sort the cluster centers\n    cluster_centers.sort()\n    \n    return cluster_centers"
+ },
+ {
+  "id": "sift_found",
+  "verdict": "PASS",
+  "checked": true,
+  "attempts": 1,
+  "seconds": 3.5,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(ref, scene):\n    # Convert BGR to RGB for SIFT\n    ref_rgb = cv.cvtColor(ref, cv.COLOR_BGR2RGB)\n    scene_rgb = cv.cvtColor(scene, cv.COLOR_BGR2RGB)\n    \n    # Initialize SIFT\n    sift = cv.SIFT_create()\n    \n    # Detect keypoints and descriptors in the reference and scene\n    ref_keypoints, ref_descriptors = sift.detectAndCompute(ref_rgb, None)\n    scene_keypoints, scene_descriptors = sift.detectAndCompute(scene_rgb, None)\n    \n    # Calculate the ratio of the number of good matches to the total number of keypoints\n    good_matches = len(scene_keypoints) / len(ref_keypoints)\n    \n    # Return the result as a dictionary\n    return {\"found\": good_matches > 0.5, \"good_matches\": good_matches}"
+ },
+ {
+  "id": "flip_compare",
+  "verdict": "WRONG ANSWER: np.int64(0)",
+  "checked": true,
+  "attempts": 1,
+  "seconds": 1.5,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Convert the image to grayscale\n    gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)\n    \n    # Count the number of pixels with a different grayscale value\n    num_pixels_with_change = np.sum(gray != gray)\n    \n    return num_pixels_with_change"
+ },
+ {
+  "id": "blur_diff",
+  "verdict": "WRONG ANSWER: np.uint8(240)",
+  "checked": true,
+  "attempts": 1,
+  "seconds": 2.1,
+  "code": "import cv2 as cv\nimport numpy as np\n\ndef solve(img):\n    # Convert the image to grayscale\n    gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)\n    \n    # Apply a 5x5 Gaussian blur\n    blurred = cv.GaussianBlur(gray, (5, 5), 0)\n    \n    # Calculate the maximum absolute difference between the blurred and the original grayscale image\n    max_diff = np.max(np.abs(blurred - gray))\n    \n    return max_diff"
+ }
+]

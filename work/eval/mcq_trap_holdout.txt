@@ -1,0 +1,104 @@
+1. You run cv2.HoughCircles(gray, cv2.HOUGH_GRADIENT, dp=1.2, minDist=40, param1=120, param2=30, minRadius=10, maxRadius=60). Which statement is most accurate?
+A) Every circle in the image is always detected
+B) A circle is returned only if its center gets enough votes and its radius is between 10 and 60
+C) Only circles with radius exactly 60 are returned
+D) The function returns rectangles around circles
+Correct Answer: B
+
+2. edges = cv2.Canny(blur, 50, 150). Which statement is most accurate?
+A) Pixels with gradient above 150 are strong edges, and pixels between 50 and 150 are kept only if connected to strong edges
+B) Only pixels with gradient exactly 150 become edges
+C) All pixels above 50 are always kept as edges
+D) Canny returns a color image
+Correct Answer: A
+
+3. You apply Otsu thresholding to an image with a bimodal histogram. Which statement is most accurate?
+A) Otsu always gives the best result for every image
+B) The threshold value 0 passed to the function is used exactly as given
+C) Otsu chooses the threshold that best separates the two intensity groups
+D) Otsu works only on color images
+Correct Answer: C
+
+4. You match SIFT descriptors with knnMatch(k=2) and apply the ratio test with 0.75. Which statement is most accurate?
+A) All matches are always kept
+B) A match is kept when the best distance is clearly smaller than the second-best distance
+C) Only matches with distance exactly 0.75 are kept
+D) The ratio test converts keypoints into contours
+Correct Answer: B
+
+5. contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE). Which statement is most accurate?
+A) Inner holes are always returned as separate contours
+B) Outer boundaries of the white regions are returned
+C) Only circular objects are found
+D) The function blurs the mask
+Correct Answer: B
+
+6. You call cv2.findHomography(src, dst, cv2.RANSAC, 5.0) with 50 matches, some of them wrong. Which statement is most accurate?
+A) All 50 matches are always used equally
+B) The homography is estimated from consistent matches, and wrong matches are treated as outliers
+C) Exactly 4 matches are returned and the rest deleted
+D) RANSAC never tolerates wrong matches
+Correct Answer: B
+
+7. You run cv2.kmeans on pixel colors with K=3. Which statement is most accurate?
+A) The result is always identical regardless of initialization
+B) Pixels are grouped into 3 clusters by distance to the cluster centers
+C) Only 3 pixels are used
+D) K-means works only on grayscale images
+Correct Answer: B
+
+8. You apply cv2.adaptiveThreshold with blockSize=11 and C=2. Which statement is most accurate?
+A) One single threshold is used for every pixel
+B) Each pixel is compared with a threshold computed from its local neighbourhood
+C) The block size must always be exactly 11
+D) Adaptive thresholding never works with shadows
+Correct Answer: B
+
+9. You apply a 5x5 Gaussian blur before edge detection. Which statement is most accurate?
+A) It removes all edges completely
+B) It reduces noise, so fewer false edges are detected
+C) It only works on color images
+D) It always makes the image larger
+Correct Answer: B
+
+10. kernel = np.ones((5,5), np.uint8); out = cv2.morphologyEx(mask, cv2.MORPH_OPEN, kernel). Which statement is most accurate?
+A) Opening removes small white specks smaller than the kernel
+B) Opening always fills every hole in the objects
+C) Only the 5 largest objects are kept
+D) Opening converts the mask to color
+Correct Answer: A
+
+11. M = cv2.getRotationMatrix2D((w/2, h/2), 45, 1.0); out = cv2.warpAffine(img, M, (w, h)). Which statement is most accurate?
+A) The rotated image is always larger than the original
+B) The image rotates 45 degrees about its center, and corners can be cut off because the output size is (w, h)
+C) Only square images can be rotated
+D) warpAffine never changes pixel positions
+Correct Answer: B
+
+12. You compute the HOG descriptor of a 64x128 window with 8x8 cells and 9 bins. Which statement is most accurate?
+A) HOG describes local shape using histograms of gradient orientations
+B) HOG always returns exactly 9 numbers
+C) HOG works only on color images
+D) HOG detects circles
+Correct Answer: A
+
+13. You use cv2.watershed with markers from the distance transform. Which statement is most accurate?
+A) Watershed always needs no markers
+B) Boundaries between regions are marked with -1 in the markers array
+C) Only one object can ever be segmented
+D) Watershed converts the image to HSV
+Correct Answer: B
+
+14. You threshold with cv2.inRange(hsv, lower, upper) for a yellow object. Which statement is most accurate?
+A) Pixels whose H, S and V are all within the bounds become white in the mask
+B) Only pure yellow (exactly one hue value) is kept
+C) inRange always works in BGR only
+D) The mask contains the original colors
+Correct Answer: A
+
+15. You compute the LBP histogram of a texture under brighter lighting. Which statement is most accurate?
+A) LBP codes change completely with any brightness change
+B) LBP is robust to uniform brightness changes because it only compares neighbours with the center
+C) LBP works only on edges
+D) LBP always needs color images
+Correct Answer: B
